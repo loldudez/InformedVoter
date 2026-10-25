@@ -1,0 +1,82 @@
+{
+ "updated": "2026-10-25",
+ "note": "New Mexico governor race, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "NM-GOV",
+   "candidates": [
+    {
+     "id": "NM-GOV:haaland",
+     "name": "Deb Haaland",
+     "party": "D",
+     "bio": "U.S. secretary of the interior from 2021 to 2025 and earlier U.S. representative for New Mexico's 1st District.",
+     "positions": {
+      "sta-03": {
+       "stance": 2,
+       "source": {
+        "title": "Source NM, Oct. 9, 2026: Haaland's affordability agenda would raise the state minimum wage",
+        "url": "https://sourcenm.com/2026/10/09/new-mexico-gop-gubernatorial-nominee-hull-takes-debate-stage-solo-as-haaland-opts-to-see-farmers/",
+        "date": "2026-10-09"
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "Albuquerque Journal forum report, Aug. 25, 2026: Haaland would explore building affordable housing on state trust land, possibly paid for from the permanent funds",
+        "url": "https://www.abqjournal.com/news/gubernatorial-candidates-stake-out-competing-policy-positions-during-congenial-forum/3109160",
+        "date": "2026-08-25"
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Albuquerque Journal forum report, Aug. 25, 2026: Haaland supports developing geothermal power and expanding other renewable energy",
+        "url": "https://www.abqjournal.com/news/gubernatorial-candidates-stake-out-competing-policy-positions-during-congenial-forum/3109160",
+        "date": "2026-08-25"
+       }
+      },
+      "cri-08": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM, Oct. 9, 2026: Haaland would invest in sending behavioral health professionals to mental health 911 calls",
+        "url": "https://sourcenm.com/2026/10/09/new-mexico-gop-gubernatorial-nominee-hull-takes-debate-stage-solo-as-haaland-opts-to-see-farmers/",
+        "date": "2026-10-09"
+       }
+      }
+     }
+    },
+    {
+     "id": "NM-GOV:hull",
+     "name": "Gregg Hull",
+     "party": "R",
+     "bio": "Former mayor of Rio Rancho.",
+     "positions": {
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "Source NM, Oct. 9, 2026: Hull would phase out the state personal income tax in four steps, starting with lower and middle earners",
+        "url": "https://sourcenm.com/2026/10/09/new-mexico-gop-gubernatorial-nominee-hull-takes-debate-stage-solo-as-haaland-opts-to-see-farmers/",
+        "date": "2026-10-09"
+       }
+      },
+      "cri-06": {
+       "stance": -1,
+       "source": {
+        "title": "Source NM, Oct. 9, 2026: Hull would seek a constitutional amendment letting judges hold violent defendants in jail before trial",
+        "url": "https://sourcenm.com/2026/10/09/new-mexico-gop-gubernatorial-nominee-hull-takes-debate-stage-solo-as-haaland-opts-to-see-farmers/",
+        "date": "2026-10-09"
+       }
+      }
+     }
+    }
+   ],
+   "notes": [
+    {
+     "text": "Haaland skipped the only scheduled debate and both candidates have published few detailed positions, so most questions are unclear for them.",
+     "source": "Source NM",
+     "url": "https://sourcenm.com/2026/10/09/new-mexico-gop-gubernatorial-nominee-hull-takes-debate-stage-solo-as-haaland-opts-to-see-farmers/"
+    }
+   ]
+  }
+ ]
+}

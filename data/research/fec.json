@@ -1,0 +1,7079 @@
+{
+ "updated": "2026-10-25",
+ "note": "Receipts by source from candidates’ FEC financial summaries, read Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "AK-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AK-SEN:peltola",
+     "name": "Mary Peltola",
+     "finance": {
+      "total": 36887509,
+      "parts": {
+       "small": 12429428,
+       "large": 20327338,
+       "pac": 845259,
+       "party": 1500,
+       "self": 0,
+       "public": 0,
+       "transfers": 2732081,
+       "other": 551903
+      },
+      "spent": 32785383,
+      "cashOnHand": 4102126,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6AK00276",
+      "url": "https://www.fec.gov/data/candidate/S6AK00276/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "AK-SEN:dan-s-sullivan",
+     "name": "Dan S. Sullivan",
+     "finance": {
+      "total": 14107205,
+      "parts": {
+       "small": 1008787,
+       "large": 6142185,
+       "pac": 2952139,
+       "party": 62450,
+       "self": 0,
+       "public": 0,
+       "transfers": 3569242,
+       "other": 372403
+      },
+      "spent": 11999191,
+      "cashOnHand": 2839758,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S4AK00214",
+      "url": "https://www.fec.gov/data/candidate/S4AK00214/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "AK-SEN:dan-j-sullivan",
+     "name": "Dan J. Sullivan",
+     "finance": {
+      "total": 30556,
+      "parts": {
+       "small": 7456,
+       "large": 12700,
+       "pac": 0,
+       "party": 0,
+       "self": 10400,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 28654,
+      "cashOnHand": 1902,
+      "from": "2026-05-29",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6AK00326",
+      "url": "https://www.fec.gov/data/candidate/S6AK00326/?cycle=2026&election_full=true",
+      "debts": 31799
+     }
+    }
+   ]
+  },
+  {
+   "id": "AL-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AL-SEN:moore",
+     "name": "Barry Moore",
+     "finance": {
+      "total": 4635926,
+      "parts": {
+       "small": 410001,
+       "large": 2447768,
+       "pac": 1089098,
+       "party": 0,
+       "self": 50000,
+       "public": 0,
+       "transfers": 631703,
+       "other": 7355
+      },
+      "spent": 4293858,
+      "cashOnHand": 467199,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6AL00476",
+      "url": "https://www.fec.gov/data/candidate/S6AL00476/?cycle=2026&election_full=true",
+      "debts": 534459
+     }
+    },
+    {
+     "id": "AL-SEN:wess",
+     "name": "Everett Wess",
+     "finance": {
+      "total": 128570,
+      "parts": {
+       "small": 14743,
+       "large": 43184,
+       "pac": 0,
+       "party": 0,
+       "self": 70643,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 118027,
+      "cashOnHand": 10543,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6AL00518",
+      "url": "https://www.fec.gov/data/candidate/S6AL00518/?cycle=2026&election_full=true",
+      "debts": 70643
+     }
+    }
+   ]
+  },
+  {
+   "id": "AR-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AR-SEN:cotton",
+     "name": "Tom Cotton",
+     "finance": {
+      "total": 14517576,
+      "parts": {
+       "small": 3142158,
+       "large": 5341997,
+       "pac": 1628000,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 3264736,
+       "other": 1078685
+      },
+      "spent": 15784601,
+      "cashOnHand": 5129928,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S4AR00103",
+      "url": "https://www.fec.gov/data/candidate/S4AR00103/?cycle=2026&election_full=true",
+      "debts": 104891
+     }
+    },
+    {
+     "id": "AR-SEN:shoffner",
+     "name": "Hallie Shoffner",
+     "finance": {
+      "total": 4042811,
+      "parts": {
+       "small": 1334510,
+       "large": 2618212,
+       "pac": 68510,
+       "party": 14750,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 6828
+      },
+      "spent": 3285879,
+      "cashOnHand": 756932,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6AR00199",
+      "url": "https://www.fec.gov/data/candidate/S6AR00199/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "AR-SEN:wadlin",
+     "name": "Jeff Wadlin",
+     "finance": {
+      "total": 80063,
+      "parts": {
+       "small": 1469,
+       "large": 7500,
+       "pac": 0,
+       "party": 0,
+       "self": 71094,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 73772,
+      "cashOnHand": 6291,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6AR00223",
+      "url": "https://www.fec.gov/data/candidate/S6AR00223/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-SEN:hickenlooper",
+     "name": "John Hickenlooper",
+     "finance": {
+      "total": 11695273,
+      "parts": {
+       "small": 2269149,
+       "large": 6170618,
+       "pac": 1251005,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 1587532,
+       "other": 354969
+      },
+      "spent": 11778528,
+      "cashOnHand": 1558828,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S0CO00575",
+      "url": "https://www.fec.gov/data/candidate/S0CO00575/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "CO-SEN:baisley",
+     "name": "Mark Baisley",
+     "finance": {
+      "total": 138210,
+      "parts": {
+       "small": 28434,
+       "large": 106502,
+       "pac": 0,
+       "party": 999,
+       "self": 2200,
+       "public": 0,
+       "transfers": 0,
+       "other": 76
+      },
+      "spent": 110837,
+      "cashOnHand": 27710,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6CO00507",
+      "url": "https://www.fec.gov/data/candidate/S6CO00507/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "CO-SEN:chew",
+     "name": "Bob Chew",
+     "finance": {
+      "total": 3603854,
+      "parts": {
+       "small": 5855,
+       "large": 48000,
+       "pac": 0,
+       "party": 0,
+       "self": 3550000,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 3368847,
+      "cashOnHand": 235007,
+      "from": "2026-03-20",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6CO00556",
+      "url": "https://www.fec.gov/data/candidate/S6CO00556/?cycle=2026&election_full=true",
+      "debts": 145593
+     }
+    }
+   ]
+  },
+  {
+   "id": "DE-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "DE-SEN:coons",
+     "name": "Chris Coons",
+     "finance": {
+      "total": 7685072,
+      "parts": {
+       "small": 201498,
+       "large": 3736443,
+       "pac": 2474587,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 1056947,
+       "other": 215597
+      },
+      "spent": 4493874,
+      "cashOnHand": 5031711,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S0DE00092",
+      "url": "https://www.fec.gov/data/candidate/S0DE00092/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "DE-SEN:katz",
+     "name": "Michael Katz",
+     "finance": {
+      "total": 190416,
+      "parts": {
+       "small": 10774,
+       "large": 50082,
+       "pac": 300,
+       "party": 0,
+       "self": 129261,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 174332,
+      "cashOnHand": 16085,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6DE00206",
+      "url": "https://www.fec.gov/data/candidate/S6DE00206/?cycle=2026&election_full=true",
+      "debts": 129250
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-SEN:moody",
+     "name": "Ashley Moody",
+     "finance": {
+      "total": 14524032,
+      "parts": {
+       "small": 2074904,
+       "large": 4757778,
+       "pac": 2404500,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 5157308,
+       "other": 67541
+      },
+      "spent": 13707677,
+      "cashOnHand": 816355,
+      "from": "2025-01-13",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6FL00640",
+      "url": "https://www.fec.gov/data/candidate/S6FL00640/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "FL-SEN:nixon",
+     "name": "Angie Nixon",
+     "finance": {
+      "total": 11319380,
+      "parts": {
+       "small": 7049633,
+       "large": 3958525,
+       "pac": 218222,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 93000,
+       "other": 0
+      },
+      "spent": 8052586,
+      "cashOnHand": 3266795,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6FL00830",
+      "url": "https://www.fec.gov/data/candidate/S6FL00830/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "FL-SEN:gillespie",
+     "name": "Neil Gillespie",
+     "finance": {
+      "total": 13284,
+      "parts": {
+       "small": 0,
+       "large": 8000,
+       "pac": 0,
+       "party": 0,
+       "self": 3628,
+       "public": 0,
+       "transfers": 0,
+       "other": 1657
+      },
+      "spent": 12650,
+      "cashOnHand": 634,
+      "from": "2026-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6FL00863",
+      "url": "https://www.fec.gov/data/candidate/S6FL00863/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "GA-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "GA-SEN:ossoff",
+     "name": "Jon Ossoff",
+     "finance": {
+      "total": 136610982,
+      "parts": {
+       "small": 66786530,
+       "large": 54223515,
+       "pac": 1211678,
+       "party": 13319,
+       "self": 0,
+       "public": 0,
+       "transfers": 12248000,
+       "other": 2127940
+      },
+      "spent": 125808380,
+      "cashOnHand": 15134336,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S8GA00180",
+      "url": "https://www.fec.gov/data/candidate/S8GA00180/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "GA-SEN:collins",
+     "name": "Mike Collins",
+     "finance": {
+      "total": 10679277,
+      "parts": {
+       "small": 3045948,
+       "large": 4021244,
+       "pac": 675575,
+       "party": 0,
+       "self": 65000,
+       "public": 0,
+       "transfers": 2828065,
+       "other": 43445
+      },
+      "spent": 10178766,
+      "cashOnHand": 1103682,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6GA00390",
+      "url": "https://www.fec.gov/data/candidate/S6GA00390/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "IA-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IA-SEN:turek",
+     "name": "Josh Turek",
+     "finance": {
+      "total": 24290521,
+      "parts": {
+       "small": 8827753,
+       "large": 13159846,
+       "pac": 576455,
+       "party": 67500,
+       "self": 0,
+       "public": 0,
+       "transfers": 1562740,
+       "other": 96226
+      },
+      "spent": 21217670,
+      "cashOnHand": 3072851,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6IA00298",
+      "url": "https://www.fec.gov/data/candidate/S6IA00298/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "IA-SEN:hinson",
+     "name": "Ashley Hinson",
+     "finance": {
+      "total": 14147973,
+      "parts": {
+       "small": 1552759,
+       "large": 5962004,
+       "pac": 2659800,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 3907935,
+       "other": 3474
+      },
+      "spent": 13903059,
+      "cashOnHand": 2172989,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6IA00314",
+      "url": "https://www.fec.gov/data/candidate/S6IA00314/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "IA-SEN:laehn",
+     "name": "Thomas Laehn",
+     "finance": {
+      "total": 83667,
+      "parts": {
+       "small": 14805,
+       "large": 67366,
+       "pac": 0,
+       "party": 0,
+       "self": 1496,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 74632,
+      "cashOnHand": 9035,
+      "from": "2024-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6IA00181",
+      "url": "https://www.fec.gov/data/candidate/S6IA00181/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ID-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "ID-SEN:risch",
+     "name": "Jim Risch",
+     "finance": {
+      "total": 5009089,
+      "parts": {
+       "small": 262743,
+       "large": 2623360,
+       "pac": 1525531,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 228607,
+       "other": 306849
+      },
+      "spent": 5081714,
+      "cashOnHand": 2122235,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S8ID00092",
+      "url": "https://www.fec.gov/data/candidate/S8ID00092/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "ID-SEN:achilles",
+     "name": "Todd Achilles",
+     "finance": {
+      "total": 1921132,
+      "parts": {
+       "small": 477868,
+       "large": 1288264,
+       "pac": 33000,
+       "party": 2500,
+       "self": 33500,
+       "public": 0,
+       "transfers": 0,
+       "other": 86000
+      },
+      "spent": 1733606,
+      "cashOnHand": 195819,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6ID00146",
+      "url": "https://www.fec.gov/data/candidate/S6ID00146/?cycle=2026&election_full=true",
+      "debts": 23000
+     }
+    }
+   ]
+  },
+  {
+   "id": "IL-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IL-SEN:stratton",
+     "name": "Juliana Stratton",
+     "finance": {
+      "total": 7230577,
+      "parts": {
+       "small": 1363178,
+       "large": 4009849,
+       "pac": 598234,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 1072500,
+       "other": 186816
+      },
+      "spent": 5688992,
+      "cashOnHand": 1541585,
+      "from": "2025-04-24",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6IL00458",
+      "url": "https://www.fec.gov/data/candidate/S6IL00458/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "IL-SEN:tracy",
+     "name": "Don Tracy",
+     "finance": {
+      "total": 4914363,
+      "parts": {
+       "small": 69583,
+       "large": 519704,
+       "pac": 22175,
+       "party": 1250,
+       "self": 4250000,
+       "public": 0,
+       "transfers": 4205,
+       "other": 47447
+      },
+      "spent": 4431346,
+      "cashOnHand": 483017,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6IL00615",
+      "url": "https://www.fec.gov/data/candidate/S6IL00615/?cycle=2026&election_full=true",
+      "debts": 4250000
+     }
+    }
+   ]
+  },
+  {
+   "id": "KS-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "KS-SEN:hamilton",
+     "name": "Adam Hamilton",
+     "finance": {
+      "total": 19175044,
+      "parts": {
+       "small": 4674136,
+       "large": 11851872,
+       "pac": 245500,
+       "party": 600,
+       "self": 50206,
+       "public": 0,
+       "transfers": 2313000,
+       "other": 39731
+      },
+      "spent": 16300681,
+      "cashOnHand": 2874364,
+      "from": "2026-02-26",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6KS00312",
+      "url": "https://www.fec.gov/data/candidate/S6KS00312/?cycle=2026&election_full=true",
+      "debts": 50000
+     }
+    },
+    {
+     "id": "KS-SEN:marshall",
+     "name": "Roger Marshall",
+     "finance": {
+      "total": 7546611,
+      "parts": {
+       "small": 373466,
+       "large": 2924854,
+       "pac": 2910495,
+       "party": 72000,
+       "self": 0,
+       "public": 0,
+       "transfers": 1115389,
+       "other": 150407
+      },
+      "spent": 6946763,
+      "cashOnHand": 809806,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S0KS00315",
+      "url": "https://www.fec.gov/data/candidate/S0KS00315/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "KY-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "KY-SEN:barr",
+     "name": "Andy Barr",
+     "finance": {
+      "total": 12541350,
+      "parts": {
+       "small": 835772,
+       "large": 6095441,
+       "pac": 2489549,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 2828110,
+       "other": 230480
+      },
+      "spent": 14680571,
+      "cashOnHand": 1553857,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6KY00286",
+      "url": "https://www.fec.gov/data/candidate/S6KY00286/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "KY-SEN:booker",
+     "name": "Charles Booker",
+     "finance": {
+      "total": 1936324,
+      "parts": {
+       "small": 1094050,
+       "large": 801922,
+       "pac": 40150,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 202
+      },
+      "spent": 1632725,
+      "cashOnHand": 303599,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6KY00385",
+      "url": "https://www.fec.gov/data/candidate/S6KY00385/?cycle=2026&election_full=true",
+      "debts": 130577
+     }
+    }
+   ]
+  },
+  {
+   "id": "LA-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "LA-SEN:letlow",
+     "name": "Julia Letlow",
+     "finance": {
+      "total": 7062069,
+      "parts": {
+       "small": 169337,
+       "large": 1400944,
+       "pac": 1243600,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 4184282,
+       "other": 1906
+      },
+      "spent": 6618899,
+      "cashOnHand": 443170,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6LA00664",
+      "url": "https://www.fec.gov/data/candidate/S6LA00664/?cycle=2026&election_full=true",
+      "note": "Transfers include $4.18M from her U.S. House campaign"
+     }
+    },
+    {
+     "id": "LA-SEN:davis",
+     "name": "Jamie Davis",
+     "finance": {
+      "total": 5019888,
+      "parts": {
+       "small": 3743089,
+       "large": 1206146,
+       "pac": 10000,
+       "party": 1000,
+       "self": 54000,
+       "public": 0,
+       "transfers": 0,
+       "other": 5653
+      },
+      "spent": 3764960,
+      "cashOnHand": 1254929,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6LA00615",
+      "url": "https://www.fec.gov/data/candidate/S6LA00615/?cycle=2026&election_full=true",
+      "debts": 54000
+     }
+    }
+   ]
+  },
+  {
+   "id": "MA-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MA-SEN:markey",
+     "name": "Ed Markey",
+     "finance": {
+      "total": 8685207,
+      "parts": {
+       "small": 1231859,
+       "large": 3175706,
+       "pac": 820940,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 2837178,
+       "other": 557523
+      },
+      "spent": 9537271,
+      "cashOnHand": 799913,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S4MA00028",
+      "url": "https://www.fec.gov/data/candidate/S4MA00028/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "MA-SEN:deaton",
+     "name": "John Deaton",
+     "finance": {
+      "total": 1674460,
+      "parts": {
+       "small": 94643,
+       "large": 485248,
+       "pac": 9975,
+       "party": 0,
+       "self": 1053414,
+       "public": 0,
+       "transfers": 0,
+       "other": 31180
+      },
+      "spent": 1186303,
+      "cashOnHand": 488156,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6MA00304",
+      "url": "https://www.fec.gov/data/candidate/S6MA00304/?cycle=2026&election_full=true",
+      "debts": 1005000
+     }
+    },
+    {
+     "id": "MA-SEN:tache",
+     "name": "Joe Tache",
+     "finance": {
+      "total": 285403,
+      "parts": {
+       "small": 78914,
+       "large": 204381,
+       "pac": 1000,
+       "party": 0,
+       "self": 570,
+       "public": 0,
+       "transfers": 0,
+       "other": 538
+      },
+      "spent": 261623,
+      "cashOnHand": 23780,
+      "from": "2025-08-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6MA00288",
+      "url": "https://www.fec.gov/data/candidate/S6MA00288/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "MA-SEN:ayyadurai",
+     "name": "Shiva Ayyadurai",
+     "finance": {
+      "total": 245729,
+      "parts": {
+       "small": 16991,
+       "large": 217906,
+       "pac": 0,
+       "party": 0,
+       "self": 10832,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 159434,
+      "cashOnHand": 85152,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S8MA00268",
+      "url": "https://www.fec.gov/data/candidate/S8MA00268/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ME-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "ME-SEN:jackson",
+     "name": "Troy Jackson",
+     "finance": {
+      "total": 26872874,
+      "parts": {
+       "small": 9882853,
+       "large": 14094265,
+       "pac": 400544,
+       "party": 67000,
+       "self": 0,
+       "public": 0,
+       "transfers": 2364352,
+       "other": 63859
+      },
+      "spent": 25276003,
+      "cashOnHand": 1596871,
+      "from": "2026-07-07",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6ME00464",
+      "url": "https://www.fec.gov/data/candidate/S6ME00464/?cycle=2026&election_full=true",
+      "debts": 700952
+     }
+    },
+    {
+     "id": "ME-SEN:collins",
+     "name": "Susan Collins",
+     "finance": {
+      "total": 25225468,
+      "parts": {
+       "small": 2715818,
+       "large": 14199716,
+       "pac": 2143873,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 5672858,
+       "other": 431204
+      },
+      "spent": 23830778,
+      "cashOnHand": 2689883,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6ME00159",
+      "url": "https://www.fec.gov/data/candidate/S6ME00159/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-SEN:el-sayed",
+     "name": "Abdul El-Sayed",
+     "finance": {
+      "total": 53830872,
+      "parts": {
+       "small": 19240273,
+       "large": 27959392,
+       "pac": 404658,
+       "party": 65850,
+       "self": 0,
+       "public": 0,
+       "transfers": 6030960,
+       "other": 129740
+      },
+      "spent": 51096843,
+      "cashOnHand": 2734029,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6MI00418",
+      "url": "https://www.fec.gov/data/candidate/S6MI00418/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "MI-SEN:rogers",
+     "name": "Mike Rogers",
+     "finance": {
+      "total": 23016439,
+      "parts": {
+       "small": 3722505,
+       "large": 11709808,
+       "pac": 1290277,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 6163269,
+       "other": 68580
+      },
+      "spent": 19369637,
+      "cashOnHand": 3902506,
+      "from": "2025-01-01",
+      "asOf": "2026-10-22",
+      "source": "FEC",
+      "fecId": "S4MI00595",
+      "url": "https://www.fec.gov/data/candidate/S4MI00595/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "MN-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MN-SEN:flanagan",
+     "name": "Peggy Flanagan",
+     "finance": {
+      "total": 11563963,
+      "parts": {
+       "small": 4472333,
+       "large": 6156893,
+       "pac": 536181,
+       "party": 1000,
+       "self": 7000,
+       "public": 0,
+       "transfers": 327644,
+       "other": 62912
+      },
+      "spent": 10570749,
+      "cashOnHand": 993214,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6MN00440",
+      "url": "https://www.fec.gov/data/candidate/S6MN00440/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "MN-SEN:tafoya",
+     "name": "Michele Tafoya",
+     "finance": {
+      "total": 12501786,
+      "parts": {
+       "small": 5258641,
+       "large": 5828687,
+       "pac": 334251,
+       "party": 62000,
+       "self": 7878,
+       "public": 0,
+       "transfers": 1006434,
+       "other": 3894
+      },
+      "spent": 9682730,
+      "cashOnHand": 2819387,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6MN00556",
+      "url": "https://www.fec.gov/data/candidate/S6MN00556/?cycle=2026&election_full=true",
+      "debts": 442060
+     }
+    }
+   ]
+  },
+  {
+   "id": "MS-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MS-SEN:hyde-smith",
+     "name": "Cindy Hyde-Smith",
+     "finance": {
+      "total": 6279659,
+      "parts": {
+       "small": 552869,
+       "large": 3134258,
+       "pac": 1635100,
+       "party": 63044,
+       "self": 0,
+       "public": 0,
+       "transfers": 889685,
+       "other": 4704
+      },
+      "spent": 5045478,
+      "cashOnHand": 1395724,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S8MS00261",
+      "url": "https://www.fec.gov/data/candidate/S8MS00261/?cycle=2026&election_full=true",
+      "debts": 60000
+     }
+    },
+    {
+     "id": "MS-SEN:colom",
+     "name": "Scott Colom",
+     "finance": {
+      "total": 4400890,
+      "parts": {
+       "small": 986157,
+       "large": 2605684,
+       "pac": 418385,
+       "party": 600,
+       "self": 25293,
+       "public": 0,
+       "transfers": 364100,
+       "other": 671
+      },
+      "spent": 3382173,
+      "cashOnHand": 1018717,
+      "from": "2025-08-21",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6MS00133",
+      "url": "https://www.fec.gov/data/candidate/S6MS00133/?cycle=2026&election_full=true",
+      "debts": 175988
+     }
+    },
+    {
+     "id": "MS-SEN:pinkins",
+     "name": "Ty Pinkins",
+     "finance": {
+      "total": 104311,
+      "parts": {
+       "small": 66787,
+       "large": 33180,
+       "pac": 0,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 4344
+      },
+      "spent": 105063,
+      "cashOnHand": 4863,
+      "from": "2025-01-01",
+      "asOf": "2026-09-30",
+      "source": "FEC",
+      "fecId": "S4MS00187",
+      "url": "https://www.fec.gov/data/candidate/S4MS00187/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "MT-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MT-SEN:bodnar",
+     "name": "Seth Bodnar",
+     "finance": {
+      "total": 4918341,
+      "parts": {
+       "small": 726676,
+       "large": 4023481,
+       "pac": 163050,
+       "party": 2500,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 2634
+      },
+      "spent": 4337420,
+      "cashOnHand": 580921,
+      "from": "2026-03-04",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6MT00287",
+      "url": "https://www.fec.gov/data/candidate/S6MT00287/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "MT-SEN:alme",
+     "name": "Kurt Alme",
+     "finance": {
+      "total": 3013681,
+      "parts": {
+       "small": 192402,
+       "large": 1552668,
+       "pac": 817700,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 388911,
+       "other": 0
+      },
+      "spent": 2410943,
+      "cashOnHand": 602738,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6MT00295",
+      "url": "https://www.fec.gov/data/candidate/S6MT00295/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "MT-SEN:bankhead",
+     "name": "Alani Bankhead",
+     "finance": {
+      "total": 190540,
+      "parts": {
+       "small": 86905,
+       "large": 93217,
+       "pac": 525,
+       "party": 2575,
+       "self": 4106,
+       "public": 0,
+       "transfers": 0,
+       "other": 3211
+      },
+      "spent": 167720,
+      "cashOnHand": 22820,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6MT00253",
+      "url": "https://www.fec.gov/data/candidate/S6MT00253/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "MT-SEN:austin",
+     "name": "Kyle Austin",
+     "finance": {
+      "total": 261825,
+      "parts": {
+       "small": 111,
+       "large": 527,
+       "pac": 0,
+       "party": 0,
+       "self": 261188,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 259691,
+      "cashOnHand": 2684,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6MT00261",
+      "url": "https://www.fec.gov/data/candidate/S6MT00261/?cycle=2026&election_full=true",
+      "debts": 57270
+     }
+    }
+   ]
+  },
+  {
+   "id": "NC-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NC-SEN:cooper",
+     "name": "Roy Cooper",
+     "finance": {
+      "total": 49585341,
+      "parts": {
+       "small": 5983040,
+       "large": 12002337,
+       "pac": 931507,
+       "party": 72113,
+       "self": 0,
+       "public": 0,
+       "transfers": 28252755,
+       "other": 2343589
+      },
+      "spent": 40496482,
+      "cashOnHand": 9088860,
+      "from": "2025-07-25",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6NC00407",
+      "url": "https://www.fec.gov/data/candidate/S6NC00407/?cycle=2026&election_full=true",
+      "debts": 55873
+     }
+    },
+    {
+     "id": "NC-SEN:whatley",
+     "name": "Michael Whatley",
+     "finance": {
+      "total": 13668468,
+      "parts": {
+       "small": 2273875,
+       "large": 4989671,
+       "pac": 970255,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 5103194,
+       "other": 269472
+      },
+      "spent": 12766229,
+      "cashOnHand": 902238,
+      "from": "2025-06-30",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6NC00415",
+      "url": "https://www.fec.gov/data/candidate/S6NC00415/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NC-SEN:dublin",
+     "name": "Michael Dublin",
+     "finance": {
+      "total": 28231,
+      "parts": {
+       "small": 2814,
+       "large": 3518,
+       "pac": 0,
+       "party": 1740,
+       "self": 20000,
+       "public": 0,
+       "transfers": 0,
+       "other": 159
+      },
+      "spent": 26976,
+      "cashOnHand": 2996,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6NC00563",
+      "url": "https://www.fec.gov/data/candidate/S6NC00563/?cycle=2026&election_full=true",
+      "debts": 20000
+     }
+    }
+   ]
+  },
+  {
+   "id": "NE-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NE-SEN:ricketts",
+     "name": "Pete Ricketts",
+     "finance": {
+      "total": 14546959,
+      "parts": {
+       "small": 322651,
+       "large": 2538857,
+       "pac": 1912381,
+       "party": 62000,
+       "self": 7296348,
+       "public": 0,
+       "transfers": 2334894,
+       "other": 79829
+      },
+      "spent": 13815790,
+      "cashOnHand": 1218139,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6NE00129",
+      "url": "https://www.fec.gov/data/candidate/S6NE00129/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NE-SEN:osborn",
+     "name": "Dan Osborn",
+     "finance": {
+      "total": 11029845,
+      "parts": {
+       "small": 3989711,
+       "large": 6585262,
+       "pac": 230138,
+       "party": 200,
+       "self": 11,
+       "public": 0,
+       "transfers": 170651,
+       "other": 53873
+      },
+      "spent": 9139828,
+      "cashOnHand": 1953183,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S4NE00207",
+      "url": "https://www.fec.gov/data/candidate/S4NE00207/?cycle=2026&election_full=true",
+      "debts": 24966
+     }
+    },
+    {
+     "id": "NE-SEN:marvin",
+     "name": "Mike Marvin",
+     "finance": {
+      "total": 27750,
+      "parts": {
+       "small": 110,
+       "large": 27640,
+       "pac": 0,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 27750,
+      "cashOnHand": 0,
+      "from": "2026-03-02",
+      "asOf": "2026-09-11",
+      "source": "FEC",
+      "fecId": "S6NE00152",
+      "url": "https://www.fec.gov/data/candidate/S6NE00152/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NH-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NH-SEN:pappas",
+     "name": "Chris Pappas",
+     "finance": {
+      "total": 23703648,
+      "parts": {
+       "small": 7146628,
+       "large": 13933474,
+       "pac": 1360044,
+       "party": 64250,
+       "self": 0,
+       "public": 0,
+       "transfers": 1196080,
+       "other": 3172
+      },
+      "spent": 22126867,
+      "cashOnHand": 1984366,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6NH00141",
+      "url": "https://www.fec.gov/data/candidate/S6NH00141/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NH-SEN:sununu",
+     "name": "John E. Sununu",
+     "finance": {
+      "total": 5681528,
+      "parts": {
+       "small": 643022,
+       "large": 2571158,
+       "pac": 574000,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 1827317,
+       "other": 4031
+      },
+      "spent": 3936991,
+      "cashOnHand": 1711396,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6NH00208",
+      "url": "https://www.fec.gov/data/candidate/S6NH00208/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NJ-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NJ-SEN:booker",
+     "name": "Cory Booker",
+     "finance": {
+      "total": 35910076,
+      "parts": {
+       "small": 14263824,
+       "large": 9988049,
+       "pac": 569540,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 9764489,
+       "other": 1324175
+      },
+      "spent": 18897772,
+      "cashOnHand": 22899411,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S4NJ00185",
+      "url": "https://www.fec.gov/data/candidate/S4NJ00185/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NJ-SEN:murphy",
+     "name": "Justin Murphy",
+     "finance": {
+      "total": 68189,
+      "parts": {
+       "small": 18315,
+       "large": 38466,
+       "pac": 2570,
+       "party": 150,
+       "self": 4932,
+       "public": 0,
+       "transfers": 0,
+       "other": 3756
+      },
+      "spent": 57102,
+      "cashOnHand": 10191,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S4NJ00532",
+      "url": "https://www.fec.gov/data/candidate/S4NJ00532/?cycle=2026&election_full=true",
+      "debts": 8782
+     }
+    }
+   ]
+  },
+  {
+   "id": "NM-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NM-SEN:lujan",
+     "name": "Ben Ray Luján",
+     "finance": {
+      "total": 9111371,
+      "parts": {
+       "small": 1829151,
+       "large": 3680897,
+       "pac": 2495680,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 999815,
+       "other": 105828
+      },
+      "spent": 6347418,
+      "cashOnHand": 2843276,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S0NM00058",
+      "url": "https://www.fec.gov/data/candidate/S0NM00058/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NM-SEN:marker",
+     "name": "Larry Marker",
+     "finance": {
+      "total": 99230,
+      "parts": {
+       "small": 7918,
+       "large": 85962,
+       "pac": 0,
+       "party": 5350,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 90122,
+      "cashOnHand": 88,
+      "from": "2026-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6NM01186",
+      "url": "https://www.fec.gov/data/candidate/S6NM01186/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-SEN:brown",
+     "name": "Sherrod Brown",
+     "finance": {
+      "total": 68409200,
+      "parts": {
+       "small": 22438141,
+       "large": 35423801,
+       "pac": 1055783,
+       "party": 200,
+       "self": 0,
+       "public": 0,
+       "transfers": 9159247,
+       "other": 332027
+      },
+      "spent": 63956397,
+      "cashOnHand": 4452803,
+      "from": "2025-08-11",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6OH00163",
+      "url": "https://www.fec.gov/data/candidate/S6OH00163/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "OH-SEN:husted",
+     "name": "Jon Husted",
+     "finance": {
+      "total": 19894786,
+      "parts": {
+       "small": 2915599,
+       "large": 6927593,
+       "pac": 2733610,
+       "party": 65450,
+       "self": 0,
+       "public": 0,
+       "transfers": 7229768,
+       "other": 22766
+      },
+      "spent": 15655689,
+      "cashOnHand": 4239097,
+      "from": "2025-01-01",
+      "asOf": "2026-10-22",
+      "source": "FEC",
+      "fecId": "S6OH00304",
+      "url": "https://www.fec.gov/data/candidate/S6OH00304/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "OH-SEN:levy",
+     "name": "Greg Levy",
+     "finance": {
+      "total": 132712,
+      "parts": {
+       "small": 59073,
+       "large": 72573,
+       "pac": 1000,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 66
+      },
+      "spent": 107925,
+      "cashOnHand": 26916,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6OH00395",
+      "url": "https://www.fec.gov/data/candidate/S6OH00395/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "OH-SEN:redpath",
+     "name": "William Redpath",
+     "finance": {
+      "total": 55256,
+      "parts": {
+       "small": 3423,
+       "large": 25640,
+       "pac": 1723,
+       "party": 5975,
+       "self": 18490,
+       "public": 0,
+       "transfers": 0,
+       "other": 5
+      },
+      "spent": 47000,
+      "cashOnHand": 8255,
+      "from": "2025-07-03",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6OH00429",
+      "url": "https://www.fec.gov/data/candidate/S6OH00429/?cycle=2026&election_full=true",
+      "debts": 5000
+     }
+    }
+   ]
+  },
+  {
+   "id": "OK-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OK-SEN:hern",
+     "name": "Kevin Hern",
+     "finance": {
+      "total": 10862233,
+      "parts": {
+       "small": 232826,
+       "large": 1268662,
+       "pac": 1027600,
+       "party": 62000,
+       "self": 5050000,
+       "public": 0,
+       "transfers": 3143879,
+       "other": 77267
+      },
+      "spent": 8050247,
+      "cashOnHand": 2811987,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6OK04247",
+      "url": "https://www.fec.gov/data/candidate/S6OK04247/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "OK-SEN:thomas",
+     "name": "N’Kiyla Jasmine Thomas",
+     "finance": {
+      "total": 115954,
+      "parts": {
+       "small": 68791,
+       "large": 46424,
+       "pac": 0,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 739
+      },
+      "spent": 92789,
+      "cashOnHand": 24102,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6OK04163",
+      "url": "https://www.fec.gov/data/candidate/S6OK04163/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "OR-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OR-SEN:merkley",
+     "name": "Jeff Merkley",
+     "finance": {
+      "total": 8729810,
+      "parts": {
+       "small": 2588423,
+       "large": 4334847,
+       "pac": 632370,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 437971,
+       "other": 736199
+      },
+      "spent": 5914121,
+      "cashOnHand": 6621250,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S8OR00207",
+      "url": "https://www.fec.gov/data/candidate/S8OR00207/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "OR-SEN:smith",
+     "name": "David Brock Smith",
+     "finance": {
+      "total": 311174,
+      "parts": {
+       "small": 127260,
+       "large": 167128,
+       "pac": 14250,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 2535
+      },
+      "spent": 266976,
+      "cashOnHand": 44198,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6OR05218",
+      "url": "https://www.fec.gov/data/candidate/S6OR05218/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "RI-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "RI-SEN:reed",
+     "name": "Jack Reed",
+     "finance": {
+      "total": 4814653,
+      "parts": {
+       "small": 54837,
+       "large": 2882184,
+       "pac": 1673985,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 39563,
+       "other": 164084
+      },
+      "spent": 4940508,
+      "cashOnHand": 1883532,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6RI00163",
+      "url": "https://www.fec.gov/data/candidate/S6RI00163/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "RI-SEN:mckay",
+     "name": "Raymond McKay",
+     "finance": {
+      "total": 207231,
+      "parts": {
+       "small": 75303,
+       "large": 126984,
+       "pac": 3350,
+       "party": 1000,
+       "self": 116,
+       "public": 0,
+       "transfers": 0,
+       "other": 478
+      },
+      "spent": 199212,
+      "cashOnHand": 8357,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S4RI00051",
+      "url": "https://www.fec.gov/data/candidate/S4RI00051/?cycle=2026&election_full=true",
+      "debts": 690
+     }
+    },
+    {
+     "id": "RI-SEN:bahry",
+     "name": "Michael Bahry",
+     "finance": {
+      "total": 125116,
+      "parts": {
+       "small": 211,
+       "large": 2085,
+       "pac": 0,
+       "party": 0,
+       "self": 122050,
+       "public": 0,
+       "transfers": 0,
+       "other": 771
+      },
+      "spent": 32499,
+      "cashOnHand": 92617,
+      "from": "2026-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6RI00288",
+      "url": "https://www.fec.gov/data/candidate/S6RI00288/?cycle=2026&election_full=true",
+      "debts": 122050
+     }
+    }
+   ]
+  },
+  {
+   "id": "SC-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "SC-SEN:andrews",
+     "name": "Annie Andrews",
+     "finance": {
+      "total": 24216841,
+      "parts": {
+       "small": 12500480,
+       "large": 11062893,
+       "pac": 249688,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 396101,
+       "other": 7678
+      },
+      "spent": 22507375,
+      "cashOnHand": 1709466,
+      "from": "2025-05-22",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6SC04239",
+      "url": "https://www.fec.gov/data/candidate/S6SC04239/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "SC-SEN:graham",
+     "name": "Darline Graham",
+     "finance": {
+      "total": 1917646,
+      "parts": {
+       "small": 77935,
+       "large": 646347,
+       "pac": 499500,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 672864,
+       "other": 21000
+      },
+      "spent": 1283216,
+      "cashOnHand": 634430,
+      "from": "2026-07-23",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6SC04437",
+      "url": "https://www.fec.gov/data/candidate/S6SC04437/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "SD-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "SD-SEN:rounds",
+     "name": "Mike Rounds",
+     "finance": {
+      "total": 5148217,
+      "parts": {
+       "small": 92025,
+       "large": 1931095,
+       "pac": 2387750,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 435580,
+       "other": 239768
+      },
+      "spent": 5535196,
+      "cashOnHand": 1295543,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S4SD00049",
+      "url": "https://www.fec.gov/data/candidate/S4SD00049/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "SD-SEN:bengs",
+     "name": "Brian Bengs",
+     "finance": {
+      "total": 1855763,
+      "parts": {
+       "small": 870722,
+       "large": 935727,
+       "pac": 43000,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 6314
+      },
+      "spent": 1786055,
+      "cashOnHand": 69708,
+      "from": "2025-04-28",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6SD01117",
+      "url": "https://www.fec.gov/data/candidate/S6SD01117/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "TN-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TN-SEN:hagerty",
+     "name": "Bill Hagerty",
+     "finance": {
+      "total": 17226961,
+      "parts": {
+       "small": 2962801,
+       "large": 7745803,
+       "pac": 3210449,
+       "party": 63000,
+       "self": 0,
+       "public": 0,
+       "transfers": 3048604,
+       "other": 196304
+      },
+      "spent": 12325565,
+      "cashOnHand": 4956455,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S0TN00169",
+      "url": "https://www.fec.gov/data/candidate/S0TN00169/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "TN-SEN:bradshaw",
+     "name": "Marquita Bradshaw",
+     "finance": {
+      "total": 35195,
+      "parts": {
+       "small": 24996,
+       "large": 9749,
+       "pac": 450,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 27022,
+      "cashOnHand": 8252,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S4TN00542",
+      "url": "https://www.fec.gov/data/candidate/S4TN00542/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-SEN:talarico",
+     "name": "James Talarico",
+     "finance": {
+      "total": 146349912,
+      "parts": {
+       "small": 75299933,
+       "large": 64476670,
+       "pac": 468806,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 5983938,
+       "other": 58567
+      },
+      "spent": 136427055,
+      "cashOnHand": 9922857,
+      "from": "2025-09-08",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6TX00479",
+      "url": "https://www.fec.gov/data/candidate/S6TX00479/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "TX-SEN:paxton",
+     "name": "Ken Paxton",
+     "finance": {
+      "total": 22327474,
+      "parts": {
+       "small": 6077264,
+       "large": 14920691,
+       "pac": 392150,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 853633,
+       "other": 21737
+      },
+      "spent": 17543066,
+      "cashOnHand": 4784408,
+      "from": "2025-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6TX00388",
+      "url": "https://www.fec.gov/data/candidate/S6TX00388/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "TX-SEN:brown",
+     "name": "Ted Brown",
+     "finance": {
+      "total": 14257,
+      "parts": {
+       "small": 3357,
+       "large": 5150,
+       "pac": 0,
+       "party": 0,
+       "self": 5750,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 13037,
+      "cashOnHand": 1288,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S4TX00888",
+      "url": "https://www.fec.gov/data/candidate/S4TX00888/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "VA-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VA-SEN:warner",
+     "name": "Mark Warner",
+     "finance": {
+      "total": 27493348,
+      "parts": {
+       "small": 3845638,
+       "large": 10965038,
+       "pac": 3736290,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 7912360,
+       "other": 1034022
+      },
+      "spent": 21664081,
+      "cashOnHand": 6217677,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6VA00093",
+      "url": "https://www.fec.gov/data/candidate/S6VA00093/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "VA-SEN:mizusawa",
+     "name": "Bert Mizusawa",
+     "finance": {
+      "total": 1141130,
+      "parts": {
+       "small": 418614,
+       "large": 482974,
+       "pac": 11350,
+       "party": 75,
+       "self": 175129,
+       "public": 0,
+       "transfers": 52190,
+       "other": 797
+      },
+      "spent": 987432,
+      "cashOnHand": 154034,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S8VA00321",
+      "url": "https://www.fec.gov/data/candidate/S8VA00321/?cycle=2026&election_full=true",
+      "debts": 45783
+     }
+    }
+   ]
+  },
+  {
+   "id": "WV-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WV-SEN:capito",
+     "name": "Shelley Moore Capito",
+     "finance": {
+      "total": 7314563,
+      "parts": {
+       "small": 198136,
+       "large": 3355521,
+       "pac": 3132538,
+       "party": 62050,
+       "self": 0,
+       "public": 0,
+       "transfers": 565991,
+       "other": 328
+      },
+      "spent": 6714017,
+      "cashOnHand": 3071076,
+      "from": "2021-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S4WV00159",
+      "url": "https://www.fec.gov/data/candidate/S4WV00159/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "WV-SEN:anderson",
+     "name": "Rachel Fetty Anderson",
+     "finance": {
+      "total": 164558,
+      "parts": {
+       "small": 47596,
+       "large": 77321,
+       "pac": 2500,
+       "party": 250,
+       "self": 36890,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 135873,
+      "cashOnHand": 35681,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6WV00188",
+      "url": "https://www.fec.gov/data/candidate/S6WV00188/?cycle=2026&election_full=true",
+      "debts": 25000
+     }
+    },
+    {
+     "id": "WV-SEN:wilson",
+     "name": "S. Marshall Wilson",
+     "finance": {
+      "total": 65287,
+      "parts": {
+       "small": 1836,
+       "large": 6200,
+       "pac": 0,
+       "party": 0,
+       "self": 57252,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 64037,
+      "cashOnHand": 1250,
+      "from": "2026-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6WV00204",
+      "url": "https://www.fec.gov/data/candidate/S6WV00204/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "WY-SEN",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WY-SEN:hageman",
+     "name": "Harriet Hageman",
+     "finance": {
+      "total": 2810754,
+      "parts": {
+       "small": 626186,
+       "large": 847575,
+       "pac": 659446,
+       "party": 62000,
+       "self": 0,
+       "public": 0,
+       "transfers": 565559,
+       "other": 49986
+      },
+      "spent": 3254295,
+      "cashOnHand": 439422,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6WY00209",
+      "url": "https://www.fec.gov/data/candidate/S6WY00209/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "WY-SEN:byrd",
+     "name": "James W. Byrd",
+     "finance": {
+      "total": 53560,
+      "parts": {
+       "small": 20440,
+       "large": 27120,
+       "pac": 5000,
+       "party": 0,
+       "self": 1000,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 46561,
+      "cashOnHand": 7927,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "S6WY00217",
+      "url": "https://www.fec.gov/data/candidate/S6WY00217/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "LA-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "LA-H-06:miguez",
+     "name": "Blake Miguez",
+     "finance": {
+      "total": 7749606,
+      "parts": {
+       "small": 587711,
+       "large": 3236952,
+       "pac": 138919,
+       "party": 0,
+       "self": 3514561,
+       "public": 0,
+       "transfers": 227720,
+       "other": 43743
+      },
+      "spent": 6215093,
+      "cashOnHand": 1534513,
+      "from": "2025-06-16",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6LA05234",
+      "url": "https://www.fec.gov/data/candidate/H6LA05234/?cycle=2026&election_full=true",
+      "debts": 2513458
+     }
+    },
+    {
+     "id": "LA-H-06:edmonds",
+     "name": "Rick Edmonds",
+     "finance": {
+      "total": 697139,
+      "parts": {
+       "small": 1885,
+       "large": 503517,
+       "pac": 36600,
+       "party": 0,
+       "self": 155000,
+       "public": 0,
+       "transfers": 0,
+       "other": 137
+      },
+      "spent": 562504,
+      "cashOnHand": 134635,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6LA05226",
+      "url": "https://www.fec.gov/data/candidate/H6LA05226/?cycle=2026&election_full=true",
+      "debts": 155000
+     }
+    },
+    {
+     "id": "LA-H-06:forbes",
+     "name": "Pat Forbes",
+     "finance": {
+      "total": 156334,
+      "parts": {
+       "small": 40991,
+       "large": 105475,
+       "pac": 0,
+       "party": 0,
+       "self": 9856,
+       "public": 0,
+       "transfers": 0,
+       "other": 11
+      },
+      "spent": 58934,
+      "cashOnHand": 97400,
+      "from": "2026-08-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6LA06190",
+      "url": "https://www.fec.gov/data/candidate/H6LA06190/?cycle=2026&election_full=true",
+      "debts": 9856
+     }
+    },
+    {
+     "id": "LA-H-06:garcia",
+     "name": "Lindsay “Rubia” Garcia",
+     "finance": {
+      "total": 97007,
+      "parts": {
+       "small": 70209,
+       "large": 21484,
+       "pac": 0,
+       "party": 0,
+       "self": 2965,
+       "public": 0,
+       "transfers": 0,
+       "other": 2350
+      },
+      "spent": 75353,
+      "cashOnHand": 21654,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6LA05309",
+      "url": "https://www.fec.gov/data/candidate/H6LA05309/?cycle=2026&election_full=true",
+      "debts": 2965
+     }
+    },
+    {
+     "id": "LA-H-06:wagley",
+     "name": "Stephen Wagley",
+     "finance": {
+      "total": 874344,
+      "parts": {
+       "small": 668,
+       "large": 8175,
+       "pac": 0,
+       "party": 0,
+       "self": 865500,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 678710,
+      "cashOnHand": 195633,
+      "from": "2026-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6LA06182",
+      "url": "https://www.fec.gov/data/candidate/H6LA06182/?cycle=2026&election_full=true",
+      "debts": 865500
+     }
+    },
+    {
+     "id": "LA-H-06:appeaning",
+     "name": "Monique Appeaning",
+     "finance": {
+      "total": 109183,
+      "parts": {
+       "small": 450,
+       "large": 49760,
+       "pac": 50,
+       "party": 0,
+       "self": 50667,
+       "public": 0,
+       "transfers": 0,
+       "other": 8256
+      },
+      "spent": 94474,
+      "cashOnHand": 14709,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6LA06158",
+      "url": "https://www.fec.gov/data/candidate/H6LA06158/?cycle=2026&election_full=true",
+      "debts": 50667
+     }
+    },
+    {
+     "id": "LA-H-06:ldavis",
+     "name": "Larry Davis III",
+     "finance": {
+      "total": 33216,
+      "parts": {
+       "small": 5205,
+       "large": 21640,
+       "pac": 2000,
+       "party": 0,
+       "self": 3921,
+       "public": 0,
+       "transfers": 0,
+       "other": 450
+      },
+      "spent": 31397,
+      "cashOnHand": 809,
+      "from": "2025-12-16",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6LA05168",
+      "url": "https://www.fec.gov/data/candidate/H6LA05168/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "LA-H-06:mebruer",
+     "name": "Michael Mebruer",
+     "finance": {
+      "total": 70714,
+      "parts": {
+       "small": 0,
+       "large": 0,
+       "pac": 0,
+       "party": 0,
+       "self": 70714,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 55630,
+      "cashOnHand": 10987,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6LA05259",
+      "url": "https://www.fec.gov/data/candidate/H6LA05259/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "AK-H-00",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AK-H-00:begich",
+     "name": "Nick Begich III",
+     "finance": {
+      "total": 6438904,
+      "parts": {
+       "small": 1236191,
+       "large": 2073854,
+       "pac": 1243577,
+       "party": 10250,
+       "self": 0,
+       "public": 0,
+       "transfers": 1804794,
+       "other": 70238
+      },
+      "spent": 4760367,
+      "cashOnHand": 1782867,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2AK01083",
+      "url": "https://www.fec.gov/data/candidate/H2AK01083/?cycle=2026&election_full=true",
+      "debts": 225764
+     }
+    },
+    {
+     "id": "AK-H-00:hill",
+     "name": "Bill Hill",
+     "finance": {
+      "total": 2630793,
+      "parts": {
+       "small": 544240,
+       "large": 1820154,
+       "pac": 201150,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 61865,
+       "other": 3385
+      },
+      "spent": 2513061,
+      "cashOnHand": 117732,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6AK01092",
+      "url": "https://www.fec.gov/data/candidate/H6AK01092/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "AL-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AL-H-02:figures",
+     "name": "Shomari Figures",
+     "finance": {
+      "total": 2706098,
+      "parts": {
+       "small": 266409,
+       "large": 847600,
+       "pac": 1133336,
+       "party": 5000,
+       "self": 0,
+       "public": 0,
+       "transfers": 440215,
+       "other": 13538
+      },
+      "spent": 1531518,
+      "cashOnHand": 1197689,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4AL02170",
+      "url": "https://www.fec.gov/data/candidate/H4AL02170/?cycle=2026&election_full=true",
+      "debts": 12000
+     }
+    },
+    {
+     "id": "AL-H-02:marques",
+     "name": "Rhett Marques",
+     "finance": {
+      "total": 1716374,
+      "parts": {
+       "small": 13660,
+       "large": 1377245,
+       "pac": 305469,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 20000
+      },
+      "spent": 1538317,
+      "cashOnHand": 178057,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6AL01086",
+      "url": "https://www.fec.gov/data/candidate/H6AL01086/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "AR-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AR-H-02:hill",
+     "name": "French Hill",
+     "finance": {
+      "total": 5264024,
+      "parts": {
+       "small": 36760,
+       "large": 2169659,
+       "pac": 1793867,
+       "party": 5500,
+       "self": 0,
+       "public": 0,
+       "transfers": 1249580,
+       "other": 8658
+      },
+      "spent": 5151945,
+      "cashOnHand": 1488431,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4AR02141",
+      "url": "https://www.fec.gov/data/candidate/H4AR02141/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "AR-H-02:jones",
+     "name": "Chris Jones",
+     "finance": {
+      "total": 1959018,
+      "parts": {
+       "small": 496281,
+       "large": 1349732,
+       "pac": 93750,
+       "party": 2910,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 16345
+      },
+      "spent": 1684839,
+      "cashOnHand": 274179,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6AR02286",
+      "url": "https://www.fec.gov/data/candidate/H6AR02286/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "AZ-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AZ-H-01:feely",
+     "name": "Jay Feely",
+     "finance": {
+      "total": 3799654,
+      "parts": {
+       "small": 72322,
+       "large": 1828215,
+       "pac": 507110,
+       "party": 5000,
+       "self": 416460,
+       "public": 0,
+       "transfers": 952547,
+       "other": 18000
+      },
+      "spent": 3616890,
+      "cashOnHand": 182764,
+      "from": "2025-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6AZ05190",
+      "url": "https://www.fec.gov/data/candidate/H6AZ05190/?cycle=2026&election_full=true",
+      "debts": 330000
+     }
+    },
+    {
+     "id": "AZ-H-01:shah",
+     "name": "Amish Shah",
+     "finance": {
+      "total": 5654454,
+      "parts": {
+       "small": 813300,
+       "large": 3332459,
+       "pac": 534970,
+       "party": 340,
+       "self": 466653,
+       "public": 0,
+       "transfers": 503975,
+       "other": 2756
+      },
+      "spent": 5540210,
+      "cashOnHand": 206045,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4AZ01194",
+      "url": "https://www.fec.gov/data/candidate/H4AZ01194/?cycle=2026&election_full=true",
+      "debts": 36998
+     }
+    }
+   ]
+  },
+  {
+   "id": "AZ-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AZ-H-02:crane",
+     "name": "Eli Crane",
+     "finance": {
+      "total": 11904946,
+      "parts": {
+       "small": 4164614,
+       "large": 6763698,
+       "pac": 126500,
+       "party": 1000,
+       "self": 0,
+       "public": 0,
+       "transfers": 848694,
+       "other": 440
+      },
+      "spent": 10873254,
+      "cashOnHand": 1349063,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2AZ01354",
+      "url": "https://www.fec.gov/data/candidate/H2AZ01354/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "AZ-H-02:nez",
+     "name": "Jonathan Nez",
+     "finance": {
+      "total": 5805341,
+      "parts": {
+       "small": 2305211,
+       "large": 3017531,
+       "pac": 338104,
+       "party": 5000,
+       "self": 0,
+       "public": 0,
+       "transfers": 112426,
+       "other": 27069
+      },
+      "spent": 5364572,
+      "cashOnHand": 506072,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4AZ02184",
+      "url": "https://www.fec.gov/data/candidate/H4AZ02184/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "AZ-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AZ-H-05:lamb",
+     "name": "Mark Lamb",
+     "finance": {
+      "total": 1771671,
+      "parts": {
+       "small": 764906,
+       "large": 836650,
+       "pac": 129150,
+       "party": 0,
+       "self": 40047,
+       "public": 0,
+       "transfers": 0,
+       "other": 919
+      },
+      "spent": 1590920,
+      "cashOnHand": 180751,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6AZ05265",
+      "url": "https://www.fec.gov/data/candidate/H6AZ05265/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "AZ-H-05:lee",
+     "name": "Elizabeth Lee",
+     "finance": {
+      "total": 375628,
+      "parts": {
+       "small": 169747,
+       "large": 199382,
+       "pac": 0,
+       "party": 1000,
+       "self": 5000,
+       "public": 0,
+       "transfers": 500,
+       "other": 0
+      },
+      "spent": 251492,
+      "cashOnHand": 124136,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6AZ05240",
+      "url": "https://www.fec.gov/data/candidate/H6AZ05240/?cycle=2026&election_full=true",
+      "debts": 5000
+     }
+    }
+   ]
+  },
+  {
+   "id": "AZ-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AZ-H-06:ciscomani",
+     "name": "Juan Ciscomani",
+     "finance": {
+      "total": 7649794,
+      "parts": {
+       "small": 612562,
+       "large": 2390880,
+       "pac": 2028579,
+       "party": 10000,
+       "self": 0,
+       "public": 0,
+       "transfers": 2597609,
+       "other": 10165
+      },
+      "spent": 7267656,
+      "cashOnHand": 618699,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2AZ02360",
+      "url": "https://www.fec.gov/data/candidate/H2AZ02360/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "AZ-H-06:mendoza",
+     "name": "JoAnna Mendoza",
+     "finance": {
+      "total": 11242473,
+      "parts": {
+       "small": 3867579,
+       "large": 5401861,
+       "pac": 797609,
+       "party": 5872,
+       "self": 0,
+       "public": 0,
+       "transfers": 1168701,
+       "other": 850
+      },
+      "spent": 10434574,
+      "cashOnHand": 807899,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6AZ06099",
+      "url": "https://www.fec.gov/data/candidate/H6AZ06099/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "AZ-H-06:peters",
+     "name": "Jereme Peters",
+     "finance": {
+      "total": 10500,
+      "parts": {
+       "small": 0,
+       "large": 10500,
+       "pac": 0,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 10500,
+      "cashOnHand": 0,
+      "from": "2026-01-01",
+      "asOf": "2026-03-31",
+      "source": "FEC",
+      "fecId": "H6AZ06214",
+      "url": "https://www.fec.gov/data/candidate/H6AZ06214/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "CA-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CA-H-06:kiley",
+     "name": "Kevin Kiley",
+     "finance": {
+      "total": 3723215,
+      "parts": {
+       "small": 514639,
+       "large": 1801941,
+       "pac": 427341,
+       "party": 5000,
+       "self": 25,
+       "public": 0,
+       "transfers": 968724,
+       "other": 5545
+      },
+      "spent": 4069545,
+      "cashOnHand": 34648,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2CA03157",
+      "url": "https://www.fec.gov/data/candidate/H2CA03157/?cycle=2026&election_full=true",
+      "debts": 103768
+     }
+    },
+    {
+     "id": "CA-H-06:pan",
+     "name": "Richard Pan",
+     "finance": {
+      "total": 2548242,
+      "parts": {
+       "small": 529463,
+       "large": 1234169,
+       "pac": 619789,
+       "party": 1704,
+       "self": 0,
+       "public": 0,
+       "transfers": 160761,
+       "other": 2357
+      },
+      "spent": 2340306,
+      "cashOnHand": 207936,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6CA03158",
+      "url": "https://www.fec.gov/data/candidate/H6CA03158/?cycle=2026&election_full=true",
+      "debts": 55812
+     }
+    }
+   ]
+  },
+  {
+   "id": "CA-H-13",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CA-H-13:gray",
+     "name": "Adam Gray",
+     "finance": {
+      "total": 5241028,
+      "parts": {
+       "small": 555798,
+       "large": 2446624,
+       "pac": 1573575,
+       "party": 5149,
+       "self": 0,
+       "public": 0,
+       "transfers": 634024,
+       "other": 25857
+      },
+      "spent": 4584353,
+      "cashOnHand": 848633,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2CA13115",
+      "url": "https://www.fec.gov/data/candidate/H2CA13115/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "CA-H-13:lincoln",
+     "name": "Kevin Lincoln",
+     "finance": {
+      "total": 2971922,
+      "parts": {
+       "small": 608383,
+       "large": 1100203,
+       "pac": 339342,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 920648,
+       "other": 3347
+      },
+      "spent": 2547658,
+      "cashOnHand": 448388,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4CA09093",
+      "url": "https://www.fec.gov/data/candidate/H4CA09093/?cycle=2026&election_full=true",
+      "debts": 25559
+     }
+    }
+   ]
+  },
+  {
+   "id": "CA-H-22",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CA-H-22:valadao",
+     "name": "David Valadao",
+     "finance": {
+      "total": 6325324,
+      "parts": {
+       "small": 130323,
+       "large": 2073883,
+       "pac": 2285033,
+       "party": 20000,
+       "self": 0,
+       "public": 0,
+       "transfers": 1802478,
+       "other": 13607
+      },
+      "spent": 4659208,
+      "cashOnHand": 1711651,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2CA20094",
+      "url": "https://www.fec.gov/data/candidate/H2CA20094/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "CA-H-22:villegas",
+     "name": "Randy Villegas",
+     "finance": {
+      "total": 5942030,
+      "parts": {
+       "small": 1497389,
+       "large": 3585337,
+       "pac": 518759,
+       "party": 8149,
+       "self": 0,
+       "public": 0,
+       "transfers": 329934,
+       "other": 2463
+      },
+      "spent": 4979678,
+      "cashOnHand": 962352,
+      "from": "2025-04-14",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6CA22190",
+      "url": "https://www.fec.gov/data/candidate/H6CA22190/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "CA-H-48",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CA-H-48:desmond",
+     "name": "Jim Desmond",
+     "finance": {
+      "total": 3177972,
+      "parts": {
+       "small": 346178,
+       "large": 2101461,
+       "pac": 328349,
+       "party": 0,
+       "self": 532,
+       "public": 0,
+       "transfers": 401213,
+       "other": 238
+      },
+      "spent": 2460454,
+      "cashOnHand": 717518,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6CA49128",
+      "url": "https://www.fec.gov/data/candidate/H6CA49128/?cycle=2026&election_full=true",
+      "debts": 3129
+     }
+    },
+    {
+     "id": "CA-H-48:wilpert",
+     "name": "Marni von Wilpert",
+     "finance": {
+      "total": 4966576,
+      "parts": {
+       "small": 752534,
+       "large": 3126850,
+       "pac": 802872,
+       "party": 3363,
+       "self": 1975,
+       "public": 0,
+       "transfers": 274760,
+       "other": 4221
+      },
+      "spent": 4307440,
+      "cashOnHand": 659136,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6CA48310",
+      "url": "https://www.fec.gov/data/candidate/H6CA48310/?cycle=2026&election_full=true",
+      "debts": 20000
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-H-03:hurd",
+     "name": "Jeff Hurd",
+     "finance": {
+      "total": 4168636,
+      "parts": {
+       "small": 91241,
+       "large": 2186754,
+       "pac": 705101,
+       "party": 2350,
+       "self": 0,
+       "public": 0,
+       "transfers": 1146399,
+       "other": 36791
+      },
+      "spent": 3940004,
+      "cashOnHand": 237768,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4CO03357",
+      "url": "https://www.fec.gov/data/candidate/H4CO03357/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "CO-H-03:romero",
+     "name": "Dwayne Romero",
+     "finance": {
+      "total": 1701091,
+      "parts": {
+       "small": 199602,
+       "large": 962505,
+       "pac": 73550,
+       "party": 4275,
+       "self": 460000,
+       "public": 0,
+       "transfers": 0,
+       "other": 1160
+      },
+      "spent": 1504967,
+      "cashOnHand": 196124,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6CO03253",
+      "url": "https://www.fec.gov/data/candidate/H6CO03253/?cycle=2026&election_full=true",
+      "debts": 460000
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-H-04:boebert",
+     "name": "Lauren Boebert",
+     "finance": {
+      "total": 1226253,
+      "parts": {
+       "small": 444004,
+       "large": 515414,
+       "pac": 184000,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 76282,
+       "other": 6553
+      },
+      "spent": 1111236,
+      "cashOnHand": 274162,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H0CO03165",
+      "url": "https://www.fec.gov/data/candidate/H0CO03165/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "CO-H-04:laubacher",
+     "name": "Eileen Laubacher",
+     "finance": {
+      "total": 13700426,
+      "parts": {
+       "small": 9234699,
+       "large": 4403319,
+       "pac": 37944,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 19046,
+       "other": 5419
+      },
+      "spent": 11854138,
+      "cashOnHand": 1846288,
+      "from": "2025-05-05",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6CO04202",
+      "url": "https://www.fec.gov/data/candidate/H6CO04202/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-H-05:crank",
+     "name": "Jeff Crank",
+     "finance": {
+      "total": 2872434,
+      "parts": {
+       "small": 174326,
+       "large": 930532,
+       "pac": 1039350,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 700239,
+       "other": 27987
+      },
+      "spent": 2396152,
+      "cashOnHand": 542836,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6CO05142",
+      "url": "https://www.fec.gov/data/candidate/H6CO05142/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "CO-H-05:killin",
+     "name": "Jessica Killin",
+     "finance": {
+      "total": 5593463,
+      "parts": {
+       "small": 499622,
+       "large": 3515366,
+       "pac": 437990,
+       "party": 7439,
+       "self": 1007457,
+       "public": 0,
+       "transfers": 113860,
+       "other": 11730
+      },
+      "spent": 5085735,
+      "cashOnHand": 507728,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6CO05324",
+      "url": "https://www.fec.gov/data/candidate/H6CO05324/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "CO-H-05:mitchell",
+     "name": "Christopher Mitchell",
+     "finance": {
+      "total": 210,
+      "parts": {
+       "small": 0,
+       "large": 10,
+       "pac": 0,
+       "party": 0,
+       "self": 200,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 9,
+      "cashOnHand": 201,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4CO05071",
+      "url": "https://www.fec.gov/data/candidate/H4CO05071/?cycle=2026&election_full=true",
+      "debts": 11000
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-H-08:evans",
+     "name": "Gabe Evans",
+     "finance": {
+      "total": 7248106,
+      "parts": {
+       "small": 1261677,
+       "large": 2009632,
+       "pac": 1783127,
+       "party": 10000,
+       "self": 0,
+       "public": 0,
+       "transfers": 2089387,
+       "other": 94282
+      },
+      "spent": 5994909,
+      "cashOnHand": 1328189,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4CO08034",
+      "url": "https://www.fec.gov/data/candidate/H4CO08034/?cycle=2026&election_full=true",
+      "debts": 19753
+     }
+    },
+    {
+     "id": "CO-H-08:rutinel",
+     "name": "Manny Rutinel",
+     "finance": {
+      "total": 9459070,
+      "parts": {
+       "small": 3475038,
+       "large": 4794790,
+       "pac": 472827,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 710672,
+       "other": 5744
+      },
+      "spent": 8456428,
+      "cashOnHand": 1002642,
+      "from": "2025-01-27",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6CO08013",
+      "url": "https://www.fec.gov/data/candidate/H6CO08013/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-02:green",
+     "name": "Amanda Green",
+     "finance": {
+      "total": 658316,
+      "parts": {
+       "small": 77829,
+       "large": 553602,
+       "pac": 24000,
+       "party": 0,
+       "self": 2577,
+       "public": 0,
+       "transfers": 0,
+       "other": 308
+      },
+      "spent": 630178,
+      "cashOnHand": 28139,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL02299",
+      "url": "https://www.fec.gov/data/candidate/H6FL02299/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "FL-H-02:rogers",
+     "name": "Austin Rogers",
+     "finance": {
+      "total": 1359852,
+      "parts": {
+       "small": 20417,
+       "large": 780048,
+       "pac": 184000,
+       "party": 0,
+       "self": 375000,
+       "public": 0,
+       "transfers": 0,
+       "other": 387
+      },
+      "spent": 1261557,
+      "cashOnHand": 98295,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL02331",
+      "url": "https://www.fec.gov/data/candidate/H6FL02331/?cycle=2026&election_full=true",
+      "debts": 376534
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-07:dalton",
+     "name": "Bale Dalton",
+     "finance": {
+      "total": 2334664,
+      "parts": {
+       "small": 252083,
+       "large": 1709717,
+       "pac": 319625,
+       "party": 4779,
+       "self": 0,
+       "public": 0,
+       "transfers": 48302,
+       "other": 156
+      },
+      "spent": 2132410,
+      "cashOnHand": 202254,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL07215",
+      "url": "https://www.fec.gov/data/candidate/H6FL07215/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "FL-H-07:dennison",
+     "name": "Christopher Dennison",
+     "finance": {
+      "total": 10500,
+      "parts": {
+       "small": 0,
+       "large": 10500,
+       "pac": 0,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 10440,
+      "cashOnHand": 60,
+      "from": "2026-04-01",
+      "asOf": "2026-06-30",
+      "source": "FEC",
+      "fecId": "H6FL07249",
+      "url": "https://www.fec.gov/data/candidate/H6FL07249/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "FL-H-07:elijah",
+     "name": "Ryan Elijah",
+     "finance": {
+      "total": 818460,
+      "parts": {
+       "small": 19997,
+       "large": 500463,
+       "pac": 125500,
+       "party": 0,
+       "self": 134100,
+       "public": 0,
+       "transfers": 38400,
+       "other": 0
+      },
+      "spent": 645454,
+      "cashOnHand": 173006,
+      "from": "2026-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL07231",
+      "url": "https://www.fec.gov/data/candidate/H6FL07231/?cycle=2026&election_full=true",
+      "debts": 125590
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-09",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-09:green",
+     "name": "Dan Green",
+     "finance": {
+      "total": 2692713,
+      "parts": {
+       "small": 10394,
+       "large": 237194,
+       "pac": 197150,
+       "party": 5000,
+       "self": 2240000,
+       "public": 0,
+       "transfers": 2975,
+       "other": 0
+      },
+      "spent": 2243203,
+      "cashOnHand": 449960,
+      "from": "2026-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL09294",
+      "url": "https://www.fec.gov/data/candidate/H6FL09294/?cycle=2026&election_full=true",
+      "debts": 2240000
+     }
+    },
+    {
+     "id": "FL-H-09:soto",
+     "name": "Darren Soto",
+     "finance": {
+      "total": 3652280,
+      "parts": {
+       "small": 87766,
+       "large": 1480151,
+       "pac": 2051050,
+       "party": 5720,
+       "self": 0,
+       "public": 0,
+       "transfers": 21866,
+       "other": 5727
+      },
+      "spent": 3416404,
+      "cashOnHand": 249995,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL09179",
+      "url": "https://www.fec.gov/data/candidate/H6FL09179/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-13",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-13:arrigo",
+     "name": "Tony D'Arrigo",
+     "finance": {
+      "total": 28181,
+      "parts": {
+       "small": 0,
+       "large": 21221,
+       "pac": 0,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 6960
+      },
+      "spent": 2500,
+      "cashOnHand": 25681,
+      "from": "2026-04-01",
+      "asOf": "2026-06-30",
+      "source": "FEC",
+      "fecId": "H4FL13234",
+      "url": "https://www.fec.gov/data/candidate/H4FL13234/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "FL-H-13:gray",
+     "name": "Leela Gray",
+     "finance": {
+      "total": 2917665,
+      "parts": {
+       "small": 499903,
+       "large": 1969361,
+       "pac": 307834,
+       "party": 322,
+       "self": 7115,
+       "public": 0,
+       "transfers": 126647,
+       "other": 6484
+      },
+      "spent": 2261242,
+      "cashOnHand": 656423,
+      "from": "2026-02-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL13312",
+      "url": "https://www.fec.gov/data/candidate/H6FL13312/?cycle=2026&election_full=true",
+      "debts": 7000
+     }
+    },
+    {
+     "id": "FL-H-13:luna",
+     "name": "Anna Paulina Luna",
+     "finance": {
+      "total": 4351792,
+      "parts": {
+       "small": 1581399,
+       "large": 1165616,
+       "pac": 219500,
+       "party": 0,
+       "self": 97,
+       "public": 0,
+       "transfers": 1374262,
+       "other": 10919
+      },
+      "spent": 3736252,
+      "cashOnHand": 746955,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H0FL13158",
+      "url": "https://www.fec.gov/data/candidate/H0FL13158/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-14",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-14:beltran",
+     "name": "Mike Beltran",
+     "finance": {
+      "total": 2731428,
+      "parts": {
+       "small": 18360,
+       "large": 312881,
+       "pac": 167775,
+       "party": 5000,
+       "self": 2014000,
+       "public": 0,
+       "transfers": 198987,
+       "other": 14425
+      },
+      "spent": 999910,
+      "cashOnHand": 1731518,
+      "from": "2026-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL14237",
+      "url": "https://www.fec.gov/data/candidate/H6FL14237/?cycle=2026&election_full=true",
+      "debts": 2024979
+     }
+    },
+    {
+     "id": "FL-H-14:castor",
+     "name": "Kathy Castor",
+     "finance": {
+      "total": 4930537,
+      "parts": {
+       "small": 457677,
+       "large": 2620861,
+       "pac": 1417725,
+       "party": 5659,
+       "self": 0,
+       "public": 0,
+       "transfers": 414490,
+       "other": 14125
+      },
+      "spent": 4579832,
+      "cashOnHand": 577435,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL11126",
+      "url": "https://www.fec.gov/data/candidate/H6FL11126/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-16",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-16:davis",
+     "name": "Mark Davis",
+     "finance": {
+      "total": 66969,
+      "parts": {
+       "small": 43843,
+       "large": 10174,
+       "pac": 0,
+       "party": 0,
+       "self": 9185,
+       "public": 0,
+       "transfers": 0,
+       "other": 3767
+      },
+      "spent": 65270,
+      "cashOnHand": 1699,
+      "from": "2025-08-05",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL06365",
+      "url": "https://www.fec.gov/data/candidate/H6FL06365/?cycle=2026&election_full=true",
+      "debts": 8076
+     }
+    },
+    {
+     "id": "FL-H-16:gruters",
+     "name": "Sydney Gruters",
+     "finance": {
+      "total": 1618888,
+      "parts": {
+       "small": 5894,
+       "large": 1206544,
+       "pac": 351250,
+       "party": 0,
+       "self": 7000,
+       "public": 0,
+       "transfers": 48175,
+       "other": 25
+      },
+      "spent": 1366391,
+      "cashOnHand": 252497,
+      "from": "2026-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL16141",
+      "url": "https://www.fec.gov/data/candidate/H6FL16141/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "FL-H-16:kirschner",
+     "name": "Kelly Kirschner",
+     "finance": {
+      "total": 876363,
+      "parts": {
+       "small": 116236,
+       "large": 745125,
+       "pac": 14500,
+       "party": 0,
+       "self": 502,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 615224,
+      "cashOnHand": 261139,
+      "from": "2026-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL16158",
+      "url": "https://www.fec.gov/data/candidate/H6FL16158/?cycle=2026&election_full=true",
+      "debts": 873
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-22",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-22:askar",
+     "name": "Casey Askar",
+     "finance": {
+      "total": 7418255,
+      "parts": {
+       "small": 7621,
+       "large": 376005,
+       "pac": 119500,
+       "party": 0,
+       "self": 6690000,
+       "public": 0,
+       "transfers": 225129,
+       "other": 0
+      },
+      "spent": 5527093,
+      "cashOnHand": 1891162,
+      "from": "2026-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL22248",
+      "url": "https://www.fec.gov/data/candidate/H6FL22248/?cycle=2026&election_full=true",
+      "debts": 6290000
+     }
+    },
+    {
+     "id": "FL-H-22:dandiya",
+     "name": "Pia Dandiya",
+     "finance": {
+      "total": 4619822,
+      "parts": {
+       "small": 584393,
+       "large": 3017586,
+       "pac": 339872,
+       "party": 5656,
+       "self": 247000,
+       "public": 0,
+       "transfers": 425315,
+       "other": 0
+      },
+      "spent": 3884717,
+      "cashOnHand": 735105,
+      "from": "2025-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL21059",
+      "url": "https://www.fec.gov/data/candidate/H6FL21059/?cycle=2026&election_full=true",
+      "debts": 247000
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-25",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-25:jassenoff",
+     "name": "Peter Jassenoff",
+     "finance": {
+      "total": 10500,
+      "parts": {
+       "small": 0,
+       "large": 10500,
+       "pac": 0,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 10440,
+      "cashOnHand": 60,
+      "from": "2026-04-01",
+      "asOf": "2026-06-30",
+      "source": "FEC",
+      "fecId": "H6FL25068",
+      "url": "https://www.fec.gov/data/candidate/H6FL25068/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "FL-H-25:moskowitz",
+     "name": "Jared Moskowitz",
+     "finance": {
+      "total": 5710776,
+      "parts": {
+       "small": 726143,
+       "large": 3442997,
+       "pac": 945210,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 594500,
+       "other": 1926
+      },
+      "spent": 4849990,
+      "cashOnHand": 1210073,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2FL22171",
+      "url": "https://www.fec.gov/data/candidate/H2FL22171/?cycle=2026&election_full=true",
+      "debts": 5700
+     }
+    },
+    {
+     "id": "FL-H-25:singer",
+     "name": "Scott Singer",
+     "finance": {
+      "total": 3255313,
+      "parts": {
+       "small": 243334,
+       "large": 1692202,
+       "pac": 216200,
+       "party": 5000,
+       "self": 724010,
+       "public": 0,
+       "transfers": 369283,
+       "other": 5284
+      },
+      "spent": 2788688,
+      "cashOnHand": 466625,
+      "from": "2025-12-17",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL23188",
+      "url": "https://www.fec.gov/data/candidate/H6FL23188/?cycle=2026&election_full=true",
+      "debts": 582318
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-27",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-27:rodriguez",
+     "name": "Eliott Rodriguez",
+     "finance": {
+      "total": 1567393,
+      "parts": {
+       "small": 225078,
+       "large": 1288315,
+       "pac": 47000,
+       "party": 0,
+       "self": 7000,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 945602,
+      "cashOnHand": 621791,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6FL27098",
+      "url": "https://www.fec.gov/data/candidate/H6FL27098/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "FL-H-27:salazar",
+     "name": "María Elvira Salazar",
+     "finance": {
+      "total": 2519401,
+      "parts": {
+       "small": 20749,
+       "large": 618701,
+       "pac": 742579,
+       "party": 0,
+       "self": 2493,
+       "public": 0,
+       "transfers": 1068660,
+       "other": 66221
+      },
+      "spent": 2249750,
+      "cashOnHand": 1680478,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H8FL27185",
+      "url": "https://www.fec.gov/data/candidate/H8FL27185/?cycle=2026&election_full=true",
+      "debts": 14300
+     }
+    }
+   ]
+  },
+  {
+   "id": "IA-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IA-H-01:bohannan",
+     "name": "Christina Bohannan",
+     "finance": {
+      "total": 9905570,
+      "parts": {
+       "small": 1700918,
+       "large": 6526676,
+       "pac": 715378,
+       "party": 18532,
+       "self": 7000,
+       "public": 0,
+       "transfers": 897512,
+       "other": 39554
+      },
+      "spent": 7901941,
+      "cashOnHand": 2110846,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2IA02111",
+      "url": "https://www.fec.gov/data/candidate/H2IA02111/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "IA-H-01:bridgford",
+     "name": "Michael Bridgford",
+     "finance": {
+      "total": 338285,
+      "parts": {
+       "small": 2505,
+       "large": 81752,
+       "pac": 5000,
+       "party": 0,
+       "self": 149028,
+       "public": 0,
+       "transfers": 0,
+       "other": 100000
+      },
+      "spent": 261555,
+      "cashOnHand": 76730,
+      "from": "2026-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6IA01213",
+      "url": "https://www.fec.gov/data/candidate/H6IA01213/?cycle=2026&election_full=true",
+      "debts": 150000
+     }
+    },
+    {
+     "id": "IA-H-01:miller-meeks",
+     "name": "Mariannette Miller-Meeks",
+     "finance": {
+      "total": 9101898,
+      "parts": {
+       "small": 1333694,
+       "large": 2837211,
+       "pac": 2860805,
+       "party": 10000,
+       "self": 19207,
+       "public": 0,
+       "transfers": 1854756,
+       "other": 186224
+      },
+      "spent": 7774924,
+      "cashOnHand": 1700717,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H8IA02043",
+      "url": "https://www.fec.gov/data/candidate/H8IA02043/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "IA-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IA-H-02:bushaw",
+     "name": "Dave Bushaw",
+     "finance": {
+      "total": 38292,
+      "parts": {
+       "small": 10243,
+       "large": 19556,
+       "pac": 5000,
+       "party": 0,
+       "self": 2255,
+       "public": 0,
+       "transfers": 0,
+       "other": 1238
+      },
+      "spent": 26910,
+      "cashOnHand": 11318,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6IA02260",
+      "url": "https://www.fec.gov/data/candidate/H6IA02260/?cycle=2026&election_full=true",
+      "debts": 5255
+     }
+    },
+    {
+     "id": "IA-H-02:james",
+     "name": "Lindsay James",
+     "finance": {
+      "total": 3917994,
+      "parts": {
+       "small": 537632,
+       "large": 2862455,
+       "pac": 477405,
+       "party": 17557,
+       "self": 120,
+       "public": 0,
+       "transfers": 21290,
+       "other": 1534
+      },
+      "spent": 3652041,
+      "cashOnHand": 265953,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6IA02211",
+      "url": "https://www.fec.gov/data/candidate/H6IA02211/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "IA-H-02:mitchell",
+     "name": "Joe Mitchell",
+     "finance": {
+      "total": 2916069,
+      "parts": {
+       "small": 546607,
+       "large": 1601288,
+       "pac": 572500,
+       "party": 7000,
+       "self": 100000,
+       "public": 0,
+       "transfers": 76476,
+       "other": 12198
+      },
+      "spent": 2370535,
+      "cashOnHand": 545534,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6IA02237",
+      "url": "https://www.fec.gov/data/candidate/H6IA02237/?cycle=2026&election_full=true",
+      "debts": 50000
+     }
+    }
+   ]
+  },
+  {
+   "id": "IA-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IA-H-03:garriott",
+     "name": "Sarah Trone Garriott",
+     "finance": {
+      "total": 8070402,
+      "parts": {
+       "small": 1405922,
+       "large": 5824370,
+       "pac": 638188,
+       "party": 19285,
+       "self": 120,
+       "public": 0,
+       "transfers": 133456,
+       "other": 49059
+      },
+      "spent": 6916812,
+      "cashOnHand": 1153590,
+      "from": "2025-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6IA03268",
+      "url": "https://www.fec.gov/data/candidate/H6IA03268/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "IA-H-03:nunn",
+     "name": "Zach Nunn",
+     "finance": {
+      "total": 6123740,
+      "parts": {
+       "small": 172796,
+       "large": 1242803,
+       "pac": 2184469,
+       "party": 10000,
+       "self": 0,
+       "public": 0,
+       "transfers": 2458437,
+       "other": 55235
+      },
+      "spent": 5555815,
+      "cashOnHand": 620759,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2IA03119",
+      "url": "https://www.fec.gov/data/candidate/H2IA03119/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "IN-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IN-H-05:ford",
+     "name": "J. D. Ford",
+     "finance": {
+      "total": 1410737,
+      "parts": {
+       "small": 233827,
+       "large": 1044371,
+       "pac": 113854,
+       "party": 0,
+       "self": 616,
+       "public": 0,
+       "transfers": 16500,
+       "other": 1570
+      },
+      "spent": 1086209,
+      "cashOnHand": 324529,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6IN05307",
+      "url": "https://www.fec.gov/data/candidate/H6IN05307/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "IN-H-05:spartz",
+     "name": "Victoria Spartz",
+     "finance": {
+      "total": 2192717,
+      "parts": {
+       "small": 476100,
+       "large": 908399,
+       "pac": 209250,
+       "party": 0,
+       "self": 475000,
+       "public": 0,
+       "transfers": 104929,
+       "other": 19039
+      },
+      "spent": 1935845,
+      "cashOnHand": 514922,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H0IN05326",
+      "url": "https://www.fec.gov/data/candidate/H0IN05326/?cycle=2026&election_full=true",
+      "debts": 650000
+     }
+    }
+   ]
+  },
+  {
+   "id": "KY-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "KY-H-06:alvarado",
+     "name": "Ralph Alvarado",
+     "finance": {
+      "total": 2307369,
+      "parts": {
+       "small": 21299,
+       "large": 1586941,
+       "pac": 492802,
+       "party": 5000,
+       "self": 57245,
+       "public": 0,
+       "transfers": 142887,
+       "other": 1195
+      },
+      "spent": 2126558,
+      "cashOnHand": 180812,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6KY06192",
+      "url": "https://www.fec.gov/data/candidate/H6KY06192/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "KY-H-06:bowman",
+     "name": "Jay Bowman",
+     "finance": {
+      "total": 18958,
+      "parts": {
+       "small": 818,
+       "large": 5000,
+       "pac": 0,
+       "party": 0,
+       "self": 13140,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 18183,
+      "cashOnHand": 216,
+      "from": "2025-10-21",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6KY06234",
+      "url": "https://www.fec.gov/data/candidate/H6KY06234/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "KY-H-06:dembo",
+     "name": "Zach Dembo",
+     "finance": {
+      "total": 3205462,
+      "parts": {
+       "small": 358616,
+       "large": 2541871,
+       "pac": 255739,
+       "party": 0,
+       "self": 3665,
+       "public": 0,
+       "transfers": 42585,
+       "other": 2986
+      },
+      "spent": 2585132,
+      "cashOnHand": 620330,
+      "from": "2025-06-13",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6KY06184",
+      "url": "https://www.fec.gov/data/candidate/H6KY06184/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ME-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "ME-H-02:dunlap",
+     "name": "Matthew Dunlap",
+     "finance": {
+      "total": 2964964,
+      "parts": {
+       "small": 1008817,
+       "large": 1721465,
+       "pac": 212248,
+       "party": 339,
+       "self": 10000,
+       "public": 0,
+       "transfers": 10087,
+       "other": 2009
+      },
+      "spent": 2520996,
+      "cashOnHand": 443968,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6ME02171",
+      "url": "https://www.fec.gov/data/candidate/H6ME02171/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "ME-H-02:lepage",
+     "name": "Paul LePage",
+     "finance": {
+      "total": 3299130,
+      "parts": {
+       "small": 205532,
+       "large": 1483967,
+       "pac": 618812,
+       "party": 5000,
+       "self": 0,
+       "public": 0,
+       "transfers": 901286,
+       "other": 84532
+      },
+      "spent": 2450906,
+      "cashOnHand": 848224,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6ME02148",
+      "url": "https://www.fec.gov/data/candidate/H6ME02148/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-04:huizenga",
+     "name": "Bill Huizenga",
+     "finance": {
+      "total": 5562775,
+      "parts": {
+       "small": 254043,
+       "large": 2013005,
+       "pac": 2097950,
+       "party": 5900,
+       "self": 0,
+       "public": 0,
+       "transfers": 1191667,
+       "other": 210
+      },
+      "spent": 5277593,
+      "cashOnHand": 394222,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H0MI02094",
+      "url": "https://www.fec.gov/data/candidate/H0MI02094/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "MI-H-04:mccann",
+     "name": "Sean McCann",
+     "finance": {
+      "total": 4699153,
+      "parts": {
+       "small": 808987,
+       "large": 3228516,
+       "pac": 556101,
+       "party": 4779,
+       "self": 0,
+       "public": 0,
+       "transfers": 96659,
+       "other": 4111
+      },
+      "spent": 3664711,
+      "cashOnHand": 1034442,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6MI04204",
+      "url": "https://www.fec.gov/data/candidate/H6MI04204/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-07:barrett",
+     "name": "Tom Barrett",
+     "finance": {
+      "total": 8238468,
+      "parts": {
+       "small": 1915074,
+       "large": 2650300,
+       "pac": 1792508,
+       "party": 11000,
+       "self": 0,
+       "public": 0,
+       "transfers": 1856956,
+       "other": 12631
+      },
+      "spent": 7221105,
+      "cashOnHand": 1039763,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2MI07123",
+      "url": "https://www.fec.gov/data/candidate/H2MI07123/?cycle=2026&election_full=true",
+      "debts": 2809
+     }
+    },
+    {
+     "id": "MI-H-07:lawrence",
+     "name": "William Lawrence",
+     "finance": {
+      "total": 4160041,
+      "parts": {
+       "small": 916380,
+       "large": 2887755,
+       "pac": 294851,
+       "party": 5000,
+       "self": 13072,
+       "public": 0,
+       "transfers": 41187,
+       "other": 1796
+      },
+      "spent": 3531075,
+      "cashOnHand": 628966,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6MI07298",
+      "url": "https://www.fec.gov/data/candidate/H6MI07298/?cycle=2026&election_full=true",
+      "debts": 10000
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-10",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-10:bouchard",
+     "name": "Mike Bouchard Jr.",
+     "finance": {
+      "total": 2884259,
+      "parts": {
+       "small": 204673,
+       "large": 1636946,
+       "pac": 489253,
+       "party": 10950,
+       "self": 0,
+       "public": 0,
+       "transfers": 536042,
+       "other": 6395
+      },
+      "spent": 1310790,
+      "cashOnHand": 1573470,
+      "from": "2025-04-08",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6MI10359",
+      "url": "https://www.fec.gov/data/candidate/H6MI10359/?cycle=2026&election_full=true",
+      "debts": 207000
+     }
+    },
+    {
+     "id": "MI-H-10:hines",
+     "name": "Christina Hines",
+     "finance": {
+      "total": 4159693,
+      "parts": {
+       "small": 740186,
+       "large": 2640163,
+       "pac": 402910,
+       "party": 2961,
+       "self": 0,
+       "public": 0,
+       "transfers": 372405,
+       "other": 1068
+      },
+      "spent": 3152065,
+      "cashOnHand": 1007628,
+      "from": "2025-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6MI10276",
+      "url": "https://www.fec.gov/data/candidate/H6MI10276/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "MN-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MN-H-01:finstad",
+     "name": "Brad Finstad",
+     "finance": {
+      "total": 2765870,
+      "parts": {
+       "small": 183748,
+       "large": 850662,
+       "pac": 1356914,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 374546,
+       "other": 0
+      },
+      "spent": 2223657,
+      "cashOnHand": 603622,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2MN01223",
+      "url": "https://www.fec.gov/data/candidate/H2MN01223/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "MN-H-01:johnson",
+     "name": "Jake Johnson",
+     "finance": {
+      "total": 3507568,
+      "parts": {
+       "small": 989426,
+       "large": 2073849,
+       "pac": 351683,
+       "party": 16500,
+       "self": 5372,
+       "public": 0,
+       "transfers": 66879,
+       "other": 3859
+      },
+      "spent": 2946475,
+      "cashOnHand": 561094,
+      "from": "2025-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6MN01190",
+      "url": "https://www.fec.gov/data/candidate/H6MN01190/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "MO-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MO-H-02:wagner",
+     "name": "Ann Wagner",
+     "finance": {
+      "total": 4189876,
+      "parts": {
+       "small": 761703,
+       "large": 1593182,
+       "pac": 1437714,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 217383,
+       "other": 179893
+      },
+      "spent": 5669709,
+      "cashOnHand": 1631397,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2MO02102",
+      "url": "https://www.fec.gov/data/candidate/H2MO02102/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "MO-H-02:wellman",
+     "name": "Fred Wellman",
+     "finance": {
+      "total": 2178965,
+      "parts": {
+       "small": 792969,
+       "large": 1247211,
+       "pac": 136125,
+       "party": 0,
+       "self": 1378,
+       "public": 0,
+       "transfers": 0,
+       "other": 1282
+      },
+      "spent": 1938247,
+      "cashOnHand": 240718,
+      "from": "2025-09-11",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6MO02343",
+      "url": "https://www.fec.gov/data/candidate/H6MO02343/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "MT-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MT-H-01:flint",
+     "name": "Aaron Flint",
+     "finance": {
+      "total": 2856139,
+      "parts": {
+       "small": 452866,
+       "large": 1456911,
+       "pac": 599250,
+       "party": 5000,
+       "self": 0,
+       "public": 0,
+       "transfers": 342053,
+       "other": 60
+      },
+      "spent": 2447986,
+      "cashOnHand": 408153,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6MT01152",
+      "url": "https://www.fec.gov/data/candidate/H6MT01152/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "MT-H-01:forstag",
+     "name": "Sam Forstag",
+     "finance": {
+      "total": 4312110,
+      "parts": {
+       "small": 1193965,
+       "large": 2294603,
+       "pac": 400050,
+       "party": 1700,
+       "self": 1347,
+       "public": 0,
+       "transfers": 409184,
+       "other": 11261
+      },
+      "spent": 3585985,
+      "cashOnHand": 726126,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6MT01137",
+      "url": "https://www.fec.gov/data/candidate/H6MT01137/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NC-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NC-H-01:buckhout",
+     "name": "Laurie Buckhout",
+     "finance": {
+      "total": 4787737,
+      "parts": {
+       "small": 160543,
+       "large": 919886,
+       "pac": 533788,
+       "party": 5700,
+       "self": 2402740,
+       "public": 0,
+       "transfers": 764590,
+       "other": 491
+      },
+      "spent": 3376140,
+      "cashOnHand": 1437901,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4NC01137",
+      "url": "https://www.fec.gov/data/candidate/H4NC01137/?cycle=2026&election_full=true",
+      "debts": 3101000
+     }
+    },
+    {
+     "id": "NC-H-01:davis",
+     "name": "Don Davis",
+     "finance": {
+      "total": 5805482,
+      "parts": {
+       "small": 573801,
+       "large": 2749133,
+       "pac": 1894819,
+       "party": 5720,
+       "self": 0,
+       "public": 0,
+       "transfers": 572784,
+       "other": 9226
+      },
+      "spent": 5250506,
+      "cashOnHand": 825818,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2NC02287",
+      "url": "https://www.fec.gov/data/candidate/H2NC02287/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NC-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NC-H-03:murphy",
+     "name": "Greg Murphy",
+     "finance": {
+      "total": 2897749,
+      "parts": {
+       "small": 31914,
+       "large": 1156141,
+       "pac": 1255549,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 374276,
+       "other": 79869
+      },
+      "spent": 2225520,
+      "cashOnHand": 2255691,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H0NC03172",
+      "url": "https://www.fec.gov/data/candidate/H0NC03172/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NC-H-03:smith",
+     "name": "Raymond Smith Jr.",
+     "finance": {
+      "total": 366581,
+      "parts": {
+       "small": 121001,
+       "large": 198614,
+       "pac": 36250,
+       "party": 1000,
+       "self": 100,
+       "public": 0,
+       "transfers": 9508,
+       "other": 108
+      },
+      "spent": 321979,
+      "cashOnHand": 44282,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NC03229",
+      "url": "https://www.fec.gov/data/candidate/H6NC03229/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NC-H-11",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NC-H-11:ager",
+     "name": "Jamie Ager",
+     "finance": {
+      "total": 5869453,
+      "parts": {
+       "small": 1133244,
+       "large": 3907244,
+       "pac": 370870,
+       "party": 8232,
+       "self": 0,
+       "public": 0,
+       "transfers": 441342,
+       "other": 8522
+      },
+      "spent": 5249295,
+      "cashOnHand": 620158,
+      "from": "2025-07-31",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NC11248",
+      "url": "https://www.fec.gov/data/candidate/H6NC11248/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NC-H-11:balkcom",
+     "name": "Jennifer Balkcom",
+     "finance": {
+      "total": 399492,
+      "parts": {
+       "small": 8789,
+       "large": 97403,
+       "pac": 245109,
+       "party": 6000,
+       "self": 0,
+       "public": 0,
+       "transfers": 42190,
+       "other": 0
+      },
+      "spent": 104674,
+      "cashOnHand": 294818,
+      "from": "2026-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NC11321",
+      "url": "https://www.fec.gov/data/candidate/H6NC11321/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NE-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NE-H-01:backemeyer",
+     "name": "Chris Backemeyer",
+     "finance": {
+      "total": 1154613,
+      "parts": {
+       "small": 199601,
+       "large": 771901,
+       "pac": 77000,
+       "party": 0,
+       "self": 105195,
+       "public": 0,
+       "transfers": 0,
+       "other": 916
+      },
+      "spent": 799447,
+      "cashOnHand": 355166,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NE01143",
+      "url": "https://www.fec.gov/data/candidate/H6NE01143/?cycle=2026&election_full=true",
+      "debts": 100000
+     }
+    },
+    {
+     "id": "NE-H-01:flood",
+     "name": "Mike Flood",
+     "finance": {
+      "total": 2770861,
+      "parts": {
+       "small": 37878,
+       "large": 1131618,
+       "pac": 1393877,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 199647,
+       "other": 7841
+      },
+      "spent": 2131738,
+      "cashOnHand": 859905,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2NE01118",
+      "url": "https://www.fec.gov/data/candidate/H2NE01118/?cycle=2026&election_full=true",
+      "debts": 6046
+     }
+    }
+   ]
+  },
+  {
+   "id": "NE-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NE-H-02:harding",
+     "name": "Brinker Harding",
+     "finance": {
+      "total": 2850577,
+      "parts": {
+       "small": 90817,
+       "large": 1491773,
+       "pac": 494000,
+       "party": 10000,
+       "self": 3500,
+       "public": 0,
+       "transfers": 759664,
+       "other": 823
+      },
+      "spent": 2537204,
+      "cashOnHand": 313373,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NE02208",
+      "url": "https://www.fec.gov/data/candidate/H6NE02208/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NE-H-02:powell",
+     "name": "Denise Powell",
+     "finance": {
+      "total": 5093104,
+      "parts": {
+       "small": 865387,
+       "large": 3225249,
+       "pac": 506267,
+       "party": 5317,
+       "self": 65033,
+       "public": 0,
+       "transfers": 425259,
+       "other": 592
+      },
+      "spent": 4612631,
+      "cashOnHand": 480473,
+      "from": "2025-05-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NE02174",
+      "url": "https://www.fec.gov/data/candidate/H6NE02174/?cycle=2026&election_full=true",
+      "debts": 90000
+     }
+    }
+   ]
+  },
+  {
+   "id": "NH-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NH-H-01:dilorenzo",
+     "name": "Anthony DiLorenzo",
+     "finance": {
+      "total": 6762643,
+      "parts": {
+       "small": 124646,
+       "large": 833043,
+       "pac": 147500,
+       "party": 5000,
+       "self": 5500000,
+       "public": 0,
+       "transfers": 149476,
+       "other": 2979
+      },
+      "spent": 5778850,
+      "cashOnHand": 983794,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NH01420",
+      "url": "https://www.fec.gov/data/candidate/H6NH01420/?cycle=2026&election_full=true",
+      "debts": 5500000
+     }
+    },
+    {
+     "id": "NH-H-01:shaheen",
+     "name": "Stefany Shaheen",
+     "finance": {
+      "total": 3247792,
+      "parts": {
+       "small": 553673,
+       "large": 2380069,
+       "pac": 254230,
+       "party": 0,
+       "self": 57000,
+       "public": 0,
+       "transfers": 0,
+       "other": 2820
+      },
+      "spent": 2977060,
+      "cashOnHand": 270733,
+      "from": "2025-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NH01321",
+      "url": "https://www.fec.gov/data/candidate/H6NH01321/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NJ-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NJ-H-02:drew",
+     "name": "Jeff Van Drew",
+     "finance": {
+      "total": 2414607,
+      "parts": {
+       "small": 272984,
+       "large": 1641846,
+       "pac": 450171,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 43535,
+       "other": 6071
+      },
+      "spent": 2282246,
+      "cashOnHand": 894792,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H8NJ02166",
+      "url": "https://www.fec.gov/data/candidate/H8NJ02166/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NJ-H-02:mora",
+     "name": "Ramon Mora Jr.",
+     "finance": {
+      "total": 1139,
+      "parts": {
+       "small": 229,
+       "large": 0,
+       "pac": 0,
+       "party": 0,
+       "self": 910,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 1367,
+      "cashOnHand": 85,
+      "from": "2026-07-01",
+      "asOf": "2026-09-30",
+      "source": "FEC",
+      "fecId": "H6NJ02269",
+      "url": "https://www.fec.gov/data/candidate/H6NJ02269/?cycle=2026&election_full=true",
+      "debts": 2910
+     }
+    },
+    {
+     "id": "NJ-H-02:mullock",
+     "name": "Zack Mullock",
+     "finance": {
+      "total": 960948,
+      "parts": {
+       "small": 220067,
+       "large": 579531,
+       "pac": 49450,
+       "party": 1900,
+       "self": 110000,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 855548,
+      "cashOnHand": 105400,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NJ02251",
+      "url": "https://www.fec.gov/data/candidate/H6NJ02251/?cycle=2026&election_full=true",
+      "debts": 110000
+     }
+    }
+   ]
+  },
+  {
+   "id": "NJ-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NJ-H-07:bennett",
+     "name": "Rebecca Bennett",
+     "finance": {
+      "total": 8757003,
+      "parts": {
+       "small": 1356659,
+       "large": 6308315,
+       "pac": 520754,
+       "party": 4822,
+       "self": 327,
+       "public": 0,
+       "transfers": 538484,
+       "other": 27642
+      },
+      "spent": 7703549,
+      "cashOnHand": 1053454,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NJ07201",
+      "url": "https://www.fec.gov/data/candidate/H6NJ07201/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NJ-H-07:kean",
+     "name": "Thomas Kean Jr.",
+     "finance": {
+      "total": 6128373,
+      "parts": {
+       "small": 284602,
+       "large": 2506678,
+       "pac": 1463215,
+       "party": 10000,
+       "self": 0,
+       "public": 0,
+       "transfers": 1805421,
+       "other": 58456
+      },
+      "spent": 4811254,
+      "cashOnHand": 1365406,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H0NJ07261",
+      "url": "https://www.fec.gov/data/candidate/H0NJ07261/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NM-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NM-H-02:cunningham",
+     "name": "Greg Cunningham",
+     "finance": {
+      "total": 2527072,
+      "parts": {
+       "small": 338719,
+       "large": 1287224,
+       "pac": 252592,
+       "party": 7000,
+       "self": 0,
+       "public": 0,
+       "transfers": 641512,
+       "other": 25
+      },
+      "spent": 2183325,
+      "cashOnHand": 343747,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NM02127",
+      "url": "https://www.fec.gov/data/candidate/H6NM02127/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NM-H-02:vasquez",
+     "name": "Gabe Vasquez",
+     "finance": {
+      "total": 5518618,
+      "parts": {
+       "small": 625981,
+       "large": 3111488,
+       "pac": 1370545,
+       "party": 6530,
+       "self": 0,
+       "public": 0,
+       "transfers": 397349,
+       "other": 6726
+      },
+      "spent": 5060722,
+      "cashOnHand": 496982,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2NM02191",
+      "url": "https://www.fec.gov/data/candidate/H2NM02191/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NV-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NV-H-01:buck",
+     "name": "Carrie Buck",
+     "finance": {
+      "total": 2632235,
+      "parts": {
+       "small": 693414,
+       "large": 1096400,
+       "pac": 223250,
+       "party": 0,
+       "self": 3732,
+       "public": 0,
+       "transfers": 615439,
+       "other": 0
+      },
+      "spent": 2447972,
+      "cashOnHand": 184263,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NV01331",
+      "url": "https://www.fec.gov/data/candidate/H6NV01331/?cycle=2026&election_full=true",
+      "debts": 23087
+     }
+    },
+    {
+     "id": "NV-H-01:titus",
+     "name": "Dina Titus",
+     "finance": {
+      "total": 2055144,
+      "parts": {
+       "small": 89290,
+       "large": 846583,
+       "pac": 1004946,
+       "party": 5312,
+       "self": 0,
+       "public": 0,
+       "transfers": 109005,
+       "other": 9
+      },
+      "spent": 2008273,
+      "cashOnHand": 202235,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H8NV03036",
+      "url": "https://www.fec.gov/data/candidate/H8NV03036/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NV-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NV-H-02:benitez-thompson",
+     "name": "Teresa Benitez-Thompson",
+     "finance": {
+      "total": 1054467,
+      "parts": {
+       "small": 179647,
+       "large": 696350,
+       "pac": 158470,
+       "party": 0,
+       "self": 20000,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 872618,
+      "cashOnHand": 181849,
+      "from": "2026-02-17",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NV02362",
+      "url": "https://www.fec.gov/data/candidate/H6NV02362/?cycle=2026&election_full=true",
+      "debts": 50535
+     }
+    },
+    {
+     "id": "NV-H-02:flippo",
+     "name": "David Flippo",
+     "finance": {
+      "total": 2934108,
+      "parts": {
+       "small": 83317,
+       "large": 814847,
+       "pac": 166999,
+       "party": 0,
+       "self": 1848100,
+       "public": 0,
+       "transfers": 7000,
+       "other": 13844
+      },
+      "spent": 2787661,
+      "cashOnHand": 161162,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4NV04108",
+      "url": "https://www.fec.gov/data/candidate/H4NV04108/?cycle=2026&election_full=true",
+      "debts": 1779414
+     }
+    }
+   ]
+  },
+  {
+   "id": "NV-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NV-H-03:donnell",
+     "name": "Martin O'Donnell",
+     "finance": {
+      "total": 4864563,
+      "parts": {
+       "small": 300183,
+       "large": 409525,
+       "pac": 329055,
+       "party": 5000,
+       "self": 3257000,
+       "public": 0,
+       "transfers": 491200,
+       "other": 72600
+      },
+      "spent": 4680014,
+      "cashOnHand": 184549,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NV03204",
+      "url": "https://www.fec.gov/data/candidate/H6NV03204/?cycle=2026&election_full=true",
+      "debts": 3235018
+     }
+    },
+    {
+     "id": "NV-H-03:lee",
+     "name": "Susie Lee",
+     "finance": {
+      "total": 5942432,
+      "parts": {
+       "small": 300554,
+       "large": 3365829,
+       "pac": 1614075,
+       "party": 6663,
+       "self": 0,
+       "public": 0,
+       "transfers": 618433,
+       "other": 36879
+      },
+      "spent": 5477793,
+      "cashOnHand": 931294,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NV04020",
+      "url": "https://www.fec.gov/data/candidate/H6NV04020/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-01:gallant",
+     "name": "Chris Gallant",
+     "finance": {
+      "total": 1735638,
+      "parts": {
+       "small": 513733,
+       "large": 1149215,
+       "pac": 38950,
+       "party": 0,
+       "self": 3500,
+       "public": 0,
+       "transfers": 5000,
+       "other": 25240
+      },
+      "spent": 1309645,
+      "cashOnHand": 425993,
+      "from": "2025-08-05",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NY01159",
+      "url": "https://www.fec.gov/data/candidate/H6NY01159/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NY-H-01:lalota",
+     "name": "Nick LaLota",
+     "finance": {
+      "total": 4486089,
+      "parts": {
+       "small": 133517,
+       "large": 1290748,
+       "pac": 1181780,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 1642987,
+       "other": 237056
+      },
+      "spent": 2847174,
+      "cashOnHand": 2314993,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2NY01190",
+      "url": "https://www.fec.gov/data/candidate/H2NY01190/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-02:garbarino",
+     "name": "Andrew Garbarino",
+     "finance": {
+      "total": 4057667,
+      "parts": {
+       "small": 5878,
+       "large": 844965,
+       "pac": 2228500,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 901788,
+       "other": 76536
+      },
+      "spent": 2916343,
+      "cashOnHand": 2686930,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H0NY02234",
+      "url": "https://www.fec.gov/data/candidate/H0NY02234/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NY-H-02:halpin",
+     "name": "Patrick Halpin",
+     "finance": {
+      "total": 586334,
+      "parts": {
+       "small": 69071,
+       "large": 486713,
+       "pac": 9950,
+       "party": 0,
+       "self": 7100,
+       "public": 0,
+       "transfers": 13500,
+       "other": 0
+      },
+      "spent": 536891,
+      "cashOnHand": 49442,
+      "from": "2025-07-15",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NY02140",
+      "url": "https://www.fec.gov/data/candidate/H6NY02140/?cycle=2026&election_full=true",
+      "debts": 20000
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-03:lipetri",
+     "name": "Mike LiPetri",
+     "finance": {
+      "total": 2584014,
+      "parts": {
+       "small": 462543,
+       "large": 389745,
+       "pac": 359550,
+       "party": 8200,
+       "self": 0,
+       "public": 0,
+       "transfers": 1362127,
+       "other": 1850
+      },
+      "spent": 2143461,
+      "cashOnHand": 456873,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H0NY02267",
+      "url": "https://www.fec.gov/data/candidate/H0NY02267/?cycle=2026&election_full=true",
+      "debts": 48641
+     }
+    },
+    {
+     "id": "NY-H-03:suozzi",
+     "name": "Tom Suozzi",
+     "finance": {
+      "total": 7599603,
+      "parts": {
+       "small": 312726,
+       "large": 4812170,
+       "pac": 2048570,
+       "party": 5176,
+       "self": 0,
+       "public": 0,
+       "transfers": 239233,
+       "other": 181729
+      },
+      "spent": 6399603,
+      "cashOnHand": 3234342,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NY03247",
+      "url": "https://www.fec.gov/data/candidate/H6NY03247/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-04:driscoll",
+     "name": "Jeanine Driscoll",
+     "finance": {
+      "total": 684947,
+      "parts": {
+       "small": 40859,
+       "large": 98899,
+       "pac": 199910,
+       "party": 5000,
+       "self": 0,
+       "public": 0,
+       "transfers": 340024,
+       "other": 255
+      },
+      "spent": 682394,
+      "cashOnHand": 2553,
+      "from": "2026-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NY04211",
+      "url": "https://www.fec.gov/data/candidate/H6NY04211/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NY-H-04:gillen",
+     "name": "Laura Gillen",
+     "finance": {
+      "total": 6221631,
+      "parts": {
+       "small": 384273,
+       "large": 3390910,
+       "pac": 1310487,
+       "party": 5634,
+       "self": 0,
+       "public": 0,
+       "transfers": 1080302,
+       "other": 50025
+      },
+      "spent": 3032184,
+      "cashOnHand": 3212650,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2NY04244",
+      "url": "https://www.fec.gov/data/candidate/H2NY04244/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NY-H-04:tarnoff",
+     "name": "Blay Tarnoff",
+     "finance": {
+      "total": 24572,
+      "parts": {
+       "small": 72,
+       "large": 24500,
+       "pac": 0,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 24506,
+      "cashOnHand": 66,
+      "from": "2026-04-01",
+      "asOf": "2026-09-30",
+      "source": "FEC",
+      "fecId": "H6NY04237",
+      "url": "https://www.fec.gov/data/candidate/H6NY04237/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-17",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-17:conley",
+     "name": "Cait Conley",
+     "finance": {
+      "total": 10706692,
+      "parts": {
+       "small": 2107445,
+       "large": 7279354,
+       "pac": 523404,
+       "party": 10983,
+       "self": 7000,
+       "public": 0,
+       "transfers": 764335,
+       "other": 14171
+      },
+      "spent": 9758153,
+      "cashOnHand": 948540,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NY17171",
+      "url": "https://www.fec.gov/data/candidate/H6NY17171/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "NY-H-17:lawler",
+     "name": "Mike Lawler",
+     "finance": {
+      "total": 10317627,
+      "parts": {
+       "small": 532798,
+       "large": 3438776,
+       "pac": 2488285,
+       "party": 10270,
+       "self": 0,
+       "public": 0,
+       "transfers": 3718839,
+       "other": 128661
+      },
+      "spent": 8527472,
+      "cashOnHand": 1959524,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2NY17162",
+      "url": "https://www.fec.gov/data/candidate/H2NY17162/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-21",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-21:constantino",
+     "name": "Anthony Constantino",
+     "finance": {
+      "total": 17064951,
+      "parts": {
+       "small": 0,
+       "large": 0,
+       "pac": 7000,
+       "party": 0,
+       "self": 17000000,
+       "public": 0,
+       "transfers": 0,
+       "other": 57951
+      },
+      "spent": 14765967,
+      "cashOnHand": 2298984,
+      "from": "2024-11-14",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NY21157",
+      "url": "https://www.fec.gov/data/candidate/H6NY21157/?cycle=2026&election_full=true",
+      "debts": 17000000
+     }
+    },
+    {
+     "id": "NY-H-21:gendebien",
+     "name": "Blake Gendebien",
+     "finance": {
+      "total": 7655529,
+      "parts": {
+       "small": 3092064,
+       "large": 4128911,
+       "pac": 213650,
+       "party": 4175,
+       "self": 125,
+       "public": 0,
+       "transfers": 158690,
+       "other": 57916
+      },
+      "spent": 7543859,
+      "cashOnHand": 364012,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6NY21199",
+      "url": "https://www.fec.gov/data/candidate/H6NY21199/?cycle=2026&election_full=true",
+      "debts": 66589
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-01:conroy",
+     "name": "Eric Conroy",
+     "finance": {
+      "total": 2372637,
+      "parts": {
+       "small": 476345,
+       "large": 558419,
+       "pac": 366188,
+       "party": 5000,
+       "self": 326142,
+       "public": 0,
+       "transfers": 640378,
+       "other": 165
+      },
+      "spent": 2079240,
+      "cashOnHand": 293397,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6OH01138",
+      "url": "https://www.fec.gov/data/candidate/H6OH01138/?cycle=2026&election_full=true",
+      "debts": 160217
+     }
+    },
+    {
+     "id": "OH-H-01:landsman",
+     "name": "Greg Landsman",
+     "finance": {
+      "total": 5662206,
+      "parts": {
+       "small": 333040,
+       "large": 3221889,
+       "pac": 1196471,
+       "party": 6140,
+       "self": 0,
+       "public": 0,
+       "transfers": 889688,
+       "other": 14978
+      },
+      "spent": 5339370,
+      "cashOnHand": 502952,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2OH01194",
+      "url": "https://www.fec.gov/data/candidate/H2OH01194/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-07:miller",
+     "name": "Max Miller",
+     "finance": {
+      "total": 3324942,
+      "parts": {
+       "small": 190741,
+       "large": 828925,
+       "pac": 742498,
+       "party": 0,
+       "self": 1000000,
+       "public": 0,
+       "transfers": 559498,
+       "other": 3280
+      },
+      "spent": 3363842,
+      "cashOnHand": 135629,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2OH16051",
+      "url": "https://www.fec.gov/data/candidate/H2OH16051/?cycle=2026&election_full=true",
+      "debts": 1965000
+     }
+    },
+    {
+     "id": "OH-H-07:poindexter",
+     "name": "Brian Poindexter",
+     "finance": {
+      "total": 3720342,
+      "parts": {
+       "small": 917361,
+       "large": 2391426,
+       "pac": 401351,
+       "party": 322,
+       "self": 1421,
+       "public": 0,
+       "transfers": 0,
+       "other": 8460
+      },
+      "spent": 2926666,
+      "cashOnHand": 793675,
+      "from": "2025-11-17",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6OH07168",
+      "url": "https://www.fec.gov/data/candidate/H6OH07168/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-09",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-09:kaptur",
+     "name": "Marcy Kaptur",
+     "finance": {
+      "total": 5910481,
+      "parts": {
+       "small": 666699,
+       "large": 2783175,
+       "pac": 1513619,
+       "party": 2000,
+       "self": 0,
+       "public": 0,
+       "transfers": 903456,
+       "other": 41532
+      },
+      "spent": 5661900,
+      "cashOnHand": 697508,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2OH09031",
+      "url": "https://www.fec.gov/data/candidate/H2OH09031/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "OH-H-09:merrin",
+     "name": "Derek Merrin",
+     "finance": {
+      "total": 2217821,
+      "parts": {
+       "small": 125298,
+       "large": 678697,
+       "pac": 275200,
+       "party": 5000,
+       "self": 310000,
+       "public": 0,
+       "transfers": 818770,
+       "other": 4855
+      },
+      "spent": 1845006,
+      "cashOnHand": 449466,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4OH09169",
+      "url": "https://www.fec.gov/data/candidate/H4OH09169/?cycle=2026&election_full=true",
+      "debts": 37216
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-10",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-10:knickerbocker",
+     "name": "Kristina Knickerbocker",
+     "finance": {
+      "total": 1015878,
+      "parts": {
+       "small": 226667,
+       "large": 673758,
+       "pac": 90500,
+       "party": 0,
+       "self": 7028,
+       "public": 0,
+       "transfers": 17865,
+       "other": 60
+      },
+      "spent": 882433,
+      "cashOnHand": 133445,
+      "from": "2026-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6OH10121",
+      "url": "https://www.fec.gov/data/candidate/H6OH10121/?cycle=2026&election_full=true",
+      "debts": 18041
+     }
+    },
+    {
+     "id": "OH-H-10:turner",
+     "name": "Mike Turner",
+     "finance": {
+      "total": 1315094,
+      "parts": {
+       "small": 58379,
+       "large": 530102,
+       "pac": 604100,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 121761,
+       "other": 752
+      },
+      "spent": 1420269,
+      "cashOnHand": 325250,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2OH03067",
+      "url": "https://www.fec.gov/data/candidate/H2OH03067/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-15",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-15:carey",
+     "name": "Mike Carey",
+     "finance": {
+      "total": 4184981,
+      "parts": {
+       "small": 110648,
+       "large": 1108894,
+       "pac": 2192850,
+       "party": 3000,
+       "self": 0,
+       "public": 0,
+       "transfers": 767588,
+       "other": 2002
+      },
+      "spent": 3975933,
+      "cashOnHand": 370343,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2OH15228",
+      "url": "https://www.fec.gov/data/candidate/H2OH15228/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "OH-H-15:leonard",
+     "name": "Don Leonard",
+     "finance": {
+      "total": 1329844,
+      "parts": {
+       "small": 184411,
+       "large": 909697,
+       "pac": 50000,
+       "party": 878,
+       "self": 11920,
+       "public": 0,
+       "transfers": 172938,
+       "other": 1
+      },
+      "spent": 1232137,
+      "cashOnHand": 97707,
+      "from": "2025-04-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6OH15112",
+      "url": "https://www.fec.gov/data/candidate/H6OH15112/?cycle=2026&election_full=true",
+      "debts": 5000
+     }
+    }
+   ]
+  },
+  {
+   "id": "PA-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "PA-H-01:fitzpatrick",
+     "name": "Brian Fitzpatrick",
+     "finance": {
+      "total": 8021376,
+      "parts": {
+       "small": 154837,
+       "large": 1756863,
+       "pac": 2675462,
+       "party": 12100,
+       "self": 0,
+       "public": 0,
+       "transfers": 3072458,
+       "other": 349655
+      },
+      "spent": 11734809,
+      "cashOnHand": 709097,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6PA08277",
+      "url": "https://www.fec.gov/data/candidate/H6PA08277/?cycle=2026&election_full=true",
+      "debts": 24750
+     }
+    },
+    {
+     "id": "PA-H-01:harvie",
+     "name": "Bob Harvie",
+     "finance": {
+      "total": 3167942,
+      "parts": {
+       "small": 658244,
+       "large": 2081829,
+       "pac": 267819,
+       "party": 11950,
+       "self": 0,
+       "public": 0,
+       "transfers": 143850,
+       "other": 4250
+      },
+      "spent": 2758530,
+      "cashOnHand": 409413,
+      "from": "2025-04-03",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6PA01181",
+      "url": "https://www.fec.gov/data/candidate/H6PA01181/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "PA-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "PA-H-07:brooks",
+     "name": "Bob Brooks",
+     "finance": {
+      "total": 5347353,
+      "parts": {
+       "small": 1167839,
+       "large": 3013669,
+       "pac": 634750,
+       "party": 6090,
+       "self": 3500,
+       "public": 0,
+       "transfers": 508989,
+       "other": 12516
+      },
+      "spent": 4605775,
+      "cashOnHand": 741579,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6PA07188",
+      "url": "https://www.fec.gov/data/candidate/H6PA07188/?cycle=2026&election_full=true",
+      "debts": 15000
+     }
+    },
+    {
+     "id": "PA-H-07:mackenzie",
+     "name": "Ryan Mackenzie",
+     "finance": {
+      "total": 5296664,
+      "parts": {
+       "small": 666387,
+       "large": 1235807,
+       "pac": 1314713,
+       "party": 10000,
+       "self": 0,
+       "public": 0,
+       "transfers": 2020365,
+       "other": 49392
+      },
+      "spent": 4329911,
+      "cashOnHand": 1069993,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H8PA15195",
+      "url": "https://www.fec.gov/data/candidate/H8PA15195/?cycle=2026&election_full=true",
+      "debts": 1371
+     }
+    }
+   ]
+  },
+  {
+   "id": "PA-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "PA-H-08:bresnahan",
+     "name": "Rob Bresnahan",
+     "finance": {
+      "total": 6519139,
+      "parts": {
+       "small": 799992,
+       "large": 1696777,
+       "pac": 1658352,
+       "party": 10000,
+       "self": 60486,
+       "public": 0,
+       "transfers": 2286159,
+       "other": 7372
+      },
+      "spent": 5839568,
+      "cashOnHand": 732724,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4PA08124",
+      "url": "https://www.fec.gov/data/candidate/H4PA08124/?cycle=2026&election_full=true",
+      "debts": 677069
+     }
+    },
+    {
+     "id": "PA-H-08:cognetti",
+     "name": "Paige Cognetti",
+     "finance": {
+      "total": 7502359,
+      "parts": {
+       "small": 1103538,
+       "large": 5191481,
+       "pac": 657602,
+       "party": 9700,
+       "self": 0,
+       "public": 0,
+       "transfers": 496023,
+       "other": 44014
+      },
+      "spent": 7258687,
+      "cashOnHand": 243672,
+      "from": "2025-09-02",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6PA08293",
+      "url": "https://www.fec.gov/data/candidate/H6PA08293/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "PA-H-10",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "PA-H-10:perry",
+     "name": "Scott Perry",
+     "finance": {
+      "total": 6791519,
+      "parts": {
+       "small": 1815066,
+       "large": 2544350,
+       "pac": 814427,
+       "party": 10000,
+       "self": 0,
+       "public": 0,
+       "transfers": 1591312,
+       "other": 16364
+      },
+      "spent": 5849869,
+      "cashOnHand": 1023569,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2PA04135",
+      "url": "https://www.fec.gov/data/candidate/H2PA04135/?cycle=2026&election_full=true",
+      "debts": 193911
+     }
+    },
+    {
+     "id": "PA-H-10:stelson",
+     "name": "Janelle Stelson",
+     "finance": {
+      "total": 9234260,
+      "parts": {
+       "small": 1595878,
+       "large": 5755057,
+       "pac": 727488,
+       "party": 9063,
+       "self": 0,
+       "public": 0,
+       "transfers": 1099869,
+       "other": 46904
+      },
+      "spent": 7180191,
+      "cashOnHand": 2069306,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4PA10104",
+      "url": "https://www.fec.gov/data/candidate/H4PA10104/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "SC-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "SC-H-01:honeycutt",
+     "name": "Jenny Costa Honeycutt",
+     "finance": {
+      "total": 1291996,
+      "parts": {
+       "small": 30992,
+       "large": 872047,
+       "pac": 326500,
+       "party": 0,
+       "self": 13500,
+       "public": 0,
+       "transfers": 46341,
+       "other": 2616
+      },
+      "spent": 980478,
+      "cashOnHand": 311518,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6SC01334",
+      "url": "https://www.fec.gov/data/candidate/H6SC01334/?cycle=2026&election_full=true",
+      "debts": 10000
+     }
+    },
+    {
+     "id": "SC-H-01:lacore",
+     "name": "Nancy Lacore",
+     "finance": {
+      "total": 4865630,
+      "parts": {
+       "small": 2115099,
+       "large": 2458815,
+       "pac": 258468,
+       "party": 5000,
+       "self": 0,
+       "public": 0,
+       "transfers": 27947,
+       "other": 300
+      },
+      "spent": 4690325,
+      "cashOnHand": 175304,
+      "from": "2026-01-19",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6SC01359",
+      "url": "https://www.fec.gov/data/candidate/H6SC01359/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "SC-H-01:reeside",
+     "name": "Bill Reeside",
+     "finance": {
+      "total": 115492,
+      "parts": {
+       "small": 2581,
+       "large": 7411,
+       "pac": 0,
+       "party": 0,
+       "self": 105500,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 111832,
+      "cashOnHand": 3660,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6SC01342",
+      "url": "https://www.fec.gov/data/candidate/H6SC01342/?cycle=2026&election_full=true",
+      "debts": 105500
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-H-15",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-H-15:cruz",
+     "name": "Monica De La Cruz",
+     "finance": {
+      "total": 6814267,
+      "parts": {
+       "small": 1593289,
+       "large": 2548055,
+       "pac": 1149835,
+       "party": 0,
+       "self": 84,
+       "public": 0,
+       "transfers": 1511455,
+       "other": 11550
+      },
+      "spent": 7034425,
+      "cashOnHand": 393812,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H0TX15124",
+      "url": "https://www.fec.gov/data/candidate/H0TX15124/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "TX-H-15:pulido",
+     "name": "Bobby Pulido",
+     "finance": {
+      "total": 6819247,
+      "parts": {
+       "small": 1244897,
+       "large": 3646291,
+       "pac": 421500,
+       "party": 3111,
+       "self": 150300,
+       "public": 0,
+       "transfers": 1336919,
+       "other": 16230
+      },
+      "spent": 5549792,
+      "cashOnHand": 1269454,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6TX15246",
+      "url": "https://www.fec.gov/data/candidate/H6TX15246/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-H-23",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-H-23:herrera",
+     "name": "Brandon Herrera",
+     "finance": {
+      "total": 3115205,
+      "parts": {
+       "small": 25985,
+       "large": 114215,
+       "pac": 130940,
+       "party": 0,
+       "self": 520000,
+       "public": 0,
+       "transfers": 2288610,
+       "other": 35456
+      },
+      "spent": 2804434,
+      "cashOnHand": 318812,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4TX23120",
+      "url": "https://www.fec.gov/data/candidate/H4TX23120/?cycle=2026&election_full=true",
+      "debts": 670000
+     }
+    },
+    {
+     "id": "TX-H-23:stout",
+     "name": "Katy Padilla Stout",
+     "finance": {
+      "total": 1117715,
+      "parts": {
+       "small": 403143,
+       "large": 614255,
+       "pac": 67649,
+       "party": 0,
+       "self": 9792,
+       "public": 0,
+       "transfers": 18560,
+       "other": 4315
+      },
+      "spent": 973291,
+      "cashOnHand": 144424,
+      "from": "2025-11-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6TX23273",
+      "url": "https://www.fec.gov/data/candidate/H6TX23273/?cycle=2026&election_full=true",
+      "debts": 2942
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-H-28",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-H-28:cuellar",
+     "name": "Henry Cuellar",
+     "finance": {
+      "total": 3043039,
+      "parts": {
+       "small": 68957,
+       "large": 1603510,
+       "pac": 921900,
+       "party": 5761,
+       "self": 317500,
+       "public": 0,
+       "transfers": 112198,
+       "other": 13212
+      },
+      "spent": 2433767,
+      "cashOnHand": 657231,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2TX23082",
+      "url": "https://www.fec.gov/data/candidate/H2TX23082/?cycle=2026&election_full=true",
+      "debts": 301000
+     }
+    },
+    {
+     "id": "TX-H-28:tijerina",
+     "name": "Tano Tijerina",
+     "finance": {
+      "total": 1862407,
+      "parts": {
+       "small": 191344,
+       "large": 656627,
+       "pac": 306000,
+       "party": 5000,
+       "self": 0,
+       "public": 0,
+       "transfers": 703431,
+       "other": 5
+      },
+      "spent": 1749357,
+      "cashOnHand": 113050,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6TX28124",
+      "url": "https://www.fec.gov/data/candidate/H6TX28124/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-H-34",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-H-34:flores",
+     "name": "Eric Flores",
+     "finance": {
+      "total": 4009074,
+      "parts": {
+       "small": 690721,
+       "large": 1292377,
+       "pac": 433902,
+       "party": 5000,
+       "self": 577245,
+       "public": 0,
+       "transfers": 1009789,
+       "other": 39
+      },
+      "spent": 3762621,
+      "cashOnHand": 246427,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6TX34080",
+      "url": "https://www.fec.gov/data/candidate/H6TX34080/?cycle=2026&election_full=true",
+      "debts": 668649
+     }
+    },
+    {
+     "id": "TX-H-34:gonzalez",
+     "name": "Vicente Gonzalez",
+     "finance": {
+      "total": 5211344,
+      "parts": {
+       "small": 283122,
+       "large": 2483012,
+       "pac": 1744111,
+       "party": 4788,
+       "self": 0,
+       "public": 0,
+       "transfers": 691896,
+       "other": 4414
+      },
+      "spent": 4096455,
+      "cashOnHand": 1396949,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6TX15162",
+      "url": "https://www.fec.gov/data/candidate/H6TX15162/?cycle=2026&election_full=true",
+      "debts": 250000
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-H-35",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-H-35:cruz",
+     "name": "Carlos De La Cruz",
+     "finance": {
+      "total": 2021118,
+      "parts": {
+       "small": 417998,
+       "large": 819243,
+       "pac": 415650,
+       "party": 5000,
+       "self": 53000,
+       "public": 0,
+       "transfers": 310121,
+       "other": 105
+      },
+      "spent": 1708510,
+      "cashOnHand": 312607,
+      "from": "2025-09-22",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6TX35087",
+      "url": "https://www.fec.gov/data/candidate/H6TX35087/?cycle=2026&election_full=true",
+      "debts": 120593
+     }
+    },
+    {
+     "id": "TX-H-35:garcia",
+     "name": "Johnny Garcia",
+     "finance": {
+      "total": 2201579,
+      "parts": {
+       "small": 477499,
+       "large": 1286557,
+       "pac": 398050,
+       "party": 5229,
+       "self": 0,
+       "public": 0,
+       "transfers": 32163,
+       "other": 2082
+      },
+      "spent": 2052076,
+      "cashOnHand": 149503,
+      "from": "2025-10-09",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6TX35095",
+      "url": "https://www.fec.gov/data/candidate/H6TX35095/?cycle=2026&election_full=true",
+      "debts": 18831
+     }
+    }
+   ]
+  },
+  {
+   "id": "VA-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VA-H-01:taylor",
+     "name": "Shannon Taylor",
+     "finance": {
+      "total": 4604761,
+      "parts": {
+       "small": 768922,
+       "large": 2837085,
+       "pac": 614743,
+       "party": 10246,
+       "self": 0,
+       "public": 0,
+       "transfers": 362234,
+       "other": 11532
+      },
+      "spent": 4006027,
+      "cashOnHand": 598734,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6VA01299",
+      "url": "https://www.fec.gov/data/candidate/H6VA01299/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "VA-H-01:wittman",
+     "name": "Rob Wittman",
+     "finance": {
+      "total": 5432689,
+      "parts": {
+       "small": 82981,
+       "large": 1869396,
+       "pac": 1510456,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 1851147,
+       "other": 118710
+      },
+      "spent": 6011223,
+      "cashOnHand": 797346,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H8VA01147",
+      "url": "https://www.fec.gov/data/candidate/H8VA01147/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "VA-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VA-H-02:baker",
+     "name": "J. Matt Baker",
+     "finance": {
+      "total": 8349,
+      "parts": {
+       "small": 5562,
+       "large": 2787,
+       "pac": 0,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 1852,
+      "cashOnHand": 6497,
+      "from": "2026-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6VA02263",
+      "url": "https://www.fec.gov/data/candidate/H6VA02263/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "VA-H-02:kiggans",
+     "name": "Jen Kiggans",
+     "finance": {
+      "total": 7589812,
+      "parts": {
+       "small": 981615,
+       "large": 3109085,
+       "pac": 1545806,
+       "party": 11530,
+       "self": 0,
+       "public": 0,
+       "transfers": 1929169,
+       "other": 12607
+      },
+      "spent": 6342881,
+      "cashOnHand": 1292408,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2VA02064",
+      "url": "https://www.fec.gov/data/candidate/H2VA02064/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "VA-H-02:luria",
+     "name": "Elaine Luria",
+     "finance": {
+      "total": 8044064,
+      "parts": {
+       "small": 1323700,
+       "large": 4885890,
+       "pac": 642205,
+       "party": 6011,
+       "self": 8010,
+       "public": 0,
+       "transfers": 1177915,
+       "other": 333
+      },
+      "spent": 7565202,
+      "cashOnHand": 478862,
+      "from": "2025-11-12",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6VA02198",
+      "url": "https://www.fec.gov/data/candidate/H6VA02198/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "VA-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VA-H-05:mcguire",
+     "name": "John McGuire",
+     "finance": {
+      "total": 2419702,
+      "parts": {
+       "small": 552188,
+       "large": 972435,
+       "pac": 575598,
+       "party": 250,
+       "self": 0,
+       "public": 0,
+       "transfers": 317231,
+       "other": 2000
+      },
+      "spent": 2071868,
+      "cashOnHand": 382053,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H0VA07133",
+      "url": "https://www.fec.gov/data/candidate/H0VA07133/?cycle=2026&election_full=true",
+      "debts": 210434
+     }
+    },
+    {
+     "id": "VA-H-05:perriello",
+     "name": "Tom Perriello",
+     "finance": {
+      "total": 3762301,
+      "parts": {
+       "small": 461305,
+       "large": 2770109,
+       "pac": 412093,
+       "party": 339,
+       "self": 13111,
+       "public": 0,
+       "transfers": 97610,
+       "other": 7734
+      },
+      "spent": 3078135,
+      "cashOnHand": 684166,
+      "from": "2025-12-04",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H8VA05106",
+      "url": "https://www.fec.gov/data/candidate/H8VA05106/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "WA-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WA-H-03:braun",
+     "name": "John Braun",
+     "finance": {
+      "total": 3311756,
+      "parts": {
+       "small": 337920,
+       "large": 1767742,
+       "pac": 567941,
+       "party": 5000,
+       "self": 11434,
+       "public": 0,
+       "transfers": 621691,
+       "other": 28
+      },
+      "spent": 2639837,
+      "cashOnHand": 671919,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6WA03275",
+      "url": "https://www.fec.gov/data/candidate/H6WA03275/?cycle=2026&election_full=true",
+      "debts": 600
+     }
+    },
+    {
+     "id": "WA-H-03:perez",
+     "name": "Marie Gluesenkamp Perez",
+     "finance": {
+      "total": 9472267,
+      "parts": {
+       "small": 988249,
+       "large": 3377431,
+       "pac": 1103811,
+       "party": 6378,
+       "self": 0,
+       "public": 0,
+       "transfers": 3895973,
+       "other": 100425
+      },
+      "spent": 9264207,
+      "cashOnHand": 234520,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H2WA03217",
+      "url": "https://www.fec.gov/data/candidate/H2WA03217/?cycle=2026&election_full=true",
+      "debts": 180252
+     }
+    }
+   ]
+  },
+  {
+   "id": "WA-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WA-H-05:baumgartner",
+     "name": "Michael Baumgartner",
+     "finance": {
+      "total": 2208415,
+      "parts": {
+       "small": 234180,
+       "large": 1435265,
+       "pac": 490300,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 45036,
+       "other": 3635
+      },
+      "spent": 1710065,
+      "cashOnHand": 689915,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4WA05234",
+      "url": "https://www.fec.gov/data/candidate/H4WA05234/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "WA-H-05:conroy",
+     "name": "Carmela Conroy",
+     "finance": {
+      "total": 840423,
+      "parts": {
+       "small": 198879,
+       "large": 591110,
+       "pac": 28100,
+       "party": 1500,
+       "self": 10827,
+       "public": 0,
+       "transfers": 0,
+       "other": 10007
+      },
+      "spent": 763371,
+      "cashOnHand": 90193,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4WA05168",
+      "url": "https://www.fec.gov/data/candidate/H4WA05168/?cycle=2026&election_full=true",
+      "debts": 3080
+     }
+    }
+   ]
+  },
+  {
+   "id": "WI-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WI-H-01:berman",
+     "name": "Mitchell Berman",
+     "finance": {
+      "total": 1977099,
+      "parts": {
+       "small": 651605,
+       "large": 1133585,
+       "pac": 189500,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 500,
+       "other": 1909
+      },
+      "spent": 1625541,
+      "cashOnHand": 351558,
+      "from": "2025-07-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6WI01283",
+      "url": "https://www.fec.gov/data/candidate/H6WI01283/?cycle=2026&election_full=true",
+      "debts": 12191
+     }
+    },
+    {
+     "id": "WI-H-01:steil",
+     "name": "Bryan Steil",
+     "finance": {
+      "total": 6393553,
+      "parts": {
+       "small": 333587,
+       "large": 1459204,
+       "pac": 1933675,
+       "party": 1000,
+       "self": 0,
+       "public": 0,
+       "transfers": 2422758,
+       "other": 243329
+      },
+      "spent": 6369119,
+      "cashOnHand": 2243605,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H8WI01156",
+      "url": "https://www.fec.gov/data/candidate/H8WI01156/?cycle=2026&election_full=true"
+     }
+    }
+   ]
+  },
+  {
+   "id": "WI-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WI-H-03:cooke",
+     "name": "Rebecca Cooke",
+     "finance": {
+      "total": 12675997,
+      "parts": {
+       "small": 3730242,
+       "large": 7210160,
+       "pac": 789321,
+       "party": 5625,
+       "self": 0,
+       "public": 0,
+       "transfers": 939697,
+       "other": 952
+      },
+      "spent": 12238749,
+      "cashOnHand": 447387,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H4WI03169",
+      "url": "https://www.fec.gov/data/candidate/H4WI03169/?cycle=2026&election_full=true"
+     }
+    },
+    {
+     "id": "WI-H-03:orden",
+     "name": "Derrick Van Orden",
+     "finance": {
+      "total": 9101596,
+      "parts": {
+       "small": 1982571,
+       "large": 3309888,
+       "pac": 1255042,
+       "party": 21800,
+       "self": 0,
+       "public": 0,
+       "transfers": 2498173,
+       "other": 34123
+      },
+      "spent": 8452731,
+      "cashOnHand": 1165671,
+      "from": "2025-01-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H0WI03175",
+      "url": "https://www.fec.gov/data/candidate/H0WI03175/?cycle=2026&election_full=true",
+      "debts": 106699
+     }
+    }
+   ]
+  },
+  {
+   "id": "WI-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WI-H-07:alfonso",
+     "name": "Michael Alfonso",
+     "finance": {
+      "total": 1770041,
+      "parts": {
+       "small": 69840,
+       "large": 1192304,
+       "pac": 414500,
+       "party": 0,
+       "self": 0,
+       "public": 0,
+       "transfers": 83362,
+       "other": 10036
+      },
+      "spent": 1343103,
+      "cashOnHand": 426939,
+      "from": "2025-10-01",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6WI07223",
+      "url": "https://www.fec.gov/data/candidate/H6WI07223/?cycle=2026&election_full=true",
+      "debts": 222621
+     }
+    },
+    {
+     "id": "WI-H-07:clark",
+     "name": "Fred Clark",
+     "finance": {
+      "total": 863780,
+      "parts": {
+       "small": 220843,
+       "large": 616553,
+       "pac": 16500,
+       "party": 2035,
+       "self": 5030,
+       "public": 0,
+       "transfers": 0,
+       "other": 2819
+      },
+      "spent": 602936,
+      "cashOnHand": 260844,
+      "from": "2025-09-24",
+      "asOf": "2026-10-14",
+      "source": "FEC",
+      "fecId": "H6WI07207",
+      "url": "https://www.fec.gov/data/candidate/H6WI07207/?cycle=2026&election_full=true",
+      "debts": 5000
+     }
+    }
+   ]
+  }
+ ]
+}

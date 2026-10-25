@@ -1,0 +1,674 @@
+{
+ "updated": "2026-10-25",
+ "note": "Florida governor and U.S. Senate races, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "FL-GOV",
+   "candidates": [
+    {
+     "id": "FL-GOV:donalds",
+     "name": "Byron Donalds",
+     "party": "R",
+     "bio": "U.S. representative for Florida's 19th District since 2021 and a former state representative.",
+     "officialSite": "https://byrondonalds.com/",
+     "positions": {
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds stands with the pro-life movement, opposes writing Roe v. Wade into law and voted against the Women's Health Protection Act (H.R. 3755, 2021)",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds says states should regulate abortion",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Regulating abortion is the job of the states."
+       }
+      },
+      "ene-01": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds voted against the 2022 clean energy investments, to repeal them in 2023 and to end the tax credits in 2025",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds sponsored H.R. 4300 to bar presidents from declaring a climate emergency and said heat waves aren't tied to climate change",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds voted to ease environmental rules for chip plants (S. 2228) and to end mining limits near the Boundary Waters (2026), though he backs fighting algal blooms",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds voted for the federal private school scholarship tax credit (2025) and says education dollars should follow students",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "School choice is the civil rights issue of our time."
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds voted against extending ACA premium subsidies for three years (House roll call 11, 2026) and opposes the ACA",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds would cut construction permit costs",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "On housing, we are going to slash red tape."
+       }
+      },
+      "imm-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds voted for the 2023 border wall bill (H.R. 2) and introduced a bill to study a biometric entry-exit system",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds voted for $75 billion more for ICE and $70 billion more for DHS and opposes sanctuary policies",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-10": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds voted for H.R. 2 (2023), which requires E-Verify for new hires",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds voted against the PRO Act (2021) and the 2026 first-contract bill (H.R. 5408) and supports right-to-work laws",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-11": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds voted to make providing gender-affirming care to minors a federal crime (H.R. 3492)",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds voted to bar transgender students from girls' sports (H.R. 734, 2023)",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Men SHOULD NOT be competing in women's sports PERIOD."
+       }
+      },
+      "soc-05": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds opposed 2024's Amendment 3 and would oppose future legalization measures",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I do not support recreational marijuana."
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds would cut taxes on tips, overtime and Social Security",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds opposes raising taxes and voted to extend the 2017 tax cuts (2025)",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds supports 2026's Amendment 3, phasing out property taxes on many owner-occupied homes",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds supports voter ID and sponsored H.R. 7300, requiring proof of citizenship to register",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Donalds sponsored H.R. 7300, which bans universal vote-by-mail",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "FL-GOV:jolly",
+     "name": "David Jolly",
+     "party": "D",
+     "bio": "Republican U.S. representative for Florida's 13th District from 2014 to 2017, now running as a Democrat.",
+     "officialSite": "https://davidjolly.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly would replace Florida's six-week ban with a law allowing abortion until fetal viability",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly would repeal Florida's six-week abortion ban",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly would expand clean and renewable energy and build it into public utilities",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly on climate",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "faces some of the most direct climate impacts in the country"
+       }
+      },
+      "ene-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly calls for a data center moratorium until Florida has real protections for water and air",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly opposes offshore drilling",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-05": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly supports Everglades restoration and septic-to-sewer conversions to protect springs",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-05": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly supports a state version of the federal FIRST STEP Act to reduce recidivism",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly would keep Florida's voucher program but reform it",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We should keep choice, but improve the standards of our choice schools."
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly supports expanding Medicaid",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly supports extending the ACA premium tax credits",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly proposes a pilot program to expand community health centers with a 9-to-1 federal match",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "5-year pilot to dramatically expand community health centers"
+       }
+      },
+      "hou-05": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly supports down-payment assistance",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly supports a path to legal status for long-term residents, parents of U.S. citizens and DACA recipients",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly would not require state or local police to work with ICE",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-10": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly opposes mandating E-Verify",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly would stand with public servants on fair wages and benefits",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "proud to have the support of the Florida AFL-CIO."
+       }
+      },
+      "soc-10": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly would protect marriage equality at the state level",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly calls attacks on LGBTQ+ people shameful but doesn't think biological males should play competitive women's sports",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-05": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly voted against 2024's Amendment 3 but would enact any amendment that won a majority, including recreational marijuana",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-10": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Florida governor voters guide: Jolly supports home rule and easier citizen ballot initiatives",
+        "url": "https://guides.vote/guide/2026-florida-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Direct democracy should be easier, not a gauntlet."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-SEN",
+   "candidates": [
+    {
+     "id": "FL-SEN:moody",
+     "name": "Ashley Moody",
+     "party": "R",
+     "bio": "U.S. senator since January 2025, appointed to succeed Marco Rubio, and Florida attorney general from 2019 to 2025.",
+     "positions": {
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "OnTheIssues, 2026 Florida Senate race: Moody cosponsored the Born-Alive Abortion Survivors Protection Act and a bill raising penalties for medical professionals who mishandle abortions (Florida Politics, Oct. 2025)",
+        "url": "https://ontheissues.org/2026_FL_Senate.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "OnTheIssues, 2026 Florida Senate race: As attorney general, Moody fought to keep the abortion-rights amendment off Florida's ballot",
+        "url": "https://ontheissues.org/2026_FL_Senate.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "OnTheIssues, 2026 Florida Senate race: Moody has long backed school choice (FOX 13, Aug. 2025)",
+        "url": "https://ontheissues.org/2026_FL_Senate.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "OnTheIssues, 2026 Florida Senate race: Moody hailed the 2025 tax and spending law's tax cuts (Florida Phoenix, July 2025)",
+        "url": "https://ontheissues.org/2026_FL_Senate.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "Florida Phoenix, Sept. 9, 2026: Moody was among the Republicans in Congress who let the enhanced ACA subsidies expire",
+        "url": "https://floridaphoenix.com/2026/09/09/angie-nixon-says-there-are-10-million-reasons-to-oppose-ashley-moody/",
+        "date": "2026-09-09"
+       }
+      },
+      "soc-05": {
+       "stance": -1,
+       "source": {
+        "title": "OnTheIssues, 2026 Florida Senate race: As attorney general, Moody opposed the 2024 recreational marijuana ballot measure",
+        "url": "https://ontheissues.org/2026_FL_Senate.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-04": {
+       "stance": 1,
+       "source": {
+        "title": "OnTheIssues, 2026 Florida Senate race: Moody supports enhanced penalties under the Thin Blue Line Act (2025)",
+        "url": "https://ontheissues.org/2026_FL_Senate.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "OnTheIssues, 2026 Florida Senate race: As attorney general, Moody sued the federal government over carbon dioxide limits",
+        "url": "https://ontheissues.org/2026_FL_Senate.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "OnTheIssues, 2026 Florida Senate race: Moody supports the administration's immigration enforcement policies (2025)",
+        "url": "https://ontheissues.org/2026_FL_Senate.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-11": {
+       "stance": 1,
+       "source": {
+        "title": "OnTheIssues, 2026 Florida Senate race: Moody says Florida stands with its ally Israel",
+        "url": "https://ontheissues.org/2026_FL_Senate.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "OnTheIssues, 2026 Florida Senate race: Moody says government wastes hundreds of millions a year and backed the Billion Dollar Boondoggle Act (2025)",
+        "url": "https://ontheissues.org/2026_FL_Senate.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "FL-SEN:nixon",
+     "name": "Angie Nixon",
+     "party": "D",
+     "bio": "Florida state representative from Jacksonville since 2020.",
+     "positions": {
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Florida Phoenix, Sept. 9, 2026: Nixon supports Medicare for All",
+        "url": "https://floridaphoenix.com/2026/09/09/angie-nixon-says-there-are-10-million-reasons-to-oppose-ashley-moody/",
+        "date": "2026-09-09",
+        "quote": "Universal healthcare would save over a trillion dollars if we were to pass it"
+       }
+      },
+      "hea-04": {
+       "stance": -2,
+       "source": {
+        "title": "FOX 13 interview, July 8, 2026: Nixon supports a step-by-step path to Medicare for All",
+        "url": "https://www.fox13news.com/news/one-on-one-senate-candidate-angie-nixon-outlines-positions-housing-healthcare-foreign-policy",
+        "date": "2026-07-08"
+       }
+      },
+      "hea-07": {
+       "stance": 2,
+       "source": {
+        "title": "FOX 13 interview, July 8, 2026: Nixon would start by extending the ACA subsidies",
+        "url": "https://www.fox13news.com/news/one-on-one-senate-candidate-angie-nixon-outlines-positions-housing-healthcare-foreign-policy",
+        "date": "2026-07-08"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "Florida Phoenix, Sept. 9, 2026: Nixon criticized the 2025 Medicaid cuts",
+        "url": "https://floridaphoenix.com/2026/09/09/angie-nixon-says-there-are-10-million-reasons-to-oppose-ashley-moody/",
+        "date": "2026-09-09"
+       }
+      },
+      "eco-03": {
+       "stance": 2,
+       "source": {
+        "title": "Florida Phoenix, Sept. 9, 2026: Nixon calls for raising the federal minimum wage from $7.25 an hour",
+        "url": "https://floridaphoenix.com/2026/09/09/angie-nixon-says-there-are-10-million-reasons-to-oppose-ashley-moody/",
+        "date": "2026-09-09"
+       }
+      },
+      "imm-02": {
+       "stance": 2,
+       "source": {
+        "title": "FOX 13 interview, July 8, 2026: Nixon supports a path to citizenship for mixed-status families and many TPS recipients",
+        "url": "https://www.fox13news.com/news/one-on-one-senate-candidate-angie-nixon-outlines-positions-housing-healthcare-foreign-policy",
+        "date": "2026-07-08"
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "Florida Phoenix, Sept. 9, 2026: Nixon criticizes the administration's mass deportation program",
+        "url": "https://floridaphoenix.com/2026/09/09/angie-nixon-says-there-are-10-million-reasons-to-oppose-ashley-moody/",
+        "date": "2026-09-09"
+       }
+      },
+      "imm-05": {
+       "stance": 1,
+       "source": {
+        "title": "FOX 13 interview, July 8, 2026: Nixon would focus enforcement on companies that hire and exploit undocumented workers",
+        "url": "https://www.fox13news.com/news/one-on-one-senate-candidate-angie-nixon-outlines-positions-housing-healthcare-foreign-policy",
+        "date": "2026-07-08"
+       }
+      },
+      "hou-02": {
+       "stance": 2,
+       "source": {
+        "title": "FOX 13 interview, July 8, 2026: Nixon would stop private equity firms from buying single-family homes",
+        "url": "https://www.fox13news.com/news/one-on-one-senate-candidate-angie-nixon-outlines-positions-housing-healthcare-foreign-policy",
+        "date": "2026-07-08"
+       }
+      },
+      "hou-06": {
+       "stance": 1,
+       "source": {
+        "title": "FOX 13 interview, July 8, 2026: Nixon supports federal rent stabilization with a 10% cap in some areas",
+        "url": "https://www.fox13news.com/news/one-on-one-senate-candidate-angie-nixon-outlines-positions-housing-healthcare-foreign-policy",
+        "date": "2026-07-08"
+       }
+      },
+      "hou-05": {
+       "stance": 1,
+       "source": {
+        "title": "FOX 13 interview, July 8, 2026: Nixon would add funding for down payment assistance",
+        "url": "https://www.fox13news.com/news/one-on-one-senate-candidate-angie-nixon-outlines-positions-housing-healthcare-foreign-policy",
+        "date": "2026-07-08"
+       }
+      },
+      "eco-10": {
+       "stance": -2,
+       "source": {
+        "title": "FOX 13 interview, July 8, 2026: Nixon wants the administration's tariffs repealed",
+        "url": "https://www.fox13news.com/news/one-on-one-senate-candidate-angie-nixon-outlines-positions-housing-healthcare-foreign-policy",
+        "date": "2026-07-08"
+       }
+      },
+      "eco-01": {
+       "stance": 1,
+       "source": {
+        "title": "FOX 13 interview, July 8, 2026: Nixon wants billionaires and corporations to pay their fair share",
+        "url": "https://www.fox13news.com/news/one-on-one-senate-candidate-angie-nixon-outlines-positions-housing-healthcare-foreign-policy",
+        "date": "2026-07-08"
+       }
+      },
+      "def-01": {
+       "stance": -1,
+       "source": {
+        "title": "FOX 13 interview, July 8, 2026: Nixon would reassess Pentagon spending after its failed audits",
+        "url": "https://www.fox13news.com/news/one-on-one-senate-candidate-angie-nixon-outlines-positions-housing-healthcare-foreign-policy",
+        "date": "2026-07-08"
+       }
+      },
+      "def-07": {
+       "stance": 2,
+       "source": {
+        "title": "FOX 13 interview, July 8, 2026: Nixon says the U.S. should try every diplomatic option before using force",
+        "url": "https://www.fox13news.com/news/one-on-one-senate-candidate-angie-nixon-outlines-positions-housing-healthcare-foreign-policy",
+        "date": "2026-07-08",
+        "quote": "exhaust all diplomatic alternatives and efforts"
+       }
+      },
+      "def-15": {
+       "stance": -1,
+       "source": {
+        "title": "Florida Phoenix, Sept. 9, 2026: Nixon criticized the cost of the Iran war",
+        "url": "https://floridaphoenix.com/2026/09/09/angie-nixon-says-there-are-10-million-reasons-to-oppose-ashley-moody/",
+        "date": "2026-09-09"
+       }
+      },
+      "gov-11": {
+       "stance": 1,
+       "source": {
+        "title": "FOX 13 interview, July 8, 2026: Nixon wants big money out of politics",
+        "url": "https://www.fox13news.com/news/one-on-one-senate-candidate-angie-nixon-outlines-positions-housing-healthcare-foreign-policy",
+        "date": "2026-07-08"
+       }
+      },
+      "eco-09": {
+       "stance": 1,
+       "source": {
+        "title": "OnTheIssues, 2026 Florida Senate race: Nixon says government must not weaken unions' work (Florida Times-Union, May 2023)",
+        "url": "https://ontheissues.org/2026_FL_Senate.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

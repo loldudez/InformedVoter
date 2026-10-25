@@ -1,0 +1,465 @@
+{
+ "updated": "2026-10-25",
+ "note": "Minnesota U.S. Senate and governor races, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "MN-SEN",
+   "candidates": [
+    {
+     "id": "MN-SEN:flanagan",
+     "name": "Peggy Flanagan",
+     "party": "D",
+     "bio": "Lieutenant governor of Minnesota since 2019, a former state representative and a citizen of the White Earth Nation.",
+     "positions": {
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would fight for Medicare for All",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "hea-04": {
+       "stance": -2,
+       "source": {
+        "title": "MPR News, Aug. 12, 2026: Flanagan supports Medicare for All",
+        "url": "https://www.mprnews.org/story/2026/08/12/peggy-flanagan-primary-win-takes-aim-at-trump-outlines-senate-agenda",
+        "date": "2026-08-12",
+        "quote": "pay for healthcare and not just health insurance"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would reverse the Medicaid cuts",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would lower prescription drug costs and end prior authorization",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "eco-03": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would raise the federal minimum wage",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "soc-07": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would create universal child care",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would invest in affordable housing",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "hou-02": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would ban Wall Street from buying up homes",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "imm-02": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan opposes mass deportation and supports a path to citizenship",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25",
+        "quote": "a pathway to legal status and citizenship"
+       }
+      },
+      "imm-08": {
+       "stance": -2,
+       "source": {
+        "title": "MPR News, Aug. 12, 2026: Flanagan calls for comprehensive reform of ICE and an end to indefinite detention",
+        "url": "https://www.mprnews.org/story/2026/08/12/peggy-flanagan-primary-win-takes-aim-at-trump-outlines-senate-agenda",
+        "date": "2026-08-12",
+        "quote": "ICE as it currently exists is not it."
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would secure the border while protecting due process",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan supports 100% carbon-free electricity by 2040 and investment in wind, solar and green steel",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "ene-06": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan supports 100% carbon-free electricity by 2040",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would enforce environmental standards and hold polluters accountable",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "agr-01": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would pass a comprehensive five-year Farm Bill",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "agr-08": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would invest in regenerative agriculture research",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan opposes the administration's tariffs and would shield farm markets from them",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "gov-11": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would ban corporate PAC money and overturn Citizens United",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "gov-13": {
+       "stance": -2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would ban corporate PAC money and overturn Citizens United",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "gov-03": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Flanagan would require donor disclosure and restore independent watchdogs",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "MPR News, Aug. 12, 2026: Flanagan on the Iran war",
+        "url": "https://www.mprnews.org/story/2026/08/12/peggy-flanagan-primary-win-takes-aim-at-trump-outlines-senate-agenda",
+        "date": "2026-08-12",
+        "quote": "Donald Trump's illegal war in Iran"
+       }
+      },
+      "def-12": {
+       "stance": -1,
+       "source": {
+        "title": "KTTC debate report, Oct. 16, 2026: Flanagan would not send more offensive weapons or military aid to Israel's Netanyahu government",
+        "url": "https://www.kttc.com/2026/10/16/only-scheduled-debate-flanagan-tafoya-spar-over-track-records-policy-positions/",
+        "date": "2026-10-16",
+        "quote": "would not support additional offensive weapons or military aid to Israel"
+       }
+      }
+     }
+    },
+    {
+     "id": "MN-SEN:tafoya",
+     "name": "Michele Tafoya",
+     "party": "R",
+     "bio": "Former NBC and ESPN sports broadcaster, running for office for the first time.",
+     "positions": {
+      "soc-03": {
+       "stance": 1,
+       "source": {
+        "title": "KTTC debate report, Oct. 16, 2026: Tafoya supports abortion rights",
+        "url": "https://www.kttc.com/2026/10/16/only-scheduled-debate-flanagan-tafoya-spar-over-track-records-policy-positions/",
+        "date": "2026-10-16",
+        "quote": "I am a pro-choice Republican."
+       }
+      },
+      "imm-01": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Tafoya would secure the southern border and end catch-and-release",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "imm-02": {
+       "stance": -1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Tafoya on legal status for undocumented immigrants",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25",
+        "quote": "I do not support amnesty."
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Tafoya backs the Laken Riley Act, which requires detaining immigrants charged with theft",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Tafoya supports the SAVE America Act",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "Minnesota Reformer, Oct. 13, 2026: Tafoya's public safety plan calls for more support for local police and better coordination with federal agencies",
+        "url": "https://www.newsfromthestates.com/article/michele-tafoya-shrugs-trump-endorsement-close-senate-race-minnesota",
+        "date": "2026-10-13"
+       }
+      },
+      "ene-03": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Tafoya would unleash American energy production and cut federal regulations",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Tafoya opposes the Inflation Reduction Act",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25"
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Tafoya on spending",
+        "url": "https://www.kaxe.org/2026-09-25/senate-flanagan-tafoya-whiting-simonetti-mn-2026-election-guide",
+        "date": "2026-09-25",
+        "quote": "hold the line on spending"
+       }
+      },
+      "eco-10": {
+       "stance": 0,
+       "source": {
+        "title": "KTTC debate report, Oct. 16, 2026: Tafoya would renegotiate trade with Canada and Mexico and says she would have taken a different approach than the president",
+        "url": "https://www.kttc.com/2026/10/16/only-scheduled-debate-flanagan-tafoya-spar-over-track-records-policy-positions/",
+        "date": "2026-10-16",
+        "quote": "let's renegotiate this with Canada and with Mexico"
+       }
+      },
+      "def-11": {
+       "stance": 1,
+       "source": {
+        "title": "KTTC debate report, Oct. 16, 2026: Tafoya stands with Israel",
+        "url": "https://www.kttc.com/2026/10/16/only-scheduled-debate-flanagan-tafoya-spar-over-track-records-policy-positions/",
+        "date": "2026-10-16",
+        "quote": "calling it a genocide is an absolute misrepresentation"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "MN-GOV",
+   "candidates": [
+    {
+     "id": "MN-GOV:klobuchar",
+     "name": "Amy Klobuchar",
+     "party": "D",
+     "bio": "U.S. senator from Minnesota since 2007 and a former Hennepin County attorney.",
+     "positions": {
+      "hea-02": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Klobuchar would use state bulk purchasing and biosimilars to cut drug prices",
+        "url": "https://www.kaxe.org/2026-09-28/governor-demuth-klobuchar-young-mn-2026-election-guide",
+        "date": "2026-09-28",
+        "quote": "taking on Big Pharma to lower prescription drug prices"
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE debate report, Oct. 20, 2026: Klobuchar supports the state's reinsurance program and help for small businesses with premiums",
+        "url": "https://www.kaxe.org/elections/2026-10-20/here-are-4-takeaways-from-the-first-demuth-klobuchar-debate",
+        "date": "2026-10-20"
+       }
+      },
+      "sta-09": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Klobuchar would support rural hospitals",
+        "url": "https://www.kaxe.org/2026-09-28/governor-demuth-klobuchar-young-mn-2026-election-guide",
+        "date": "2026-09-28"
+       }
+      },
+      "soc-07": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Klobuchar would expand access to affordable child care",
+        "url": "https://www.kaxe.org/2026-09-28/governor-demuth-klobuchar-young-mn-2026-election-guide",
+        "date": "2026-09-28"
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE debate report, Oct. 20, 2026: Klobuchar would build more housing, with incentives for 100,000 new units",
+        "url": "https://www.kaxe.org/elections/2026-10-20/here-are-4-takeaways-from-the-first-demuth-klobuchar-debate",
+        "date": "2026-10-20"
+       }
+      },
+      "hou-09": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Klobuchar would finish building high-speed broadband",
+        "url": "https://www.kaxe.org/2026-09-28/governor-demuth-klobuchar-young-mn-2026-election-guide",
+        "date": "2026-09-28"
+       }
+      },
+      "edu-03": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Klobuchar would create 10,000 more apprenticeships",
+        "url": "https://www.kaxe.org/2026-09-28/governor-demuth-klobuchar-young-mn-2026-election-guide",
+        "date": "2026-09-28"
+       }
+      },
+      "sta-07": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Klobuchar would create 10,000 more apprenticeships and tie degrees to in-demand careers",
+        "url": "https://www.kaxe.org/2026-09-28/governor-demuth-klobuchar-young-mn-2026-election-guide",
+        "date": "2026-09-28"
+       }
+      },
+      "sta-02": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Klobuchar on school funding",
+        "url": "https://www.kaxe.org/2026-09-28/governor-demuth-klobuchar-young-mn-2026-election-guide",
+        "date": "2026-09-28",
+        "quote": "funding our schools will always be a priority for me"
+       }
+      },
+      "sta-10": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE debate report, Oct. 20, 2026: Klobuchar supports more R&D incentives for small businesses and startups and workforce training incentives",
+        "url": "https://www.kaxe.org/elections/2026-10-20/here-are-4-takeaways-from-the-first-demuth-klobuchar-debate",
+        "date": "2026-10-20"
+       }
+      },
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "KAXE debate report, Oct. 20, 2026: Klobuchar would negotiate trade agreements with Canadian provinces to blunt the tariffs",
+        "url": "https://www.kaxe.org/elections/2026-10-20/here-are-4-takeaways-from-the-first-demuth-klobuchar-debate",
+        "date": "2026-10-20"
+       }
+      }
+     }
+    },
+    {
+     "id": "MN-GOV:demuth",
+     "name": "Lisa Demuth",
+     "party": "R",
+     "bio": "Speaker of the Minnesota House since 2025 and a state representative since 2019.",
+     "positions": {
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Demuth would cut the two lowest income tax brackets and end state taxes on Social Security benefits",
+        "url": "https://www.kaxe.org/2026-09-28/governor-demuth-klobuchar-young-mn-2026-election-guide",
+        "date": "2026-09-28",
+        "quote": "cut income taxes for families by reducing the lowest two tax brackets"
+       }
+      },
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "KAXE debate report, Oct. 20, 2026: Demuth rules out any tax increase",
+        "url": "https://www.kaxe.org/elections/2026-10-20/here-are-4-takeaways-from-the-first-demuth-klobuchar-debate",
+        "date": "2026-10-20",
+        "quote": "Tax hikes are absolutely off the table for me."
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "KAXE debate report, Oct. 20, 2026: Demuth opposes putting more people on public health plans to cut costs",
+        "url": "https://www.kaxe.org/elections/2026-10-20/here-are-4-takeaways-from-the-first-demuth-klobuchar-debate",
+        "date": "2026-10-20",
+        "quote": "putting more people on a public plan does not help bring those costs down"
+       }
+      },
+      "soc-12": {
+       "stance": -1,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Demuth would preserve girls' sports",
+        "url": "https://www.kaxe.org/2026-09-28/governor-demuth-klobuchar-young-mn-2026-election-guide",
+        "date": "2026-09-28",
+        "quote": "preserve girls' sports"
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "KAXE 2026 election guide, candidate questionnaire: Demuth would pass voter ID",
+        "url": "https://www.kaxe.org/2026-09-28/governor-demuth-klobuchar-young-mn-2026-election-guide",
+        "date": "2026-09-28",
+        "quote": "ensure we finally pass voter ID"
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "KAXE debate report, Oct. 20, 2026: Demuth blames state mandates for rising property taxes and would create a commission to study them",
+        "url": "https://www.kaxe.org/elections/2026-10-20/here-are-4-takeaways-from-the-first-demuth-klobuchar-debate",
+        "date": "2026-10-20"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

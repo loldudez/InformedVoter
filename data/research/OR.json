@@ -1,0 +1,355 @@
+{
+ "updated": "2026-10-25",
+ "note": "Oregon governor race, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "OR-GOV",
+   "candidates": [
+    {
+     "id": "OR-GOV:kotek",
+     "name": "Tina Kotek",
+     "party": "D",
+     "bio": "Governor of Oregon since 2023 and a former speaker of the Oregon House.",
+     "officialSite": "https://www.tinafororegon.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek signed HB 4088 protecting abortion seekers and providers and HB 4127 funding Planned Parenthood (2026)",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "protect Oregonians from federal attempts to restrict access to abortion"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek opposed overturning Roe v. Wade",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek is fully supportive of Oregon's Climate Protection Program, which caps emissions",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek signed the Climate Resilience Investment Act",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek pledges clean air and water and backed restoring salmon protections",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek directed the state to expand and speed up police training",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek signed HB 4002 (2024), recriminalizing small-amount drug possession while allowing deflection into treatment",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek opposes public money for private schools and opted Oregon out of the federal scholarship tax credit (2026)",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek supported the 2022 measure creating a state constitutional right to affordable health care",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek signed HB 2010 (2025), extending the taxes that fund Oregon's Medicaid program",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek would team up with other states to lower prescription drug costs",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek defended Oregon's sanctuary law and signed eight bills in 2026 protecting immigrants from federal enforcement",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Oregon is not staying quiet."
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek signed unemployment benefits for striking workers (SB 916, 2025) and required project labor agreements on state construction",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I'm proud to stand with working people."
+       }
+      },
+      "soc-11": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek signed HB 4088, protecting providers of gender-affirming care (2026)",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek opposed the Supreme Court ruling letting states bar transgender athletes from girls' sports",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "our LGBTQ+ community from federal attacks"
+       }
+      },
+      "sta-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek voted in 2016 to raise Oregon's minimum wage in steps through 2022 (SB 1532)",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "All workers deserve fair, living wages."
+       }
+      },
+      "gov-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Kotek would safeguard vote-by-mail and opposes federal limits on mail voting",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "It's safe, it's secure, and it works."
+       }
+      }
+     }
+    },
+    {
+     "id": "OR-GOV:drazan",
+     "name": "Christine Drazan",
+     "party": "R",
+     "bio": "Oregon state representative, a former House Republican leader and the 2022 Republican nominee for governor.",
+     "officialSite": "https://christinefororegon.com/",
+     "positions": {
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan calls herself pro-life and said in 2022 she would veto bills expanding abortion rights",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-04": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan calls Oregon's abortion law an outlier but does not support a ban",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I do not support banning abortion."
+       }
+      },
+      "ene-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan would rescind Oregon's Climate Protection Program on her first day",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan voted against banning the pesticide chlorpyrifos (2020)",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan on public safety",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We need fewer needles and more cops to restore safe communities."
+       }
+      },
+      "sta-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan on public safety",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We need fewer needles and more cops to restore safe communities."
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan supports opting Oregon into the federal private school tax credit and would expand school choice",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We urgently need more options for students and their families to succeed."
+       }
+      },
+      "hea-01": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan opposed the 2022 measure creating a state constitutional right to affordable health care",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan voted against HB 2010 (2025), which extended the taxes that fund Oregon's Medicaid program",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan voted against creating a Prescription Drug Affordability Board (SB 844, 2021)",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan sponsored HB 3551, letting state police work with federal agencies to locate immigrants convicted of certain crimes",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan calls Oregon's sanctuary status off the rails and backed the 2025 federal troop deployment to Portland",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan voted against unemployment benefits for striking workers (SB 916, 2025) and against easing union organizing (HB 2016, 2019)",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan sponsored HB 3740, barring transgender athletes from girls' school sports",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "No more boys in girls' sports."
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan supports bold tax cuts for families and businesses and more child care tax credits",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan would eliminate Oregon's estate tax",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan introduced HB 3872, requiring photo ID to vote or request a ballot (2025)",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Oregon governor voters guide: Drazan introduced HB 3872 to replace vote-by-mail with in-person voting, though she says she has always supported vote by mail",
+        "url": "https://guides.vote/guide/2026-oregon-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

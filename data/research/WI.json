@@ -1,0 +1,465 @@
+{
+ "updated": "2026-10-25",
+ "note": "Wisconsin governor race, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "WI-GOV",
+   "candidates": [
+    {
+     "id": "WI-GOV:crowley",
+     "name": "David Crowley",
+     "party": "D",
+     "bio": "Milwaukee County executive since 2020 and a former state Assembly member.",
+     "officialSite": "https://www.crowleyforwi.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley would write reproductive rights into the state constitution and supports access to mifepristone",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "protected at all costs"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley opposed Wisconsin's 1849 abortion ban (Milwaukee County statement)",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley backed Milwaukee County's net-zero-by-2050 goal",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "The climate crisis is a real, pressing threat."
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley supported the 2022 federal clean energy investments",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley opposes defunding the police but says public safety investment doesn't mean more money for officers",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We cannot defund the police."
+       }
+      },
+      "cri-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley supports police body cameras",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley supports alternatives to incarceration",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley would keep Wisconsin's voucher programs without expanding them (Wisconsin Examiner, Aug. 2026)",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley would prioritize public school investment",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "invest in our public schools to make sure that they're the school of choice"
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley would prioritize public school investment",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "invest in our public schools to make sure that they're the school of choice"
+       }
+      },
+      "ene-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley opposes gutting PFAS protections and wants environmental guardrails on data centers",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "defend Wisconsin's water standards"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley would use federal Medicaid matching funds to open BadgerCare to any household that wants it",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley would open BadgerCare, with medical, dental and vision coverage, to any household that wants it",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley supports extending the ACA premium tax credits",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-09": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley would invest in mobile care and rural clinics",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley says an undocumented person convicted of a heinous crime should be deported",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley opposes requiring local police to partner with ICE",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley would repeal Act 10 in full and protect the right to organize, bargain and strike",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Labor unions are the lifeblood of the U.S."
+       }
+      },
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley supports repealing Wisconsin's constitutional ban on same-sex marriage",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley backed a Milwaukee resolution against conversion therapy; on transgender athletes he would defer to the state athletic association",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley would legalize medical and recreational marijuana",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I will legalize it."
+       }
+      },
+      "sta-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley would raise the state minimum wage to $15 immediately and to $20 by 2030",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley would raise income taxes on people making over $1 million",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley says he would have signed the state deal lowering property taxes",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley opposes requiring proof of citizenship to register to vote",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Crowley opposes limits on mail-in voting",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "WI-GOV:tiffany",
+     "name": "Tom Tiffany",
+     "party": "R",
+     "bio": "U.S. representative for Wisconsin's 7th District since 2020 and a former state senator.",
+     "officialSite": "https://tomtiffany.com/",
+     "positions": {
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany cosponsored federal bills banning abortion once a heartbeat is detectable (H.R. 705, 2021; H.R. 175, 2023)",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany voted for Wisconsin's 20-week abortion limit (2015) and would uphold it",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "proud to be pro-life"
+       }
+      },
+      "ene-01": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany introduced a bill barring federal funding for solar and wind projects on farmland (H.R. 1754)",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Taxpayer dollars shouldn't be used to sacrifice farmland for green energy boondoggles."
+       }
+      },
+      "ene-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany introduced a bill directing the Interior Department to issue oil and gas drilling permits on public land (H.R. 9024, 2022)",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany voted to undo limits on seven hazardous air pollutants (2025), though he would set environmental standards for data centers",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany introduced a bill raising penalties for certain violent crimes and opposes commutations for violent criminals",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Crime is a policy choice."
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany would give police more tools and training",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany would give police more tools and training",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany sponsored federal tax credits for private school scholarships (H.R. 833) and urged Wisconsin to opt in",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "expand access to quality education for every child"
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany voted against extending ACA premium subsidies for three years (House roll call 11, 2026)",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany backs more choice and competition in health care, upfront prices and direct payments to doctors",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany voted for $75 billion more for ICE and $70 billion more for DHS",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Deporting illegal aliens is how you make America safer."
+       }
+      },
+      "imm-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany introduced a bill letting states block refugee resettlement (H.R. 6414)",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany cosponsored a national right-to-work bill (H.R. 1232) and voted for Act 10 (2011)",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-02": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany voted against the Equality Act (H.R. 5; House roll call 39, 2021)",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-11": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany opposes gender transition surgery for minors",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany says a $20 minimum wage would cost rural jobs; in 2020 he said a $15 minimum would cost jobs",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany would cut income taxes 10% for families earning under $150,000 and end state income tax on tips and overtime",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany would repeal the partial veto that lets schools raise property taxes for 400 years",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany sponsored H.R. 7300, requiring voter ID",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Wisconsin governor voters guide: Tiffany sponsored H.R. 7300, requiring mail ballots to arrive by Election Day, and voted against the John Lewis Voting Rights Act (2021)",
+        "url": "https://guides.vote/guide/2026-wisconsin-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

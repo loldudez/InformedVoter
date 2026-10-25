@@ -1,0 +1,494 @@
+{
+ "updated": "2026-10-25",
+ "note": "Nebraska U.S. Senate and governor races, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "NE-SEN",
+   "candidates": [
+    {
+     "id": "NE-SEN:osborn",
+     "name": "Dan Osborn",
+     "party": "I",
+     "bio": "Navy veteran and union leader who led the 2021 Kellogg's strike in Omaha; ran as an independent for Senate in 2024.",
+     "officialSite": "https://www.osbornforsenate.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn would put Roe v. Wade into law and says the decision belongs to a woman and her doctor",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "the government should not be making health decisions for people"
+       }
+      },
+      "soc-04": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn would restore Roe v. Wade's protections in federal law",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn supports a transition to clean energy and landowners' right to lease land for solar",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn would break up agricultural monopolies and investigate corporate price gouging",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn opposes vouchers that fund private school tuition at public schools' expense",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn on public schools",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Strong and well-funded public schools are the backbone of the American education system."
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn would keep air, water and land clean and opposes data center expansion",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We must protect our water and land, not sell it to the highest bidder."
+       }
+      },
+      "hea-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn would let Medicaid negotiate drug prices directly with manufacturers",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn says the administration's border policy is the right thing to do (Newsweek, April 2026)",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn says the Iran war's fuel and fertilizer costs will bankrupt farmers",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "With this war, I'm not seeing why we are in it."
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn supports the PRO Act and opposes a national right-to-work law",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-10": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn supports same-sex marriage",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn on discrimination",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I oppose discrimination for any reason."
+       }
+      },
+      "eco-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn would raise the federal minimum wage to $15, Nebraska's current rate",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Osborn supports a wealth tax and closing multinational tax loopholes",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We cannot afford more tax cuts for the ultra-wealthy."
+       }
+      }
+     }
+    },
+    {
+     "id": "NE-SEN:ricketts",
+     "name": "Pete Ricketts",
+     "party": "R",
+     "bio": "U.S. senator since 2023 and governor of Nebraska from 2015 to 2023.",
+     "officialSite": "https://petericketts.com/",
+     "positions": {
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts supports a 12-week abortion ban and cosponsored bills to ban mailed abortion pills",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts supports the pro-life movement and funded a petition drive for a constitutional abortion ban in Nebraska",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts praised the EPA's repeal of the greenhouse gas endangerment finding (2026)",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts voted to end the clean energy tax credits (Senate roll call 372, 2025)",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts sponsored S. 1569 for harsher penalties on criminals who target police and supports murder charges for fentanyl dealers",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts is a vocal supporter of school choice and proposed public-funded private school scholarships as governor",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts voted to overturn the Clean Water Act streams and wetlands rule (Senate roll call 79, 2023) and to end mining limits near the Boundary Waters (Senate roll call 84, 2026)",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts voted for the 2025 law that cut Medicaid (Senate roll call 372) and opposed Medicaid expansion as governor",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts voted against repealing $75 billion in ICE funding (Senate roll call 18, 2026) and introduced a bill against sanctuary cities",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts voted against requiring congressional authorization for military action in Iran (Senate roll call 46, 2026)",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts on Iran",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We have to destroy [Iran's] ability to threaten us."
+       }
+      },
+      "def-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts voted for $150 billion more for national security in the 2025 tax and spending law",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts sponsored the National Right to Work Act (S. 532)",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts cosponsored S. 9 to ban transgender students from girls' sports and opposed adding gender identity to Title IX",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "classic big government overreach"
+       }
+      },
+      "eco-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts opposed Nebraska's voter-approved minimum wage increase (2022)",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Employers should pay what the market demands to hire people."
+       }
+      },
+      "eco-01": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts voted to extend the 2017 tax cuts and sponsored repeal of the estate tax (S. 587)",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-12": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: As governor, Ricketts signed cuts to Nebraska's corporate and top individual income tax rates",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts led the 2022 campaign for Nebraska's voter ID amendment",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts says he helped cut nearly $2 trillion in federal spending (campaign site)",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nebraska U.S. Senate voters guide: Ricketts supports federal assistance for farmers and ranchers",
+        "url": "https://guides.vote/guide/2026-nebraska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "NE-GOV",
+   "candidates": [
+    {
+     "id": "NE-GOV:pillen",
+     "name": "Jim Pillen",
+     "party": "R",
+     "bio": "Governor of Nebraska since 2023, a hog producer and a former University of Nebraska regent.",
+     "positions": {
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "Associated Press via WECT, May 22, 2023: Pillen signed a 12-week abortion ban with exceptions for rape, incest and the mother's life (2023)",
+        "url": "https://www.wect.com/2023/05/22/nebraska-governor-sign-12-week-abortion-ban-limits-gender-affirming-care-minors/",
+        "date": "2023-05-22",
+        "quote": "It's about protecting our kids and saving babies. Pure and simple."
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "Nebraska Examiner, June 29, 2023: Pillen says the 12-week limit is unacceptable and he will push to end abortion",
+        "url": "https://www.newsfromthestates.com/article/nebraska-gov-jim-pillen-says-he-wont-stop-abortion-seeks-total-ban",
+        "date": "2023-06-29",
+        "quote": "I pushed hard to get us to 12, but we're going to end abortion."
+       }
+      },
+      "soc-11": {
+       "stance": -2,
+       "source": {
+        "title": "Associated Press via WECT, May 22, 2023: Pillen signed limits on hormone treatment and puberty blockers for minors (2023)",
+        "url": "https://www.wect.com/2023/05/22/nebraska-governor-sign-12-week-abortion-ban-limits-gender-affirming-care-minors/",
+        "date": "2023-05-22"
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "Nebraska Examiner, May 30, 2023: Pillen signed tax credits for donations to private school scholarships (LB 753, 2023)",
+        "url": "https://nebraskaexaminer.com/2023/05/30/nebraska-gov-pillen-signs-opportunity-scholarships-proposal-into-law/",
+        "date": "2023-05-30"
+       }
+      },
+      "imm-01": {
+       "stance": 2,
+       "source": {
+        "title": "WOWT, July 31, 2023: Pillen sent Nebraska National Guard soldiers to the Texas border (2023)",
+        "url": "https://www.wowt.com/2023/07/31/gov-pillen-deploying-60-nebraska-national-guard-soldiers-southern-border",
+        "date": "2023-07-31"
+       }
+      },
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "Flatwater Free Press voter guide: Pillen wants lower property taxes and hard caps on local spending",
+        "url": "https://voterguide.flatwaterfreepress.org/race/governor/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Flatwater Free Press voter guide: Pillen wants lasting tax cuts rather than tax shifts",
+        "url": "https://voterguide.flatwaterfreepress.org/race/governor/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "durable, lasting tax cuts, not tax shifts"
+       }
+      }
+     }
+    },
+    {
+     "id": "NE-GOV:walz",
+     "name": "Lynne Walz",
+     "party": "D",
+     "bio": "Nebraska state senator from 2017 to 2025, where she chaired the Education Committee.",
+     "positions": {
+      "soc-04": {
+       "stance": -1,
+       "source": {
+        "title": "Flatwater Free Press voter guide: Walz says voters' recent abortion decisions should be respected and wants exceptions for rape, incest and the mother's life",
+        "url": "https://voterguide.flatwaterfreepress.org/race/governor/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "WOWT, Oct. 19, 2026: Walz says she voted for most property tax bills and would back any plan to reduce them",
+        "url": "https://www.wowt.com/2026/10/19/election-2026-lynne-walz-promises-expedite-medical-marijuana-day-one/",
+        "date": "2026-10-19",
+        "quote": "I probably have voted for the majority of property tax legislation that came across our desk."
+       }
+      },
+      "soc-12": {
+       "stance": 1,
+       "source": {
+        "title": "WOWT, Oct. 19, 2026: Walz voted against the Sports and Spaces Act on transgender athletes",
+        "url": "https://www.wowt.com/2026/10/19/election-2026-lynne-walz-promises-expedite-medical-marijuana-day-one/",
+        "date": "2026-10-19"
+       }
+      },
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "Norfolk Daily News, Aug. 4, 2026: Walz says the state should invest more in public education and support educators",
+        "url": "https://norfolkdailynews.com/select/news/walz-pitches-bipartisan-leadership-rural-outreach-during-campaign-stop/article_73853100-9082-4d57-8b0d-af8f4117d1b6.html",
+        "date": "2026-08-04"
+       }
+      },
+      "sta-02": {
+       "stance": 1,
+       "source": {
+        "title": "Norfolk Daily News, Aug. 4, 2026: Walz says the state should invest more in public education and support educators",
+        "url": "https://norfolkdailynews.com/select/news/walz-pitches-bipartisan-leadership-rural-outreach-during-campaign-stop/article_73853100-9082-4d57-8b0d-af8f4117d1b6.html",
+        "date": "2026-08-04"
+       }
+      },
+      "hou-09": {
+       "stance": 1,
+       "source": {
+        "title": "Norfolk Daily News, Aug. 4, 2026: Walz says lawmakers should spend more time on housing and rural broadband",
+        "url": "https://norfolkdailynews.com/select/news/walz-pitches-bipartisan-leadership-rural-outreach-during-campaign-stop/article_73853100-9082-4d57-8b0d-af8f4117d1b6.html",
+        "date": "2026-08-04"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Flatwater Free Press voter guide: Walz backs temporary tax holidays and targeted tax relief",
+        "url": "https://voterguide.flatwaterfreepress.org/race/governor/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

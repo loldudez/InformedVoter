@@ -1,0 +1,720 @@
+{
+ "updated": "2026-10-24",
+ "note": "Ohio U.S. Senate special and governor races, researched Oct. 24, 2026.",
+ "races": [
+  {
+   "id": "OH-SEN",
+   "candidates": [
+    {
+     "id": "OH-SEN:brown",
+     "name": "Sherrod Brown",
+     "party": "D",
+     "bio": "U.S. senator from Ohio from 2007 to 2025; earlier a U.S. representative and Ohio secretary of state.",
+     "officialSite": "https://www.sherrodbrown.com/",
+     "donateUrl": "https://secure.actblue.com/donate/sherrod-website",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown supports abortion access and voted against abortion restrictions in 2022",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "abortion access for all women"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown voted against a 20-week abortion ban (Senate roll call 25, 2018)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown voted for $369 billion in clean energy tax credits (Inflation Reduction Act, Senate roll call 325, 2022)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown supports action on climate change but opposed the EPA’s 2024 limits on coal plant emissions",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "an unrealistic, unachievable rule"
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown voted to keep limits on air pollution from new heavy-duty vehicles (Senate roll call 98, 2023)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown voted for the infrastructure law (Senate roll call 314, 2021)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown said vouchers moved money out of public education into private schools (Ohio Capital Journal, 2022)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown on public school funding",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "make sure our public schools have the resources they need"
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown wants to strengthen the border and give border agents more resources",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "imm-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown supported a path to citizenship for DACA recipients (2017)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown on police funding",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "the resources, training, and support they need"
+       }
+      },
+      "hea-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown voted to let Medicare negotiate drug prices (Senate roll call 325, 2022) and sponsored a $35 monthly insulin cap",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown supports the Affordable Care Act (Ohio Capital Journal, 2024)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown sponsored a bill to expand organizing and collective bargaining rights (S. 420)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown voted for the Respect for Marriage Act (Senate roll call 362, 2022)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "soc-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown sponsored a bill banning discrimination based on sex, sexual orientation and gender identity (S. 393)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown supports raising the minimum wage to $17 an hour",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown voted to raise taxes on corporations and the wealthy (Senate roll call 357, 2021) and opposes tax cuts for the richest",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown voted to expand voting access (Senate roll call 246, 2021)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "make it easier to vote, not creating unnecessary barriers"
+       }
+      },
+      "gov-05": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown called a push for a federal voter ID requirement unnecessary (Journal-News)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Brown opposes the war with Iran (Ohio Capital Journal, March 2026)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "country’s safety and security at risk"
+       }
+      }
+     }
+    },
+    {
+     "id": "OH-SEN:husted",
+     "name": "Jon Husted",
+     "party": "R",
+     "bio": "Appointed to the U.S. Senate in January 2025 to fill J.D. Vance’s seat; previously Ohio lieutenant governor and secretary of state.",
+     "officialSite": "https://www.jonhustedforsenate.com/",
+     "positions": {
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted cosponsored S. 186 to bar federal funding of abortion and opposed Ohio’s 2023 abortion-rights amendment",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted supported overturning Roe v. Wade and cosponsored S. 186",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "defending the rights of women, children, and the unborn"
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted voted to end Biden-era clean energy tax credits (H.R. 1, Senate roll call 372, 2025)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted supports repealing EPA greenhouse gas standards for coal plants",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted voted to undo rules on emissions of seven hazardous air pollutants (Senate roll call 229, 2025)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted supports funding law enforcement",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "more tools to convict criminals"
+       }
+      },
+      "def-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted voted to increase defense spending (H.R. 1, Senate roll call 372, 2025)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "def-10": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted voted to cut existing USAID foreign aid and public broadcasting funds (Senate roll call 411, 2025)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted helped create Ohio’s EdChoice scholarship",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "empowers parents"
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted voted for the 2025 law that cut Medicaid (H.R. 1, Senate roll call 372)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted on the border",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "securing the border and adding more agents"
+       }
+      },
+      "imm-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted voted to increase ICE funding by $75 billion (H.R. 1, Senate roll call 372, 2025)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "soc-11": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted supported Ohio’s HB 68, banning gender-affirming care for minors",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted backed Ohio’s parents’ bill of rights (HB 8) and says men should not compete in women’s sports",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted voted against raising the federal minimum wage to $17 by 2030 (Senate roll call 184, 2025)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted sponsored a bill to repeal the federal estate tax and voted to extend the 2017 tax cuts",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted proposed a photo ID requirement for federal elections",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "Passing voter ID requirements is common sense"
+       }
+      },
+      "def-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted voted twice in 2026 against requiring congressional authorization for military action in Iran (S.J.Res. 123)",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio U.S. Senate voters guide: Husted backed the president’s military action against Iran, calling it decisive",
+        "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "notes": [
+    {
+     "text": "A special election: the winner serves the rest of J.D. Vance’s term, through January 2029.",
+     "source": "guides.vote",
+     "url": "https://guides.vote/guide/2026-ohio-senate-voters-guide/"
+    }
+   ]
+  },
+  {
+   "id": "OH-GOV",
+   "candidates": [
+    {
+     "id": "OH-GOV:acton",
+     "name": "Amy Acton",
+     "party": "D",
+     "bio": "Physician and former director of the Ohio Department of Health, who led the state’s early COVID-19 response.",
+     "officialSite": "https://actonforgovernor.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton on reproductive rights (actonforgovernor.com)",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "Every Ohioan deserves the right to make their own reproductive health care decisions"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton proposes a refundable state earned income credit",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton proposes child tax credits and property tax relief (Statehouse News Bureau, April 2026)",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton opposes the voucher program",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "sending billions…of your tax dollars to fund private schools"
+       }
+      },
+      "sta-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton would raise the minimum wage",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton calls Medicaid a “life-saving program” that should not be cut",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "soc-05": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton on cannabis, which Ohio voters legalized in 2023",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "respect the will of the voters"
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton on immigration enforcement (WLWT)",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "We want violent offenders off the street"
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton’s all-of-the-above energy plan",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "the lowest-cost and cleanest sources of energy"
+       }
+      },
+      "cri-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton on public safety",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "fully fund the police and public safety"
+       }
+      },
+      "sta-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton on public safety",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "fully fund the police and public safety"
+       }
+      },
+      "gov-05": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton would ensure Ohio’s voter ID law is enforced (Columbus Dispatch, May 2026)",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton on labor",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "steadfast pro-union, pro-worker Governor"
+       }
+      },
+      "soc-12": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Acton on Pride Month",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "the right to live with dignity"
+       }
+      }
+     }
+    },
+    {
+     "id": "OH-GOV:ramaswamy",
+     "name": "Vivek Ramaswamy",
+     "party": "R",
+     "bio": "Biotech entrepreneur and 2024 Republican presidential candidate.",
+     "officialSite": "https://vivekforohio.com/",
+     "positions": {
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy on abortion (NBC’s Meet the Press, April 2023)",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "I believe that abortion is a form of murder"
+       }
+      },
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy on abortion (NBC’s Meet the Press, April 2023)",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "I believe that abortion is a form of murder"
+       }
+      },
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy’s plan (vivekforohio.com)",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "slash property taxes immediately"
+       }
+      },
+      "eco-01": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy would phase out the state income tax, starting with capital gains taxes",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy on school choice",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "to the next level"
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy says Medicaid without work requirements has harmed the people it was meant to help",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy on the border",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "Militarize the southern border"
+       }
+      },
+      "ene-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy on energy (Canton Repository, June 2026)",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "We’re going to frack"
+       }
+      },
+      "ene-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy on climate policy",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "The climate agenda is a hoax"
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy on policing",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "more cops on the street"
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy on policing",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "more cops on the street"
+       }
+      },
+      "cri-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy’s plan (vivekforohio.com)",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true,
+        "quote": "stricter bail and sentencing for repeat violent offenders"
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy would put voter ID in Ohio’s constitution",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy has proposed single-day voting with paper ballots",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy has called transgender identity a “mental health disorder”",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Ohio governor voters guide: Ramaswamy on labor organizing",
+        "url": "https://guides.vote/guide/2026-ohio-governor-voters-guide/",
+        "date": "2026-10-24",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

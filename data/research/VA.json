@@ -1,0 +1,182 @@
+{
+ "updated": "2026-10-25",
+ "note": "Virginia U.S. Senate race, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "VA-SEN",
+   "candidates": [
+    {
+     "id": "VA-SEN:warner",
+     "name": "Mark Warner",
+     "party": "D",
+     "bio": "U.S. senator from Virginia since 2009 and governor of Virginia from 2002 to 2006.",
+     "positions": {
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Warner voted Yea",
+        "url": "https://ballotpedia.org/Mark_Warner",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Warner voted Yea",
+        "url": "https://ballotpedia.org/Mark_Warner",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Warner voted Yea",
+        "url": "https://ballotpedia.org/Mark_Warner",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Warner voted Yea",
+        "url": "https://ballotpedia.org/Mark_Warner",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Warner voted Yea",
+        "url": "https://ballotpedia.org/Mark_Warner",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Warner voted Yea",
+        "url": "https://ballotpedia.org/Mark_Warner",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-13": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Warner voted Yea",
+        "url": "https://ballotpedia.org/Mark_Warner",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Warner voted Yea",
+        "url": "https://ballotpedia.org/Mark_Warner",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Warner voted Yea",
+        "url": "https://ballotpedia.org/Mark_Warner",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Warner voted Yea",
+        "url": "https://ballotpedia.org/Mark_Warner",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Border Act of 2024 (S. 4361), the bipartisan border security bill: Warner voted Yea",
+        "url": "https://ballotpedia.org/Mark_Warner",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-03": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the PACT Act (2022), expanding health care for veterans exposed to toxic burn pits: Warner voted Yea",
+        "url": "https://ballotpedia.org/Mark_Warner",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "VA-SEN:mizusawa",
+     "name": "Bert Mizusawa",
+     "party": "R",
+     "bio": "Retired Army major general, combat veteran and former senior adviser at the CIA.",
+     "positions": {
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Bert Mizusawa's campaign website, as quoted by Ballotpedia: Mizusawa would rein in federal spending",
+        "url": "https://ballotpedia.org/Bert_Mizusawa",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I will focus government on its core functions and bring excessive spending under control."
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Bert Mizusawa's campaign website, as quoted by Ballotpedia: Mizusawa supports a simpler tax code with fewer brackets and larger standard deductions",
+        "url": "https://ballotpedia.org/Bert_Mizusawa",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Bert Mizusawa's campaign website, as quoted by Ballotpedia: Mizusawa would keep the borders secure",
+        "url": "https://ballotpedia.org/Bert_Mizusawa",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-03": {
+       "stance": 1,
+       "source": {
+        "title": "Bert Mizusawa's campaign website, as quoted by Ballotpedia: Mizusawa would make legal immigration easier",
+        "url": "https://ballotpedia.org/Bert_Mizusawa",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-02": {
+       "stance": 2,
+       "source": {
+        "title": "Bert Mizusawa's campaign website, as quoted by Ballotpedia: Mizusawa supports bringing new nuclear power online",
+        "url": "https://ballotpedia.org/Bert_Mizusawa",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Nuclear power is clean, cheap, reliable and safe."
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

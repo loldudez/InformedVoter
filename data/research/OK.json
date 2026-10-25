@@ -1,0 +1,300 @@
+{
+ "updated": "2026-10-24",
+ "note": "Oklahoma U.S. Senate and governor races, researched Oct. 24, 2026.",
+ "races": [
+  {
+   "id": "OK-SEN",
+   "candidates": [
+    {
+     "id": "OK-SEN:hern",
+     "name": "Kevin Hern",
+     "party": "R",
+     "bio": "U.S. Representative for Oklahoma’s 1st District since 2018 and a former McDonald’s franchise owner.",
+     "positions": {
+      "soc-10": {
+       "stance": -1,
+       "source": {
+        "title": "U.S. House roll call 513 (2022) on the Respect for Marriage Act (H.R. 8404): Hern voted Nay",
+        "url": "https://clerk.house.gov/Votes/2022513",
+        "date": "2022-12-08"
+       }
+      },
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "U.S. House roll call 360 (2022) on the Women’s Health Protection Act (H.R. 8296), to protect abortion access in federal law: Hern voted Nay",
+        "url": "https://clerk.house.gov/Votes/2022360",
+        "date": "2022-07-15"
+       }
+      },
+      "hea-02": {
+       "stance": -1,
+       "source": {
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies: Hern voted Nay",
+        "url": "https://clerk.house.gov/Votes/2022420",
+        "date": "2022-08-12"
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies: Hern voted Nay",
+        "url": "https://clerk.house.gov/Votes/2022420",
+        "date": "2022-08-12"
+       }
+      },
+      "eco-06": {
+       "stance": -1,
+       "source": {
+        "title": "U.S. House roll call 369 (2021) on the Infrastructure Investment and Jobs Act (H.R. 3684): Hern voted Nay",
+        "url": "https://clerk.house.gov/Votes/2021369",
+        "date": "2021-11-05"
+       }
+      },
+      "agr-02": {
+       "stance": -1,
+       "source": {
+        "title": "U.S. House roll call 404 (2022) on the CHIPS and Science Act (H.R. 4346), funding domestic semiconductor manufacturing: Hern voted Nay",
+        "url": "https://clerk.house.gov/Votes/2022404",
+        "date": "2022-07-28"
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending: Hern voted Aye",
+        "url": "https://clerk.house.gov/Votes/2025190",
+        "date": "2025-07-03"
+       }
+      },
+      "def-13": {
+       "stance": -2,
+       "source": {
+        "title": "U.S. House roll call 151 (2024) on H.R. 8035, military aid for Ukraine: Hern voted Nay",
+        "url": "https://clerk.house.gov/Votes/2024151",
+        "date": "2024-04-20"
+       }
+      },
+      "def-12": {
+       "stance": 2,
+       "source": {
+        "title": "U.S. House roll call 152 (2024) on H.R. 8034, military aid for Israel: Hern voted Yea",
+        "url": "https://clerk.house.gov/Votes/2024152",
+        "date": "2024-04-20"
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "U.S. House roll call 209 (2023) on the Secure the Border Act (H.R. 2), funding border wall construction and more Border Patrol agents: Hern voted Yea",
+        "url": "https://clerk.house.gov/Votes/2023209",
+        "date": "2023-05-11"
+       }
+      },
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "U.S. House roll call 182 (2023) on the Lower Energy Costs Act (H.R. 1, 2023), expanding oil and gas leasing and permitting: Hern voted Yea",
+        "url": "https://clerk.house.gov/Votes/2023182",
+        "date": "2023-03-30"
+       }
+      }
+     }
+    },
+    {
+     "id": "OK-SEN:thomas",
+     "name": "N’Kiyla Jasmine Thomas",
+     "party": "D",
+     "bio": "Nurse, active-duty military spouse and Chickasaw Nation citizen from Ardmore, running for office for the first time.",
+     "positions": {
+      "hou-08": {
+       "stance": 1,
+       "source": {
+        "title": "News On 6: N’Kiyla Jasmine Thomas wins the Democratic runoff for U.S. Senate",
+        "url": "https://www.newson6.com/oklahoma-politics/democratic-runoff-oklahoma-us-senate-results",
+        "date": "2026-08-25",
+        "quote": "fixing Oklahoma’s roads and bridges"
+       }
+      },
+      "gov-11": {
+       "stance": 1,
+       "source": {
+        "title": "Oklahoma Watch (via Oklahoma Gazette): previewing the Democratic runoff for U.S. Senate",
+        "url": "https://www.okgazette.com/news/democracy-watch-previewing-the-democratic-runoff-for-u-s-senate/",
+        "date": "2026-08-10"
+       }
+      }
+     }
+    }
+   ],
+   "notes": [
+    {
+     "text": "This is the seat Markwayne Mullin left. Thomas has published few specific policy positions, so most questions are unclear for her rather than guessed.",
+     "source": "News On 6",
+     "url": "https://www.newson6.com/oklahoma-politics/democratic-runoff-oklahoma-us-senate-results"
+    }
+   ]
+  },
+  {
+   "id": "OK-GOV",
+   "candidates": [
+    {
+     "id": "OK-GOV:mazzei",
+     "name": "Mike Mazzei",
+     "party": "R",
+     "bio": "Former Oklahoma state senator; won the Aug. 25 Republican runoff over Attorney General Gentner Drummond.",
+     "officialSite": "https://www.mikeforok.com/",
+     "positions": {
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      },
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      }
+     }
+    },
+    {
+     "id": "OK-GOV:munson",
+     "name": "Cyndi Munson",
+     "party": "D",
+     "bio": "Oklahoma City state representative since 2015.",
+     "positions": {
+      "eco-12": {
+       "stance": 1,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06",
+        "quote": "More funding for public education"
+       }
+      },
+      "edu-01": {
+       "stance": 2,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06",
+        "quote": "More funding for public education"
+       }
+      },
+      "edu-04": {
+       "stance": 2,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06",
+        "quote": "Repeal Oklahoma’s parental choice tax voucher"
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      },
+      "sta-09": {
+       "stance": 1,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      },
+      "sta-10": {
+       "stance": -1,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      },
+      "soc-07": {
+       "stance": 2,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      },
+      "edu-09": {
+       "stance": 2,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      },
+      "edu-02": {
+       "stance": 1,
+       "source": {
+        "title": "News 9: Oklahoma governor race: where Mike Mazzei and Cyndi Munson stand on key issues",
+        "url": "https://www.news9.com/oklahoma-elections/mike-mazzei-cyndi-munson-oklahoma-governor-key-issues",
+        "date": "2026-10-06"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}
