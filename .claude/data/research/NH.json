@@ -1,0 +1,610 @@
+{
+ "updated": "2026-10-25",
+ "note": "New Hampshire U.S. Senate and governor races, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "NH-SEN",
+   "candidates": [
+    {
+     "id": "NH-SEN:pappas",
+     "name": "Chris Pappas",
+     "party": "D",
+     "bio": "U.S. representative for New Hampshire's 1st District since 2019.",
+     "officialSite": "https://chrispappas.org/",
+     "positions": {
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas cosponsored the Women's Health Protection Act (H.R. 3755, 2021), barring government restrictions on abortion access",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas voted for the 2022 clean energy investments (House roll call 420)",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "invest in lower-cost, clean energy solutions"
+       }
+      },
+      "ene-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas calls for innovative solutions to the climate crisis",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas cosponsored H.R. 3184 to fund training and recruitment for small and midsize police departments",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas voted for the 2021 George Floyd Justice in Policing Act, which required body cameras (House roll call 60)",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-10": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas voted for the 2021 George Floyd Justice in Policing Act, which banned racial profiling and limited qualified immunity",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas introduced a bill funding substance use treatment and prevention (H.R. 9759)",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas introduced a bill banning companies from using surveillance pricing to raise food prices",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas on public schools",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I'll keep fighting for strong public schools."
+       }
+      },
+      "edu-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas says he has stood firm against efforts to dismantle public education",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas introduced a bill to hold polluters accountable for PFAS contamination (H.R. 6668) and voted to keep mining limits near the Boundary Waters (2026)",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "hold polluters accountable"
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas opposes cuts to Medicaid and Medicare",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas would make the ACA premium tax credits permanent",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas supports more enforcement against people who cross the border illegally and commit serious crimes",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas cosponsored the American Dream and Promise Act (H.R. 6, 2021) for Dreamers",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas introduced a bill moving ICE's $75 billion slush fund to local police (H.R. 7163)",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas voted five times in 2026 to require congressional authorization for military action in Iran",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas on the Iran war",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "a war of choice, with no plan for how to win it"
+       }
+      },
+      "def-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas pressed the administration to prioritize diplomacy with Iran",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas cosponsored the PRO Act (H.R. 842, 2021) and H.R. 2550 restoring federal workers' bargaining rights",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas sponsored the Equality Act (H.R. 15)",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas voted against barring transgender students from girls' sports (House roll call 12, 2025) and cosponsored restoring the LGBTQ+ youth crisis line (H.R. 5434)",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas voted to raise the federal minimum wage to $15 by 2025 (House roll call 496, 2019)",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas voted against extending the 2017 tax cuts (2025), saying they favored the wealthiest and the biggest corporations",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "gave tax giveaways to the wealthiest"
+       }
+      },
+      "gov-05": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Pappas voted three times against proof-of-citizenship registration requirements and opposes New Hampshire's ban on student IDs for voting",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "NH-SEN:sununu",
+     "name": "John E. Sununu",
+     "party": "R",
+     "bio": "U.S. senator for New Hampshire from 2003 to 2009 and U.S. representative from 1997 to 2003.",
+     "officialSite": "https://www.sununusenator.com/",
+     "positions": {
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu says abortion is a state issue and would not undermine New Hampshire's law, which allows abortion up to 24 weeks",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I'm pro-life."
+       }
+      },
+      "soc-04": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu would not override New Hampshire's abortion law federally; in 2006 he voted to make taking a minor across state lines for an abortion a federal crime",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu supports increasing domestic oil and gas production",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We need to protect [U.S.] energy dominance."
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu called the Inflation Reduction Act's climate and clean energy funding reckless spending",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu would expand nuclear power in New Hampshire",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu sponsored national pollutant limits in 2007 (S. 1177) and expanded White Mountain wilderness in 2006, and now backs permitting reform for transmission lines and pipelines",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu supports the 2025 law's cuts to government programs",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu supports New Hampshire's universal Education Freedom Accounts",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "It puts money and power in the hands of the parent."
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu supports the 2025 Medicaid cuts and work requirements",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu says the ACA premium subsidies were meant to expire",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu would loosen federal health regulations and expand health savings accounts",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We need more competition."
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu says people here illegally who commit crimes should be deported",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu supports legal immigration programs and would work to fix them",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-09": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu says the U.S. needs seasonal workers",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-04": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu says presidents have the right to defend what they see as national security interests",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu says he would not have started the Iran war but defends the president's right to act",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "If you're asking me if I would have done this, no"
+       }
+      },
+      "soc-12": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu praised the Supreme Court ruling upholding bans on transgender athletes in girls' sports (2026)",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu opposed raising the federal minimum wage (2005)",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "pricing some workers out of the market"
+       }
+      },
+      "eco-01": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu supports extending the 2017 tax cuts",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "voting for the biggest tax increase in American history"
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 New Hampshire U.S. Senate voters guide: Sununu supports a voter ID bill and proof of citizenship to register",
+        "url": "https://guides.vote/guide/2026-new-hampshire-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Attach it to every critical piece of legislation."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "NH-GOV",
+   "candidates": [
+    {
+     "id": "NH-GOV:ayotte",
+     "name": "Kelly Ayotte",
+     "party": "R",
+     "bio": "Governor of New Hampshire since 2025, U.S. senator from 2011 to 2017 and earlier state attorney general.",
+     "positions": {
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "NHPR and New Hampshire Bulletin, July 3, 2026: Ayotte pledged to veto any further abortion restrictions and in 2026 vetoed a bill on abortion conscience objections",
+        "url": "https://www.nhpr.org/politics/2026-07-03/ayotte-vetoes-nine-bills-including-book-ban-push-and-toll-increases-for-out-of-state-visitors",
+        "date": "2026-07-03",
+        "quote": "I will veto it."
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "Valley News, June 11, 2025: Ayotte signed SB 295, making Education Freedom Accounts universal (June 2025)",
+        "url": "https://vnews.com/2025/06/11/governor-kelly-ayotte-signs-universal-education-freedom-accounts-bill-into-law-sb295-61699853/",
+        "date": "2025-06-11"
+       }
+      },
+      "cri-06": {
+       "stance": -1,
+       "source": {
+        "title": "Concord Monitor, June 12, 2026: Ayotte signed a law tightening what she calls a broken bail system",
+        "url": "https://www.concordmonitor.com/2026/06/12/new-hampshire-democrats-governor-cinde-warmington/",
+        "date": "2026-06-12"
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "WCAX, Oct. 7, 2026: Ayotte signed a dozen bills to increase housing, including regulatory changes",
+        "url": "https://www.wcax.com/2026/10/07/campaign-countdown-candidates-nh-governor/",
+        "date": "2026-10-07"
+       }
+      },
+      "hou-06": {
+       "stance": 1,
+       "source": {
+        "title": "NHPR and New Hampshire Bulletin, July 3, 2026: Ayotte vetoed a bill letting landlords demand an extra month's deposit from low-income tenants (2026)",
+        "url": "https://www.nhpr.org/politics/2026-07-03/ayotte-vetoes-nine-bills-including-book-ban-push-and-toll-increases-for-out-of-state-visitors",
+        "date": "2026-07-03"
+       }
+      },
+      "soc-07": {
+       "stance": 1,
+       "source": {
+        "title": "WCAX, Oct. 7, 2026: Ayotte backed child care tax credits",
+        "url": "https://www.wcax.com/2026/10/07/campaign-countdown-candidates-nh-governor/",
+        "date": "2026-10-07"
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "Concord Monitor, June 12, 2026: Ayotte increased benefits for law enforcement",
+        "url": "https://www.concordmonitor.com/2026/06/12/new-hampshire-democrats-governor-cinde-warmington/",
+        "date": "2026-06-12"
+       }
+      },
+      "hea-06": {
+       "stance": 1,
+       "source": {
+        "title": "Concord Monitor, June 12, 2026: Ayotte directed more money to mental health care",
+        "url": "https://www.concordmonitor.com/2026/06/12/new-hampshire-democrats-governor-cinde-warmington/",
+        "date": "2026-06-12"
+       }
+      },
+      "gov-05": {
+       "stance": 1,
+       "source": {
+        "title": "New Hampshire Bulletin, April 6, 2026: Ayotte signed a bill barring the use of student IDs to vote (2026)",
+        "url": "https://newhampshirebulletin.com/2026/04/06/ayotte-signs-bill-barring-use-of-student-ids-to-vote/",
+        "date": "2026-04-06"
+       }
+      },
+      "soc-11": {
+       "stance": -2,
+       "source": {
+        "title": "NHPR via WBUR, Aug. 4, 2025: Ayotte signed HB 377, barring puberty blockers and hormone treatment for gender transition before 18 (Aug. 2025)",
+        "url": "https://www.wbur.org/news/2025/08/04/new-hampshire-trans-youth-health-care-puberty-blockers",
+        "date": "2025-08-04",
+        "quote": "these bills represent a balanced, bipartisan effort to protect children"
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "NHPR, May 23, 2025: Ayotte signed HB 511 and SB 62, requiring local police to cooperate with federal immigration enforcement (May 2025)",
+        "url": "https://www.nhpr.org/nh-news/2025-05-23/nh-new-law-requiring-local-cooperation-federal-immigration-enforcement",
+        "date": "2025-05-23"
+       }
+      }
+     }
+    },
+    {
+     "id": "NH-GOV:warmington",
+     "name": "Cinde Warmington",
+     "party": "D",
+     "bio": "Health care lawyer and New Hampshire executive councilor from 2021 to 2025.",
+     "officialSite": "https://www.cindewarmington.com/",
+     "positions": {
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "Concord Monitor, June 12, 2026: Warmington would repeal Education Freedom Accounts",
+        "url": "https://www.concordmonitor.com/2026/06/12/new-hampshire-democrats-governor-cinde-warmington/",
+        "date": "2026-06-12",
+        "quote": "school voucher scam"
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "Concord Monitor, June 12, 2026: Warmington would put more state money into matching federal affordable housing funds",
+        "url": "https://www.concordmonitor.com/2026/06/12/new-hampshire-democrats-governor-cinde-warmington/",
+        "date": "2026-06-12"
+       }
+      },
+      "sta-02": {
+       "stance": 1,
+       "source": {
+        "title": "Concord Monitor, June 12, 2026: Warmington would give towns more state aid for school construction",
+        "url": "https://www.concordmonitor.com/2026/06/12/new-hampshire-democrats-governor-cinde-warmington/",
+        "date": "2026-06-12"
+       }
+      },
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "WCAX, Oct. 7, 2026: Warmington would push for consumer refunds on tariffs",
+        "url": "https://www.wcax.com/2026/10/07/campaign-countdown-candidates-nh-governor/",
+        "date": "2026-10-07"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "WCAX, Oct. 7, 2026: Warmington would suspend the state gas tax and rules out new taxes on working people",
+        "url": "https://www.wcax.com/2026/10/07/campaign-countdown-candidates-nh-governor/",
+        "date": "2026-10-07"
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "Cinde Warmington campaign site: Warmington opposes the planned ICE detention facility in Merrimack",
+        "url": "https://www.cindewarmington.com/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "say no to ICE's human warehouse in Merrimack or anywhere else"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

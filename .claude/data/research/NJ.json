@@ -1,0 +1,263 @@
+{
+ "updated": "2026-10-25",
+ "note": "New Jersey U.S. Senate race, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "NJ-SEN",
+   "candidates": [
+    {
+     "id": "NJ-SEN:booker",
+     "name": "Cory Booker",
+     "party": "D",
+     "bio": "U.S. senator from New Jersey since 2013 and a former mayor of Newark.",
+     "positions": {
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Booker voted Yea",
+        "url": "https://ballotpedia.org/Cory_Booker",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Booker voted Yea",
+        "url": "https://ballotpedia.org/Cory_Booker",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Booker voted Yea",
+        "url": "https://ballotpedia.org/Cory_Booker",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Booker voted Yea",
+        "url": "https://ballotpedia.org/Cory_Booker",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Booker voted Yea",
+        "url": "https://ballotpedia.org/Cory_Booker",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Booker voted Yea",
+        "url": "https://ballotpedia.org/Cory_Booker",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-13": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Booker voted Yea",
+        "url": "https://ballotpedia.org/Cory_Booker",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Booker voted Yea",
+        "url": "https://ballotpedia.org/Cory_Booker",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Booker voted Nay",
+        "url": "https://ballotpedia.org/Cory_Booker",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Booker voted Yea",
+        "url": "https://ballotpedia.org/Cory_Booker",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-03": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the PACT Act (2022), expanding health care for veterans exposed to toxic burn pits: Booker voted Yea",
+        "url": "https://ballotpedia.org/Cory_Booker",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "NJ-SEN:murphy",
+     "name": "Justin Murphy",
+     "party": "R",
+     "positions": {
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy is pro-life, with exceptions for the mother's life, rape and incest",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I believe life begins at conception"
+       }
+      },
+      "soc-04": {
+       "stance": 1,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy supports parental notification and opposes tax dollars for abortion",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-12": {
+       "stance": -2,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy would replace the income tax code with a 10% to 12% flat tax",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": -2,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy would abolish the capital gains and estate taxes",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 2,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy would make DOGE permanent and supports a balanced budget amendment",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy supports school choice and would split the Education Department's budget among local schools and voucher programs",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-07": {
+       "stance": 1,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy says parents control their children's education and would abolish the federal Education Department",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-01": {
+       "stance": 1,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy wants a military able to fight and win two wars at once",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 2,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy would finish the southern border wall, secure the northern border and station troops at the border",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy would withhold federal aid from sanctuary cities and supports local police enforcing immigration law",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy would deport immigrants who commit crimes",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy agrees with the goal of universal coverage but through health savings accounts and competition",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-04": {
+       "stance": 2,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy wants every American to own a health savings account and to buy insurance across state lines",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I adamantly oppose government-run healthcare"
+       }
+      },
+      "ene-03": {
+       "stance": 2,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy would develop domestic energy, including shale oil, where it can be done responsibly",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-02": {
+       "stance": 2,
+       "source": {
+        "title": "Justin Murphy's campaign website, as quoted by Ballotpedia: Murphy on nuclear power",
+        "url": "https://ballotpedia.org/Justin_Murphy",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I strongly support the expansion of nuclear power"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

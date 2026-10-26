@@ -1,0 +1,642 @@
+{
+ "updated": "2026-10-26",
+ "note": "Reported fundraising for governor candidates from news coverage of state filings, read Oct. 26, 2026.",
+ "races": [
+  {
+   "id": "AR-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AR-GOV:sanders",
+     "finance": {
+      "source": "Steve Brawner’s column, Arkadelphian, July 23, 2026",
+      "url": "https://arkadelphian.com/2026/07/23/governor-has-money-opponents-had-debate/",
+      "asOf": "2026-07-23",
+      "note": "Had raised $7.7 million in all by her June 2026 report, about $198,000 of it that month, and had $5.1 million left in the bank.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "AR-GOV:love",
+     "finance": {
+      "source": "Steve Brawner’s column, Arkadelphian, July 23, 2026",
+      "url": "https://arkadelphian.com/2026/07/23/governor-has-money-opponents-had-debate/",
+      "asOf": "2026-07-23",
+      "note": "Had raised $193,000 in all by his June 2026 report, $16,300 of it that month, and had $7,500 left in the bank.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "AR-GOV:shelby",
+     "finance": {
+      "source": "Steve Brawner’s column, Arkadelphian, July 23, 2026",
+      "url": "https://arkadelphian.com/2026/07/23/governor-has-money-opponents-had-debate/",
+      "asOf": "2026-07-23",
+      "note": "Had raised roughly $24,600 by his June 2026 report and had $30,500 left, including $10,000 he had lent the campaign.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-GOV:weiser",
+     "finance": {
+      "source": "Colorado Newsline, Oct. 8, 2026",
+      "url": "https://coloradonewsline.com/2026/10/08/weiser-democrats-fundraising-edge/",
+      "asOf": "2026-10-08",
+      "note": "Raised nearly $1.7 million from July through September 2026, his best quarter since early 2025, and had $724,879 on hand on Oct. 1.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "CO-GOV:marx",
+     "finance": {
+      "source": "Colorado Newsline, Oct. 8, 2026",
+      "url": "https://coloradonewsline.com/2026/10/08/weiser-democrats-fundraising-edge/",
+      "asOf": "2026-10-08",
+      "note": "Reported just over $1.1 million in contributions from July through September 2026 and had $158,176 on hand on Oct. 1; the total reflects more than $61,000 refunded to donors who gave over the $1,450 limit.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "CO-GOV:lopez",
+     "finance": {
+      "source": "Colorado Newsline, Oct. 8, 2026",
+      "url": "https://coloradonewsline.com/2026/10/08/weiser-democrats-fundraising-edge/",
+      "asOf": "2026-10-08",
+      "note": "Had raised about $128,000 from supporters and lent his campaign $65,000, with $16,265 on hand on Oct. 1, 2026.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CT-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CT-GOV:lamont",
+     "finance": {
+      "source": "CT Mirror, Oct. 13, 2026",
+      "url": "https://ctmirror.org/2026/10/13/fazio-lamont-campaign-finance-report/",
+      "asOf": "2026-10-13",
+      "note": "Opted out of public financing and has largely paid for his campaign himself. Spent $10.6 million from July through September 2026 and $13.6 million since his campaign opened in 2025, with nearly $2.2 million on hand at the end of September.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "CT-GOV:fazio",
+     "finance": {
+      "source": "CT Mirror, Oct. 13, 2026",
+      "url": "https://ctmirror.org/2026/10/13/fazio-lamont-campaign-finance-report/",
+      "asOf": "2026-10-13",
+      "note": "Runs on public financing: an $18 million Citizens’ Election Program grant arrived July 15. Spent $9.6 million from July through September 2026 and $10.6 million since his campaign opened, and began October with $8.4 million.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-GOV:jolly",
+     "finance": {
+      "source": "Florida Phoenix, Sept. 25, 2026",
+      "url": "https://floridaphoenix.com/2026/09/25/jolly-to-national-democrats-show-me-some-money/",
+      "asOf": "2026-09-25",
+      "note": "Had raised $15.8 million across his campaign account and his political committee by late September 2026.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "HI-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "HI-GOV:green",
+     "finance": {
+      "source": "Hawaii News Now, July 11, 2026",
+      "url": "https://www.hawaiinewsnow.com/2026/07/11/new-campaign-spending-reports-show-fundraising-gaps-across-key-hawaii-races/",
+      "asOf": "2026-07-11",
+      "note": "Had collected $3.5 million since his 2022 win and had $2 million on hand in the July 2026 reports.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "HI-GOV:cordery",
+     "finance": {
+      "source": "Hawaii News Now, July 11, 2026",
+      "url": "https://www.hawaiinewsnow.com/2026/07/11/new-campaign-spending-reports-show-fundraising-gaps-across-key-hawaii-races/",
+      "asOf": "2026-07-11",
+      "note": "Had raised just over $300,000 and spent all of it, reporting $14,000 in debt, in the July 2026 reports.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "IA-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IA-GOV:sand",
+     "finance": {
+      "source": "Iowa Public Radio, Oct. 20, 2026",
+      "url": "https://www.iowapublicradio.org/political-news/2026-10-20/zach-lahn-rob-sand-fundraising-iowa-governors-race-midterm-elections",
+      "asOf": "2026-10-20",
+      "note": "Raised $16.3 million from July 15 to Oct. 14, 2026, $5.5 million of it from the Democratic Governors Association; spent $28.9 million and ended the period with $5.35 million on hand and no debt.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "IA-GOV:lahn",
+     "finance": {
+      "source": "Iowa Public Radio, Oct. 20, 2026",
+      "url": "https://www.iowapublicradio.org/political-news/2026-10-20/zach-lahn-rob-sand-fundraising-iowa-governors-race-midterm-elections",
+      "asOf": "2026-10-20",
+      "note": "Raised nearly $16.9 million from July 15 to Oct. 14, 2026, about $11.8 million of it from the Republican Governors Association’s PAC; spent $17.5 million and ended with about $403,000 on hand and $2.5 million in loans owed.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "ID-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "ID-GOV:little",
+     "finance": {
+      "source": "Idaho Capital Sun, June 16, 2026",
+      "url": "https://idahocapitalsun.com/2026/06/16/idaho-gov-brad-little-reports-raising-more-campaign-money-than-all-other-statewide-candidates/",
+      "asOf": "2026-06-16",
+      "note": "Had raised $2,080,897.75 in 2026 as of June 15, about half of it from companies, and had about $958,000 on hand.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "ID-GOV:pickens",
+     "finance": {
+      "source": "Idaho Capital Sun, June 16, 2026",
+      "url": "https://idahocapitalsun.com/2026/06/16/idaho-gov-brad-little-reports-raising-more-campaign-money-than-all-other-statewide-candidates/",
+      "asOf": "2026-06-16",
+      "note": "Had raised $134,734.28 in 2026 as of June 15, nearly all of it from individuals, and had $45,335.84 on hand.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "ID-GOV:stegner",
+     "finance": {
+      "source": "Idaho Capital Sun, June 16, 2026",
+      "url": "https://idahocapitalsun.com/2026/06/16/idaho-gov-brad-little-reports-raising-more-campaign-money-than-all-other-statewide-candidates/",
+      "asOf": "2026-06-16",
+      "note": "Had raised $365,137.90 in 2026 as of June 15, more than any other challenger, and had $350,265.31 on hand.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "IL-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IL-GOV:pritzker",
+     "finance": {
+      "source": "Chicago Sun-Times, Oct. 16, 2026",
+      "url": "https://chicago.suntimes.com/elections/2026/10/16/jb-pritzker-darren-bailey-illinois-governor-race-campaign-cash-spending",
+      "asOf": "2026-10-16",
+      "note": "Put about $65 million of his own money into his campaign over the summer of 2026, spent nearly $23.8 million from July through September and had $44.4 million on hand for the final month.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "IL-GOV:bailey",
+     "finance": {
+      "source": "Chicago Sun-Times, Oct. 16, 2026",
+      "url": "https://chicago.suntimes.com/elections/2026/10/16/jb-pritzker-darren-bailey-illinois-governor-race-campaign-cash-spending",
+      "asOf": "2026-10-16",
+      "note": "Spent about $941,000 from July through September 2026; his campaign raised $1.2 million and entered October with about $482,000 in the bank.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "IL-GOV:corbett",
+     "finance": {
+      "source": "Chicago Sun-Times, Oct. 16, 2026",
+      "url": "https://chicago.suntimes.com/elections/2026/10/16/jb-pritzker-darren-bailey-illinois-governor-race-campaign-cash-spending",
+      "asOf": "2026-10-16",
+      "note": "Entered July 2026 with about $379,000, raised $42,000, spent $386,000 and ended September with $35,000.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "KS-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "KS-GOV:masterson",
+     "finance": {
+      "source": "HPPR, Oct. 13, 2026",
+      "url": "https://www.hppr.org/2026-10-13/in-race-for-kansas-governor-masterson-and-holscher-focus-on-taxes-and-education-funding",
+      "asOf": "2026-10-13",
+      "note": "The latest reports before Oct. 13, 2026 left his campaign with about $360,000 more in the bank than Holscher’s.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "KS-GOV:holscher",
+     "finance": {
+      "source": "HPPR, Oct. 13, 2026",
+      "url": "https://www.hppr.org/2026-10-13/in-race-for-kansas-governor-masterson-and-holscher-focus-on-taxes-and-education-funding",
+      "asOf": "2026-10-13",
+      "note": "The latest reports before Oct. 13, 2026 left her campaign with about $360,000 less in the bank than Masterson’s.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MA-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MA-GOV:healey",
+     "finance": {
+      "source": "Boston.com, Sept. 17, 2026",
+      "url": "https://www.boston.com/news/politics/2026/09/17/charts-see-how-much-gov-maura-healey-and-mike-minogue-have-raised-so-far/",
+      "asOf": "2026-09-17",
+      "note": "Had raised roughly $4.32 million and had about $6.3 million in the bank in the latest filings with the state’s Office of Campaign and Political Finance as of Sept. 17, 2026.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MA-GOV:minogue",
+     "finance": {
+      "source": "Boston.com, Sept. 17, 2026",
+      "url": "https://www.boston.com/news/politics/2026/09/17/charts-see-how-much-gov-maura-healey-and-mike-minogue-have-raised-so-far/",
+      "asOf": "2026-09-17",
+      "note": "Had raised about $13.42 million, including $11.8 million of his own money, and had $1.52 million in the bank in the latest filings with the state’s Office of Campaign and Political Finance as of Sept. 17, 2026.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NE-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NE-GOV:pillen",
+     "finance": {
+      "source": "Nebraska Examiner, Oct. 9, 2026",
+      "url": "https://nebraskaexaminer.com/2026/10/09/lindstrom-reports-50-spent-in-2026-ne-gubernatorial-campaign-the-total-is-likely-higher/",
+      "asOf": "2026-10-09",
+      "note": "Raised $2.4 million, spent $4.4 million and had $7.5 million on hand in the June 17 to Sept. 29, 2026 report.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "NE-GOV:walz",
+     "finance": {
+      "source": "Nebraska Examiner, Oct. 9, 2026",
+      "url": "https://nebraskaexaminer.com/2026/10/09/lindstrom-reports-50-spent-in-2026-ne-gubernatorial-campaign-the-total-is-likely-higher/",
+      "asOf": "2026-10-09",
+      "note": "Raised $2.2 million, spent $2 million and had $860,464.44 on hand in the June 17 to Sept. 29, 2026 report.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "NE-GOV:lindstrom",
+     "finance": {
+      "source": "Nebraska Examiner, Oct. 9, 2026",
+      "url": "https://nebraskaexaminer.com/2026/10/09/lindstrom-reports-50-spent-in-2026-ne-gubernatorial-campaign-the-total-is-likely-higher/",
+      "asOf": "2026-10-09",
+      "note": "Raised $28,154.90, spent $16,049.50 and had $12,105.40 on hand in the June 17 to Sept. 29, 2026 report.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "NE-GOV:beard",
+     "finance": {
+      "source": "Nebraska Examiner, Oct. 9, 2026",
+      "url": "https://nebraskaexaminer.com/2026/10/09/lindstrom-reports-50-spent-in-2026-ne-gubernatorial-campaign-the-total-is-likely-higher/",
+      "asOf": "2026-10-09",
+      "note": "Has filed no campaign finance reports; Nebraska requires them only once a candidate raises or spends $5,000.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NH-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NH-GOV:ayotte",
+     "finance": {
+      "source": "NHPR, June 18, 2026",
+      "url": "https://www.nhpr.org/politics/2026-06-18/ayotte-warmington-governor-election-2026-fundraising-nh-newhampshire",
+      "asOf": "2026-06-18",
+      "note": "Had raised about $3.7 million overall, $1.6 million of it in 2026, with $2 million left to spend, as of the June 2026 filings.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "NH-GOV:warmington",
+     "finance": {
+      "source": "NHPR, June 18, 2026",
+      "url": "https://www.nhpr.org/politics/2026-06-18/ayotte-warmington-governor-election-2026-fundraising-nh-newhampshire",
+      "asOf": "2026-06-18",
+      "note": "Had raised $635,000 overall, almost all of it since January, as of the June 2026 filings.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NV-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NV-GOV:lombardo",
+     "finance": {
+      "source": "Nevada Current, July 17, 2026",
+      "url": "https://nevadacurrent.com/2026/07/17/billionaire-backers-help-secure-lombardo-campaigns-big-fundraising-advantage/",
+      "asOf": "2026-07-17",
+      "note": "His campaign raised nearly $2.3 million from April through June 2026 and had just under $9.2 million on hand; two PACs allied with him raised another $14 million in the quarter.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "NV-GOV:ford",
+     "finance": {
+      "source": "Nevada Current, July 17, 2026",
+      "url": "https://nevadacurrent.com/2026/07/17/billionaire-backers-help-secure-lombardo-campaigns-big-fundraising-advantage/",
+      "asOf": "2026-07-17",
+      "note": "His campaign raised about $1.4 million from April through June 2026 and had $2.6 million on hand; his allied PAC raised more than $1.1 million.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OK-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OK-GOV:mazzei",
+     "finance": {
+      "source": "Fox 25 (KOKH), Aug. 18, 2026",
+      "url": "https://okcfox.com/news/local/gubernatorial-campaign-finance-reports-show-stark-contrasts-in-loans-donors-and-spending-mike-mazzei-gentner-drummond-cyndi-munson",
+      "asOf": "2026-08-18",
+      "note": "Had lent his campaign $11 million by Aug. 10, 2026, while individuals had given $1.4 million and PACs $25,000.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "OK-GOV:munson",
+     "finance": {
+      "source": "Oklahoma Voice, Oct. 21, 2026",
+      "url": "https://oklahomavoice.com/2026/10/21/democratic-gubernatorial-nominee-talks-trump-money/",
+      "asOf": "2026-10-21",
+      "note": "Had raised about $1.7 million as of late October 2026.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OR-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OR-GOV:kotek",
+     "finance": {
+      "source": "Willamette Week, Oct. 22, 2026",
+      "url": "https://www.wweek.com/news/state/2026/10/22/pacs-and-megadonors-shift-millions-as-oregon-governors-race-enters-final-stretch/",
+      "asOf": "2026-10-22",
+      "note": "Raised nearly $20 million for the Nov. 3 election; the Democratic Governors Association gave $4.1 million this cycle.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "OR-GOV:drazan",
+     "finance": {
+      "source": "Willamette Week, Oct. 22, 2026",
+      "url": "https://www.wweek.com/news/state/2026/10/22/pacs-and-megadonors-shift-millions-as-oregon-governors-race-enters-final-stretch/",
+      "asOf": "2026-10-22",
+      "note": "Raised $16 million in 2026; the Republican Governors Association gave $1 million.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "PA-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "PA-GOV:shapiro",
+     "finance": {
+      "source": "City & State Pennsylvania, Sept. 23, 2026",
+      "url": "https://www.cityandstatepa.com/politics/2026/09/mind-gap-shapiro-raises-133m-latest-fundraising-period-garrity-brings-18m/416174/",
+      "asOf": "2026-09-23",
+      "note": "Raised over $13.3 million from June 6 to Sept. 14, 2026, spent $31.8 million and had about $19.8 million on hand; more than $60 million raised this election cycle.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "PA-GOV:garrity",
+     "finance": {
+      "source": "City & State Pennsylvania, Sept. 23, 2026",
+      "url": "https://www.cityandstatepa.com/politics/2026/09/mind-gap-shapiro-raises-133m-latest-fundraising-period-garrity-brings-18m/416174/",
+      "asOf": "2026-09-23",
+      "note": "Raised $1.8 million from June 6 to Sept. 14, 2026, spent $1.58 million and had a little over $1.3 million on hand.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "RI-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "RI-GOV:foulkes",
+     "finance": {
+      "source": "Boston Globe, Oct. 7, 2026",
+      "url": "https://www.bostonglobe.com/2026/10/07/metro/rhode-island-campaign-finance-reports-october-2026/",
+      "asOf": "2026-10-07",
+      "note": "Raised more than $529,000 from Sept. 2 to Oct. 5, 2026, including in-kind help from the state Democratic Party, and had $214,871 on hand; she has spent more than $6.3 million in the race.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "RI-GOV:block",
+     "finance": {
+      "source": "Boston Globe, Oct. 7, 2026",
+      "url": "https://www.bostonglobe.com/2026/10/07/metro/rhode-island-campaign-finance-reports-october-2026/",
+      "asOf": "2026-10-07",
+      "note": "Has raised roughly $197,000 and lent himself $200,000 since entering the race in April 2026; had $263,515 on hand on Oct. 5.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "RI-GOV:guckian",
+     "finance": {
+      "source": "Boston Globe, Oct. 7, 2026",
+      "url": "https://www.bostonglobe.com/2026/10/07/metro/rhode-island-campaign-finance-reports-october-2026/",
+      "asOf": "2026-10-07",
+      "note": "Raised less than $7,000 from Sept. 2 to Oct. 5, 2026 and had $7,273 on hand.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "RI-GOV:gotra",
+     "finance": {
+      "source": "Boston Globe, Oct. 7, 2026",
+      "url": "https://www.bostonglobe.com/2026/10/07/metro/rhode-island-campaign-finance-reports-october-2026/",
+      "asOf": "2026-10-07",
+      "note": "Had $1,531 on hand in the Oct. 5, 2026 filings.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "RI-GOV:reynolds",
+     "finance": {
+      "source": "Boston Globe, Oct. 7, 2026",
+      "url": "https://www.bostonglobe.com/2026/10/07/metro/rhode-island-campaign-finance-reports-october-2026/",
+      "asOf": "2026-10-07",
+      "note": "Had $0 on hand in the Oct. 5, 2026 filings.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "SC-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "SC-GOV:wilson",
+     "finance": {
+      "source": "SC Daily Gazette, Oct. 20, 2026",
+      "url": "https://scdailygazette.com/2026/10/20/sc-republicans-and-democrats-tout-their-fundraising-hauls-as-proof-of-momentum/",
+      "asOf": "2026-10-20",
+      "note": "Raised $2.5 million from July 1 through Oct. 14, 2026 and had nearly $1.7 million to spend in the last three weeks.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "SC-GOV:johnson",
+     "finance": {
+      "source": "SC Daily Gazette, Oct. 20, 2026",
+      "url": "https://scdailygazette.com/2026/10/20/sc-republicans-and-democrats-tout-their-fundraising-hauls-as-proof-of-momentum/",
+      "asOf": "2026-10-20",
+      "note": "Raised more than $867,000 in the last pre-election report, his best of the campaign, and had about $136,000 on hand on Oct. 14, 2026.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TN-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TN-GOV:blackburn",
+     "finance": {
+      "source": "Tennessee Lookout, Oct. 15, 2026",
+      "url": "https://tennesseelookout.com/2026/10/15/2026-gov-race-hatley-puts-in-another-5m-blackburn-raises-2-1m-green-1m/",
+      "asOf": "2026-10-15",
+      "note": "Raised $2.1 million from the August primary through Sept. 30, 2026 and had $3.1 million for the final weeks.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-GOV:green",
+     "finance": {
+      "source": "Tennessee Lookout, Oct. 15, 2026",
+      "url": "https://tennesseelookout.com/2026/10/15/2026-gov-race-hatley-puts-in-another-5m-blackburn-raises-2-1m-green-1m/",
+      "asOf": "2026-10-15",
+      "note": "Raised nearly $1 million in the report through Sept. 30, 2026, her biggest of the campaign.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-GOV:hatley",
+     "finance": {
+      "source": "Tennessee Lookout, Oct. 15, 2026",
+      "url": "https://tennesseelookout.com/2026/10/15/2026-gov-race-hatley-puts-in-another-5m-blackburn-raises-2-1m-green-1m/",
+      "asOf": "2026-10-15",
+      "note": "Lent his campaign another $5 million in September 2026, $12 million of his own money in all, and had over $6.8 million to spend.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-GOV:pinkston",
+     "finance": {
+      "source": "Tennessee Lookout, Oct. 15, 2026",
+      "url": "https://tennesseelookout.com/2026/10/15/2026-gov-race-hatley-puts-in-another-5m-blackburn-raises-2-1m-green-1m/",
+      "asOf": "2026-10-15",
+      "note": "Raised around $150,000 in the report through Sept. 30, 2026.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "VT-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VT-GOV:janoo",
+     "finance": {
+      "source": "Seven Days, Oct. 16, 2026",
+      "url": "https://www.sevendaysvt.com/news/janoo-again-leads-gov-scott-in-fundraising-as-campaign-hits-home-stretch/",
+      "asOf": "2026-10-16",
+      "note": "Had raised $888,000 this campaign, $181,670 of it from Sept. 29 to Oct. 12, 2026, with $307,000 on hand; she has taken no corporate donations.",
+      "parts": {}
+     }
+    },
+    {
+     "id": "VT-GOV:scott",
+     "finance": {
+      "source": "Seven Days, Oct. 16, 2026",
+      "url": "https://www.sevendaysvt.com/news/janoo-again-leads-gov-scott-in-fundraising-as-campaign-hits-home-stretch/",
+      "asOf": "2026-10-16",
+      "note": "Had raised $590,000 this campaign, $175,406 of it from Sept. 29 to Oct. 12, 2026, with $202,000 on hand; the Republican Governors Association gave $400,000 to a PAC running ads for him.",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "WY-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WY-GOV:barlow",
+     "finance": {
+      "source": "Cowboy State Daily, Aug. 12, 2026",
+      "url": "https://cowboystatedaily.com/2026/08/12/eric-barlow-earns-most-in-donations-for-gov-race-degenfelder-has-biggest-war-chest/",
+      "asOf": "2026-08-12",
+      "note": "Raised about $1.54 million through the August 2026 primary, $391,710 of it in 2025, with no loans.",
+      "parts": {}
+     }
+    }
+   ]
+  }
+ ]
+}

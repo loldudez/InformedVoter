@@ -1,0 +1,311 @@
+{
+ "updated": "2026-10-25",
+ "note": "Nevada governor race, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "NV-GOV",
+   "candidates": [
+    {
+     "id": "NV-GOV:ford",
+     "name": "Aaron Ford",
+     "party": "D",
+     "bio": "Nevada attorney general since 2019.",
+     "officialSite": "https://www.fordfornevada.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford sued the FDA over restrictions on the abortion pill (2023)",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Throughout my career, I've fought to protect reproductive freedom."
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford supports promoting rooftop solar and sued to recover $155 million in federal solar funding",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford joined the lawsuit against the EPA's repeal of the greenhouse gas endangerment finding (2026)",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford sponsored the 2017 law requiring police to wear body cameras",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford supported 2021 laws letting the attorney general investigate civil rights complaints against police",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford opposes using public funds for private schools and opposed vouchers as a state senator",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford urged the EPA to keep mercury limits and sued over vehicle emission rules",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford would cap many prescription drug prices at the Medicare-negotiated rate",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford sued over the new federal Medicaid work requirements (2026)",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford sued over federal conditions forcing states to help immigration enforcement",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford would repeal Nevada's right-to-work law",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford pledged every legal tool for LGBTQIA+ rights (Human Rights Campaign)",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford filed a 2019 brief to protect LGBTQ employees from discrimination",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford opposes voter ID",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Ford sued over the executive order restricting mail ballots and voted for automatic voter registration (2017)",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "NV-GOV:lombardo",
+     "name": "Joe Lombardo",
+     "party": "R",
+     "bio": "Governor of Nevada since 2023 and former Clark County sheriff.",
+     "officialSite": "https://www.joelombardofornv.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo calls himself pro-life with exceptions but signed protections for out-of-state abortion seekers (SB 98, 2023)",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "pro-life with exceptions"
+       }
+      },
+      "soc-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo supports a 15-week limit, while saying abortion is up to Nevada voters",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo withdrew Nevada from the U.S. Climate Alliance",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-10": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo revised Nevada's climate plan to put energy affordability ahead of emissions goals",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-05": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo signed incentives for zero-emission trucks (AB 184, 2023)",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo supports cash bail",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo opted Nevada into the federal private school tax credit program and proposed expanding vouchers",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo urged Congress not to cut Medicaid",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-11": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo vetoed a bill expanding paid family and medical leave (2025)",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-09": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo sought $60 million for health care in underserved areas (2025)",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo called for the $70 billion DHS and ICE bill and pledged state help with deportations",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo supports Nevada's right-to-work law",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo signed transgender protections in 2023, vetoed others in 2025, and opposes transgender athletes in women's sports",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-11": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo vetoed a bill protecting doctors who provide gender-affirming care (2025)",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo on voter ID",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "essential for ensuring election integrity"
+       }
+      },
+      "gov-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Nevada governor voters guide: Lombardo opposes more ballot drop boxes and wants mail ballots by request",
+        "url": "https://guides.vote/guide/2026-nevada-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

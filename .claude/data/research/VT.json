@@ -1,0 +1,126 @@
+{
+ "updated": "2026-10-25",
+ "note": "Vermont governor race, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "VT-GOV",
+   "candidates": [
+    {
+     "id": "VT-GOV:scott",
+     "name": "Phil Scott",
+     "party": "R",
+     "bio": "Governor of Vermont since 2017 and a former lieutenant governor.",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "VTDigger, June 10, 2019: Scott signed H.57 (2019), protecting abortion rights at every stage of pregnancy",
+        "url": "https://vtdigger.org/2019/06/10/scott-vetoes-24-hour-handgun-waiting-period-bill/",
+        "date": "2019-06-10",
+        "quote": "I have consistently supported a woman's right to choose."
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "VTDigger, June 10, 2019: Scott signed H.57 (2019), barring government interference in abortion decisions",
+        "url": "https://vtdigger.org/2019/06/10/scott-vetoes-24-hour-handgun-waiting-period-bill/",
+        "date": "2019-06-10"
+       }
+      },
+      "sta-03": {
+       "stance": -1,
+       "source": {
+        "title": "Vermont Public, May 22, 2018: Scott vetoed a $15 minimum wage (S.40, 2018), preferring increases tied to inflation",
+        "url": "https://www.vermontpublic.org/post/heres-what-gov-phil-scotts-vetoed-so-far",
+        "date": "2018-05-22",
+        "quote": "more likely to harm those it intends to help"
+       }
+      },
+      "eco-11": {
+       "stance": 0,
+       "source": {
+        "title": "Vermont Public, May 22, 2018: Scott vetoed a mandatory paid family leave program (H.196, 2018), preferring a voluntary state-run one",
+        "url": "https://www.vermontpublic.org/post/heres-what-gov-phil-scotts-vetoed-so-far",
+        "date": "2018-05-22"
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "Office of Gov. Phil Scott, June 17, 2026: Scott vetoed H.710 (2026), saying it would let industrial wind sites expand with less local scrutiny",
+        "url": "https://governor.vermont.gov/press-release/action-taken-governor-phil-scott-legislation-june-17-2026",
+        "date": "2026-06-17"
+       }
+      }
+     }
+    },
+    {
+     "id": "VT-GOV:janoo",
+     "name": "Amanda Janoo",
+     "party": "D",
+     "bio": "Economist and founder of the Wellbeing Economy Alliance of Vermont, running for statewide office for the first time.",
+     "positions": {
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Vermont Public, March 10, 2026: Janoo's free primary care plan would lay groundwork for a universal health care system",
+        "url": "https://www.vermontpublic.org/local-news/2026-03-10/republican-gov-phil-scott-democratic-challenge-2026",
+        "date": "2026-03-10",
+        "quote": "ensure free health care for all"
+       }
+      },
+      "hea-09": {
+       "stance": 2,
+       "source": {
+        "title": "VTDigger, March 10, 2026: Janoo proposes free primary and preventive health care",
+        "url": "https://vtdigger.org/2026/03/10/first-democratic-challenger-to-phil-scott-enters-governors-race/",
+        "date": "2026-03-10"
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "Vermont Public, March 10, 2026: Janoo would broaden the availability of affordable housing",
+        "url": "https://www.vermontpublic.org/local-news/2026-03-10/republican-gov-phil-scott-democratic-challenge-2026",
+        "date": "2026-03-10"
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "WCAX, Oct. 8, 2026: Janoo proposes taxing Vermont's highest earners to cut health care and school costs",
+        "url": "https://www.wcax.com/2026/10/08/campaign-countdown-scott-janoo-offer-sharply-different-visions-vermont-education-reform/",
+        "date": "2026-10-08"
+       }
+      },
+      "cri-07": {
+       "stance": 1,
+       "source": {
+        "title": "WCAX primary debate report, July 28, 2026: Janoo would address the roots of repeat offending with a community-first approach",
+        "url": "https://www.wcax.com/2026/07/28/watch-live-democrats-vermont-governor-debate/",
+        "date": "2026-07-28",
+        "quote": "the safest communities are the ones where people know their neighbors"
+       }
+      },
+      "sta-02": {
+       "stance": 1,
+       "source": {
+        "title": "WCAX, Oct. 8, 2026: Janoo would keep small schools open and invest in them, opposing forced mergers",
+        "url": "https://www.wcax.com/2026/10/08/campaign-countdown-scott-janoo-offer-sharply-different-visions-vermont-education-reform/",
+        "date": "2026-10-08"
+       }
+      }
+     }
+    }
+   ],
+   "notes": [
+    {
+     "text": "Janoo is a first-time candidate with few published positions, and Scott has not released a platform beyond affordability and school consolidation, so many questions are unclear for both.",
+     "source": "WCAX",
+     "url": "https://www.wcax.com/2026/09/17/campaign-countdown-candidates-vermont-governor/"
+    }
+   ]
+  }
+ ]
+}

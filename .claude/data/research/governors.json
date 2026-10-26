@@ -1,0 +1,1218 @@
+{
+ "updated": "2026-10-25",
+ "note": "Safe 2026 governor races, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "CA-GOV",
+   "candidates": [
+    {
+     "id": "CA-GOV:becerra",
+     "name": "Xavier Becerra",
+     "party": "D",
+     "bio": "U.S. secretary of health and human services from 2021 to 2025 and earlier California attorney general.",
+     "positions": {
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "EdSource debate report, Oct. 1, 2026: Becerra would keep public school money in public schools and opposes Hilton's voucher-style accounts",
+        "url": "https://edsource.org/2026/california-debate-becerra-hilton-education/767280",
+        "date": "2026-10-01",
+        "quote": "those dollars, taxpayer dollars, stay in our public schools"
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "EdSource debate report, Oct. 1, 2026: Becerra says teachers are underpaid",
+        "url": "https://edsource.org/2026/california-debate-becerra-hilton-education/767280",
+        "date": "2026-10-01"
+       }
+      },
+      "hea-09": {
+       "stance": 2,
+       "source": {
+        "title": "EdSource debate report, Oct. 1, 2026: Becerra firmly backs California's school vaccine requirements",
+        "url": "https://edsource.org/2026/california-debate-becerra-hilton-education/767280",
+        "date": "2026-10-01",
+        "quote": "We know vaccines work."
+       }
+      }
+     }
+    },
+    {
+     "id": "CA-GOV:hilton",
+     "name": "Steve Hilton",
+     "party": "R",
+     "bio": "Former Fox News host and adviser to British Prime Minister David Cameron.",
+     "positions": {
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "Associated Press debate report via Scripps News, Oct. 1, 2026: Hilton would end state income tax on the first $150,000 of earnings",
+        "url": "https://www.scrippsnews.com/politics/america-votes/california-governor-rivals-clash-over-costs-homelessness-and-trump-in-only-debate",
+        "date": "2026-10-01"
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "EdSource debate report, Oct. 1, 2026: Hilton proposes savings accounts letting parents spend public school money at schools of their choice",
+        "url": "https://edsource.org/2026/california-debate-becerra-hilton-education/767280",
+        "date": "2026-10-01"
+       }
+      },
+      "imm-07": {
+       "stance": 2,
+       "source": {
+        "title": "Associated Press debate report via Scripps News, Oct. 1, 2026: Hilton would prioritize removing dangerous criminals while protecting legal immigrant communities",
+        "url": "https://www.scrippsnews.com/politics/america-votes/california-governor-rivals-clash-over-costs-homelessness-and-trump-in-only-debate",
+        "date": "2026-10-01"
+       }
+      },
+      "sta-12": {
+       "stance": -2,
+       "source": {
+        "title": "ABC30 debate report, Oct. 1, 2026: Hilton would cancel California's high-speed rail project",
+        "url": "https://abc30.com/post/xavier-becerra-steve-hilton-clash-key-issues-california-gubernatorial-debate/19894941/",
+        "date": "2026-10-01",
+        "quote": "Canceling high-speed rail"
+       }
+      },
+      "hou-07": {
+       "stance": -2,
+       "source": {
+        "title": "ABC30 debate report, Oct. 1, 2026: Hilton would cancel California's high-speed rail project",
+        "url": "https://abc30.com/post/xavier-becerra-steve-hilton-clash-key-issues-california-gubernatorial-debate/19894941/",
+        "date": "2026-10-01"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "PA-GOV",
+   "candidates": [
+    {
+     "id": "PA-GOV:shapiro",
+     "name": "Josh Shapiro",
+     "party": "D",
+     "bio": "Governor of Pennsylvania since 2023 and earlier state attorney general.",
+     "positions": {
+      "cri-09": {
+       "stance": -2,
+       "source": {
+        "title": "FOX 29 debate report, Oct. 8, 2026: Shapiro no longer supports the death penalty",
+        "url": "https://fox29.com/news/shapiro-garrity-debate-recap-key-takeaways-from-pa-governors-race",
+        "date": "2026-10-08",
+        "quote": "the state should not be in the business of putting people to death."
+       }
+      },
+      "edu-06": {
+       "stance": 1,
+       "source": {
+        "title": "FOX 29 debate report, Oct. 8, 2026: Shapiro says he believes in school choice and would sign a bill both chambers agree on",
+        "url": "https://fox29.com/news/shapiro-garrity-debate-recap-key-takeaways-from-pa-governors-race",
+        "date": "2026-10-08",
+        "quote": "Put the bill on my desk, and I'll sign it into law."
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "Spotlight PA debate report, Oct. 7, 2026: Shapiro defends his increases in school spending",
+        "url": "https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pennsylvania-governor-debate-elections/",
+        "date": "2026-10-07",
+        "quote": "Graduation rates are up and truancy is down and it is working."
+       }
+      },
+      "edu-09": {
+       "stance": 2,
+       "source": {
+        "title": "Spotlight PA debate report, Oct. 7, 2026: Shapiro defends free school breakfast for all students",
+        "url": "https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pennsylvania-governor-debate-elections/",
+        "date": "2026-10-07"
+       }
+      },
+      "hou-03": {
+       "stance": 2,
+       "source": {
+        "title": "Spotlight PA debate report, Oct. 7, 2026: Shapiro would tax skill games and put much of the money into mass transit",
+        "url": "https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pennsylvania-governor-debate-elections/",
+        "date": "2026-10-07"
+       }
+      },
+      "edu-03": {
+       "stance": 1,
+       "source": {
+        "title": "Spotlight PA debate report, Oct. 7, 2026: Shapiro defends funding for apprenticeships and vo-tech",
+        "url": "https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pennsylvania-governor-debate-elections/",
+        "date": "2026-10-07"
+       }
+      },
+      "gov-05": {
+       "stance": 1,
+       "source": {
+        "title": "Spotlight PA debate report, Oct. 7, 2026: Shapiro would sign a voter ID bill that doesn't disenfranchise voters",
+        "url": "https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pennsylvania-governor-debate-elections/",
+        "date": "2026-10-07",
+        "quote": "I'm open to putting a voter ID bill on my desk for my signature."
+       }
+      }
+     }
+    },
+    {
+     "id": "PA-GOV:garrity",
+     "name": "Stacy Garrity",
+     "party": "R",
+     "bio": "Pennsylvania state treasurer since 2021 and a retired Army Reserve colonel.",
+     "positions": {
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "Spotlight PA debate report, Oct. 7, 2026: Garrity would join the federal private school tax credit program on her first day",
+        "url": "https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pennsylvania-governor-debate-elections/",
+        "date": "2026-10-07",
+        "quote": "parents, not bureaucrats, know the best way to educate their kids."
+       }
+      },
+      "cri-09": {
+       "stance": 1,
+       "source": {
+        "title": "FOX 29 debate report, Oct. 8, 2026: Garrity supports enforcing Pennsylvania's death penalty",
+        "url": "https://fox29.com/news/shapiro-garrity-debate-recap-key-takeaways-from-pa-governors-race",
+        "date": "2026-10-08"
+       }
+      },
+      "hea-03": {
+       "stance": -2,
+       "source": {
+        "title": "Spotlight PA debate report, Oct. 7, 2026: Garrity supports the federal Medicaid cuts and would require healthy adults without young children to work, train or volunteer",
+        "url": "https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pennsylvania-governor-debate-elections/",
+        "date": "2026-10-07"
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "Spotlight PA debate report, Oct. 7, 2026: Garrity supports requiring voter ID for all voters",
+        "url": "https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pennsylvania-governor-debate-elections/",
+        "date": "2026-10-07"
+       }
+      },
+      "sta-02": {
+       "stance": -1,
+       "source": {
+        "title": "Spotlight PA debate report, Oct. 7, 2026: Garrity opposes adding school money without better results",
+        "url": "https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pennsylvania-governor-debate-elections/",
+        "date": "2026-10-07",
+        "quote": "we can't just keep throwing more money at an issue."
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Spotlight PA debate report, Oct. 7, 2026: Garrity proposes a $750 summer rebate for drivers and a pause in gas and diesel taxes",
+        "url": "https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pennsylvania-governor-debate-elections/",
+        "date": "2026-10-07"
+       }
+      },
+      "hea-09": {
+       "stance": 1,
+       "source": {
+        "title": "Spotlight PA debate report, Oct. 7, 2026: Garrity says she is vaccinated and supports vaccines",
+        "url": "https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pennsylvania-governor-debate-elections/",
+        "date": "2026-10-07"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-GOV",
+   "candidates": [
+    {
+     "id": "NY-GOV:hochul",
+     "name": "Kathy Hochul",
+     "party": "D",
+     "bio": "Governor of New York since 2021.",
+     "positions": {
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "Spectrum News debate report, Oct. 14, 2026: Hochul criticizes ICE operations in Nassau County",
+        "url": "https://spectrumlocalnews.com/nys/central-ny/politics/2026/10/14/hochul-and-blakeman-trade-barbs-in-only-governor-debate",
+        "date": "2026-10-14",
+        "quote": "ICE is out of control, it's out of control in Nassau County."
+       }
+      },
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "Spectrum News debate report, Oct. 14, 2026: Hochul blames the administration's tariffs for higher farm costs",
+        "url": "https://spectrumlocalnews.com/nys/central-ny/politics/2026/10/14/hochul-and-blakeman-trade-barbs-in-only-governor-debate",
+        "date": "2026-10-14"
+       }
+      }
+     }
+    },
+    {
+     "id": "NY-GOV:blakeman",
+     "name": "Bruce Blakeman",
+     "party": "R",
+     "bio": "Nassau County executive since 2022.",
+     "positions": {
+      "soc-03": {
+       "stance": 1,
+       "source": {
+        "title": "NBC New York debate report, Oct. 13, 2026: Blakeman calls himself pro-choice",
+        "url": "https://www.nbcnewyork.com/news/politics/hochul-blakeman-debate-ny-governor-race-recap-key-moments/6559134/",
+        "date": "2026-10-13"
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "Spectrum News debate report, Oct. 14, 2026: Blakeman defends Nassau County's cooperation with federal immigration authorities and blames New York's sanctuary policy",
+        "url": "https://spectrumlocalnews.com/nys/central-ny/politics/2026/10/14/hochul-and-blakeman-trade-barbs-in-only-governor-debate",
+        "date": "2026-10-14",
+        "quote": "Kathy Hochul has made us a sanctuary state."
+       }
+      },
+      "cri-06": {
+       "stance": -2,
+       "source": {
+        "title": "Spectrum News debate report, Oct. 14, 2026: Blakeman blames cashless bail and other criminal justice changes for crime",
+        "url": "https://spectrumlocalnews.com/nys/central-ny/politics/2026/10/14/hochul-and-blakeman-trade-barbs-in-only-governor-debate",
+        "date": "2026-10-14",
+        "quote": "a revolving door of criminality, cashless bail, raise the age"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "IL-GOV",
+   "candidates": [
+    {
+     "id": "IL-GOV:pritzker",
+     "name": "JB Pritzker",
+     "party": "D",
+     "bio": "Governor of Illinois since 2019, seeking a third term.",
+     "positions": {
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Chicago Sun-Times debate report, Oct. 14, 2026: Pritzker on health care",
+        "url": "https://www.nprillinois.org/government-politics/2026-10-14/6-takeaways-from-the-only-gubernatorial-debate-between-gov-pritzker-and-darren-bailey",
+        "date": "2026-10-14",
+        "quote": "I've been fighting for universal health care."
+       }
+      },
+      "cri-06": {
+       "stance": 2,
+       "source": {
+        "title": "Chicago Sun-Times debate report, Oct. 14, 2026: Pritzker opposes returning to cash bail and says judges and prosecutors should decide pretrial release",
+        "url": "https://www.nprillinois.org/government-politics/2026-10-14/6-takeaways-from-the-only-gubernatorial-debate-between-gov-pritzker-and-darren-bailey",
+        "date": "2026-10-14"
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "Chicago Sun-Times debate report, Oct. 14, 2026: Pritzker wants more state police",
+        "url": "https://www.nprillinois.org/government-politics/2026-10-14/6-takeaways-from-the-only-gubernatorial-debate-between-gov-pritzker-and-darren-bailey",
+        "date": "2026-10-14"
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Chicago Sun-Times, Oct. 13, 2026: Pritzker signed a series of laws making Illinois a haven for abortion care",
+        "url": "https://chicago.suntimes.com/elections/2026/10/13/jb-pritzker-darren-bailey-collin-corbett-illinois-governor-election-november-midterm",
+        "date": "2026-10-13"
+       }
+      },
+      "eco-12": {
+       "stance": 2,
+       "source": {
+        "title": "Chicago Sun-Times, Oct. 13, 2026: Pritzker spent $58 million backing the failed 2020 amendment for a graduated income tax",
+        "url": "https://chicago.suntimes.com/elections/2026/10/13/jb-pritzker-darren-bailey-collin-corbett-illinois-governor-election-november-midterm",
+        "date": "2026-10-13"
+       }
+      },
+      "sta-03": {
+       "stance": 2,
+       "source": {
+        "title": "Chicago Sun-Times, Oct. 13, 2026: Pritzker raised the state minimum wage to $15 an hour",
+        "url": "https://chicago.suntimes.com/elections/2026/10/13/jb-pritzker-darren-bailey-collin-corbett-illinois-governor-election-november-midterm",
+        "date": "2026-10-13"
+       }
+      },
+      "soc-05": {
+       "stance": 2,
+       "source": {
+        "title": "Chicago Sun-Times, Oct. 13, 2026: Pritzker shepherded the legalization of recreational marijuana",
+        "url": "https://chicago.suntimes.com/elections/2026/10/13/jb-pritzker-darren-bailey-collin-corbett-illinois-governor-election-november-midterm",
+        "date": "2026-10-13"
+       }
+      },
+      "sta-01": {
+       "stance": 2,
+       "source": {
+        "title": "Chicago Sun-Times, Oct. 13, 2026: Pritzker championed a $45 billion infrastructure plan",
+        "url": "https://chicago.suntimes.com/elections/2026/10/13/jb-pritzker-darren-bailey-collin-corbett-illinois-governor-election-november-midterm",
+        "date": "2026-10-13"
+       }
+      }
+     }
+    },
+    {
+     "id": "IL-GOV:bailey",
+     "name": "Darren Bailey",
+     "party": "R",
+     "bio": "Former Illinois state senator and the 2022 Republican nominee for governor.",
+     "positions": {
+      "cri-06": {
+       "stance": -2,
+       "source": {
+        "title": "Chicago Sun-Times debate report, Oct. 14, 2026: Bailey would repeal the SAFE-T Act, which ended cash bail, and renegotiate it with police and prosecutors",
+        "url": "https://www.nprillinois.org/government-politics/2026-10-14/6-takeaways-from-the-only-gubernatorial-debate-between-gov-pritzker-and-darren-bailey",
+        "date": "2026-10-14",
+        "quote": "We need to repeal it"
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "Chicago Sun-Times, Oct. 13, 2026: Bailey staunchly opposes abortion rights",
+        "url": "https://chicago.suntimes.com/elections/2026/10/13/jb-pritzker-darren-bailey-collin-corbett-illinois-governor-election-november-midterm",
+        "date": "2026-10-13"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "MA-GOV",
+   "candidates": [
+    {
+     "id": "MA-GOV:healey",
+     "name": "Maura Healey",
+     "party": "D",
+     "bio": "Governor of Massachusetts since 2023 and earlier state attorney general.",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Boston.com debate report, Oct. 16, 2026: Healey signed a law in August 2026 expanding abortion protections and shields providers from out-of-state legal action",
+        "url": "https://www.boston.com/news/politics/2026/10/16/healey-and-minogue-made-their-final-pitches-to-voters-in-a-tense-debate-here-are-4-takeaways/",
+        "date": "2026-10-16",
+        "quote": "I trust women and their doctors."
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "Boston.com debate report, Oct. 16, 2026: Healey says she cut housing permit times from a year to 30 days",
+        "url": "https://www.boston.com/news/politics/2026/10/16/healey-and-minogue-made-their-final-pitches-to-voters-in-a-tense-debate-here-are-4-takeaways/",
+        "date": "2026-10-16"
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Boston.com debate report, Oct. 16, 2026: Healey backs an all-of-the-above energy mix of natural gas, wind, solar, geothermal and hydropower",
+        "url": "https://www.boston.com/news/politics/2026/10/16/healey-and-minogue-made-their-final-pitches-to-voters-in-a-tense-debate-here-are-4-takeaways/",
+        "date": "2026-10-16"
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "Boston.com debate report, Oct. 16, 2026: Healey opposes the administration's immigration enforcement actions",
+        "url": "https://www.boston.com/news/politics/2026/10/16/healey-and-minogue-made-their-final-pitches-to-voters-in-a-tense-debate-here-are-4-takeaways/",
+        "date": "2026-10-16"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Boston.com debate report, Oct. 16, 2026: Healey cites the tax relief she signed",
+        "url": "https://www.boston.com/news/politics/2026/10/16/healey-and-minogue-made-their-final-pitches-to-voters-in-a-tense-debate-here-are-4-takeaways/",
+        "date": "2026-10-16"
+       }
+      }
+     }
+    },
+    {
+     "id": "MA-GOV:minogue",
+     "name": "Mike Minogue",
+     "party": "R",
+     "bio": "Former medical device company chief executive, running for office for the first time.",
+     "positions": {
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "Boston.com debate report, Oct. 16, 2026: Minogue is pro-life but says he would follow Massachusetts law",
+        "url": "https://www.boston.com/news/politics/2026/10/16/healey-and-minogue-made-their-final-pitches-to-voters-in-a-tense-debate-here-are-4-takeaways/",
+        "date": "2026-10-16",
+        "quote": "I will follow the law."
+       }
+      },
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "Boston.com debate report, Oct. 16, 2026: Minogue wants more natural gas pipeline capacity",
+        "url": "https://www.boston.com/news/politics/2026/10/16/healey-and-minogue-made-their-final-pitches-to-voters-in-a-tense-debate-here-are-4-takeaways/",
+        "date": "2026-10-16"
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "Boston.com debate report, Oct. 16, 2026: Minogue criticizes the state's reliance on wind and solar",
+        "url": "https://www.boston.com/news/politics/2026/10/16/healey-and-minogue-made-their-final-pitches-to-voters-in-a-tense-debate-here-are-4-takeaways/",
+        "date": "2026-10-16"
+       }
+      },
+      "ene-02": {
+       "stance": 1,
+       "source": {
+        "title": "Boston.com debate report, Oct. 16, 2026: Minogue wants more focus on nuclear power",
+        "url": "https://www.boston.com/news/politics/2026/10/16/healey-and-minogue-made-their-final-pitches-to-voters-in-a-tense-debate-here-are-4-takeaways/",
+        "date": "2026-10-16"
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "Boston.com debate report, Oct. 16, 2026: Minogue would give towns financial incentives to ease building requirements",
+        "url": "https://www.boston.com/news/politics/2026/10/16/healey-and-minogue-made-their-final-pitches-to-voters-in-a-tense-debate-here-are-4-takeaways/",
+        "date": "2026-10-16"
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "Boston.com debate report, Oct. 16, 2026: Minogue wants local, state and federal authorities to cooperate on immigration enforcement",
+        "url": "https://www.boston.com/news/politics/2026/10/16/healey-and-minogue-made-their-final-pitches-to-voters-in-a-tense-debate-here-are-4-takeaways/",
+        "date": "2026-10-16",
+        "quote": "cooperate with local, state, and federal authorities"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "MD-GOV",
+   "candidates": [
+    {
+     "id": "MD-GOV:moore",
+     "name": "Wes Moore",
+     "party": "D",
+     "bio": "Governor of Maryland since 2023.",
+     "positions": {
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "Maryland Matters debate report, Oct. 6, 2026: Moore says Maryland is fighting the administration's tariffs",
+        "url": "https://www.newsfromthestates.com/article/moore-and-cox-bring-heat-debate-will-it-alter-race",
+        "date": "2026-10-06"
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters debate report, Oct. 6, 2026: Moore says Maryland is fighting the federal health care cuts",
+        "url": "https://www.newsfromthestates.com/article/moore-and-cox-bring-heat-debate-will-it-alter-race",
+        "date": "2026-10-06"
+       }
+      }
+     }
+    },
+    {
+     "id": "MD-GOV:cox",
+     "name": "Dan Cox",
+     "party": "R",
+     "bio": "Former Maryland state delegate and the 2022 Republican nominee for governor.",
+     "positions": {
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "Maryland Matters debate report, Oct. 6, 2026: Cox pledges no new taxes or fees",
+        "url": "https://www.newsfromthestates.com/article/moore-and-cox-bring-heat-debate-will-it-alter-race",
+        "date": "2026-10-06",
+        "quote": "I will not raise taxes and fees on my watch."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "CT-GOV",
+   "candidates": [
+    {
+     "id": "CT-GOV:lamont",
+     "name": "Ned Lamont",
+     "party": "D",
+     "bio": "Governor of Connecticut since 2019, seeking a third term.",
+     "positions": {
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "WFSB, Aug. 20, 2026: Lamont backs the 2025 law requiring towns to plan for more housing",
+        "url": "https://www.wfsb.com/2026/08/20/lamont-fazio-spar-over-housing-legislation-governors-race-heats-up/",
+        "date": "2026-08-20"
+       }
+      },
+      "eco-11": {
+       "stance": 1,
+       "source": {
+        "title": "WFSB, Aug. 20, 2026: Lamont says he is strengthening paid family leave for working parents",
+        "url": "https://www.wfsb.com/2026/08/20/lamont-fazio-spar-over-housing-legislation-governors-race-heats-up/",
+        "date": "2026-08-20"
+       }
+      }
+     }
+    },
+    {
+     "id": "CT-GOV:fazio",
+     "name": "Ryan Fazio",
+     "party": "R",
+     "bio": "Connecticut state senator from Greenwich.",
+     "positions": {
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "CT Mirror, July 9, 2026: Fazio would lower state income taxes",
+        "url": "https://ctmirror.org/2026/07/09/fazio-housing-transportation-energy-election/",
+        "date": "2026-07-09"
+       }
+      },
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "CT Mirror, July 9, 2026: Fazio would cap future property tax rate increases and raise state education grants to towns",
+        "url": "https://ctmirror.org/2026/07/09/fazio-housing-transportation-energy-election/",
+        "date": "2026-07-09"
+       }
+      },
+      "sta-11": {
+       "stance": 1,
+       "source": {
+        "title": "CT Mirror, July 9, 2026: Fazio would reduce property tax exemptions for private universities and hospitals",
+        "url": "https://ctmirror.org/2026/07/09/fazio-housing-transportation-energy-election/",
+        "date": "2026-07-09"
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "CT Mirror, July 9, 2026: Fazio would allow homes in mixed-use areas and reform single-stairwell rules",
+        "url": "https://ctmirror.org/2026/07/09/fazio-housing-transportation-energy-election/",
+        "date": "2026-07-09"
+       }
+      },
+      "ene-10": {
+       "stance": 1,
+       "source": {
+        "title": "CT Mirror, July 9, 2026: Fazio would cut electric bills 15% to 20%",
+        "url": "https://ctmirror.org/2026/07/09/fazio-housing-transportation-energy-election/",
+        "date": "2026-07-09",
+        "quote": "cut out-of-control costs like energy costs and energy bills"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "AR-GOV",
+   "candidates": [
+    {
+     "id": "AR-GOV:sanders",
+     "name": "Sarah Huckabee Sanders",
+     "party": "R",
+     "bio": "Governor of Arkansas since 2023 and White House press secretary from 2017 to 2019.",
+     "positions": {
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "Arkansas Advocate debate report, Oct. 13, 2026: Sanders defends the voucher program created by her 2023 LEARNS Act",
+        "url": "https://www.newsfromthestates.com/article/challengers-call-arkansas-governors-policy-priorities-misplaced-debate",
+        "date": "2026-10-13",
+        "quote": "What's not fair is trapping kids in failing schools"
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "Arkansas Advocate debate report, Oct. 13, 2026: Sanders points to the teacher pay raises in the LEARNS Act",
+        "url": "https://www.newsfromthestates.com/article/challengers-call-arkansas-governors-policy-priorities-misplaced-debate",
+        "date": "2026-10-13"
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "Arkansas Advocate debate report, Oct. 13, 2026: Sanders backs Medicaid work requirements and opposes extending postpartum Medicaid to 12 months",
+        "url": "https://www.newsfromthestates.com/article/challengers-call-arkansas-governors-policy-priorities-misplaced-debate",
+        "date": "2026-10-13"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Arkansas Advocate debate report, Oct. 13, 2026: Sanders touts her record of tax cuts",
+        "url": "https://www.newsfromthestates.com/article/challengers-call-arkansas-governors-policy-priorities-misplaced-debate",
+        "date": "2026-10-13"
+       }
+      }
+     }
+    },
+    {
+     "id": "AR-GOV:love",
+     "name": "Fredrick Love",
+     "party": "D",
+     "bio": "Arkansas state senator from Little Rock.",
+     "positions": {
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "Arkansas Advocate debate report, Oct. 13, 2026: Love would end the school voucher program by executive order",
+        "url": "https://www.newsfromthestates.com/article/challengers-call-arkansas-governors-policy-priorities-misplaced-debate",
+        "date": "2026-10-13"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "Arkansas Advocate debate report, Oct. 13, 2026: Love would invest more in hospitals and Medicaid and supports 12-month postpartum coverage",
+        "url": "https://www.newsfromthestates.com/article/challengers-call-arkansas-governors-policy-priorities-misplaced-debate",
+        "date": "2026-10-13"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Arkansas Advocate debate report, Oct. 13, 2026: Love supports suspending the state gas tax",
+        "url": "https://www.newsfromthestates.com/article/challengers-call-arkansas-governors-policy-priorities-misplaced-debate",
+        "date": "2026-10-13"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "ID-GOV",
+   "candidates": [
+    {
+     "id": "ID-GOV:little",
+     "name": "Brad Little",
+     "party": "R",
+     "bio": "Governor of Idaho since 2019, seeking a third term.",
+     "positions": {
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun forum report, Oct. 6, 2026: Little signed the Idaho Parental Choice Tax Credit for private school and homeschool costs (H.B. 93, 2025)",
+        "url": "https://idahocapitalsun.com/2026/10/06/pickens-stegner-pledge-policy-changes-in-idaho-gubernatorial-candidate-forum/",
+        "date": "2026-10-06"
+       }
+      }
+     }
+    },
+    {
+     "id": "ID-GOV:pickens",
+     "name": "Terri Pickens",
+     "party": "D",
+     "bio": "Trial attorney and small business owner; the 2022 Democratic nominee for lieutenant governor.",
+     "positions": {
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun forum report, Oct. 6, 2026: Pickens's first budget would restore Medicaid expansion funding cut in 2026",
+        "url": "https://idahocapitalsun.com/2026/10/06/pickens-stegner-pledge-policy-changes-in-idaho-gubernatorial-candidate-forum/",
+        "date": "2026-10-06",
+        "quote": "It's going to restore Medicaid expansion."
+       }
+      },
+      "hea-06": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun forum report, Oct. 6, 2026: Pickens would restore mental health funding",
+        "url": "https://idahocapitalsun.com/2026/10/06/pickens-stegner-pledge-policy-changes-in-idaho-gubernatorial-candidate-forum/",
+        "date": "2026-10-06"
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun forum report, Oct. 6, 2026: Pickens would restore full funding for public schools",
+        "url": "https://idahocapitalsun.com/2026/10/06/pickens-stegner-pledge-policy-changes-in-idaho-gubernatorial-candidate-forum/",
+        "date": "2026-10-06"
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun forum report, Oct. 6, 2026: Pickens supports Proposition 1, restoring the right to an abortion in Idaho",
+        "url": "https://idahocapitalsun.com/2026/10/06/pickens-stegner-pledge-policy-changes-in-idaho-gubernatorial-candidate-forum/",
+        "date": "2026-10-06"
+       }
+      },
+      "imm-08": {
+       "stance": -2,
+       "source": {
+        "title": "Idaho Capital Sun forum report, Oct. 6, 2026: Pickens would sign no 287(g) agreements and give ICE no state resources",
+        "url": "https://idahocapitalsun.com/2026/10/06/pickens-stegner-pledge-policy-changes-in-idaho-gubernatorial-candidate-forum/",
+        "date": "2026-10-06",
+        "quote": "I don't think we need to be providing them with state resources"
+       }
+      },
+      "gov-10": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun forum report, Oct. 6, 2026: Pickens opposes HJR 4, which would bar voters from legalizing marijuana by ballot initiative",
+        "url": "https://idahocapitalsun.com/2026/10/06/pickens-stegner-pledge-policy-changes-in-idaho-gubernatorial-candidate-forum/",
+        "date": "2026-10-06"
+       }
+      }
+     }
+    },
+    {
+     "id": "ID-GOV:stegner",
+     "name": "John Stegner",
+     "party": "I",
+     "bio": "Retired Idaho Supreme Court justice, running as an independent.",
+     "positions": {
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "Idaho Capital Sun forum report, Oct. 6, 2026: Stegner would try to repeal the Parental Choice Tax Credit and challenge it in court",
+        "url": "https://idahocapitalsun.com/2026/10/06/pickens-stegner-pledge-policy-changes-in-idaho-gubernatorial-candidate-forum/",
+        "date": "2026-10-06"
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun forum report, Oct. 6, 2026: Stegner supports Proposition 1, restoring the right to an abortion in Idaho",
+        "url": "https://idahocapitalsun.com/2026/10/06/pickens-stegner-pledge-policy-changes-in-idaho-gubernatorial-candidate-forum/",
+        "date": "2026-10-06"
+       }
+      },
+      "imm-08": {
+       "stance": -2,
+       "source": {
+        "title": "Idaho Capital Sun forum report, Oct. 6, 2026: Stegner would not have signed the state's 287(g) agreement with ICE",
+        "url": "https://idahocapitalsun.com/2026/10/06/pickens-stegner-pledge-policy-changes-in-idaho-gubernatorial-candidate-forum/",
+        "date": "2026-10-06"
+       }
+      },
+      "gov-10": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun forum report, Oct. 6, 2026: Stegner opposes HJR 4, which would bar voters from legalizing marijuana by ballot initiative",
+        "url": "https://idahocapitalsun.com/2026/10/06/pickens-stegner-pledge-policy-changes-in-idaho-gubernatorial-candidate-forum/",
+        "date": "2026-10-06"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "SD-GOV",
+   "candidates": [
+    {
+     "id": "SD-GOV:rhoden",
+     "name": "Larry Rhoden",
+     "party": "R",
+     "bio": "Governor of South Dakota since 2025, a western South Dakota rancher and former lieutenant governor.",
+     "positions": {
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "South Dakota Searchlight debate report, Sept. 29, 2026: Rhoden signed property tax cuts he says will lower the average homeowner's bill 36% (2026)",
+        "url": "https://www.newsfromthestates.com/article/south-dakota-governor-candidates-clash-data-centers-education-economic-development",
+        "date": "2026-09-29",
+        "quote": "the largest property tax cut in the history of the state"
+       }
+      },
+      "sta-02": {
+       "stance": 1,
+       "source": {
+        "title": "South Dakota Searchlight debate report, Sept. 29, 2026: Rhoden says state school funding has risen faster than the formula requires",
+        "url": "https://www.newsfromthestates.com/article/south-dakota-governor-candidates-clash-data-centers-education-economic-development",
+        "date": "2026-09-29"
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "South Dakota Searchlight debate report, Sept. 5, 2026: Rhoden opposed Medicaid expansion over fears federal funding will be pulled",
+        "url": "https://southdakotasearchlight.com/2026/09/05/south-dakota-governor-challenger-both-slam-trump-on-beef-imports-but-clash-on-other-debate-topics/",
+        "date": "2026-09-05"
+       }
+      },
+      "eco-10": {
+       "stance": 1,
+       "source": {
+        "title": "South Dakota Searchlight debate report, Sept. 5, 2026: Rhoden opposes the administration's pause on tariffs for imported beef",
+        "url": "https://southdakotasearchlight.com/2026/09/05/south-dakota-governor-challenger-both-slam-trump-on-beef-imports-but-clash-on-other-debate-topics/",
+        "date": "2026-09-05"
+       }
+      }
+     }
+    },
+    {
+     "id": "SD-GOV:ahlers",
+     "name": "Dan Ahlers",
+     "party": "D",
+     "bio": "Small business owner and former Democratic state legislator from Dell Rapids.",
+     "positions": {
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "South Dakota Searchlight debate report, Sept. 5, 2026: Ahlers opposes rolling back the voter-approved Medicaid expansion",
+        "url": "https://southdakotasearchlight.com/2026/09/05/south-dakota-governor-challenger-both-slam-trump-on-beef-imports-but-clash-on-other-debate-topics/",
+        "date": "2026-09-05",
+        "quote": "when we have healthcare, and everyone has access to it, we all do better"
+       }
+      },
+      "edu-09": {
+       "stance": 2,
+       "source": {
+        "title": "South Dakota Searchlight debate report, Sept. 29, 2026: Ahlers would have the state pay for school lunches",
+        "url": "https://www.newsfromthestates.com/article/south-dakota-governor-candidates-clash-data-centers-education-economic-development",
+        "date": "2026-09-29"
+       }
+      },
+      "soc-07": {
+       "stance": 1,
+       "source": {
+        "title": "South Dakota Searchlight debate report, Sept. 29, 2026: Ahlers proposes a child care tax credit or rebate",
+        "url": "https://www.newsfromthestates.com/article/south-dakota-governor-candidates-clash-data-centers-education-economic-development",
+        "date": "2026-09-29"
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "South Dakota Searchlight debate report, Sept. 29, 2026: Ahlers says the state should prioritize teacher pay",
+        "url": "https://www.newsfromthestates.com/article/south-dakota-governor-candidates-clash-data-centers-education-economic-development",
+        "date": "2026-09-29"
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "South Dakota Searchlight debate report, Sept. 29, 2026: Ahlers would put more state money into schools to ease property taxes",
+        "url": "https://www.newsfromthestates.com/article/south-dakota-governor-candidates-clash-data-centers-education-economic-development",
+        "date": "2026-09-29"
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "South Dakota Searchlight debate report, Sept. 29, 2026: Ahlers would expand property tax relief for seniors, veterans and people with disabilities",
+        "url": "https://www.newsfromthestates.com/article/south-dakota-governor-candidates-clash-data-centers-education-economic-development",
+        "date": "2026-09-29"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "HI-GOV",
+   "candidates": [
+    {
+     "id": "HI-GOV:green",
+     "name": "Josh Green",
+     "party": "D",
+     "bio": "Governor of Hawaii since 2022, a physician and former lieutenant governor.",
+     "positions": {
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "Honolulu Civil Beat, Oct. 4, 2026: Green's campaign says he will build more housing and reduce homelessness",
+        "url": "https://www.civilbeat.org/2026/10/cordery-runs-against-hawaii-gov-josh-green/",
+        "date": "2026-10-04"
+       }
+      },
+      "eco-02": {
+       "stance": -1,
+       "source": {
+        "title": "Honolulu Civil Beat, Oct. 4, 2026: Green proposed freezing the 2024 income tax cuts to help balance future budgets",
+        "url": "https://www.civilbeat.org/2026/10/cordery-runs-against-hawaii-gov-josh-green/",
+        "date": "2026-10-04"
+       }
+      }
+     }
+    },
+    {
+     "id": "HI-GOV:cordery",
+     "name": "Gary Cordery",
+     "party": "R",
+     "bio": "Hawaii contractor.",
+     "positions": {
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "Honolulu Civil Beat, Oct. 4, 2026: Cordery would sign a bill overturning abortion rights",
+        "url": "https://www.civilbeat.org/2026/10/cordery-runs-against-hawaii-gov-josh-green/",
+        "date": "2026-10-04",
+        "quote": "I would sign it"
+       }
+      },
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "Honolulu Civil Beat, Oct. 4, 2026: Cordery would sign a bill overturning abortion rights",
+        "url": "https://www.civilbeat.org/2026/10/cordery-runs-against-hawaii-gov-josh-green/",
+        "date": "2026-10-04"
+       }
+      },
+      "hea-09": {
+       "stance": -2,
+       "source": {
+        "title": "Honolulu Civil Beat, Oct. 4, 2026: Cordery opposes any government vaccine requirement and urged people to reject vaccines",
+        "url": "https://www.civilbeat.org/2026/10/cordery-runs-against-hawaii-gov-josh-green/",
+        "date": "2026-10-04",
+        "quote": "You MUST reject all vaccines, PERIOD."
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "Honolulu Civil Beat, Oct. 4, 2026: Cordery would end the state excise tax on food and opposes freezing the 2024 income tax cuts",
+        "url": "https://www.civilbeat.org/2026/10/cordery-runs-against-hawaii-gov-josh-green/",
+        "date": "2026-10-04"
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "Honolulu Civil Beat, Oct. 4, 2026: Cordery would freeze property taxes at retirement age for homeowners",
+        "url": "https://www.civilbeat.org/2026/10/cordery-runs-against-hawaii-gov-josh-green/",
+        "date": "2026-10-04"
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "Honolulu Civil Beat, Oct. 4, 2026: Cordery says the climate change agenda adds costs and needs review",
+        "url": "https://www.civilbeat.org/2026/10/cordery-runs-against-hawaii-gov-josh-green/",
+        "date": "2026-10-04"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-GOV",
+   "candidates": [
+    {
+     "id": "CO-GOV:weiser",
+     "name": "Phil Weiser",
+     "party": "D",
+     "bio": "Colorado attorney general since 2019.",
+     "positions": {
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Newsline debate report, Aug. 27, 2026: Weiser would push towns to cut permit fees and reward building starter homes, balancing state mandates and local control",
+        "url": "https://coloradonewsline.com/2026/08/27/weiser-lopez-colorado-debate-marx-absent/",
+        "date": "2026-08-27"
+       }
+      },
+      "hea-09": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Newsline debate report, Aug. 27, 2026: Weiser would expand free primary care",
+        "url": "https://coloradonewsline.com/2026/08/27/weiser-lopez-colorado-debate-marx-absent/",
+        "date": "2026-08-27"
+       }
+      },
+      "eco-04": {
+       "stance": 2,
+       "source": {
+        "title": "Colorado Newsline debate report, Aug. 27, 2026: Weiser sued to block the Kroger-Albertsons grocery merger",
+        "url": "https://coloradonewsline.com/2026/08/27/weiser-lopez-colorado-debate-marx-absent/",
+        "date": "2026-08-27"
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Newsline debate report, Aug. 27, 2026: Weiser opposes federal efforts to interfere with mail ballots",
+        "url": "https://coloradonewsline.com/2026/08/27/weiser-lopez-colorado-debate-marx-absent/",
+        "date": "2026-08-27"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "RI-GOV",
+   "candidates": [
+    {
+     "id": "RI-GOV:foulkes",
+     "name": "Helena Foulkes",
+     "party": "D",
+     "bio": "Former CVS Health executive and president of Hudson's Bay Company.",
+     "positions": {
+      "hou-01": {
+       "stance": 2,
+       "source": {
+        "title": "NBC 10 debate report, Oct. 20, 2026: Foulkes would build 20,000 homes for the middle class, paid for by the state's new tax on income over $1 million",
+        "url": "https://turnto10.com/politics/foulkes-guckian-and-block-debate-housing-health-care-in-final-televised-matchup-october-20-2026",
+        "date": "2026-10-20",
+        "quote": "I want to build housing for the middle class, housing they can afford."
+       }
+      },
+      "eco-01": {
+       "stance": 1,
+       "source": {
+        "title": "NBC 10 debate report, Oct. 7, 2026: Foulkes backs using the tax on income over $1 million for housing and says tax cuts aren't realistic now",
+        "url": "https://turnto10.com/politics/foulkes-guckian-block-spar-over-housing-morales-abortion-gubernatorial-debate-october-7-2026",
+        "date": "2026-10-07"
+       }
+      },
+      "soc-12": {
+       "stance": 2,
+       "source": {
+        "title": "NBC 10 debate report, Oct. 7, 2026: Foulkes supports letting transgender girls play girls' sports",
+        "url": "https://turnto10.com/politics/foulkes-guckian-block-spar-over-housing-morales-abortion-gubernatorial-debate-october-7-2026",
+        "date": "2026-10-07"
+       }
+      },
+      "imm-08": {
+       "stance": -2,
+       "source": {
+        "title": "NBC 10 debate report, Oct. 7, 2026: Foulkes on immigration enforcement",
+        "url": "https://turnto10.com/politics/foulkes-guckian-block-spar-over-housing-morales-abortion-gubernatorial-debate-october-7-2026",
+        "date": "2026-10-07",
+        "quote": "ICE is not welcome when I am governor."
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "NBC 10 debate report, Oct. 20, 2026: Foulkes would fight to preserve the Affordable Care Act and help residents keep their benefits",
+        "url": "https://turnto10.com/politics/foulkes-guckian-and-block-debate-housing-health-care-in-final-televised-matchup-october-20-2026",
+        "date": "2026-10-20"
+       }
+      }
+     }
+    },
+    {
+     "id": "RI-GOV:block",
+     "name": "Ken Block",
+     "party": "I",
+     "bio": "Software entrepreneur and founder of the Moderate Party, running as an independent.",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "NBC 10 debate report, Oct. 7, 2026: Block supports abortion rights",
+        "url": "https://turnto10.com/politics/foulkes-guckian-block-spar-over-housing-morales-abortion-gubernatorial-debate-october-7-2026",
+        "date": "2026-10-07",
+        "quote": "I am pro-choice, I have always been pro-choice."
+       }
+      },
+      "soc-12": {
+       "stance": -1,
+       "source": {
+        "title": "NBC 10 debate report, Oct. 7, 2026: Block opposes transgender girls playing in girls' sports",
+        "url": "https://turnto10.com/politics/foulkes-guckian-block-spar-over-housing-morales-abortion-gubernatorial-debate-october-7-2026",
+        "date": "2026-10-07"
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "NBC 10 debate report, Oct. 20, 2026: Block would have the state acquire land and work with towns and developers to build housing",
+        "url": "https://turnto10.com/politics/foulkes-guckian-and-block-debate-housing-health-care-in-final-televised-matchup-october-20-2026",
+        "date": "2026-10-20",
+        "quote": "we will build the units we need"
+       }
+      }
+     }
+    },
+    {
+     "id": "RI-GOV:guckian",
+     "name": "Aaron Guckian",
+     "party": "R",
+     "positions": {
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "NBC 10 debate report, Oct. 20, 2026: Guckian pledges to lower taxes and fees, including the tax on second homes",
+        "url": "https://turnto10.com/politics/foulkes-guckian-and-block-debate-housing-health-care-in-final-televised-matchup-october-20-2026",
+        "date": "2026-10-20"
+       }
+      },
+      "soc-12": {
+       "stance": -1,
+       "source": {
+        "title": "NBC 10 debate report, Oct. 7, 2026: Guckian opposes transgender girls playing in girls' sports",
+        "url": "https://turnto10.com/politics/foulkes-guckian-block-spar-over-housing-morales-abortion-gubernatorial-debate-october-7-2026",
+        "date": "2026-10-07"
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "NBC 10 debate report, Oct. 7, 2026: Guckian says ICE would be welcome in Rhode Island",
+        "url": "https://turnto10.com/politics/foulkes-guckian-block-spar-over-housing-morales-abortion-gubernatorial-debate-october-7-2026",
+        "date": "2026-10-07",
+        "quote": "We need to get the bad actors out."
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "NBC 10 debate report, Oct. 20, 2026: Guckian would appoint a permitting czar to cut red tape for housing",
+        "url": "https://turnto10.com/politics/foulkes-guckian-and-block-debate-housing-health-care-in-final-televised-matchup-october-20-2026",
+        "date": "2026-10-20"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "WY-GOV",
+   "candidates": [
+    {
+     "id": "WY-GOV:barlow",
+     "name": "Eric Barlow",
+     "party": "R",
+     "bio": "Wyoming state senator from Gillette.",
+     "positions": {
+      "sta-04": {
+       "stance": 0,
+       "source": {
+        "title": "WyoFile debate report, Oct. 15, 2026: Barlow opposes Proposition 1's new residential property tax exemption, citing the local services it funds and earlier property tax cuts",
+        "url": "https://www.newsfromthestates.com/article/four-takeaways-wyoming-governors-debate",
+        "date": "2026-10-15"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

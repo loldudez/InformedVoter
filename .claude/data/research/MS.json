@@ -1,0 +1,406 @@
+{
+ "updated": "2026-10-25",
+ "note": "Mississippi U.S. Senate race, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "MS-SEN",
+   "candidates": [
+    {
+     "id": "MS-SEN:hyde-smith",
+     "name": "Cindy Hyde-Smith",
+     "party": "R",
+     "bio": "U.S. senator since 2018 and a former Mississippi agriculture commissioner.",
+     "officialSite": "https://cindyhydesmith.com/",
+     "positions": {
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith chairs the Senate Pro-Life Caucus and opposes taxpayer funding of abortion",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith says unborn children have a right to life from their Creator",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith voted to end the clean energy tax credits (Senate roll call 372, 2025)",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-09": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith supported incentives for a new electric vehicle battery plant in Mississippi",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith supports the administration's push for more oil drilling",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith criticizes Democratic climate policy",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Democrats' radical Green New Deal climate agenda"
+       }
+      },
+      "ene-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith voted to end mining limits near the Boundary Waters (Senate roll call 84, 2026) and seeks repeal of a gasoline vapor testing rule",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith secured federal funding for law enforcement technology and training (2024)",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith voted against the infrastructure law (Senate roll call 314, 2021)",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith called for farm aid after commodity prices fell",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-05": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith introduced the Buying American Cotton Act, a tax credit for products made with U.S. cotton (S. 1919)",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith says Washington should support states' schools without dictating to them",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "should not dictate how they get the job done"
+       }
+      },
+      "edu-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith supported a $600,000 federal grant for Mississippi charter schools (2023)",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith voted for the 2025 law that cut Medicaid (Senate roll call 372)",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith voted against extending the ACA tax credits (Senate roll call 644, 2025)",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith voted to extend the 2017 tax cuts (2025), though she also voted for a tax increase on the ultrawealthy to help rural hospitals (Senate roll call 355, 2025)",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "helping unleash a wave of prosperity across America"
+       }
+      },
+      "imm-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith supports the border wall",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "secure its borders and control who enters our country"
+       }
+      },
+      "imm-10": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith introduced a bill requiring all employers to use E-Verify",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith says ICE is pursuing law and order (WLOX, Feb. 2026)",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith voted against requiring congressional authorization for military action in Iran (Senate roll call 46, 2026)",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith opposed limiting the Iran war",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "embolden our enemies and endanger our brave fighting men and women"
+       }
+      },
+      "soc-10": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith voted against the Respect for Marriage Act (Senate roll call 362, 2022)",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "believe in the traditional definition of marriage"
+       }
+      },
+      "soc-12": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith introduced a resolution defining sex as biological sex at birth (S.Res. 53) and opposes transgender girls in girls' sports",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-10": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith calls tariffs a really good tool against unfair trade",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I support President Trump's effort."
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Hyde-Smith supports voter ID and proof of citizenship to register",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "It is lawful, it is fair, and it works."
+       }
+      }
+     }
+    },
+    {
+     "id": "MS-SEN:colom",
+     "name": "Scott Colom",
+     "party": "D",
+     "bio": "District attorney for Mississippi's 16th Circuit Court District since 2016.",
+     "officialSite": "https://scottcolom.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom calls himself pro-life as a Christian but would trust women to make their own choices, and supports IVF access",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: As district attorney, Colom expanded pretrial diversion and started Mississippi's first restorative justice program",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "alternatives to incarceration for young people"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom would end income tax for teachers and police officers earning under $75,000",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom criticized the 2025 federal funding freeze that cut $137 million from Mississippi schools",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "fewer resources, fewer safeguards, and more young lives at risk"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom supports expanding Medicaid",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We have to cancel those healthcare cuts."
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom supports extending the ACA tax credits",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom says President Trump has done a good job securing the border",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom opposes H-1B visas, saying companies replace American workers with foreign ones",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "those jobs need to be in Mississippi"
+       }
+      },
+      "def-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom says the Constitution requires Congress to declare war",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom on Iran",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I don't know what the objective is right now in the war in Iran."
+       }
+      },
+      "soc-12": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom says biological boys shouldn't play girls' sports but in 2021 opposed criminalizing gender-affirming care",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We should not criminalize people's identity."
+       }
+      },
+      "eco-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom says the minimum wage hasn't risen in nearly 20 years",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "when you raise the minimum wage, you boost all wages"
+       }
+      },
+      "eco-10": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom says tariffs raise prices and hurt farmers, and that Congress should set them",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Tariffs have been terrible for Mississippi."
+       }
+      },
+      "eco-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom criticized extending the 2017 tax cuts",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "a permanent tax handout to people making more than $600,000 a year"
+       }
+      },
+      "gov-05": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Mississippi U.S. Senate voters guide: Colom opposes Mississippi's 2026 law checking new voters' citizenship against a federal database",
+        "url": "https://guides.vote/guide/2026-mississippi-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

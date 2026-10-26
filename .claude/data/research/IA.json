@@ -1,0 +1,710 @@
+{
+ "updated": "2026-10-25",
+ "note": "Iowa U.S. Senate and governor races, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "IA-SEN",
+   "candidates": [
+    {
+     "id": "IA-SEN:turek",
+     "name": "Josh Turek",
+     "party": "D",
+     "bio": "Iowa state representative and two-time Paralympic gold medalist in wheelchair basketball.",
+     "officialSite": "https://turek4iowa.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek introduced a bill to repeal Iowa's six-week abortion ban (HF 2455)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek introduced a bill to repeal Iowa's six-week abortion ban (HF 2455)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek supports restoring the expired wind and solar production tax credits",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek voted for Iowa's three-strikes bill, with 20-year sentences for repeat serious offenders (HF 2542)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-05": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek calls for more recidivism programs",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek would crack down on agribusiness and meatpacking monopolies",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek would simplify permitting for affordable housing",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek would end school vouchers",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "end school vouchers that waste taxpayer dollars"
+       }
+      },
+      "edu-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek would increase public school funding",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek would crack down on chemical companies polluting water",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "cracking down on chemical companies that pollute our water supply"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek would restore Medicaid funding",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek would restore ACA subsidies",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek calls for a public option",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Healthcare is a human right."
+       }
+      },
+      "hea-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek would invest in mental health care",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek would pass a bill that strengthens the border",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek supports an earned pathway to citizenship",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek supports deporting people here illegally who commit crimes",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek would not fund DHS without major ICE reform",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "without significant ICE reform"
+       }
+      },
+      "def-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek says an Iran attack should need congressional approval",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "should not happen without Congressional approval"
+       }
+      },
+      "def-15": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek says the Iran war has no clear objective",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek supports the PRO Act",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek sponsored a bill to put same-sex marriage in Iowa law (HF 671)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek voted against ending state civil rights protections for transgender people (SF 418)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek would raise the minimum wage and index it to inflation",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek would close tax loopholes for billionaires and big corporations",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "loopholes for billionaires and big corporations"
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Turek proposed making Election Day a state holiday (HF 407)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "IA-SEN:hinson",
+     "name": "Ashley Hinson",
+     "party": "R",
+     "bio": "U.S. representative for Iowa's 2nd District since 2021 and a former local TV news anchor.",
+     "officialSite": "https://ashleyhinson.com/",
+     "positions": {
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson sponsored the Life at Conception Act (H.R. 722)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We must protect the unborn."
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson supports overturning Roe v. Wade and opposes taxpayer-funded abortion",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson voted to end Biden-era clean energy tax credits (House roll call 190, 2025)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson supports cutting wasteful spending",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson sponsored federal tax credits for private school scholarships (H.R. 833)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson voted to narrow the Clean Water Act and repeal an EPA air pollutant rule (2025)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson introduced a flood and drought mitigation bill (H.R. 4134)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson voted against extending ACA subsidies for 3 years (House roll call 11, 2026)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson says she would protect people with pre-existing conditions",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson voted to reauthorize substance use and mental health programs (H.R. 2483)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson voted for $75 billion more for ICE and $70 billion more for DHS",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson on immigration",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "deporting…criminal illegal immigrants"
+       }
+      },
+      "imm-02": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson voted in 2021 against a path to permanent residency for Dreamers (H.R. 6)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson backed the military action against Iran",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Iran cannot have a nuclear weapon."
+       }
+      },
+      "def-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson voted five times in 2026 against requiring congressional authorization for military action in Iran",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson voted against the PRO Act (2021)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson voted to ban transgender students from girls' sports (H.R. 28, 2025)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-02": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson voted against the Equality Act (H.R. 5, 2021)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson opposed a $15 federal minimum wage (2021)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "This would crush our rural economy"
+       }
+      },
+      "eco-01": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson voted to extend the 2017 tax cuts and against raising taxes on corporations and the wealthy (2021)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson sponsored the proof-of-citizenship voting bill (H.R. 22)",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "It should be easy to vote and hard to cheat."
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa U.S. Senate voters guide: Hinson on police",
+        "url": "https://guides.vote/guide/2026-iowa-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I will always back the blue."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "IA-GOV",
+   "candidates": [
+    {
+     "id": "IA-GOV:sand",
+     "name": "Rob Sand",
+     "party": "D",
+     "bio": "Iowa state auditor since 2019.",
+     "officialSite": "https://robsand.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand would protect reproductive rights and opposes Iowa's six-week ban",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "use whatever tools I have to protect Iowans' reproductive rights"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand would veto bills further restricting abortion (The Gazette)",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand calls the voucher program waste",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "open invitation to waste, fraud, and abuse"
+       }
+      },
+      "ene-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand would expand water quality monitoring",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "No immunity for chemical companies sickening Iowans."
+       }
+      },
+      "hea-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand would seek more competitive mental health and Medicaid rates",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand calls himself a big supporter of legal immigration",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand says the Biden administration should have done better on border security",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand has joined workers on picket lines",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand opposed repealing Iowa's civil rights protections for transgender people",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Legalizing discrimination is wrong."
+       }
+      },
+      "soc-12": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand opposes repealing transgender civil rights protections but supports the ban on transgender athletes in women's sports",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand supports legalizing adult-use cannabis",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand supports raising the minimum wage",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-10": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Sand on data centers",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We should not be giving tax incentives to data centers."
+       }
+      }
+     }
+    },
+    {
+     "id": "IA-GOV:lahn",
+     "name": "Zach Lahn",
+     "party": "R",
+     "bio": "Businessman who co-founded a private school in Wichita; won the June Republican primary over a Trump-backed opponent.",
+     "officialSite": "https://www.zachlahn.com/",
+     "positions": {
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Lahn calls Iowa's six-week ban good and would likely support further protections",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Lahn calls himself pro-life at conception and opposes abortion pills by mail",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Every life is a gift from God."
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Lahn would expand Iowa's Education Savings Accounts",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "foundational to freedom"
+       }
+      },
+      "eco-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Lahn would take on big agricultural cartels and bring antitrust suits in health care",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Lahn would veto any bill giving agricultural chemical companies lawsuit immunity",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Lahn opposed Medicaid expansion in Montana (2015)",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Lahn supports barring H-1B visa holders from state government and university jobs",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Lahn supports right-to-work laws",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Lahn would lower Iowans' property taxes by raising rates on Wall Street investors",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Iowa governor voters guide: Lahn supports eliminating income taxes",
+        "url": "https://guides.vote/guide/2026-iowa-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

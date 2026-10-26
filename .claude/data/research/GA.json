@@ -1,0 +1,785 @@
+{
+ "updated": "2026-10-25",
+ "note": "Georgia U.S. Senate and governor races, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "GA-SEN",
+   "candidates": [
+    {
+     "id": "GA-SEN:ossoff",
+     "name": "Jon Ossoff",
+     "party": "D",
+     "bio": "U.S. senator since 2021 and a former investigative documentary producer.",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff sponsored S. 701 to prohibit government restrictions on abortion",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff says Georgia's six-week ban strips women of autonomy",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "strips women of autonomy"
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff voted for $369 billion in clean energy investments (Senate roll call 325, 2022) and against ending the tax credits (2025)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff on climate change",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "The U.S. must swiftly combat climate change."
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff supports increasing law enforcement funding",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff supports funding police body cameras",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-09": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff sponsored S. 2299 to ban the federal death penalty",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff voted for the infrastructure law (Senate roll call 314, 2021)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff sponsored $500 million for public school facility upgrades (S. 694, 2021)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff voted against repealing EPA hazardous air pollutant limits (Senate roll call 229, 2025)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff voted against the 2025 Medicaid cuts (Senate roll call 372)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff sponsored S. 46 to extend ACA tax credits",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff on health coverage",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "No one should go without care for lack of money."
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff voted for the Laken Riley Act, detaining immigrants charged with theft (Senate roll call 7, 2025)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff voted against the $75 billion ICE increase and the $70 billion DHS increase",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff voted for the 2024 bill to speed asylum claims (Senate roll call 182, 2024)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff voted five times in 2026 to require congressional authorization for military action in Iran",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff on Iran",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I oppose yet another regime change war-of-choice in the Middle East."
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff sponsored the PRO Act (S. 852)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff sponsored S. 1503 to ban discrimination based on sexual orientation or gender identity",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff voted for the Respect for Marriage Act (Senate roll call 362, 2022)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff voted against banning transgender students from girls' school sports (Senate roll call 100, 2025)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff sponsored S. 53 (2021) to raise the federal minimum wage to $15",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff voted in 2021 to raise taxes on corporations and the wealthy (Senate roll call 357)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff opposes the proof-of-citizenship voting bill (H.R. 22)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Ossoff sponsored the Right to Vote Act and S. 2523 restoring voting-change preclearance",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "GA-SEN:collins",
+     "name": "Mike Collins",
+     "party": "R",
+     "bio": "U.S. representative for Georgia's 10th District since 2023 and a former trucking company owner.",
+     "positions": {
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins supports Georgia's six-week ban and sponsored H.R. 431, declaring life begins at conception",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "unapologetically pro-life"
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins supported overturning Roe v. Wade",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins voted to end Biden-era clean energy tax credits (House roll call 190, 2025)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins voted to repeal greenhouse gas reduction programs and to end the EPA methane charge",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins sponsored resolutions to invest in police hiring, training and equipment (H. Con. Res. 31, 98)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Being tough on crime stops crime."
+       }
+      },
+      "cri-09": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins supports the death penalty for child sex crimes",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins says he would work to reduce government spending",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins supports expanding school choice",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "ensure that our children aren't trapped in failing public schools"
+       }
+      },
+      "ene-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins introduced H.R. 8079 to strip EPA vehicle emission enforcement and voted to repeal hazardous air pollutant limits",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins voted against extending ACA premium subsidies for 3 years (House roll call 11, 2026)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins introduced H.R. 7511 to detain immigrants charged with theft",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins voted for $75 billion more for ICE and $70 billion more for DHS",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I fully support ICE."
+       }
+      },
+      "def-15": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins on Iran",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I fully support President Trump and what he is doing with Iran."
+       }
+      },
+      "def-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins voted five times in 2026 against requiring congressional authorization for military action in Iran",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins sponsored H.R. 1232 to let workers at union shops opt out of dues",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-11": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins voted to make providing gender-affirming care to minors a crime (H.R. 3492)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins sponsored H.R. 465 to ban LGBTQ flags at U.S. embassies",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins voted to extend the 2017 tax cuts and sponsored repeal of the estate tax (H.R. 1301)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins voted to require voter ID (House roll call 69, 2026)",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins sponsored H.R. 7300 to ban universal vote-by-mail",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-07": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia U.S. Senate voters guide: Collins sponsored H.R. 7300, which would ban ranked-choice voting",
+        "url": "https://guides.vote/guide/2026-georgia-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "GA-GOV",
+   "candidates": [
+    {
+     "id": "GA-GOV:bottoms",
+     "name": "Keisha Lance Bottoms",
+     "party": "D",
+     "bio": "Mayor of Atlanta from 2018 to 2022 and later a White House senior adviser.",
+     "officialSite": "https://www.keishaforgovernor.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms would repeal Georgia's six-week abortion law",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Roe standards where a woman could have the right to choose"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms would repeal Georgia's six-week abortion law",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms launched Clean Energy Atlanta, aiming for 100% clean energy by 2035",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms would increase state support for local law enforcement",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms would increase state support for local law enforcement",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms on schools",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "fully fund Georgia's schools"
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms on schools",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "fully fund Georgia's schools"
+       }
+      },
+      "edu-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms supports a path to free technical and community college",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms proposes eliminating state income tax for teachers and a $60,000 minimum teacher salary",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms on Medicaid",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "expand Medicaid to cut costs and close the coverage gap"
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms would create an independent board to review drug prices (AARP)",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-09": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms calls reopening rural hospitals a priority",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms supports more immigration judges (Capital B News)",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms opposed ending DACA as mayor (2018)",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms on workers",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Human rights and workers' rights go hand in hand."
+       }
+      },
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms would protect marriage equality",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms opposes the state bill banning transgender students from women's sports",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Bottoms would create same-day voter registration",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "making it easier for Georgians to vote, not harder"
+       }
+      }
+     }
+    },
+    {
+     "id": "GA-GOV:jackson",
+     "name": "Rick Jackson",
+     "party": "R",
+     "bio": "Founder of Jackson Healthcare, a medical staffing company.",
+     "officialSite": "https://rickjackson.com/",
+     "positions": {
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson would defend Georgia's heartbeat law",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson on abortion",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "No one is more pro-life than me."
+       }
+      },
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson is the largest outside investor in a new Texas oil refinery",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We're going to sell our oil."
+       }
+      },
+      "cri-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson on crime",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "keep violent criminals behind bars"
+       }
+      },
+      "cri-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson on police",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "fully support law enforcement with resources, training, and respect"
+       }
+      },
+      "sta-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson on police",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "fully support law enforcement with resources, training, and respect"
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson would opt Georgia into the federal private school scholarship tax credit",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson on deportations",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "number one in the nation for deporting criminal illegal immigrants"
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson would work with ICE",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson on gender",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "There are two genders, and they are God-given."
+       }
+      },
+      "soc-11": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson would imprison those who change a child's gender",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson on property taxes",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "freeze property taxes immediately"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson would cut the state income tax in half within four years",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Georgia governor voters guide: Jackson on voter ID",
+        "url": "https://guides.vote/guide/2026-georgia-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "You should have to show [an ID] to vote."
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}
