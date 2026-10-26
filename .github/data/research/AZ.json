@@ -1,0 +1,359 @@
+{
+ "updated": "2026-10-25",
+ "note": "Arizona governor race, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "AZ-GOV",
+   "candidates": [
+    {
+     "id": "AZ-GOV:hobbs",
+     "name": "Katie Hobbs",
+     "party": "D",
+     "bio": "Governor of Arizona since 2023 and formerly Arizona secretary of state.",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs signed the repeal of Arizona's 1864 abortion ban (HB 2677, 2024)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "we should recommit to protecting women's bodily autonomy"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs barred county attorneys from prosecuting abortion providers (Executive Order 2023-11)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs's energy taskforce recommends utility-scale wind and solar, and she seeks a 640-acre solar farm",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "build a 21st-century clean energy economy"
+       }
+      },
+      "ene-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs joined the U.S. Climate Alliance (2023)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs joined a multistate lawsuit over the EPA's repeal of a toxic air pollutant rule (2026), though she sought flexibility on ozone standards (2024)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs seeks an income cap on Arizona's universal ESA vouchers and vetoed opting into the federal private school tax credit (2026)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs directed state troopers to expand patrols with up to 14,000 hours of overtime (2026)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs allocated more than $25 million for crime victims and violent crime prevention",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs expanded KidsCare and opposed the 2025 federal Medicaid cuts",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs joined a multistate public pharmacy collaborative offering discounted prescriptions (2025)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs created Operation Desert Guardian to expand border security (executive order, 2025)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs funded 50 state troopers for immigration enforcement but vetoed bills requiring local cooperation with ICE (2025)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs opposes the 2026 ballot measure restricting public employee unions",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I grew up in a working-class family, and I am a proud union member."
+       }
+      },
+      "soc-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs signed executive orders barring workplace discrimination by sexual orientation and gender identity (2023)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs vetoed a bill limiting which restrooms transgender students can use",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I will always stand up for your freedom to be who you are."
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs signed the 2026 budget with a $1.4 billion middle-class tax cut and no state tax on tips and overtime",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-10": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs opposes business tax breaks and signed a three-year pause on a data center tax credit (2026)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Hobbs vetoed SB 1001, which would have set ID requirements for voting by mail",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "AZ-GOV:biggs",
+     "name": "Andy Biggs",
+     "party": "R",
+     "bio": "U.S. representative for Arizona's 5th District since 2017 and a former president of the Arizona Senate.",
+     "officialSite": "https://biggsforarizona.com/",
+     "positions": {
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs sponsored the Life at Conception Act (H.R. 722), which would ban abortion nationwide",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs on the overturning of Roe v. Wade",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "a major victory for the unborn"
+       }
+      },
+      "ene-01": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs voted against the 2022 clean energy investments, to repeal them in 2023 and to end the tax credits in 2025",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs voted to overturn a Labor Department rule letting retirement managers weigh climate risk (H.J.Res. 30, 2023)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs voted to undo limits on seven hazardous air pollutants (2025) and to end mining limits near the Boundary Waters (2026), and opposed stricter air pollution limits for Maricopa County",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs would fully fund public safety departments",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs would fully fund public safety departments",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs introduced mandatory minimum sentences for certain crimes in Washington, D.C. (H.R. 5172)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs introduced H.R. 83 to let federal funds follow low-income students to private or charter schools and would expand Arizona's universal ESA vouchers",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs introduced a bill to repeal the ACA (H.R. 114), calling it a complete failure, and voted against extending its subsidies (2026)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs would fund and complete the border wall",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs supports mass deportations and wants federal and local police to partner on border security",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-02": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs voted in 2021 against a path to permanent residency for Dreamers (H.R. 6)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs voted against the PRO Act (2021) and against restoring federal workers' bargaining rights (2025)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-02": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs voted against the Equality Act (House roll call 39, 2021)",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs sponsored H.R. 28 to bar transgender students from girls' and women's sports",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "denies the biological facts that men and women are the two genders"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs would eventually eliminate Arizona's income tax and pledged never to raise taxes",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I will never raise taxes on Arizonans."
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Arizona governor voters guide: Biggs sponsored H.R. 7296, requiring proof of citizenship to register, and wants a Florida-style election law",
+        "url": "https://guides.vote/guide/2026-arizona-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

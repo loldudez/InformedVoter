@@ -1,0 +1,817 @@
+{
+ "updated": "2026-10-25",
+ "note": "Kansas U.S. Senate and governor races, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "KS-SEN",
+   "candidates": [
+    {
+     "id": "KS-SEN:hamilton",
+     "name": "Adam Hamilton",
+     "party": "D",
+     "bio": "Founding senior pastor of the United Methodist Church of the Resurrection in Leawood, the largest Methodist church in the country.",
+     "officialSite": "https://hamiltonforkansas.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton calls for legal and safe access to abortion",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "legal and safe access to abortion"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton voted against the 2022 Kansas amendment that would have let the Legislature restrict or ban abortion",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton would restore Biden-era energy production tax credits",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-09": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton opposes the death penalty (Mark Beckwith podcast, 2024)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton would ban junk fees and algorithmic price-fixing at grocery stores",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hou-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton would create first-time homebuyer tax credits",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton would reverse the cuts to Medicaid",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "reverse the cuts to Medicaid"
+       }
+      },
+      "hea-07": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton would restore ACA subsidies",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton would expand Medicare drug price negotiation",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton calls for universal access to a basic level of health care, though not Medicare for All",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton supports secure borders (Johnson County Post, July 2026)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-09": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton would reform the H-2A guest-worker program with year-round visas",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton would give H-2A workers a path to legal status",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton says ICE should focus on serious criminals",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton says he will fight to end the war in Iran",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton supports strengthening the right to organize and H.R. 5408",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton supports same-sex marriage (Resurrection Church, 2024)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton says it is time to raise the outdated minimum wage",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton supports raising the Social Security tax cap on high earners",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Hamilton supports vote by mail (Johnson County Post, July 2026)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "KS-SEN:marshall",
+     "name": "Roger Marshall",
+     "party": "R",
+     "bio": "U.S. senator since 2021, earlier a U.S. representative; an obstetrician.",
+     "positions": {
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall sponsored S. 99 (2021) to establish a right to life at conception",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall is a member of the Pro-Life Caucus and supported overturning Roe v. Wade",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall on energy",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Drill, Baby, Drill!"
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall voted to end Biden-era clean energy tax credits (Senate roll call 372, 2025)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall voted to end the EPA charge on oil and gas facilities exceeding greenhouse gas limits (Senate roll call 97, 2025)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall introduced a bill to withhold federal funds from local governments that eliminate cash bail (S. 5152, 2022)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall voted against the infrastructure law (Senate roll call 314, 2021)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall sponsored federal tax credits for private school scholarship donations (S. 292)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall voted to remove hazardous air pollutant rules and against mercury limits for power plants (Senate roll calls 232, 2025, and 135, 2026)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall voted for the 2025 law that cut Medicaid (Senate roll call 372)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall voted against extending ACA premium subsidies for 3 years (Senate roll call 644, 2025)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall voted to increase ICE funding by $75 billion and DHS by $70 billion more",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall sponsored S. 2824 to build 900 miles of border wall",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-10": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall sponsored S. 2824, requiring E-Verify for new employees",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-02": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall voted in 2019 against a path to permanent residency for Dreamers (H.R. 6)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-09": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall supports continuing the H-2A guest worker program",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall on Iran",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I'm standing with the President here"
+       }
+      },
+      "def-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall voted five times in 2026 against requiring congressional authorization for military action in Iran",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall sponsored the National Right-to-Work Act (S. 532)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-10": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall voted against the Respect for Marriage Act (Senate roll call 362, 2022)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall sponsored S. 9 to ban transgender students from girls' school sports",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall called a $15 minimum wage a job-killing proposal (2021)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall voted to extend the 2017 tax cuts (Senate roll call 372, 2025)",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas U.S. Senate voters guide: Marshall voted to require voter ID (Senate roll call 73, 2026) and sponsored proof-of-citizenship rules",
+        "url": "https://guides.vote/guide/2026-kansas-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "KS-GOV",
+   "candidates": [
+    {
+     "id": "KS-GOV:holscher",
+     "name": "Cindy Holscher",
+     "party": "D",
+     "bio": "Kansas state senator from Johnson County.",
+     "officialSite": "https://www.cindyforkansas.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher on abortion",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Every Kansan deserves access to reproductive care."
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher voted against SB 5 (2023), banning telehealth access to abortion drugs",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher supports expanding wind power",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher supports local emission goals and ending fossil fuel subsidies (Johnson County Post, 2020)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-09": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher sponsored SB 211 (2023) to abolish the death penalty",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-04": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher voted against HB 2444 (2026), which lengthens prison sentences",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher voted against opting into the federal private school tax credit program (HB 2468, 2026)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher supports fully funding public schools",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher supports fully funding public schools",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher voted to require groundwater conservation plans (HB 2279)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher voted to expand Medicaid (SB 161 amendment, 2025)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher voted against more cooperation between local police and ICE (HB 2372, 2026)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher sponsored an amendment to repeal Kansas's right-to-work provision (SCR 1609)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-11": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher voted against banning gender-affirming care for minors (SB 63, 2025)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher voted against the 2026 bathroom bill (SB 244) and the 2023 transgender sports ban (HB 2238)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher supports legalizing recreational and medicinal cannabis",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher introduced a bill to raise the minimum wage to $16 (SB 471)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher supports cutting property taxes, with exemptions for seniors and disabled veterans",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-12": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher voted against a flat income tax (SB 169, 2023)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Holscher voted to keep the mail-ballot grace period and against limiting no-excuse mail voting",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "KS-GOV:masterson",
+     "name": "Ty Masterson",
+     "party": "R",
+     "bio": "President of the Kansas Senate.",
+     "officialSite": "https://www.mastersonforgovernor.com/",
+     "positions": {
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson sponsored a ban on second-trimester abortions (SB 95, 2015)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson on abortion",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I will always defend the unborn's God-given right to life."
+       }
+      },
+      "ene-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson on energy",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "the most…oil and gas…friendly governor Kansas has ever had"
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson said climate activists would put the economy at risk (2023)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson voted for HB 2444 (2026), which lengthens prison sentences",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson on police",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I have always backed the blue."
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson on police",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "giving them the resources they need"
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson voted to opt into the federal private school tax credit program (HB 2468, 2026)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We need to give parents the freedom to choose."
+       }
+      },
+      "hea-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson voted against expanding Medicaid (2025) and for stricter eligibility checks (SB 363, 2026)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson backed sending $15.7 million to Texas for border security (2024)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson voted for more cooperation between local police and ICE (HB 2372, 2026)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson voted against advancing a repeal of Kansas's right-to-work provision (2025)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-11": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson voted to prohibit gender-affirming care for minors (SB 63, 2025)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson voted for the 2026 bathroom bill (SB 244) and the 2023 transgender sports ban (HB 2238)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-05": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson opposes legalizing recreational marijuana but is open to medical use",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson opposed raising the minimum wage to $15 (2025)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson sponsored a resolution capping property tax increases (SCR 1616)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-12": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson voted for a flat income tax and a lower corporate rate (SB 169, 2023)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson voted to end the mail-ballot grace period and to limit no-excuse mail voting",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Kansas governor voters guide: Masterson voted for the SAVE Kansas Act, checking voters against federal citizenship databases (HB 2437, 2026)",
+        "url": "https://guides.vote/guide/2026-kansas-governor-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

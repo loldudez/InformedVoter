@@ -1,0 +1,297 @@
+{
+ "updated": "2026-10-25",
+ "note": "South Carolina U.S. Senate and governor races, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "SC-SEN",
+   "candidates": [
+    {
+     "id": "SC-SEN:andrews",
+     "name": "Annie Andrews",
+     "party": "D",
+     "bio": "Pediatrician and the 2022 Democratic nominee for South Carolina's 1st Congressional District.",
+     "officialSite": "https://drannieandrews.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "ABC News 4, Sept. 12, 2026: Andrews supports restoring a framework like Roe v. Wade's",
+        "url": "https://abcnews4.com/news/lowcountry-and-state-politics/annie-andrews-discusses-affordability-immigration-and-abortion-during-marion-stop-race-senator-us-campaign-priorities-november-election",
+        "date": "2026-09-12",
+        "quote": "between a woman and her doctor"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "Annie Andrews campaign site: Andrews's platform says to trust women to make their own reproductive decisions",
+        "url": "https://drannieandrews.com/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "ABC News 4, Sept. 12, 2026: Andrews supports border security and enforcing existing immigration laws, while criticizing recent ICE tactics",
+        "url": "https://abcnews4.com/news/lowcountry-and-state-politics/annie-andrews-discusses-affordability-immigration-and-abortion-during-marion-stop-race-senator-us-campaign-priorities-november-election",
+        "date": "2026-09-12",
+        "quote": "we need to have a secure border to be a secure nation"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 12, 2026: Andrews would expand Medicaid eligibility and reverse the 2025 Medicaid changes",
+        "url": "https://www.newsfromthestates.com/article/social-security-data-centers-and-healthcare-senate-candidates-exchange-jabs-while-talking",
+        "date": "2026-10-12"
+       }
+      },
+      "hea-07": {
+       "stance": 2,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 12, 2026: Andrews would restore the enhanced ACA subsidies",
+        "url": "https://www.newsfromthestates.com/article/social-security-data-centers-and-healthcare-senate-candidates-exchange-jabs-while-talking",
+        "date": "2026-10-12"
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 12, 2026: Andrews would let anyone buy a discounted government health plan, though she calls single-payer Medicare for All outdated",
+        "url": "https://www.newsfromthestates.com/article/social-security-data-centers-and-healthcare-senate-candidates-exchange-jabs-while-talking",
+        "date": "2026-10-12"
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 12, 2026: Andrews opposes the Iran war, saying the money would be better spent on health care, infrastructure and schools",
+        "url": "https://www.newsfromthestates.com/article/social-security-data-centers-and-healthcare-senate-candidates-exchange-jabs-while-talking",
+        "date": "2026-10-12"
+       }
+      },
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "WBTV, Aug. 26, 2026: Andrews would use congressional oversight on tariffs she says are raising grocery prices",
+        "url": "https://www.wbtv.com/2026/08/26/dr-annie-andrews-aims-become-south-carolinas-first-democratic-us-senator-years/",
+        "date": "2026-08-26"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "ABC News 4, Sept. 21, 2026: Andrews would lower taxes for working South Carolina families",
+        "url": "https://abcnews4.com/newsletter-daily/south-carolina-senate-hopefuls-graham-andrews-campaign-statewide-ahead-of-nov-3-vote",
+        "date": "2026-09-21"
+       }
+      },
+      "eco-01": {
+       "stance": 1,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 12, 2026: Andrews would raise the Social Security wage cap so the highest earners pay more",
+        "url": "https://www.newsfromthestates.com/article/social-security-data-centers-and-healthcare-senate-candidates-exchange-jabs-while-talking",
+        "date": "2026-10-12"
+       }
+      },
+      "soc-07": {
+       "stance": 1,
+       "source": {
+        "title": "Annie Andrews campaign site: Andrews's platform calls for affordable child care",
+        "url": "https://drannieandrews.com/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "SC-SEN:graham",
+     "name": "Darline Graham",
+     "party": "R",
+     "bio": "U.S. senator since July 2026, appointed after the death of her brother, Sen. Lindsey Graham.",
+     "positions": {
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "ABC News 4, Sept. 21, 2026: Graham opposes abortion",
+        "url": "https://abcnews4.com/newsletter-daily/south-carolina-senate-hopefuls-graham-andrews-campaign-statewide-ahead-of-nov-3-vote",
+        "date": "2026-09-21"
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "ABC News 4, Sept. 21, 2026: Graham calls for stricter enforcement of immigration laws",
+        "url": "https://abcnews4.com/newsletter-daily/south-carolina-senate-hopefuls-graham-andrews-campaign-statewide-ahead-of-nov-3-vote",
+        "date": "2026-09-21"
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "ABC News 4, Aug. 9, 2026: Graham wanted the Senate to stay in session until it passed the SAVE America Act",
+        "url": "https://abcnews4.com/news/state/i-feel-like-ive-been-drinking-out-of-a-fire-hose-graham-discusses-senate-transition-gop-primary-race-news-local-politics-charleston-south-carolina-ruuseel-fry-lindsey-graham-president-trump-government-campaign-local",
+        "date": "2026-08-09",
+        "quote": "I wanted to stay in session until we passed the Save America Act"
+       }
+      },
+      "def-04": {
+       "stance": -1,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 12, 2026: Graham wants the Iran war to end, but not through Congress while Iran is still dangerous; Andrews said she voted against war powers resolutions three times",
+        "url": "https://www.newsfromthestates.com/article/social-security-data-centers-and-healthcare-senate-candidates-exchange-jabs-while-talking",
+        "date": "2026-10-12"
+       }
+      },
+      "def-15": {
+       "stance": 1,
+       "source": {
+        "title": "ABC News 4, Aug. 9, 2026: Graham backs President Trump's approach to Iran",
+        "url": "https://abcnews4.com/news/state/i-feel-like-ive-been-drinking-out-of-a-fire-hose-graham-discusses-senate-transition-gop-primary-race-news-local-politics-charleston-south-carolina-ruuseel-fry-lindsey-graham-president-trump-government-campaign-local",
+        "date": "2026-08-09",
+        "quote": "Iran would also be wise to listen to President Trump and make a deal."
+       }
+      },
+      "def-14": {
+       "stance": 1,
+       "source": {
+        "title": "ABC News 4, Aug. 9, 2026: Graham championed the Lindsey Graham Sanctioning Russia and Iran Act of 2026",
+        "url": "https://abcnews4.com/news/state/i-feel-like-ive-been-drinking-out-of-a-fire-hose-graham-discusses-senate-transition-gop-primary-race-news-local-politics-charleston-south-carolina-ruuseel-fry-lindsey-graham-president-trump-government-campaign-local",
+        "date": "2026-08-09",
+        "quote": "a critical tool for President Trump"
+       }
+      },
+      "hea-01": {
+       "stance": -1,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 12, 2026: Graham opposes government-funded health care for all",
+        "url": "https://www.newsfromthestates.com/article/social-security-data-centers-and-healthcare-senate-candidates-exchange-jabs-while-talking",
+        "date": "2026-10-12"
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 12, 2026: Graham backs Medicaid work requirements",
+        "url": "https://www.newsfromthestates.com/article/social-security-data-centers-and-healthcare-senate-candidates-exchange-jabs-while-talking",
+        "date": "2026-10-12"
+       }
+      },
+      "hea-04": {
+       "stance": 1,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 12, 2026: Graham supports price transparency to spur competition and cosponsored a bill letting small businesses buy insurance at large-company rates",
+        "url": "https://www.newsfromthestates.com/article/social-security-data-centers-and-healthcare-senate-candidates-exchange-jabs-while-talking",
+        "date": "2026-10-12"
+       }
+      }
+     }
+    }
+   ],
+   "notes": [
+    {
+     "text": "Darline Graham was appointed in July 2026 and has published no platform, so most questions are unclear for her rather than guessed.",
+     "source": "ABC News 4",
+     "url": "https://abcnews4.com/news/lowcountry-and-state-politics/annie-andrews-discusses-affordability-immigration-and-abortion-during-marion-stop-race-senator-us-campaign-priorities-november-election"
+    }
+   ]
+  },
+  {
+   "id": "SC-GOV",
+   "candidates": [
+    {
+     "id": "SC-GOV:wilson",
+     "name": "Alan Wilson",
+     "party": "R",
+     "bio": "South Carolina attorney general since 2011.",
+     "positions": {
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 7, 2026: Wilson backs the six-week abortion ban, with exceptions for fatal fetal anomalies and for rape or incest up to 12 weeks",
+        "url": "https://www.newsfromthestates.com/article/sc-governor-candidates-agree-abortion-differ-gambling-and-medicaid",
+        "date": "2026-10-07"
+       }
+      },
+      "soc-04": {
+       "stance": -1,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 7, 2026: Wilson would not make South Carolina's abortion restrictions any stricter",
+        "url": "https://www.newsfromthestates.com/article/sc-governor-candidates-agree-abortion-differ-gambling-and-medicaid",
+        "date": "2026-10-07"
+       }
+      },
+      "hea-03": {
+       "stance": -2,
+       "source": {
+        "title": "WRDW debate report, Oct. 6, 2026: Wilson opposes expanding Medicaid, saying the state can't afford it",
+        "url": "https://www.wrdw.com/2026/10/07/wilson-johnson-debate-race-sc-governor/",
+        "date": "2026-10-06",
+        "quote": "you're not going to be able to afford teacher pay raises"
+       }
+      },
+      "soc-02": {
+       "stance": 1,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 7, 2026: Wilson is open to adding prison time for crimes motivated by race, gender or sexual orientation",
+        "url": "https://www.newsfromthestates.com/article/sc-governor-candidates-agree-abortion-differ-gambling-and-medicaid",
+        "date": "2026-10-07"
+       }
+      }
+     }
+    },
+    {
+     "id": "SC-GOV:johnson",
+     "name": "Jermaine Johnson",
+     "party": "D",
+     "bio": "South Carolina state representative.",
+     "positions": {
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 7, 2026: Johnson opposes South Carolina's anti-abortion laws and would not make them stricter",
+        "url": "https://www.newsfromthestates.com/article/sc-governor-candidates-agree-abortion-differ-gambling-and-medicaid",
+        "date": "2026-10-07"
+       }
+      },
+      "soc-03": {
+       "stance": 1,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 7, 2026: Johnson opposes the Republican anti-abortion laws",
+        "url": "https://www.newsfromthestates.com/article/sc-governor-candidates-agree-abortion-differ-gambling-and-medicaid",
+        "date": "2026-10-07"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "WRDW debate report, Oct. 6, 2026: Johnson would expand Medicaid",
+        "url": "https://www.wrdw.com/2026/10/07/wilson-johnson-debate-race-sc-governor/",
+        "date": "2026-10-06",
+        "quote": "It's good economic policy"
+       }
+      },
+      "soc-02": {
+       "stance": 2,
+       "source": {
+        "title": "SC Daily Gazette debate report, Oct. 7, 2026: Johnson says South Carolina needs a state hate crime law",
+        "url": "https://www.newsfromthestates.com/article/sc-governor-candidates-agree-abortion-differ-gambling-and-medicaid",
+        "date": "2026-10-07"
+       }
+      },
+      "soc-08": {
+       "stance": 1,
+       "source": {
+        "title": "WRDW debate report, Oct. 6, 2026: Johnson would ban Flock license plate cameras statewide over privacy concerns and misuse",
+        "url": "https://www.wrdw.com/2026/10/07/wilson-johnson-debate-race-sc-governor/",
+        "date": "2026-10-06"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

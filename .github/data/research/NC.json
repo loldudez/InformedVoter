@@ -1,0 +1,369 @@
+{
+ "updated": "2026-10-25",
+ "note": "North Carolina U.S. Senate race, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "NC-SEN",
+   "candidates": [
+    {
+     "id": "NC-SEN:cooper",
+     "name": "Roy Cooper",
+     "party": "D",
+     "bio": "Governor of North Carolina from 2017 to 2025 and state attorney general from 2001 to 2017.",
+     "officialSite": "https://roycooper.com/",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper vetoed North Carolina's 12-week abortion ban (S 20, 2023)",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "to keep politicians out of the doctor's exam room"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper called the 12-week ban dangerous for women (CNN, 2023)",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper ordered state greenhouse gas cuts of at least 50% below 2005 levels by 2030 and net zero by 2050",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "The urgency of the climate crisis is real."
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper set goals of 2.8 gigawatts of offshore wind by 2030 and 8 by 2040 (Executive Order 218)",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper vetoed a bill limiting wetlands protections (S 582, 2023) and re-established a state environmental justice board",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper created North Carolina's first Community Violence Prevention Strategic Plan (2024)",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper supports stronger antitrust rules and banning algorithms that raise grocery prices",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper supports child care subsidies for employees",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper vetoed the private school voucher expansion (H 10, 2024) and wants a moratorium on vouchers",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper expanded Medicaid to more than 600,000 North Carolinians and would reverse the federal Medicaid cuts",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper would restore the ACA tax credits",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper would cap prescription drug costs",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper vetoed bills requiring sheriffs to work with ICE on jail inmates (2019, 2022, 2024) and wants ICE reforms before more funding",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper says Congress should take back its constitutional authority to declare war",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper is deeply concerned about the reasons for the Iran war and its exit strategy",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper praises unions but signed 2017 limits on farmworker union representation (S 615)",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-11": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper vetoed the ban on gender transition care for minors (H 808, 2023)",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper vetoed bills limiting transgender sports participation and transition care (2023) and as attorney general refused to defend the 2016 bathroom bill",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper supported raising North Carolina's minimum wage (2019) and proposed $15 an hour for school support staff",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper opposed further income tax cuts for corporations and high earners",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper vetoed a voter ID bill (S 824, 2018)",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Cooper vetoed added absentee voting restrictions (S 747, 2023)",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "NC-SEN:whatley",
+     "name": "Michael Whatley",
+     "party": "R",
+     "bio": "Chair of the Republican National Committee from 2024 to 2025 and a former chair of the North Carolina Republican Party.",
+     "positions": {
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley on abortion (USA Today, 2024)",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "proud to be the most pro-life chair in the history of the Republican Party"
+       }
+      },
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley called the veto of North Carolina's 12-week ban the radical abortion-on-demand position",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley backs an all-of-the-above energy approach and lobbied for offshore drilling off North Carolina",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: As an energy industry lobbyist, Whatley sought to limit air pollution rules and called EPA air provisions an unfunded mandate (2014)",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley would put more police on the street and pay them better",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We need to back the blue."
+       }
+      },
+      "cri-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley would create a federal version of Iryna's Law, limiting pretrial release for people accused of violent crimes",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley supports the 2025 law's cuts to Medicaid and SNAP",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We do not need waste, fraud and abuse in these programs."
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley defended the 2025 law's Medicaid cuts",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley wants market-driven replacements for the ACA",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We need to get the government out of the way"
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley supports the federal Education Freedom Tax Credit for private school scholarships",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Dollars should follow students."
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley welcomed the 2025 Border Patrol operation in Charlotte as strong, decisive action",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley praised taking violent criminals who are here illegally off the street",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley says he absolutely supports the Iran war",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "very, very important from our national security perspective"
+       }
+      },
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley supports the 2025 law extending the 2017 tax cuts",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 North Carolina U.S. Senate voters guide: Whatley led the push for North Carolina's voter ID requirement and supports the SAVE America Act",
+        "url": "https://guides.vote/guide/2026-north-carolina-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

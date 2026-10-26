@@ -1,0 +1,705 @@
+{
+ "updated": "2026-10-25",
+ "note": "Alaska U.S. Senate and governor races, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "AK-SEN",
+   "candidates": [
+    {
+     "id": "AK-SEN:peltola",
+     "name": "Mary Peltola",
+     "party": "D",
+     "bio": "U.S. representative for Alaska's at-large district from 2022 to 2025 and the first Alaska Native elected to Congress.",
+     "officialSite": "https://marypeltola.com/",
+     "positions": {
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "U.S. House roll call 513 (2022) on the Respect for Marriage Act (H.R. 8404): Peltola voted Yea",
+        "url": "https://clerk.house.gov/Votes/2022513",
+        "date": "2022-12-08"
+       }
+      },
+      "def-13": {
+       "stance": 2,
+       "source": {
+        "title": "U.S. House roll call 151 (2024) on H.R. 8035, military aid for Ukraine: Peltola voted Yea",
+        "url": "https://clerk.house.gov/Votes/2024151",
+        "date": "2024-04-20"
+       }
+      },
+      "def-12": {
+       "stance": 2,
+       "source": {
+        "title": "U.S. House roll call 152 (2024) on H.R. 8034, military aid for Israel: Peltola voted Yea",
+        "url": "https://clerk.house.gov/Votes/2024152",
+        "date": "2024-04-20"
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola supports Medicaid coverage of abortion and opposes a national ban (Alaska Beacon, 2024)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I will always protect the right to choose."
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola opposes a national abortion ban (Alaska Beacon, 2024); her campaign said a 2022 remark backing a 16-week limit was a mistake",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola would fight to restore federal tax credits for solar, wind and hydropower projects",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola supports oil and gas development alongside renewables (campaign energy plan)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola voted against repealing greenhouse gas reduction programs (H.R. 1023; House roll call 104, 2024)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola voted against overturning the rule extending Clean Water Act protection to more streams and wetlands (H.J.Res. 27; House roll call 187, 2023)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola calls for more funding for local law enforcement",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "more funding for local law enforcement"
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola would raise taxes on millionaires and billionaires to end federal income tax for people earning under $92,000",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola would end federal income tax for people earning under $92,000, paid for by taxing millionaires and billionaires",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-12": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola would shift income taxes from people earning under $92,000 to millionaires and billionaires",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola would restore the Medicaid funding cut by the 2025 budget law",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We can restore Medicaid and the [ACA] tax credits"
+       }
+      },
+      "hea-07": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola would restore the ACA premium tax credits",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola on health coverage",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Every Alaskan should be able to access and afford healthcare."
+       }
+      },
+      "imm-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola cosponsored the Dignity Act (H.R. 3599), pairing border security with a path to legal status, including for Dreamers",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola voted for H.Res. 957 denouncing the Biden administration's border policies (2024) and cosponsored the Dignity Act's border security measures",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola says presidents should not act alone on major decisions (Alaska Beacon, May 2026)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "There is a need for the War Powers Act."
+       }
+      },
+      "def-15": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola says the war in Iran is driving up gas and diesel prices",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola cosponsored the PRO Act (H.R. 20, 2023) to protect organizing and collective bargaining",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-02": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola supported the Equality Act's ban on discrimination by sexual orientation and gender identity",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola voted against banning transgender students from girls' school sports (H.R. 734; House roll call 192, 2023), calling the ban bullying",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola backs livable wages and tax incentives for companies that pay fair wages",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "The best wage is one that's livable."
+       }
+      },
+      "gov-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Peltola supports ranked-choice voting",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "AK-SEN:dan-s-sullivan",
+     "name": "Dan S. Sullivan",
+     "party": "R",
+     "bio": "U.S. senator since 2015, a Marine Corps Reserve officer and a former Alaska attorney general.",
+     "officialSite": "https://dansullivanforalaska.com/",
+     "positions": {
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan cosponsored S. 6, the Born-Alive Abortion Survivors Protection Act",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I'm as pro-life as they come."
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan supported overturning Roe v. Wade and returning abortion law to the states",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan voted against the 2022 clean energy investments (Senate roll call 325) and to end the clean energy tax credits (Senate roll call 372, 2025)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-03": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan on energy",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "unleash Alaska's extraordinary resource potential"
+       }
+      },
+      "ene-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan cosponsored S.J.Res. 31 to undo limits on seven hazardous air pollutants and voted to overturn the Clean Water Act streams and wetlands rule (Senate roll call 79, 2023)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-04": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan introduced bills making assault on a public safety officer a federal crime (S. 1766) and ending the statute of limitations for fatal overdose crimes (S. 4209)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan opposes reckless federal spending and voted to cancel public broadcasting funding (Senate roll call 411, 2025)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan voted for the 2025 law that cut Medicaid (Senate roll call 372), after negotiating rural health funding in it",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 0,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan voted to extend ACA premium tax credits for three years (Senate roll call 644, 2025) but wants the subsidies tapered down rather than ended abruptly",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan cosponsored S. 2824 to build 900 miles of border wall and limit asylum",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-10": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan cosponsored S. 2824, which requires E-Verify for new hires",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan voted for $75 billion more for ICE (2025) and $70 billion more for DHS (2026), while saying ICE should revise its tactics",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-04": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan voted five times in 2026 against requiring congressional authorization for military action in Iran",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-15": {
+       "stance": 2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan on Iran (2025)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "I fully support the President and his national security team"
+       }
+      },
+      "soc-10": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan voted for the Respect for Marriage Act, citing its religious liberty protections (Senate roll call 362, 2022), after opposing the 2015 Supreme Court ruling",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan signed a 2022 letter opposing proposed federal protections for transgender athletes",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan voted against a $15 federal minimum wage (Senate roll call 74, 2021)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": -2,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan voted to extend the 2017 tax cuts (2025) and against raising taxes on corporations and the wealthy (Senate roll call 357, 2021)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan supports the SAVE Act's proof-of-citizenship requirement for voter registration (Alaska Current, Feb. 2026)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -1,
+       "source": {
+        "title": "guides.vote, 2026 Alaska U.S. Senate voters guide: Sullivan voted against the 2021 voting access bill (S. 2093) and the John Lewis Voting Rights Act (S. 4)",
+        "url": "https://guides.vote/guide/2026-alaska-us-senate-voters-guide/",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "AK-GOV",
+   "candidates": [
+    {
+     "id": "AK-GOV:kreiss-tomkins",
+     "name": "Jonathan Kreiss-Tomkins",
+     "party": "D",
+     "bio": "Alaska state representative from Sitka from 2013 to 2023.",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Alaska Beacon, Sept. 22, 2026: Kreiss-Tomkins voted against abortion limits for 10 years in the Alaska House and would uphold the state Supreme Court's rulings",
+        "url": "https://alaskabeacon.com/2026/09/22/where-do-alaskas-four-governor-candidates-stand-on-abortion-and-birth-control/",
+        "date": "2026-09-22",
+        "quote": "Medical privacy and reproductive freedom should be fundamental personal freedoms"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "Alaska Beacon, Sept. 22, 2026: Kreiss-Tomkins voted in 2014 against limiting abortion to cases of rape, incest or medical necessity",
+        "url": "https://alaskabeacon.com/2026/09/22/where-do-alaskas-four-governor-candidates-stand-on-abortion-and-birth-control/",
+        "date": "2026-09-22"
+       }
+      },
+      "sta-03": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska Beacon, Oct. 9, 2026: Kreiss-Tomkins opposes lowering the voter-approved minimum wage, which rises to $15 in 2027",
+        "url": "https://alaskabeacon.com/2026/10/09/two-alaska-governor-candidates-advocate-lower-minimum-wage-rollback-of-sick-leave-law/",
+        "date": "2026-10-09"
+       }
+      },
+      "eco-11": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska Beacon, Oct. 12, 2026: Kreiss-Tomkins would aim to expand paid family leave",
+        "url": "https://alaskabeacon.com/2026/10/12/alaska-candidates-for-governor-address-growing-gap-in-childcare/",
+        "date": "2026-10-12"
+       }
+      },
+      "soc-07": {
+       "stance": 2,
+       "source": {
+        "title": "Alaska Beacon, Oct. 12, 2026: Kreiss-Tomkins supports recurring state child care funding, child care workforce investment and a long-term goal of universal pre-K",
+        "url": "https://alaskabeacon.com/2026/10/12/alaska-candidates-for-governor-address-growing-gap-in-childcare/",
+        "date": "2026-10-12"
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "Alaska's News Source debate report, Oct. 8, 2026: Kreiss-Tomkins's first bill would fund K-12 schools a year in advance, and he would raise school funding",
+        "url": "https://www.alaskasnewssource.com/2026/10/09/live-alaskas-gubernatorial-candidates-clash-debate-state/",
+        "date": "2026-10-08"
+       }
+      },
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska Public Media debate report, Oct. 9, 2026: Kreiss-Tomkins would boost public school funding",
+        "url": "https://alaskapublic.org/news/politics/alaska-legislature/2026-10-09/3-takeaways-from-alaskas-gubernatorial-debate-for-the-state",
+        "date": "2026-10-09"
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska's News Source debate report, Oct. 8, 2026: Kreiss-Tomkins backs streamlined permitting for a statewide housing building boom",
+        "url": "https://www.alaskasnewssource.com/2026/10/09/live-alaskas-gubernatorial-candidates-clash-debate-state/",
+        "date": "2026-10-08"
+       }
+      },
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska's News Source debate report, Oct. 8, 2026: Kreiss-Tomkins supports an all-of-the-above energy approach, a gas line and royalty relief for Cook Inlet gas producers",
+        "url": "https://www.alaskasnewssource.com/2026/10/09/live-alaskas-gubernatorial-candidates-clash-debate-state/",
+        "date": "2026-10-08"
+       }
+      },
+      "sta-11": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska's News Source debate report, Oct. 8, 2026: Kreiss-Tomkins would make the oil company Hilcorp pay state corporate income tax, calling its exemption unfair",
+        "url": "https://www.alaskasnewssource.com/2026/10/09/live-alaskas-gubernatorial-candidates-clash-debate-state/",
+        "date": "2026-10-08"
+       }
+      }
+     }
+    },
+    {
+     "id": "AK-GOV:wilson",
+     "name": "Bernadette Wilson",
+     "party": "R",
+     "bio": "Anchorage business owner and talk radio host.",
+     "positions": {
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "Alaska Beacon, Sept. 22, 2026: Wilson would appoint a pro-life advocate in her administration and have her attorney general narrow medically necessary abortion care",
+        "url": "https://alaskabeacon.com/2026/09/22/where-do-alaskas-four-governor-candidates-stand-on-abortion-and-birth-control/",
+        "date": "2026-09-22"
+       }
+      },
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "Alaska Beacon, Sept. 22, 2026: Wilson would keep fighting the state Supreme Court over abortion restrictions and run a state campaign on the risks of medication abortion",
+        "url": "https://alaskabeacon.com/2026/09/22/where-do-alaskas-four-governor-candidates-stand-on-abortion-and-birth-control/",
+        "date": "2026-09-22"
+       }
+      },
+      "sta-03": {
+       "stance": -2,
+       "source": {
+        "title": "Alaska Beacon, Oct. 9, 2026: Wilson supports repealing the voter-approved minimum wage increases and paid sick leave law",
+        "url": "https://alaskabeacon.com/2026/10/09/two-alaska-governor-candidates-advocate-lower-minimum-wage-rollback-of-sick-leave-law/",
+        "date": "2026-10-09"
+       }
+      },
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska's News Source debate report, Oct. 8, 2026: Wilson calls a gas line the biggest lever for lower energy costs",
+        "url": "https://www.alaskasnewssource.com/2026/10/09/live-alaskas-gubernatorial-candidates-clash-debate-state/",
+        "date": "2026-10-08",
+        "quote": "been a terrible business partner to our oil and gas industries"
+       }
+      },
+      "edu-03": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska's News Source debate report, Oct. 8, 2026: Wilson backs vocational training aligned with workforce needs",
+        "url": "https://www.alaskasnewssource.com/2026/10/09/live-alaskas-gubernatorial-candidates-clash-debate-state/",
+        "date": "2026-10-08"
+       }
+      },
+      "sta-02": {
+       "stance": 0,
+       "source": {
+        "title": "Alaska Public Media debate report, Oct. 9, 2026: Wilson would not raise school funding without a clear plan to improve student performance",
+        "url": "https://alaskapublic.org/news/politics/alaska-legislature/2026-10-09/3-takeaways-from-alaskas-gubernatorial-debate-for-the-state",
+        "date": "2026-10-09"
+       }
+      }
+     }
+    },
+    {
+     "id": "AK-GOV:bronson",
+     "name": "Dave Bronson",
+     "party": "R",
+     "bio": "Mayor of Anchorage from 2021 to 2024 and a cofounder of the anti-abortion group Alaska Family Action.",
+     "positions": {
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "Alaska Beacon, Sept. 22, 2026: Bronson would veto any state money for abortion",
+        "url": "https://alaskabeacon.com/2026/09/22/where-do-alaskas-four-governor-candidates-stand-on-abortion-and-birth-control/",
+        "date": "2026-09-22",
+        "quote": "He vetoes any bit of money, any funding that goes towards abortion"
+       }
+      },
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "Alaska Beacon, Sept. 22, 2026: Bronson would fight the state Supreme Court over abortion and replace merit selection of judges with elections",
+        "url": "https://alaskabeacon.com/2026/09/22/where-do-alaskas-four-governor-candidates-stand-on-abortion-and-birth-control/",
+        "date": "2026-09-22"
+       }
+      },
+      "sta-03": {
+       "stance": -2,
+       "source": {
+        "title": "Alaska Beacon, Oct. 9, 2026: Bronson would repeal the voter-approved minimum wage increase and paid sick leave",
+        "url": "https://alaskabeacon.com/2026/10/09/two-alaska-governor-candidates-advocate-lower-minimum-wage-rollback-of-sick-leave-law/",
+        "date": "2026-10-09",
+        "quote": "Mandatory sick leave, minimum wage — I would repeal them both"
+       }
+      },
+      "soc-07": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska Beacon, Oct. 12, 2026: Bronson supports recurring state child care funding and calls child care essential infrastructure",
+        "url": "https://alaskabeacon.com/2026/10/12/alaska-candidates-for-governor-address-growing-gap-in-childcare/",
+        "date": "2026-10-12"
+       }
+      },
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska's News Source debate report, Oct. 8, 2026: Bronson blames federal regulation for stalled resource development and wants a second Cook Inlet drilling rig",
+        "url": "https://www.alaskasnewssource.com/2026/10/09/live-alaskas-gubernatorial-candidates-clash-debate-state/",
+        "date": "2026-10-08"
+       }
+      }
+     }
+    },
+    {
+     "id": "AK-GOV:taylor",
+     "name": "Treg Taylor",
+     "party": "R",
+     "bio": "Former Alaska attorney general under Gov. Mike Dunleavy.",
+     "positions": {
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "Alaska Beacon, Sept. 22, 2026: As attorney general, Taylor sought to restrict the abortion pill mifepristone (2023) and defended limits on telehealth prescriptions",
+        "url": "https://alaskabeacon.com/2026/09/22/where-do-alaskas-four-governor-candidates-stand-on-abortion-and-birth-control/",
+        "date": "2026-09-22"
+       }
+      },
+      "soc-04": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska Beacon, Sept. 22, 2026: Taylor openly opposes abortion and worked to restrict it as attorney general",
+        "url": "https://alaskabeacon.com/2026/09/22/where-do-alaskas-four-governor-candidates-stand-on-abortion-and-birth-control/",
+        "date": "2026-09-22"
+       }
+      },
+      "cri-04": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska Public Media debate report, Oct. 9, 2026: Taylor helped pass the law letting fentanyl dealers be charged with murder in overdose deaths",
+        "url": "https://alaskapublic.org/news/politics/alaska-legislature/2026-10-09/3-takeaways-from-alaskas-gubernatorial-debate-for-the-state",
+        "date": "2026-10-09"
+       }
+      },
+      "sta-02": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska's News Source debate report, Oct. 8, 2026: Taylor's first bill would fund K-12 schools a year in advance, with accountability restored to the Alaska Reads Act",
+        "url": "https://www.alaskasnewssource.com/2026/10/09/live-alaskas-gubernatorial-candidates-clash-debate-state/",
+        "date": "2026-10-08"
+       }
+      },
+      "edu-03": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska's News Source debate report, Oct. 8, 2026: Taylor backs vocational training aligned with workforce needs",
+        "url": "https://www.alaskasnewssource.com/2026/10/09/live-alaskas-gubernatorial-candidates-clash-debate-state/",
+        "date": "2026-10-08"
+       }
+      },
+      "soc-07": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska Beacon, Oct. 12, 2026: Taylor would expand child care through federal funds, tax credits and fewer regulations rather than new state money, and opposes statewide pre-K",
+        "url": "https://alaskabeacon.com/2026/10/12/alaska-candidates-for-governor-address-growing-gap-in-childcare/",
+        "date": "2026-10-12"
+       }
+      },
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "Alaska's News Source debate report, Oct. 8, 2026: Taylor defended the Willow oil project and cites the jobs a gas line would bring",
+        "url": "https://www.alaskasnewssource.com/2026/10/09/live-alaskas-gubernatorial-candidates-clash-debate-state/",
+        "date": "2026-10-08"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

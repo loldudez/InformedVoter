@@ -1,0 +1,3530 @@
+{
+ "updated": "2026-10-26",
+ "note": "Notes for House candidates with no FEC figures to show, from fec.gov searches on Oct. 26, 2026.",
+ "races": [
+  {
+   "id": "AK-H-00",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AK-H-00:hafner",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4AK00164/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "AK-H-00:mcdermott",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2AK00143/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "AR-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AR-H-01:parsons",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4AR01085/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "AR-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AR-H-03:wilson",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4AR03081/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "AZ-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AZ-H-02:goodwin",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Curtis%20Goodwin",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "AZ-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AZ-H-04:benoit",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Tisha%20Benoit",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "AZ-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "AZ-H-06:swing",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6AZ06164/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CA-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CA-H-02:littau",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6CA02309/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CA-H-10",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CA-H-10:frese",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6CA10187/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CA-H-15",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CA-H-15:hoelter",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6CA15194/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CA-H-38",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CA-H-38:casas",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4CA31212/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CA-H-50",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CA-H-50:cohen",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Steve%20Cohen",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CA-H-51",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CA-H-51:cabrera",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6CA51140/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-H-01:humphrey",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Chad%20Humphrey",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "CO-H-01:milton",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Critter%20Milton",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-H-02:kent",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2CO03153/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-H-03:brown",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Clifton%20Brown",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "CO-H-03:robertson",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Cory%20Robertson",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-H-04:mangeris",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4CO04215/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-H-05:elworth",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4CO03340/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-H-06:clark",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6CO06165/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "CO-H-06:ryan",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Meredith%20Ryan",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-H-07:clark",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Lawrence%20Clark",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "CO-H-07:hall",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Susan%20Hall",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "CO-H-07:sallis",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Dan%20Sallis",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CO-H-08:wood",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Dan%20Wood",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CT-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CT-H-01:sanders",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2CT01239/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CT-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CT-H-03:egan",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Thomas%20Egan",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "CT-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "CT-H-04:wesley",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Benjamin%20Wesley",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "DC-H-98",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "DC-H-98:freeman",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4DC00100/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-01:davis",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6FL01549/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-04:schaefer",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4FL04068/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-06:parrott",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Andrew%20Parrott",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-11",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-11:groves",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4FL11089/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-H-28",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-H-28:rojas",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6FL28021/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "GA-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "GA-H-04:duffie",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6GA04194/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "GA-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "GA-H-05:salvesen",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=John%20Oscar%20Salvesen",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "GA-H-13",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "GA-H-13:chavez",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2GA04201/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "HI-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "HI-H-01:berning",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6HI01386/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "HI-H-01:conley",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6HI01394/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "HI-H-01:lam",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6HI01360/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "IA-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IA-H-02:stewart",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Rick%20Stewart",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "ID-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "ID-H-02:houser",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6ID02282/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "ID-H-02:johanson",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6ID02290/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "IL-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IL-H-02:noack",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6IL02389/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "IL-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IL-H-04:castillo",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4IL04117/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "IL-H-04:hershey",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2IL04178/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "IL-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IL-H-05:hanson",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2IL05241/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "IL-H-09",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IL-H-09:elleson",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H8IL09224/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "IL-H-10",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IL-H-10:lambrecht",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6IL10176/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "IN-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IN-H-02:henry",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=William%20Henry",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "IN-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "IN-H-07:mcauley",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6IN07444/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "IN-H-07:sceniak",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4IN06219/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "KS-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "KS-H-01:jacob",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6KS01229/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "KS-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "KS-H-02:hauer",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4KS02230/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "KS-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "KS-H-03:hohe",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0KS03269/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "KS-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "KS-H-04:cranmer",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6KS04280/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "KY-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "KY-H-02:loecken",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H8KY02106/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "KY-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "KY-H-03:rodriquez",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Maria%20Rodriquez",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "KY-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "KY-H-05:serrano",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2KY05185/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "KY-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "KY-H-06:lynch",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6KY06242/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "LA-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "LA-H-01:arrington",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4LA01162/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "LA-H-01:glass",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=E.%20Liddy%20Glass",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "LA-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "LA-H-02:beach",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Walter%20%E2%80%9CRocky%E2%80%9D%20Beach",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "LA-H-02:collins",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Renada%20%E2%80%9CHoney%E2%80%9D%20Collins",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "LA-H-02:williams",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4LA05171/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "LA-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "LA-H-03:cotten",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Kate%20Cotten",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "LA-H-03:gonzalez",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4LA03135/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "LA-H-03:walker",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Caleb%20Walker",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "LA-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "LA-H-04:nichols",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Mike%20Nichols",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "LA-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "LA-H-05:dantzler",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2LA05282/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "LA-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "LA-H-06:banks",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6LA06174/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "LA-H-06:craig",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4LA06047/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MA-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MA-H-03:conlon",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Dennis%20Conlon",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MA-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MA-H-08:walters",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MA08372/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MD-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MD-H-04:husseini",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Sam%20Husseini",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MD-H-04:mcdermott",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=George%20McDermott",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MD-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MD-H-05:chaffee",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4MD05169/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MD-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MD-H-06:landman",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4MD06423/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MD-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MD-H-07:collier",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0MD02255/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MD-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MD-H-08:wallace",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MD08598/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-01:davenport",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI01309/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-01:featherly",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI01275/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-01:hakola",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2MI01167/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-01:kovaly",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI02257/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-01:satterla",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI01283/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-02:magoon",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI02265/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-02:sills",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI02273/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-03:jock",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI03214/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-04:barnett",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI04220/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-05:bronke",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4MI05172/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-05:renier",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4MI07137/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-06:mickevicius",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI06241/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-06:rayburn",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI06266/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-06:shabazz",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H8MI14084/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-06:smiley",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4MI06154/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-06:tegan",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Timothy%20A.%20Tegan",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-07:dedrick",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI07306/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-08:casha",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4MI08176/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-08:goodwin",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H8MI05124/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-08:pettus",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI08320/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-09",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-09:clayton",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI09260/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-09:vayko",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4MI09133/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-09:vlahos",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI09278/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-09:walkowicz",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2MI09178/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-10",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-10:kirby",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H8MI09142/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-10:nkromo",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Kwabena%20Nkromo",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-10:saliba",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0MI09206/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-11",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-11:ishac",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI11316/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-11:teasdale",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI11308/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-12",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-12:sanders",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4MI12145/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-12:sosnowski",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0MI14214/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-12:walkowicz",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H8MI07039/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-H-13",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MI-H-13:coleman",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Simone%20R.%20Coleman",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-13:dardzinski",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2MI13337/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-13:light",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI13320/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MI-H-13:nykoriak",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI13312/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MN-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MN-H-03:bass",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MN03170/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MN-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MN-H-05:jackson",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MN05373/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MO-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MO-H-01:berry",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2MO02219/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "MO-H-01:schmitz",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0MO08285/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MO-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MO-H-02:daugherty",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Brandon%20Daugherty",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MO-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MO-H-03:higgins",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Jim%20Higgins",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MO-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MO-H-04:holbrook",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2MO04108/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MO-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MO-H-05:langkraehr",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MO05197/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MO-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MO-H-06:maidment",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2MO06269/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MO-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MO-H-07:craig",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4MO07107/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MO-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MO-H-08:lombard",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Rebecca%20Sharpe%20Lombard",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MS-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MS-H-01:baucom",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Johnny%20Baucom",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MS-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MS-H-03:kiehle",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MS03236/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MT-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MT-H-01:sheedy",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Nick%20Sheedy",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "MT-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "MT-H-02:mccracken",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MT02176/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NC-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NC-H-01:bailey",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H8NC13075/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NC-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NC-H-02:douglass",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4NC02135/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "NC-H-02:laszacs",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Matthew%20Laszacs",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NC-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NC-H-03:cavender",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NC03237/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NC-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NC-H-04:meilleur",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4NC04149/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NC-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NC-H-05:luffman",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NC05174/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NC-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NC-H-08:whitehead",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Bo%20Whitehead",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NC-H-11",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NC-H-11:groo",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NC11313/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NC-H-13",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NC-H-13:swinton",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NC13251/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "ND-H-00",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "ND-H-00:neville",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6ND01056/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "ND-H-00:tuttle",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H8ND00138/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NE-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NE-H-01:hartong",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Daniel%20Hartong",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "NE-H-01:sandman",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Nik%20Sandman",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NE-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NE-H-02:foreman",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NE02273/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NE-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NE-H-03:else",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0NE03217/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NH-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NH-H-02:mahrou",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NH02303/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NJ-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NJ-H-03:welzer",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4NJ03247/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NJ-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NJ-H-05:rueda",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NJ05247/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NJ-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NJ-H-07:toole",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Seamus%20O%27Toole",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NJ-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NJ-H-08:eliopoulos",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Aristotle%20Eliopoulos",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "NJ-H-08:honts",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Craig%20Honts",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "NJ-H-08:hughey",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NJ08217/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NJ-H-09",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NJ-H-09:bukovinac",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NJ09306/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NJ-H-11",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NJ-H-11:bond",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NJ11328/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NJ-H-12",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NJ-H-12:jinete",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NJ12441/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "NJ-H-12:jordan",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Winston%20Jordan",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NV-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NV-H-01:john",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Steven%20St.%20John",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NV-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NV-H-02:chapman",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4NV02219/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NV-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NV-H-03:kamerath",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4NV03241/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NV-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NV-H-04:best",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0NV02167/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "NV-H-04:johnson",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=William%20Johnson",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-05:marsh",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NY05127/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-07:rivera",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NY07271/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-08:mizrahi",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NY08188/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-09",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-09:azumah",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Joel%20Azumah",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-13",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-13:williams",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NY13303/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-15",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-15:duran",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4NY15154/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "NY-H-15:sapaskis",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6NY16140/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "NY-H-16",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "NY-H-16:cinquemani",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4NY07052/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-01:weise",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6OH01229/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-03:dulaney",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0OH03137/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-04:tackett",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Tracey%20Tackett",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-05:veloff",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Michael%20Veloff",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-08:enoch",
+     "finance": {
+      "note": "The FEC’s 2026 summary for this candidate doesn’t add up (its contributions are larger than its total receipts), so its figures aren’t shown here. The FEC page has them.",
+      "url": "https://www.fec.gov/data/candidate/H8OH08097/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-09",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-09:althaus",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Matthew%20Althaus",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-11",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-11:kirchner",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6OH11210/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-H-15",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OH-H-15:barrington",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6OH15138/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OK-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OK-H-02:hopkins",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4OK02204/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OK-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OK-H-03:byrd",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Suzie%20Byrd",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OK-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OK-H-04:bonacci",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Rocco%20Bonacci",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OK-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OK-H-05:nieves",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4OK04176/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OR-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OR-H-03:ayles",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6OR03197/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OR-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OR-H-04:filip",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4OR04141/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "OR-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "OR-H-05:townsend",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4OR05379/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "PA-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "PA-H-02:arriaga",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6PA02205/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "SC-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "SC-H-02:smith",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Dayna%20Alane%20Smith",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "SC-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "SC-H-03:corriea",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Brian%20Corriea",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "SC-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "SC-H-06:peterson",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6SC06184/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TN-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TN-H-01:ashburn",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Joshua%20Ashburn",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-01:baker",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0TN01191/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-01:campbell",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Chris%20Campbell",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-01:cody",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Billy%20Cody",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-01:mcclain",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Tyler%20McClain",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TN-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TN-H-02:fine",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Bruce%20Fine",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-02:heimerman",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TN02188/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TN-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TN-H-03:arnold",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Dean%20Arnold",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-03:howard-hill",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4TN03165/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-03:ownby",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TN03210/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-03:roland",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TN03244/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TN-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TN-H-04:faircloth",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2TN06188/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TN-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TN-H-05:johnson",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TN05447/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TN-H-06",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TN-H-06:monday",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TN06189/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-06:purdy",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Angus%20Purdy",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TN-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TN-H-07:reynolds",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TN05330/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TN-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TN-H-08:austill",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TN08383/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-08:blankenship",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Wells%20Blankenship",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-08:futch",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TN08391/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-08:moses",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Pamela%20Moses",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-08:ward",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Henry%20Ward%20III",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TN-H-09",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TN-H-09:clark",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0TN09111/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TN-H-09:head",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Michelle%20Head",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-H-12",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-H-12:prilliman",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TX12169/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-H-18",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-H-18:whitfield",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TX18497/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-H-23",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-H-23:mendoza",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TX16111/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-H-26",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-H-26:gray",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TX01261/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-H-28",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-H-28:duran",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TX28108/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-H-33",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-H-33:gillespie",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2TX33248/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-H-34",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "TX-H-34:espinoza",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6TX34106/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "TX-H-34:royal",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0TX34059/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "UT-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "UT-H-01:west",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6UT01251/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "UT-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "UT-H-02:bowen",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6UT02259/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "UT-H-02:cottam",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4UT01165/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "UT-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "UT-H-03:easley",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2UT02506/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "UT-H-03:scott",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6UT03216/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "UT-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "UT-H-04:wright",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6UT04057/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "VA-H-02",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VA-H-02:staten",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6VA02222/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "VA-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VA-H-03:gaines",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6VA02248/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "VA-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VA-H-04:bell",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6VA04137/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "VA-H-05",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VA-H-05:harvey",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6VA05241/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "VA-H-07",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VA-H-07:ertle",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6VA07346/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "VA-H-07:lopez",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Taner%20Demirci%20Lopez",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "VA-H-08",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VA-H-08:arnoldi",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Shelly%20Arnoldi",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "VA-H-10",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VA-H-10:malik",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6VA10274/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "VA-H-11",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VA-H-11:blais",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H4VA10154/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "VT-H-00",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "VT-H-00:altair",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Phoenix%20Altair",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "VT-H-00:ortiz",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2VT00177/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "VT-H-00:seymour",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6VT00269/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "VT-H-00:walton",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6VT01093/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "WA-H-10",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WA-H-10:chung",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6WA10031/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "WI-H-03",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WI-H-03:kent",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6WI03230/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "WI-H-03:provance",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H2WI03163/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "WI-H-04",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WI-H-04:burks",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Arthur%20Burks",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "WI-H-04:rogers",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Tim%20Rogers",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "WV-H-01",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WV-H-01:fox-spencer",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0WV03193/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  },
+  {
+   "id": "WY-H-00",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "WY-H-00:haggit",
+     "finance": {
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H0WY01051/?cycle=2026&election_full=true",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    },
+    {
+     "id": "WY-H-00:johnson",
+     "finance": {
+      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
+      "url": "https://www.fec.gov/data/candidates/?q=Shawn%20Johnson",
+      "source": "FEC",
+      "asOf": "2026-10-26",
+      "parts": {}
+     }
+    }
+   ]
+  }
+ ]
+}

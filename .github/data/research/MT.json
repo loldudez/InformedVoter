@@ -1,0 +1,229 @@
+{
+ "updated": "2026-10-25",
+ "note": "Montana U.S. Senate race, researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "MT-SEN",
+   "candidates": [
+    {
+     "id": "MT-SEN:alme",
+     "name": "Kurt Alme",
+     "party": "R",
+     "bio": "Former U.S. attorney for Montana, twice appointed by President Trump.",
+     "positions": {
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Alme wants the border secured",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18",
+        "quote": "Now what we need to do is secure the border"
+       }
+      },
+      "def-15": {
+       "stance": 1,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Alme backs the president and military on Iran but would never support ground troops in endless wars",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18",
+        "quote": "I will never support sending our sons and daughters boots on the ground"
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Alme would cut federal spending to bring down inflation and building costs",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18",
+        "quote": "we've got to rein in Washington spending"
+       }
+      },
+      "hea-04": {
+       "stance": 1,
+       "source": {
+        "title": "Daily Montanan debate report, Oct. 12, 2026: Alme would make health care more transparent and competitive",
+        "url": "https://dailymontanan.com/?p=39449",
+        "date": "2026-10-12",
+        "quote": "making it more transparent, more competitive, and by putting patients first"
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "Daily Montanan debate report, Oct. 12, 2026: Alme says the ACA failed and mainly subsidized drug and insurance companies",
+        "url": "https://dailymontanan.com/?p=39449",
+        "date": "2026-10-12"
+       }
+      },
+      "cri-04": {
+       "stance": 1,
+       "source": {
+        "title": "Daily Montanan debate report, Oct. 12, 2026: Alme pledges to lock up violent criminals",
+        "url": "https://dailymontanan.com/?p=39449",
+        "date": "2026-10-12"
+       }
+      },
+      "agr-01": {
+       "stance": 1,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Alme wants the farm bill passed",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18"
+       }
+      }
+     }
+    },
+    {
+     "id": "MT-SEN:bodnar",
+     "name": "Seth Bodnar",
+     "party": "I",
+     "bio": "Former president of the University of Montana and an Army veteran, running as an independent.",
+     "positions": {
+      "def-04": {
+       "stance": 2,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Bodnar says Congress must decide whether to authorize military action in Iran",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18"
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Bodnar supports strong borders and enforcing immigration law, opposes the administration's tactics and backs comprehensive reform",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18",
+        "quote": "We need strong borders and we need to enforce our immigration laws"
+       }
+      },
+      "hou-04": {
+       "stance": 2,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Bodnar backs zoning and building-code reform to unlock housing supply",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18",
+        "quote": "incentivizing the type of zoning and code reform to unlock more supply"
+       }
+      },
+      "hou-02": {
+       "stance": 1,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Bodnar would limit private equity purchases of single-family homes",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18"
+       }
+      },
+      "eco-04": {
+       "stance": 2,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Bodnar supports stronger antitrust enforcement against corporate monopolies in agriculture",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18",
+        "quote": "Our farmers, our ranchers are getting squeezed by these big corporate monopolies"
+       }
+      },
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Bodnar opposes the trade war with Canada",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18"
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Daily Montanan debate report, Oct. 12, 2026: Bodnar supports a universal coverage option that keeps choice and competition",
+        "url": "https://dailymontanan.com/?p=39449",
+        "date": "2026-10-12"
+       }
+      },
+      "hea-07": {
+       "stance": 2,
+       "source": {
+        "title": "Daily Montanan debate report, Oct. 12, 2026: Bodnar would restore the expired ACA subsidies",
+        "url": "https://dailymontanan.com/?p=39449",
+        "date": "2026-10-12"
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "Daily Montanan debate report, Oct. 12, 2026: Bodnar would protect Montana's Medicaid expansion",
+        "url": "https://dailymontanan.com/?p=39449",
+        "date": "2026-10-12"
+       }
+      },
+      "eco-01": {
+       "stance": 1,
+       "source": {
+        "title": "Daily Montanan debate report, Oct. 12, 2026: Bodnar would have higher earners pay more into Social Security",
+        "url": "https://dailymontanan.com/?p=39449",
+        "date": "2026-10-12"
+       }
+      }
+     }
+    },
+    {
+     "id": "MT-SEN:bankhead",
+     "name": "Alani Bankhead",
+     "party": "D",
+     "bio": "Retired Air Force lieutenant colonel and counterintelligence agent.",
+     "positions": {
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Daily Montanan debate report, Oct. 12, 2026: Bankhead favors universal health care modeled on TRICARE, paid for by ending the Iran war",
+        "url": "https://dailymontanan.com/?p=39449",
+        "date": "2026-10-12"
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "Daily Montanan debate report, Oct. 12, 2026: Bankhead would remove the Social Security wage cap so all income is taxed",
+        "url": "https://dailymontanan.com/?p=39449",
+        "date": "2026-10-12",
+        "quote": "tax the wealthy, and it starts by ensuring that they pay"
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Bankhead opposes the Iran war",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18",
+        "quote": "I do not support the war in Iran"
+       }
+      },
+      "imm-02": {
+       "stance": 2,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Bankhead supports comprehensive immigration reform and a faster path to citizenship",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18"
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Bankhead would give builders tax incentives for affordable homes",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18",
+        "quote": "providing tax incentives to construction companies that create affordable housing"
+       }
+      },
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "NBC Montana, Oct. 18, 2026: Bankhead blames tariffs for the drop in Canadian tourism",
+        "url": "https://nbcmontana.com/newsletter-daily/alme-bankhead-bodnar-austin-lay-out-policy-positions-in-race-for-senate",
+        "date": "2026-10-18"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

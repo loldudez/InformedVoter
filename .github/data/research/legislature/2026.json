@@ -1,0 +1,468 @@
+{
+ "updated": "2026-10-26",
+ "note": "State legislative candidates' bios, campaign sites and positions, researched Oct. 26, 2026.",
+ "races": [
+  {
+   "id": "OK-SS-032",
+   "candidates": [
+    {
+     "id": "OK-SS-032:newton",
+     "name": "Booker T. Newton",
+     "party": "D",
+     "bio": "Retired U.S. Army first sergeant (29 years); now helps soldiers move from military service to civilian jobs.",
+     "officialSite": "https://www.bookertnewton.com/",
+     "positions": {
+      "edu-04": {
+       "stance": 2,
+       "source": {
+        "title": "Booker T. Newton campaign site: Newton would prioritize increasing teacher pay",
+        "url": "https://www.bookertnewton.com/platform",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "prioritize increasing teacher pay"
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "Booker T. Newton campaign site: Newton would stop sending public school funds to private schools",
+        "url": "https://www.bookertnewton.com/platform",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "end the absurd practice of sending public school funds to private schools"
+       }
+      },
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "Booker T. Newton campaign site: Newton would strengthen public education",
+        "url": "https://www.bookertnewton.com/meet-booker-t",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-02": {
+       "stance": 1,
+       "source": {
+        "title": "Booker T. Newton campaign site: Newton would strengthen public education",
+        "url": "https://www.bookertnewton.com/meet-booker-t",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hea-06": {
+       "stance": 1,
+       "source": {
+        "title": "Booker T. Newton campaign site: Newton calls for mental health support for children and veterans",
+        "url": "https://www.bookertnewton.com/platform",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-07": {
+       "stance": 1,
+       "source": {
+        "title": "Booker T. Newton campaign site: Newton wants policies that address the rising cost of child care",
+        "url": "https://www.bookertnewton.com/platform",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-06": {
+       "stance": 1,
+       "source": {
+        "title": "Booker T. Newton campaign site: Newton would reform the legislative process and demand accountability",
+        "url": "https://www.bookertnewton.com/platform",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We must demand accountability and reform the legislative process"
+       }
+      },
+      "gov-11": {
+       "stance": 1,
+       "source": {
+        "title": "Booker T. Newton campaign site: Newton says government should not work just for millionaires funding campaigns",
+        "url": "https://www.bookertnewton.com/platform",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "OK-SS-032:pena",
+     "name": "Valentin Peña",
+     "party": "I",
+     "bio": "Lawton independent running a grassroots campaign; says he takes no corporate or large private donations.",
+     "officialSite": "https://www.vp2026.com/",
+     "positions": {
+      "sta-03": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would raise the minimum wage immediately and tie it to inflation",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Raise Minimum Wage Immediately"
+       }
+      },
+      "eco-13": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would make 32 hours a week full time",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "make 32 hours a week fulltime"
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña proposes a 90% marginal tax rate above $1 million a year",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "eco-12": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña proposes a 90% marginal tax rate above $1 million and lower taxes below it",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would lower taxes on those earning under $1 million",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would end property taxes on properties worth $500,000 or less",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña supports Medicare/SoonerCare for all",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Medicare/Soonercare for all, including vision, dental and hearing."
+       }
+      },
+      "hea-10": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would include vision, dental and hearing coverage",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hea-06": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would make therapy more affordable or free",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Make therapy more affordable or free for the population."
+       }
+      },
+      "soc-01": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would protect protest and free speech rights, ending permit requirements for protests",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would codify abortion access in the Oklahoma Constitution",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "codify abortion access in the Oklahoma Constitution"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña opposes legislation on people's bodies",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "no more legislation on our bodies"
+       }
+      },
+      "edu-04": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would give teachers raises and expanded benefits",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would give schools more funding",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "edu-09": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña supports free breakfast and lunch for all children",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "free breakfast and lunch for all children"
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would enshrine workers' and unionization rights",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Workers rights and Unionization rights enshrined."
+       }
+      },
+      "gov-04": {
+       "stance": 1,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would end gerrymandering in Oklahoma",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "End Gerrymandering in Oklahoma"
+       }
+      },
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña wants transparency audits of all government spending",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-06": {
+       "stance": 2,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would ban lobbyists and stock trading by Oklahoma lawmakers and the governor's staff",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña supports automatic voter registration and paid voting holidays",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "Valentin Peña campaign site: Peña would make ICE raids unconstitutional in Oklahoma",
+        "url": "https://www.vp2026.com/my-policies/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Make Ice raids unconstitutional in Oklahoma itself"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "OK-SH-085",
+   "candidates": [
+    {
+     "id": "OK-SH-085:branham",
+     "name": "Chelsey Branham",
+     "party": "D",
+     "bio": "State representative for House District 83 from 2018 to 2020; founder of One Whole Village Consulting and a Chickasaw citizen.",
+     "officialSite": "https://branhamforoklahoma.com/",
+     "positions": {
+      "edu-01": {
+       "stance": 2,
+       "source": {
+        "title": "Chelsey Branham campaign site: Branham would restore full funding to classrooms",
+        "url": "https://branhamforoklahoma.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "restoring full funding to our classrooms and paying teachers what they deserve"
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "Chelsey Branham campaign site: Branham would restore full funding to classrooms",
+        "url": "https://branhamforoklahoma.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "edu-04": {
+       "stance": 2,
+       "source": {
+        "title": "Chelsey Branham campaign site: Branham would pay teachers what they deserve",
+        "url": "https://branhamforoklahoma.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-07": {
+       "stance": 1,
+       "source": {
+        "title": "Chelsey Branham campaign site: Branham would make college and technical training affordable",
+        "url": "https://branhamforoklahoma.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "edu-03": {
+       "stance": 1,
+       "source": {
+        "title": "Chelsey Branham campaign site: Branham would expand job readiness programs",
+        "url": "https://branhamforoklahoma.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "cri-07": {
+       "stance": 1,
+       "source": {
+        "title": "Chelsey Branham campaign site: Branham would redirect money from prisons to community programs",
+        "url": "https://branhamforoklahoma.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "redirect money from prisons to programs that rebuild communities and keep families together"
+       }
+      },
+      "eco-08": {
+       "stance": 1,
+       "source": {
+        "title": "Chelsey Branham campaign site: Branham would support local entrepreneurs and small businesses with tax incentives",
+        "url": "https://branhamforoklahoma.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "support local entrepreneurs and small businesses with smart tax incentives"
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Chelsey Branham campaign site: Branham would help transition the energy workforce to renewable sources",
+        "url": "https://branhamforoklahoma.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hea-06": {
+       "stance": 2,
+       "source": {
+        "title": "NonDoc, June 10, 2026: Branham wants to increase mental health services",
+        "url": "https://nondoc.com/2026/06/10/cheat-sheet-3-democrats-run-to-succeed-cyndi-munson-in-hd-85/",
+        "date": "2026-06-10",
+        "quote": "increase mental health services"
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Chelsey Branham campaign site: Branham would defend reproductive freedom",
+        "url": "https://branhamforoklahoma.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "defend reproductive freedom"
+       }
+      },
+      "soc-04": {
+       "stance": -1,
+       "source": {
+        "title": "Chelsey Branham campaign site: Branham would defend reproductive freedom",
+        "url": "https://branhamforoklahoma.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "OK-SH-085:fallin",
+     "name": "Joe Fallin",
+     "party": "R",
+     "bio": "Oklahoma City-area dentist and small-business owner.",
+     "officialSite": "https://www.joefallin.com/",
+     "positions": {
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "Joe Fallin campaign site: Fallin would ensure law enforcement has the tools, training and resources it needs",
+        "url": "https://www.joefallin.com/joespriorities",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "Joe Fallin campaign site: Fallin would stand firmly with law enforcement",
+        "url": "https://www.joefallin.com/joespriorities",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "stand firmly with law enforcement"
+       }
+      },
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Joe Fallin campaign site: Fallin would push for budget transparency",
+        "url": "https://www.joefallin.com/joespriorities",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Joe will push for budget transparency"
+       }
+      },
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "Joe Fallin campaign site: Fallin calls property tax relief essential",
+        "url": "https://www.joefallin.com/joespriorities",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Property tax relief is essential"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2302 @@
+{
+ "updated": "2026-10-25",
+ "note": "Incumbent senators in safe races, and senators running for governor, from their key Senate votes; researched Oct. 25, 2026.",
+ "races": [
+  {
+   "id": "AR-SEN",
+   "candidates": [
+    {
+     "id": "AR-SEN:cotton",
+     "name": "Tom Cotton",
+     "party": "R",
+     "bio": "U.S. senator from Arkansas since 2015, chair of the Senate Republican Conference and an Army veteran.",
+     "positions": {
+      "soc-10": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Cotton voted Nay",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Cotton voted Nay",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Cotton voted Nay",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Cotton voted Nay",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Cotton voted Nay",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Cotton voted Nay",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending: Cotton voted Yea",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-13": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Cotton voted Yea",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Cotton voted Yea",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Cotton voted Yea",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Cotton voted Nay",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.J.Res. 30 (2023), overturning a rule letting retirement plans weigh climate risk: Cotton voted Yea",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-03": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the PACT Act (2022), expanding health care for veterans exposed to toxic burn pits: Cotton voted Yea",
+        "url": "https://ballotpedia.org/Tom_Cotton",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "AR-SEN:shoffner",
+     "name": "Hallie Shoffner",
+     "party": "D",
+     "positions": {
+      "agr-01": {
+       "stance": 1,
+       "source": {
+        "title": "Talk Business & Politics debate report, Oct. 12, 2026: Shoffner would make passing a full Farm Bill a top priority",
+        "url": "https://talkbusiness.net/2026/10/shoffner-wadlin-hold-senate-debate-cotton-a-no-show/",
+        "date": "2026-10-12"
+       }
+      },
+      "eco-10": {
+       "stance": 0,
+       "source": {
+        "title": "Talk Business & Politics debate report, Oct. 12, 2026: Shoffner says blanket tariffs don't work but targeted ones can help",
+        "url": "https://talkbusiness.net/2026/10/shoffner-wadlin-hold-senate-debate-cotton-a-no-show/",
+        "date": "2026-10-12",
+        "quote": "Blanket tariffs don't work as an economic development tool"
+       }
+      },
+      "def-15": {
+       "stance": -1,
+       "source": {
+        "title": "Talk Business & Politics debate report, Oct. 12, 2026: Shoffner criticizes the Iran war's cost at the pump",
+        "url": "https://talkbusiness.net/2026/10/shoffner-wadlin-hold-senate-debate-cotton-a-no-show/",
+        "date": "2026-10-12",
+        "quote": "now we are paying for it at the pump"
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "Talk Business & Politics debate report, Oct. 12, 2026: Shoffner supports legal immigration and deporting violent criminals",
+        "url": "https://talkbusiness.net/2026/10/shoffner-wadlin-hold-senate-debate-cotton-a-no-show/",
+        "date": "2026-10-12"
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "Talk Business & Politics debate report, Oct. 12, 2026: Shoffner opposes heavy-handed immigration enforcement",
+        "url": "https://talkbusiness.net/2026/10/shoffner-wadlin-hold-senate-debate-cotton-a-no-show/",
+        "date": "2026-10-12"
+       }
+      }
+     },
+     "bio": "Arkansas farmer."
+    }
+   ]
+  },
+  {
+   "id": "CO-SEN",
+   "candidates": [
+    {
+     "id": "CO-SEN:hickenlooper",
+     "name": "John Hickenlooper",
+     "party": "D",
+     "bio": "U.S. senator from Colorado since 2021 and governor of Colorado from 2011 to 2019.",
+     "positions": {
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Politics, Oct. 2, 2026: Hickenlooper would reverse the federal health care cuts",
+        "url": "https://www.coloradopolitics.com/2026/10/02/mark-baisley-john-hickenlooper-us-senate/",
+        "date": "2026-10-02",
+        "quote": "set the table for universal coverage"
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Politics, Oct. 2, 2026: Hickenlooper touts letting Medicare negotiate drug prices and the $35 insulin cap",
+        "url": "https://www.coloradopolitics.com/2026/10/02/mark-baisley-john-hickenlooper-us-senate/",
+        "date": "2026-10-02"
+       }
+      },
+      "eco-10": {
+       "stance": -2,
+       "source": {
+        "title": "Colorado Politics, Oct. 2, 2026: Hickenlooper opposes the administration's tariffs",
+        "url": "https://www.coloradopolitics.com/2026/10/02/mark-baisley-john-hickenlooper-us-senate/",
+        "date": "2026-10-02",
+        "quote": "illegal tariffs that are increasing gas and grocery prices"
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "Colorado Politics, Oct. 2, 2026: Hickenlooper would end the war with Iran",
+        "url": "https://www.coloradopolitics.com/2026/10/02/mark-baisley-john-hickenlooper-us-senate/",
+        "date": "2026-10-02"
+       }
+      },
+      "ene-06": {
+       "stance": 2,
+       "source": {
+        "title": "Colorado Politics, Oct. 2, 2026: Hickenlooper would fight climate change and cites backing the largest climate bill ever",
+        "url": "https://www.coloradopolitics.com/2026/10/02/mark-baisley-john-hickenlooper-us-senate/",
+        "date": "2026-10-02"
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "Colorado Politics, Oct. 2, 2026: Hickenlooper would go after ICE's violence",
+        "url": "https://www.coloradopolitics.com/2026/10/02/mark-baisley-john-hickenlooper-us-senate/",
+        "date": "2026-10-02"
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Politics, Oct. 2, 2026: Hickenlooper would reject voter suppression efforts",
+        "url": "https://www.coloradopolitics.com/2026/10/02/mark-baisley-john-hickenlooper-us-senate/",
+        "date": "2026-10-02"
+       }
+      },
+      "imm-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Hickenlooper voted Nay",
+        "url": "https://ballotpedia.org/John_Hickenlooper",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "CO-SEN:baisley",
+     "name": "Mark Baisley",
+     "party": "R",
+     "positions": {
+      "hou-05": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Politics, Oct. 2, 2026: Baisley would give lenders incentives so first-time buyers get mortgage rates tied to the 10-year Treasury yield",
+        "url": "https://www.coloradopolitics.com/2026/10/02/mark-baisley-john-hickenlooper-us-senate/",
+        "date": "2026-10-02"
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Politics, Oct. 2, 2026: Baisley would shrink government to restore affordability",
+        "url": "https://www.coloradopolitics.com/2026/10/02/mark-baisley-john-hickenlooper-us-senate/",
+        "date": "2026-10-02",
+        "quote": "reducing the footprint of government"
+       }
+      }
+     },
+     "bio": "Colorado state senator with a background in aerospace."
+    }
+   ]
+  },
+  {
+   "id": "DE-SEN",
+   "candidates": [
+    {
+     "id": "DE-SEN:coons",
+     "name": "Chris Coons",
+     "party": "D",
+     "bio": "U.S. senator from Delaware since 2010.",
+     "positions": {
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Coons voted Yea",
+        "url": "https://ballotpedia.org/Chris_Coons",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Coons voted Yea",
+        "url": "https://ballotpedia.org/Chris_Coons",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Coons voted Yea",
+        "url": "https://ballotpedia.org/Chris_Coons",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Coons voted Yea",
+        "url": "https://ballotpedia.org/Chris_Coons",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Coons voted Yea",
+        "url": "https://ballotpedia.org/Chris_Coons",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Coons voted Yea",
+        "url": "https://ballotpedia.org/Chris_Coons",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-13": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Coons voted Yea",
+        "url": "https://ballotpedia.org/Chris_Coons",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Coons voted Yea",
+        "url": "https://ballotpedia.org/Chris_Coons",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Coons voted Nay",
+        "url": "https://ballotpedia.org/Chris_Coons",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Coons voted Yea",
+        "url": "https://ballotpedia.org/Chris_Coons",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Border Act of 2024 (S. 4361), the bipartisan border security bill: Coons voted Yea",
+        "url": "https://ballotpedia.org/Chris_Coons",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-03": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the PACT Act (2022), expanding health care for veterans exposed to toxic burn pits: Coons voted Yea",
+        "url": "https://ballotpedia.org/Chris_Coons",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "DE-SEN:katz",
+     "name": "Michael Katz",
+     "party": "R",
+     "positions": {
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Fox News, Sept. 15, 2026: Katz would cut federal spending",
+        "url": "https://www.foxnews.com/politics/gop-anesthesiologist-receives-nod-uphill-race-challenge-top-senate-democrat",
+        "date": "2026-09-15"
+       }
+      }
+     },
+     "bio": "Anesthesiologist and former Delaware state senator."
+    }
+   ]
+  },
+  {
+   "id": "ID-SEN",
+   "candidates": [
+    {
+     "id": "ID-SEN:risch",
+     "name": "Jim Risch",
+     "party": "R",
+     "bio": "U.S. senator from Idaho since 2009 and a former governor of Idaho.",
+     "positions": {
+      "hea-04": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun, Aug. 5, 2026: Risch says the ACA is a mess and health care must move back into the private sector",
+        "url": "https://idahocapitalsun.com/2026/08/05/risch-v-achilles-may-be-idahos-most-competitive-us-senate-race-in-years-heres-where-they-stand/",
+        "date": "2026-08-05",
+        "quote": "moved significantly more back into the private sector"
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun, Aug. 5, 2026: Risch backs the SAVE Act's proof-of-citizenship rules",
+        "url": "https://idahocapitalsun.com/2026/08/05/risch-v-achilles-may-be-idahos-most-competitive-us-senate-race-in-years-heres-where-they-stand/",
+        "date": "2026-08-05",
+        "quote": "I'm all in on the Save Act."
+       }
+      },
+      "imm-09": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun, Aug. 5, 2026: Risch wants the H-2A farm worker visa opened to year-round work",
+        "url": "https://idahocapitalsun.com/2026/08/05/risch-v-achilles-may-be-idahos-most-competitive-us-senate-race-in-years-heres-where-they-stand/",
+        "date": "2026-08-05"
+       }
+      },
+      "imm-02": {
+       "stance": -2,
+       "source": {
+        "title": "Idaho Capital Sun, Aug. 5, 2026: Risch opposes a path to citizenship for people who entered illegally",
+        "url": "https://idahocapitalsun.com/2026/08/05/risch-v-achilles-may-be-idahos-most-competitive-us-senate-race-in-years-heres-where-they-stand/",
+        "date": "2026-08-05",
+        "quote": "That is a non-starter for us"
+       }
+      },
+      "soc-10": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Risch voted Nay",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Risch voted Nay",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Risch voted Nay",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Risch voted Nay",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Risch voted Yea",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Risch voted Nay",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending: Risch voted Yea",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-13": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Risch voted Yea",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Risch voted Yea",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Risch voted Yea",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Risch voted Nay",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.J.Res. 30 (2023), overturning a rule letting retirement plans weigh climate risk: Risch voted Yea",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the PACT Act (2022), expanding health care for veterans exposed to toxic burn pits: Risch voted Nay",
+        "url": "https://ballotpedia.org/Jim_Risch",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "ID-SEN:achilles",
+     "name": "Todd Achilles",
+     "party": "I",
+     "positions": {
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun, Aug. 5, 2026: Achilles criticized Congress for letting the enhanced ACA tax credits expire and wants the ACA reformed",
+        "url": "https://idahocapitalsun.com/2026/08/05/risch-v-achilles-may-be-idahos-most-competitive-us-senate-race-in-years-heres-where-they-stand/",
+        "date": "2026-08-05"
+       }
+      },
+      "gov-05": {
+       "stance": -1,
+       "source": {
+        "title": "Idaho Capital Sun, Aug. 5, 2026: Achilles calls the SAVE Act's proof-of-citizenship rules federal overreach",
+        "url": "https://idahocapitalsun.com/2026/08/05/risch-v-achilles-may-be-idahos-most-competitive-us-senate-race-in-years-heres-where-they-stand/",
+        "date": "2026-08-05",
+        "quote": "The SAVE Act is federal overreach"
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun, Aug. 5, 2026: Achilles backs the approach of the 2013 bipartisan immigration bill, which boosted border enforcement",
+        "url": "https://idahocapitalsun.com/2026/08/05/risch-v-achilles-may-be-idahos-most-competitive-us-senate-race-in-years-heres-where-they-stand/",
+        "date": "2026-08-05"
+       }
+      }
+     },
+     "bio": "Former Idaho state representative and Army tank commander, running as an independent."
+    }
+   ]
+  },
+  {
+   "id": "MA-SEN",
+   "candidates": [
+    {
+     "id": "MA-SEN:markey",
+     "name": "Ed Markey",
+     "party": "D",
+     "bio": "U.S. senator from Massachusetts since 2013, after 37 years in the U.S. House.",
+     "positions": {
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "WBUR debate report, Oct. 14, 2026: Markey supports Medicare for All",
+        "url": "https://www.wbur.org/news/2026/10/14/senate-markey-deaton-debate-trump-healthcare-energy-massachusetts",
+        "date": "2026-10-14"
+       }
+      },
+      "hea-04": {
+       "stance": -2,
+       "source": {
+        "title": "WBUR debate report, Oct. 14, 2026: Markey supports Medicare for All",
+        "url": "https://www.wbur.org/news/2026/10/14/senate-markey-deaton-debate-trump-healthcare-energy-massachusetts",
+        "date": "2026-10-14"
+       }
+      },
+      "ene-06": {
+       "stance": 2,
+       "source": {
+        "title": "WBUR debate report, Oct. 14, 2026: Markey sponsors the Green New Deal",
+        "url": "https://www.wbur.org/news/2026/10/14/senate-markey-deaton-debate-trump-healthcare-energy-massachusetts",
+        "date": "2026-10-14",
+        "quote": "break our dependence upon that fossil fuel monopoly"
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "WBUR debate report, Oct. 14, 2026: Markey wants the administration's halt of offshore wind projects reversed",
+        "url": "https://www.wbur.org/news/2026/10/14/senate-markey-deaton-debate-trump-healthcare-energy-massachusetts",
+        "date": "2026-10-14"
+       }
+      },
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Markey voted Yea",
+        "url": "https://ballotpedia.org/Ed_Markey",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Markey voted Yea",
+        "url": "https://ballotpedia.org/Ed_Markey",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Markey voted Yea",
+        "url": "https://ballotpedia.org/Ed_Markey",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Markey voted Yea",
+        "url": "https://ballotpedia.org/Ed_Markey",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Markey voted Yea",
+        "url": "https://ballotpedia.org/Ed_Markey",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Markey voted Yea",
+        "url": "https://ballotpedia.org/Ed_Markey",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-13": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Markey voted Yea",
+        "url": "https://ballotpedia.org/Ed_Markey",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Markey voted Yea",
+        "url": "https://ballotpedia.org/Ed_Markey",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Markey voted Nay",
+        "url": "https://ballotpedia.org/Ed_Markey",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Markey voted Yea",
+        "url": "https://ballotpedia.org/Ed_Markey",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-03": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the PACT Act (2022), expanding health care for veterans exposed to toxic burn pits: Markey voted Yea",
+        "url": "https://ballotpedia.org/Ed_Markey",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "MA-SEN:deaton",
+     "name": "John Deaton",
+     "party": "R",
+     "positions": {
+      "hea-04": {
+       "stance": 1,
+       "source": {
+        "title": "WBUR debate report, Oct. 14, 2026: Deaton calls Medicare for All unrealistic",
+        "url": "https://www.wbur.org/news/2026/10/14/senate-markey-deaton-debate-trump-healthcare-energy-massachusetts",
+        "date": "2026-10-14"
+       }
+      },
+      "eco-04": {
+       "stance": 1,
+       "source": {
+        "title": "WBUR debate report, Oct. 14, 2026: Deaton would lower health costs by breaking up large insurance companies",
+        "url": "https://www.wbur.org/news/2026/10/14/senate-markey-deaton-debate-trump-healthcare-energy-massachusetts",
+        "date": "2026-10-14"
+       }
+      },
+      "ene-02": {
+       "stance": 2,
+       "source": {
+        "title": "WBUR debate report, Oct. 14, 2026: Deaton proposes small modular nuclear reactors in Massachusetts",
+        "url": "https://www.wbur.org/news/2026/10/14/senate-markey-deaton-debate-trump-healthcare-energy-massachusetts",
+        "date": "2026-10-14",
+        "quote": "four small modular reactors and expands natural gas in Massachusetts"
+       }
+      },
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "WBUR debate report, Oct. 14, 2026: Deaton would expand natural gas in Massachusetts",
+        "url": "https://www.wbur.org/news/2026/10/14/senate-markey-deaton-debate-trump-healthcare-energy-massachusetts",
+        "date": "2026-10-14"
+       }
+      },
+      "ene-10": {
+       "stance": 1,
+       "source": {
+        "title": "WBUR debate report, Oct. 14, 2026: Deaton says the Green New Deal's mandates drive up energy prices",
+        "url": "https://www.wbur.org/news/2026/10/14/senate-markey-deaton-debate-trump-healthcare-energy-massachusetts",
+        "date": "2026-10-14"
+       }
+      },
+      "def-15": {
+       "stance": -1,
+       "source": {
+        "title": "WBUR debate report, Oct. 14, 2026: Deaton breaks with the president on the Iran war",
+        "url": "https://www.wbur.org/news/2026/10/14/senate-markey-deaton-debate-trump-healthcare-energy-massachusetts",
+        "date": "2026-10-14"
+       }
+      },
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "WBUR debate report, Oct. 14, 2026: Deaton breaks with the president on tariffs",
+        "url": "https://www.wbur.org/news/2026/10/14/senate-markey-deaton-debate-trump-healthcare-energy-massachusetts",
+        "date": "2026-10-14"
+       }
+      }
+     },
+     "bio": "Marine veteran and trial attorney; the 2024 Republican nominee against Sen. Elizabeth Warren."
+    }
+   ]
+  },
+  {
+   "id": "NM-SEN",
+   "candidates": [
+    {
+     "id": "NM-SEN:lujan",
+     "name": "Ben Ray Luján",
+     "party": "D",
+     "bio": "U.S. senator from New Mexico since 2021 and earlier a U.S. representative.",
+     "positions": {
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "Source NM candidate interviews, Sept. 11, 2026: Luján says the administration's tariffs are arbitrarily hurting New Mexicans",
+        "url": "https://sourcenm.com/2026/09/11/new-mexico-election-2026-us-senator/",
+        "date": "2026-09-11"
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM candidate interviews, Sept. 11, 2026: Luján backs screening everything crossing the southern border, inbound and outbound",
+        "url": "https://sourcenm.com/2026/09/11/new-mexico-election-2026-us-senator/",
+        "date": "2026-09-11",
+        "quote": "We need to have smart immigration policy and strong border security in America."
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM candidate interviews, Sept. 11, 2026: Luján says Republicans are trying to end voting by mail",
+        "url": "https://sourcenm.com/2026/09/11/new-mexico-election-2026-us-senator/",
+        "date": "2026-09-11"
+       }
+      },
+      "agr-01": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM candidate interviews, Sept. 11, 2026: Luján is working on a bipartisan farm bill supporting food programs, farmers and ranchers",
+        "url": "https://sourcenm.com/2026/09/11/new-mexico-election-2026-us-senator/",
+        "date": "2026-09-11"
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM candidate interviews, Sept. 11, 2026: Luján says the 2025 budget law, with its Medicaid cuts, made New Mexico families sicker and poorer",
+        "url": "https://sourcenm.com/2026/09/11/new-mexico-election-2026-us-senator/",
+        "date": "2026-09-11"
+       }
+      },
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Luján voted Yea",
+        "url": "https://ballotpedia.org/Ben_Ray_Luj%C3%A1n",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Luján voted Yea",
+        "url": "https://ballotpedia.org/Ben_Ray_Luj%C3%A1n",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Luján voted Yea",
+        "url": "https://ballotpedia.org/Ben_Ray_Luj%C3%A1n",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Luján voted Yea",
+        "url": "https://ballotpedia.org/Ben_Ray_Luj%C3%A1n",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Luján voted Yea",
+        "url": "https://ballotpedia.org/Ben_Ray_Luj%C3%A1n",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-13": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Luján voted Yea",
+        "url": "https://ballotpedia.org/Ben_Ray_Luj%C3%A1n",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Luján voted Yea",
+        "url": "https://ballotpedia.org/Ben_Ray_Luj%C3%A1n",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Luján voted Nay",
+        "url": "https://ballotpedia.org/Ben_Ray_Luj%C3%A1n",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-03": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the PACT Act (2022), expanding health care for veterans exposed to toxic burn pits: Luján voted Yea",
+        "url": "https://ballotpedia.org/Ben_Ray_Luj%C3%A1n",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "NM-SEN:marker",
+     "name": "Larry Marker",
+     "party": "R",
+     "positions": {
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM candidate interviews, Sept. 11, 2026: Marker calls the national debt the biggest issue",
+        "url": "https://sourcenm.com/2026/09/11/new-mexico-election-2026-us-senator/",
+        "date": "2026-09-11"
+       }
+      },
+      "def-04": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM candidate interviews, Sept. 11, 2026: Marker says the Constitution meant to limit the president's power to wage war and Congress must act on Iran",
+        "url": "https://sourcenm.com/2026/09/11/new-mexico-election-2026-us-senator/",
+        "date": "2026-09-11"
+       }
+      },
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "Source NM candidate interviews, Sept. 11, 2026: Marker says the president lacks the constitutional authority to levy tariffs",
+        "url": "https://sourcenm.com/2026/09/11/new-mexico-election-2026-us-senator/",
+        "date": "2026-09-11"
+       }
+      },
+      "imm-01": {
+       "stance": 2,
+       "source": {
+        "title": "Source NM candidate interviews, Sept. 11, 2026: Marker on the border",
+        "url": "https://sourcenm.com/2026/09/11/new-mexico-election-2026-us-senator/",
+        "date": "2026-09-11",
+        "quote": "We need a very, very strong, secure border"
+       }
+      },
+      "imm-03": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM candidate interviews, Sept. 11, 2026: Marker wants a legal way to immigrate that isn't cumbersome or expensive",
+        "url": "https://sourcenm.com/2026/09/11/new-mexico-election-2026-us-senator/",
+        "date": "2026-09-11"
+       }
+      },
+      "ene-03": {
+       "stance": 2,
+       "source": {
+        "title": "Source NM candidate interviews, Sept. 11, 2026: Marker would support the oil and gas industry and rebuild mining",
+        "url": "https://sourcenm.com/2026/09/11/new-mexico-election-2026-us-senator/",
+        "date": "2026-09-11"
+       }
+      }
+     },
+     "bio": "Roswell oil and gas businessman."
+    }
+   ]
+  },
+  {
+   "id": "KY-SEN",
+   "candidates": [
+    {
+     "id": "KY-SEN:barr",
+     "name": "Andy Barr",
+     "party": "R",
+     "positions": {
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "WKYT debate report, Oct. 19, 2026: Barr backed the 2025 tax cut law",
+        "url": "https://www.fox19.com/2026/10/20/barr-booker-clash-prices-surveillance-cameras-mcconnells-legacy/",
+        "date": "2026-10-19",
+        "quote": "I supported the largest tax cut in American history"
+       }
+      },
+      "ene-03": {
+       "stance": 2,
+       "source": {
+        "title": "WKYT debate report, Oct. 19, 2026: Barr would lower prices through American energy dominance and more fossil fuel production",
+        "url": "https://www.fox19.com/2026/10/20/barr-booker-clash-prices-surveillance-cameras-mcconnells-legacy/",
+        "date": "2026-10-19"
+       }
+      },
+      "def-15": {
+       "stance": 2,
+       "source": {
+        "title": "WKYT debate report, Oct. 19, 2026: Barr says victory is the exit strategy in Iran",
+        "url": "https://www.fox19.com/2026/10/20/barr-booker-clash-prices-surveillance-cameras-mcconnells-legacy/",
+        "date": "2026-10-19"
+       }
+      }
+     },
+     "bio": "U.S. representative for Kentucky's 6th District since 2013."
+    },
+    {
+     "id": "KY-SEN:booker",
+     "name": "Charles Booker",
+     "party": "D",
+     "positions": {
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "WKYT debate report, Oct. 19, 2026: Booker would end the Iran war",
+        "url": "https://www.fox19.com/2026/10/20/barr-booker-clash-prices-surveillance-cameras-mcconnells-legacy/",
+        "date": "2026-10-19",
+        "quote": "stopping the madness in Iran"
+       }
+      },
+      "soc-08": {
+       "stance": 1,
+       "source": {
+        "title": "WKYT debate report, Oct. 19, 2026: Booker opposes Flock surveillance cameras",
+        "url": "https://www.fox19.com/2026/10/20/barr-booker-clash-prices-surveillance-cameras-mcconnells-legacy/",
+        "date": "2026-10-19"
+       }
+      }
+     },
+     "bio": "Former Kentucky state representative and the 2022 Democratic Senate nominee."
+    }
+   ]
+  },
+  {
+   "id": "IL-SEN",
+   "candidates": [
+    {
+     "id": "IL-SEN:stratton",
+     "name": "Juliana Stratton",
+     "party": "D",
+     "positions": {
+      "eco-03": {
+       "stance": 2,
+       "source": {
+        "title": "Chicago Sun-Times debate report, Oct. 21, 2026: Stratton supports a $25 federal minimum wage",
+        "url": "https://www.wbez.org/government-politics/elections/2026/10/21/takeaways-senate-debate-juliana-stratton-don-tracy-midterm-election",
+        "date": "2026-10-21",
+        "quote": "livable wage, not just the bare minimum"
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "Chicago Sun-Times debate report, Oct. 21, 2026: Stratton supports a millionaire's tax",
+        "url": "https://www.wbez.org/government-politics/elections/2026/10/21/takeaways-senate-debate-juliana-stratton-don-tracy-midterm-election",
+        "date": "2026-10-21"
+       }
+      },
+      "imm-08": {
+       "stance": -2,
+       "source": {
+        "title": "Chicago Sun-Times debate report, Oct. 21, 2026: Stratton would abolish ICE",
+        "url": "https://www.wbez.org/government-politics/elections/2026/10/21/takeaways-senate-debate-juliana-stratton-don-tracy-midterm-election",
+        "date": "2026-10-21"
+       }
+      },
+      "imm-02": {
+       "stance": 2,
+       "source": {
+        "title": "Chicago Sun-Times debate report, Oct. 21, 2026: Stratton wants a path to citizenship",
+        "url": "https://www.wbez.org/government-politics/elections/2026/10/21/takeaways-senate-debate-juliana-stratton-don-tracy-midterm-election",
+        "date": "2026-10-21",
+        "quote": "real path to legal citizenship, including for Dreamers"
+       }
+      },
+      "eco-10": {
+       "stance": -2,
+       "source": {
+        "title": "Chicago Sun-Times debate report, Oct. 21, 2026: Stratton calls the administration's tariffs illegal and wants refunds sent to people",
+        "url": "https://www.wbez.org/government-politics/elections/2026/10/21/takeaways-senate-debate-juliana-stratton-don-tracy-midterm-election",
+        "date": "2026-10-21"
+       }
+      }
+     },
+     "bio": "Lieutenant governor of Illinois since 2019."
+    },
+    {
+     "id": "IL-SEN:tracy",
+     "name": "Don Tracy",
+     "party": "R",
+     "positions": {
+      "eco-03": {
+       "stance": -2,
+       "source": {
+        "title": "Chicago Sun-Times debate report, Oct. 21, 2026: Tracy opposes a $25 minimum wage",
+        "url": "https://www.wbez.org/government-politics/elections/2026/10/21/takeaways-senate-debate-juliana-stratton-don-tracy-midterm-election",
+        "date": "2026-10-21",
+        "quote": "a death sentence for small businesses everywhere"
+       }
+      },
+      "eco-10": {
+       "stance": 1,
+       "source": {
+        "title": "Chicago Sun-Times debate report, Oct. 21, 2026: Tracy sees tariffs as a tool to reset world trade",
+        "url": "https://www.wbez.org/government-politics/elections/2026/10/21/takeaways-senate-debate-juliana-stratton-don-tracy-midterm-election",
+        "date": "2026-10-21",
+        "quote": "a tool to reset world trade policy"
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "Chicago Sun-Times debate report, Oct. 21, 2026: Tracy praises cooperation between local police and federal immigration agents",
+        "url": "https://www.wbez.org/government-politics/elections/2026/10/21/takeaways-senate-debate-juliana-stratton-don-tracy-midterm-election",
+        "date": "2026-10-21"
+       }
+      }
+     },
+     "bio": "Former chair of the Illinois Republican Party."
+    }
+   ]
+  },
+  {
+   "id": "OR-SEN",
+   "candidates": [
+    {
+     "id": "OR-SEN:merkley",
+     "name": "Jeff Merkley",
+     "party": "D",
+     "bio": "U.S. senator from Oregon since 2009.",
+     "positions": {
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Merkley voted Yea",
+        "url": "https://ballotpedia.org/Jeff_Merkley",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Merkley voted Yea",
+        "url": "https://ballotpedia.org/Jeff_Merkley",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Merkley voted Yea",
+        "url": "https://ballotpedia.org/Jeff_Merkley",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Merkley voted Yea",
+        "url": "https://ballotpedia.org/Jeff_Merkley",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Merkley voted Yea",
+        "url": "https://ballotpedia.org/Jeff_Merkley",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Merkley voted Yea",
+        "url": "https://ballotpedia.org/Jeff_Merkley",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Merkley voted Nay",
+        "url": "https://ballotpedia.org/Jeff_Merkley",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Merkley voted Yea",
+        "url": "https://ballotpedia.org/Jeff_Merkley",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Border Act of 2024 (S. 4361), the bipartisan border security bill: Merkley voted Yea",
+        "url": "https://ballotpedia.org/Jeff_Merkley",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "OR-SEN:smith",
+     "name": "David Brock Smith",
+     "party": "R",
+     "positions": {
+      "gov-06": {
+       "stance": -2,
+       "source": {
+        "title": "OnTheIssues, David Brock Smith: Smith sponsored a bill to end Oregon's vote-by-mail system (March 2026)",
+        "url": "https://ontheissues.org/Senate/David_Brock_Smith.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "OnTheIssues, David Brock Smith: Smith opposes Oregon's sanctuary state status (April 2026)",
+        "url": "https://ontheissues.org/Senate/David_Brock_Smith.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "OnTheIssues, David Brock Smith: Smith pledges no new taxes (May 2026)",
+        "url": "https://ontheissues.org/Senate/David_Brock_Smith.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "OnTheIssues, David Brock Smith: Smith would cut unnecessary government spending (May 2026)",
+        "url": "https://ontheissues.org/Senate/David_Brock_Smith.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "cri-01": {
+       "stance": 1,
+       "source": {
+        "title": "OnTheIssues, David Brock Smith: Smith backs law enforcement and accountability for repeat offenders (May 2026)",
+        "url": "https://ontheissues.org/Senate/David_Brock_Smith.htm",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     },
+     "bio": "Oregon state senator from the south coast."
+    }
+   ]
+  },
+  {
+   "id": "RI-SEN",
+   "candidates": [
+    {
+     "id": "RI-SEN:reed",
+     "name": "Jack Reed",
+     "party": "D",
+     "bio": "U.S. senator from Rhode Island since 1997 and an Army veteran.",
+     "positions": {
+      "ene-06": {
+       "stance": 2,
+       "source": {
+        "title": "ecoRI News candidate chart, Aug. 2026: Reed backs a national energy policy that limits carbon pollution",
+        "url": "https://ecori.org/wp-content/uploads/2026/08/2026-Senator-Candidate-Charts.pdf",
+        "date": "2026-08-23"
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "ecoRI News candidate chart, Aug. 2026: Reed has pushed for offshore wind and clean, renewable energy and opposed the administration's offshore wind buyouts",
+        "url": "https://ecori.org/wp-content/uploads/2026/08/2026-Senator-Candidate-Charts.pdf",
+        "date": "2026-08-23"
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "ecoRI News candidate chart, Aug. 2026: Reed has fought efforts to weaken the Clean Water Act",
+        "url": "https://ecori.org/wp-content/uploads/2026/08/2026-Senator-Candidate-Charts.pdf",
+        "date": "2026-08-23"
+       }
+      },
+      "hou-03": {
+       "stance": 2,
+       "source": {
+        "title": "ecoRI News candidate chart, Aug. 2026: Reed has pushed for national public transit funding",
+        "url": "https://ecori.org/wp-content/uploads/2026/08/2026-Senator-Candidate-Charts.pdf",
+        "date": "2026-08-23"
+       }
+      },
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Reed voted Yea",
+        "url": "https://ballotpedia.org/Jack_Reed",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Reed voted Yea",
+        "url": "https://ballotpedia.org/Jack_Reed",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Reed voted Yea",
+        "url": "https://ballotpedia.org/Jack_Reed",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Reed voted Yea",
+        "url": "https://ballotpedia.org/Jack_Reed",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Reed voted Yea",
+        "url": "https://ballotpedia.org/Jack_Reed",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Reed voted Yea",
+        "url": "https://ballotpedia.org/Jack_Reed",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-13": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Reed voted Yea",
+        "url": "https://ballotpedia.org/Jack_Reed",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Reed voted Yea",
+        "url": "https://ballotpedia.org/Jack_Reed",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Reed voted Nay",
+        "url": "https://ballotpedia.org/Jack_Reed",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Reed voted Yea",
+        "url": "https://ballotpedia.org/Jack_Reed",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Border Act of 2024 (S. 4361), the bipartisan border security bill: Reed voted Yea",
+        "url": "https://ballotpedia.org/Jack_Reed",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-03": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the PACT Act (2022), expanding health care for veterans exposed to toxic burn pits: Reed voted Yea",
+        "url": "https://ballotpedia.org/Jack_Reed",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "RI-SEN:mckay",
+     "name": "Raymond McKay",
+     "party": "R",
+     "positions": {
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "ecoRI News candidate chart, Aug. 2026: McKay says offshore wind hurts fishers and ruins Rhode Island's views",
+        "url": "https://ecori.org/wp-content/uploads/2026/08/2026-Senator-Candidate-Charts.pdf",
+        "date": "2026-08-23"
+       }
+      },
+      "ene-10": {
+       "stance": 1,
+       "source": {
+        "title": "ecoRI News candidate chart, Aug. 2026: McKay blames energy policies adopted for environmental reasons for high energy costs",
+        "url": "https://ecori.org/wp-content/uploads/2026/08/2026-Senator-Candidate-Charts.pdf",
+        "date": "2026-08-23",
+        "quote": "under the guise of environmental responsibility"
+       }
+      }
+     },
+     "bio": "Former member of the Rhode Island Republican Party's state committee."
+    }
+   ]
+  },
+  {
+   "id": "SD-SEN",
+   "candidates": [
+    {
+     "id": "SD-SEN:rounds",
+     "name": "Mike Rounds",
+     "party": "R",
+     "bio": "U.S. senator from South Dakota since 2015 and governor of South Dakota from 2003 to 2011.",
+     "positions": {
+      "soc-10": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Rounds voted Nay",
+        "url": "https://ballotpedia.org/Mike_Rounds",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Rounds voted Nay",
+        "url": "https://ballotpedia.org/Mike_Rounds",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Rounds voted Nay",
+        "url": "https://ballotpedia.org/Mike_Rounds",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Rounds voted Nay",
+        "url": "https://ballotpedia.org/Mike_Rounds",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Rounds voted Nay",
+        "url": "https://ballotpedia.org/Mike_Rounds",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending: Rounds voted Yea",
+        "url": "https://ballotpedia.org/Mike_Rounds",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-13": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Rounds voted Yea",
+        "url": "https://ballotpedia.org/Mike_Rounds",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Rounds voted Yea",
+        "url": "https://ballotpedia.org/Mike_Rounds",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Rounds voted Yea",
+        "url": "https://ballotpedia.org/Mike_Rounds",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Rounds voted Nay",
+        "url": "https://ballotpedia.org/Mike_Rounds",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.J.Res. 30 (2023), overturning a rule letting retirement plans weigh climate risk: Rounds voted Yea",
+        "url": "https://ballotpedia.org/Mike_Rounds",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-03": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the PACT Act (2022), expanding health care for veterans exposed to toxic burn pits: Rounds voted Yea",
+        "url": "https://ballotpedia.org/Mike_Rounds",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "SD-SEN:bengs",
+     "name": "Brian Bengs",
+     "party": "I",
+     "positions": {
+      "gov-11": {
+       "stance": 2,
+       "source": {
+        "title": "Dakota News Now, Sept. 3, 2026: Bengs is running on getting money out of politics",
+        "url": "https://www.dakotanewsnow.com/2026/09/04/bengs-continues-call-out-rounds-focusing-big-money-avoiding-debates/",
+        "date": "2026-09-03",
+        "quote": "getting money out of politics"
+       }
+      }
+     },
+     "bio": "Air Force veteran running as an independent; the 2022 Democratic Senate nominee."
+    }
+   ]
+  },
+  {
+   "id": "TN-SEN",
+   "candidates": [
+    {
+     "id": "TN-SEN:hagerty",
+     "name": "Bill Hagerty",
+     "party": "R",
+     "bio": "U.S. senator from Tennessee since 2021 and U.S. ambassador to Japan from 2017 to 2019.",
+     "positions": {
+      "soc-10": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Hagerty voted Nay",
+        "url": "https://ballotpedia.org/Bill_Hagerty",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Hagerty voted Nay",
+        "url": "https://ballotpedia.org/Bill_Hagerty",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Hagerty voted Nay",
+        "url": "https://ballotpedia.org/Bill_Hagerty",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Hagerty voted Nay",
+        "url": "https://ballotpedia.org/Bill_Hagerty",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Hagerty voted Nay",
+        "url": "https://ballotpedia.org/Bill_Hagerty",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Hagerty voted Yea",
+        "url": "https://ballotpedia.org/Bill_Hagerty",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending: Hagerty voted Yea",
+        "url": "https://ballotpedia.org/Bill_Hagerty",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Hagerty voted Yea",
+        "url": "https://ballotpedia.org/Bill_Hagerty",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Hagerty voted Nay",
+        "url": "https://ballotpedia.org/Bill_Hagerty",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.J.Res. 30 (2023), overturning a rule letting retirement plans weigh climate risk: Hagerty voted Yea",
+        "url": "https://ballotpedia.org/Bill_Hagerty",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-03": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the PACT Act (2022), expanding health care for veterans exposed to toxic burn pits: Hagerty voted Yea",
+        "url": "https://ballotpedia.org/Bill_Hagerty",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "TN-SEN:bradshaw",
+     "name": "Marquita Bradshaw",
+     "party": "D",
+     "positions": {
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "Marquita Bradshaw campaign site: Bradshaw supports well-funded public schools",
+        "url": "https://www.marquitabradshaw.com/priorities",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Every student deserves a well-funded public school"
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "Marquita Bradshaw campaign site: Bradshaw supports competitive teacher pay",
+        "url": "https://www.marquitabradshaw.com/priorities",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "Marquita Bradshaw campaign site: Bradshaw would expand affordable housing",
+        "url": "https://www.marquitabradshaw.com/priorities",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hou-05": {
+       "stance": 1,
+       "source": {
+        "title": "Marquita Bradshaw campaign site: Bradshaw would help first-time homebuyers",
+        "url": "https://www.marquitabradshaw.com/priorities",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Marquita Bradshaw campaign site: Bradshaw says health care is a right",
+        "url": "https://www.marquitabradshaw.com/priorities",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Healthcare should serve people, not profits."
+       }
+      },
+      "hea-06": {
+       "stance": 1,
+       "source": {
+        "title": "Marquita Bradshaw campaign site: Bradshaw would expand mental health services",
+        "url": "https://www.marquitabradshaw.com/priorities",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-04": {
+       "stance": 2,
+       "source": {
+        "title": "Marquita Bradshaw campaign site: Bradshaw supports independent redistricting to end gerrymandering",
+        "url": "https://www.marquitabradshaw.com/priorities",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hou-09": {
+       "stance": 2,
+       "source": {
+        "title": "Marquita Bradshaw campaign site: Bradshaw wants affordable high-speed internet for every Tennessean, especially rural areas",
+        "url": "https://www.marquitabradshaw.com/priorities",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Marquita Bradshaw campaign site: Bradshaw promotes clean energy",
+        "url": "https://www.marquitabradshaw.com/priorities",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "Marquita Bradshaw campaign site: Bradshaw would reduce pollution",
+        "url": "https://www.marquitabradshaw.com/priorities",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "Every community deserves clean air, safe water"
+       }
+      }
+     },
+     "bio": "Memphis environmental activist and the 2020 Democratic Senate nominee."
+    }
+   ]
+  },
+  {
+   "id": "WV-SEN",
+   "candidates": [
+    {
+     "id": "WV-SEN:capito",
+     "name": "Shelley Moore Capito",
+     "party": "R",
+     "bio": "U.S. senator from West Virginia since 2015, after 14 years in the U.S. House.",
+     "positions": {
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Capito voted Yea",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Capito voted Nay",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Capito voted Nay",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Capito voted Nay",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Capito voted Yea",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Capito voted Yea",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending: Capito voted Yea",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-13": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Capito voted Yea",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 815 (2024), military aid for Ukraine, Israel and Taiwan: Capito voted Yea",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Capito voted Yea",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Capito voted Nay",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.J.Res. 30 (2023), overturning a rule letting retirement plans weigh climate risk: Capito voted Yea",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "def-03": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the PACT Act (2022), expanding health care for veterans exposed to toxic burn pits: Capito voted Yea",
+        "url": "https://ballotpedia.org/Shelley_Moore_Capito",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "AL-GOV",
+   "candidates": [
+    {
+     "id": "AL-GOV:tuberville",
+     "name": "Tommy Tuberville",
+     "party": "R",
+     "bio": "U.S. senator from Alabama since 2021 and a former college football coach.",
+     "positions": {
+      "soc-10": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Tuberville voted Nay",
+        "url": "https://ballotpedia.org/Tommy_Tuberville",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Tuberville voted Nay",
+        "url": "https://ballotpedia.org/Tommy_Tuberville",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Tuberville voted Nay",
+        "url": "https://ballotpedia.org/Tommy_Tuberville",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Tuberville voted Nay",
+        "url": "https://ballotpedia.org/Tommy_Tuberville",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Tuberville voted Nay",
+        "url": "https://ballotpedia.org/Tommy_Tuberville",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Tuberville voted Nay",
+        "url": "https://ballotpedia.org/Tommy_Tuberville",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending: Tuberville voted Yea",
+        "url": "https://ballotpedia.org/Tommy_Tuberville",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Tuberville voted Yea",
+        "url": "https://ballotpedia.org/Tommy_Tuberville",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Tuberville voted Nay",
+        "url": "https://ballotpedia.org/Tommy_Tuberville",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.J.Res. 30 (2023), overturning a rule letting retirement plans weigh climate risk: Tuberville voted Yea",
+        "url": "https://ballotpedia.org/Tommy_Tuberville",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "AL-GOV:jones",
+     "name": "Doug Jones",
+     "party": "D",
+     "positions": {
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "Alabama Reflector, July 27, 2026: Jones would expand Medicaid one way or another",
+        "url": "https://alabamareflector.com/2026/07/27/doug-jones-calls-for-affordability-measures-government-reforms-in-policy-speech/",
+        "date": "2026-07-27",
+        "quote": "Medicaid expansion is not a handout, it's a hand up"
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "Alabama Reflector, July 27, 2026: Jones would end Alabama's taxes on groceries, tips and overtime",
+        "url": "https://alabamareflector.com/2026/07/27/doug-jones-calls-for-affordability-measures-government-reforms-in-policy-speech/",
+        "date": "2026-07-27"
+       }
+      },
+      "gov-10": {
+       "stance": 2,
+       "source": {
+        "title": "Alabama Reflector, July 27, 2026: Jones would create a citizen ballot initiative process",
+        "url": "https://alabamareflector.com/2026/07/27/doug-jones-calls-for-affordability-measures-government-reforms-in-policy-speech/",
+        "date": "2026-07-27"
+       }
+      },
+      "gov-06": {
+       "stance": 2,
+       "source": {
+        "title": "Alabama Reflector, July 27, 2026: Jones would bring early voting to Alabama",
+        "url": "https://alabamareflector.com/2026/07/27/doug-jones-calls-for-affordability-measures-government-reforms-in-policy-speech/",
+        "date": "2026-07-27"
+       }
+      },
+      "eco-11": {
+       "stance": 1,
+       "source": {
+        "title": "Alabama Reflector, July 27, 2026: Jones will fight for paid family leave",
+        "url": "https://alabamareflector.com/2026/07/27/doug-jones-calls-for-affordability-measures-government-reforms-in-policy-speech/",
+        "date": "2026-07-27"
+       }
+      },
+      "soc-07": {
+       "stance": 1,
+       "source": {
+        "title": "Alabama Reflector, July 27, 2026: Jones would invest in affordable child care",
+        "url": "https://alabamareflector.com/2026/07/27/doug-jones-calls-for-affordability-measures-government-reforms-in-policy-speech/",
+        "date": "2026-07-27"
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "Alabama Reflector, July 27, 2026: Jones would invest more in housing",
+        "url": "https://alabamareflector.com/2026/07/27/doug-jones-calls-for-affordability-measures-government-reforms-in-policy-speech/",
+        "date": "2026-07-27"
+       }
+      }
+     },
+     "bio": "U.S. senator from Alabama from 2018 to 2021 and a former U.S. attorney."
+    }
+   ]
+  },
+  {
+   "id": "TN-GOV",
+   "candidates": [
+    {
+     "id": "TN-GOV:blackburn",
+     "name": "Marsha Blackburn",
+     "party": "R",
+     "bio": "U.S. senator from Tennessee since 2019, after 16 years in the U.S. House.",
+     "positions": {
+      "soc-10": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Respect for Marriage Act (H.R. 8404, 2022): Blackburn voted Nay",
+        "url": "https://ballotpedia.org/Marsha_Blackburn",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Women's Health Protection Act (H.R. 3755, 2022), to protect abortion access in federal law: Blackburn voted Nay",
+        "url": "https://ballotpedia.org/Marsha_Blackburn",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Blackburn voted Nay",
+        "url": "https://ballotpedia.org/Marsha_Blackburn",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Inflation Reduction Act (H.R. 5376, 2022), which let Medicare negotiate drug prices and extended ACA premium subsidies: Blackburn voted Nay",
+        "url": "https://ballotpedia.org/Marsha_Blackburn",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "eco-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Infrastructure Investment and Jobs Act (H.R. 3684, 2021): Blackburn voted Nay",
+        "url": "https://ballotpedia.org/Marsha_Blackburn",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "agr-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the CHIPS and Science Act (H.R. 4346, 2022), funding domestic semiconductor manufacturing: Blackburn voted Nay",
+        "url": "https://ballotpedia.org/Marsha_Blackburn",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending: Blackburn voted Yea",
+        "url": "https://ballotpedia.org/Marsha_Blackburn",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Laken Riley Act (S. 5, 2025), requiring detention of immigrants charged with theft or violent crimes: Blackburn voted Yea",
+        "url": "https://ballotpedia.org/Marsha_Blackburn",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on the Freedom to Vote: John R. Lewis Act (2022), expanding voting access: Blackburn voted Nay",
+        "url": "https://ballotpedia.org/Marsha_Blackburn",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "Ballotpedia key votes, U.S. Senate vote on H.J.Res. 30 (2023), overturning a rule letting retirement plans weigh climate risk: Blackburn voted Yea",
+        "url": "https://ballotpedia.org/Marsha_Blackburn",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "TN-GOV:green",
+     "name": "Jerri Green",
+     "party": "D",
+     "positions": {
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "NewsChannel 5 interview: Green would end Tennessee's grocery tax",
+        "url": "https://www.newschannel5.com/plus/inside-politics/election-2026-tn-governors-race-jerri-green",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "We need to end the grocery tax"
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "NewsChannel 5 interview: Green opposes school vouchers",
+        "url": "https://www.newschannel5.com/plus/inside-politics/election-2026-tn-governors-race-jerri-green",
+        "date": "2026-10-25",
+        "accessed": true,
+        "quote": "vouchers are failing our public school students"
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "NewsChannel 5 interview: Green would fully fund public schools",
+        "url": "https://www.newschannel5.com/plus/inside-politics/election-2026-tn-governors-race-jerri-green",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      },
+      "gov-11": {
+       "stance": 1,
+       "source": {
+        "title": "NewsChannel 5 interview: Green says she takes no money from dark money donors or special interests",
+        "url": "https://www.newschannel5.com/plus/inside-politics/election-2026-tn-governors-race-jerri-green",
+        "date": "2026-10-25",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}
