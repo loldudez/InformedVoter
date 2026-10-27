@@ -81,12 +81,6 @@ senate = {
          "results": {"LA-SEN:letlow": 41, "LA-SEN:davis": 37}, "url": "https://www.wwno.org/2026-08-19/poll-shows-4-point-difference-between-letlow-and-davis-for-u-s-senate-1-in-5-undecided",
          "note": "22% undecided. A campaign’s own poll; treat with caution."},
     ],
-    "earlyVote": {
-        "ballots": 115000, "asOf": "2026-10-20", "label": "first day", "pctOfTurnout": round(115000 / 1383000, 3),
-        "byParty": None, "vs2022": None,
-        "note": "About 115,000 people voted on the first day of early voting. Black voters made up almost 32% of them, a larger share than in almost any election since 2008. Early voting runs through Oct. 27.",
-        "source": {"title": "Louisiana Illuminator, Oct. 22, 2026 (Secretary of State data)", "url": "https://lailluminator.com/2026/10/22/black-voter-turnout-higher-than-normal-for-louisianas-first-day-of-early-voting/"},
-    },
     "candidates": [
         {
             "id": "LA-SEN:letlow", "aliases": ["LA-SEN:R"], "name": "Julia Letlow", "party": "R", "incumbent": False,

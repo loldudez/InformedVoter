@@ -85,11 +85,16 @@ def main(path):
                 if race.get("level") == "state" and qid.startswith("def-"):
                     warnings.append(f"{cid} {qid}: foreign-policy question on a state race is never asked")
             fin = c.get("finance")
-            if fin and not (finite(fin.get("total")) and fin["total"] >= 0):
+            if fin and fin.get("total") is None and fin.get("note"):
+                # A news report's figures, kept as a note with their period instead of a total.
+                if not str(fin.get("url", "")).startswith("https://"):
+                    errors.append(f"{cid}: a fundraising note needs an https source link")
+            elif fin and not (finite(fin.get("total")) and fin["total"] >= 0):
                 errors.append(f"{cid}: fundraising total is not a number")
             elif fin and fin.get("parts"):
                 parts = fin["parts"]
-                if not all(finite(v) and v >= 0 for v in parts.values()):
+                # "other" nets loans, offsets and other receipts, which a filing can report as negative.
+                if not all(finite(v) and (v >= 0 or k == "other") for k, v in parts.items()):
                     errors.append(f"{cid}: a fundraising source is negative or not a number")
                 elif abs(sum(parts.values()) - fin["total"]) > max(10, fin["total"] * 0.001):
                     warnings.append(f"{cid}: fundraising sources add up to {sum(parts.values()):,.0f}, not the total {fin['total']:,.0f}")

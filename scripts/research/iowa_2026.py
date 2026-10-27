@@ -78,6 +78,14 @@ senate = {
 
 governor = {
     "id": "IA-GOV",
+    # Wikipedia still lists independent Sondra Wilson; she and the Libertarian ticket
+    # were kept off the ballot, so the researched list is the ballot.
+    "candidatesOnly": True,
+    "notes": [
+        {"text": "Only Sand and Lahn are on the ballot. A judge ruled on Aug. 27 that the Libertarian Party did not correctly replace its lieutenant governor nominee, which keeps Nicholas Gluba’s ticket off.",
+         "source": "KCRG / Iowa Capital Dispatch, Aug. 27, 2026", "url": "https://www.kcrg.com/2026/08/28/judge-rules-iowa-libertarians-did-not-correctly-replace-3rd-district-lieutenant-governor-candidates/"},
+        {"text": "Independent Sondra Wilson, still listed by Wikipedia, says on her campaign site that she was kept off the ballot.",
+         "source": "Sondra Wilson campaign site", "url": "https://wildwillpower.org/"}],
     "candidates": [
         {"id": "IA-GOV:sand", "name": "Rob Sand", "party": "D",
          "bio": "Iowa state auditor since 2019.",

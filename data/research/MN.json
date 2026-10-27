@@ -456,6 +456,46 @@
         "url": "https://www.kaxe.org/elections/2026-10-20/here-are-4-takeaways-from-the-first-demuth-klobuchar-debate",
         "date": "2026-10-20"
        }
+      },
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "Minnesota House roll call, 2023-01-19, on H.F. 1, the Protect Reproductive Options Act, writing abortion rights into state law (passage): Demuth voted Nay",
+        "url": "https://www.house.mn.gov/votes/Details?BillNumber=HF0001&SessionKey=300",
+        "date": "2023-01-19"
+       }
+      },
+      "eco-11": {
+       "stance": -1,
+       "source": {
+        "title": "Minnesota House roll call, 2023-05-17, on H.F. 2, creating a state paid family and medical leave program (final passage): Demuth voted Nay",
+        "url": "https://www.house.mn.gov/votes/Details?BillNumber=HF0002&SessionKey=300",
+        "date": "2023-05-17"
+       }
+      },
+      "soc-05": {
+       "stance": -1,
+       "source": {
+        "title": "Minnesota House roll call, 2023-05-18, on H.F. 100, legalizing recreational marijuana for adults (final passage): Demuth voted Nay",
+        "url": "https://www.house.mn.gov/votes/Details?BillNumber=HF0100&SessionKey=300",
+        "date": "2023-05-18"
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "Minnesota House roll call, 2023-01-26, on H.F. 7, requiring utilities to use 100% carbon-free electricity by 2040 (passage): Demuth voted Nay",
+        "url": "https://www.house.mn.gov/votes/Details?BillNumber=HF0007&SessionKey=300",
+        "date": "2023-01-26"
+       }
+      },
+      "gov-06": {
+       "stance": -1,
+       "source": {
+        "title": "Minnesota House roll call, 2023-04-13, on H.F. 3, the Democracy for the People Act, with automatic voter registration and a permanent mail-ballot list (passage): Demuth voted Nay",
+        "url": "https://www.house.mn.gov/votes/Details?BillNumber=HF0003&SessionKey=300",
+        "date": "2023-04-13"
+       }
       }
      }
     }

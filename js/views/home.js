@@ -5,6 +5,9 @@ import { daysToElection } from '../model/forecast.js';
 import { drawMap, ratingColor, ratingLegendHTML } from '../lib/map.js';
 import { cssVar, sparkline } from '../lib/charts.js';
 import { raceRow, lastName, demoChip } from '../components/race.js';
+import { icon } from '../icons.js';
+import { store } from '../store.js';
+import { QUESTIONS } from '../data/questions.js';
 
 let statesGeo = null;
 let mode = 'senate';
@@ -54,6 +57,17 @@ function controlTile(label, key, o, unit, sum) {
 
 const chamberUp = (c) => (c.up === 'all' ? 'all seats' : c.up === 'partial' ? 'some seats' : 'no election');
 
+// The way into the questionnaire, first thing on the page: how long it takes, that
+// it can be left and resumed, and that matches firm up as more is answered.
+function quizCta() {
+  const touched = Object.keys(store.get().answers).length;
+  const total = QUESTIONS.length;
+  return html`<section class="quiz-cta">
+    <a class="btn btn-primary btn-cta" href="#/views">${icon.check()} Find the best candidate that matches your views</a>
+    <p class="small muted">${touched > 0 && touched < total ? html`You’ve answered ${touched} of ${total} questions; this picks up where you left off. ` : ''}Takes less than 20 minutes. You can stop at any time and come back later, but your matches may not be fully accurate until you’ve answered every question.</p>
+  </section>`;
+}
+
 function tooltip(f) {
   const st = f.id;
   const s = STATE_BY_ABBR[st];
@@ -89,6 +103,7 @@ export const home = {
       .sort((a, b) => Math.abs(a.f.pLead - 0.5) - Math.abs(b.f.pLead - 0.5)).slice(0, 8);
     const days = daysToElection();
     return html`<div class="wrap page stack-lg">
+      ${quizCta()}
       <section class="hero">
         <span class="label-pill"><span class="dots">•••</span> 2026 midterm elections · ${days} days to go <span class="dots">•••</span></span>
         <h1>Every race on the <span class="grad-text">2026 ballot</span>, state by state.</h1>

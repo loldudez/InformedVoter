@@ -247,7 +247,9 @@ export const about = {
     <div class="grid grid-2">
       <div class="card"><h3>${icon.check()} Real data</h3><ul class="small muted" style="padding-left:18px">
         ${realRaceCount ? html`<li><b>Every U.S. Senate, U.S. House and governor race</b>, refreshed every 8 hours: the candidates on the ballot, forecasters’ ratings (Cook, Sabato, Inside Elections and up to eight more), polls with a link to each poll’s source, and fundraising reports.</li>
-        <li>${researchedCount} race${researchedCount === 1 ? '' : 's'} also ${researchedCount === 1 ? 'has' : 'have'} hand-researched bios and issue positions, each linked to the candidate’s own words or votes (tagged <span class="real-chip">Sourced</span>).</li>` : ''}
+        <li>${researchedCount} race${researchedCount === 1 ? '' : 's'} also ${researchedCount === 1 ? 'has' : 'have'} hand-researched bios and issue positions, each linked to the candidate’s own words or votes (tagged <span class="real-chip">Sourced</span>).</li>
+        <li><b>State legislative races</b>: every seat on the ballot, who holds it, the district’s 2024 presidential margin and the November candidates where Wikipedia’s 2026 chamber page lists them, refreshed every 8 hours. They get no win odds: almost none are polled and few are rated.</li>
+        <li>Early voting: ballots cast so far in each state, and in House districts where the count is complete, from the University of Florida Election Lab’s tracker (Michael McDonald).</li>` : ''}
         <li>District maps: U.S. Census Bureau 2026 TIGER/Line boundaries (120th Congress districts and 2026 state legislative districts), clipped to the shoreline.</li>
         <li>Address lookup: the Census Bureau geocoder, which already reflects mid-decade redistricting.</li>
         <li>How-to-vote links: vote.gov, each state’s official election office, and NASS. Every link checked October 2026.</li>
@@ -255,10 +257,9 @@ export const about = {
         <li>Inflation: BLS price data and Federal Reserve / Freddie Mac rates via FRED.</li>
         <li>Parties: summaries of each party’s own platform, with leadership verified in October 2026.</li>
       </ul></div>
-      <div class="card"><h3>${icon.info()} Still demo <span class="demo-chip">Demo</span></h3><ul class="small muted" style="padding-left:18px">
-        ${realRaceCount ? html`<li>State legislative races (state senate, state house, Nebraska’s Legislature): there is no free nationwide source for their candidates and polls, so their candidates, polls and money are fictional.</li>
-        <li>Issue positions for races not yet researched are left blank rather than guessed, so those races can’t be matched against your views yet.</li>
-        <li>Early-vote counts appear only where they were researched by hand.</li>` : html`<li>Candidate names, bios, polls, fundraising and positions are fictional.</li>`}
+      <div class="card"><h3>${icon.info()} ${realRaceCount ? 'Missing, not invented' : html`Still demo <span class="demo-chip">Demo</span>`}</h3><ul class="small muted" style="padding-left:18px">
+        ${realRaceCount ? html`<li>Every race now uses real data. What isn’t known yet is shown as missing, never made up: state legislative candidates a chamber’s page doesn’t list yet, and their positions and money, which aren’t loaded.</li>
+        <li>Issue positions for races not yet researched are left blank rather than guessed, so those races can’t be matched against your views yet.</li>` : html`<li>Candidate names, bios, polls, fundraising and positions are fictional.</li>`}
       </ul><p class="small faint" style="margin:0">Everything demo carries a yellow DEMO tag. See DATA.md in the project for how real data is added.</p></div>
     </div>
     ${statusCard()}

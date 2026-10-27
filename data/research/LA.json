@@ -79,19 +79,6 @@
      "note": "22% undecided. A campaign’s own poll; treat with caution."
     }
    ],
-   "earlyVote": {
-    "ballots": 115000,
-    "asOf": "2026-10-20",
-    "label": "first day",
-    "pctOfTurnout": 0.083,
-    "byParty": null,
-    "vs2022": null,
-    "note": "About 115,000 people voted on the first day of early voting. Black voters made up almost 32% of them, a larger share than in almost any election since 2008. Early voting runs through Oct. 27.",
-    "source": {
-     "title": "Louisiana Illuminator, Oct. 22, 2026 (Secretary of State data)",
-     "url": "https://lailluminator.com/2026/10/22/black-voter-turnout-higher-than-normal-for-louisianas-first-day-of-early-voting/"
-    }
-   },
    "candidates": [
     {
      "id": "LA-SEN:letlow",

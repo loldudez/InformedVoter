@@ -445,6 +445,19 @@
   },
   {
    "id": "NH-GOV",
+   "candidatesOnly": true,
+   "notes": [
+    {
+     "text": "Jon Kiper, still listed by Wikipedia, ended his independent campaign in August after falling short of the signatures needed for the ballot.",
+     "source": "Citizens Count",
+     "url": "https://www.citizenscount.org/candidate/jonathan-adam-kiper"
+    },
+    {
+     "text": "Libertarian Stephen Villee qualified for the ballot by petition (WMUR, Oct. 20).",
+     "source": "Citizens Count",
+     "url": "https://www.citizenscount.org/candidate/stephen-villee"
+    }
+   ],
    "candidates": [
     {
      "id": "NH-GOV:ayotte",
@@ -524,6 +537,23 @@
         "url": "https://newhampshirebulletin.com/2026/04/06/ayotte-signs-bill-barring-use-of-student-ids-to-vote/",
         "date": "2026-04-06"
        }
+      },
+      "soc-11": {
+       "stance": -2,
+       "source": {
+        "title": "NHPR via WBUR, Aug. 4, 2025: Ayotte signed HB 377, barring puberty blockers and hormone treatment for gender transition before 18 (Aug. 2025)",
+        "url": "https://www.wbur.org/news/2025/08/04/new-hampshire-trans-youth-health-care-puberty-blockers",
+        "date": "2025-08-04",
+        "quote": "these bills represent a balanced, bipartisan effort to protect children"
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "NHPR, May 23, 2025: Ayotte signed HB 511 and SB 62, requiring local police to cooperate with federal immigration enforcement (May 2025)",
+        "url": "https://www.nhpr.org/nh-news/2025-05-23/nh-new-law-requiring-local-cooperation-federal-immigration-enforcement",
+        "date": "2025-05-23"
+       }
       }
      }
     },
@@ -583,6 +613,113 @@
         "date": "2026-10-25",
         "accessed": true,
         "quote": "say no to ICE's human warehouse in Merrimack or anywhere else"
+       }
+      }
+     }
+    },
+    {
+     "id": "NH-GOV:villee",
+     "name": "Stephen Villee",
+     "party": "L",
+     "bio": "Hampton software developer with a math degree from Harvard; on the ballot as a Libertarian.",
+     "positions": {
+      "soc-12": {
+       "stance": -1,
+       "source": {
+        "title": "Citizens Count, Stephen Villee’s answers to its issue survey: Villee would let the anti-discrimination law allow separation by biological sex in bathrooms and locker rooms (2026)",
+        "url": "https://www.citizenscount.org/candidate/stephen-villee",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "Citizens Count, Stephen Villee’s answers to its issue survey: Villee opposes an income tax and bringing back the interest and dividends tax (2026)",
+        "url": "https://www.citizenscount.org/candidate/stephen-villee",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "eco-12": {
+       "stance": -1,
+       "source": {
+        "title": "Citizens Count, Stephen Villee’s answers to its issue survey: Villee opposes an income tax (2026)",
+        "url": "https://www.citizenscount.org/candidate/stephen-villee",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "Citizens Count, Stephen Villee’s answers to its issue survey: Villee wants the state to push towns to remove zoning barriers to housing (2026)",
+        "url": "https://www.citizenscount.org/candidate/stephen-villee",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "ene-02": {
+       "stance": 1,
+       "source": {
+        "title": "Citizens Count, Stephen Villee’s answers to its issue survey: Villee wants the state to encourage nuclear power (2026)",
+        "url": "https://www.citizenscount.org/candidate/stephen-villee",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-05": {
+       "stance": 2,
+       "source": {
+        "title": "Citizens Count, Stephen Villee’s answers to its issue survey: Villee supports legalizing recreational marijuana in each form asked (2026)",
+        "url": "https://www.citizenscount.org/candidate/stephen-villee",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": 0,
+       "source": {
+        "title": "Citizens Count, Stephen Villee’s answers to its issue survey: Villee answered Undecided on every abortion question, saying he would stay neutral (2026)",
+        "url": "https://www.citizenscount.org/candidate/stephen-villee",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-04": {
+       "stance": 0,
+       "source": {
+        "title": "Citizens Count, Stephen Villee’s answers to its issue survey: Villee answered Undecided on every abortion question, saying he would stay neutral (2026)",
+        "url": "https://www.citizenscount.org/candidate/stephen-villee",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-03": {
+       "stance": -1,
+       "source": {
+        "title": "Citizens Count, Stephen Villee’s answers to its issue survey: Villee opposed raising the minimum wage (2024)",
+        "url": "https://www.citizenscount.org/candidate/stephen-villee",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-07": {
+       "stance": -1,
+       "source": {
+        "title": "Citizens Count, Stephen Villee’s answers to its issue survey: Villee opposed more state money for child care providers (2024)",
+        "url": "https://www.citizenscount.org/candidate/stephen-villee",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "Citizens Count, Stephen Villee’s answers to its issue survey: Villee opposed more state action on climate change (2024)",
+        "url": "https://www.citizenscount.org/candidate/stephen-villee",
+        "date": "2026-10-26",
+        "accessed": true
        }
       }
      }

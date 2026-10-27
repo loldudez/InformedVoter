@@ -3288,6 +3288,15 @@
         "date": "2025-10-17",
         "quote": "School choice means, really, parental oversight of their child's education"
        }
+      },
+      "sta-10": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM town hall report, May 12, 2026: Hull would use tax incentives to attract employers",
+        "url": "https://sourcenm.com/2026/05/12/nm-gop-governor-candidate-gregg-hull-touts-experience-leading-growing-rio-rancho/",
+        "date": "2026-05-12",
+        "quote": "should use economic development tools, such as tax incentives and industrial revenue bonds"
+       }
       }
      }
     },
@@ -3549,6 +3558,44 @@
       }
      },
      "officialSite": "https://www.xavierbecerra2026.com/"
+    }
+   ]
+  },
+  {
+   "id": "CT-GOV",
+   "candidates": [
+    {
+     "id": "CT-GOV:fazio",
+     "name": "Ryan Fazio",
+     "positions": {
+      "ene-02": {
+       "stance": 1,
+       "source": {
+        "title": "NBC Connecticut, Feb. 2, 2026: Fazio would open energy-supply subsidies to nuclear",
+        "url": "https://www.nbcconnecticut.com/news/local/state-sen-fazio-unveils-energy-policy-as-republican-gubernatorial-candidates-battle/3695029/",
+        "date": "2026-02-02",
+        "quote": "He said he’d open up other subsidies, aimed at expanding energy supply, to allow support for natural gas and nuclear."
+       }
+      },
+      "ene-05": {
+       "stance": -1,
+       "source": {
+        "title": "NBC Connecticut, Feb. 2, 2026: Fazio would end some clean-energy subsidies",
+        "url": "https://www.nbcconnecticut.com/news/local/state-sen-fazio-unveils-energy-policy-as-republican-gubernatorial-candidates-battle/3695029/",
+        "date": "2026-02-02",
+        "quote": "He said he'd also eliminate some programs that subsidize clean energy initiatives, like electric vehicle charging stations."
+       }
+      },
+      "sta-10": {
+       "stance": -1,
+       "source": {
+        "title": "Connecticut Public (via NHPR), Oct. 14, 2026: Fazio opposes special tax breaks for data centers",
+        "url": "https://www.nhpr.org/2026-10-14/lamont-fazio-make-their-pitch-to-ct-voters-in-governors-race-from-electric-bills-to-data-centers",
+        "date": "2026-10-14",
+        "quote": "I don’t think that data centers or any other well-connected companies should get special tax benefits at the expense of middle-class families"
+       }
+      }
+     }
     }
    ]
   },

@@ -21,9 +21,11 @@ work: browsers block a page opened from disk from loading its own data files.
 
 | Real | Demo (fictional, tagged **DEMO** on screen) |
 |---|---|
-| **Every U.S. Senate, U.S. House and governor race**, refreshed every 8 hours: candidates on the ballot, forecasters' ratings, polls (each linked to its source), fundraising, forecasts and chamber control | State legislative races (no free nationwide source for their candidates and polls) |
-| Issue positions for every current U.S. House member on the ballot, from ten recorded House votes | Issue positions for candidates not yet researched are left blank, not invented |
-| Hand-researched races (tagged **SOURCED**): bios and positions with sources for every Senate and governor race on the 2026 ballot, plus Louisiana's six House districts; money by source from FEC reports for every Senate candidate and the competitive House races | A few minor-party and long-shot candidates have no documented positions yet; the other House candidates' money breakdown needs an FEC key |
+| **Every U.S. Senate, U.S. House and governor race**, refreshed every 8 hours: candidates on the ballot, forecasters' ratings, polls (each linked to its source), fundraising, early voting, forecasts and chamber control | Nothing in the races is fictional; what isn't known yet is shown as missing |
+| **Every state legislative seat on the 2026 ballot** (88 chambers), refreshed every 8 hours from Wikipedia's chamber pages: who holds it, the district's 2024 presidential margin, and the November candidates where the page lists them (about 3,400 of 5,600 districts). No win odds for these races | State legislative candidates' positions and money aren't loaded |
+| Early voting by state, and by House district where the count is complete, from the University of Florida Election Lab's tracker | |
+| Issue positions for every current U.S. House member on the ballot, from 39 recorded House votes (2021 to 2026, including war powers resolutions) | Issue positions for candidates not yet researched are left blank, not invented |
+| Hand-researched races (tagged **SOURCED**): bios and positions with sources for every Senate and governor race on the 2026 ballot, including 75 third-party and independent candidates from their campaign sites and newsroom voter guides, both main candidates in the 78 competitive House races (rated Toss-up, Tilt or Lean by any forecaster), Louisiana's six House districts, and House challengers in safer seats as they're researched; campaign website links for about 1,100 candidates; money by source from FEC reports for every Senate candidate and every House candidate with a 2026 report; governors' fundraising from state filings (Florida's broken down by source from the state's own database, with each major candidate's political committee), or the latest news report of them where no table exists | About 35 minor-party and independent Senate and governor candidates have no site or statement anywhere, and most House challengers in safer seats aren't researched yet; House candidates with no 2026 FEC report yet, and three governor candidates, show money as not loaded yet |
 | District maps: Census Bureau 2026 TIGER/Line (120th Congress + 2026 state legislative districts) | |
 | Address to district lookup (Census Bureau geocoder) | |
 | How-to-vote links (vote.gov, every state's election office, NASS), all checked Oct 2026 | |
@@ -40,14 +42,14 @@ automatic check from the last refresh.
 
 - **Intro screen**: choose a country. United States is live; UK, Canada and France are shown greyed out.
 - **Homepage map**: hover a state to preview it, click to open it. Color by Senate or governor forecast. Above it, Senate, House and governor control: chance of control, expected seats and the expected gain from today's totals, the 80% range, the betting market for comparison, and how the odds have moved.
-- **State page**: Federal / State toggle, then Senators / House Representatives (Nebraska shows its single-chamber Legislature). The governor's race appears whenever there is one. House and legislature views show the real district map; click a district for its race.
+- **State page**: Federal / State toggle, then Senators / House Representatives (Nebraska shows its single-chamber Legislature). The governor's race appears whenever there is one. House and legislature views show the real district map; click a district for its race. State legislative districts are colored by their 2024 presidential margin (or by the party holding the seat where a chamber's page has no margins), with no win odds.
 - **Race forecasts**: chance of winning, projected vote share and votes, 100 simulated elections, rating, 80% range and forecasters' ratings, plus tabs for polling (every poll as a dot, the average's change over 7 and 30 days, and a check against published averages), the trend since the first poll, early vote, money by source, and positions.
 - **Star** races (star icon) and **like** candidates (heart icon); both lists have their own pages showing weekly changes and funding mix.
 - **Close elections**: every race within 5 points, with daily trend charts.
 - **Major news**: real headlines, filterable by topic (gains, scandals, endorsements, turnout, money, debates), race and party.
 - **Inflation tracker**: 28 official series over 1 to 5 years.
 - **Parties and values**: platforms and top-down leadership, including groups like DSA, the Progressive Caucus and the Freedom Caucus.
-- **My profile**: US-flag avatar (changeable), **My views** (the 136-question questionnaire, one question per slide), **My location** (address with consent, matched by the Census Bureau).
+- **My profile**: US-flag avatar (changeable), **My views** (the 136-question questionnaire, one question per slide, with short definitions for harder terms on hover, focus or tap; the homepage's top button goes straight to it), **My location** (address with consent, matched by the Census Bureau).
 - **My elections**: the races on your ballot; match with My views or answer fresh for one election; a ranking, then Similarities (left), Differences (right) and Unclear (bottom) with sources.
 - **Donations**: official donation links for liked candidates (verified domains only).
 - **Donate to the site**: Cash App `$KoCai`.
@@ -81,11 +83,11 @@ schtasks /Delete /TN "\InformedVoter\Informed Voter refresh" /F
 ```
 
 **Fundraising:** the FEC's shared demo key allows only about ten requests an hour,
-so without your own key the site shows the full breakdown by source (small and
-large donors, PACs, party, self-funding, transfers) only for the candidates in
-`scripts/research/fec_2026.py`: every Senate candidate with money and the
-competitive House races, read from fec.gov on Oct. 25, 2026. Everyone else gets the
-FEC totals that Wikipedia's race pages cite, or nothing where those are missing. A
+so without your own key the full breakdown by source (small and large donors, PACs,
+party, self-funding, transfers) comes from the FEC summaries read on fec.gov on
+Oct. 25-26, 2026 (`scripts/research/fec_2026.py` and `fec_house_2026.py`): every
+Senate candidate with money and every House candidate with a 2026 report, through
+Oct. 14. Candidates with nothing to show get a note from an FEC search. A
 free personal key from <https://api.data.gov/signup/> unlocks full, self-updating FEC
 data for every candidate: set it as the Windows user environment variable
 `FEC_API_KEY` (or save it in `%USERPROFILE%\.informed-voter\fec_api_key`) and the next
@@ -112,13 +114,14 @@ js/model/     forecast.js (polling average, win probability, chamber simulation)
 js/lib/       map.js, charts.js, census.js (address lookup)
 js/views/     one file per page group
 data/races.json, control.json, status.json   every race, chamber control, refresh checks (generated)
+data/legislature/  state legislative races, one file per state (generated)
 data/research/  hand-researched overlays (generated by scripts/research/*.py)
 data/news.json, data/inflation.json, data/maps/   (generated)
 data/cache/   page and vote caches, refresh log (local only)
 scripts/      refresh_all.py, update_races.py, validate_races.py, update_news.py,
               update_inflation.py, build_maps.py, serve.py
 scripts/lib/  wikitables.py, elections.py (parsers), model.py (Python copy of the
-              forecast), house_votes.py, fec.py
+              forecast), house_votes.py, fec.py, early_vote.py, legislature.py
 scripts/research/  one script per researched state, plus common.py
 vendor/       d3 v7.9.0 (ISC licence)
 assets/fonts/ Inter, Bricolage Grotesque, JetBrains Mono (SIL Open Font Licence)

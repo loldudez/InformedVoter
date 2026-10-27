@@ -43,6 +43,7 @@ SB1_21 = bill("2021, 2nd special", "SB 1", "the election law that banned drive-t
 SB2_23 = bill("2023, 2nd special", "SB 2", "property tax relief through the school finance system", "2023-07-22")
 SB2_25 = bill("2025", "SB 2", "creating an education savings account (school voucher) program", "2025-05-03")
 HB2_25 = bill("2025", "HB 2", "public school finance", "2025-06-20")
+SB15 = bill("2023", "SB 15", "requiring college athletes to compete on teams matching their biological sex", "2023-06-18")
 KSAT = source("KSAT: Greg Abbott, Gina Hinojosa offer competing visions for Texas in governor’s race",
               "https://www.ksat.com/news/local/2026/10/20/greg-abbott-gina-hinojosa-offer-competing-visions-for-texas-in-governors-race/", "2026-10-19")
 GH_SCHOOLS = source("Gina Hinojosa campaign site, “Save Texas Public Schools”", "https://ginafortexas.com/priority/save-texas-public-schools/", TODAY)
@@ -125,7 +126,8 @@ governor = {
              ("gov-06", -1, SB1_21, None),
              ("sta-04", 2, SB2_23, None),
              ("edu-06", 2, SB2_25, None),
-             ("sta-02", 1, HB2_25, None))},
+             ("sta-02", 1, HB2_25, None),
+             ("soc-12", -1, SB15, None))},
         {"id": "TX-GOV:hinojosa", "name": "Gina Hinojosa", "party": "D",
          "bio": "State representative from Austin since 2017 and former Austin school board president.",
          "officialSite": "https://ginafortexas.com/", "donateUrl": "https://secure.actblue.com/donate/web_ms_gh",

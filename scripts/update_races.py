@@ -1,5 +1,5 @@
 """Refresh every 2026 U.S. Senate, governor and U.S. House race and recompute the
-forecasts and chamber control.
+forecasts and chamber control; also rebuild the state legislative races.
 
     py scripts/update_races.py
 
@@ -12,6 +12,10 @@ Sources
   on the ballot, the forecasters' ratings, each race's polls (with the poll's own
   citation), fundraising tables, and the current party composition.
 - The FEC API for federal fundraising (see scripts/lib/fec.py).
+- The UF Election Lab's early-vote tracker for ballots cast before Election Day
+  (see scripts/lib/early_vote.py).
+- Wikipedia's 2026 state legislative chamber pages for every legislative seat on the
+  ballot, written to data/legislature/ST.json (see scripts/lib/legislature.py).
 - Polymarket's chamber-control markets, as a cross-check only. They never feed
   the forecast.
 - Hand-researched details (bios, positions, curated polls, early vote) in
@@ -32,9 +36,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 
+import early_vote  # noqa: E402
 import elections as el  # noqa: E402
 import fec  # noqa: E402
 import house_votes  # noqa: E402
+import legislature  # noqa: E402
 import model  # noqa: E402
 import wikitables as wt  # noqa: E402
 
@@ -281,6 +287,23 @@ def overall_rows(html_text, sec, key_head):
     return out
 
 
+def merge_member_rows(first, second):
+    """Redistricting can put two sitting members' seats in one new district, and the
+    House page then gives that district a row per member, sharing one candidates
+    cell (Texas 25: Roger Williams, then Marc Veasey). Keeping only the last row
+    dropped Williams as the incumbent and called the seat Democratic. Every member
+    running here stays flagged, the seat is held by the party of the first member
+    running (else the first row's), and every member's article is kept for matching
+    their recorded votes."""
+    running = [r for r in (first, second) if not r["open"]]
+    keep = running[0] if running else first
+    flagged = {c["id"] for r in (first, second) for c in r["candidates"] if c.get("incumbent")}
+    for c in first["candidates"]:
+        c["incumbent"] = c["id"] in flagged
+    return dict(keep, candidates=first["candidates"], open=not running,
+                memberWikis=first["memberWikis"] + [w for w in second["memberWikis"] if w not in first["memberWikis"]])
+
+
 def house_races(pages, status, map_index):
     races = {}
     h = pages.html(PAGES["house"])
@@ -327,18 +350,19 @@ def house_races(pages, status, map_index):
                 if held not in ("D", "R", "I"):
                     held = None
                 n_cd = map_index.get(st, {}).get("cd", 0)
+                member_wiki = None if vacant or c_member is None else next(("https://en.wikipedia.org" + l["href"] for l in row[c_member]["links"] if l["href"].startswith("/wiki/") and ":" not in l["href"]), None)
                 race = {
                     "id": rid, "state": st, "office": "house", "level": "federal", "district": code,
                     "districtName": "Delegate (at large)" if st == "DC" else ("At-large district" if code == "00" else f"District {int(code)}"),
                     "statewide": n_cd == 1, "special": False, "held": held, "incumbentName": None if vacant else member,
                     "open": not inc_running, "statusText": status_text,
-                    "incumbentWiki": None if vacant or c_member is None else next(("https://en.wikipedia.org" + l["href"] for l in row[c_member]["links"] if l["href"].startswith("/wiki/") and ":" not in l["href"]), None),
+                    "incumbentWiki": member_wiki, "memberWikis": [member_wiki] if member_wiki else [],
                     "pvi": el.parse_pvi(wt.text(row[c_pvi])) if c_pvi is not None else None,
                     "candidates": people,
                 }
                 race.update(FORMATS.get((st, "house"), {}))
                 race["rcv"] = (st, "house") in RCV
-                races[rid] = race
+                races[rid] = merge_member_rows(races[rid], race) if rid in races else race
     # Ratings for competitive seats.
     rh = pages.html(PAGES["ratings"])
     rated = el.ratings_table(rh, "District")
@@ -413,6 +437,19 @@ def attach_page_data(race, html_text, refs, status, scope_title="General electio
         race["finalPolls"] = el.find_rcv_final(general, refs, race["candidates"]) or \
             (el.find_rcv_final(html_text, refs, race["candidates"]) if general is not html_text else [])
     return fund
+
+
+def attach_sites(race_list, sites):
+    """Official campaign websites from a race page's External links, for candidates
+    whose name (and major party, where given) match without doubt. A researched
+    officialSite in an overlay still wins. Returns how many were attached."""
+    n = 0
+    for name, party, url in sites:
+        hits = [c for r in race_list for c in [el.match_candidate(name, r["candidates"], party if party in ("D", "R") else None)] if c]
+        if len(hits) == 1 and not hits[0].get("officialSite"):
+            hits[0]["officialSite"] = url
+            n += 1
+    return n
 
 
 def district_chunks(html_text, n_cd):
@@ -516,10 +553,16 @@ def merge_overlay(race, ov, status):
             c["incumbent"] = oc["incumbent"]
         if oc.get("finance"):
             auto, of = c.get("finance"), oc["finance"]
+            # A filed $0 has its coverage dates; a bare $0 (Wikipedia lists candidates who
+            # have filed nothing that way) is no figure at all. Same rule as hasFigures in world.js.
+            has_figures = bool(auto and auto.get("total") is not None and (auto["total"] > 0 or auto.get("from")))
             # The same report with its breakdown (Wikipedia dates a whole table, the FEC
             # dates each candidate's last report, so equal totals mean equal reports).
             same_report = bool(auto and auto.get("total") == of.get("total") and of.get("parts") and not auto.get("parts"))
-            if not auto or not auto.get("total") or (of.get("asOf") or "") >= (auto.get("asOf") or "") or same_report:
+            if of.get("total") is None:
+                if not has_figures:  # a researched note stands in only until figures arrive
+                    c["finance"] = of
+            elif not has_figures or (of.get("asOf") or "") >= (auto.get("asOf") or "") or same_report:
                 c["finance"] = of
     if ov.get("candidatesOnly"):
         # The researched list is the qualified list: drop anyone else the automatic
@@ -533,6 +576,8 @@ def merge_overlay(race, ov, status):
                 p["results"].pop(c["id"], None)
     for f in OVERLAY_FIELDS:
         if f in ov:
+            if f == "earlyVote" and ((race.get(f) or {}).get("asOf") or "") > (ov[f].get("asOf") or ""):
+                continue  # the automatic early-vote feed is newer than the researched figure
             race[f] = ov[f]
     if not race.get("ratings") and ov.get("ratings"):
         race["ratings"], race["ratingsSource"] = ov["ratings"], ov.get("ratingsSource")
@@ -546,7 +591,9 @@ def merge_overlay(race, ov, status):
         else:
             polls.append(op)
     race["polls"] = sorted(polls, key=lambda p: p["end"], reverse=True)
-    if not ov.get("financeOnly"):  # money alone doesn't make a race researched (matching needs positions)
+    # Money alone doesn't make a race researched (matching needs positions), nor do
+    # positions for only some candidates (`partial`, such as one challenger's).
+    if not ov.get("financeOnly") and not ov.get("partial"):
         race["research"] = ov.get("researchNote", True)
 
 
@@ -570,9 +617,15 @@ def combine_overlays(a, b):
     out["candidates"] = list(cands.values())
     if a.get("notes") or b.get("notes"):
         out["notes"] = (a.get("notes") or []) + (b.get("notes") or [])
+    # Money alone doesn't make a race researched, nor do positions for only some of
+    # its candidates (`partial`); the pair does if either file does.
+    marks = lambda o: not o.get("financeOnly") and not o.get("partial")  # noqa: E731
     out.pop("financeOnly", None)
+    out.pop("partial", None)
     if a.get("financeOnly") and b.get("financeOnly"):
         out["financeOnly"] = True
+    elif not (marks(a) or marks(b)):
+        out["partial"] = True
     return out
 
 
@@ -603,7 +656,7 @@ def attach_house_votes(races, status):
     except Exception as e:
         status.warn(f"House roll calls unavailable: {e}")
         return 0
-    seats = {r["incumbentWiki"]: r for r in races.values() if r["office"] == "house" and r.get("incumbentWiki")}
+    seats = {w: r for r in races.values() if r["office"] == "house" for w in r.get("memberWikis") or []}
     n = 0
     for race in races.values():
         for c in race["candidates"]:
@@ -664,6 +717,7 @@ def main():
 
     log("Race pages")
     finance_auto = {}
+    sites = 0
     titles = [r["page"] for r in races.values() if r.get("page")]
     titles += list(state_pages.values())
     pages.prefetch(titles)
@@ -678,12 +732,14 @@ def main():
         fund = attach_page_data(race, h, refs, status)
         finance_auto.update(fund)
         race["sources"] = [{"title": f"Wikipedia: {pages.revs[race['page']]['title']}", "url": pages.url(race["page"])}]
+        sites += attach_sites([race], el.campaign_sites(h))
     for st, title in sorted(state_pages.items()):
         h = pages.html(title)
         if not h:
             status.warn(f"House page {title} missing")
             continue
         refs = wt.references(h)
+        sites += attach_sites([r for r in races.values() if r["state"] == st and r["office"] == "house"], el.campaign_sites(h))
         chunks = district_chunks(h, map_index.get(st, {}).get("cd", 0))
         for code, chunk in chunks.items():
             race = races.get(f"{st}-H-{code}")
@@ -692,6 +748,9 @@ def main():
             fund = attach_page_data(race, chunk, refs, status)
             finance_auto.update(fund)
             race["sources"] = [{"title": f"Wikipedia: {pages.revs[title]['title']}", "url": pages.url(title) + (f"#District_{int(code)}" if code != "00" else "")}]
+
+    status.check("campaign-sites", "Campaign websites found", sites > 0,
+                 f"{sites} candidates linked to the official campaign sites their Wikipedia race page lists")
 
     log("FEC")
     fec_rows, fec_info = fec.load()
@@ -726,6 +785,22 @@ def main():
     log("House votes")
     voted = attach_house_votes(races, status)
 
+    log("Early vote")
+    ev_states, ev_districts, ev_info = early_vote.load({st: v.get("cd", 0) for st, v in map_index.items()})
+    status.check("early-vote", "Early-vote returns found", bool(ev_info.get("states")),
+                 (f"{ev_info['states']} states and {ev_info['districts']} House districts from the UF Election Lab, latest {ev_info['latest']}"
+                  + (f"; district files left out as incomplete: {', '.join(ev_info['partial'])}" if ev_info.get("partial") else ""))
+                 if ev_info.get("ok") else ev_info.get("reason"))
+
+    log("State legislatures")
+    try:
+        leg = legislature.build(votes24, log=log)
+        status.check("legislatures", "State legislative races found on Wikipedia", leg["districts"] > 0,
+                     f"{leg['districts']} districts in {leg['chambers']} chambers, {leg['withCandidates']} with candidates listed"
+                     + (f"; no district list for {', '.join(leg['missing'])}, left to the demo set" if leg["missing"] else ""))
+    except Exception as e:  # noqa: BLE001  a bad chamber page mustn't stop the federal refresh
+        status.check("legislatures", "State legislative races found on Wikipedia", False, f"failed: {e}")
+
     log("Priors and overlays")
     overlays = load_overlays(status)
     for rid, race in races.items():
@@ -740,6 +815,9 @@ def main():
         prominence(race, {c["id"]: c.get("finance") for c in race["candidates"]})
         set_prior(race, gmargin)
         race["turnout"] = projected_turnout(race, votes24, states, map_index)
+        ev = ev_districts.get(rid) or (ev_states.get(race["state"]) if race["statewide"] else None)
+        if ev:
+            race["earlyVote"] = {**ev, "pctOfTurnout": round(ev["ballots"] / race["turnout"], 3) if race["turnout"] else None}
         race["auto"] = True
         if rid in overlays:
             merge_overlay(race, overlays[rid], status)
@@ -773,6 +851,7 @@ def main():
         r.pop("incumbentName", None)
         r.pop("statusText", None)
         r.pop("incumbentWiki", None)
+        r.pop("memberWikis", None)
         if not r.get("candidates"):
             status.warn(f"{rid}: no candidates listed; left to the demo set")
             continue
@@ -993,7 +1072,7 @@ def run_checks(races, forecasts, control, status, generic, sen_html, gov_html, r
                 stale.append(f"{rid} (last poll {last or 'none'})")
     status.check("fresh-polls", "Close statewide races have a poll from the last 30 days", not stale,
                  "all close races" if not stale else "; ".join(stale), "info")
-    researched = sorted(rid for rid, ov in overlays.items() if not ov.get("financeOnly"))
+    researched = sorted(rid for rid, ov in overlays.items() if not ov.get("financeOnly") and not ov.get("partial"))
     status.check("overlays", "Researched races merged", True,
                  f"{len(researched)} researched: {', '.join(researched) or 'none'}; {len(overlays) - len(researched)} more with FEC money only")
 

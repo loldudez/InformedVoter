@@ -2,13 +2,13 @@
 Tafoya) and governor (Klobuchar vs. Demuth). Writes data/research/MN.json.
 
 Positions come from KAXE's candidate questionnaires (Tafoya answered for the
-primary), the candidates' debates and campaign coverage. Researched
-Oct. 25, 2026.
+primary), the candidates' debates and campaign coverage, plus Demuth's recorded
+votes in the Minnesota House. Researched Oct. 25-26, 2026.
 
     py scripts/research/minnesota_2026.py
 """
 
-from common import P, article, write
+from common import P, article, source, write
 
 READ = "2026-10-25"
 KAXE_GOV = article("KAXE 2026 election guide, candidate questionnaire", "https://www.kaxe.org/2026-09-28/governor-demuth-klobuchar-young-mn-2026-election-guide", "2026-09-28")
@@ -17,6 +17,12 @@ KAXE = article("KAXE 2026 election guide, candidate questionnaire", "https://www
 DEBATE = article("KTTC debate report, Oct. 16, 2026", "https://www.kttc.com/2026/10/16/only-scheduled-debate-flanagan-tafoya-spar-over-track-records-policy-positions/", "2026-10-16")
 MPR = article("MPR News, Aug. 12, 2026", "https://www.mprnews.org/story/2026/08/12/peggy-flanagan-primary-win-takes-aim-at-trump-outlines-senate-agenda", "2026-08-12")
 REFORMER = article("Minnesota Reformer, Oct. 13, 2026", "https://www.newsfromthestates.com/article/michele-tafoya-shrugs-trump-endorsement-close-senate-race-minnesota", "2026-10-13")
+
+
+def mn_house_vote(bill, date, what, member, vote):
+    """A recorded floor vote in the Minnesota House (2023-24 session), from house.mn.gov."""
+    return source(f"Minnesota House roll call, {date}, on {what}: {member} voted {vote}",
+                  f"https://www.house.mn.gov/votes/Details?BillNumber={bill}&SessionKey=300", date, accessed=False)
 
 senate = {
     "id": "MN-SEN",
@@ -88,7 +94,14 @@ governor = {
              ("hea-03", -1, GOV_DEBATE("Demuth opposes putting more people on public health plans to cut costs"), "putting more people on a public plan does not help bring those costs down"),
              ("soc-12", -1, KAXE_GOV("Demuth would preserve girls' sports"), "preserve girls' sports"),
              ("gov-05", 2, KAXE_GOV("Demuth would pass voter ID"), "ensure we finally pass voter ID"),
-             ("sta-04", 1, GOV_DEBATE("Demuth blames state mandates for rising property taxes and would create a commission to study them"), None))},
+             ("sta-04", 1, GOV_DEBATE("Demuth blames state mandates for rising property taxes and would create a commission to study them"), None),
+             # Her recorded votes in the Minnesota House. A "no" on a bill that does several
+             # things counts at half strength.
+             ("soc-03", -1, mn_house_vote("HF0001", "2023-01-19", "H.F. 1, the Protect Reproductive Options Act, writing abortion rights into state law (passage)", "Demuth", "Nay"), None),
+             ("eco-11", -1, mn_house_vote("HF0002", "2023-05-17", "H.F. 2, creating a state paid family and medical leave program (final passage)", "Demuth", "Nay"), None),
+             ("soc-05", -1, mn_house_vote("HF0100", "2023-05-18", "H.F. 100, legalizing recreational marijuana for adults (final passage)", "Demuth", "Nay"), None),
+             ("ene-06", -1, mn_house_vote("HF0007", "2023-01-26", "H.F. 7, requiring utilities to use 100% carbon-free electricity by 2040 (passage)", "Demuth", "Nay"), None),
+             ("gov-06", -1, mn_house_vote("HF0003", "2023-04-13", "H.F. 3, the Democracy for the People Act, with automatic voter registration and a permanent mail-ballot list (passage)", "Demuth", "Nay"), None))},
     ],
 }
 

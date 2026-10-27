@@ -117,6 +117,9 @@ RI_BLOCK = site("Ken Block campaign site, Issues & Policies", "https://www.block
 SC_WILSON = site("Alan Wilson campaign site, Conservative Priorities", "https://wilsonforsc.com/priorities/")
 SC_JOHNSON = site("Jermaine Johnson campaign site, Policies", "https://johnsonforsc.com/policies")
 SC_WPDE = article("WPDE (via ABC News 4), Sept. 23, 2026", "https://abcnews4.com/news/state/democratic-gubernatorial-candidate-jermaine-johnson-campaigns-in-horry-county-state-politics-south-carolina-department-of-transportation-general-election", "2026-09-23")
+CT_NBC = article("NBC Connecticut, Feb. 2, 2026", "https://www.nbcconnecticut.com/news/local/state-sen-fazio-unveils-energy-policy-as-republican-gubernatorial-candidates-battle/3695029/", "2026-02-02")
+CT_NHPR = article("Connecticut Public (via NHPR), Oct. 14, 2026", "https://www.nhpr.org/2026-10-14/lamont-fazio-make-their-pitch-to-ct-voters-in-governors-race-from-electric-bills-to-data-centers", "2026-10-14")
+NM_SOURCE_MAY = article("Source NM town hall report, May 12, 2026", "https://sourcenm.com/2026/05/12/nm-gop-governor-candidate-gregg-hull-touts-experience-leading-growing-rio-rancho/", "2026-05-12")
 CO_MARX = site("Victor Marx campaign site, My Priorities", "https://www.victor2026.com/my-policies")
 ID_LITTLE_ACC = site("Brad Little campaign site, Accomplishments", "https://www.bradlittleforidaho.com/accomplishments/")
 SD_BENGS = site("Brian Bengs campaign site, Handshake With South Dakotans", "https://bengsforsouthdakota.com/policy-positions/")
@@ -495,7 +498,8 @@ races = [
         cand("NM-GOV:hull", "Gregg Hull", None,
              ("sta-07", 1, NM_AP("Hull would use state money to expand vocational education, including construction trades"), None),
              ("sta-01", 1, NM_AP("Hull wants greater state investment in roadways"), None),
-             ("edu-06", 1, NM_AP("Hull is committed to school choice but has not said whether it would fund private schools"), "School choice means, really, parental oversight of their child's education")),
+             ("edu-06", 1, NM_AP("Hull is committed to school choice but has not said whether it would fund private schools"), "School choice means, really, parental oversight of their child's education"),
+             ("sta-10", 1, NM_SOURCE_MAY("Hull would use tax incentives to attract employers"), "should use economic development tools, such as tax incentives and industrial revenue bonds")),
         cand("NM-GOV:haaland", "Deb Haaland", "https://debhaaland.com/",
              ("edu-02", 2, NM_HAALAND("Education"), "Expand the Opportunity Scholarship to provide free tuition for New Mexicans, including for graduate education."),
              ("edu-03", 1, NM_HAALAND("Education"), "Expand career pathways starting in middle school through high school and provide hands-on career experience."),
@@ -523,6 +527,11 @@ races = [
         ("ene-01", 1, CA("energy-utilities", "Energy and Utilities")("clean energy"), "California’s clean-energy transition is necessary and urgent"),
         ("ene-08", 2, CA("california-disaster-preparedness-resilience", "Disaster Preparedness")("prevention"), "I will fight for major investments in wildfire prevention, flood control, and seismic retrofits, prioritizing the communities most at risk."),
         ("gov-12", 2, CA("homelessness", "Homelessness")("spending dashboards"), "launch public outcomes dashboards so Californians can see exactly where their money is going and what it is producing"))]},
+    {"id": "CT-GOV", "candidates": [cand(
+        "CT-GOV:fazio", "Ryan Fazio", None,
+        ("ene-02", 1, CT_NBC("Fazio would open energy-supply subsidies to nuclear"), "He said he’d open up other subsidies, aimed at expanding energy supply, to allow support for natural gas and nuclear."),
+        ("ene-05", -1, CT_NBC("Fazio would end some clean-energy subsidies"), "He said he'd also eliminate some programs that subsidize clean energy initiatives, like electric vehicle charging stations."),
+        ("sta-10", -1, CT_NHPR("Fazio opposes special tax breaks for data centers"), "I don’t think that data centers or any other well-connected companies should get special tax benefits at the expense of middle-class families"))]},
     {"id": "CT-GOV", "candidates": [cand(
         "CT-GOV:lamont", "Ned Lamont", "https://www.nedlamont.com/",
         ("soc-07", 2, CT_ACC("Childcare and Education"), "Launched a $600 million Early Start CT endowment fund to provide universal early childhood education and access to quality, affordable childcare."),

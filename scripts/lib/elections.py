@@ -1,11 +1,13 @@
 """Parsers for Wikipedia's 2026 election tables: candidates, forecaster ratings,
 polls, aggregator averages, fundraising and chamber composition."""
 
+import html as _html
 import re
 import unicodedata
 from datetime import date
+from difflib import SequenceMatcher
 
-from wikitables import tables, text
+from wikitables import section_by_title, tables, text
 
 STATE_ABBR = {
     "Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA", "Colorado": "CO",
@@ -66,11 +68,33 @@ def party_code(name):
         return "D"
     if n.startswith("libertarian"):
         return "L"
+    if n.startswith("green mountain"):  # Vermont's Green Mountain Peace and Justice Party, not the Greens
+        return "Peace and Justice"
     if n.startswith("green"):
         return "G"
     if n in ("independent", "unaffiliated", "no party preference", "nonpartisan", "no party", "nonaffiliated"):
         return "I"
     return name.strip()
+
+
+NOT_CAMPAIGN = re.compile(r"wikipedia\.org|wikimedia|ballotpedia|fec\.gov|opensecrets|votesmart|followthemoney|archive\.org|"
+                          r"vote411|\.gov/|facebook\.com|twitter\.com|x\.com/|instagram\.com|youtube\.com", re.I)
+
+
+def campaign_sites(html_text):
+    """[(name, party code, url)] from a page's "External links" list of official
+    campaign websites, whose entries read like 'Ted Brown (L)'."""
+    sec = section_by_title(html_text, "External links")
+    if not sec:
+        return []
+    out = []
+    for li in re.findall(r"<li>(.*?)</li>", sec, re.S):
+        label = _html.unescape(re.sub(r"<[^>]+>", "", li)).strip()
+        m = re.fullmatch(r"(.+?)\s*\(([A-Za-z][A-Za-z.\- ]{0,30})\)(?:\s+for\s+.+)?", label)
+        urls = [u for u in re.findall(r'href="(https?://[^"]+)"', li) if not NOT_CAMPAIGN.search(u)]
+        if m and urls:
+            out.append((m.group(1).strip(), party_code(m.group(2)) if len(m.group(2)) > 1 else m.group(2).upper(), _html.unescape(urls[0])))
+    return out
 
 
 def candidate_lines(cell_text):
@@ -150,6 +174,15 @@ def match_candidate(name, cands, party=None):
         hit = [c for c in same_last if tokens[1][:1] in [t[:1] for t in norm(c["name"]).split()[1:-1]]]
         if len(hit) == 1:
             return hit[0]
+    if not same_last and len(tokens) > 1 and len(tokens[-1]) >= 6:
+        # A one-letter slip in a long surname (Wikipedia's "Okapareke" for Okpareke)
+        # still names the candidate when the first name, and party if given, agree.
+        near = [c for c in cands if len(last_name(c["name"])) >= 6
+                and SequenceMatcher(None, last_name(c["name"]), tokens[-1]).ratio() >= 0.85
+                and first_names_match(tokens[0], norm(c["name"]).split()[0])
+                and (party not in ("D", "R") or c["party"] == party or c["party"] not in ("D", "R"))]
+        if len(near) == 1:
+            return near[0]
     return None
 
 
@@ -192,7 +225,11 @@ def parse_range(s):
                 return None, None
         y_end = years[-1]
         y_start = years[0] if len(years) > 1 else (y_end - 1 if ma[0] > mb[0] else y_end)
-        return date(y_start, *ma), date(y_end, *mb)
+        start, end = date(y_start, *ma), date(y_end, *mb)
+        # A reversed range within one month ("July 8–6") is a typo for the same days.
+        if start > end and ma[0] == mb[0] and y_start == y_end:
+            start, end = end, start
+        return start, end
     except ValueError:
         return None, None
 

@@ -1,0 +1,1212 @@
+{
+ "updated": "2026-10-27",
+ "note": "Campaign websites for candidates the refresh found none for, from their Wikipedia articles and BallotReady profiles, checked live Oct. 27, 2026.",
+ "races": [
+  {
+   "id": "AZ-H-06",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "AZ-H-06:swing",
+     "name": "Gary Swing",
+     "party": "G",
+     "officialSite": "https://theswingvote.wixsite.com/unity"
+    }
+   ]
+  },
+  {
+   "id": "AZ-H-08",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "AZ-H-08:hamadeh",
+     "name": "Abraham Hamadeh",
+     "party": "R",
+     "officialSite": "https://www.abeforaz.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-01",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-01:gallagher",
+     "name": "James Gallagher",
+     "party": "R",
+     "officialSite": "https://electjamesgallagher.com/"
+    },
+    {
+     "id": "CA-H-01:mcguire",
+     "name": "Mike McGuire",
+     "party": "D",
+     "officialSite": "https://www.votemikemcguire.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-02",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-02:huffman",
+     "name": "Jared Huffman",
+     "party": "D",
+     "officialSite": "https://www.jaredhuffman.com/"
+    },
+    {
+     "id": "CA-H-02:littau",
+     "name": "Robin Littau",
+     "party": "R",
+     "officialSite": "https://www.littauforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-03",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-03:bera",
+     "name": "Ami Bera",
+     "party": "D",
+     "officialSite": "https://www.beraforcongress.com/"
+    },
+    {
+     "id": "CA-H-03:tucker",
+     "name": "Robb Tucker",
+     "party": "R",
+     "officialSite": "https://robbtucker.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-04",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-04:thompson",
+     "name": "Mike Thompson",
+     "party": "D",
+     "officialSite": "https://www.mikethompsonforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-05",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-05:masuda",
+     "name": "Michael Masuda",
+     "party": "D",
+     "officialSite": "https://www.votemasuda.com/"
+    },
+    {
+     "id": "CA-H-05:mcclintock",
+     "name": "Tom McClintock",
+     "party": "R",
+     "officialSite": "https://www.tommcclintock.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-06",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-06:kiley",
+     "name": "Kevin Kiley",
+     "party": "I",
+     "officialSite": "https://electkevinkiley.com/"
+    },
+    {
+     "id": "CA-H-06:pan",
+     "name": "Richard Pan",
+     "party": "D",
+     "officialSite": "https://drpanforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-07",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-07:matsui",
+     "name": "Doris Matsui",
+     "party": "D",
+     "officialSite": "https://matsuiforcongress.com/"
+    },
+    {
+     "id": "CA-H-07:vang",
+     "name": "Mai Vang",
+     "party": "D",
+     "officialSite": "https://www.maiforus.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-08",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-08:garamendi",
+     "name": "John Garamendi",
+     "party": "D",
+     "officialSite": "https://www.garamendi.org/"
+    },
+    {
+     "id": "CA-H-08:recile",
+     "name": "Rudy Recile",
+     "party": "R",
+     "officialSite": "https://rudyforuscongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-09",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-09:harder",
+     "name": "Josh Harder",
+     "party": "D",
+     "officialSite": "https://harderforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-10",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-10:desaulnier",
+     "name": "Mark DeSaulnier",
+     "party": "D",
+     "officialSite": "https://desaulnierforcongress.com/"
+    },
+    {
+     "id": "CA-H-10:frese",
+     "name": "Jeff Frese",
+     "party": "R",
+     "officialSite": "https://freseforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-11",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-11:chan",
+     "name": "Connie Chan",
+     "party": "D",
+     "officialSite": "https://www.conniechansf.com/"
+    },
+    {
+     "id": "CA-H-11:wiener",
+     "name": "Scott Wiener",
+     "party": "D",
+     "officialSite": "https://www.scottwiener.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-12",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-12:joyce",
+     "name": "Jamie Joyce",
+     "party": "D",
+     "officialSite": "https://www.jamiejoyce.com/"
+    },
+    {
+     "id": "CA-H-12:simon",
+     "name": "Lateefah Simon",
+     "party": "D",
+     "officialSite": "https://www.lateefahsimon.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-14",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-14:wahab",
+     "name": "Aisha Wahab",
+     "party": "D",
+     "officialSite": "https://www.aishawahab.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-15",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-15:hoelter",
+     "name": "Charles Hoelter",
+     "party": "R",
+     "officialSite": "https://www.hoelterforuscongress.com/"
+    },
+    {
+     "id": "CA-H-15:mullin",
+     "name": "Kevin Mullin",
+     "party": "D",
+     "officialSite": "https://www.kevinmullinforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-16",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-16:liccardo",
+     "name": "Sam Liccardo",
+     "party": "D",
+     "officialSite": "https://www.samliccardo.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-17",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-17:khanna",
+     "name": "Ro Khanna",
+     "party": "D",
+     "officialSite": "https://rokhanna.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-18",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-18:lewis",
+     "name": "Shane Lewis",
+     "party": "R",
+     "officialSite": "https://www.shanelewisforcongress.com/"
+    },
+    {
+     "id": "CA-H-18:lofgren",
+     "name": "Zoe Lofgren",
+     "party": "D",
+     "officialSite": "https://www.zoelofgren.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-19",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-19:panetta",
+     "name": "Jimmy Panetta",
+     "party": "D",
+     "officialSite": "https://www.jimmypanetta.com/"
+    },
+    {
+     "id": "CA-H-19:verbica",
+     "name": "Peter Coe Verbica",
+     "party": "R",
+     "officialSite": "https://peterverbica.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-20",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-20:fong",
+     "name": "Vince Fong",
+     "party": "R",
+     "officialSite": "https://vincefong.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-21",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-21:costa",
+     "name": "Jim Costa",
+     "party": "D",
+     "officialSite": "https://www.jimcosta.com/"
+    },
+    {
+     "id": "CA-H-21:kirkland",
+     "name": "Kyle Kirkland",
+     "party": "R",
+     "officialSite": "https://kirkland2026.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-22",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-22:valadao",
+     "name": "David Valadao",
+     "party": "R",
+     "officialSite": "https://valadaoforcongress.com/"
+    },
+    {
+     "id": "CA-H-22:villegas",
+     "name": "Randy Villegas",
+     "party": "D",
+     "officialSite": "https://www.villegasforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-23",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-23:hodge",
+     "name": "Tessa Lynn Hodge",
+     "party": "D",
+     "officialSite": "https://www.tessaforca.com/"
+    },
+    {
+     "id": "CA-H-23:obernolte",
+     "name": "Jay Obernolte",
+     "party": "R",
+     "officialSite": "https://electjay.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-24",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-24:carbajal",
+     "name": "Salud Carbajal",
+     "party": "D",
+     "officialSite": "https://saludcarbajal.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-25",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-25:ruiz",
+     "name": "Raul Ruiz",
+     "party": "D",
+     "officialSite": "https://drraulruiz.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-26",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-26:irwin",
+     "name": "Jacqui Irwin",
+     "party": "D",
+     "officialSite": "https://jacquiirwin.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-27",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-27:gibbs",
+     "name": "Jason Gibbs",
+     "party": "R",
+     "officialSite": "https://www.jasongibbsforcongress.com/"
+    },
+    {
+     "id": "CA-H-27:whitesides",
+     "name": "George Whitesides",
+     "party": "D",
+     "officialSite": "https://www.georgewhitesides.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-28",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-28:chu",
+     "name": "Judy Chu",
+     "party": "D",
+     "officialSite": "https://www.judychu.org/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-29",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-29:rivas",
+     "name": "Luz Rivas",
+     "party": "D",
+     "officialSite": "https://www.luzforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-30",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-30:friedman",
+     "name": "Laura Friedman",
+     "party": "D",
+     "officialSite": "https://www.lauraforcongress.org/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-31",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-31:cisneros",
+     "name": "Gil Cisneros",
+     "party": "D",
+     "officialSite": "https://gilonthehill.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-32",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-32:sherman",
+     "name": "Brad Sherman",
+     "party": "D",
+     "officialSite": "https://www.bradsherman.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-33",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-33:aguilar",
+     "name": "Pete Aguilar",
+     "party": "D",
+     "officialSite": "https://peteaguilar.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-34",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-34:gomez",
+     "name": "Jimmy Gomez",
+     "party": "D",
+     "officialSite": "https://jimmygomezforcongress.com/"
+    },
+    {
+     "id": "CA-H-34:gonzales-torres",
+     "name": "Angela Gonzales-Torres",
+     "party": "D",
+     "officialSite": "https://www.angela4congress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-35",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-35:torres",
+     "name": "Norma Torres",
+     "party": "D",
+     "officialSite": "https://www.normatorres.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-36",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-36:brignano",
+     "name": "Houston Brignano",
+     "party": "R",
+     "officialSite": "https://www.voteforhouston.com/"
+    },
+    {
+     "id": "CA-H-36:lieu",
+     "name": "Ted Lieu",
+     "party": "D",
+     "officialSite": "https://www.lieuforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-37",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-37:kamlager-dove",
+     "name": "Sydney Kamlager-Dove",
+     "party": "D",
+     "officialSite": "https://sydneykamlager.com/"
+    },
+    {
+     "id": "CA-H-37:mota",
+     "name": "Samantha Mota",
+     "party": "D",
+     "officialSite": "https://www.motaforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-38",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-38:solis",
+     "name": "Hilda Solis",
+     "party": "D",
+     "officialSite": "https://www.hildasolis.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-39",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-39:takano",
+     "name": "Mark Takano",
+     "party": "D",
+     "officialSite": "https://www.marktakano.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-40",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-40:calvert",
+     "name": "Ken Calvert",
+     "party": "R",
+     "officialSite": "https://calvertforcongress.com/"
+    },
+    {
+     "id": "CA-H-40:kim",
+     "name": "Young Kim",
+     "party": "R",
+     "officialSite": "https://youngkimforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-41",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-41:clemmons",
+     "name": "Mitch Clemmons",
+     "party": "R",
+     "officialSite": "https://electmitchclemmons.com/"
+    },
+    {
+     "id": "CA-H-41:sanchez",
+     "name": "Linda Sánchez",
+     "party": "D",
+     "officialSite": "https://voteforlinda.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-42",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-42:burley",
+     "name": "Brian Burley",
+     "party": "R",
+     "officialSite": "https://www.burley4congress.com/"
+    },
+    {
+     "id": "CA-H-42:garcia",
+     "name": "Robert Garcia",
+     "party": "D",
+     "officialSite": "https://robertgarcia.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-44",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-44:angel",
+     "name": "Genevieve Angel",
+     "party": "R",
+     "officialSite": "https://www.angelforcongress.com/"
+    },
+    {
+     "id": "CA-H-44:barragan",
+     "name": "Nanette Barragán",
+     "party": "D",
+     "officialSite": "https://barraganforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-45",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-45:tran",
+     "name": "Derek Tran",
+     "party": "D",
+     "officialSite": "https://www.derektranforcongress.com/"
+    },
+    {
+     "id": "CA-H-45:vo",
+     "name": "Chuong Vo",
+     "party": "R",
+     "officialSite": "https://www.vo4congress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-46",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-46:correa",
+     "name": "Lou Correa",
+     "party": "D",
+     "officialSite": "https://www.loucorrea.com/"
+    },
+    {
+     "id": "CA-H-46:pan",
+     "name": "David Pan",
+     "party": "R",
+     "officialSite": "https://www.davidpan4congress.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-47",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-47:min",
+     "name": "Dave Min",
+     "party": "D",
+     "officialSite": "https://www.davemin.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-48",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-48:desmond",
+     "name": "Jim Desmond",
+     "party": "R",
+     "officialSite": "https://www.desmondforcongress.com/"
+    },
+    {
+     "id": "CA-H-48:wilpert",
+     "name": "Marni von Wilpert",
+     "party": "D",
+     "officialSite": "https://www.marnivonwilpert.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-49",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-49:kurdian",
+     "name": "Armen Kurdian",
+     "party": "R",
+     "officialSite": "https://kurdianforcongress.com/"
+    },
+    {
+     "id": "CA-H-49:levin",
+     "name": "Mike Levin",
+     "party": "D",
+     "officialSite": "https://www.mikelevin.org/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-50",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-50:cohen",
+     "name": "Steve Cohen",
+     "party": "R",
+     "officialSite": "https://cohenforcongressca50.com/"
+    },
+    {
+     "id": "CA-H-50:peters",
+     "name": "Scott Peters",
+     "party": "D",
+     "officialSite": "https://www.scottpeters.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-51",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-51:cabrera",
+     "name": "Ricardo Cabrera",
+     "party": "R",
+     "officialSite": "https://www.cabreraforcongress2026.com/"
+    },
+    {
+     "id": "CA-H-51:jacobs",
+     "name": "Sara Jacobs",
+     "party": "D",
+     "officialSite": "https://sarajacobsforca.com/"
+    }
+   ]
+  },
+  {
+   "id": "CA-H-52",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CA-H-52:vargas",
+     "name": "Juan Vargas",
+     "party": "D",
+     "officialSite": "https://www.votevargas.com/"
+    }
+   ]
+  },
+  {
+   "id": "CO-H-08",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CO-H-08:wood",
+     "name": "Dan Wood",
+     "party": "L",
+     "officialSite": "https://www.votedanwood.com/"
+    }
+   ]
+  },
+  {
+   "id": "CO-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CO-SEN:withrow",
+     "name": "Adam Withrow",
+     "party": "Unity",
+     "officialSite": "https://www.senatorwithrow.com/"
+    }
+   ]
+  },
+  {
+   "id": "CT-H-04",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CT-H-04:wesley",
+     "name": "Benjamin Wesley",
+     "party": "I",
+     "officialSite": "https://benwesleyforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "DC-H-98",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "DC-H-98:freeman",
+     "name": "Kymone Freeman",
+     "party": "G",
+     "officialSite": "https://www.freeman4congress.com/"
+    },
+    {
+     "id": "DC-H-98:rosado",
+     "name": "Denise Rosado",
+     "party": "R",
+     "officialSite": "https://rosadoforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "FL-H-24",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "FL-H-24:brown",
+     "name": "Te Mayonna Brown",
+     "party": "R",
+     "officialSite": "https://tebrownforflorida.com/"
+    }
+   ]
+  },
+  {
+   "id": "FL-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "FL-SEN:gillespie",
+     "name": "Neil Gillespie",
+     "party": "I",
+     "officialSite": "https://neilgillespie4senate.blogspot.com/"
+    }
+   ]
+  },
+  {
+   "id": "IA-H-02",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "IA-H-02:stewart",
+     "name": "Rick Stewart",
+     "party": "L",
+     "officialSite": "https://www.rickstewart.com/"
+    }
+   ]
+  },
+  {
+   "id": "IL-H-04",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "IL-H-04:castillo",
+     "name": "Lupe Castillo",
+     "party": "R",
+     "officialSite": "https://castillolupe.com/"
+    }
+   ]
+  },
+  {
+   "id": "MI-H-01",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "MI-H-01:kovaly",
+     "name": "Doc Kovaly",
+     "party": "U.S. Taxpayers",
+     "officialSite": "https://www.doc.vote/"
+    }
+   ]
+  },
+  {
+   "id": "MI-H-02",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "MI-H-02:magoon",
+     "name": "Charlotte Magoon",
+     "party": "G",
+     "officialSite": "https://www.charlottemagoon4office.com/"
+    },
+    {
+     "id": "MI-H-02:sills",
+     "name": "Richard Sills",
+     "party": "Natural Law",
+     "officialSite": "https://richardsills.com/"
+    }
+   ]
+  },
+  {
+   "id": "MI-H-04",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "MI-H-04:barnett",
+     "name": "Shafina Che Barnett",
+     "party": "G",
+     "officialSite": "https://www.shafinabarnettforcongress4thdistrict.com/"
+    }
+   ]
+  },
+  {
+   "id": "MI-H-08",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "MI-H-08:pettus",
+     "name": "Mia C. Pettus",
+     "party": "L",
+     "officialSite": "https://pettusforcongress.org/"
+    }
+   ]
+  },
+  {
+   "id": "MI-H-10",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "MI-H-10:nkromo",
+     "name": "Kwabena Nkromo",
+     "party": "G",
+     "officialSite": "https://cubby4congress.net/home"
+    },
+    {
+     "id": "MI-H-10:saliba",
+     "name": "Mike Saliba",
+     "party": "L",
+     "officialSite": "https://votesaliba.com/"
+    }
+   ]
+  },
+  {
+   "id": "MI-H-11",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "MI-H-11:teasdale",
+     "name": "Ryan Teasdale",
+     "party": "G",
+     "officialSite": "https://www.ryanteasdale.com/"
+    }
+   ]
+  },
+  {
+   "id": "MI-H-12",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "MI-H-12:sanders",
+     "name": "Brenda K. Sanders",
+     "party": "G",
+     "officialSite": "https://www.brendaksanders.com/"
+    }
+   ]
+  },
+  {
+   "id": "MI-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "MI-SEN:marsh",
+     "name": "Douglas P. Marsh",
+     "party": "G",
+     "officialSite": "https://www.electmarsh.org/"
+    }
+   ]
+  },
+  {
+   "id": "MO-H-04",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "MO-H-04:holbrook",
+     "name": "Thomas Holbrook",
+     "party": "L",
+     "officialSite": "https://thomasholbrook.com/"
+    }
+   ]
+  },
+  {
+   "id": "NC-H-05",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "NC-H-05:foxx",
+     "name": "Virginia Foxx",
+     "party": "R",
+     "officialSite": "https://virginiafoxx.com/"
+    }
+   ]
+  },
+  {
+   "id": "ND-H-00",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "ND-H-00:hammer",
+     "name": "Trygve Hammer",
+     "party": "D",
+     "officialSite": "https://www.hammerfornd.com/"
+    }
+   ]
+  },
+  {
+   "id": "NH-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "NH-GOV:villee",
+     "name": "Stephen Villee",
+     "party": "L",
+     "officialSite": "https://villee4nh.com/"
+    }
+   ]
+  },
+  {
+   "id": "NJ-H-03",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "NJ-H-03:welzer",
+     "name": "Steven Welzer",
+     "party": "G",
+     "officialSite": "https://www.welzerforcongress.org/"
+    }
+   ]
+  },
+  {
+   "id": "NJ-H-11",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "NJ-H-11:bond",
+     "name": "Alan Bond",
+     "party": "I",
+     "officialSite": "https://hopefortomorrownj.org/"
+    }
+   ]
+  },
+  {
+   "id": "NJ-H-12",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "NJ-H-12:jinete",
+     "name": "Andres Jinete",
+     "party": "G",
+     "officialSite": "https://www.andresjinete.org/"
+    },
+    {
+     "id": "NJ-H-12:jordan",
+     "name": "Winston Jordan",
+     "party": "I",
+     "officialSite": "https://www.winstonforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "NV-H-03",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "NV-H-03:kamerath",
+     "name": "Jon Kamerath",
+     "party": "Independent American",
+     "officialSite": "https://www.jonkamerath.org/"
+    }
+   ]
+  },
+  {
+   "id": "NY-H-04",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "NY-H-04:tarnoff",
+     "name": "Blay Tarnoff",
+     "party": "L",
+     "officialSite": "https://tarnoff.mystrikingly.com/"
+    }
+   ]
+  },
+  {
+   "id": "NY-H-05",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "NY-H-05:marsh",
+     "name": "George Marsh",
+     "party": "R",
+     "officialSite": "https://georgemarshforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "OR-H-04",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "OR-H-04:filip",
+     "name": "Justin Filip",
+     "party": "Pacific Green",
+     "officialSite": "https://www.justin4congress.com/"
+    }
+   ]
+  },
+  {
+   "id": "TN-H-03",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "TN-H-03:arnold",
+     "name": "Dean Arnold",
+     "party": "I",
+     "officialSite": "https://dean-w-arnold.com/congress"
+    },
+    {
+     "id": "TN-H-03:king",
+     "name": "Rodney Joe King",
+     "party": "I",
+     "officialSite": "https://www.rodneykingforcongress.com/"
+    }
+   ]
+  },
+  {
+   "id": "TN-H-06",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "TN-H-06:purdy",
+     "name": "Angus Purdy",
+     "party": "I",
+     "officialSite": "https://www.anguspurdy.com/"
+    }
+   ]
+  },
+  {
+   "id": "TX-H-13",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "TX-H-13:jackson",
+     "name": "Ronny Jackson",
+     "party": "R",
+     "officialSite": "https://www.teamronny.com/"
+    }
+   ]
+  },
+  {
+   "id": "WV-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "WV-SEN:capito",
+     "name": "Shelley Moore Capito",
+     "party": "R",
+     "officialSite": "https://shelleymoorecapito.com/"
+    }
+   ]
+  }
+ ]
+}

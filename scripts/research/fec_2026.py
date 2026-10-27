@@ -1,18 +1,22 @@
 """Candidates’ money by source, from each candidate’s FEC financial summary (the
-2026 election, every report to date), read on fec.gov on Oct. 25, 2026. Writes
-data/research/fec.json, which update_races.py merges onto the races.
+2026 election, every report to date), read on fec.gov on Oct. 25, 2026 for the
+Senate and the competitive House races and on Oct. 26 for the rest of the House
+(fec_house_2026.py). Writes data/research/fec.json, which update_races.py merges
+onto the races.
 
 The automatic refresh gets the same breakdown from the FEC API once a personal
-key is set (see scripts/lib/fec.py). Until then this table supplies it for every
-Senate candidate with money and for the competitive House races; a newer automatic report replaces it, because an
-overlay’s finance is used only when its report date is the same or later.
+key is set (see scripts/lib/fec.py). Until then these tables supply it for every
+Senate candidate with money and every House candidate with a 2026 report; a newer
+automatic report replaces them, because an overlay’s finance is used only when its
+report date is the same or later.
 
     py scripts/research/fec_2026.py
 """
 
 from common import write
+from fec_house_2026 import HOUSE_MORE
 
-READ = "2026-10-25"
+READ = "2026-10-26"
 
 # Candidate, name, FEC id, period covered, then the summary lines in whole dollars:
 # total receipts; individual contributions unitemized (under $200) and itemized;
@@ -308,16 +312,19 @@ def finance(row):
          "url": f"https://www.fec.gov/data/candidate/{fec_id}/?cycle=2026&election_full=true"}
     if debts:
         f["debts"] = debts
-    if cid in NOTES:
-        f["note"] = NOTES[cid]
+    notes = [NOTES[cid]] if cid in NOTES else []
+    if parts["other"] < 0:  # the chart leaves the negative line out, so say why the rest exceeds the total
+        notes.append(f"Other receipts are negative in the filings (−${-parts['other']:,} with loans and offsets), so the sources shown add up to more than the total")
+    if notes:
+        f["note"] = "; ".join(notes)
     return f
 
 
 races = {}
-for row in SENATE + HOUSE:
+for row in SENATE + HOUSE + HOUSE_MORE:
     races.setdefault(row[0].split(":")[0], []).append({"id": row[0], "name": row[1], "finance": finance(row)})
 
 # financeOnly: these races gain money, not researched positions (update_races.py
 # leaves their "research" flag alone, so matching stays off where positions are missing).
 write("data/research/fec.json", [{"id": rid, "financeOnly": True, "candidates": cands} for rid, cands in races.items()],
-      "Receipts by source from candidates’ FEC financial summaries, read Oct. 25, 2026.", updated=READ)
+      "Receipts by source from candidates’ FEC financial summaries, read Oct. 25-26, 2026.", updated=READ)

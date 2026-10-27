@@ -84,7 +84,7 @@ function ticker() {
 
 function banner() {
   if (realRaceCount) {
-    return html`<div class="wrap">${icon.info()}<span><b>Real data for every Senate, House and governor race</b>, refreshed every 8 hours: candidates, forecasters’ ratings, polls and fundraising (<span class="live-chip">Live data</span>). ${researchedCount} race${researchedCount === 1 ? ' also has' : 's also have'} researched issue positions with sources (<span class="real-chip">Sourced</span>). State legislative races are still demo placeholders. <a href="#/about">What’s real?</a></span></div>`;
+    return html`<div class="wrap">${icon.info()}<span><b>Real data for every Senate, House and governor race</b>, refreshed every 8 hours: candidates, forecasters’ ratings, polls and fundraising (<span class="live-chip">Live data</span>). ${researchedCount} race${researchedCount === 1 ? ' also has' : 's also have'} researched issue positions with sources (<span class="real-chip">Sourced</span>). State legislative races show the real seats, and the holders and candidates Wikipedia lists, without forecasts. <a href="#/about">What’s real?</a></span></div>`;
   }
   return html`<div class="wrap">${icon.info()}<span><b>Preview with demo data.</b> Candidates, polls, forecasts, positions and fundraising are fictional placeholders. Maps, districts, address lookup, news and inflation are real. <a href="#/about">What’s real?</a></span></div>`;
 }

@@ -1,5 +1,5 @@
 """Researched positions for New Hampshire's statewide races: U.S. Senate (Pappas vs.
-Sununu) and governor (Ayotte vs. Warmington). Writes data/research/NH.json.
+Sununu) and governor (Ayotte vs. Warmington, with Libertarian Stephen Villee). Writes data/research/NH.json.
 
 Senate positions come from guides.vote's nonpartisan New Hampshire guide, which
 ties each stance to a vote, bill or statement (read Oct. 25, 2026); Pappas's
@@ -18,6 +18,8 @@ NHPR_VETOES = article("NHPR and New Hampshire Bulletin, July 3, 2026", "https://
 VNEWS_EFA = article("Valley News, June 11, 2025", "https://vnews.com/2025/06/11/governor-kelly-ayotte-signs-universal-education-freedom-accounts-bill-into-law-sb295-61699853/", "2025-06-11")
 BULLETIN_ID = article("New Hampshire Bulletin, April 6, 2026", "https://newhampshirebulletin.com/2026/04/06/ayotte-signs-bill-barring-use-of-student-ids-to-vote/", "2026-04-06")
 WCAX = article("WCAX, Oct. 7, 2026", "https://www.wcax.com/2026/10/07/campaign-countdown-candidates-nh-governor/", "2026-10-07")
+NHPR_ICE = article("NHPR, May 23, 2025", "https://www.nhpr.org/nh-news/2025-05-23/nh-new-law-requiring-local-cooperation-federal-immigration-enforcement", "2025-05-23")
+NHPR_YOUTH = article("NHPR via WBUR, Aug. 4, 2025", "https://www.wbur.org/news/2025/08/04/new-hampshire-trans-youth-health-care-puberty-blockers", "2025-08-04")
 MONITOR = article("Concord Monitor, June 12, 2026", "https://www.concordmonitor.com/2026/06/12/new-hampshire-democrats-governor-cinde-warmington/", "2026-06-12")
 WARMINGTON_SITE = lambda note: page(f"Cinde Warmington campaign site: {note}", "https://www.cindewarmington.com/", READ)  # noqa: E731
 
@@ -80,8 +82,18 @@ senate = {
     ],
 }
 
+CC_VILLEE = lambda note: page(f"Citizens Count, Stephen Villee’s answers to its issue survey: {note}", "https://www.citizenscount.org/candidate/stephen-villee", "2026-10-26")
+
 governor = {
     "id": "NH-GOV",
+    # Wikipedia lists Jon Kiper, who missed the signature cutoff, and not Stephen
+    # Villee, who qualified; the researched list is the ballot.
+    "candidatesOnly": True,
+    "notes": [
+        {"text": "Jon Kiper, still listed by Wikipedia, ended his independent campaign in August after falling short of the signatures needed for the ballot.",
+         "source": "Citizens Count", "url": "https://www.citizenscount.org/candidate/jonathan-adam-kiper"},
+        {"text": "Libertarian Stephen Villee qualified for the ballot by petition (WMUR, Oct. 20).",
+         "source": "Citizens Count", "url": "https://www.citizenscount.org/candidate/stephen-villee"}],
     "candidates": [
         {"id": "NH-GOV:ayotte", "name": "Kelly Ayotte", "party": "R",
          "bio": "Governor of New Hampshire since 2025, U.S. senator from 2011 to 2017 and earlier state attorney general.",
@@ -94,7 +106,9 @@ governor = {
              ("soc-07", 1, WCAX("Ayotte backed child care tax credits"), None),
              ("sta-08", 1, MONITOR("Ayotte increased benefits for law enforcement"), None),
              ("hea-06", 1, MONITOR("Ayotte directed more money to mental health care"), None),
-             ("gov-05", 1, BULLETIN_ID("Ayotte signed a bill barring the use of student IDs to vote (2026)"), None))},
+             ("gov-05", 1, BULLETIN_ID("Ayotte signed a bill barring the use of student IDs to vote (2026)"), None),
+             ("soc-11", -2, NHPR_YOUTH("Ayotte signed HB 377, barring puberty blockers and hormone treatment for gender transition before 18 (Aug. 2025)"), "these bills represent a balanced, bipartisan effort to protect children"),
+             ("imm-08", 1, NHPR_ICE("Ayotte signed HB 511 and SB 62, requiring local police to cooperate with federal immigration enforcement (May 2025)"), None))},
         {"id": "NH-GOV:warmington", "name": "Cinde Warmington", "party": "D",
          "bio": "Health care lawyer and New Hampshire executive councilor from 2021 to 2025.",
          "officialSite": "https://www.cindewarmington.com/",
@@ -105,6 +119,20 @@ governor = {
              ("eco-10", -1, WCAX("Warmington would push for consumer refunds on tariffs"), None),
              ("eco-02", 1, WCAX("Warmington would suspend the state gas tax and rules out new taxes on working people"), None),
              ("imm-08", -1, WARMINGTON_SITE("Warmington opposes the planned ICE detention facility in Merrimack"), "say no to ICE's human warehouse in Merrimack or anywhere else"))},
+        {"id": "NH-GOV:villee", "name": "Stephen Villee", "party": "L",
+         "bio": "Hampton software developer with a math degree from Harvard; on the ballot as a Libertarian.",
+         "positions": P(
+             ("soc-12", -1, CC_VILLEE("Villee would let the anti-discrimination law allow separation by biological sex in bathrooms and locker rooms (2026)"), None),
+             ("eco-01", -1, CC_VILLEE("Villee opposes an income tax and bringing back the interest and dividends tax (2026)"), None),
+             ("eco-12", -1, CC_VILLEE("Villee opposes an income tax (2026)"), None),
+             ("hou-04", 1, CC_VILLEE("Villee wants the state to push towns to remove zoning barriers to housing (2026)"), None),
+             ("ene-02", 1, CC_VILLEE("Villee wants the state to encourage nuclear power (2026)"), None),
+             ("soc-05", 2, CC_VILLEE("Villee supports legalizing recreational marijuana in each form asked (2026)"), None),
+             ("soc-03", 0, CC_VILLEE("Villee answered Undecided on every abortion question, saying he would stay neutral (2026)"), None),
+             ("soc-04", 0, CC_VILLEE("Villee answered Undecided on every abortion question, saying he would stay neutral (2026)"), None),
+             ("sta-03", -1, CC_VILLEE("Villee opposed raising the minimum wage (2024)"), None),
+             ("soc-07", -1, CC_VILLEE("Villee opposed more state money for child care providers (2024)"), None),
+             ("ene-06", -1, CC_VILLEE("Villee opposed more state action on climate change (2024)"), None))},
     ],
 }
 

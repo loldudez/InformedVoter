@@ -1,0 +1,153 @@
+{
+ "updated": "2026-10-26",
+ "note": "Florida governor candidates' campaign accounts grouped by contributor, from the Florida Division of Elections database, plus each major candidate's political committee in a note.",
+ "races": [
+  {
+   "id": "FL-GOV",
+   "financeOnly": true,
+   "candidates": [
+    {
+     "id": "FL-GOV:jolly",
+     "name": "David Jolly",
+     "finance": {
+      "total": 13161993,
+      "parts": {
+       "pac": 286604,
+       "party": 439080,
+       "public": 3074955,
+       "small": 3269289,
+       "large": 6097240
+      },
+      "spent": 9918063,
+      "from": "2025-06-04",
+      "asOf": "2026-10-25",
+      "source": "Florida Division of Elections",
+      "url": "https://dos.elections.myflorida.com/candidates/CanDetail.asp?account=89243",
+      "note": "His political committee, Florida 2026, separately took in $13.3 million through Oct. 25; that money isn’t counted above (largest givers: Donald Sussman, $1.6 million; Henry Laufer, $1.03 million; AFT COPE Dynamics, $1 million)."
+     },
+     "party": "D"
+    },
+    {
+     "id": "FL-GOV:donalds",
+     "name": "Byron Donalds",
+     "finance": {
+      "total": 20829643,
+      "parts": {
+       "pac": 4018726,
+       "party": 2761986,
+       "public": 1131324,
+       "small": 2161392,
+       "large": 10763143
+      },
+      "spent": 12703980,
+      "from": "2025-02-26",
+      "asOf": "2026-10-25",
+      "source": "Florida Division of Elections",
+      "url": "https://dos.elections.myflorida.com/candidates/CanDetail.asp?account=89042",
+      "note": "His political committee, Friends of Byron Donalds PAC, separately took in $150.8 million through Oct. 25; that money isn’t counted above (largest givers: Kenneth Griffin, $15.0 million; Jeff Yass, $7.5 million; the Seminole Tribe of Florida, $6 million)."
+     },
+     "party": "R"
+    },
+    {
+     "id": "FL-GOV:russo",
+     "name": "Frank Russo",
+     "finance": {
+      "total": 887011,
+      "parts": {
+       "self": 850000,
+       "small": 2460,
+       "large": 34551
+      },
+      "spent": 885348,
+      "from": "2026-01-05",
+      "asOf": "2026-10-14",
+      "source": "Florida Division of Elections",
+      "url": "https://dos.elections.myflorida.com/candidates/CanDetail.asp?account=89571"
+     }
+    },
+    {
+     "id": "FL-GOV:burkett",
+     "name": "Charles Burkett",
+     "finance": {
+      "total": 250675,
+      "parts": {
+       "self": 250000,
+       "large": 675
+      },
+      "spent": 27411,
+      "from": "2026-05-11",
+      "asOf": "2026-10-19",
+      "source": "Florida Division of Elections",
+      "url": "https://dos.elections.myflorida.com/candidates/CanDetail.asp?account=90630"
+     }
+    },
+    {
+     "id": "FL-GOV:abrams",
+     "name": "Dean Abrams",
+     "finance": {
+      "total": 15325,
+      "parts": {
+       "self": 15100,
+       "small": 225
+      },
+      "spent": 15094,
+      "from": "2026-05-06",
+      "asOf": "2026-10-12",
+      "source": "Florida Division of Elections",
+      "url": "https://dos.elections.myflorida.com/candidates/CanDetail.asp?account=90433"
+     }
+    },
+    {
+     "id": "FL-GOV:jewett",
+     "name": "Scott Jewett",
+     "finance": {
+      "total": 15030,
+      "parts": {
+       "self": 5000,
+       "small": 2530,
+       "large": 7500
+      },
+      "spent": 9861,
+      "from": "2024-07-15",
+      "asOf": "2026-10-25",
+      "source": "Florida Division of Elections",
+      "url": "https://dos.elections.myflorida.com/candidates/CanDetail.asp?account=84076"
+     },
+     "party": "L"
+    },
+    {
+     "id": "FL-GOV:dimanche",
+     "name": "Moe Dimanche",
+     "finance": {
+      "total": 7960,
+      "parts": {
+       "self": 7040,
+       "small": 670,
+       "large": 250
+      },
+      "spent": 7147,
+      "from": "2024-12-05",
+      "asOf": "2026-07-05",
+      "source": "Florida Division of Elections",
+      "url": "https://dos.elections.myflorida.com/candidates/CanDetail.asp?account=88529"
+     }
+    },
+    {
+     "id": "FL-GOV:datto",
+     "name": "Jeffrey Datto",
+     "finance": {
+      "total": 5501,
+      "parts": {
+       "self": 5501
+      },
+      "spent": 0,
+      "from": "2025-12-05",
+      "asOf": "2025-12-08",
+      "source": "Florida Division of Elections",
+      "url": "https://dos.elections.myflorida.com/candidates/CanDetail.asp?account=89630"
+     }
+    }
+   ]
+  }
+ ]
+}

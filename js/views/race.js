@@ -12,7 +12,7 @@ export const racePage = {
     if (!race) {
       return html`<div class="wrap page"><div class="empty">${icon.ballot()}<h3>Race not found</h3><p>It may not be on the 2026 ballot. <a href="#/">Back to the map</a></p></div></div>`;
     }
-    document.title = `${raceTitle(race)} forecast · Informed Voter`;
+    document.title = `${raceTitle(race)} ${race.format === 'field' ? 'race' : 'forecast'} · Informed Voter`;
     const s = STATE_BY_ABBR[race.state];
     const level = race.level === 'federal' ? 'federal' : 'state';
     const chamber = race.office === 'house' || race.office === 'state-house' ? 'house' : race.office === 'legislature' ? 'leg' : 'senate';
