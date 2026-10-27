@@ -71,6 +71,43 @@ export function verdict(p) {
   return null; // toss-up: phrased separately
 }
 
+// Ranked-choice races (Alaska; Maine's federal races): in the final round each
+// party's other candidates' votes go to its strongest candidate. Independent and
+// third-party votes stay where they are.
+export function rcvFinal(cands, shares) {
+  const out = { ...shares };
+  for (const party of ['D', 'R']) {
+    const members = cands.filter((c) => c.party === party).sort((a, b) => (shares[b.id] ?? 0) - (shares[a.id] ?? 0));
+    if (members.length > 1) {
+      out[members[0].id] = members.reduce((s, m) => s + (shares[m.id] ?? 0), 0);
+      for (const m of members.slice(1)) out[m.id] = 0;
+    }
+  }
+  return out;
+}
+
+// The final round of a ranked-choice race, on the two-way basis such polls report
+// (finalists sum to 100, everyone else eliminated). Published final-round polls
+// between the two finalists set the split, weighted like first-round polls; the
+// rest comes from the forecasters' expected margin, so the result never leans on
+// an assumption about how eliminated ballots transfer.
+export function finalRound(cands, top2, avgF, lean) {
+  const [a, b] = top2;
+  const decided = avgF.shares[a.id] + avgF.shares[b.id] || 1;
+  const kf = Math.min(0.85, avgF.weight / (avgF.weight + 1.5));
+  let prior;
+  if ((a.party === 'R') !== (b.party === 'R')) {
+    const nonR = a.party === 'R' ? b : a;
+    const pNonR = Math.min(97, Math.max(3, 50 + lean / 2)) / 100;
+    prior = { [nonR.id]: pNonR, [(nonR === b ? a : b).id]: 1 - pNonR };
+  } else {
+    prior = { [a.id]: 0.5, [b.id]: 0.5 };
+  }
+  const out = Object.fromEntries(cands.map((c) => [c.id, 0]));
+  for (const c of [a, b]) out[c.id] = 100 * (kf * avgF.shares[c.id] / decided + (1 - kf) * prior[c.id]);
+  return out;
+}
+
 // Typical miss on the margin with no polls: tighter when forecasters have rated the race.
 export function blindSigma(race) {
   if (race.priorKind === 'ratings') return race.statewide ? 7 : 8;
@@ -95,6 +132,16 @@ export function forecast(race, asOf = new Date()) {
   } else {
     for (const c of cands) shares[c.id] = race.prior[c.id];
   }
+  const first = race.rcv ? { ...shares } : null;
+  let finalAvg = null;
+  if (race.rcv) {
+    Object.assign(shares, rcvFinal(cands, shares));
+    const top2 = [...cands].sort((a, b) => shares[b.id] - shares[a.id]).slice(0, 2);
+    const finalPolls = (race.finalPolls || []).filter((p) => top2.length === 2 && Object.keys(p.results).length === 2 && top2.every((c) => p.results[c.id] != null));
+    finalAvg = pollAverage(finalPolls, asOf);
+    if (finalAvg) Object.assign(shares, finalRound(cands, top2, finalAvg, race.lean || 0));
+  }
+  const pollShares = finalAvg ? finalAvg.shares : avg ? (race.rcv ? rcvFinal(cands, avg.shares) : avg.shares) : null;
 
   const ranked = [...cands].sort((a, b) => shares[b.id] - shares[a.id]);
   const [lead, second] = ranked;
@@ -117,13 +164,16 @@ export function forecast(race, asOf = new Date()) {
     win: win[c.id],
     votes: (race.turnout * shares[c.id]) / 100,
     poll: avg ? avg.shares[c.id] ?? null : null,
+    ...(first ? { firstRound: first[c.id] } : {}),
   }));
 
-  // Each party's strongest candidate (races like Alaska's can list several per party).
+  // The margin reads as Democrat minus Republican only when they are the top two;
+  // against an independent (Nebraska, Montana) it is the leader's margin instead.
+  const dVsR = !!second && ((lead.party === 'D' && second.party === 'R') || (lead.party === 'R' && second.party === 'D'));
   const d = ranked.find((c) => c.party === 'D');
   const r = ranked.find((c) => c.party === 'R');
-  const dr = d && r ? shares[d.id] - shares[r.id] : null;
-  const pollDR = d && r && avg && avg.shares[d.id] != null && avg.shares[r.id] != null ? avg.shares[d.id] - avg.shares[r.id] : null;
+  const dr = dVsR ? shares[d.id] - shares[r.id] : null;
+  const pollDR = dVsR && pollShares && pollShares[d.id] != null && pollShares[r.id] != null ? pollShares[d.id] - pollShares[r.id] : null;
   const center = dr ?? margin;
 
   return {
@@ -134,7 +184,7 @@ export function forecast(race, asOf = new Date()) {
     margin,
     dr,
     pollDR,
-    pollMargin: avg && second ? (avg.shares[lead.id] ?? 0) - (avg.shares[second.id] ?? 0) : null,
+    pollMargin: pollShares && second ? (pollShares[lead.id] ?? 0) - (pollShares[second.id] ?? 0) : null,
     sigma,
     range80: [center - Z80 * sigma, center + Z80 * sigma],
     pLead,

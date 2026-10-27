@@ -79,19 +79,6 @@
      "note": "22% undecided. A campaign’s own poll; treat with caution."
     }
    ],
-   "earlyVote": {
-    "ballots": 115000,
-    "asOf": "2026-10-20",
-    "label": "first day",
-    "pctOfTurnout": 0.083,
-    "byParty": null,
-    "vs2022": null,
-    "note": "About 115,000 people voted on the first day of early voting. Black voters made up almost 32% of them, a larger share than in almost any election since 2008. Early voting runs through Oct. 27.",
-    "source": {
-     "title": "Louisiana Illuminator, Oct. 22, 2026 (Secretary of State data)",
-     "url": "https://lailluminator.com/2026/10/22/black-voter-turnout-higher-than-normal-for-louisianas-first-day-of-early-voting/"
-    }
-   },
    "candidates": [
     {
      "id": "LA-SEN:letlow",
@@ -104,24 +91,6 @@
      "bio": "U.S. Representative for Louisiana’s 5th District since 2021; serves on the House Appropriations Committee.",
      "officialSite": "https://www.julialetlow.com/",
      "donateUrl": "https://www.julialetlow.com/donate",
-     "finance": {
-      "total": 7062069,
-      "parts": {
-       "small": 169337,
-       "large": 1400944,
-       "pac": 1243600,
-       "party": 62000,
-       "self": 0,
-       "public": 0,
-       "other": 4186188
-      },
-      "cashOnHand": 443170,
-      "asOf": "2026-10-14",
-      "source": "FEC",
-      "fecId": "S6LA00664",
-      "url": "https://www.fec.gov/data/candidate/S6LA00664/?cycle=2026&election_full=true",
-      "note": "Includes a $4.18M transfer from her U.S. House campaign"
-     },
      "positions": {
       "eco-01": {
        "stance": -1,
@@ -479,23 +448,6 @@
      "bio": "Farmer from Waterproof in Tensas Parish; former Tensas Parish Police Jury member.",
      "officialSite": "https://www.jamieforlouisiana.com/",
      "donateUrl": "https://secure.actblue.com/donate/sendafarmertowashington",
-     "finance": {
-      "total": 5019888,
-      "parts": {
-       "small": 3743089,
-       "large": 1206146,
-       "pac": 10000,
-       "party": 1000,
-       "self": 54000,
-       "public": 0,
-       "other": 5653
-      },
-      "cashOnHand": 1254929,
-      "asOf": "2026-10-14",
-      "source": "FEC",
-      "fecId": "S6LA00615",
-      "url": "https://www.fec.gov/data/candidate/S6LA00615/?cycle=2026&election_full=true"
-     },
      "positions": {
       "soc-03": {
        "stance": 2,
@@ -831,24 +783,6 @@
      "party": "R",
      "incumbent": false,
      "bio": "State senator from New Iberia (in the Legislature since 2015); manages a family oil and gas business.",
-     "finance": {
-      "total": 7749606,
-      "parts": {
-       "small": 587711,
-       "large": 3236952,
-       "pac": 138919,
-       "party": 0,
-       "self": 3514561,
-       "public": 0,
-       "other": 271463
-      },
-      "cashOnHand": 1534513,
-      "asOf": "2026-10-14",
-      "source": "FEC",
-      "fecId": "H6LA05234",
-      "url": "https://www.fec.gov/data/candidate/H6LA05234/?cycle=2026&election_full=true",
-      "note": "Includes $3.51M in loans from the candidate"
-     },
      "positions": {
       "imm-01": {
        "stance": 2,
@@ -1028,23 +962,6 @@
      "party": "R",
      "incumbent": false,
      "bio": "State senator from Baton Rouge (in the Legislature since 2015); Baptist pastor.",
-     "finance": {
-      "total": 697139,
-      "parts": {
-       "small": 1885,
-       "large": 503517,
-       "pac": 36600,
-       "party": 0,
-       "self": 155000,
-       "public": 0,
-       "other": 137
-      },
-      "cashOnHand": 134635,
-      "asOf": "2026-10-14",
-      "source": "FEC",
-      "fecId": "H6LA05226",
-      "url": "https://www.fec.gov/data/candidate/H6LA05226/?cycle=2026&election_full=true"
-     },
      "positions": {
       "cri-01": {
        "stance": 1,
@@ -1169,11 +1086,6 @@
      "party": "D",
      "incumbent": false,
      "bio": "Longtime teacher; former East Baton Rouge Parish Metro Council member.",
-     "finance": {
-      "total": 0,
-      "parts": {},
-      "note": "No campaign finance report on file with the FEC as of Oct. 24, 2026."
-     },
      "positions": {
       "hea-01": {
        "stance": 1,
@@ -1249,6 +1161,11 @@
        }
       }
      },
+     "finance": {
+      "total": 0,
+      "parts": {},
+      "note": "No campaign finance report on file with the FEC as of Oct. 24, 2026."
+     },
      "officialSite": "https://chaunabanksforcongress.vote/",
      "donateUrl": "https://secure.anedot.com/chauna-banks-for-congress/donate"
     },
@@ -1258,23 +1175,6 @@
      "party": "D",
      "incumbent": false,
      "bio": "Engineer; former head of Louisiana’s Office of Community Development (disaster recovery) under Gov. John Bel Edwards.",
-     "finance": {
-      "total": 156334,
-      "parts": {
-       "small": 40991,
-       "large": 105475,
-       "pac": 0,
-       "party": 0,
-       "self": 9856,
-       "public": 0,
-       "other": 12
-      },
-      "cashOnHand": 97400,
-      "asOf": "2026-10-14",
-      "source": "FEC",
-      "fecId": "H6LA06190",
-      "url": "https://www.fec.gov/data/candidate/H6LA06190/?cycle=2026&election_full=true"
-     },
      "positions": {
       "ene-08": {
        "stance": 2,
@@ -1466,23 +1366,6 @@
      "party": "D",
      "incumbent": false,
      "bio": "Lawyer from Walker and former New Orleans social studies teacher; endorsed by the Louisiana Democratic Party.",
-     "finance": {
-      "total": 97007,
-      "parts": {
-       "small": 70209,
-       "large": 21484,
-       "pac": 0,
-       "party": 0,
-       "self": 2965,
-       "public": 0,
-       "other": 2349
-      },
-      "cashOnHand": 21654,
-      "asOf": "2026-10-14",
-      "source": "FEC",
-      "fecId": "H6LA05309",
-      "url": "https://www.fec.gov/data/candidate/H6LA05309/?cycle=2026&election_full=true"
-     },
      "positions": {
       "def-15": {
        "stance": -2,
@@ -1561,24 +1444,6 @@
      "party": "R",
      "incumbent": false,
      "bio": "Chief operating officer of Delta College, his family’s healthcare workforce school; lives in Central.",
-     "finance": {
-      "total": 874344,
-      "parts": {
-       "small": 668,
-       "large": 8175,
-       "pac": 0,
-       "party": 0,
-       "self": 865500,
-       "public": 0,
-       "other": 1
-      },
-      "cashOnHand": 195633,
-      "asOf": "2026-10-14",
-      "source": "FEC",
-      "fecId": "H6LA06182",
-      "url": "https://www.fec.gov/data/candidate/H6LA06182/?cycle=2026&election_full=true",
-      "note": "Almost entirely loans from the candidate"
-     },
      "positions": {
       "eco-01": {
        "stance": -1,
@@ -1719,23 +1584,6 @@
      "party": "R",
      "incumbent": false,
      "bio": "Former chief administrative officer for East Baton Rouge Mayor-President Sid Edwards.",
-     "finance": {
-      "total": 109183,
-      "parts": {
-       "small": 450,
-       "large": 49760,
-       "pac": 50,
-       "party": 0,
-       "self": 50667,
-       "public": 0,
-       "other": 8256
-      },
-      "cashOnHand": 14709,
-      "asOf": "2026-10-14",
-      "source": "FEC",
-      "fecId": "H6LA06158",
-      "url": "https://www.fec.gov/data/candidate/H6LA06158/?cycle=2026&election_full=true"
-     },
      "positions": {
       "cri-01": {
        "stance": 1,
@@ -1865,24 +1713,6 @@
      "party": "R",
      "incumbent": false,
      "bio": "Self-described middle-class worker; member of the Livingston Parish Republican Executive Committee.",
-     "finance": {
-      "total": 33216,
-      "parts": {
-       "small": 0,
-       "large": 21640,
-       "pac": 2000,
-       "party": 0,
-       "self": 0,
-       "public": 0,
-       "other": 9576
-      },
-      "cashOnHand": 809,
-      "asOf": "2026-10-14",
-      "source": "FEC",
-      "fecId": "H6LA05168",
-      "url": "https://www.fec.gov/data/candidate/H6LA05168/?cycle=2026&election_full=true",
-      "note": "Part of the total is not broken out in the data retrieved"
-     },
      "positions": {
       "imm-01": {
        "stance": 2,
@@ -2023,24 +1853,6 @@
      "party": "R",
      "incumbent": false,
      "bio": "Traveling health care professional from St. Francisville.",
-     "finance": {
-      "total": 70714,
-      "parts": {
-       "small": 0,
-       "large": 0,
-       "pac": 0,
-       "party": 0,
-       "self": 0,
-       "public": 0,
-       "other": 70714
-      },
-      "cashOnHand": 10987,
-      "asOf": "2026-10-14",
-      "source": "FEC",
-      "fecId": "H6LA05259",
-      "url": "https://www.fec.gov/data/candidate/H6LA05259/?cycle=2026&election_full=true",
-      "note": "Part of the total is not broken out in the data retrieved"
-     },
      "positions": {
       "eco-07": {
        "stance": 2,
@@ -2061,11 +1873,6 @@
      "party": "L",
      "incumbent": false,
      "bio": "Attorney with more than 40 years of practice in criminal defense, family law and successions.",
-     "finance": {
-      "total": 0,
-      "parts": {},
-      "note": "No campaign finance report on file with the FEC as of Oct. 24, 2026."
-     },
      "positions": {
       "imm-05": {
        "stance": 2,
@@ -2076,6 +1883,11 @@
         "quote": "instead of arresting the immigrants, let’s arrest the gringos that gave them the job"
        }
       }
+     },
+     "finance": {
+      "total": 0,
+      "parts": {},
+      "note": "No campaign finance report on file with the FEC as of Oct. 24, 2026."
      }
     }
    ]

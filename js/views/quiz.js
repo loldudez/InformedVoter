@@ -6,6 +6,7 @@ import { icon } from '../icons.js';
 import { store } from '../store.js';
 import { QUESTIONS, CATEGORY_BY_ID, SCALE, questionsForLevel } from '../data/questions.js';
 import { ensureRace, raceTitle } from '../data/world.js';
+import { annotate, termDefs, termsIn, wireTerms, closeTerm } from '../components/terms.js';
 
 function slide({ questions, answers, i, heading }) {
   const q = questions[i];
@@ -15,13 +16,17 @@ function slide({ questions, answers, i, heading }) {
   const cats = [...new Set(questions.map((x) => x.cat))];
   const curCat = cats.indexOf(q.cat);
   const current = answers[q.id];
+  const hasTerms = termsIn(q.text).length > 0;
   return html`<div class="quiz">
     <div class="row between" style="margin-bottom:10px"><div class="eyebrow">${heading}</div><div class="eyebrow num">Question ${i + 1} of ${questions.length}</div></div>
     <div class="progress"><span style="width:${(i / questions.length) * 100}%"></span></div>
     <div class="quiz-cats" aria-hidden="true">${cats.map((c, k) => html`<i class="${k < curCat ? 'done' : k === curCat ? 'cur' : ''}" title="${CATEGORY_BY_ID[c].title}"></i>`)}</div>
+    ${i === 0 ? html`<div class="notice" style="margin-top:16px">${icon.info()}<div>All ${questions.length} questions take less than 20 minutes. You can stop at any time and pick up where you left off, but your matches may not be fully accurate until you’ve answered every question.</div></div>` : ''}
     <div class="quiz-card" style="margin-top:18px" tabindex="-1">
       <div class="eyebrow" style="color:var(--brand-2)">${cat.title} · ${catIdx + 1}/${inCat.length}</div>
-      <p class="quiz-q" id="quiz-q">${q.text}</p>
+      <p class="quiz-q${hasTerms ? ' has-terms' : ''}" id="quiz-q">${annotate(q.text)}</p>
+      ${termDefs(q.text)}
+      ${hasTerms ? html`<p class="term-hint small faint">Underlined words have a short definition: hover over, tab to or tap them.</p>` : ''}
       <div class="scale" role="group" aria-labelledby="quiz-q">
         ${SCALE.map((s, k) => html`<button type="button" data-v="${s.value}" aria-pressed="${String(current === s.value)}"><span class="dot"></span>${s.label}<span class="k">${k + 1}</span></button>`)}
       </div>
@@ -33,7 +38,7 @@ function slide({ questions, answers, i, heading }) {
         </div>
       </div>
     </div>
-    <p class="small faint" style="text-align:center;margin-top:14px">Keys 1–5 answer, ← goes back. Saved in this browser as you go.</p>
+    <p class="small faint" style="text-align:center;margin-top:14px">Keys 1–5 answer, ← goes back. Saved in this browser as you go, so you can leave and come back.</p>
   </div>`;
 }
 
@@ -51,14 +56,16 @@ function runQuiz(root, { questions, getAnswers, save, start, heading, onPos, fin
   let i = clamp(start, 0, questions.length - 1);
   let busy = false;
   const host = root.querySelector('#quiz-host');
+  wireTerms(host);
   const draw = () => {
+    closeTerm();
     host.innerHTML = String(slide({ questions, answers: getAnswers(), i, heading }));
     onPos?.(i);
     // Focus the card, not the first answer: a focus ring there looks like a pre-selected answer.
     host.querySelector('.quiz-card')?.focus({ preventScroll: true });
   };
   const advance = () => {
-    if (i < questions.length - 1) { i++; draw(); } else { host.innerHTML = String(finishHTML()); onPos?.(0); }
+    if (i < questions.length - 1) { i++; draw(); } else { closeTerm(); host.innerHTML = String(finishHTML()); onPos?.(0); }
   };
   const answer = (v) => {
     if (busy) return;

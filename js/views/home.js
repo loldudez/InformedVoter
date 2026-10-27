@@ -5,11 +5,34 @@ import { daysToElection } from '../model/forecast.js';
 import { drawMap, ratingColor, ratingLegendHTML } from '../lib/map.js';
 import { cssVar, sparkline } from '../lib/charts.js';
 import { raceRow, lastName, demoChip } from '../components/race.js';
+import { icon } from '../icons.js';
+import { store } from '../store.js';
+import { QUESTIONS } from '../data/questions.js';
 
 let statesGeo = null;
 let mode = 'senate';
 
-const signedSeats = (x) => `${x >= 0 ? '+' : '−'}${Math.abs(x).toFixed(1)}`;
+// Seats come whole: the simulations' averages are rounded so they add up to the
+// whole chamber (largest remainder, with independents who caucus with neither party
+// as a third share), and the gain is taken from the rounded count so the two agree.
+function wholeSeats(o, cur) {
+  const total = cur ? cur.D + cur.R + (cur.I || 0) + (cur.vacant || 0) : 0;
+  if (!total) return { D: Math.round(o.meanD), R: Math.round(o.meanR), I: 0 };
+  const exact = { D: o.meanD, R: o.meanR, I: Math.max(0, total - o.meanD - o.meanR) };
+  const seats = { D: Math.floor(exact.D), R: Math.floor(exact.R), I: Math.floor(exact.I) };
+  let left = total - seats.D - seats.R - seats.I;
+  for (const k of ['D', 'R', 'I'].sort((a, b) => (exact[b] % 1) - (exact[a] % 1))) {
+    if (left <= 0) break;
+    seats[k]++;
+    left--;
+  }
+  return seats;
+}
+const seatGain = (seats, cur) => {
+  const g = seats.D - cur.D;
+  if (g === 0) return html`<b>no net change</b>`;
+  return g > 0 ? html`<b class="d-text">Democrats +${g}</b>` : html`<b class="r-text">Republicans +${-g}</b>`;
+};
 
 // Chance of control, expected seats and the expected gain from today's totals,
 // the 80% range, the betting market for comparison, and how the odds have moved.
@@ -19,12 +42,13 @@ function controlTile(label, key, o, unit, sum) {
   const live = sum.source === 'refresh';
   const hist = (sum.history || []).map((h) => h[key]?.pD).filter((v) => v != null);
   const cur = o.current;
+  const seats = o.meanD != null ? wholeSeats(o, cur) : null;
   const market = o.market;
   return html`<div class="card control">
     <div class="row between"><div class="eyebrow">${label} control</div>${live ? html`<span class="live-chip" title="Simulated 20,000 times at the last refresh, ${fmtDate(sum.updated)}">Live</span>` : realRaceCount ? '' : demoChip()}</div>
     <div class="bar" role="img" aria-label="${label}: Democrats ${fmtProb(pD)}, Republicans ${fmtProb(pR)}${pN >= 0.005 ? `, no majority ${fmtProb(pN)}` : ''}"><span style="flex:${pD}"></span>${pN >= 0.005 ? html`<span class="n" style="flex:${pN}"></span>` : ''}<span style="flex:${pR}"></span></div>
     <div class="odds"><span><b class="d-text">${fmtProb(pD)}</b>Democrats</span><span style="text-align:right"><b class="r-text">${fmtProb(pR)}</b>Republicans</span></div>
-    ${o.meanD != null ? html`<p class="gain">Expected <b>${o.meanD.toFixed(1)} D</b> – <b>${o.meanR.toFixed(1)} R</b> ${unit}${cur ? html`; <b class="${o.gainD >= 0 ? 'd-text' : 'r-text'}">${o.gainD >= 0 ? `Democrats ${signedSeats(o.gainD)}` : `Republicans ${signedSeats(-o.gainD)}`}</b> from today’s ${cur.D}–${cur.R}` : ''}.</p>` : ''}
+    ${seats ? html`<p class="gain">Expected <b>${seats.D} D</b> – <b>${seats.R} R</b>${seats.I ? html` – <b>${seats.I}</b> independent` : ''} ${unit}${cur ? html`; ${seatGain(seats, cur)} from today’s ${cur.D}–${cur.R}` : ''}.</p>` : ''}
     ${o.range80D ? html`<p class="small faint" style="margin:4px 0 0">8 in 10 simulations: ${o.range80D[0]} to ${o.range80D[1]} Democratic ${unit}.${pN >= 0.005 ? ` ${fmtProb(pN)} chance neither party reaches a majority.` : ''}</p>` : ''}
     ${market ? html`<p class="market">Betting market: ${fmtProb(market.pD)} D on <a href="${market.url}" target="_blank" rel="noopener noreferrer">Polymarket</a> (a cross-check, not an input)</p>` : ''}
     ${hist.length >= 3 ? html`<div class="control-history"><span class="tiny faint">Democrats’ chance since ${fmtDate(sum.history[0].t)}</span>${raw(sparkline(hist.map((v) => v * 100), { width: 260, height: 34, color: cssVar('--dem'), label: `${label}: Democrats' chance of control over time` }))}</div>` : ''}
@@ -32,6 +56,17 @@ function controlTile(label, key, o, unit, sum) {
 }
 
 const chamberUp = (c) => (c.up === 'all' ? 'all seats' : c.up === 'partial' ? 'some seats' : 'no election');
+
+// The way into the questionnaire, first thing on the page: how long it takes, that
+// it can be left and resumed, and that matches firm up as more is answered.
+function quizCta() {
+  const touched = Object.keys(store.get().answers).length;
+  const total = QUESTIONS.length;
+  return html`<section class="quiz-cta">
+    <a class="btn btn-primary btn-cta" href="#/views">${icon.check()} Find the best candidate that matches your views</a>
+    <p class="small muted">${touched > 0 && touched < total ? html`You’ve answered ${touched} of ${total} questions; this picks up where you left off. ` : ''}Takes less than 20 minutes. You can stop at any time and come back later, but your matches may not be fully accurate until you’ve answered every question.</p>
+  </section>`;
+}
 
 function tooltip(f) {
   const st = f.id;
@@ -68,6 +103,7 @@ export const home = {
       .sort((a, b) => Math.abs(a.f.pLead - 0.5) - Math.abs(b.f.pLead - 0.5)).slice(0, 8);
     const days = daysToElection();
     return html`<div class="wrap page stack-lg">
+      ${quizCta()}
       <section class="hero">
         <span class="label-pill"><span class="dots">•••</span> 2026 midterm elections · ${days} days to go <span class="dots">•••</span></span>
         <h1>Every race on the <span class="grad-text">2026 ballot</span>, state by state.</h1>

@@ -122,6 +122,22 @@ def forecast(race, as_of=None):
     else:
         for c in cands:
             shares[c["id"]] = prior[c["id"]]
+    first = dict(shares) if race.get("rcv") else None
+    final_avg = None
+    if race.get("rcv"):
+        shares.update(rcv_final(cands, shares))
+        top2 = sorted(cands, key=lambda c: -shares[c["id"]])[:2]
+        ids = {c["id"] for c in top2}
+        final_polls = [p for p in race.get("finalPolls") or [] if len(ids) == 2 and set(p["results"]) == ids]
+        final_avg = poll_average(final_polls, as_of)
+        if final_avg:
+            shares.update(final_round(cands, top2, final_avg, race.get("lean") or 0.0))
+    if final_avg:
+        poll_shares = final_avg["shares"]
+    elif avg:
+        poll_shares = rcv_final(cands, avg["shares"]) if race.get("rcv") else avg["shares"]
+    else:
+        poll_shares = None
     ranked = sorted(cands, key=lambda c: -shares[c["id"]])
     lead = ranked[0]
     second = ranked[1] if len(ranked) > 1 else None
@@ -131,27 +147,65 @@ def forecast(race, as_of=None):
     poll_sigma = blind - (blind - polled_sigma) * (k / 0.85)
     sigma = math.sqrt(poll_sigma ** 2 + 0.06 * days)
     p_lead = norm_cdf(margin / sigma) if second else 1.0
-    # Each party's strongest candidate (races like Alaska's can list several per party).
+    # The margin reads as Democrat minus Republican only when they are the top two;
+    # against an independent (Nebraska, Montana) it is the leader's margin instead.
+    d_vs_r = second is not None and {lead["party"], second["party"]} == {"D", "R"}
     d = next((c for c in ranked if c["party"] == "D"), None)
     r = next((c for c in ranked if c["party"] == "R"), None)
-    dr = shares[d["id"]] - shares[r["id"]] if d and r else None
+    dr = shares[d["id"]] - shares[r["id"]] if d_vs_r else None
     poll_dr = None
-    if d and r and avg and d["id"] in avg["shares"] and r["id"] in avg["shares"]:
-        poll_dr = avg["shares"][d["id"]] - avg["shares"][r["id"]]
-    return {"shares": shares, "lead": lead, "second": second, "margin": margin, "dr": dr, "pollDR": poll_dr,
+    if d_vs_r and poll_shares and d["id"] in poll_shares and r["id"] in poll_shares:
+        poll_dr = poll_shares[d["id"]] - poll_shares[r["id"]]
+    return {"shares": shares, "first": first, "lead": lead, "second": second, "margin": margin, "dr": dr, "pollDR": poll_dr,
             "sigma": sigma, "pLead": p_lead, "poll": avg, "k": k}
 
 
+def rcv_final(cands, shares):
+    """Ranked-choice races (Alaska; Maine's federal races): in the final round each
+    party's other candidates' votes go to its strongest candidate. Independent and
+    third-party votes stay where they are."""
+    out = dict(shares)
+    for party in ("D", "R"):
+        members = sorted((c for c in cands if c["party"] == party), key=lambda c: -(shares.get(c["id"]) or 0))
+        if len(members) > 1:
+            out[members[0]["id"]] = sum(shares.get(m["id"]) or 0 for m in members)
+            for m in members[1:]:
+                out[m["id"]] = 0.0
+    return out
+
+
+def final_round(cands, top2, avg_f, lean):
+    """The final round of a ranked-choice race, on the two-way basis such polls
+    report (finalists sum to 100, everyone else eliminated). Published final-round
+    polls between the two finalists set the split, weighted like first-round polls;
+    the rest comes from the forecasters' expected margin, so the result never leans
+    on an assumption about how eliminated ballots transfer."""
+    a, b = top2
+    decided = (avg_f["shares"][a["id"]] + avg_f["shares"][b["id"]]) or 1
+    kf = min(0.85, avg_f["weight"] / (avg_f["weight"] + 1.5))
+    if (a["party"] == "R") != (b["party"] == "R"):
+        non_r = b if a["party"] == "R" else a
+        p_non_r = min(97.0, max(3.0, 50 + lean / 2)) / 100
+        prior = {non_r["id"]: p_non_r, (a if non_r is b else b)["id"]: 1 - p_non_r}
+    else:
+        prior = {a["id"]: 0.5, b["id"]: 0.5}
+    out = {c["id"]: 0.0 for c in cands}
+    for c in (a, b):
+        out[c["id"]] = 100 * (kf * avg_f["shares"][c["id"]] / decided + (1 - kf) * prior[c["id"]])
+    return out
+
+
 def main_contenders(cands):
-    """The two sides the expected margin applies to: the leading Democrat (or, with
-    no Democrat, the leading non-Republican) against the leading Republican (or the
-    leading non-Democrat). `cands` must be ordered most prominent first."""
-    d = next((c for c in cands if c["party"] == "D"), None)
+    """The two sides the expected margin applies to: the strongest non-Republican
+    (usually the Democrat; an independent where one leads the opposition, as in
+    Nebraska or Montana) against the strongest Republican. With no Republican, the
+    strongest Democrat against the next candidate. `cands` must be ordered
+    strongest first (poll share, then incumbency, then money)."""
     r = next((c for c in cands if c["party"] == "R"), None)
-    if d and r:
-        return d, r
     if r:
-        return next((c for c in cands if c is not r), None), r
+        a = next((c for c in cands if c["party"] != "R"), None) or next((c for c in cands if c is not r), None)
+        return a, r
+    d = next((c for c in cands if c["party"] == "D"), None)
     if d:
         return d, next((c for c in cands if c is not d), None)
     return (cands[0], cands[1]) if len(cands) > 1 else (cands[0], None)
@@ -161,13 +215,16 @@ def prior_shares(cands, margin_dr):
     """Baseline vote shares from an expected margin between the two main contenders
     (positive favors the Democratic or non-Republican side). Every other candidate
     gets two points, up to eight in all. Two candidates of the same party (a
-    top-two runoff) start 56-44 toward the more prominent one."""
+    top-two runoff) start 56-44 toward the stronger one."""
     if len(cands) == 1:
         return {cands[0]["id"]: 100.0}
     a, b = main_contenders(cands)
     minors = [c for c in cands if c is not a and c is not b]
     rest = min(8.0, 2.0 * len(minors))
-    m = 12.0 if a["party"] == b["party"] else margin_dr
+    if a["party"] == b["party"]:
+        m = 12.0 if cands.index(a) < cands.index(b) else -12.0
+    else:
+        m = margin_dr
     share_a = min(97.0, max(3.0, 50 + m / 2))
     out = {c["id"]: rest / len(minors) for c in minors}
     out[a["id"]] = share_a * (100 - rest) / 100

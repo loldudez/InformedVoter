@@ -85,14 +85,25 @@ def main(path):
                 if race.get("level") == "state" and qid.startswith("def-"):
                     warnings.append(f"{cid} {qid}: foreign-policy question on a state race is never asked")
             fin = c.get("finance")
-            if fin and not (finite(fin.get("total")) and fin["total"] >= 0):
+            if fin and fin.get("total") is None and fin.get("note"):
+                # A news report's figures, kept as a note with their period instead of a total.
+                if not str(fin.get("url", "")).startswith("https://"):
+                    errors.append(f"{cid}: a fundraising note needs an https source link")
+            elif fin and not (finite(fin.get("total")) and fin["total"] >= 0):
                 errors.append(f"{cid}: fundraising total is not a number")
+            elif fin and fin.get("parts"):
+                parts = fin["parts"]
+                # "other" nets loans, offsets and other receipts, which a filing can report as negative.
+                if not all(finite(v) and (v >= 0 or k == "other") for k, v in parts.items()):
+                    errors.append(f"{cid}: a fundraising source is negative or not a number")
+                elif abs(sum(parts.values()) - fin["total"]) > max(10, fin["total"] * 0.001):
+                    warnings.append(f"{cid}: fundraising sources add up to {sum(parts.values()):,.0f}, not the total {fin['total']:,.0f}")
             if c.get("donateUrl"):
                 u, site = urlparse(c["donateUrl"]), urlparse(c.get("officialSite") or "")
                 own = site.hostname and (u.hostname == site.hostname.removeprefix("www.") or u.hostname.endswith("." + site.hostname.removeprefix("www.")) or u.hostname == site.hostname)
                 if u.scheme != "https" or not (own or u.hostname in PROCESSORS):
                     errors.append(f"{cid}: donation link {c['donateUrl']} is not on the official domain or a known processor (it will be hidden)")
-        for p in race.get("polls", []):
+        for p in race.get("polls", []) + race.get("finalPolls", []):
             who = f"{rid}: poll by {p.get('pollster')}"
             if not is_day(p.get("end")) or (p.get("start") and not is_day(p["start"])):
                 errors.append(f"{who} has a bad date")

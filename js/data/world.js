@@ -61,6 +61,17 @@ function normalizeReal(r) {
 
 const optional = (url) => fetchJSON(url).catch(() => null);
 
+// State legislative races the refresh read from Wikipedia, one file per state
+// (data/legislature/ST.json, see scripts/lib/legislature.py), loaded with the chamber map.
+const legFiles = new Map();
+function legFile(st) {
+  if (!legFiles.has(st)) legFiles.set(st, optional(`data/legislature/${st}.json`));
+  return legFiles.get(st);
+}
+
+// Races shown as a field with no win odds: open primaries and state legislative races.
+const noOdds = (race) => race.format === 'open-primary' || race.format === 'field';
+
 export async function initWorld() {
   mapIndex = await fetchJSON('data/maps/index.json');
   demo.federalAndGovernor(mapIndex).forEach(addRace);
@@ -86,7 +97,7 @@ function verifyModel(list) {
   let checked = 0;
   for (const r of list) {
     const mc = r.modelCheck;
-    if (!mc || r.format === 'open-primary') continue;
+    if (!mc || noOdds(r)) continue;
     checked++;
     const f = forecast(r, new Date(mc.asOf));
     if (f.lead.id !== mc.lead || Math.abs(f.pLead - mc.pLead) > 0.002 || Math.abs(f.margin - mc.margin) > 0.02) {
@@ -109,7 +120,10 @@ export const racesMeta = () => meta;
 // top two. The head-to-head model doesn't fit, so these races report the field,
 // the polls as published and the forecasters' consensus rating, with no win odds.
 // The expected margin is between the parties' combined vote (`lean`).
+// State legislative races (kind "field") work the same way, except that `dr` is the
+// district's 2024 presidential margin, not an expected result.
 function fieldForecast(race) {
+  const kind = race.format === 'field' ? 'field' : 'open-primary';
   const avg = pollAverage(race.polls, new Date());
   const raised = (c) => c.finance?.total || 0;
   const cands = race.candidates
@@ -118,34 +132,36 @@ function fieldForecast(race) {
   const rating = race.consensus?.rating || 'Not rated';
   const ratingParty = / R$/.test(rating) ? 'R' : / D$/.test(rating) ? 'D' : null; // "Safe R" -> R
   return {
-    open: true, asOf: new Date(), cands, lead: cands[0], second: cands[1],
-    margin: null, dr: race.lean ?? null, pollDR: null, pollMargin: null, sigma: 12, range80: null,
-    pLead: null, rating, ratingParty, poll: avg, turnout: race.turnout,
+    open: true, kind, asOf: new Date(), cands, lead: cands[0], second: cands[1],
+    margin: null, dr: kind === 'field' ? race.pres24 ?? null : race.lean ?? null, pollDR: null, pollMargin: null, sigma: 12, range80: null,
+    pLead: null, rating, ratingParty, held: race.held || null, poll: avg, turnout: race.turnout,
   };
 }
 
 export function fc(race) {
   let f = fcCache.get(race.id);
-  if (!f) { f = race.format === 'open-primary' ? fieldForecast(race) : forecast(race); fcCache.set(race.id, f); }
+  if (!f) { f = noOdds(race) ? fieldForecast(race) : forecast(race); fcCache.set(race.id, f); }
   return f;
 }
 
 export function hist(race) {
-  if (race.format === 'open-primary') return [];
+  if (noOdds(race)) return [];
   let h = histCache.get(race.id);
   if (!h) { h = history(race, 30); histCache.set(race.id, h); }
   return h;
 }
 
-// Daily history over a window long enough to include the polls behind the
-// average: from the first poll of the last 180 days, and never under 30 days.
+// Daily history over the race's whole polling record: from its first poll (the
+// refresh keeps polls since January 2025), and never under 30 days. Each day is
+// re-run with only the polls published by then, so the line moves when real
+// polls came out and holds steady between them.
 export function pollHist(race) {
-  if (race.format === 'open-primary') return [];
+  if (noOdds(race)) return [];
   let h = pollHistCache.get(race.id);
   if (!h) {
     const now = new Date();
-    const recent = race.polls.map((p) => day(p.end).getTime()).filter((t) => now - t <= 180 * 864e5);
-    const first = recent.length ? Math.min(...recent) : now - 30 * 864e5;
+    const ends = race.polls.map((p) => day(p.end).getTime()).filter((t) => t <= now.getTime());
+    const first = ends.length ? Math.min(...ends) : now - 30 * 864e5;
     const days = Math.max(30, Math.ceil((now - first) / 864e5) + 2);
     h = history(race, days, now);
     pollHistCache.set(race.id, h);
@@ -158,14 +174,21 @@ export function changeOver(race, days) {
   const h = pollHist(race);
   if (h.length < 2) return null;
   const now = h[h.length - 1].fc, then = h[Math.max(0, h.length - 1 - days)].fc;
+  if (!now.second) return null;
   const lastPoll = race.polls.reduce((m, p) => (p.end > m ? p.end : m), '');
   const pollsIn = race.polls.filter((p) => day(p.end) > new Date(Date.now() - days * 864e5)).length;
-  const pd = (f) => (f.pollDR != null ? f.pollDR : f.pollMargin);
+  // Both moves are measured between the same two candidates the margin is shown
+  // for, and the polls on their first-round averages (as charted), so a
+  // ranked-choice race compares like with like across the window.
+  const d = now.cands.find((c) => c.party === 'D'), r = now.cands.find((c) => c.party === 'R');
+  const [a, b] = now.dr != null && d && r ? [d, r] : [now.lead, now.second];
+  const gap = (f) => (f.poll && f.poll.shares[a.id] != null && f.poll.shares[b.id] != null ? f.poll.shares[a.id] - f.poll.shares[b.id] : null);
+  const share = (f, id) => f.cands.find((c) => c.id === id)?.share ?? 0;
   return {
     days, pollsIn, lastPoll: lastPoll || null,
-    poll: now.poll && then.poll && pd(now) != null && pd(then) != null ? pd(now) - pd(then) : null,
-    pollStarted: !!now.poll && !then.poll,
-    margin: now.dr != null && then.dr != null ? now.dr - then.dr : now.margin - then.margin,
+    poll: gap(now) != null && gap(then) != null ? gap(now) - gap(then) : null,
+    pollStarted: gap(now) != null && gap(then) == null,
+    margin: share(now, a.id) - share(now, b.id) - (share(then, a.id) - share(then, b.id)),
     win: now.pLead - (then.cands.find((c) => c.id === now.lead.id)?.win ?? 0),
   };
 }
@@ -196,21 +219,25 @@ export async function loadLayer(st, layer) {
   return layerCache.get(key);
 }
 
-// Legislative races are built on demand from the chamber's district map.
+// Legislative races are built on demand from the chamber's district map: the real
+// races from data/legislature where the refresh found them, the demo set elsewhere.
 export async function legislativeRaces(st, chamberKey) {
   const key = `${st}:${chamberKey}`;
   if (legCache.has(key)) return legCache.get(key);
   const chamber = legislatureChambers(st).find((c) => c.key === chamberKey);
   if (!chamber) return null;
-  const fcoll = await loadLayer(st, chamber.layer);
+  const [fcoll, file] = await Promise.all([loadLayer(st, chamber.layer), legFile(st)]);
+  const info = file?.chambers?.find((c) => c.key === chamberKey) || null;
+  const real = new Map((file?.races || []).filter((r) => r.chamber === chamberKey).map((r) => [r.district, normalizeReal(r)]));
   const built = demo.legislativeRaces(st, chamber, fcoll.features);
   for (const [code, race] of built) {
-    if (!race) continue;
-    const realOne = races.get(race.id); // real data wins
-    built.set(code, realOne || race);
-    if (!realOne) for (const c of race.candidates) candidates.set(c.id, { ...c, raceId: race.id });
+    // Real data wins. Where the page lists the seats on the ballot, a district it
+    // leaves out has no election this year (the demo only guesses for staggered terms).
+    const r = real.get(code) || (race && races.get(race.id)) || (info?.complete ? null : race);
+    built.set(code, r);
+    if (r) for (const c of r.candidates) candidates.set(c.id, { ...c, raceId: r.id });
   }
-  const result = { chamber, features: fcoll, races: built };
+  const result = { chamber, features: fcoll, races: built, info };
   legCache.set(key, result);
   return result;
 }
@@ -242,9 +269,15 @@ export function financeOf(cand) {
   const race = getRace(cand.raceId);
   return cand.demo ? demo.finance(cand, race) : cand.finance || null;
 }
+// A total counts as a figure when it is positive, or $0 from a filed summary with its
+// coverage dates. Wikipedia lists candidates who have filed nothing at a bare $0, and
+// that means "not loaded yet", never "raised nothing".
+export const hasFigures = (fin) => !!fin && fin.total != null && (fin.total > 0 || !!fin.from);
+// Real races carry the early vote their state or district has reported (House
+// districts only where the Election Lab's district file is complete).
 export function earlyVoteOf(race) {
-  if (!race.statewide || race.office === 'house') return null;
-  return race.demo ? demo.earlyVote(race.state) : race.earlyVote || null;
+  if (race.demo) return race.statewide && race.office !== 'house' ? demo.earlyVote(race.state) : null;
+  return race.earlyVote || null;
 }
 
 // Senate, House and governor control. The refresh's simulation (data/control.json,
