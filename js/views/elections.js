@@ -1,7 +1,7 @@
 // "My elections": the races on the visitor's ballot, matching against their views,
 // and the similarities / differences / unclear breakdown for each candidate.
 
-import { html, initials, fmtPct, fmtProb, fmtDate, fmtDR } from '../util.js';
+import { html, initials, fmtPct, fmtProb, fmtDate } from '../util.js';
 import { icon } from '../icons.js';
 import { store } from '../store.js';
 import { STATE_BY_ABBR, legislatureChambers, ELECTION_DATE_LABEL } from '../data/states.js';
@@ -45,17 +45,14 @@ function raceCard(race) {
       <div><div class="eyebrow">${officeLabel(race)}</div><h3 style="margin:2px 0 0;font-size:19px">${raceTitle(race)}</h3></div>
       <div class="row">${dataChip(race)}${ratingChip(f)}${starBtn(race.id, { small: true })}</div>
     </div>
-    ${f.kind === 'field' ? html`<p class="small muted" style="margin:0">No forecast for state legislative races. ${f.cands.length ? '' : 'Wikipedia doesn’t list this district’s candidates yet. '}${f.dr != null ? `The district voted ${fmtDR(f.dr)} for president in 2024.` : ''}</p>` : ''}
-    ${f.open && f.kind !== 'field' ? html`<p class="small muted" style="margin:0">Open primary: all ${f.cands.length} candidates share one ballot. A majority wins outright; otherwise the top two meet in a runoff${race.runoff ? ` on ${fmtDate(race.runoff + 'T12:00:00')}` : ''}. Percentages are from the latest published poll.</p>` : ''}
+    ${f.open ? html`<p class="small muted" style="margin:0">Open primary: all ${f.cands.length} candidates share one ballot. A majority wins outright; otherwise the top two meet in a runoff${race.runoff ? ` on ${fmtDate(race.runoff + 'T12:00:00')}` : ''}. Percentages are from the latest published poll.</p>` : ''}
     <div class="grid grid-2" style="gap:10px">${f.cands.map((c) => html`<div class="compact-cand ${partyClass(c.party)}">
       <div class="badge" style="background:${colors[c.id]}">${initials(c.name)}</div>
       <div style="min-width:0"><div class="nm">${c.name}</div><div class="tiny faint">${PARTY_NAME[c.party] || c.party}${f.open ? '' : ` · ${fmtProb(c.win)} to win`}</div></div>
       ${c.share != null ? html`<div class="sh" style="color:${colors[c.id]};font-size:18px">${fmtPct(c.share, 0)}</div>` : ''}
       ${heartBtn(c.id, c.name, { small: true })}
     </div>`)}</div>
-    ${!isDemo(race) && !race.research ? html`<p class="small muted" style="margin:0">${icon.info()} ${f.kind === 'field'
-      ? html`The candidates here come from Wikipedia’s 2026 page for this chamber; their issue positions haven’t been researched, so matching isn’t available. <a href="#/race/${id}">See the race</a>.`
-      : html`Candidates, ratings, polls and money here are live, but not every candidate’s issue positions have been researched yet, so matching isn’t available for this race. <a href="#/race/${id}">See the full forecast</a>.`}</p>` : html`<div class="row">
+    ${!isDemo(race) && !race.research ? html`<p class="small muted" style="margin:0">${icon.info()} Candidates, ratings, polls and money here are live, but not every candidate’s issue positions have been researched yet, so matching isn’t available for this race. <a href="#/race/${id}">See the full forecast</a>.</p>` : html`<div class="row">
       ${answered >= MIN_COMPARED
         ? html`<a class="btn btn-sm btn-primary" href="#/elections/${id}/match?mode=profile">${icon.user()} Match with My views</a>`
         : html`<a class="btn btn-sm" href="#/views" title="Answer at least ${MIN_COMPARED} questions first">${icon.user()} Answer My views first</a>`}

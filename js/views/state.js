@@ -1,11 +1,10 @@
-import { html, raw, fmtProb, fmtPct, fmtDR } from '../util.js';
+import { html, raw, fmtProb, fmtPct } from '../util.js';
 import { icon } from '../icons.js';
 import { STATE_BY_ABBR, legislatureChambers, ELECTION_DATE_LABEL } from '../data/states.js';
 import { fc, statewideRaces, houseRaces, loadLayer, legislativeRaces } from '../data/world.js';
-import { cleanDistrictName } from '../data/demo.js';
 import { drawMap, ratingColor, ratingLegendHTML } from '../lib/map.js';
 import { cssVar } from '../lib/charts.js';
-import { raceFull, compactRace, mountRaceTabs, leadStr, lastName } from '../components/race.js';
+import { raceFull, compactRace, mountRaceTabs, leadStr } from '../components/race.js';
 import { howToVote } from '../components/vote.js';
 
 const ODD_YEAR_STATES = new Set(['LA', 'MS', 'NJ', 'VA']);
@@ -134,38 +133,14 @@ export const stateView = {
     const up = [...races.values()].filter(Boolean);
     root.querySelector('#district-count').textContent = `${up.length} of ${features.features.length} districts elect in 2026`;
 
-    // Real state legislative races have no forecast: color them by how the district
-    // voted for president in 2024 where the page gives it, else by the party holding the seat.
-    const field = up.filter((r) => r.format === 'field');
-    const byLean = field.length > 0 && field.filter((r) => r.pres24 != null).length >= 0.8 * field.length;
-    const mid = cssVar('--neutral-mid');
-    const pole = (p) => (p === 'D' ? cssVar('--dem') : p === 'R' ? cssVar('--rep') : mid);
-    const fieldColor = (r) => {
-      if (byLean) {
-        if (r.pres24 == null) return mid;
-        const a = Math.abs(r.pres24);
-        return d3.interpolateLab(mid, pole(r.pres24 > 0 ? 'D' : 'R'))(a >= 15 ? 1 : a >= 7 ? 0.68 : a >= 3 ? 0.4 : 0);
-      }
-      return r.held === 'D' || r.held === 'R' ? d3.interpolateLab(mid, pole(r.held))(0.68) : mid;
-    };
-    const fillFor = (r) => (!r ? cssVar('--not-up') : r.format === 'field' ? fieldColor(r) : ratingColor(fc(r)));
-
     const few = features.features.length <= 40;
     const map = drawMap(mapEl, features, {
-      fillFor: (f) => fillFor(raceFor(f)),
+      fillFor: (f) => (raceFor(f) ? ratingColor(fc(raceFor(f))) : cssVar('--not-up')),
       tooltipFor: (f) => {
         const r = raceFor(f);
         const name = r ? r.districtName : f.properties.n;
         if (!r) return html`<div class="t-title">${name}</div><div class="faint small">No election in 2026</div>`;
         const ff = fc(r);
-        if (ff.kind === 'field') {
-          const incs = (r.incumbents || []).filter((i) => i.name);
-          return html`<div class="t-title">${name}</div>
-            ${r.pres24 != null ? html`<div class="t-row"><span>2024 president</span><b>${fmtDR(r.pres24)}</b></div>` : ''}
-            ${incs.length ? html`<div class="t-row"><span>Held by</span><b>${incs.map((i) => `${lastName(i.name)} (${i.party || '?'})`).join(', ')}</b></div>` : ''}
-            <div class="t-row"><span>Candidates</span><b>${ff.cands.length || 'not listed yet'}</b></div>
-            ${r.consensus ? html`<div class="t-row"><span>Forecasters</span><b>${ff.rating}</b></div>` : ''}`;
-        }
         if (ff.open) return html`<div class="t-title">${name}</div><div class="t-row"><span>Open primary</span><b>${ff.cands.length} candidates</b></div><div class="t-row"><span>Forecasters</span><b>${ff.rating}</b></div>`;
         return html`<div class="t-title">${name}</div>${ff.cands.slice(0, 2).map((c) => html`<div class="t-row"><span>${c.name} (${c.party})</span><b>${fmtPct(c.share)}</b></div>`)}<div class="t-row"><span>${ff.rating}</span><b>${fmtProb(ff.pLead)}</b></div>`;
       },
@@ -173,26 +148,19 @@ export const stateView = {
       labelFor: few ? (f) => String(parseInt(f.id, 10) || f.id) : null,
       regionLabel: (f) => {
         const r = raceFor(f);
-        return r ? `${r.districtName}: ${r.format === 'field' ? leadStr(fc(r)) : fc(r).rating}` : `${f.properties.n}: no election in 2026`;
+        return r ? `${r.districtName}: ${fc(r).rating}` : `${f.properties.n}: no election in 2026`;
       },
       zoomable: true,
       ariaLabel: 'District map',
     });
-    const notUp = `<span><i style="background:${cssVar('--not-up')}"></i>No election in 2026</span>`;
-    const sw = (c, label) => `<span><i style="background:${c}"></i>${label}</span>`;
-    root.querySelector('#district-legend').innerHTML = !field.length
-      ? ratingLegendHTML(notUp)
-      : byLean
-        ? `<div class="map-legend"><span class="faint">2024 president:</span>${[['R', 1, 'R+15 or more'], ['R', 0.68, 'R+7 to 15'], ['R', 0.4, 'R+3 to 7'], [null, 0, 'Within 3'], ['D', 0.4, 'D+3 to 7'], ['D', 0.68, 'D+7 to 15'], ['D', 1, 'D+15 or more']]
-          .map(([p, t, label]) => sw(d3.interpolateLab(mid, pole(p))(t), label)).join('')}${notUp}</div>`
-        : `<div class="map-legend"><span class="faint">Seat now held by:</span>${sw(d3.interpolateLab(mid, pole('R'))(0.68), 'Republican')}${sw(d3.interpolateLab(mid, pole('D'))(0.68), 'Democrat')}${sw(mid, 'Other, split, vacant or not listed')}${notUp}</div>`;
+    root.querySelector('#district-legend').innerHTML = ratingLegendHTML(`<span><i style="background:${cssVar('--not-up')}"></i>No election in 2026</span>`);
 
     list.innerHTML = features.features.map((f) => {
       const r = raceFor(f);
-      const label = r ? r.districtName : cleanDistrictName(f.properties.n);
+      const label = (r ? r.districtName : f.properties.n.replace(/\b(State (Senate|House|Legislative)|Assembly)\s*/g, '')).trim();
       if (!r) return String(html`<span class="district-btn not-up"><span class="dn">${label}</span><span class="tiny faint">No 2026 race</span></span>`);
       const ff = fc(r);
-      const lp = ff.kind === 'field' ? (ff.dr != null ? (ff.dr > 0 ? 'D' : 'R') : ff.held) : ff.open ? ff.ratingParty : ff.lead.party;
+      const lp = ff.open ? ff.ratingParty : ff.lead.party;
       const color = lp === 'D' ? 'd-text' : lp === 'R' ? 'r-text' : '';
       return String(html`<button type="button" class="district-btn" data-district="${f.id}" aria-pressed="false"><span class="dn">${label}</span><span class="dm ${color}">${leadStr(ff)}</span></button>`);
     }).join('');
@@ -220,10 +188,8 @@ export const stateView = {
     }
 
     // Start on the requested district, else the closest race, so the panel is never empty.
-    // (For state legislative races, the closest 2024 presidential result with candidates listed.)
-    const closeField = field.filter((r) => r.candidates.length && r.pres24 != null).sort((a, b) => Math.abs(a.pres24) - Math.abs(b.pres24))[0];
     const start = ctx.query.d && races.has(ctx.query.d) ? ctx.query.d
-      : (closeField || up.find((r) => !r.demo) || up.slice().sort((a, b) => Math.abs((fc(a).pLead ?? 1) - 0.5) - Math.abs((fc(b).pLead ?? 1) - 0.5))[0])?.district;
+      : (up.find((r) => !r.demo) || up.slice().sort((a, b) => Math.abs((fc(a).pLead ?? 1) - 0.5) - Math.abs((fc(b).pLead ?? 1) - 0.5))[0])?.district;
     if (start) select(start, false);
   },
 };

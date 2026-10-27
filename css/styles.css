@@ -258,9 +258,6 @@ button.chip[aria-pressed="true"] { background: var(--text-1); color: var(--bg); 
 .hero .lede { max-width: 680px; margin: 0 auto 16px; color: var(--text-2); font-size: 17px; }
 .label-pill { display: inline-flex; align-items: center; gap: 10px; padding: 7px 16px; border-radius: 999px; border: 1px solid var(--border-2); background: var(--surface-1); font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; color: var(--text-2); }
 .label-pill .dots { color: var(--amber); letter-spacing: 2px; }
-.quiz-cta { text-align: center; padding-top: 6px; }
-.quiz-cta .btn-cta { min-height: 56px; padding: 0 28px; font-size: 17px; max-width: 100%; white-space: normal; line-height: 1.25; }
-.quiz-cta p { max-width: 620px; margin: 10px auto 0; }
 .verdict-d { color: var(--dem); }
 .verdict-r { color: var(--rep); }
 .verdict-x { color: var(--third); }
@@ -337,15 +334,6 @@ table.data td.r, table.data th.r { text-align: right; }
 .stackbar span:last-child { border-radius: 0 4px 4px 0; }
 .legend-list { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12.5px; color: var(--text-2); margin-top: 8px; }
 .legend-list span { display: inline-flex; align-items: center; gap: 6px; }
-.fund-table { width: 100%; border-collapse: collapse; font-size: 12.5px; color: var(--text-2); margin-top: 8px; }
-.fund-table td { padding: 3px 0; border-bottom: 1px solid var(--border); vertical-align: middle; }
-.fund-table tr:last-child td { border-bottom: 0; }
-.fund-table td:first-child { padding-right: 8px; }
-/* Flex on an inner span: a flex <td> leaves the table layout, and its divider then
-   sits at a different height from the number cells' when a label wraps. */
-.fund-table .fund-label { display: flex; align-items: center; gap: 6px; }
-.fund-table .key-box { flex: none; }
-.fund-table .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; padding-left: 10px; }
 .share-bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; gap: 2px; background: var(--surface-3); }
 .share-bar span { display: block; }
 
@@ -454,14 +442,6 @@ body.is-intro .topbar, body.is-intro .site-header, body.is-intro .ticker, body.i
 .quiz-card:focus { outline: none; }
 .quiz-card { background: var(--surface-1); border: 1px solid var(--border-2); border-radius: 26px; padding: clamp(22px, 4vw, 40px); box-shadow: var(--shadow); }
 .quiz-q { font-family: 'Bricolage', 'Inter', sans-serif; font-weight: 700; font-size: clamp(22px, 3vw, 30px); line-height: 1.25; letter-spacing: -.015em; margin: 14px 0 24px; min-height: 2.5em; }
-.quiz-q.has-terms { margin-bottom: 8px; }
-.term-hint { margin: 0 0 20px; }
-/* Glossary terms: a dotted underline marks a word with a definition. */
-.term { display: inline; font: inherit; letter-spacing: inherit; color: inherit; text-align: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: help; text-decoration: underline dotted var(--brand-2); text-decoration-thickness: 2px; text-underline-offset: .2em; }
-.term:hover, .term[aria-expanded="true"] { text-decoration-style: solid; }
-.term:focus-visible { outline: 2px solid var(--brand-2); outline-offset: 2px; border-radius: 4px; }
-.term-tip { position: absolute; z-index: 60; width: max-content; max-width: min(340px, calc(100vw - 32px)); padding: 12px 14px; border-radius: 14px; background: var(--surface-3); border: 1px solid var(--border-2); box-shadow: var(--shadow); font: 14px/1.5 'Inter', system-ui, sans-serif; color: var(--text-2); }
-.term-tip b { display: block; margin-bottom: 4px; color: var(--text-1); font-size: 14.5px; }
 .scale { display: grid; gap: 10px; }
 .scale button { display: flex; align-items: center; gap: 14px; width: 100%; min-height: 54px; padding: 0 18px; border-radius: 16px; border: 1px solid var(--border-2); background: var(--surface-2); cursor: pointer; font-weight: 600; font-size: 15.5px; text-align: left; transition: border-color .12s, background .12s, transform .08s; }
 .scale button:hover { border-color: var(--text-3); background: var(--surface-3); }

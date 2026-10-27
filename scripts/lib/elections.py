@@ -1,13 +1,11 @@
 """Parsers for Wikipedia's 2026 election tables: candidates, forecaster ratings,
 polls, aggregator averages, fundraising and chamber composition."""
 
-import html as _html
 import re
 import unicodedata
 from datetime import date
-from difflib import SequenceMatcher
 
-from wikitables import section_by_title, tables, text
+from wikitables import tables, text
 
 STATE_ABBR = {
     "Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA", "Colorado": "CO",
@@ -68,33 +66,11 @@ def party_code(name):
         return "D"
     if n.startswith("libertarian"):
         return "L"
-    if n.startswith("green mountain"):  # Vermont's Green Mountain Peace and Justice Party, not the Greens
-        return "Peace and Justice"
     if n.startswith("green"):
         return "G"
     if n in ("independent", "unaffiliated", "no party preference", "nonpartisan", "no party", "nonaffiliated"):
         return "I"
     return name.strip()
-
-
-NOT_CAMPAIGN = re.compile(r"wikipedia\.org|wikimedia|ballotpedia|fec\.gov|opensecrets|votesmart|followthemoney|archive\.org|"
-                          r"vote411|\.gov/|facebook\.com|twitter\.com|x\.com/|instagram\.com|youtube\.com", re.I)
-
-
-def campaign_sites(html_text):
-    """[(name, party code, url)] from a page's "External links" list of official
-    campaign websites, whose entries read like 'Ted Brown (L)'."""
-    sec = section_by_title(html_text, "External links")
-    if not sec:
-        return []
-    out = []
-    for li in re.findall(r"<li>(.*?)</li>", sec, re.S):
-        label = _html.unescape(re.sub(r"<[^>]+>", "", li)).strip()
-        m = re.fullmatch(r"(.+?)\s*\(([A-Za-z][A-Za-z.\- ]{0,30})\)(?:\s+for\s+.+)?", label)
-        urls = [u for u in re.findall(r'href="(https?://[^"]+)"', li) if not NOT_CAMPAIGN.search(u)]
-        if m and urls:
-            out.append((m.group(1).strip(), party_code(m.group(2)) if len(m.group(2)) > 1 else m.group(2).upper(), _html.unescape(urls[0])))
-    return out
 
 
 def candidate_lines(cell_text):
@@ -174,15 +150,6 @@ def match_candidate(name, cands, party=None):
         hit = [c for c in same_last if tokens[1][:1] in [t[:1] for t in norm(c["name"]).split()[1:-1]]]
         if len(hit) == 1:
             return hit[0]
-    if not same_last and len(tokens) > 1 and len(tokens[-1]) >= 6:
-        # A one-letter slip in a long surname (Wikipedia's "Okapareke" for Okpareke)
-        # still names the candidate when the first name, and party if given, agree.
-        near = [c for c in cands if len(last_name(c["name"])) >= 6
-                and SequenceMatcher(None, last_name(c["name"]), tokens[-1]).ratio() >= 0.85
-                and first_names_match(tokens[0], norm(c["name"]).split()[0])
-                and (party not in ("D", "R") or c["party"] == party or c["party"] not in ("D", "R"))]
-        if len(near) == 1:
-            return near[0]
     return None
 
 
@@ -225,11 +192,7 @@ def parse_range(s):
                 return None, None
         y_end = years[-1]
         y_start = years[0] if len(years) > 1 else (y_end - 1 if ma[0] > mb[0] else y_end)
-        start, end = date(y_start, *ma), date(y_end, *mb)
-        # A reversed range within one month ("July 8–6") is a typo for the same days.
-        if start > end and ma[0] == mb[0] and y_start == y_end:
-            start, end = end, start
-        return start, end
+        return date(y_start, *ma), date(y_end, *mb)
     except ValueError:
         return None, None
 
@@ -462,57 +425,6 @@ def find_polls(html_text, refs, cands, need):
             polls = rows
             found_main = True
     return polls, aggregates
-
-
-def find_rcv_final(html_text, refs, cands):
-    """Final-round results from Wikipedia's "Ranked-choice polls" tables: for each
-    poll, the last round with exactly two candidates left, as published."""
-    out = {}
-    for t in tables(html_text):
-        hi = header_row(t, "poll source", "rcv")
-        if hi is None:
-            continue
-        heads = heads_of(t, hi)
-        c_round = col(heads, "rcv round", "rcv")
-        c_src, c_date, c_n = col(heads, "poll source"), col(heads, "date"), col(heads, "sample")
-        colmap = {}
-        for j, name, party in _poll_columns(t, hi):
-            if j == c_round:
-                continue
-            c = match_candidate(name, cands, party)
-            if c:
-                colmap[j] = c["id"]
-        if len(colmap) < 2:
-            continue
-        for row in t["rows"][hi + 1:]:
-            if len(row) <= max(max(colmap), c_round):
-                continue
-            rnd = re.sub(r"\D", "", text(row[c_round]))
-            if not rnd:
-                continue  # "BA" (before allocation) rows aren't a round
-            results = {}
-            for j, cid in colmap.items():
-                cell = text(row[j]).strip()
-                v = num(cell)
-                if v is not None and ("%" in cell or re.fullmatch(r"\d+(\.\d+)?", cell)):
-                    results[cid] = v
-            if len(results) != 2:
-                continue
-            start, end = parse_range(text(row[c_date]))
-            if not end:
-                continue
-            src = re.sub(r"\s+", " ", text(row[c_src])).strip()
-            key = (re.sub(r"\W+", "", src.lower()), iso(end))
-            if key in out and out[key]["round"] >= int(rnd):
-                continue  # keep the first row of the last round (later ones are hypotheticals)
-            n, pop = parse_sample(text(row[c_n])) if c_n is not None else (None, None)
-            ref = next((refs[r] for r in row[c_src].get("refs", []) if r in refs), None)
-            p = {"pollster": src, "start": iso(start), "end": iso(end), "n": n, "pop": pop or "V",
-                 "results": results, "round": int(rnd)}
-            if ref:
-                p["url"] = ref["url"]
-            out[key] = p
-    return sorted(out.values(), key=lambda p: p["end"], reverse=True)
 
 
 def _aggregates(t, hi, cands):

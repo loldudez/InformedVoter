@@ -1,10 +1,10 @@
 // Starred elections, liked candidates, close elections, and profile donations.
 
-import { html, raw, initials, fmtPct, fmtProb, fmtMoney, signed, fmtShortDate, fmtDR } from '../util.js';
+import { html, raw, initials, fmtPct, fmtProb, fmtMoney, signed, fmtShortDate } from '../util.js';
 import { icon } from '../icons.js';
 import { store } from '../store.js';
 import { STATE_BY_ABBR } from '../data/states.js';
-import { fc, hist, weekChange, allRaces, ensureRace, ensureCandidate, getRace, raceTitle, officeLabel, financeOf, hasFigures, isDemo } from '../data/world.js';
+import { fc, hist, weekChange, allRaces, ensureRace, ensureCandidate, getRace, raceTitle, officeLabel, financeOf, isDemo } from '../data/world.js';
 import { candColors, sparkline, lineChart } from '../lib/charts.js';
 import { PARTY_NAME, starBtn, heartBtn, demoChip, dataChip, lastName, miniH2H, ratingChip, financeCard, financeNote, leadStr } from '../components/race.js';
 import { verifiedDonateUrl } from './elections.js';
@@ -15,21 +15,6 @@ const arrow = (d, unit = ' pts', digits = 1) => {
 };
 
 // Starred -------------------------------------------------------------------------
-
-// State legislative races: the field and the district's 2024 result, no odds or money.
-function fieldStarredCard(race, f) {
-  return html`<article class="card stack">
-    <div class="row between">
-      <div><div class="eyebrow">${officeLabel(race)} · ${STATE_BY_ABBR[race.state].name}</div><h3 style="margin:2px 0 0;font-size:19px"><a href="#/race/${encodeURIComponent(race.id)}" style="text-decoration:none">${raceTitle(race)}</a></h3></div>
-      <div class="row">${dataChip(race)}${ratingChip(f)}${starBtn(race.id)}</div>
-    </div>
-    <div class="grid grid-3">
-      <div class="stat"><div class="eyebrow">Candidates</div><div class="value" style="font-size:20px">${f.cands.length || '—'}</div><div class="sub">${f.cands.length ? f.cands.map((c) => `${c.name} (${c.party})`).slice(0, 3).join(', ') : 'Not listed yet'}</div></div>
-      <div class="stat"><div class="eyebrow">2024 president</div><div class="value" style="font-size:20px">${f.dr != null ? fmtDR(f.dr) : '—'}</div><div class="sub">How the district voted</div></div>
-      <div class="stat"><div class="eyebrow">Forecasters</div><div class="value" style="font-size:20px">${f.rating}</div><div class="sub">No odds for state legislative races</div></div>
-    </div>
-  </article>`;
-}
 
 // Open primaries have no odds to track week to week; show the field instead.
 function openStarredCard(race, f) {
@@ -52,7 +37,6 @@ function openStarredCard(race, f) {
 
 function starredCard(race) {
   const f = fc(race);
-  if (f.kind === 'field') return fieldStarredCard(race, f);
   if (f.open) return openStarredCard(race, f);
   const wk = weekChange(race);
   const colors = candColors(f.cands);
@@ -105,7 +89,6 @@ function likedCard({ c, race, f, fin, wk }) {
   const h = hist(race).map((d) => (d.fc.cands.find((x) => x.id === c.id)?.win ?? 0) * 100);
   const grassroots = share({ fin }, 'small') * 100, pac = share({ fin }, 'pac') * 100, pub = share({ fin }, 'public') * 100;
   const hasMoney = fin && fin.total > 0;
-  const hasTotal = hasFigures(fin);
   return html`<article class="card stack">
     <div class="row" style="align-items:flex-start">
       <div class="badge" style="background:${colors[c.id]}">${initials(c.name)}</div>
@@ -113,13 +96,11 @@ function likedCard({ c, race, f, fin, wk }) {
       <div class="row">${dataChip(race)}${heartBtn(c.id, c.name)}</div>
     </div>
     <div class="grid grid-3">
-      ${f.kind === 'field'
-        ? html`<div class="stat"><div class="eyebrow">Race format</div><div class="value" style="font-size:20px">State legislature</div><div class="sub">No odds for these races${f.dr != null ? `; the district voted ${fmtDR(f.dr)} in 2024` : ''}</div></div>`
-        : f.open
+      ${f.open
         ? html`<div class="stat"><div class="eyebrow">Race format</div><div class="value" style="font-size:20px">Open primary</div><div class="sub">${me.share != null ? `${fmtPct(me.share)} in the latest poll` : 'Not listed in the latest poll'}</div></div>`
         : html`<div class="stat"><div class="eyebrow">Chance of winning</div><div class="value">${fmtProb(me.win)}</div><div class="sub">${arrow(wk * 100)} this week</div></div>`}
       <div class="stat"><div class="eyebrow">Odds, last 30 days</div>${h.length ? raw(sparkline(h, { width: 220, height: 46, color: colors[c.id], label: `${c.name} win probability over 30 days` })) : html`<div class="sub">No daily odds for this race</div>`}</div>
-      <div class="stat"><div class="eyebrow">Total raised</div><div class="value">${hasTotal ? fmtMoney(fin.total) : '—'}</div><div class="sub">${!hasTotal ? (fin?.note ? 'Latest report below' : 'Not loaded yet') : fin.demo ? `+${fmtMoney(fin.total - fin.weekAgoTotal)} this week` : `through ${fmtShortDate(fin.asOf + 'T12:00:00')}`}</div></div>
+      <div class="stat"><div class="eyebrow">Total raised</div><div class="value">${hasMoney ? fmtMoney(fin.total) : '—'}</div><div class="sub">${!hasMoney ? 'No FEC report on file' : fin.demo ? `+${fmtMoney(fin.total - fin.weekAgoTotal)} this week` : `through ${fmtShortDate(fin.asOf + 'T12:00:00')}`}</div></div>
     </div>
     ${financeCard(c)}
     ${hasMoney ? html`<p class="small muted" style="margin:0">${fmtPct(grassroots, 0)} from small donors · ${fmtPct(pac, 0)} from PACs, where business and labor money shows up${pub > 0 ? ` · ${fmtPct(pub, 0)} public financing` : ''}.</p>` : ''}
@@ -183,7 +164,7 @@ export const close = {
       const f = fc(race);
       const colors = candColors(f.cands);
       const h = hist(race);
-      const two = f.dr != null ? f.cands.filter((c) => c.party === 'D' || c.party === 'R').slice(0, 2) : [];
+      const two = f.cands.filter((c) => c.party === 'D' || c.party === 'R');
       const series = (two.length === 2 ? two : f.cands.slice(0, 2)).map((c) => ({
         name: lastName(c.name), color: colors[c.id],
         values: h.map((d) => ({ x: d.date, y: d.fc.cands.find((x) => x.id === c.id)?.share ?? null })),

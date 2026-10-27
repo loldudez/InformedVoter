@@ -171,9 +171,8 @@ class _Tables(HTMLParser):
     """Collect every <table> as a grid of cells, expanding rowspan/colspan.
 
     Each cell keeps its text, its links, and the ids of its footnote references
-    (whose markers are left out of the text). A table keeps its caption, which is
-    how election boxes say "Republican primary results" or "General election".
-    Nested tables are parsed separately and their text is kept out of the parent.
+    (whose markers are left out of the text). Nested tables are parsed separately
+    and their text is kept out of the parent.
     """
 
     def __init__(self):
@@ -183,13 +182,11 @@ class _Tables(HTMLParser):
         self.skip = 0         # inside <sup class=reference>, <style>, etc.
         self.in_ref = False
         self.link = None      # the <a> whose text is being collected
-        self.in_caption = False
-        self.span_color = None  # a colored <span>, which is how "▌" party markers are drawn
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if tag == "table":
-            self.stack.append({"classes": a.get("class", ""), "rows": [], "row": None, "cell": None, "caption": ""})
+            self.stack.append({"classes": a.get("class", ""), "rows": [], "row": None, "cell": None})
             return
         if not self.stack:
             return
@@ -202,12 +199,10 @@ class _Tables(HTMLParser):
             if self.in_ref and tag == "a" and t["cell"] is not None and (a.get("href") or "").startswith("#cite_note"):
                 t["cell"]["refs"].append(a["href"][1:])
             return
-        if tag == "caption":
-            self.in_caption = True
-        elif tag == "tr":
+        if tag == "tr":
             t["row"] = []
         elif tag in ("td", "th") and t["row"] is not None:
-            t["cell"] = {"text": "", "links": [], "refs": [], "marks": [], "bold": False, "th": tag == "th",
+            t["cell"] = {"text": "", "links": [], "refs": [], "th": tag == "th",
                          "rowspan": int(re.sub(r"\D", "", a.get("rowspan") or "1") or 1),
                          "colspan": int(re.sub(r"\D", "", a.get("colspan") or "1") or 1),
                          "style": a.get("style") or "", "classes": a.get("class") or ""}
@@ -216,11 +211,6 @@ class _Tables(HTMLParser):
             self.link = t["cell"]["links"][-1]
         elif tag == "br" and t["cell"] is not None:
             t["cell"]["text"] += "\n"
-        elif tag in ("b", "strong") and t["cell"] is not None:
-            t["cell"]["bold"] = True  # election boxes bold the winners and those who advance
-        elif tag == "span" and t["cell"] is not None:
-            m = re.search(r"color:\s*(#[0-9A-Fa-f]{3,6})", a.get("style") or "")
-            self.span_color = m.group(1).lower() if m else None
 
     def handle_endtag(self, tag):
         if tag in ("sup", "style", "script") and self.skip:
@@ -231,10 +221,6 @@ class _Tables(HTMLParser):
         if not self.stack or self.skip:
             return
         t = self.stack[-1]
-        if tag == "caption":
-            self.in_caption = False
-        if tag == "span":
-            self.span_color = None
         if tag == "a":
             self.link = None
         if tag in ("td", "th") and t["cell"] is not None and t["row"] is not None:
@@ -247,16 +233,11 @@ class _Tables(HTMLParser):
             t["row"] = None
         elif tag == "table":
             done = self.stack.pop()
-            self.tables.append({"classes": done["classes"], "rows": _expand(done["rows"]), "caption": " ".join(done["caption"].split())})
+            self.tables.append({"classes": done["classes"], "rows": _expand(done["rows"])})
 
     def handle_data(self, data):
-        if self.stack and not self.skip and self.in_caption and self.stack[-1]["cell"] is None:
-            self.stack[-1]["caption"] += data
-            return
         if self.stack and not self.skip and self.stack[-1]["cell"] is not None:
             self.stack[-1]["cell"]["text"] += data
-            if "▌" in data:  # each party marker keeps its color, in order
-                self.stack[-1]["cell"]["marks"].extend([self.span_color] * data.count("▌"))
             if self.link is not None:
                 self.link["text"] += data
 

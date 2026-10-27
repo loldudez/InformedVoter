@@ -169,8 +169,7 @@ export function federalAndGovernor(mapIndex) {
   return out;
 }
 
-// Same rule as district_name in scripts/lib/legislature.py.
-export const cleanDistrictName = (n) => n.replace(/\b(State (Senate|House|Legislative)|Assembly|Legislative \((?:House|Senate)\)|Delegate)\s*/g, '').replace(/\s+/g, ' ').trim();
+const cleanDistrictName = (n) => n.replace(/\b(State (Senate|House|Legislative)|Assembly)\s*/g, '').replace(/\s+/g, ' ').trim();
 
 export function districtIsUp(chamber, code, raceId) {
   if (chamber.up === 'all') return true;
@@ -212,7 +211,7 @@ export function earlyVote(st) {
     ballots: Math.round(ballots),
     pctOfTurnout: ballots / turnout,
     byParty: PARTY_REGISTRATION.has(st) ? { D: dShare, R: rShare, other: Math.max(5, 100 - dShare - rShare) } : null,
-    of2022: 0.2 + r() * 0.25,
+    vs2022: 0.85 + r() * 0.4,
     demo: true,
   };
 }

@@ -56,6 +56,20 @@ def P(*rows):
     return out
 
 
+def fec(cid, total, small=0, large=0, pac=0, party=0, self_=0, cash=None, note=None):
+    other = round(total - (small + large + pac + party + self_))
+    assert other >= 0, (cid, other)
+    f = {
+        "total": total,
+        "parts": {"small": small, "large": large, "pac": pac, "party": party, "self": self_, "public": 0, "other": other},
+        "cashOnHand": cash, "asOf": "2026-10-14", "source": "FEC", "fecId": cid,
+        "url": f"https://www.fec.gov/data/candidate/{cid}/?cycle=2026&election_full=true",
+    }
+    if note:
+        f["note"] = note
+    return f
+
+
 NO_FEC = {"total": 0, "parts": {}, "note": "No campaign finance report on file with the FEC as of Oct. 24, 2026."}
 
 senate = {
@@ -81,11 +95,19 @@ senate = {
          "results": {"LA-SEN:letlow": 41, "LA-SEN:davis": 37}, "url": "https://www.wwno.org/2026-08-19/poll-shows-4-point-difference-between-letlow-and-davis-for-u-s-senate-1-in-5-undecided",
          "note": "22% undecided. A campaign’s own poll; treat with caution."},
     ],
+    "earlyVote": {
+        "ballots": 115000, "asOf": "2026-10-20", "label": "first day", "pctOfTurnout": round(115000 / 1383000, 3),
+        "byParty": None, "vs2022": None,
+        "note": "About 115,000 people voted on the first day of early voting. Black voters made up almost 32% of them, a larger share than in almost any election since 2008. Early voting runs through Oct. 27.",
+        "source": {"title": "Louisiana Illuminator, Oct. 22, 2026 (Secretary of State data)", "url": "https://lailluminator.com/2026/10/22/black-voter-turnout-higher-than-normal-for-louisianas-first-day-of-early-voting/"},
+    },
     "candidates": [
         {
             "id": "LA-SEN:letlow", "aliases": ["LA-SEN:R"], "name": "Julia Letlow", "party": "R", "incumbent": False,
             "bio": "U.S. Representative for Louisiana’s 5th District since 2021; serves on the House Appropriations Committee.",
             "officialSite": "https://www.julialetlow.com/", "donateUrl": "https://www.julialetlow.com/donate",
+            "finance": fec("S6LA00664", 7062069, small=169337, large=1400944, pac=1243600, party=62000, cash=443170,
+                           note="Includes a $4.18M transfer from her U.S. House campaign"),
             "positions": P(
                 ("eco-01", -1, "letlow_plan", "Permanently extend the Trump tax cuts"),
                 ("eco-02", 2, "letlow_plan", "Make the One Big Beautiful Bill’s no-tax-on-tips provision permanent"),
@@ -129,6 +151,7 @@ senate = {
             "id": "LA-SEN:davis", "aliases": ["LA-SEN:D"], "name": "Jamie Davis", "party": "D", "incumbent": False,
             "bio": "Farmer from Waterproof in Tensas Parish; former Tensas Parish Police Jury member.",
             "officialSite": "https://www.jamieforlouisiana.com/", "donateUrl": "https://secure.actblue.com/donate/sendafarmertowashington",
+            "finance": fec("S6LA00615", 5019888, small=3743089, large=1206146, pac=10000, party=1000, self_=54000, cash=1254929),
             "positions": P(
                 ("soc-03", 2, "wwno_senate", "a woman should have the right to make decisions about her body with her doctor"),
                 ("soc-04", -2, "wwno_senate", "a woman should have the right to make decisions about her body with her doctor"),
@@ -165,9 +188,7 @@ senate = {
 
 
 def cand(slug, name, party, bio, site, donate, finance, positions):
-    c = {"id": f"LA-H-06:{slug}", "name": name, "party": party, "incumbent": False, "bio": bio, "positions": positions}
-    if finance:  # most candidates' money comes from fec_2026.py
-        c["finance"] = finance
+    c = {"id": f"LA-H-06:{slug}", "name": name, "party": party, "incumbent": False, "bio": bio, "finance": finance, "positions": positions}
     if site:
         c["officialSite"] = site
     if donate:
@@ -201,7 +222,7 @@ house = {
     "candidates": [
         cand("miguez", "Blake Miguez", "R", "State senator from New Iberia (in the Legislature since 2015); manages a family oil and gas business.",
              "https://blakemiguez.com/", "https://secure.winred.com/blake-miguez/donate-today",
-             None,
+             fec("H6LA05234", 7749606, small=587711, large=3236952, pac=138919, self_=3514561, cash=1534513, note="Includes $3.51M in loans from the candidate"),
              P(("imm-01", 2, "miguez_issues", "finish the wall, fund the agents, end catch-and-release, mandate E-Verify"),
                ("imm-08", 2, "miguez_issues", "finish the wall, fund the agents, end catch-and-release, mandate E-Verify"),
                ("imm-10", 2, "miguez_issues", "finish the wall, fund the agents, end catch-and-release, mandate E-Verify"),
@@ -221,7 +242,7 @@ house = {
                ("soc-12", -1, "miguez_issues", None))),
         cand("edmonds", "Rick Edmonds", "R", "State senator from Baton Rouge (in the Legislature since 2015); Baptist pastor.",
              "https://rickedmonds.com/", "https://secure.anedot.com/rick-for-louisiana/contribute",
-             None,
+             fec("H6LA05226", 697139, small=1885, large=503517, pac=36600, self_=155000, cash=134635),
              P(("cri-01", 1, "edmonds_site", "Back the Blue and stand with law enforcement"),
                ("eco-07", 1, "edmonds_site", "Cut wasteful spending"),
                ("ene-08", 1, "edmonds_site", "Protect access to critical flood insurance and disaster relief"),
@@ -246,7 +267,7 @@ house = {
                ("gov-02", 1, "illum_forum", None))),
         cand("forbes", "Pat Forbes", "D", "Engineer; former head of Louisiana’s Office of Community Development (disaster recovery) under Gov. John Bel Edwards.",
              "https://www.patforbes.com/", "https://secure.actblue.com/donate/patrick-forbes-2",
-             None,
+             fec("H6LA06190", 156334, small=40991, large=105475, self_=9856, cash=97400),
              P(("ene-08", 2, "forbes_issues", "In Congress I’ll fight for the funding to keep doing it."),
                ("hou-10", 2, "forbes_issues", "Invest in what actually reduces the risk."),
                ("hea-07", 2, "forbes_issues", "Restore the premium help that let working families buy a plan"),
@@ -268,7 +289,7 @@ house = {
                ("imm-08", -1, "illum_forum", "Do we need to put our neighbors out of church or out of court"))),
         cand("garcia", "Lindsay “Rubia” Garcia", "D", "Lawyer from Walker and former New Orleans social studies teacher; endorsed by the Louisiana Democratic Party.",
              "https://www.rubiagarcia.com/", "https://secure.actblue.com/donate/lindsay-garcia-1",
-             None,
+             fec("H6LA05309", 97007, small=70209, large=21484, self_=2965, cash=21654),
              P(("def-15", -2, "illum_forum", None),
                ("eco-10", 1, "illum_afford", "I support targeted tariffs when there is a clear purpose"),
                ("ene-04", 2, "illum_gonzales", "have a nationwide rule put in place by the EPA"),
@@ -279,7 +300,7 @@ house = {
                ("gov-02", 1, "illum_forum", None))),
         cand("wagley", "Stephen Wagley", "R", "Chief operating officer of Delta College, his family’s healthcare workforce school; lives in Central.",
              "https://www.wagleyforcongress.com/", "https://secure.winred.com/wagley-for-congress/donate-today",
-             None,
+             fec("H6LA06182", 874344, small=668, large=8175, self_=865500, cash=195633, note="Almost entirely loans from the candidate"),
              P(("eco-01", -1, "wagley_issues", "I will fight to make sure that the Trump tax cuts stay permanent"),
                ("eco-07", 2, "wagley_issues", "Stop the spending spree."),
                ("imm-01", 2, "wagley_issues", "LET’S BUILD THE WALL!"),
@@ -295,7 +316,7 @@ house = {
                ("def-03", 1, "wagley_home", None))),
         cand("appeaning", "Monique Appeaning", "R", "Former chief administrative officer for East Baton Rouge Mayor-President Sid Edwards.",
              "https://www.appeaningforcongress.com/", "https://secure.anedot.com/committee-to-elect-monique-appeaning/donate",
-             None,
+             fec("H6LA06158", 109183, small=450, large=49760, pac=50, self_=50667, cash=14709),
              P(("cri-01", 1, "appeaning_site", "Back the Blue"),
                ("def-01", 1, "appeaning_site", "Strengthen and modernize our military"),
                ("eco-02", 2, "appeaning_site", "Large tax cuts for hardworking people"),
@@ -310,7 +331,7 @@ house = {
                ("imm-02", -1, "illum_gonzales", None))),
         cand("ldavis", "Larry Davis III", "R", "Self-described middle-class worker; member of the Livingston Parish Republican Executive Committee.",
              "https://www.larrydavisforcongress.com/", "https://secure.winred.com/larry-davis-for-congress/donate-today",
-             None,
+             fec("H6LA05168", 33216, large=21640, pac=2000, cash=809, note="Part of the total is not broken out in the data retrieved"),
              P(("imm-01", 2, "ldavis_policies", "Strong border enforcement, physical barriers where necessary"),
                ("cri-01", 1, "ldavis_policies", "Support police"),
                ("cri-04", 2, "ldavis_policies", "increase penalties for violent crime"),
@@ -326,7 +347,7 @@ house = {
                ("imm-02", -1, "illum_gonzales", "They are taking money away from your families"))),
         cand("mebruer", "Michael Mebruer", "R", "Traveling health care professional from St. Francisville.",
              "https://www.mebruerforcongress.com/", None,
-             None,
+             fec("H6LA05259", 70714, cash=10987, note="Part of the total is not broken out in the data retrieved"),
              P(("eco-07", 2, "mebruer_about", "Washington’s spending and debt are placing the country on an unsustainable path."))),
         cand("craig", "Rufus Craig", "L", "Attorney with more than 40 years of practice in criminal defense, family law and successions.",
              None, None, NO_FEC,
