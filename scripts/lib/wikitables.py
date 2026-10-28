@@ -6,11 +6,18 @@ CC BY-SA. The site credits it wherever that data appears.
 
 Pages are cached on disk by revision id, so a refresh only downloads the pages
 that were edited since the last run.
+
+Wikimedia's 2026 rate limits allow a script 200 requests a minute when its
+User-Agent gives a contact (an email address or full URL) and only 10 when it
+doesn't. Put a contact in the INFORMED_VOTER_CONTACT environment variable, or in
+~/.informed-voter/contact (outside the website folder, so it is never
+published); without one, requests are spaced to stay under 10 a minute.
 """
 
 import gzip
 import html
 import json
+import os
 import re
 import time
 import urllib.error
@@ -20,14 +27,28 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 API = "https://en.wikipedia.org/w/api.php"
-UA = "InformedVoter/1.0 (personal election-information site; data refresh script)"
-SPACING = 1.0  # seconds between requests, well under Wikipedia's limits
+CONTACT_FILE = Path.home() / ".informed-voter" / "contact"
+
+
+def _contact():
+    contact = os.environ.get("INFORMED_VOTER_CONTACT", "").strip()
+    if not contact and CONTACT_FILE.exists():
+        contact = CONTACT_FILE.read_text(encoding="utf-8").strip()
+    return contact
+
+
+CONTACT = _contact()
+UA = (f"InformedVoter/1.0 ({CONTACT}; personal election-information site; data refresh script)" if CONTACT
+      else "InformedVoter/1.0 (personal election-information site; data refresh script)")
+# Seconds between requests. Past its limit Wikimedia answers 503 and 429 until the
+# minute is up, and those refusals count against the limit too.
+SPACING = 1.0 if CONTACT else 7.0
 CACHE = Path(__file__).resolve().parents[2] / "data" / "cache" / "wiki"
 _last = [0.0]
 stats = {"requests": 0, "cached": 0}
 
 
-def api(params, retries=6):
+def api(params, retries=8):
     params = {**params, "format": "json", "formatversion": "2"}
     url = f"{API}?{urllib.parse.urlencode(params)}"
     for attempt in range(retries):
@@ -46,9 +67,14 @@ def api(params, retries=6):
         except urllib.error.HTTPError as e:
             if e.code != 429 and e.code < 500:
                 raise
-            # Rate-limited or a server hiccup: wait as long as asked, then retry.
-            delay = int(e.headers.get("Retry-After") or 0) or 20 * (attempt + 1)
-            time.sleep(min(delay, 180))
+            # Rate-limited or overloaded: wait as long as asked (Retry-After counts down
+            # to the end of the minute) and never less than an exponential back-off, so
+            # quick retries don't use up the next minute's allowance as well.
+            try:
+                asked = int(e.headers.get("Retry-After") or 0)
+            except ValueError:
+                asked = 0
+            time.sleep(min(max(asked, 5 * 2 ** attempt), 180) + 1)
         except (urllib.error.URLError, TimeoutError, ConnectionError):
             if attempt == retries - 1:
                 raise

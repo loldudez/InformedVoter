@@ -4437,6 +4437,55 @@
         "accessed": true,
         "quote": "address the desperate need for active forest management, fuel reduction, and working with landowners to better protect homes and communities"
        }
+      },
+      "def-15": {
+       "stance": 2,
+       "source": {
+        "title": "KATU Know Your Candidates interview: Brock Smith says the U.S. must finish what it started in Iran",
+        "url": "https://katu.com/news/know-your-candidates/david-brock-smith-us-senate-republican",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "we cannot allow Iran to have a nuclear weapon, and we need to finish what we started"
+       }
+      },
+      "def-04": {
+       "stance": 1,
+       "source": {
+        "title": "KATU Know Your Candidates interview: Brock Smith says Congress should play a pivotal role in any military action",
+        "url": "https://katu.com/news/know-your-candidates/david-brock-smith-us-senate-republican",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Congress needs to play a pivotal role in any military action."
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "KATU Know Your Candidates interview: Brock Smith fully supports voter ID",
+        "url": "https://katu.com/news/know-your-candidates/david-brock-smith-us-senate-republican",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I am fully supportive of voter ID, as the country has overwhelmingly supported"
+       }
+      },
+      "ene-10": {
+       "stance": 1,
+       "source": {
+        "title": "KATU Know Your Candidates interview: Brock Smith warns that Oregon’s decarbonization plans will drive up fuel prices",
+        "url": "https://katu.com/news/know-your-candidates/david-brock-smith-us-senate-republican",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "$6.50 diesel today is going to seem cheap in less than a decade to Oregonians"
+       }
+      },
+      "ene-06": {
+       "stance": -1,
+       "source": {
+        "title": "KATU Know Your Candidates interview: Brock Smith opposes continuing the Climate Protection Program’s decarbonization plans",
+        "url": "https://katu.com/news/know-your-candidates/david-brock-smith-us-senate-republican",
+        "date": "2026-10-27",
+        "accessed": true
+       }
       }
      },
      "officialSite": "https://www.davidbrocksmithfororegon.com/"

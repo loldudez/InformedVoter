@@ -606,7 +606,9 @@ def combine_overlays(a, b):
     for c in b.get("candidates", []):
         old = cands.get(c["id"])
         if old:
-            merged = {**old, **{k: v for k, v in c.items() if v is not None}}
+            # None means "not researched here", except officialSite: None, which drops
+            # a dead campaign link and must survive a later file's merge.
+            merged = {**old, **{k: v for k, v in c.items() if v is not None or k == "officialSite"}}
             if old.get("positions") and c.get("positions"):
                 merged["positions"] = {**old["positions"], **c["positions"]}
             if old.get("finance") and c.get("finance") and (c["finance"].get("asOf") or "") < (old["finance"].get("asOf") or ""):
@@ -645,12 +647,24 @@ def load_overlays(status):
 
 SUFFIX = re.compile(r"\s+(Jr\.?|Sr\.?|II|III|IV)$")
 
+# Former House members on the 2026 ballot whose votes fall inside the roll calls in
+# house_votes.py, by the Clerk's member id. Matched by hand: a name search alone also
+# finds relatives and namesakes (Hannah and Chellie Pingree, Alan and Joe Wilson,
+# Trever and Troy Nehls).
+FORMER_MEMBERS = {
+    "AK-SEN:peltola": "P000619",  # Mary Peltola, Alaska at-large, 2022-2025
+    "AL-H-01:carl": "C001054",    # Jerry Carl, Alabama 1st, 2021-2025
+    "TX-H-33:allred": "A000376",  # Colin Allred, Texas 32nd, 2019-2025
+    "VA-H-02:luria": "L000591",   # Elaine Luria, Virginia 2nd, 2019-2023
+}
+
 
 def attach_house_votes(races, status):
     """Every current House member on the ballot (running again, or for Senate or
     governor) gets positions from their recorded votes. Members are identified by
     the Wikipedia article their House seat links to, then matched to the Clerk's
-    roll calls by state and name. Returns how many candidates got positions."""
+    roll calls by state and name; former members come from FORMER_MEMBERS. Returns
+    how many candidates got positions."""
     try:
         record = house_votes.HouseRecord()
     except Exception as e:
@@ -660,10 +674,13 @@ def attach_house_votes(races, status):
     n = 0
     for race in races.values():
         for c in race["candidates"]:
-            seat = race if race["office"] == "house" and c.get("incumbent") else seats.get(c.get("wiki"))
-            if not seat:
-                continue
-            votes = record.member_votes(seat["state"], c["name"], c["party"] if c["party"] in ("D", "R") else None)
+            if c["id"] in FORMER_MEMBERS:
+                votes = record.votes_for(FORMER_MEMBERS[c["id"]])
+            else:
+                seat = race if race["office"] == "house" and c.get("incumbent") else seats.get(c.get("wiki"))
+                if not seat:
+                    continue
+                votes = record.member_votes(seat["state"], c["name"], c["party"] if c["party"] in ("D", "R") else None)
             if not votes:
                 continue
             surname = SUFFIX.sub("", c["name"]).split()[-1]

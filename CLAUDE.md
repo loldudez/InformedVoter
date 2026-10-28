@@ -120,24 +120,35 @@ Minnesota House votes for Demuth, and bills Abbott and Ayotte signed. `house_202
 covers the competitive House races: guides.vote voters guides for 34 of them, campaign
 issue pages for the rest, and news reports where a site lists no issues (Balkcom
 NC-11, Alvarado KY-06, McGuire VA-05, Alaska, CA-06). Still below the five needed for
-a match percentage there: Dan Green (FL-09, two), Bill Hill, Richard Pan and Sydney
-Gruters (four each). Third-party and independent Senate and governor candidates are
-covered by `candidates_2026.py` (75 candidates, 610 positions, Oct. 26) from their
-campaign sites and newsroom voter guides; about 35 have no site or statement anywhere
-(Tennessee's dozen independents, Michigan's minor parties). House challengers in
-safer races are in `house_challengers_2026.py` (422 candidates in 296 races, 1,428
-positions, Oct. 26-27): questionnaire answers from States Newsroom voter guides where
-a state's outlet ran one (quoted), their bios and summaries elsewhere (not quoted),
-and campaign issue pages; about 200 House candidates, mostly third-party, have no
-site or statement to use. Every
-current House member on the ballot also has positions from 39 recorded House votes,
-2021 to 2026, including 11 war powers resolutions (`scripts/lib/house_votes.py`), so
-members first elected in 2024 have about 20 each. Money by source comes from FEC
-summaries for every Senate candidate and every House candidate with a 2026 report
-(997 candidates through Oct. 14: `fec_2026.py` for the Senate and competitive House
-races, `fec_house_2026.py` for the rest); the other 248 House candidates, mostly
-third-party, have a sourced note from an FEC search (`fec_notes_2026.py`: 176 with no
-2026 report yet, 71 with no FEC record for their district). Governors: totals from
+a match percentage there: Dan Green (FL-09, two), Bill Hill and Sydney Gruters (four
+each). Third-party and independent Senate and governor candidates are covered by
+`candidates_2026.py` (88 candidates, 678 positions) and House challengers in safer
+races by `house_challengers_2026.py` (584 candidates in 369 races, 2,912 positions),
+both Oct. 26-28: campaign sites (browser-only ones read in the browser pane), States
+Newsroom voter guides (candidates' own answers quoted; summaries cited, not quoted),
+KQED's summaries of four Northern California races, KATU's "Know Your Candidates"
+transcripts (Oregon, southwest Washington), VOTE411 (the League of Women Voters'
+guide, read race by race in the browser; on Oct. 28 also for thin candidates in Texas,
+Florida, Illinois, Georgia, Virginia, Ohio, Missouri and New Jersey, where most
+Republicans and some others left it blank) and, for officeholders with nothing on
+their sites, official records (Oberacker's state Senate releases, Solis's county
+record). `ivoterguide_2026.py` adds candidates' own iVoterGuide answers (244
+candidates, 2,074 positions) only for questions nothing else answers. All told (Oct.
+28 build), 1,305 of 1,418 federal and governor candidates have sourced positions and
+1,065 have the five a match percentage needs; 240 have one to four. The 113 with none
+(mostly Tennessee and Michigan independents and minor-party House candidates, plus 13
+Democrats and Republicans in Louisiana's open primaries and Alaska's top-four races
+and 17 others) have no usable site, statement, guide answer or record found so far.
+Every current House member on the ballot also has positions from 39 recorded House votes, 2021 to 2026, including
+11 war powers resolutions (`scripts/lib/house_votes.py`), so members first elected in
+2024 have about 20 each; four former members on the ballot (Peltola, Carl, Allred,
+Luria) get theirs by Clerk id (`FORMER_MEMBERS` in `update_races.py`). Money by source
+comes from FEC summaries for every Senate candidate and every House candidate with a
+2026 report (998 candidates through Oct. 14: `fec_2026.py` for the Senate and
+competitive House races, `fec_house_2026.py` for the rest); the other 247 House
+candidates, mostly third-party, have a sourced note from an FEC search
+(`fec_notes_2026.py`: 177 with no 2026 report yet, rechecked Oct. 27, 69 with no FEC
+record for their district, and one whose FEC summary doesn't add up). Governors: totals from
 state filings via Wikipedia for 14 races; Florida's every candidate grouped by source
 from the Division of Elections database (`florida_money_2026.py`: state matching
 funds as public financing, each major candidate's political committee in a note,
@@ -145,9 +156,10 @@ fetched at most once a day); for the other 21, the latest news report of the fil
 as a dated note with its link (`governor_money_2026.py`), never stretched into a
 total. Campaign site links come from each race page's "External links" (a
 researched `officialSite` wins, and `officialSite: None` drops a dead or parked
-domain); `campaign_sites_2026.py` adds 118 the pages lack, mostly California's, from
-candidates' Wikipedia articles and BallotReady profiles, each checked live (1,242 of
-1,418 candidates now have one). Early voting covers 49 states and 155 House districts. State
+domain); `campaign_sites_2026.py` adds 117 the pages lack, mostly California's, from
+candidates' Wikipedia articles and BallotReady profiles, each checked live, and the
+research overlays add sites found in VOTE411 and other guides (1,264 of 1,418
+candidates now have one). Early voting covers 49 states and 155 House districts. State
 legislative races are real in all 88 chambers voting this year: 5,615 districts,
 3,362 with candidates listed; researched legislative candidates (Oklahoma SD 32 and
 HD 85 so far) live in `data/research/legislature/`, written by
@@ -223,8 +235,16 @@ give seats, holders and margins but no candidate lists yet.
 - **Ballotpedia blocks after about 50 quick page loads** (empty 202 responses).
   Its senator key-vote tables feed `senate_vote_positions` in
   `scripts/research/common.py`; read pages one at a time, never in a loop.
-- **Wikipedia rate-limits bursts (HTTP 429).** `scripts/lib/wikitables.py` spaces
-  requests, honours Retry-After, sends gzip and caches pages by revision id.
+- **Wikimedia's 2026 rate limits: 10 requests a minute for a script whose User-Agent
+  has no contact** (an email address or full URL), 200 with one. Past the limit it
+  answers 503 "Wikimedia Error" pages and 429s until the minute is up, and those
+  refusals count too, so quick retries kept the evening of Oct. 27 locked out (a
+  manual rebuild and the 10 PM refresh failed; the old data stayed). `scripts/lib/wikitables.py`
+  reads a contact from `INFORMED_VOTER_CONTACT` or `~/.informed-voter/contact`; none
+  is set, since the site has no public URL and on Oct. 28 the owner chose the slower
+  pace over sending their email (don't ask again unless the site gets a URL). Without
+  one it spaces requests 7 seconds apart and waits out Retry-After. It also sends
+  gzip and caches pages by revision id.
 - **Wikipedia's candidate lists can be wrong.** It dropped Chauna Banks and added a
   non-candidate in LA-6; WWNO's qualifying list was right. It still listed Jon Kiper
   (NH-GOV, missed the signature cutoff) and Sondra Wilson (IA-GOV, kept off) and
@@ -281,15 +301,58 @@ give seats, holders and margins but no candidate lists yet.
   a Wix lightbox with its own URL (Baumgartner's /tax, /border). Read them in the
   browser and check quotes against the live page's `textContent`, since collapsed
   sections drop out of `innerText`.
+- **Redistricting gives a district one row per sitting member.** Texas 25 lists Roger
+  Williams, then Marc Veasey, sharing one candidates cell; keeping only the last row
+  dropped Williams as the incumbent (and his House votes) and called the seat
+  Democratic. Alabama 2, California 40 and Texas 18, 33 and 37 had the same. Rows for
+  one district are merged (`merge_member_rows` in `update_races.py`): every member
+  running stays the incumbent, the seat goes to the first running member's party, and
+  every member's article is kept for matching votes.
+- **Wikipedia's California House page lists no campaign websites**, so its candidates
+  had none. Candidates' own Wikipedia articles ("Campaign website") and BallotReady
+  profiles have them (`campaign_sites_2026.py`). Accept a BallotReady profile only
+  when it names the state and office, and a site only when it answers and shows the
+  candidate's name.
+- **Lapsed campaign domains get resold.** Jim Baird's old electjimbaird.com, still
+  linked from Wikipedia, now redirects to a gambling site, and Gary Dye's listed site
+  is his 2020 blog. Check where a link lands, not just that it answers.
+- **Position sources must be https** (the validator says so). Jennifer Moore's
+  (NY-10) site serves no working https page, so it can't be cited.
+- **Wikipedia's spellings can hide whole records.** It calls CO-8's Libertarian "Dan
+  Wood" (Dave Wood), KY-3's Republican "Maria Rodriquez" (Rodriguez) and MI-6's
+  Libertarian "Timothy Tegan" (Teagan); the FEC searches under those spellings filed
+  Rodriguez and Teagan as having no FEC record when both do. An overlay's `name` wins
+  in the merge; search again under the corrected name.
+- **VOTE411 renders in a JavaScript widget.** Read it in the browser: a state's "All
+  Races" list, then the race, then each candidate's "View Answers" (answers load per
+  candidate). Revisiting a race keeps its comparison selections, so clicking again
+  hides answers; reload first. Race ids for citations come from the page's own
+  requests in the resource-timing list, which fills after about 250 entries; reload to
+  read more. Never take the widget's credentials to call its API directly.
+- **iVoterGuide is an advocacy group's guide (AFA Action).** Only candidates' own
+  agree/disagree answers and multiple-choice picks are used, never its ratings, with
+  the statement-to-question table and caps in `ivoterguide_2026.py`. It is generated
+  (scratch `ivg_build.py`) to fill only questions nothing else answers, so regenerate
+  it after hand research.
+- **`officialSite: None` used to vanish in `combine_overlays`**, which treated None as
+  "not researched here", so dead links came back when a later file covered the race;
+  an explicit None now survives.
+- **A candidate entered twice in one overlay isn't merged** until another file covers
+  that race (the merge keeps the last copy). Add to an existing entry with `more()`,
+  never a second `cand()`; Tennessee's governor list briefly had Seeman and Brewer twice.
+- **Withdrawn candidates can stay on the ballot.** Mike Marvin (NE-SEN) withdrew Aug.
+  21 and is still printed; his bio says so.
 
 ## Open questions
 
 - Where challengers' positions come from at scale: research staff, candidate
-  self-reporting (the Wahl-O-Mat model), or public questionnaires like WWNO's and
-  the States Newsroom guides. Competitive races are hand-researched; safer House
-  races' challengers are being added from campaign sites and those guides, but about
-  200 have no site at all. Incumbents are covered by votes; senators need a source
-  senate.gov allows.
+  self-reporting (the Wahl-O-Mat model), or public questionnaires like WWNO's, the
+  States Newsroom guides and VOTE411. Competitive races are hand-researched; safer
+  House races' challengers come from campaign sites, those guides and iVoterGuide's
+  answers, but 113 candidates still have no usable site, statement or answer, 240 have
+  fewer than five positions, and many VOTE411 respondents answer only some questions
+  (most Republican challengers answer none). Incumbents are covered by
+  votes; senators need a source senate.gov allows.
 - Senators' recorded votes: senate.gov can't be read, so senators have only
   Ballotpedia's key votes and what guides.vote cites, while House members have 39
   roll calls. State legislators' votes are hand-picked where the legislature

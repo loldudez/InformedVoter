@@ -374,7 +374,7 @@
      "id": "CO-H-08:wood",
      "finance": {
       "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
-      "url": "https://www.fec.gov/data/candidates/?q=Dan%20Wood",
+      "url": "https://www.fec.gov/data/candidates/?q=Dave%20Wood",
       "source": "FEC",
       "asOf": "2026-10-26",
       "parts": {}
@@ -857,22 +857,6 @@
      "finance": {
       "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
       "url": "https://www.fec.gov/data/candidate/H8KY02106/?cycle=2026&election_full=true",
-      "source": "FEC",
-      "asOf": "2026-10-26",
-      "parts": {}
-     }
-    }
-   ]
-  },
-  {
-   "id": "KY-H-03",
-   "financeOnly": true,
-   "candidates": [
-    {
-     "id": "KY-H-03:rodriquez",
-     "finance": {
-      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
-      "url": "https://www.fec.gov/data/candidates/?q=Maria%20Rodriquez",
       "source": "FEC",
       "asOf": "2026-10-26",
       "parts": {}
@@ -1377,8 +1361,8 @@
     {
      "id": "MI-H-06:tegan",
      "finance": {
-      "note": "No FEC record for this candidate in this district turned up in a search on Oct. 26, 2026. Candidates who raise or spend less than $5,000 don’t have to register with the FEC.",
-      "url": "https://www.fec.gov/data/candidates/?q=Timothy%20A.%20Tegan",
+      "note": "The FEC lists this candidate but had no financial report for the 2026 campaign when checked on Oct. 26, 2026. New reports can take a few days to appear.",
+      "url": "https://www.fec.gov/data/candidate/H6MI06258/?cycle=2026&election_full=true",
       "source": "FEC",
       "asOf": "2026-10-26",
       "parts": {}

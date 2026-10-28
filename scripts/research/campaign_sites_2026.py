@@ -3,7 +3,8 @@ California's House candidates: Wikipedia's California House page lists no campai
 sites in its External links. Each link comes from the candidate's own Wikipedia
 article (its "Campaign website" link) or BallotReady profile, and was checked live on
 Oct. 27, 2026: the site answered and carried the candidate's name. Links whose domains
-had lapsed were left out (Jim Baird's old domain now redirects to a gambling site).
+had lapsed were left out (Jim Baird's old domain now redirects to a gambling site,
+and Dan Wood's belongs to an unrelated association).
 
 Writes data/research/campaign_sites.json (a partial overlay: links only).
 """
@@ -98,7 +99,6 @@ SITES = [
     ("CA-H-51:cabrera", "Ricardo Cabrera", "R", "https://www.cabreraforcongress2026.com/", "BallotReady: https://www.ballotready.org/people/ricardo-cabrera"),
     ("CA-H-51:jacobs", "Sara Jacobs", "D", "https://sarajacobsforca.com/", "Wikipedia: Sara Jacobs"),
     ("CA-H-52:vargas", "Juan Vargas", "D", "https://www.votevargas.com/", "Wikipedia: Juan Vargas"),
-    ("CO-H-08:wood", "Dan Wood", "L", "https://www.votedanwood.com/", "BallotReady: https://www.ballotready.org/people/dan-wood"),
     ("CO-SEN:withrow", "Adam Withrow", "Unity", "https://www.senatorwithrow.com/", "BallotReady: https://www.ballotready.org/people/adam-withrow"),
     ("CT-H-04:wesley", "Benjamin Wesley", "I", "https://benwesleyforcongress.com/", "BallotReady: https://www.ballotready.org/people/benjamin-wesley"),
     ("DC-H-98:freeman", "Kymone Freeman", "G", "https://www.freeman4congress.com/", "BallotReady: https://www.ballotready.org/people/kymone-freeman"),

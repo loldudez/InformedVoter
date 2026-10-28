@@ -649,6 +649,113 @@
        }
       }
      }
+    },
+    {
+     "id": "CO-GOV:hamilton",
+     "name": "Stephen Hamilton",
+     "party": "American Constitution",
+     "bio": "Cañon City small-business owner; his running mate is James Tribert.",
+     "positions": {
+      "hea-08": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would protect people with pre-existing conditions",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I believe in access to high-quality, affordable coverage through competition, transparency, and protecting people with pre-existing conditions."
+       }
+      },
+      "hea-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton backs direct primary care and health savings accounts",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "support for direct primary care and Health Savings Accounts so families can actually afford care"
+       }
+      },
+      "soc-01": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would protect free speech for everybody",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "protecting free speech for everybody"
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would work with federal authorities against violent criminals",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I support working with federal authorities to get violent criminals and real public safety threats off our streets"
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton wants a secure border",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "We need a secure border and a legal immigration system that actually works"
+       }
+      },
+      "ene-10": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would push for energy that keeps bills down",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "push for affordable, reliable energy that keeps bills down"
+       }
+      },
+      "edu-03": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would expand vo-tech, apprenticeships and trade schools",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I'm for expanding vo-tech, apprenticeships, trade schools, and community colleges."
+       }
+      },
+      "sta-07": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would expand technical schools and community colleges",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would cut wasteful spending",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "cut wasteful spending to ease tax pressure"
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would train and support local law enforcement",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "properly train and support local law enforcement"
+       }
+      }
+     }
     }
    ]
   },
@@ -689,6 +796,76 @@
         "url": "https://deanabrams.com/",
         "date": "2026-10-26",
         "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams would enforce runoff rules with real inspections and penalties",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Enforce existing runoff rules with real inspections and penalties, and speed up septic-to-sewer conversion near springs."
+       }
+      },
+      "sta-05": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams would protect dunes, mangroves and seagrass as storm defenses",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Protect beach access, dunes, mangroves and seagrass, our first storm defense."
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams would pool state drug purchasing and import cheaper drugs",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "pool state drug purchasing, and push to import from other safe countries"
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams would seek a reinsurance waiver to lower marketplace premiums",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Pursue a federal reinsurance waiver to lower marketplace premiums for everyone."
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams would set minimum teacher pay by county cost of living",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Set minimum pay by county, based on local cost of living, so teachers can afford to live where they teach."
+       }
+      },
+      "edu-06": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams supports vouchers with income limits restored",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I support vouchers, but restore income limits so public dollars go first to families who need them."
+       }
+      },
+      "edu-10": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams wants every graduate to understand the Constitution",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Every graduate should understand the Constitution and the Federalist and Anti-Federalist debates that shaped it."
        }
       }
      }
@@ -2368,6 +2545,74 @@
        }
       }
      }
+    },
+    {
+     "id": "MI-GOV:campbell",
+     "name": "Douglas Campbell",
+     "party": "G",
+     "bio": "Retired registered professional engineer and substitute high-school teacher; takes no corporate PAC contributions.",
+     "positions": {
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Campbell would eliminate Michigan’s charter school system",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Eliminate the charter system."
+       }
+      },
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Campbell wants a not-for-profit national health system",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "We need to create a not-for-profit National Health System."
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Campbell would cover every flat roof and parking lot with solar panels",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Every flat roof and parking lot should be covered with photovoltaic collectors"
+       }
+      },
+      "ene-05": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Campbell would encourage electric vehicles",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Electric vehicles should be encouraged at every opportunity."
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Campbell would close the Line 5 pipeline to protect the Great Lakes",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Line 5 needs to be closed before we poison the entire Great Lakes."
+       }
+      },
+      "sta-10": {
+       "stance": -2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Campbell calls incentives for private job creation corporate welfare",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Every time the government tries encouraging job creation in the private sector, it always ends up as corporate welfare"
+       }
+      }
+     }
     }
    ]
   },
@@ -2946,7 +3191,7 @@
      "id": "NE-SEN:marvin",
      "name": "Mike Marvin",
      "party": "Legal Marijuana Now",
-     "bio": "Retired executive director of NAPE/AFSCME Local 61, the state employees’ union. He remains on the ballot but has urged his supporters to back Dan Osborn."
+     "bio": "Retired executive director of NAPE/AFSCME Local 61, the state employees’ union. He withdrew on Aug. 21 (VOTE411) and has urged his supporters to back Dan Osborn, but his name remains on the ballot."
     },
     {
      "id": "NE-SEN:conboy",
@@ -4588,7 +4833,230 @@
   {
    "id": "TN-GOV",
    "partial": true,
+   "candidatesOnly": true,
+   "notes": [
+    {
+     "text": "The ballot lists 15 candidates for governor: Republican Marsha Blackburn, Democrat Jerri Green and 13 independents.",
+     "source": "Hamilton County Election Commission, official sample ballot, Nov. 3, 2026",
+     "url": "https://elect.hamiltontn.gov/Portals/12/HTML/GenSample.html"
+    }
+   ],
    "candidates": [
+    {
+     "id": "TN-GOV:brewer",
+     "name": "Dean Brewer",
+     "party": "I",
+     "positions": {
+      "sta-01": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Brewer would dedicate more money to infrastructure",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Infrastructure- dedicate more money and expand."
+       }
+      },
+      "edu-06": {
+       "stance": -1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Brewer says state money should stay with public schools",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "State money should stay with public schools."
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Brewer would give teachers more money",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Strive to give teachers more money to attract quality teachers"
+       }
+      }
+     }
+    },
+    {
+     "id": "TN-GOV:brown",
+     "name": "Ray Brown",
+     "party": "I"
+    },
+    {
+     "id": "TN-GOV:morgan",
+     "name": "Charles Van Morgan",
+     "party": "I"
+    },
+    {
+     "id": "TN-GOV:murphy",
+     "name": "Eddie Lee Murphy",
+     "party": "I"
+    },
+    {
+     "id": "TN-GOV:scoggin",
+     "name": "Victor L. Scoggin",
+     "party": "I"
+    },
+    {
+     "id": "TN-GOV:seeman",
+     "name": "Dave Seeman",
+     "party": "I",
+     "positions": {
+      "soc-02": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would enact statewide nondiscrimination protections",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "enact statewide nondiscrimination protections in employment, housing, and public accommodations"
+       }
+      },
+      "soc-03": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would keep government out of personal medical decisions",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "keep government out of personal medical decisions"
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman wants automatic registration and no-excuse absentee voting",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "protect the vote with automatic registration and no-excuse absentee ballots"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would expand Medicaid",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I'll close the coverage gap through Medicaid expansion"
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would repeal Tennessee’s private-school voucher program",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "repeal the private-school voucher program"
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would fund public schools through an endowment fed by taxes on extreme wealth",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "fund public schools through the Future Families Fund a permanent endowment fed by two taxes on extreme wealth"
+       }
+      },
+      "eco-01": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would tax extreme wealth to fund schools",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "sta-03": {
+       "stance": 2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would raise the minimum wage to $19 over four years",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "raise the minimum wage from the $7.25 federal floor to a $19 living wage over four years"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would end the state grocery tax",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I will end the 4% state grocery tax giving about $400 back to every Tennessee family per year"
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would lower drug prices through state bulk buying",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "bring down prescription prices by buying in bulk for seven million Tennesseans"
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would cut red tape on building homes",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "cut the red tape on building homes"
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would fund community land trusts for permanent affordable housing",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "making affordable housing permanent through state funded community land trusts"
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would pay retention stipends to teachers at high-need schools",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "pay $5,000 retention stipends at the highest-need schools"
+       }
+      },
+      "sta-09": {
+       "stance": 2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would put a community health center in every county",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I will put a community health center in each county"
+       }
+      }
+     },
+     "bio": "Mechanical engineer; co-founder of the design firm Ovyl and founder of Squarish, a public benefit firm.",
+     "officialSite": "https://davefortn.com/"
+    },
+    {
+     "id": "TN-GOV:smithson",
+     "name": "Karl Knox Smithson",
+     "party": "I"
+    },
+    {
+     "id": "TN-GOV:taylor",
+     "name": "L. Webb Taylor",
+     "party": "I"
+    },
     {
      "id": "TN-GOV:hatley",
      "name": "David Hatley",
@@ -5835,6 +6303,119 @@
        }
       }
      }
+    },
+    {
+     "id": "MI-SEN:marsh",
+     "name": "Douglas P. Marsh",
+     "party": "G",
+     "positions": {
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh supports a single-payer health system",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "The best way to ensure this is with a single-payer system."
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh supports a single-payer health system",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "hou-02": {
+       "stance": 2,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh says private equity companies should not own homes",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Private equity companies should not own residential property."
+       }
+      },
+      "hou-06": {
+       "stance": 1,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh would tie rents to local wages and regulate short-term rentals",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Rental rates should be tied to an area's prevailing wages"
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh would immediately end hostilities against Iran",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "The United States of America should immediately cease hostilities against Iran"
+       }
+      },
+      "def-12": {
+       "stance": -2,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh calls continued weapons and funding for proxy wars, apartheid and genocide unconscionable",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "The continued supply of weapons and funding for proxy wars, apartheid, and genocide is unconscionable."
+       }
+      },
+      "def-13": {
+       "stance": -1,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh opposes arming proxy wars and seeks permanent ceasefires, Ukraine included",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "def-07": {
+       "stance": 2,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh would use U.S. economic and diplomatic leverage for permanent ceasefires",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "hou-08": {
+       "stance": 1,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh wants jobs rebuilding bridges and roads",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Michiganders need quality, longterm jobs rebuilding our bridges and roads"
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh wants jobs developing green energy infrastructure",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "ene-03": {
+       "stance": -1,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh would build green energy instead of kowtowing to big oil",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "developing green energy infrastructure for our children, instead of kowtowing to big oil"
+       }
+      }
+     }
     }
    ]
   },
@@ -6467,6 +7048,103 @@
        }
       }
      }
+    },
+    {
+     "id": "CO-SEN:withrow",
+     "name": "Adam Withrow",
+     "party": "Unity",
+     "bio": "Former county jail detention officer and contractor, running on the Unity Party line.",
+     "positions": {
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow would raise the solar tax credit, make it permanent and restore rebates",
+        "url": "https://www.senatorwithrow.com/platform-discussion",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Let's increase the solar tax credit, make it permanent, and bring back the rebates!"
+       }
+      },
+      "ene-09": {
+       "stance": 1,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow wants incentives for American companies to make solar panels",
+        "url": "https://www.senatorwithrow.com/platform-discussion",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "let's create incentives for American companies to make 'em here"
+       }
+      },
+      "ene-03": {
+       "stance": -1,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow calls fossil fuels obsolete and wants a transition away from them",
+        "url": "https://www.senatorwithrow.com/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Fossil fuels are obsolete."
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow wants a health care system that works for everyone",
+        "url": "https://www.senatorwithrow.com/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Healthcare for all would cost less than half of our defense budget."
+       }
+      },
+      "def-07": {
+       "stance": 2,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow is against every war and favors free trade and equality over bombs",
+        "url": "https://www.senatorwithrow.com/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Free trade and mutual global recognition of equality will accomplish what a billion pounds of bombs can not."
+       }
+      },
+      "agr-06": {
+       "stance": 1,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow favors free trade over war",
+        "url": "https://www.senatorwithrow.com/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": 2,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow says raising the federal minimum wage is vital, pegged to consumer prices",
+        "url": "https://www.senatorwithrow.com/platform-discussion",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I believe a raise in the Federal Minimum Wage is vital."
+       }
+      },
+      "def-03": {
+       "stance": 1,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow supports expanded re-entry programs for veterans",
+        "url": "https://www.senatorwithrow.com/platform-discussion",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Yes, I support expanded re-entry programs to help adapt to civilian life."
+       }
+      },
+      "soc-03": {
+       "stance": 1,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow supports women’s reproductive health care choices",
+        "url": "https://www.senatorwithrow.com/platform-discussion",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Anybody out here think women should have reproductive healthcare choices? Good."
+       }
+      }
+     }
     }
    ]
   },
@@ -6711,7 +7389,102 @@
      "id": "OK-GOV:griffin",
      "name": "Jerry Griffin",
      "party": "I",
-     "officialSite": "https://drjerrtg.substack.com/p/griffin-for-governor-2026"
+     "officialSite": "https://drjerrtg.substack.com/p/griffin-for-governor-2026",
+     "bio": "Marine veteran and educator who has taught at the University of Tulsa, Texas State and the University of Oklahoma; chief executive of The Palomega Company.",
+     "positions": {
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Griffin would have state agencies cut waste and duplication",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72638034",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "State agencies should regularly review spending and eliminate waste and duplication."
+       }
+      },
+      "sta-09": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Griffin wants dependable rural access to hospitals, doctors and mental health care",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72638034",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Rural communities need dependable access to hospitals, doctors, emergency care, and mental-health services."
+       }
+      },
+      "sta-01": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Griffin would maintain roads and water systems",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72638034",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "We must also maintain roads, water systems, and public safety."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "FL-SEN:gillespie",
+     "name": "Neil Gillespie",
+     "party": "I",
+     "bio": "Founder and director of the Justice Network, an advocacy blog; a licensed motor vehicle dealer in Pennsylvania before moving to Florida in 1993.",
+     "positions": {
+      "imm-02": {
+       "stance": 1,
+       "source": {
+        "title": "Neil Gillespie campaign site: Gillespie supports a path to citizenship for immigrants who follow the rules (his League of Women Voters answers)",
+        "url": "https://neilgillespie4senate.blogspot.com/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I also support a path to citizenship for immigrants who follow the rules"
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Neil Gillespie campaign site: Gillespie supports secure borders and vetting immigrants (his League of Women Voters answers)",
+        "url": "https://neilgillespie4senate.blogspot.com/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Neil Gillespie campaign site: Gillespie proposes national health coverage with the ability to opt out",
+        "url": "https://neilgillespie4senate.blogspot.com/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I propose national health coverage, with the ability to opt-out."
+       }
+      },
+      "def-11": {
+       "stance": -1,
+       "source": {
+        "title": "Neil Gillespie campaign site: Gillespie says Israel’s wars are creating antisemitism worldwide",
+        "url": "https://neilgillespie4senate.blogspot.com/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Its wars are creating antisemitism worldwide."
+       }
+      },
+      "soc-01": {
+       "stance": 1,
+       "source": {
+        "title": "Neil Gillespie campaign site: Gillespie lists the First Amendment’s freedoms of speech and the press among his top priorities",
+        "url": "https://neilgillespie4senate.blogspot.com/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      }
+     }
     }
    ]
   },

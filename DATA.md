@@ -19,7 +19,7 @@ legislative races").
 | Polls | Each race's Wikipedia page (House: each state's page, by district) | Only tables whose every candidate is on the ballot, so hypothetical match-ups are skipped. One row per poll (likely-voter version preferred). Each poll links to the citation Wikipedia gives for it. |
 | Published polling averages | The aggregator table on each race page | A check on our average, not an input. |
 | Fundraising | FEC API when a key is set (see README); FEC financial summaries read on fec.gov for every Senate candidate and every House candidate with a 2026 report (`scripts/research/fec_2026.py`, `fec_house_2026.py`); otherwise the FEC totals cited in Wikipedia's fundraising tables | See "Money by source". Governors: totals from state filings via Wikipedia, without a breakdown; Florida's from the state's own database, grouped by source (`florida_money_2026.py`); where neither exists, the latest news report of the filings as a dated note (`governor_money_2026.py`). |
-| Campaign websites | Each race page's "External links" list of official campaign websites, such as "Ted Brown (L)" (`campaign_sites` in `scripts/lib/elections.py`) | Attached when the name (and major party, where given) matches one candidate without doubt. A researched `officialSite` wins; `officialSite: null` in an overlay drops a dead link. |
+| Campaign websites | Each race page's "External links" list of official campaign websites, such as "Ted Brown (L)" (`campaign_sites` in `scripts/lib/elections.py`) | Attached when the name (and major party, where given) matches one candidate without doubt. A researched `officialSite` wins; `officialSite: null` in an overlay drops a dead link. California's page lists none, so `scripts/research/campaign_sites_2026.py` adds links from candidates' own Wikipedia articles and BallotReady profiles, kept only when the site answers and shows the candidate's name. |
 | National environment | Generic congressional ballot average on the Senate page | Feeds the partisan baseline. |
 | Seats held today | Wikipedia's party summaries for the 119th Congress; governors from the 36 races plus the 14 not on the ballot | Expected gains are measured from these. |
 | House members' positions | The House Clerk's roll-call XML for 39 votes (2021 to 2026) | See "Positions from votes". |
@@ -29,7 +29,11 @@ legislative races").
 | State legislative races | Each chamber's 2026 Wikipedia page, such as "2026 Michigan House of Representatives election" (`scripts/lib/legislature.py`) | Seats on the ballot, holders, 2024 presidential margins, November candidates where listed, forecasters' district ratings. No win odds. |
 
 Wikipedia pages are cached by revision in `data/cache/wiki/`, so a refresh only
-downloads pages edited since the last one.
+downloads pages edited since the last one (about 30 requests on a quiet day).
+Wikimedia's 2026 limits allow a script 200 requests a minute when its User-Agent
+gives a contact and 10 when it doesn't, so without a contact
+(`INFORMED_VOTER_CONTACT` or `~/.informed-voter/contact`, see README) requests go
+out 7 seconds apart, and a 429 or 503 waits out the Retry-After it carries.
 
 ## The forecast
 
@@ -129,7 +133,12 @@ more votes (±1 with fewer), at least 75% one way gives ±1, anything less is 0,
 the source names the votes and how the member cast them. "Not used" marks bills
 where a no vote could mean many things (omnibus packages, or a bill that pairs two
 issues). The 2025-26 votes give members first elected in 2024 about 20 positions
-each. The rules live in `scripts/lib/house_votes.py`.
+each. The rules live in `scripts/lib/house_votes.py`. Former members on the 2026 ballot
+whose service overlaps these roll calls are named by the Clerk's member id in
+`FORMER_MEMBERS` (`update_races.py`: Mary Peltola, Jerry Carl, Colin Allred, Elaine
+Luria), checked by hand because a name search also finds relatives and namesakes. When
+a sitting member shares a surname with a predecessor the Clerk lists by surname alone
+(Adelita and Raúl Grijalva), the one in the latest roll call is used.
 
 ## Researched races (overlays)
 
@@ -143,10 +152,28 @@ candidates in every House race rated Toss-up, Tilt or Lean by any forecaster:
 guides.vote voters guides where they exist, campaign issue pages elsewhere, news
 reports when a site lists no issues) and `fec_2026.py` (money by source, see above).
 `candidates_2026.py` (third-party and independent Senate and governor candidates) and
-`house_challengers_2026.py` (House challengers outside the competitive races) cover
-only some of each race's candidates, from campaign sites and the questionnaire
-answers in newsroom voter guides, so they are `partial`. Overlays are merged in
-file-name order, case-insensitively.
+`house_challengers_2026.py` (House challengers outside the competitive races: 584
+candidates, Oct. 26-27) cover only some of each race's candidates, so they are
+`partial`. Their sources: campaign sites (those that render only in a browser were
+read in the browser pane), newsroom voter guides, KQED's candidate summaries (four
+Northern California races), KATU's "Know Your Candidates" interview transcripts
+(Oregon and southwest Washington) and VOTE411, the League of Women Voters' guide, whose
+candidates answer the League's questions in their own words; VOTE411 renders in a
+JavaScript widget, so it was read race by race in the browser. Where a guide prints a
+candidate's own answers, they are quoted; where it summarizes in its own words (Iowa
+Capital Dispatch, Maine Morning Star, Alabama Reflector, Tennessee Lookout, Virginia
+Mercury, Oklahoma Voice, KQED), the summary is the source title and only the
+candidate's own words are quoted. `ivoterguide_2026.py` adds candidates' own answers to
+iVoterGuide's questionnaire (244 candidates). iVoterGuide is run by AFA Action, the
+American Family Association's advocacy arm, so only the candidates' agree/disagree
+answers and multiple-choice picks are used, never its ratings, and only for the
+statements that ask what one of the site's questions asks; its docstring lists each
+statement, the question it answers and the cap on its stance. It adds a question only
+where the candidate has no other source for it, so it is regenerated after hand
+research. `campaign_sites_2026.py` adds only campaign links (117, mostly
+California's), from candidates' Wikipedia articles and BallotReady profiles, each
+checked live; the other overlays set `officialSite` for sites found in guides.
+Overlays are merged in file-name order, case-insensitively.
 `update_races.py` merges each overlay onto the automatic race with the same id;
 researched positions are added to the automatic vote positions, winning where both
 answer a question. To add a race, copy one of these scripts, keep every source next
@@ -168,7 +195,8 @@ to the stance it supports, run it, then run `py scripts/update_races.py`.
 | `candidates[]` | Matched to the automatic candidates by id, then by name. Adds `bio`, `officialSite`, `donateUrl`, `positions`, `aliases`, `incumbent`; `finance` too, unless the automatic figures are newer (equal totals count as the same report, so the overlay's breakdown and true report date win). Researched ids replace automatic ones everywhere in the race. Two research files may cover one race: candidates merge by id and positions pool by question. |
 | `financeOnly: true` | The overlay adds money only (`fec_2026.py`): the race is not marked researched, so matching stays off where positions are missing. |
 | `partial: true` | The overlay researches only some of the race's candidates: positions and bios are added, but the race is not marked researched unless another file covering it is. |
-| `officialSite: null` (candidate) | Drops the campaign link the refresh found, for a domain that is dead or parked. |
+| `officialSite: null` (candidate) | Drops the campaign link the refresh found, for a domain that is dead or parked. It survives merging with later research files, where any other `null` means "not researched here". |
+| `name` (candidate) | Replaces the automatic name, for spellings Wikipedia gets wrong (Dave Wood, CO-8; Maria Rodriguez, KY-3; Timothy Teagan, MI-6). The id stays the same. |
 | `candidatesOnly: true` | The researched list is the qualified list: automatic candidates not on it are dropped, with a note in the refresh log (used where Wikipedia's list was wrong). |
 | `aliases[]` (candidate) | Old candidate ids, so visitors' saved likes follow the candidate. |
 | `polls[]` | Merged with the automatic polls; the researched version of the same poll (pollster and end date) wins. Poll fields: `sponsor`, `url`, `note`, `approx` (shows "~" before the sample size). |

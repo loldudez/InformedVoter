@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26",
+ "updated": "2026-10-27",
  "note": "Florida governor candidates' campaign accounts grouped by contributor, from the Florida Division of Elections database, plus each major candidate's political committee in a note.",
  "races": [
   {
@@ -10,20 +10,20 @@
      "id": "FL-GOV:jolly",
      "name": "David Jolly",
      "finance": {
-      "total": 13161993,
+      "total": 13303718,
       "parts": {
-       "pac": 286604,
-       "party": 439080,
+       "pac": 287264,
+       "party": 512920,
        "public": 3074955,
-       "small": 3269289,
-       "large": 6097240
+       "small": 3295763,
+       "large": 6137993
       },
-      "spent": 9918063,
+      "spent": 10062738,
       "from": "2025-06-04",
-      "asOf": "2026-10-25",
+      "asOf": "2026-10-26",
       "source": "Florida Division of Elections",
       "url": "https://dos.elections.myflorida.com/candidates/CanDetail.asp?account=89243",
-      "note": "His political committee, Florida 2026, separately took in $13.3 million through Oct. 25; that money isn’t counted above (largest givers: Donald Sussman, $1.6 million; Henry Laufer, $1.03 million; AFT COPE Dynamics, $1 million)."
+      "note": "His political committee, Florida 2026, separately took in $13.3 million through Oct. 26; that money isn’t counted above (largest givers: Donald Sussman, $1.6 million; Henry Laufer, $1.03 million; AFT COPE Dynamics, $1 million)."
      },
      "party": "D"
     },
@@ -31,20 +31,20 @@
      "id": "FL-GOV:donalds",
      "name": "Byron Donalds",
      "finance": {
-      "total": 20829643,
+      "total": 20942003,
       "parts": {
-       "pac": 4018726,
-       "party": 2761986,
+       "pac": 4037926,
+       "party": 2788336,
        "public": 1131324,
-       "small": 2161392,
-       "large": 10763143
+       "small": 2164413,
+       "large": 10826932
       },
       "spent": 12703980,
       "from": "2025-02-26",
-      "asOf": "2026-10-25",
+      "asOf": "2026-10-26",
       "source": "Florida Division of Elections",
       "url": "https://dos.elections.myflorida.com/candidates/CanDetail.asp?account=89042",
-      "note": "His political committee, Friends of Byron Donalds PAC, separately took in $150.8 million through Oct. 25; that money isn’t counted above (largest givers: Kenneth Griffin, $15.0 million; Jeff Yass, $7.5 million; the Seminole Tribe of Florida, $6 million)."
+      "note": "His political committee, Friends of Byron Donalds PAC, separately took in $154.4 million through Oct. 26; that money isn’t counted above (largest givers: Kenneth Griffin, $15.0 million; Jeff Yass, $7.5 million; the Seminole Tribe of Florida, $6 million)."
      },
      "party": "R"
     },
@@ -58,7 +58,7 @@
        "small": 2460,
        "large": 34551
       },
-      "spent": 885348,
+      "spent": 889398,
       "from": "2026-01-05",
       "asOf": "2026-10-14",
       "source": "Florida Division of Elections",

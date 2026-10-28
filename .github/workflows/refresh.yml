@@ -1,7 +1,9 @@
 # Optional: when the site is hosted from a GitHub repository, this refreshes the
 # data every 8 hours in the cloud and commits it, so the published site stays
 # current without this computer being on. Add a free FEC API key as the
-# repository secret FEC_API_KEY for full fundraising data.
+# repository secret FEC_API_KEY for full fundraising data, and a contact (an
+# email address or the site's URL) as the repository variable
+# INFORMED_VOTER_CONTACT so Wikipedia allows the refresh its full request rate.
 name: Refresh election data
 
 on:
@@ -30,6 +32,7 @@ jobs:
       - name: Refresh races, forecasts, control odds and news
         env:
           FEC_API_KEY: ${{ secrets.FEC_API_KEY }}
+          INFORMED_VOTER_CONTACT: ${{ vars.INFORMED_VOTER_CONTACT }}
         run: python scripts/refresh_all.py
       - name: Commit updated data
         run: |

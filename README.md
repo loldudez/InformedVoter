@@ -24,8 +24,8 @@ work: browsers block a page opened from disk from loading its own data files.
 | **Every U.S. Senate, U.S. House and governor race**, refreshed every 8 hours: candidates on the ballot, forecasters' ratings, polls (each linked to its source), fundraising, early voting, forecasts and chamber control | Nothing in the races is fictional; what isn't known yet is shown as missing |
 | **Every state legislative seat on the 2026 ballot** (88 chambers), refreshed every 8 hours from Wikipedia's chamber pages: who holds it, the district's 2024 presidential margin, and the November candidates where the page lists them (about 3,400 of 5,600 districts). No win odds for these races | State legislative candidates' positions and money aren't loaded |
 | Early voting by state, and by House district where the count is complete, from the University of Florida Election Lab's tracker | |
-| Issue positions for every current U.S. House member on the ballot, from 39 recorded House votes (2021 to 2026, including war powers resolutions) | Issue positions for candidates not yet researched are left blank, not invented |
-| Hand-researched races (tagged **SOURCED**): bios and positions with sources for every Senate and governor race on the 2026 ballot, including 75 third-party and independent candidates from their campaign sites and newsroom voter guides, both main candidates in the 78 competitive House races (rated Toss-up, Tilt or Lean by any forecaster), Louisiana's six House districts, and House challengers in safer seats as they're researched; campaign website links for about 1,100 candidates; money by source from FEC reports for every Senate candidate and every House candidate with a 2026 report; governors' fundraising from state filings (Florida's broken down by source from the state's own database, with each major candidate's political committee), or the latest news report of them where no table exists | About 35 minor-party and independent Senate and governor candidates have no site or statement anywhere, and most House challengers in safer seats aren't researched yet; House candidates with no 2026 FEC report yet, and three governor candidates, show money as not loaded yet |
+| Issue positions for every current U.S. House member on the ballot, and four former members running again, from 39 recorded House votes (2021 to 2026, including war powers resolutions) | Issue positions for candidates not yet researched are left blank, not invented |
+| Hand-researched races (tagged **SOURCED**): bios and positions with sources for every Senate and governor race on the 2026 ballot, including 88 third-party and independent candidates, both main candidates in the 78 competitive House races (rated Toss-up, Tilt or Lean by any forecaster), Louisiana's six House districts, and 584 House challengers in safer seats, from campaign sites, newsroom voter guides and interviews, VOTE411 (the League of Women Voters' guide) and candidates' own iVoterGuide answers; sourced positions for 1,305 of the 1,418 federal and governor candidates (1,065 with the five a match percentage needs); campaign website links for 1,264 of them; money by source from FEC reports for every Senate candidate and every House candidate with a 2026 report; governors' fundraising from state filings (Florida's broken down by source from the state's own database, with each major candidate's political committee), or the latest news report of them where no table exists | About 113 candidates, mostly minor-party and independent, have no usable site, statement or guide answer; House candidates with no 2026 FEC report yet, and three governor candidates, show money as not loaded yet |
 | District maps: Census Bureau 2026 TIGER/Line (120th Congress + 2026 state legislative districts) | |
 | Address to district lookup (Census Bureau geocoder) | |
 | How-to-vote links (vote.gov, every state's election office, NASS), all checked Oct 2026 | |
@@ -92,6 +92,13 @@ free personal key from <https://api.data.gov/signup/> unlocks full, self-updatin
 data for every candidate: set it as the Windows user environment variable
 `FEC_API_KEY` (or save it in `%USERPROFILE%\.informed-voter\fec_api_key`) and the next
 refresh uses it.
+
+**Wikipedia:** since 2026 Wikimedia allows a script only 10 requests a minute
+unless its User-Agent gives a way to reach whoever runs it, so the refresh waits 7
+seconds between requests (a few extra minutes per run). To let it run at full
+speed (200 a minute), save an email address or the site's URL in
+`%USERPROFILE%\.informed-voter\contact` (or the user environment variable
+`INFORMED_VOTER_CONTACT`); it is sent only to Wikipedia, in the User-Agent header.
 
 Maps only need rebuilding after redistricting: download the Census files listed
 at the top of `scripts/build_maps.py`, then run it (needs `pip install shapely pyshp`).
