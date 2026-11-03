@@ -5,9 +5,10 @@ import { icon } from '../icons.js';
 import { store } from '../store.js';
 import { STATE_BY_ABBR, PARTY_REGISTRATION } from '../data/states.js';
 import { QUESTION_BY_ID, stanceSentence, questionsForLevel } from '../data/questions.js';
-import { fc, pollHist, changeOver, getRace, raceTitle, raceShortTitle, officeLabel, financeOf, hasFigures, earlyVoteOf, positionsOf, isDemo, racesMeta } from '../data/world.js';
+import { fc, pollHist, changeOver, getRace, raceTitle, raceShortTitle, officeLabel, financeOf, hasFigures, earlyVoteOf, positionsOf, isDemo, racesMeta, photoOf } from '../data/world.js';
 import { verdict, day } from '../model/forecast.js';
 import { candColors, waffle, segments, stackedBar, lineChart, cssVar } from '../lib/charts.js';
+import { SHOW_EARLY_VOTE } from '../config.js';
 
 export const PARTY_NAME = { D: 'Democrat', R: 'Republican', L: 'Libertarian', G: 'Green', I: 'Independent', N: 'Nonpartisan' };
 export const PARTY_PLURAL = { D: 'Democrats', R: 'Republicans' };
@@ -30,6 +31,29 @@ export function starBtn(raceId, { small = false } = {}) {
 export function heartBtn(candId, name, { small = false } = {}) {
   const on = store.isLiked(candId);
   return html`<button type="button" class="toggle-icon heart${small ? ' sm' : ''}" data-like="${candId}" data-name="${name}" aria-pressed="${String(on)}" aria-label="${on ? `Remove ${name} from liked candidates` : `Like ${name}`}" title="${on ? 'Liked' : 'Like this candidate'}">${on ? icon.heartFill() : icon.heart()}</button>`;
+}
+
+// A candidate's badge: their Wikidata photo in gray, ringed in their color, with the
+// author and license in the tooltip (as in the France section), or their initials on
+// that color when there is no photo. `style` sizes it where the surrounding CSS doesn't.
+export function candBadge(c, color, style = '') {
+  const p = photoOf(c);
+  if (!p) return html`<span class="badge" style="background:${color};${style}" aria-hidden="true">${initials(c.name)}</span>`;
+  return html`<span class="badge photo" style="--party:${color};${style}" title="Photo: ${p.artist || 'unknown author'} (${p.license || 'Wikimedia Commons'})"><img src="${p.thumb}" alt="" loading="lazy" decoding="async"></span>`;
+}
+
+// The credits Commons licenses ask for, for the people pictured on a page.
+export function photoCredits(people) {
+  const shown = new Map();
+  for (const c of people) {
+    const p = photoOf(c);
+    if (p && !shown.has(c.name)) shown.set(c.name, p);
+  }
+  if (!shown.size) return '';
+  return html`<details class="card"><summary style="cursor:pointer;font-weight:650">Photo credits</summary>
+    <ul class="small" style="margin:10px 0 0">${[...shown].map(([name, p]) => html`<li>${name}: ${p.artist || 'unknown author'}${p.license ? `, ${p.license}` : ''} — <a href="${p.page}" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a></li>`)}</ul>
+    <p class="tiny faint" style="margin:8px 0 0">Photos are shown in black and white. They come from Wikidata and Wikimedia Commons, under the licenses shown.</p>
+  </details>`;
 }
 
 export function ratingChip(f) {
@@ -149,7 +173,7 @@ export function candidateCards(race) {
   return html`<div class="cands">${f.cands.map((c) => html`
     <article class="cand ${partyClass(c.party)}">
       <div class="cand-top">
-        <div class="badge" style="background:${colors[c.id]}">${initials(c.name)}</div>
+        ${candBadge(c, colors[c.id])}
         <div><div class="cand-name">${c.name}</div><div class="cand-party">${PARTY_NAME[c.party] || c.party}</div></div>
         <div class="cand-actions">${heartBtn(c.id, c.name)}</div>
       </div>
@@ -192,7 +216,7 @@ export function statTiles(race) {
 // Open ("jungle") primaries: everyone on one ballot, top two to a runoff. With many
 // candidates and thin polling a win probability would be false precision, so this
 // view shows the field, the polls and the forecasters' ratings instead.
-function openPrimaryFull(race, { tag }) {
+function openPrimaryFull(race, { tag, credits }) {
   const f = fc(race);
   const colors = candColors(f.cands);
   const H = raw(tag);
@@ -219,7 +243,7 @@ function openPrimaryFull(race, { tag }) {
       const inPoll = poll && poll.results[c.id] != null;
       return html`<article class="cand ${partyClass(c.party)} field-cand">
         <div class="cand-top">
-          <div class="badge" style="background:${colors[c.id]}">${initials(c.name)}</div>
+          ${candBadge(c, colors[c.id])}
           <div style="min-width:0"><div class="cand-name">${c.name}</div><div class="cand-party">${PARTY_NAME[c.party] || c.party}</div></div>
           <div class="cand-actions">${heartBtn(c.id, c.name, { small: true })}</div>
         </div>
@@ -231,6 +255,7 @@ function openPrimaryFull(race, { tag }) {
       </article>`;
     })}</div>
     ${raceTabs(race)}
+    ${credits ? photoCredits(f.cands) : ''}
   </div>`;
 }
 
@@ -262,7 +287,7 @@ function legislativeFull(race, { tag }) {
     </section>
     ${n ? html`<div class="field-grid">${f.cands.map((c) => html`<article class="cand ${partyClass(c.party)} field-cand">
         <div class="cand-top">
-          <div class="badge" style="background:${colors[c.id]}">${initials(c.name)}</div>
+          ${candBadge(c, colors[c.id])}
           <div style="min-width:0"><div class="cand-name">${c.name}</div><div class="cand-party">${PARTY_NAME[c.party] || c.party}${c.incumbent ? ' · incumbent' : ''}${c.seat ? ` · ${c.seat}` : ''}</div></div>
           <div class="cand-actions">${heartBtn(c.id, c.name, { small: true })}</div>
         </div>
@@ -274,16 +299,18 @@ function legislativeFull(race, { tag }) {
   </div>`;
 }
 
-// Everything for one race, top to bottom.
-export function raceFull(race, { tag = 'h1' } = {}) {
+// Everything for one race, top to bottom. `credits: false` leaves the photo credits to
+// a page that lists them for every race it shows.
+export function raceFull(race, { tag = 'h1', credits = true } = {}) {
   const f0 = fc(race);
-  if (f0.open) return f0.kind === 'field' ? legislativeFull(race, { tag }) : openPrimaryFull(race, { tag });
+  if (f0.open) return f0.kind === 'field' ? legislativeFull(race, { tag }) : openPrimaryFull(race, { tag, credits });
   return html`<div class="stack-lg">
     ${raceHero(race, { tag })}
     ${candidateCards(race)}
     ${waffleBlock(race)}
     ${statTiles(race)}
     ${raceTabs(race)}
+    ${credits ? photoCredits(f0.cands) : ''}
   </div>`;
 }
 
@@ -298,7 +325,7 @@ export function compactRace(race, { label } = {}) {
     </div>
     <div class="compact-race">
       <div class="h2h">${f.cands.slice(0, 2).map((c) => html`<div class="compact-cand ${partyClass(c.party)}">
-        <div class="badge" style="background:${colors[c.id]}">${initials(c.name)}</div>
+        ${candBadge(c, colors[c.id])}
         <div style="min-width:0"><div class="nm">${c.name}</div><div class="tiny faint">${PARTY_NAME[c.party] || c.party} · ${fmtProb(c.win)} to win · ${fmtCompact(c.votes)} votes</div></div>
         <div class="sh" style="color:${colors[c.id]}">${fmtPct(c.share, 1)}</div>
         ${heartBtn(c.id, c.name, { small: true })}
@@ -349,7 +376,7 @@ export function raceTabs(race) {
   const open = fc(race).open;
   const tabs = [['polls', 'Polling']];
   if (!open) tabs.push(['trend', 'Trend']);
-  if (earlyVoteOf(race)) tabs.push(['early', 'Early vote']);
+  if (SHOW_EARLY_VOTE && earlyVoteOf(race)) tabs.push(['early', 'Early vote']);
   tabs.push(['money', 'Money'], ['issues', 'Where they stand']);
   return html`<div class="race-tabs" data-race="${race.id}">
     <div class="tabs" role="tablist" aria-label="Race details">${tabs.map(([k, l], i) => html`<button role="tab" type="button" data-tab="${k}" aria-selected="${String(i === 0)}">${l}</button>`)}</div>

@@ -1,11 +1,16 @@
 import { store } from './store.js';
 import { icon } from './icons.js';
-import { initWorld } from './data/world.js';
-import { renderShell, refreshAvatar } from './components/shell.js';
-import { route, currentView } from './router.js';
+import { refreshAvatar } from './components/shell.js';
+import { route, currentView, rerenderShell } from './router.js';
+import { mountHelp } from './components/help.js';
+import { wireReminders } from './components/reminders.js';
+import { frStore } from './fr/store.js';
 
 // Stars and hearts work anywhere on any page through one delegated handler.
 function onClick(e) {
+  // France section: its own starred list, in its own store (pages redraw on change).
+  const frStar = e.target.closest('[data-fr-star]');
+  if (frStar) { frStore.toggle('starred', frStar.dataset.frStar); return; }
   const star = e.target.closest('[data-star]');
   if (star) {
     const id = star.dataset.star;
@@ -31,26 +36,22 @@ function onClick(e) {
   }
 }
 
-async function boot() {
-  const app = document.getElementById('app');
-  try {
-    await initWorld();
-  } catch (e) {
-    console.error(e);
-    app.innerHTML = `<div class="wrap page"><div class="empty"><h3>The site couldn’t load its data.</h3><p>Open it through a local web server rather than by double-clicking the file. See README.md.</p></div></div>`;
-    return;
-  }
-  renderShell();
+function boot() {
   document.addEventListener('click', onClick);
   window.addEventListener('hashchange', () => route());
-  window.addEventListener('iv:theme', () => { renderShell(); route({ keepScroll: true }); });
+  window.addEventListener('iv:theme', async () => { await rerenderShell(); route({ keepScroll: true }); });
+  window.addEventListener('iv:lang', async () => { await rerenderShell(); route({ keepScroll: true }); });
   window.addEventListener('iv:rerender', () => { refreshAvatar(); route({ keepScroll: true }); });
-  // Lists that show starred/liked items redraw when those change.
-  store.subscribe((_, patch) => {
+  // Lists that show starred/liked items redraw when those change, in either section.
+  const redrawOn = (_, patch) => {
     const v = currentView();
     if (v?.rerenderOn?.some((k) => k in patch)) route({ keepScroll: true });
-  });
+  };
+  store.subscribe(redrawOn);
+  frStore.subscribe(redrawOn);
   if (!store.storageOk) console.warn('Storage unavailable: choices will last only for this visit.');
+  mountHelp();
+  wireReminders();
   route();
 }
 

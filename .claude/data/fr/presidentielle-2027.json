@@ -1,0 +1,5178 @@
+{
+ "meta": {
+  "updated": "2026-11-03T00:14+00:00",
+  "sources": [
+   {
+    "title": "Élection présidentielle française de 2027",
+    "url": "https://fr.wikipedia.org/wiki/Élection_présidentielle_française_de_2027",
+    "revid": 240947719
+   },
+   {
+    "title": "Liste de sondages sur l'élection présidentielle française de 2027",
+    "url": "https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l'élection_présidentielle_française_de_2027",
+    "revid": 240766888
+   }
+  ],
+  "windowDays": 30,
+  "candidatesChecked": "2026-11-02",
+  "crossCheck": {
+   "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ?",
+   "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+   "read": true
+  },
+  "pollCheck": {
+   "url": "https://www.commission-des-sondages.fr/notices/",
+   "read": true,
+   "newest": 10339,
+   "missing": []
+  },
+  "checks": []
+ },
+ "rounds": {
+  "r1": "2027-04-18",
+  "r2": "2027-05-02"
+ },
+ "parties": {
+  "LO": "Lutte ouvrière",
+  "LFI": "La France insoumise",
+  "PCF": "Parti communiste français",
+  "LE": "Les Écologistes",
+  "PP": "Place publique (parti politique)",
+  "RE": "Renaissance (parti)",
+  "HOR": "Horizons",
+  "NE": "Nouvelle Énergie",
+  "LR": "Les Républicains",
+  "DLF": "Debout la France",
+  "RN": "Rassemblement national",
+  "REC": "Reconquête (parti politique)",
+  "LFH": "Dominique de Villepin",
+  "PS": "Parti socialiste (France)",
+  "D!": "Debout (parti politique)"
+ },
+ "candidates": [
+  {
+   "id": "nathalie-arthaud",
+   "article": "Nathalie Arthaud",
+   "name": "Nathalie Arthaud",
+   "short": "Arthaud",
+   "party": "LO",
+   "partyName": "Lutte ouvrière",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Le Monde",
+    "title": "Nathalie Arthaud, la porte-parole de Lutte ouvrière, annonce sa candidature à la présidentielle de 2027",
+    "url": "https://www.lemonde.fr/politique/article/2025/12/08/presidentielle-la-porte-parole-de-lutte-ouvriere-nathalie-arthaud-annonce-sa-candidature_6656468_823448.html",
+    "date": "2025-12-08"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Porte-parole de Lutte ouvrière (depuis 2008)",
+   "slogan": "Le camp des travailleurs",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Nathalie_Arthaud_%28LO%29_19-05-2024.jpg/330px-Nathalie_Arthaud_%28LO%29_19-05-2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Nathalie Arthaud (LO) 19-05-2024.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nathalie_Arthaud_(LO)_19-05-2024.jpg",
+    "artist": "Kokluts",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  },
+  {
+   "id": "francois-asselineau",
+   "article": "François Asselineau",
+   "name": "François Asselineau",
+   "short": "Asselineau",
+   "party": null,
+   "partyName": "Union populaire républicaine (2007)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ?",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+    "date": "2026-10-22"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Président de l'Union populaire républicaine (depuis 2007)",
+   "slogan": "La France retrouvée",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Fran%C3%A7ois_ASSELINEAU.jpg/330px-Fran%C3%A7ois_ASSELINEAU.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "François ASSELINEAU.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_ASSELINEAU.jpg",
+    "artist": "Union Populaire Républicaine",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  },
+  {
+   "id": "gabriel-attal",
+   "article": "Gabriel Attal",
+   "name": "Gabriel Attal",
+   "short": "Attal",
+   "party": "RE",
+   "partyName": "Renaissance (parti)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Le Monde",
+    "title": "Présidentielle 2027 : Gabriel Attal officialise sa candidature en Aveyron en espérant s’éloigner de l’héritage d’Emmanuel Macron",
+    "url": "https://www.lemonde.fr/politique/article/2026/05/22/presidentielle-2027-gabriel-attal-officialise-sa-candidature-en-aveyron-en-esperant-s-eloigner-de-l-heritage-d-emmanuel-macron_6692277_823448.html",
+    "date": "2026-05-22"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Secrétaire général de Renaissance (depuis 2024)",
+   "slogan": "La force d'agir",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Gabriel_Attal_2025_%28close_crop%29.jpg/330px-Gabriel_Attal_2025_%28close_crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Gabriel Attal 2025 (close crop).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_2025_(close_crop).jpg",
+    "artist": "Ismail Aissoub",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+   }
+  },
+  {
+   "id": "delphine-batho",
+   "article": "Delphine Batho",
+   "name": "Delphine Batho",
+   "short": "Batho",
+   "party": null,
+   "partyName": "Génération écologie",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Le Nouvel Obs",
+    "title": "Delphine Batho : « Je suis candidate à l’élection présidentielle pour reconstruire une écologie capable de gouverner »",
+    "url": "https://www.nouvelobs.com/politique/20251125.OBS110076/delphine-batho-je-suis-candidate-a-l-election-presidentielle-pour-reconstruire-une-ecologie-capable-de-gouverner.html",
+    "date": "2025-11-25"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Présidente de Génération écologie (depuis 2018)",
+   "slogan": "L'espérance",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Delphine_Batho_%28cropped%29.png/330px-Delphine_Batho_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Delphine Batho (cropped).png",
+    "page": "https://commons.wikimedia.org/wiki/File:Delphine_Batho_(cropped).png",
+    "artist": "DeuxSevres79",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  },
+  {
+   "id": "olivier-becht",
+   "article": "Olivier Becht",
+   "name": "Olivier Becht",
+   "short": "Becht",
+   "party": "RE",
+   "partyName": "Renaissance (parti)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Paris Match",
+    "title": "EXCLUSIF - « Je suis candidat à la présidentielle » : un ancien ministre d’Élisabeth Borne sort du bois",
+    "url": "https://www.parismatch.com/actu/politique/exclusif-je-suis-candidat-a-la-presidentielle-un-ancien-ministre-delisabeth-borne-sort-du-bois-276281",
+    "date": "2026-09-24"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Député de la 5e circonscription du Haut-Rhin apparenté Renaissance (depuis 2024)",
+   "slogan": "Le projet France",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Olivier_BECHT.jpg/330px-Olivier_BECHT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Olivier BECHT.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Olivier_BECHT.jpg",
+    "artist": "Werner STEINKE",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+   }
+  },
+  {
+   "id": "xavier-bertrand",
+   "article": "Xavier Bertrand",
+   "name": "Xavier Bertrand",
+   "short": "Bertrand",
+   "party": null,
+   "partyName": "Nous France",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Libération",
+    "title": "Le président LR des Hauts-de-France, Xavier Bertrand, confirme qu’il sera candidat à la présidentielle",
+    "url": "https://www.liberation.fr/politique/le-president-lr-des-hauts-de-france-xavier-bertrand-confirme-quil-sera-candidat-en-2027-20260827_PF5ERRL6GNEP7PWMY7GQ4SJDL4/",
+    "date": "2026-08-27"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Président du conseil régional des Hauts-de-France (depuis 2016)",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Xavier_Bertrand_-_2025_%28cropped%29.jpg/330px-Xavier_Bertrand_-_2025_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Xavier Bertrand - 2025 (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Xavier_Bertrand_-_2025_(cropped).jpg",
+    "artist": "Claudio Centonze / European Union, 2025 / EC - Audiovisual Service",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+   }
+  },
+  {
+   "id": "karim-bouamrane",
+   "article": "Karim Bouamrane",
+   "name": "Karim Bouamrane",
+   "short": "Bouamrane",
+   "party": "PS",
+   "partyName": "Parti socialiste (France)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Le Figaro",
+    "title": "Présidentielle 2027 : «Je suis candidat», annonce le maire socialiste de Saint-Ouen Karim Bouamrane",
+    "url": "https://www.lefigaro.fr/politique/presidentielle-2027-je-suis-candidat-annonce-karim-bouamrane-ps-20260609",
+    "date": "2026-06-09"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Vice-président du Conseil départemental de la Seine-Saint-Denis (depuis 2021)",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Karim_Bouamrane_en_2026.jpg/330px-Karim_Bouamrane_en_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Karim Bouamrane en 2026.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Karim_Bouamrane_en_2026.jpg",
+    "artist": "Oumma",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+   }
+  },
+  {
+   "id": "bernard-cazeneuve",
+   "article": "Bernard Cazeneuve",
+   "name": "Bernard Cazeneuve",
+   "short": "Cazeneuve",
+   "party": null,
+   "partyName": "La Convention",
+   "declared": false,
+   "status": "rallied",
+   "statusSource": {
+    "outlet": "Le Figaro",
+    "title": "Bernard Cazeneuve au Figaro : «Emmanuel Macron n’est pas responsable de tout, mais il l’est de l’essentiel»",
+    "url": "https://www.lefigaro.fr/elections/presidentielles/bernard-cazeneuve-au-figaro-emmanuel-macron-n-est-pas-responsable-de-tout-mais-il-l-est-de-l-essentiel-20261021",
+    "date": "2026-10-21"
+   },
+   "statusNote": {
+    "fr": "A déclaré au Figaro qu’il « aidera » Raphaël Glucksmann à remporter la présidentielle (21 octobre 2026).",
+    "en": "Told Le Figaro he will “help” Raphaël Glucksmann win the presidential election (Oct. 21, 2026)."
+   },
+   "wiki": true,
+   "role": "",
+   "slogan": "Tenir la promesse de la France",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Ministru_prezidents_Valdis_Dombrovskis_tiekas_ar_Francijas_Eiropas_lietu_ministru_Bern%C4%81ru_Kazen%C4%93vu_%28Bernard_Cazeneuve%29_%287985359635%29_%28cropped%29.jpg/330px-Ministru_prezidents_Valdis_Dombrovskis_tiekas_ar_Francijas_Eiropas_lietu_ministru_Bern%C4%81ru_Kazen%C4%93vu_%28Bernard_Cazeneuve%29_%287985359635%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Ministru prezidents Valdis Dombrovskis tiekas ar Francijas Eiropas lietu ministru Bernāru Kazenēvu (Bernard Cazeneuve) (7985359635) (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ministru_prezidents_Valdis_Dombrovskis_tiekas_ar_Francijas_Eiropas_lietu_ministru_Bern%C4%81ru_Kazen%C4%93vu_(Bernard_Cazeneuve)_(7985359635)_(cropped).jpg",
+    "artist": "State Chancellery of Latvia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
+  },
+  {
+   "id": "nicolas-dupont-aignan",
+   "article": "Nicolas Dupont-Aignan",
+   "name": "Nicolas Dupont-Aignan",
+   "short": "Dupont-Aignan",
+   "party": "DLF",
+   "partyName": "Debout la France",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Le Figaro",
+    "title": "Nicolas Dupont-Aignan se déclare candidat à la prochaine élection présidentielle",
+    "url": "https://www.lefigaro.fr/politique/nicolas-dupont-aignan-se-declare-candidat-a-la-prochaine-election-presidentielle-20250308",
+    "date": "2025-03-08"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Président de Debout la France (depuis 2008)",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Nicolas_Dupont-Aignan%2C_homme_politique_fran%C3%A7ais.jpg/330px-Nicolas_Dupont-Aignan%2C_homme_politique_fran%C3%A7ais.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Nicolas Dupont-Aignan, homme politique français.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nicolas_Dupont-Aignan,_homme_politique_fran%C3%A7ais.jpg",
+    "artist": "Debout la France",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  },
+  {
+   "id": "sylvain-durif",
+   "article": "Sylvain Durif",
+   "name": "Sylvain Durif",
+   "short": "Durif",
+   "party": null,
+   "partyName": "Indépendant (politique)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "RTL",
+    "title": "Christ cosmique, grand monarque et bientôt président de la République ? Le vidéaste complotiste Sylvain Durif se déclare candidat à l'élection de 2027",
+    "url": "https://www.rtl.fr/actu/politique/christ-cosmique-grand-monarque-et-bientot-president-de-la-republique-le-videaste-complotiste-sylvain-durif-se-declare-candidat-a-l-election-de-2027-7900664715",
+    "date": "2026-08-25"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Sylvain_Durif%2C_sur_une_aire_d%27autoroute%2C_en_2013.png/330px-Sylvain_Durif%2C_sur_une_aire_d%27autoroute%2C_en_2013.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Sylvain Durif, sur une aire d'autoroute, en 2013.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Sylvain_Durif,_sur_une_aire_d%27autoroute,_en_2013.png",
+    "artist": "chatzefratz",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+   }
+  },
+  {
+   "id": "clara-egger",
+   "article": "Clara Egger",
+   "name": "Clara Egger",
+   "short": "Egger",
+   "party": null,
+   "partyName": null,
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Le Dauphiné libéré",
+    "title": "L'Ardéchoise Clara Egger est candidate à l’élection présidentielle pour « rétablir un équilibre démocratique »",
+    "url": "https://www.ledauphine.com/politique/2026/05/21/l-ardechoise-clara-egger-est-candidate-a-l-election-presidentielle-pour-retablir-un-equilibre-democratique",
+    "date": "2026-05-21"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Co-fondatrice et responsable de partenariats internationaux de Solution Démocratique",
+   "slogan": "Pour que voter serve enfin",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/ClaraEgger_2021-12-29_18-16-03.jpg/330px-ClaraEgger_2021-12-29_18-16-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "ClaraEgger 2021-12-29 18-16-03.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:ClaraEgger_2021-12-29_18-16-03.jpg",
+    "artist": "Thomas Binet",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  },
+  {
+   "id": "raphael-glucksmann",
+   "article": "Raphaël Glucksmann",
+   "name": "Raphaël Glucksmann",
+   "short": "Glucksmann",
+   "party": "PP",
+   "partyName": "Place publique (parti politique)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Libération",
+    "title": "Résultats de la primaire socialiste : Raphaël Glucksmann élu dès le premier tour et propulsé vers la présidentielle",
+    "url": "https://www.liberation.fr/politique/elections/resultats-de-la-primaire-socialiste-raphael-glucksmann-elu-des-le-premier-tour-et-propulse-vers-la-presidentielle-20261011_HSXHVD45NJFOHG7JCKCGCYDVDY/",
+    "date": "2026-10-11"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Co-président de Place publique (depuis 2022)",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg/330px-1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "1720448398743 20240708 GLUCKSMANN Raphael FR 006.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg",
+    "artist": "European Union 2024 - Source : EP",
+    "license": "European Parliament",
+    "licenseUrl": "https://www.europarl.europa.eu/legal-notice/"
+   }
+  },
+  {
+   "id": "anasse-kazib",
+   "article": "Anasse Kazib",
+   "name": "Anasse Kazib",
+   "short": "Kazib",
+   "party": null,
+   "partyName": "Révolution permanente (parti politique)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "Le cheminot Anasse Kazib annonce sa candidature à la présidentielle 2027",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-cheminot-anasse-kazib-annonce-sa-candidature_8040020.html",
+    "date": "2026-06-01"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Porte-parole de Révolution permanente (depuis 2022)",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Anasse_Kazib%2C_d%C3%A9cembre_2021.jpg/330px-Anasse_Kazib%2C_d%C3%A9cembre_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Anasse Kazib, décembre 2021.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Anasse_Kazib,_d%C3%A9cembre_2021.jpg",
+    "artist": "PabloMorao27",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  },
+  {
+   "id": "selma-labib",
+   "article": "Selma Labib",
+   "name": "Selma Labib",
+   "short": "Labib",
+   "party": null,
+   "partyName": "Nouveau Parti anticapitaliste",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "BFMTV",
+    "title": "Présidentielle 2027: le NPA-Révolutionnaires annonce présenter la candidature de sa porte-parole Selma Labib",
+    "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-npa-revolutionnaires-annonce-presenter-la-candidature-de-sa-porte-parole-selma-labib_AD-202606170500.html",
+    "date": "2026-06-17"
+   },
+   "statusNote": null,
+   "wiki": false,
+   "role": "Porte-parole du NPA – Révolutionnaires",
+   "slogan": "",
+   "photo": null
+  },
+  {
+   "id": "francis-lalanne",
+   "article": "Francis Lalanne",
+   "name": "Francis Lalanne",
+   "short": "Lalanne",
+   "party": null,
+   "partyName": null,
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "Présidentielle 2027 : le chanteur Francis Lalanne annonce être candidat, premier meeting vendredi à Paris",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-chanteur-francis-lalanne-officiellement-candidat-premier-meeting-vendredi-a-paris_8153588.html",
+    "date": "2026-08-19"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Francis_Lalanne.png/330px-Francis_Lalanne.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Francis Lalanne.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Francis_Lalanne.png",
+    "artist": "Olivier Roller, In Libro Veritas",
+    "license": "FAL",
+    "licenseUrl": "http://artlibre.org/licence/lal/en"
+   }
+  },
+  {
+   "id": "marine-le-pen",
+   "article": "Marine Le Pen",
+   "name": "Marine Le Pen",
+   "short": "Le Pen",
+   "party": "RN",
+   "partyName": "Rassemblement national",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Euronews",
+    "title": "« Je suis candidate à l’élection présidentielle », annonce Marine Le Pen sur TF1",
+    "url": "https://fr.euronews.com/my-europe/2026/07/07/je-suis-candidate-a-lelection-presidentielle-annonce-marine-le-pen-sur-tf1",
+    "date": "2026-07-07"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Présidente du groupe RN à l'Assemblée nationale (depuis 2022)",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Marine_Le_Pen_2025_%28cropped%29.jpg/330px-Marine_Le_Pen_2025_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Marine Le Pen 2025 (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(cropped).jpg",
+    "artist": "Vox España",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
+  },
+  {
+   "id": "david-lisnard",
+   "article": "David Lisnard",
+   "name": "David Lisnard",
+   "short": "Lisnard",
+   "party": "NE",
+   "partyName": "Nouvelle Énergie",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "Le maire de Cannes, David Lisnard, annonce sa candidature à l'élection présidentielle et officialise son départ des Républicains",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-cannes-david-lisnard-annonce-sa-candidature-a-l-election-presidentielle-et-officialise-son-depart-des-republicains_7907063.html",
+    "date": "2026-03-31"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Président de l'Association des maires de France (depuis novembre 2021)",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/David_Lisnard_en_2026.jpg/330px-David_Lisnard_en_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "David Lisnard en 2026.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:David_Lisnard_en_2026.jpg",
+    "artist": "Grégor Sauvagère",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  },
+  {
+   "id": "mira-markovic",
+   "article": "Mira Markovic",
+   "name": "Mira Markovic",
+   "short": "Markovic",
+   "party": null,
+   "partyName": "Parti animaliste",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Le Monde",
+    "title": "Présidentielle 2027 : le Parti animaliste annonce la candidature de Mira Markovic",
+    "url": "https://www.lemonde.fr/politique/article/2026/10/02/presidentielle-2027-le-parti-animaliste-annonce-la-candidature-de-mira-markovic_6787208_823448.html",
+    "date": "2026-10-02"
+   },
+   "statusNote": null,
+   "wiki": false,
+   "role": "Cofondatrice du Parti animaliste en 2016",
+   "slogan": "Les animaux ont leur candidate",
+   "photo": null
+  },
+  {
+   "id": "benoit-mathieu",
+   "article": "Benoît Mathieu",
+   "name": "Benoît Mathieu",
+   "short": "Mathieu",
+   "party": null,
+   "partyName": "Indépendant (politique)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Le Monde",
+    "title": "Présidentielle 2027 : à vélo sur les routes de France, la campagne décalée d’un candidat « citoyen »",
+    "url": "https://www.lemonde.fr/politique/article/2026/06/14/presidentielle-2027-a-velo-sur-les-routes-de-france-la-campagne-decalee-d-un-candidat-citoyen_6702744_823448.html",
+    "date": "2026-06-14"
+   },
+   "statusNote": null,
+   "wiki": false,
+   "role": "",
+   "slogan": "",
+   "photo": null
+  },
+  {
+   "id": "jean-luc-melenchon",
+   "article": "Jean-Luc Mélenchon",
+   "name": "Jean-Luc Mélenchon",
+   "short": "Mélenchon",
+   "party": "LFI",
+   "partyName": "La France insoumise",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Le Monde",
+    "title": "Jean-Luc Mélenchon annonce être candidat à l’élection présidentielle pour la quatrième fois, sur une ligne toujours plus antisystème",
+    "url": "https://www.lemonde.fr/politique/article/2026/05/03/jean-luc-melenchon-annonce-etre-candidat-a-l-election-presidentielle-pour-la-quatrieme-fois-sur-une-ligne-toujours-plus-antisysteme_6685247_823448.html",
+    "date": "2026-05-03"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Jean_Luc_M%C3%A9lenchon_en_mai_2026-_55261894422_%28cropped%29.jpg/330px-Jean_Luc_M%C3%A9lenchon_en_mai_2026-_55261894422_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Mélenchon 2027 - 55261894422 (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Jean_Luc_M%C3%A9lenchon_en_mai_2026-_55261894422_(cropped).jpg",
+    "artist": "jlm2017.fr",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+   }
+  },
+  {
+   "id": "antoine-mikolajczak",
+   "article": "Antoine Mikolajczak",
+   "name": "Antoine Mikolajczak",
+   "short": "Mikolajczak",
+   "party": null,
+   "partyName": null,
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "L'Alsace",
+    "title": "Présidentielle 2027. Antoine Mikolajczak, candidat attaché « aux faits » et à « la nuance » de passage à Mulhouse",
+    "url": "https://www.lalsace.fr/elections/2026/10/03/antoine-mikolajczak-candidat-attache-aux-faits-et-a-la-nuance",
+    "date": "2026-10-03"
+   },
+   "statusNote": null,
+   "wiki": false,
+   "role": "",
+   "slogan": "Renouer avec notre avenir",
+   "photo": null
+  },
+  {
+   "id": "manolo-mlekuz",
+   "article": "Manolo Mlekuz",
+   "name": "Manolo Mlekuz",
+   "short": "Mlekuz",
+   "party": null,
+   "partyName": null,
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "RMC",
+    "title": "« Si j'arrive à l'Elysée... » : ce candidat pour 2027, âgé de 20 ans, veut être un président « sans pouvoir »",
+    "url": "https://rmc.bfmtv.com/actualites/politique/si-j-arrive-a-l-elysee-ce-candidat-pour-2027-age-de-20-ans-veut-etre-un-president-sans-pouvoir_AV-202607030571.html",
+    "date": "2026-07-03"
+   },
+   "statusNote": null,
+   "wiki": false,
+   "role": "",
+   "slogan": "",
+   "photo": null
+  },
+  {
+   "id": "edouard-philippe",
+   "article": "Édouard Philippe",
+   "name": "Édouard Philippe",
+   "short": "Philippe",
+   "party": "HOR",
+   "partyName": "Horizons",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Le Point",
+    "title": "EXCLUSIF. Édouard Philippe : « Je serai candidat à la prochaine élection présidentielle »",
+    "url": "https://www.lepoint.fr/politique/exclusif-edouard-philippe-je-serai-candidat-a-la-prochaine-election-presidentielle-03-09-2024-2569359_20.php",
+    "date": "2024-09-03"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Président d'Horizons (depuis octobre 2021)",
+   "slogan": "Croire en nous",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/%C3%89douard_Philippe_2019_%28cropped%29.jpg/330px-%C3%89douard_Philippe_2019_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Édouard Philippe 2019 (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:%C3%89douard_Philippe_2019_(cropped).jpg",
+    "artist": "Jacques Paquier",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+   }
+  },
+  {
+   "id": "florian-philippot",
+   "article": "Florian Philippot",
+   "name": "Florian Philippot",
+   "short": "Philippot",
+   "party": null,
+   "partyName": "Les Patriotes (parti politique)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "Présidentielle 2027 : le souverainiste Florian Philippot annonce sa candidature à l'Elysée",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-souverainiste-florian-philippot-annonce-sa-candidature-a-l-elysee_7993346.html",
+    "date": "2026-05-09"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Président des Patriotes (depuis 2017)",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Florian_Philippot.jpg/330px-Florian_Philippot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Florian Philippot.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Florian_Philippot.jpg",
+    "artist": "Films et documetnaires",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+   }
+  },
+  {
+   "id": "gilles-platret",
+   "article": "Gilles Platret",
+   "name": "Gilles Platret",
+   "short": "Platret",
+   "party": null,
+   "partyName": "Divers droite",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "BFMTV",
+    "title": "Présidentielle 2027: le maire divers droite de Chalon-sur-Saône Gilles Platret annonce sa candidature",
+    "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-maire-divers-droite-de-chalon-sur-saone-gilles-platret-annonce-sa-candidature_AN-202610090630.html",
+    "date": "2026-10-09"
+   },
+   "statusNote": null,
+   "wiki": false,
+   "role": "Conseiller régional de Bourgogne-Franche-Comté (depuis 2015)",
+   "slogan": "Parlons de la France !",
+   "photo": null
+  },
+  {
+   "id": "natacha-polony",
+   "article": "Natacha Polony",
+   "name": "Natacha Polony",
+   "short": "Polony",
+   "party": null,
+   "partyName": "Indépendant (politique)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Le Figaro",
+    "title": "Présidentielle 2027 : «Je suis candidate», annonce la journaliste Natacha Polony",
+    "url": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-je-suis-candidate-annonce-la-journaliste-natacha-polony-20261014",
+    "date": "2026-10-14"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "",
+   "slogan": "Nous sommes la France",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Natacha_Polony_Cannes_2015.jpg/330px-Natacha_Polony_Cannes_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Natacha Polony Cannes 2015.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Natacha_Polony_Cannes_2015.jpg",
+    "artist": "Georges Biard",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
+  },
+  {
+   "id": "bruno-retailleau",
+   "article": "Bruno Retailleau",
+   "name": "Bruno Retailleau",
+   "short": "Retailleau",
+   "party": "LR",
+   "partyName": "Les Républicains",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "Présidentielle 2027 : Bruno Retailleau largement désigné candidat par les adhérents du parti Les Républicains",
+    "url": "https://www.franceinfo.fr/politique/les-republicains/presidentielle-2027-bruno-retailleau-largement-designe-candidat-par-les-adherents-du-parti-les-republicains_7949957.html",
+    "date": "2026-04-19"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Président des Républicains (depuis 2025)",
+   "slogan": "Ne plus subir.",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_%28cropped%29.jpg/330px-Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Bruno Retailleau - Ministre de l'Intérieur français (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_(cropped).jpg",
+    "artist": "Anthonymontardyfr",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+   }
+  },
+  {
+   "id": "fabien-roussel",
+   "article": "Fabien Roussel",
+   "name": "Fabien Roussel",
+   "short": "Roussel",
+   "party": "PCF",
+   "partyName": "Parti communiste français",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "Le Figaro",
+    "title": "Présidentielle 2027 : adoubé par ses militants, le communiste Fabien Roussel officialise sa candidature en solitaire",
+    "url": "https://www.lefigaro.fr/elections/presidentielles/candidats/presidentielle-2027-adoube-par-ses-militants-le-communiste-fabien-roussel-officialise-sa-candidature-en-solitaire-20260906",
+    "date": "2026-09-06"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Maire de Saint-Amand-les-Eaux (depuis 2025)",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Roussel_Fabien_1.jpg/330px-Roussel_Fabien_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Roussel Fabien 1.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Roussel_Fabien_1.jpg",
+    "artist": "Zouhair NAKARA",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  },
+  {
+   "id": "francois-ruffin",
+   "article": "François Ruffin",
+   "name": "François Ruffin",
+   "short": "Ruffin",
+   "party": "D!",
+   "partyName": "Debout (parti politique)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "LCP",
+    "title": "Présidentielle 2027: \"S'il n'y a pas de primaire, moi j'y vais\", annonce François Ruffin",
+    "url": "https://lcp.fr/actualites/presidentielle-2027-s-il-n-y-a-pas-de-primaire-moi-j-y-vais-annonce-francois-ruffin",
+    "date": "2026-05-12"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Président de Debout ! (depuis 2025)",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Fran%C3%A7ois_Ruffin_%28cropped%29.jpg/330px-Fran%C3%A7ois_Ruffin_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "François Ruffin (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Ruffin_(cropped).jpg",
+    "artist": "Thinkerview",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  },
+  {
+   "id": "marine-tondelier",
+   "article": "Marine Tondelier",
+   "name": "Marine Tondelier",
+   "short": "Tondelier",
+   "party": "LE",
+   "partyName": "Les Écologistes",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "La patronne des Ecologistes, Marine Tondelier, se déclare candidate à l'élection présidentielle de 2027",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/la-patronne-des-ecologistes-marine-tondelier-se-declare-candidate-a-l-election-presidentielle-de-2027_7568824.html",
+    "date": "2025-10-22"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Secrétaire nationale des Écologistes (depuis 2022)",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Huma2023MarineTondelier.jpg/330px-Huma2023MarineTondelier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Huma2023MarineTondelier.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Huma2023MarineTondelier.jpg",
+    "artist": "Selbymay",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+   }
+  },
+  {
+   "id": "eric-zemmour",
+   "article": "Éric Zemmour",
+   "name": "Éric Zemmour",
+   "short": "Zemmour",
+   "party": "REC",
+   "partyName": "Reconquête (parti politique)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "BFMTV",
+    "title": "« Je serai candidat » : Éric Zemmour annonce sur BFMTV qu'il se présentera à l'élection présidentielle",
+    "url": "https://www.bfmtv.com/politique/elections/presidentielle/je-serai-candidat-eric-zemmour-annonce-sur-bfmtv-qu-il-se-presentera-a-l-election-presidentielle_AV-202609170947.html",
+    "date": "2026-09-17"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Président de Reconquête (depuis 2021)",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Portrait_d%27%C3%89ric_Zemmour%2C_avril_2022.jpg/330px-Portrait_d%27%C3%89ric_Zemmour%2C_avril_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Portrait d'Éric Zemmour, avril 2022.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Portrait_d%27%C3%89ric_Zemmour,_avril_2022.jpg",
+    "artist": "Anh De France",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
+  },
+  {
+   "id": "juan-branco",
+   "article": "Juan Branco",
+   "name": "Juan Branco",
+   "short": "Branco",
+   "party": null,
+   "partyName": "Les Ruches",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ?",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+    "date": "2026-10-22"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "Avocat, fondateur du mouvement Les Ruches",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/2019_-_Centre_Stage_-_Day_2_VJR21625_%2849024215596%29.jpg/330px-2019_-_Centre_Stage_-_Day_2_VJR21625_%2849024215596%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "2019 - Centre Stage - Day 2 VJR21625 (49024215596).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:2019_-_Centre_Stage_-_Day_2_VJR21625_(49024215596).jpg",
+    "artist": "Web Summit",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+   }
+  },
+  {
+   "id": "jean-francois-legendre",
+   "article": "Jean-François Legendre",
+   "name": "Jean-François Legendre",
+   "short": "Legendre",
+   "party": null,
+   "partyName": "À nous maintenant",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ?",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+    "date": "2026-10-22"
+   },
+   "statusNote": null,
+   "wiki": false,
+   "role": "Ancien chef d’entreprise",
+   "slogan": "",
+   "photo": null
+  },
+  {
+   "id": "augustin-billetdoux",
+   "article": "Augustin Billetdoux",
+   "name": "Augustin Billetdoux",
+   "short": "Billetdoux",
+   "party": null,
+   "partyName": null,
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ?",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+    "date": "2026-10-22"
+   },
+   "statusNote": null,
+   "wiki": false,
+   "role": "Auteur, cadre dans une ONG",
+   "slogan": "",
+   "photo": null
+  },
+  {
+   "id": "christian-collovati",
+   "article": "Christian Collovati",
+   "name": "Christian Collovati",
+   "short": "Collovati",
+   "party": null,
+   "partyName": null,
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ?",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+    "date": "2026-10-22"
+   },
+   "statusNote": null,
+   "wiki": false,
+   "role": "Ancien officier de marine",
+   "slogan": "",
+   "photo": null
+  },
+  {
+   "id": "erwan-rohou",
+   "article": "Erwan Rohou",
+   "name": "Erwan Rohou",
+   "short": "Rohou",
+   "party": null,
+   "partyName": "Mouvement écologiste indépendant",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "RCF Alsace",
+    "title": "Présidentielles : le Mouvement Écologiste indépendant lance sa campagne depuis Strasbourg",
+    "url": "https://www.rcf.fr/articles/actualite/presidentielles-le-mouvement-ecologiste-independant-lance-sa-campagne-a",
+    "date": "2026-09-11"
+   },
+   "statusNote": null,
+   "wiki": false,
+   "role": "Trésorier du Mouvement écologiste indépendant",
+   "slogan": "",
+   "photo": null
+  },
+  {
+   "id": "francois-hollande",
+   "article": "François Hollande",
+   "name": "François Hollande",
+   "short": "Hollande",
+   "party": "PS",
+   "partyName": "Parti socialiste (France)",
+   "declared": false,
+   "status": "not-declared",
+   "statusSource": {
+    "outlet": "LCP",
+    "title": "Présidentielle 2027: la liste des candidats déjà en lice et des prétendants",
+    "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+    "date": "2026-10-14"
+   },
+   "statusNote": {
+    "fr": "N’a pas déclaré de candidature ; il dit qu’il se prononcera en décembre ou en janvier.",
+    "en": "Hasn’t declared; he says he will decide in December or January."
+   },
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Fran%C3%A7ois_Hollande_-_2017_%2827869823159%29_%28cropped_2%29.jpg/330px-Fran%C3%A7ois_Hollande_-_2017_%2827869823159%29_%28cropped_2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "François Hollande - 2017 (27869823159) (cropped 2).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Hollande_-_2017_(27869823159)_(cropped_2).jpg",
+    "artist": "Web Summit",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+   }
+  },
+  {
+   "id": "dominique-de-villepin",
+   "article": "Dominique de Villepin",
+   "name": "Dominique de Villepin",
+   "short": "Villepin",
+   "party": null,
+   "partyName": null,
+   "declared": false,
+   "status": "not-declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "Présidentielle 2027 : \"Je me bats pour être candidat\", déclare Dominique de Villepin, qui revendique \"plusieurs centaines\" de parrainages",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-je-me-bats-pour-etre-candidat-declare-dominique-de-villepin-qui-revendique-plusieurs-centaines-de-parrainages_8169629.html",
+    "date": "2026-08-30"
+   },
+   "statusNote": {
+    "fr": "Dit « se battre pour être candidat » et cherche ses parrainages, sans avoir déclaré sa candidature.",
+    "en": "Says he is “fighting to be a candidate” and is gathering sponsorships, without having declared."
+   },
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Dominique_de_Villepin_%282010%29.jpg/330px-Dominique_de_Villepin_%282010%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Dominique de Villepin (2010).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Dominique_de_Villepin_(2010).jpg",
+    "artist": "Georges Seguin ( Okki )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
+  },
+  {
+   "id": "olivier-faure",
+   "article": "Olivier Faure",
+   "name": "Olivier Faure",
+   "short": "Faure",
+   "party": "PS",
+   "partyName": "Parti socialiste (France)",
+   "declared": false,
+   "status": "lost-primary",
+   "statusSource": {
+    "outlet": "Libération",
+    "title": "Résultats de la primaire socialiste : Raphaël Glucksmann élu dès le premier tour et propulsé vers la présidentielle",
+    "url": "https://www.liberation.fr/politique/elections/resultats-de-la-primaire-socialiste-raphael-glucksmann-elu-des-le-premier-tour-et-propulse-vers-la-presidentielle-20261011_HSXHVD45NJFOHG7JCKCGCYDVDY/",
+    "date": "2026-10-11"
+   },
+   "statusNote": {
+    "fr": "A perdu la primaire socialiste du 11 octobre 2026, remportée par Raphaël Glucksmann.",
+    "en": "Lost the Socialist primary of Oct. 11, 2026, which Raphaël Glucksmann won."
+   },
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Portrait_d%27Olivier_Faure.jpg/330px-Portrait_d%27Olivier_Faure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Portrait d'Olivier Faure.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Portrait_d%27Olivier_Faure.jpg",
+    "artist": "Olivier Faure",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
+  },
+  {
+   "id": "segolene-royal",
+   "article": "Ségolène Royal",
+   "name": "Ségolène Royal",
+   "short": "Royal",
+   "party": "PS",
+   "partyName": "Parti socialiste (France)",
+   "declared": false,
+   "status": "lost-primary",
+   "statusSource": {
+    "outlet": "Libération",
+    "title": "Résultats de la primaire socialiste : Raphaël Glucksmann élu dès le premier tour et propulsé vers la présidentielle",
+    "url": "https://www.liberation.fr/politique/elections/resultats-de-la-primaire-socialiste-raphael-glucksmann-elu-des-le-premier-tour-et-propulse-vers-la-presidentielle-20261011_HSXHVD45NJFOHG7JCKCGCYDVDY/",
+    "date": "2026-10-11"
+   },
+   "statusNote": {
+    "fr": "A perdu la primaire socialiste du 11 octobre 2026, remportée par Raphaël Glucksmann.",
+    "en": "Lost the Socialist primary of Oct. 11, 2026, which Raphaël Glucksmann won."
+   },
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Segolene_Royal_Arcueil_18_septembre_2010_6.jpg/330px-Segolene_Royal_Arcueil_18_septembre_2010_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Segolene Royal Arcueil 18 septembre 2010 6.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Segolene_Royal_Arcueil_18_septembre_2010_6.jpg",
+    "artist": "Thestreamer",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
+  },
+  {
+   "id": "jerome-guedj",
+   "article": "Jérôme Guedj",
+   "name": "Jérôme Guedj",
+   "short": "Guedj",
+   "party": "PS",
+   "partyName": "Parti socialiste (France)",
+   "declared": false,
+   "status": "lost-primary",
+   "statusSource": {
+    "outlet": "Libération",
+    "title": "Résultats de la primaire socialiste : Raphaël Glucksmann élu dès le premier tour et propulsé vers la présidentielle",
+    "url": "https://www.liberation.fr/politique/elections/resultats-de-la-primaire-socialiste-raphael-glucksmann-elu-des-le-premier-tour-et-propulse-vers-la-presidentielle-20261011_HSXHVD45NJFOHG7JCKCGCYDVDY/",
+    "date": "2026-10-11"
+   },
+   "statusNote": {
+    "fr": "A perdu la primaire socialiste du 11 octobre 2026, remportée par Raphaël Glucksmann.",
+    "en": "Lost the Socialist primary of Oct. 11, 2026, which Raphaël Glucksmann won."
+   },
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/J%C3%A9r%C3%B4me_Guedj_2010.jpg/330px-J%C3%A9r%C3%B4me_Guedj_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Jérôme Guedj 2010.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:J%C3%A9r%C3%B4me_Guedj_2010.jpg",
+    "artist": "Audrey AK",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
+  },
+  {
+   "id": "emmanuel-maurel",
+   "article": "Emmanuel Maurel",
+   "name": "Emmanuel Maurel",
+   "short": "Maurel",
+   "party": "GRS",
+   "partyName": null,
+   "declared": false,
+   "status": "lost-primary",
+   "statusSource": {
+    "outlet": "Libération",
+    "title": "Résultats de la primaire socialiste : Raphaël Glucksmann élu dès le premier tour et propulsé vers la présidentielle",
+    "url": "https://www.liberation.fr/politique/elections/resultats-de-la-primaire-socialiste-raphael-glucksmann-elu-des-le-premier-tour-et-propulse-vers-la-presidentielle-20261011_HSXHVD45NJFOHG7JCKCGCYDVDY/",
+    "date": "2026-10-11"
+   },
+   "statusNote": {
+    "fr": "A perdu la primaire socialiste du 11 octobre 2026, remportée par Raphaël Glucksmann.",
+    "en": "Lost the Socialist primary of Oct. 11, 2026, which Raphaël Glucksmann won."
+   },
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Meeting_France_insoumise_24_mars_2019%2C_Nevers_-_Emmanuel_Maurel_01_%28cropped%29.jpg/330px-Meeting_France_insoumise_24_mars_2019%2C_Nevers_-_Emmanuel_Maurel_01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Meeting France insoumise 24 mars 2019, Nevers - Emmanuel Maurel 01 (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Meeting_France_insoumise_24_mars_2019,_Nevers_-_Emmanuel_Maurel_01_(cropped).jpg",
+    "artist": "Tyseria",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  },
+  {
+   "id": "bruno-le-maire",
+   "article": "Bruno Le Maire",
+   "name": "Bruno Le Maire",
+   "short": "Le Maire",
+   "party": null,
+   "partyName": null,
+   "declared": false,
+   "status": "not-declared",
+   "statusSource": null,
+   "statusNote": null,
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Bruno_Le_Maire_in_2022.jpg/330px-Bruno_Le_Maire_in_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Bruno Le Maire in 2022.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Bruno_Le_Maire_in_2022.jpg",
+    "artist": "Sebastiaan ter Burg from Utrecht, The Netherlands",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+   }
+  },
+  {
+   "id": "sarah-knafo",
+   "article": "Sarah Knafo",
+   "name": "Sarah Knafo",
+   "short": "Knafo",
+   "party": null,
+   "partyName": null,
+   "declared": false,
+   "status": "not-declared",
+   "statusSource": null,
+   "statusNote": null,
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Sarah_Knafo%2C_d%C3%A9cembre_2021_%2852104057536%29.jpg/330px-Sarah_Knafo%2C_d%C3%A9cembre_2021_%2852104057536%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Sarah Knafo, décembre 2021 (52104057536).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Sarah_Knafo,_d%C3%A9cembre_2021_(52104057536).jpg",
+    "artist": "Anh De France",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
+  },
+  {
+   "id": "gerald-darmanin",
+   "article": "Gérald Darmanin",
+   "name": "Gérald Darmanin",
+   "short": "Darmanin",
+   "party": null,
+   "partyName": null,
+   "declared": false,
+   "status": "not-declared",
+   "statusSource": null,
+   "statusNote": null,
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/G%C3%A9rald_Darmanin_in_2022.jpg/330px-G%C3%A9rald_Darmanin_in_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Gérald Darmanin in 2022.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:G%C3%A9rald_Darmanin_in_2022.jpg",
+    "artist": "UK Home Office",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+   }
+  },
+  {
+   "id": "sebastien-lecornu",
+   "article": "Sébastien Lecornu",
+   "name": "Sébastien Lecornu",
+   "short": "Lecornu",
+   "party": null,
+   "partyName": null,
+   "declared": false,
+   "status": "not-declared",
+   "statusSource": null,
+   "statusNote": null,
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/S%C3%A9bastien_Lecornu_2024_%282x3_crop%29.jpg/330px-S%C3%A9bastien_Lecornu_2024_%282x3_crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Sébastien Lecornu 2024 (2x3 crop).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:S%C3%A9bastien_Lecornu_2024_(2x3_crop).jpg",
+    "artist": "U.S. Secretary of Defense",
+    "license": "Public domain",
+    "licenseUrl": null
+   }
+  },
+  {
+   "id": "jordan-bardella",
+   "article": "Jordan Bardella",
+   "name": "Jordan Bardella",
+   "short": "Bardella",
+   "party": "RN",
+   "partyName": "Rassemblement national",
+   "declared": false,
+   "status": "not-declared",
+   "statusSource": {
+    "outlet": "Euronews",
+    "title": "« Je suis candidate à l’élection présidentielle », annonce Marine Le Pen sur TF1",
+    "url": "https://fr.euronews.com/my-europe/2026/07/07/je-suis-candidate-a-lelection-presidentielle-annonce-marine-le-pen-sur-tf1",
+    "date": "2026-07-07"
+   },
+   "statusNote": {
+    "fr": "Marine Le Pen est la candidate du Rassemblement national ; les sondeurs testent encore Jordan Bardella à sa place.",
+    "en": "Marine Le Pen is the Rassemblement national’s candidate; pollsters still test Jordan Bardella in her place."
+   },
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": null
+  }
+ ],
+ "r1": {
+  "average": {
+   "from": "2026-09-24",
+   "to": "2026-10-22",
+   "polls": 15,
+   "candidates": [
+    {
+     "avg": 34.9,
+     "lo": 32.0,
+     "hi": 37.5,
+     "polls": 15,
+     "id": "marine-le-pen"
+    },
+    {
+     "avg": 16.7,
+     "lo": 15.0,
+     "hi": 20.0,
+     "polls": 15,
+     "id": "jean-luc-melenchon"
+    },
+    {
+     "avg": 14.8,
+     "lo": 11.5,
+     "hi": 18.5,
+     "polls": 15,
+     "id": "edouard-philippe"
+    },
+    {
+     "avg": 12.8,
+     "lo": 10.0,
+     "hi": 15.75,
+     "polls": 15,
+     "id": "raphael-glucksmann"
+    },
+    {
+     "avg": 8.8,
+     "lo": 4.0,
+     "hi": 17.0,
+     "polls": 15,
+     "id": "gabriel-attal"
+    },
+    {
+     "avg": 7.6,
+     "lo": 6.0,
+     "hi": 12.25,
+     "polls": 15,
+     "id": "bruno-retailleau"
+    },
+    {
+     "avg": 6.4,
+     "lo": 3.5,
+     "hi": 12.0,
+     "polls": 11,
+     "id": "david-lisnard"
+    },
+    {
+     "avg": 4.2,
+     "lo": 3.0,
+     "hi": 6.0,
+     "polls": 15,
+     "id": "eric-zemmour"
+    },
+    {
+     "avg": 2.8,
+     "lo": 1.0,
+     "hi": 6.0,
+     "polls": 15,
+     "id": "marine-tondelier"
+    },
+    {
+     "avg": 2.4,
+     "lo": 2.0,
+     "hi": 3.0,
+     "polls": 5,
+     "id": "francois-ruffin"
+    },
+    {
+     "avg": 2.1,
+     "lo": 1.0,
+     "hi": 3.25,
+     "polls": 15,
+     "id": "nicolas-dupont-aignan"
+    },
+    {
+     "avg": 2.0,
+     "lo": 1.0,
+     "hi": 3.0,
+     "polls": 15,
+     "id": "fabien-roussel"
+    },
+    {
+     "avg": 1.2,
+     "lo": 1.0,
+     "hi": 1.5,
+     "polls": 2,
+     "id": "natacha-polony"
+    },
+    {
+     "avg": 0.7,
+     "lo": 0.0,
+     "hi": 1.0,
+     "polls": 15,
+     "id": "nathalie-arthaud"
+    },
+    {
+     "avg": 0.5,
+     "lo": 0.5,
+     "hi": 0.5,
+     "polls": 2,
+     "id": "karim-bouamrane"
+    }
+   ]
+  },
+  "polls": [
+   {
+    "pollster": "Ipsos",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10338-pres-iv-ipsos-bva-le-parisien-24-octobre.pdf",
+    "notice": 10338,
+    "dates": "21-22 octobre 2026",
+    "end": "2026-10-22",
+    "n": 1500,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 13.0,
+      "gabriel-attal": 4.0,
+      "edouard-philippe": 13.0,
+      "bruno-retailleau": 7.5,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 33.5,
+      "eric-zemmour": 4.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 14.0,
+      "edouard-philippe": 15.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 33.5,
+      "eric-zemmour": 4.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 15.5,
+      "gabriel-attal": 9.5,
+      "bruno-retailleau": 11.5,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 33.5,
+      "eric-zemmour": 4.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 13.0,
+      "edouard-philippe": 14.0,
+      "david-lisnard": 6.5,
+      "bruno-retailleau": 5.5,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 32.0,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
+   {
+    "pollster": "OpinionWay",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10333-pres-iv-opinionway-cnews-22-octobre.pdf",
+    "notice": 10333,
+    "dates": "21-22 octobre 2026",
+    "end": "2026-10-22",
+    "n": 973,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 1.0,
+      "marine-tondelier": 1.0,
+      "raphael-glucksmann": 13.0,
+      "gabriel-attal": 4.0,
+      "edouard-philippe": 12.0,
+      "david-lisnard": 6.0,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 4.0,
+      "karim-bouamrane": 0.5
+     }
+    ]
+   },
+   {
+    "pollster": "Cluster17",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10339-pres-iv-cluster17-politico-26-octobre.pdf",
+    "notice": 10339,
+    "dates": "19-22 octobre 2026",
+    "end": "2026-10-22",
+    "n": 2817,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 18.5,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 13.0,
+      "edouard-philippe": 16.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 19.5,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 14.0,
+      "gabriel-attal": 12.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 3.5,
+      "marine-le-pen": 32.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 19.5,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.5,
+      "francois-hollande": 6.5,
+      "edouard-philippe": 17.0,
+      "david-lisnard": 8.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 30.5,
+      "eric-zemmour": 3.5
+     }
+    ]
+   },
+   {
+    "pollster": "Harris",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10332-pres-iv-toluna-harris-interactive-23-octobre.pdf",
+    "notice": 10332,
+    "dates": "19-21 octobre 2026",
+    "end": "2026-10-21",
+    "n": 2094,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 12.0,
+      "edouard-philippe": 15.0,
+      "david-lisnard": 7.0,
+      "bruno-retailleau": 4.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 5.0,
+      "dominique-de-villepin": 1.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 14.0,
+      "gabriel-attal": 10.0,
+      "david-lisnard": 8.0,
+      "bruno-retailleau": 5.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 5.0,
+      "dominique-de-villepin": 2.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 1.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 5.0,
+      "edouard-philippe": 13.0,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 13.0,
+      "edouard-philippe": 16.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 19.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 13.0,
+      "gabriel-attal": 11.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 6.0
+     }
+    ]
+   },
+   {
+    "pollster": "Ifop",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10327-pres-barometre-election-v7-ifop-20-octobre.pdf",
+    "notice": 10327,
+    "dates": "17-19 octobre 2026",
+    "end": "2026-10-19",
+    "n": 1928,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 16.5,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 13.5,
+      "gabriel-attal": 5.0,
+      "edouard-philippe": 12.0,
+      "bruno-retailleau": 5.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 16.5,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 14.0,
+      "edouard-philippe": 15.0,
+      "bruno-retailleau": 7.5,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 16.0,
+      "gabriel-attal": 13.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 38.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 18.0,
+      "raphael-glucksmann": 16.0,
+      "edouard-philippe": 16.0,
+      "bruno-retailleau": 6.5,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 37.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 20.0,
+      "francois-hollande": 10.0,
+      "gabriel-attal": 6.5,
+      "edouard-philippe": 14.0,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 38.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.5,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 4.0,
+      "edouard-philippe": 12.0,
+      "david-lisnard": 5.5,
+      "bruno-retailleau": 5.5,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.0,
+      "francois-ruffin": 1.5,
+      "dominique-de-villepin": 1.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.5,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 13.0,
+      "gabriel-attal": 5.0,
+      "edouard-philippe": 13.0,
+      "david-lisnard": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 6.0,
+      "edouard-philippe": 12.0,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 3.5,
+      "natacha-polony": 1.0,
+      "francois-ruffin": 2.0
+     }
+    ]
+   },
+   {
+    "pollster": "Elabe",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10324-pres-iv-elabe-17-octobre.pdf",
+    "notice": 10324,
+    "dates": "14-16 octobre 2026",
+    "end": "2026-10-16",
+    "n": 1701,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 1.5,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 15.5,
+      "edouard-philippe": 16.5,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 32.5,
+      "eric-zemmour": 3.5,
+      "dominique-de-villepin": 2.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.5,
+      "raphael-glucksmann": 16.5,
+      "gabriel-attal": 10.5,
+      "bruno-retailleau": 9.5,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 33.5,
+      "eric-zemmour": 3.5,
+      "dominique-de-villepin": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.5,
+      "fabien-roussel": 1.5,
+      "marine-tondelier": 2.5,
+      "raphael-glucksmann": 15.0,
+      "edouard-philippe": 15.5,
+      "david-lisnard": 5.5,
+      "bruno-retailleau": 6.5,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 31.5,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 1.5,
+      "raphael-glucksmann": 16.5,
+      "gabriel-attal": 9.5,
+      "david-lisnard": 6.5,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 31.0,
+      "eric-zemmour": 3.5,
+      "francois-ruffin": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.5,
+      "fabien-roussel": 1.5,
+      "marine-tondelier": 2.5,
+      "raphael-glucksmann": 15.5,
+      "gabriel-attal": 4.5,
+      "edouard-philippe": 13.5,
+      "bruno-retailleau": 7.5,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 32.5,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 1.0,
+      "marine-tondelier": 2.5,
+      "raphael-glucksmann": 16.0,
+      "edouard-philippe": 16.5,
+      "bruno-retailleau": 7.5,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 33.5,
+      "eric-zemmour": 3.0,
+      "natacha-polony": 1.5
+     }
+    ]
+   },
+   {
+    "pollster": "Cluster17",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10325-pres-focus-droite-et-centre-cluster17-le-point-18-octobre.pdf",
+    "notice": 10325,
+    "dates": "14-15 octobre 2026",
+    "end": "2026-10-15",
+    "n": 1263,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 1.5,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 17.0,
+      "david-lisnard": 7.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 31.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 20.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 12.0,
+      "edouard-philippe": 20.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 35.5,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 20.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 16.0,
+      "bruno-retailleau": 17.5,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 34.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 20.5,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 16.0,
+      "david-lisnard": 17.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 20.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 13.5,
+      "gabriel-attal": 17.0,
+      "nicolas-dupont-aignan": 3.5,
+      "marine-le-pen": 35.5,
+      "eric-zemmour": 5.5
+     }
+    ]
+   },
+   {
+    "pollster": "YouGov",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10323-pres-iv-yougov-le-huffpost-18-octobre.pdf",
+    "notice": 10323,
+    "dates": "12-15 octobre 2026",
+    "end": "2026-10-15",
+    "n": 1094,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 6.0,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 6.0,
+      "edouard-philippe": 10.0,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 6.0,
+      "raphael-glucksmann": 14.0,
+      "gabriel-attal": 10.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 37.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 6.0,
+      "raphael-glucksmann": 13.0,
+      "edouard-philippe": 13.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 6.0,
+      "francois-hollande": 9.0,
+      "edouard-philippe": 15.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 37.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.0,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 5.0,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 6.0,
+      "edouard-philippe": 8.0,
+      "david-lisnard": 4.0,
+      "bruno-retailleau": 5.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 4.0,
+      "francois-ruffin": 2.0,
+      "dominique-de-villepin": 1.0
+     }
+    ]
+   },
+   {
+    "pollster": "OpinionWay",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10319-pres-iv-opinionway-cnews-15-octobre.pdf",
+    "notice": 10319,
+    "dates": "13-14 octobre 2026",
+    "end": "2026-10-14",
+    "n": 1043,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 1.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 13.0,
+      "gabriel-attal": 5.0,
+      "edouard-philippe": 12.0,
+      "david-lisnard": 4.0,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 5.0,
+      "karim-bouamrane": 0.5
+     }
+    ]
+   },
+   {
+    "pollster": "OpinionWay",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10318-pres-presitrack-v3-opinionway-15-octobre.pdf",
+    "notice": 10318,
+    "dates": "13-14 octobre 2026",
+    "end": "2026-10-14",
+    "n": 1001,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 14.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 13.0,
+      "gabriel-attal": 7.0,
+      "edouard-philippe": 12.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 16.0,
+      "gabriel-attal": 11.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 37.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 15.0,
+      "edouard-philippe": 15.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
+   {
+    "pollster": "Ifop",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10314-pres-climat-politique-post-primaire-ps-pp-ifop-lci-14-octobre.pdf",
+    "notice": 10314,
+    "dates": "12-14 octobre 2026",
+    "end": "2026-10-14",
+    "n": 1390,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 11.5,
+      "gabriel-attal": 5.0,
+      "edouard-philippe": 13.0,
+      "david-lisnard": 6.0,
+      "bruno-retailleau": 5.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 32.0,
+      "eric-zemmour": 3.0,
+      "francois-ruffin": 2.0,
+      "dominique-de-villepin": 1.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 16.0,
+      "gabriel-attal": 13.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 2.5,
+      "raphael-glucksmann": 13.5,
+      "edouard-philippe": 18.0,
+      "bruno-retailleau": 6.5,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 14.0,
+      "gabriel-attal": 6.0,
+      "edouard-philippe": 14.0,
+      "bruno-retailleau": 6.5,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.0
+     }
+    ]
+   },
+   {
+    "pollster": "Harris",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10305-pres-iv-toluna-harris-interactive-12-octobre.pdf",
+    "notice": 10305,
+    "dates": "5-8 octobre 2026",
+    "end": "2026-10-08",
+    "n": 2004,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 19.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 5.0,
+      "francois-hollande": 7.0,
+      "gabriel-attal": 12.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 37.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "francois-hollande": 7.0,
+      "edouard-philippe": 17.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 12.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "edouard-philippe": 17.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 10.0,
+      "gabriel-attal": 5.0,
+      "edouard-philippe": 13.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 5.0
+     }
+    ]
+   },
+   {
+    "pollster": "Odoxa",
+    "url": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2325",
+    "notice": 10310,
+    "dates": "24 septembre - 7 octobre 2026",
+    "end": "2026-10-07",
+    "n": 12005,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 9.5,
+      "edouard-philippe": 17.0,
+      "bruno-retailleau": 6.5,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 37.0,
+      "eric-zemmour": 4.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.5,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 10.5,
+      "gabriel-attal": 11.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 38.0,
+      "eric-zemmour": 4.5
+     }
+    ]
+   },
+   {
+    "pollster": "Ifop",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10284-pres-barometre-election-presidentielle-v6-ifop-le-figaro-30-septembre.pdf",
+    "notice": 10284,
+    "dates": "25-29 septembre 2026",
+    "end": "2026-09-29",
+    "n": 1527,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 8.0,
+      "edouard-philippe": 16.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 32.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 21.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 13.0,
+      "gabriel-attal": 15.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 5.5,
+      "olivier-faure": 4.0,
+      "gabriel-attal": 17.0,
+      "bruno-retailleau": 11.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 4.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 3.5,
+      "marine-tondelier": 5.0,
+      "olivier-faure": 3.0,
+      "edouard-philippe": 23.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 6.0,
+      "segolene-royal": 3.0,
+      "edouard-philippe": 24.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.5,
+      "marine-tondelier": 5.5,
+      "jerome-guedj": 3.0,
+      "edouard-philippe": 23.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.5,
+      "marine-tondelier": 6.0,
+      "emmanuel-maurel": 1.0,
+      "edouard-philippe": 23.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 5.0,
+      "francois-hollande": 8.0,
+      "edouard-philippe": 22.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 14.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 9.0,
+      "gabriel-attal": 7.0,
+      "edouard-philippe": 15.0,
+      "bruno-retailleau": 5.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 31.0,
+      "eric-zemmour": 4.0,
+      "david-lisnard": 3.5,
+      "francois-ruffin": 3.0,
+      "dominique-de-villepin": 2.0
+     }
+    ]
+   },
+   {
+    "pollster": "Harris",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10277-pres-toluna-harris-interactive-rtl-28-septembre.pdf",
+    "notice": 10277,
+    "dates": "22-24 septembre 2026",
+    "end": "2026-09-24",
+    "n": 1974,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 5.0,
+      "francois-hollande": 8.0,
+      "gabriel-attal": 13.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "francois-hollande": 7.0,
+      "edouard-philippe": 16.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 12.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "edouard-philippe": 16.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "gabriel-attal": 5.0,
+      "edouard-philippe": 13.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 5.0
+     }
+    ]
+   },
+   {
+    "pollster": "YouGov",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10270-pres-iv-yougov-huffpost-23-septembre.pdf",
+    "notice": 10270,
+    "dates": "17-21 septembre 2026",
+    "end": "2026-09-21",
+    "n": 1103,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 8.0,
+      "gabriel-attal": 9.0,
+      "edouard-philippe": 12.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 9.0,
+      "bruno-le-maire": 3.0,
+      "edouard-philippe": 13.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 9.0,
+      "gabriel-attal": 14.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 7.0,
+      "edouard-philippe": 17.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 37.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 4.0,
+      "olivier-faure": 5.0,
+      "gabriel-attal": 9.0,
+      "edouard-philippe": 12.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 1.0,
+      "marine-tondelier": 2.0,
+      "francois-hollande": 4.0,
+      "raphael-glucksmann": 5.0,
+      "gabriel-attal": 8.0,
+      "edouard-philippe": 10.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 5.0,
+      "xavier-bertrand": 1.0,
+      "david-lisnard": 2.0,
+      "francois-ruffin": 2.0,
+      "dominique-de-villepin": 2.0
+     }
+    ]
+   },
+   {
+    "pollster": "Cluster17",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10273-pres-iv-cluster17-politico-24-septembre.pdf",
+    "notice": 10273,
+    "dates": "15-16 septembre 2026",
+    "end": "2026-09-16",
+    "n": 1943,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 19.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.5,
+      "raphael-glucksmann": 12.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 7.5,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 31.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 20.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 2.5,
+      "raphael-glucksmann": 14.0,
+      "gabriel-attal": 13.5,
+      "bruno-retailleau": 9.5,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 31.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 19.5,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "francois-hollande": 7.5,
+      "edouard-philippe": 19.5,
+      "bruno-retailleau": 7.5,
+      "nicolas-dupont-aignan": 4.0,
+      "marine-le-pen": 30.0,
+      "david-lisnard": 5.0
+     }
+    ]
+   },
+   {
+    "pollster": "Ifop",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10292-pres-vote-blanc-ifop-6-octobre.pdf",
+    "notice": 10292,
+    "dates": "9-11 septembre 2026",
+    "end": "2026-09-11",
+    "n": 1548,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 9.0,
+      "gabriel-attal": 7.0,
+      "edouard-philippe": 14.0,
+      "bruno-retailleau": 6.5,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
+   {
+    "pollster": "OpinionWay",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10260-pres-iv-opinionway-cnews-11-septembre.pdf",
+    "notice": 10260,
+    "dates": "9-10 septembre 2026",
+    "end": "2026-09-10",
+    "n": 1001,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "francois-hollande": 7.0,
+      "gabriel-attal": 8.0,
+      "edouard-philippe": 16.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 32.0,
+      "eric-zemmour": 2.0,
+      "karim-bouamrane": 1.0,
+      "david-lisnard": 2.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 4.0,
+      "marine-tondelier": 3.0,
+      "segolene-royal": 3.0,
+      "gabriel-attal": 8.0,
+      "edouard-philippe": 16.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 2.0,
+      "karim-bouamrane": 1.0,
+      "david-lisnard": 2.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 9.0,
+      "gabriel-attal": 7.0,
+      "edouard-philippe": 15.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 2.0,
+      "karim-bouamrane": 0.5,
+      "david-lisnard": 2.0
+     }
+    ]
+   },
+   {
+    "pollster": "Harris",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10263-pres-iv-toluna-harris-interactive-rtl-14-septembre.pdf",
+    "notice": 10263,
+    "dates": "8-10 septembre 2026",
+    "end": "2026-09-10",
+    "n": 2052,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "francois-hollande": 7.0,
+      "gabriel-attal": 15.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "francois-hollande": 7.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 14.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "edouard-philippe": 17.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 9.0,
+      "gabriel-attal": 8.0,
+      "edouard-philippe": 14.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 5.0
+     }
+    ]
+   },
+   {
+    "pollster": "OpinionWay",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10259-pres-presitrack-v2-opinionway-les-echos-10-septembre.pdf",
+    "notice": 10259,
+    "dates": "8-9 septembre 2026",
+    "end": "2026-09-09",
+    "n": 1001,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 9.0,
+      "gabriel-attal": 8.0,
+      "edouard-philippe": 15.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 14.0,
+      "bruno-retailleau": 12.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 1.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
+   {
+    "pollster": "Ipsos",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10262-pres-enquete-electorale-ipsos-bva-le-monde-13-septembre.pdf",
+    "notice": 10262,
+    "dates": "3-9 septembre 2026",
+    "end": "2026-09-09",
+    "n": 13060,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.5,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 11.5,
+      "gabriel-attal": 6.0,
+      "edouard-philippe": 14.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.5,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 12.5,
+      "edouard-philippe": 17.5,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 33.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.5,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 4.5,
+      "raphael-glucksmann": 13.5,
+      "gabriel-attal": 13.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 4.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 16.5,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 5.0,
+      "olivier-faure": 4.5,
+      "gabriel-attal": 7.5,
+      "edouard-philippe": 16.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 16.5,
+      "fabien-roussel": 3.5,
+      "marine-tondelier": 5.5,
+      "olivier-faure": 5.0,
+      "edouard-philippe": 21.0,
+      "bruno-retailleau": 7.5,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.5,
+      "marine-tondelier": 5.5,
+      "olivier-faure": 5.5,
+      "gabriel-attal": 15.5,
+      "bruno-retailleau": 10.5,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 4.5
+     }
+    ]
+   },
+   {
+    "pollster": "OpinionWay",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10264-pres-opinionway-facebook-15-septembre.pdf",
+    "notice": 10264,
+    "dates": "2-4 septembre 2026",
+    "end": "2026-09-04",
+    "n": 1034,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 7.0,
+      "edouard-philippe": 15.0,
+      "bruno-retailleau": 7.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.0
+     }
+    ]
+   },
+   {
+    "pollster": "OpinionWay",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10252-pres-iv-opinionway-jdd-7-septembre.pdf",
+    "notice": 10252,
+    "dates": "2-3 septembre 2026",
+    "end": "2026-09-03",
+    "n": 1003,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 13.0,
+      "gabriel-attal": 13.0,
+      "bruno-retailleau": 11.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 12.0,
+      "edouard-philippe": 20.0,
+      "bruno-retailleau": 8.0,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 7.0,
+      "edouard-philippe": 15.0,
+      "bruno-retailleau": 7.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.0
+     }
+    ]
+   },
+   {
+    "pollster": "Ipsos",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10250-pres-iv-ipsos-bva-le-parisien-5-septembre.pdf",
+    "notice": 10250,
+    "dates": "31 août - 2 septembre 2026",
+    "end": "2026-09-02",
+    "n": 1500,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 11.5,
+      "gabriel-attal": 7.5,
+      "edouard-philippe": 14.5,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 12.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 7.5,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.5,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 14.0,
+      "gabriel-attal": 14.0,
+      "bruno-retailleau": 9.5,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 5.0,
+      "olivier-faure": 4.5,
+      "gabriel-attal": 8.5,
+      "edouard-philippe": 16.5,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.5,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.5,
+      "fabien-roussel": 3.5,
+      "marine-tondelier": 5.0,
+      "olivier-faure": 4.5,
+      "edouard-philippe": 22.5,
+      "bruno-retailleau": 7.5,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.5,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.5,
+      "marine-tondelier": 5.5,
+      "olivier-faure": 5.5,
+      "gabriel-attal": 15.5,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 3.5
+     }
+    ]
+   },
+   {
+    "pollster": "Cluster17",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10251-pres-iv-cluster-17-le-point-5-septembre.pdf",
+    "notice": 10251,
+    "dates": "31 août - 1er septembre 2026",
+    "end": "2026-09-01",
+    "n": 1711,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 11.5,
+      "edouard-philippe": 18.0,
+      "bruno-retailleau": 7.5,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 30.0,
+      "eric-zemmour": 3.5,
+      "dominique-de-villepin": 3.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.5,
+      "raphael-glucksmann": 11.5,
+      "gabriel-attal": 13.5,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 31.5,
+      "eric-zemmour": 4.0,
+      "dominique-de-villepin": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 17.0,
+      "bruno-retailleau": 6.5,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 29.0,
+      "eric-zemmour": 3.0,
+      "david-lisnard": 4.0,
+      "francois-ruffin": 4.0,
+      "dominique-de-villepin": 3.5
+     }
+    ]
+   },
+   {
+    "pollster": "Elabe",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10245-pres-iv-elabe-29-aout.pdf",
+    "notice": 10245,
+    "dates": "26-28 août 2026",
+    "end": "2026-08-28",
+    "n": 1501,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 14.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 11.5,
+      "edouard-philippe": 17.0,
+      "bruno-retailleau": 6.5,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 4.0,
+      "dominique-de-villepin": 2.0
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 14.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 14.0,
+      "gabriel-attal": 12.0,
+      "bruno-retailleau": 9.5,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.5,
+      "eric-zemmour": 4.0,
+      "dominique-de-villepin": 2.5
+     },
+     {
+      "nathalie-arthaud": 2.0,
+      "jean-luc-melenchon": 14.0,
+      "fabien-roussel": 3.5,
+      "marine-tondelier": 4.0,
+      "francois-hollande": 7.5,
+      "edouard-philippe": 19.5,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 4.0,
+      "david-lisnard": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 14.0,
+      "fabien-roussel": 4.0,
+      "francois-hollande": 8.0,
+      "gabriel-attal": 12.5,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 34.5,
+      "eric-zemmour": 4.5,
+      "david-lisnard": 3.5,
+      "francois-ruffin": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 14.5,
+      "fabien-roussel": 4.5,
+      "marine-tondelier": 4.0,
+      "olivier-faure": 3.5,
+      "edouard-philippe": 20.5,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 35.5,
+      "eric-zemmour": 4.0,
+      "dominique-de-villepin": 2.5
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 14.5,
+      "fabien-roussel": 3.0,
+      "raphael-glucksmann": 12.5,
+      "gabriel-attal": 6.5,
+      "edouard-philippe": 14.5,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
+   {
+    "pollster": "Ifop",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10242-pres-barometre-election-pres-iv-v5-ifop-26-aout.pdf",
+    "notice": 10242,
+    "dates": "24-25 août 2026",
+    "end": "2026-08-25",
+    "n": 1598,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 8.0,
+      "edouard-philippe": 14.5,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 12.0,
+      "edouard-philippe": 18.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 15.0,
+      "gabriel-attal": 14.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "raphael-glucksmann": 15.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 18.5,
+      "raphael-glucksmann": 17.0,
+      "gabriel-attal": 15.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 19.0,
+      "francois-hollande": 12.0,
+      "edouard-philippe": 21.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 2.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 18.0,
+      "bruno-le-maire": 6.0,
+      "bruno-retailleau": 12.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 3.0
+     }
+    ]
+   },
+   {
+    "pollster": "Harris",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10239-pres-toluna-harris-interactive-rtl-24-aout.pdf",
+    "notice": 10239,
+    "dates": "18-19 août 2026",
+    "end": "2026-08-19",
+    "n": 1764,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "francois-hollande": 8.0,
+      "gabriel-attal": 14.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 38.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "francois-hollande": 8.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 15.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 37.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "edouard-philippe": 17.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "gabriel-attal": 8.0,
+      "edouard-philippe": 14.0,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 3.0
+     }
+    ]
+   },
+   {
+    "pollster": "Cluster17",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10246-pres-cluster17-le-grand-continent-31-aout.pdf",
+    "notice": 10246,
+    "dates": "22-24 juillet 2026",
+    "end": "2026-07-24",
+    "n": 1506,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "edouard-philippe": 18.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 30.0,
+      "eric-zemmour": 4.0,
+      "dominique-de-villepin": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "gabriel-attal": 14.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 4.0,
+      "marine-le-pen": 30.0,
+      "eric-zemmour": 4.0,
+      "dominique-de-villepin": 4.0
+     }
+    ]
+   },
+   {
+    "pollster": "Elabe",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10226-pres-elabe-11-juillet.pdf",
+    "notice": 10226,
+    "dates": "9-10 juillet 2026",
+    "end": "2026-07-10",
+    "n": 1503,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 10.5,
+      "edouard-philippe": 16.5,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 3.0,
+      "dominique-de-villepin": 2.5
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 14.5,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 13.5,
+      "bruno-retailleau": 11.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.5,
+      "dominique-de-villepin": 3.5
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 14.5,
+      "fabien-roussel": 2.0,
+      "francois-hollande": 9.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 2.5,
+      "francois-ruffin": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.5,
+      "francois-hollande": 8.0,
+      "gabriel-attal": 15.5,
+      "bruno-retailleau": 11.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 35.5,
+      "eric-zemmour": 3.5,
+      "francois-ruffin": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 14.5,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 8.5,
+      "gabriel-attal": 7.5,
+      "edouard-philippe": 14.0,
+      "bruno-retailleau": 8.5,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 2.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "francois-hollande": 8.0,
+      "edouard-philippe": 18.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 34.5,
+      "eric-zemmour": 3.0,
+      "dominique-de-villepin": 3.0
+     }
+    ]
+   },
+   {
+    "pollster": "Verian",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10225-pres-iv-1er-tour-verian-lhemicycle-10-juillet.pdf",
+    "notice": 10225,
+    "dates": "8-10 juillet 2026",
+    "end": "2026-07-10",
+    "n": 1047,
+    "scenarios": [
+     {
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 8.0,
+      "edouard-philippe": 17.0,
+      "bruno-retailleau": 7.0,
+      "marine-le-pen": 37.0,
+      "eric-zemmour": 3.0
+     }
+    ]
+   },
+   {
+    "pollster": "OpinionWay",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10224-pres-presitrack-opinionway-les-echos-9-juillet.pdf",
+    "notice": 10224,
+    "dates": "8-9 juillet 2026",
+    "end": "2026-07-09",
+    "n": 963,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 5.0,
+      "raphael-glucksmann": 9.0,
+      "gabriel-attal": 7.0,
+      "edouard-philippe": 18.0,
+      "bruno-retailleau": 8.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 5.0,
+      "raphael-glucksmann": 10.0,
+      "gabriel-attal": 16.0,
+      "bruno-retailleau": 12.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 9.0,
+      "edouard-philippe": 22.0,
+      "bruno-retailleau": 9.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
+   {
+    "pollster": "Ifop",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10222-pres-ifop-le-figaro-8-juillet.pdf",
+    "notice": 10222,
+    "dates": "7-8 juillet 2026",
+    "end": "2026-07-08",
+    "n": 984,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 15.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 9.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
+   {
+    "pollster": "Harris",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10223-pres-iv-toluna-harris-interactive-rtl-8-juillet.pdf",
+    "notice": 10223,
+    "dates": "7-8 juillet 2026",
+    "end": "2026-07-08",
+    "n": 1592,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 5.0,
+      "francois-hollande": 8.0,
+      "gabriel-attal": 16.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "francois-hollande": 8.0,
+      "edouard-philippe": 20.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 16.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 20.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 10.0,
+      "gabriel-attal": 8.0,
+      "edouard-philippe": 14.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
+   {
+    "pollster": "Ifop",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juin/10211-pres-iv-ifop-le-figaro-25-juin.pdf",
+    "notice": 10211,
+    "dates": "22-24 juin 2026",
+    "end": "2026-06-24",
+    "n": 1415,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 2.5,
+      "raphael-glucksmann": 9.0,
+      "gabriel-attal": 8.0,
+      "edouard-philippe": 14.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 10.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 15.0,
+      "bruno-retailleau": 11.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 4.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 12.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 9.0,
+      "edouard-philippe": 20.0,
+      "bruno-retailleau": 11.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 15.0,
+      "bruno-retailleau": 14.0,
+      "nicolas-dupont-aignan": 3.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 15.0,
+      "francois-hollande": 9.0,
+      "edouard-philippe": 21.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 3.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 14.0,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 20.0,
+      "bruno-retailleau": 11.0,
+      "nicolas-dupont-aignan": 2.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 8.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.5,
+      "eric-zemmour": 4.5,
+      "david-lisnard": 2.0
+     }
+    ]
+   },
+   {
+    "pollster": "OpinionWay",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juin/10205-pres-iv-opinionway-jdd-13-juin.pdf",
+    "notice": 10205,
+    "dates": "10-11 juin 2026",
+    "end": "2026-06-11",
+    "n": 1001,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "raphael-glucksmann": 16.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 5.0,
+      "raphael-glucksmann": 13.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 4.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 14.0,
+      "gabriel-attal": 14.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
+   {
+    "pollster": "Ipsos",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juin/10195-pres-ipsos-bva-le-parisien-1er-juin.pdf",
+    "notice": 10195,
+    "dates": "27-28 mai 2026",
+    "end": "2026-05-28",
+    "n": 1500,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 8.5,
+      "edouard-philippe": 13.0,
+      "bruno-retailleau": 7.5,
+      "nicolas-dupont-aignan": 1.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 8.5,
+      "edouard-philippe": 14.0,
+      "bruno-retailleau": 8.5,
+      "nicolas-dupont-aignan": 1.5,
+      "eric-zemmour": 4.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.5,
+      "fabien-roussel": 4.0,
+      "marine-tondelier": 4.0,
+      "francois-hollande": 7.0,
+      "gabriel-attal": 9.5,
+      "edouard-philippe": 13.5,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 1.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.5,
+      "fabien-roussel": 4.0,
+      "marine-tondelier": 4.0,
+      "francois-hollande": 7.0,
+      "gabriel-attal": 9.5,
+      "edouard-philippe": 14.5,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 1.5,
+      "eric-zemmour": 4.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 14.0,
+      "gabriel-attal": 14.5,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 1.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 13.0,
+      "edouard-philippe": 17.5,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 1.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.5,
+      "fabien-roussel": 3.5,
+      "marine-tondelier": 5.0,
+      "francois-hollande": 8.0,
+      "gabriel-attal": 17.5,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 1.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.5,
+      "fabien-roussel": 4.0,
+      "marine-tondelier": 5.0,
+      "francois-hollande": 7.5,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 1.5,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
+   {
+    "pollster": "Ifop",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/mai/10193-pres-ifop-le-figaro-29-mai.pdf",
+    "notice": 10193,
+    "dates": "26-28 mai 2026",
+    "end": "2026-05-28",
+    "n": 1501,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 9.0,
+      "gabriel-attal": 9.0,
+      "edouard-philippe": 14.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.5,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 10.0,
+      "edouard-philippe": 18.0,
+      "dominique-de-villepin": 2.5,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 16.0,
+      "dominique-de-villepin": 3.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.5,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 19.0,
+      "dominique-de-villepin": 2.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 1.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 11.5,
+      "gabriel-attal": 16.0,
+      "dominique-de-villepin": 3.0,
+      "bruno-retailleau": 11.5,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 14.0,
+      "fabien-roussel": 4.0,
+      "marine-tondelier": 5.0,
+      "francois-hollande": 8.0,
+      "edouard-philippe": 20.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 1.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.5,
+      "fabien-roussel": 3.5,
+      "marine-tondelier": 5.0,
+      "francois-hollande": 8.0,
+      "gabriel-attal": 18.5,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 12.5,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 9.0,
+      "edouard-philippe": 20.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 3.0,
+      "francois-ruffin": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 13.5,
+      "fabien-roussel": 6.0,
+      "marine-tondelier": 4.0,
+      "olivier-faure": 4.0,
+      "edouard-philippe": 21.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.5,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 15.0,
+      "francois-hollande": 11.0,
+      "edouard-philippe": 22.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "raphael-glucksmann": 12.0,
+      "edouard-philippe": 22.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 3.0,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
+   {
+    "pollster": "Harris",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/mai/10192-pres-toluna-harris-interactive-29-mai.pdf",
+    "notice": 10192,
+    "dates": "25-27 mai 2026",
+    "end": "2026-05-27",
+    "n": 1744,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "edouard-philippe": 17.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 4.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 14.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 14.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 15.0,
+      "fabien-roussel": 4.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 15.0,
+      "bruno-retailleau": 11.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 14.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "gabriel-attal": 9.0,
+      "edouard-philippe": 13.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 5.0
+     }
+    ]
+   },
+   {
+    "pollster": "Harris",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/mai/10180-pres-toluna-harris-interactive-rtl-4-mai.pdf",
+    "notice": 10180,
+    "dates": "28-30 avril 2026",
+    "end": "2026-04-30",
+    "n": 1725,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 12.0,
+      "fabien-roussel": 4.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 1.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 14.0,
+      "bruno-retailleau": 12.0,
+      "nicolas-dupont-aignan": 1.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 12.0,
+      "fabien-roussel": 4.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 1.0,
+      "eric-zemmour": 6.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 12.0,
+      "fabien-roussel": 4.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 14.0,
+      "bruno-retailleau": 13.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 5.0
+     }
+    ]
+   },
+   {
+    "pollster": "Elabe",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/mars/10166-pres-elabe-28-mars.pdf",
+    "notice": 10166,
+    "dates": "25-27 mars 2026",
+    "end": "2026-03-27",
+    "n": 1504,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 10.5,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.5,
+      "raphael-glucksmann": 10.5,
+      "edouard-philippe": 20.5,
+      "dominique-de-villepin": 3.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.5,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 11.5,
+      "fabien-roussel": 3.5,
+      "marine-tondelier": 5.0,
+      "raphael-glucksmann": 8.5,
+      "edouard-philippe": 22.0,
+      "dominique-de-villepin": 2.5,
+      "bruno-retailleau": 8.5,
+      "nicolas-dupont-aignan": 3.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 12.0,
+      "fabien-roussel": 4.0,
+      "marine-tondelier": 4.5,
+      "olivier-faure": 4.5,
+      "edouard-philippe": 25.5,
+      "dominique-de-villepin": 3.0,
+      "nicolas-dupont-aignan": 2.5,
+      "sarah-knafo": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 12.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 12.5,
+      "gabriel-attal": 11.5,
+      "dominique-de-villepin": 6.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.5,
+      "sarah-knafo": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 13.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 5.0,
+      "raphael-glucksmann": 12.5,
+      "gerald-darmanin": 8.0,
+      "dominique-de-villepin": 5.0,
+      "bruno-retailleau": 8.5,
+      "nicolas-dupont-aignan": 2.5,
+      "sarah-knafo": 3.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 11.0,
+      "fabien-roussel": 3.0,
+      "francois-ruffin": 8.0,
+      "raphael-glucksmann": 12.0,
+      "sebastien-lecornu": 6.5,
+      "dominique-de-villepin": 5.5,
+      "bruno-retailleau": 9.5,
+      "nicolas-dupont-aignan": 2.5,
+      "eric-zemmour": 3.5
+     }
+    ]
+   },
+   {
+    "pollster": "Harris",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/mars/10165-pres-toluna-harris-interactive-22-mars.pdf",
+    "notice": 10165,
+    "dates": "22 mars 2026",
+    "end": "2026-03-22",
+    "n": 1062,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 11.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 14.0,
+      "edouard-philippe": 18.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 11.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 5.0,
+      "raphael-glucksmann": 14.0,
+      "gabriel-attal": 13.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 5.0
+     }
+    ]
+   },
+   {
+    "pollster": "Ifop",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/mars/10118-pres-ifop-le-figaro-4-mars.pdf",
+    "notice": 10118,
+    "dates": "26-27 février 2026",
+    "end": "2026-02-27",
+    "n": 1393,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 11.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 10.0,
+      "edouard-philippe": 16.0,
+      "dominique-de-villepin": 3.5,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.5,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 10.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 16.0,
+      "dominique-de-villepin": 5.0,
+      "bruno-retailleau": 11.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 2.0,
+      "jean-luc-melenchon": 10.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 11.0,
+      "dominique-de-villepin": 4.0,
+      "bruno-retailleau": 12.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 2.0,
+      "jean-luc-melenchon": 11.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 4.5,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 10.0,
+      "dominique-de-villepin": 4.5,
+      "bruno-retailleau": 12.0,
+      "nicolas-dupont-aignan": 3.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.5,
+      "jean-luc-melenchon": 10.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.0,
+      "raphael-glucksmann": 13.0,
+      "gerald-darmanin": 8.0,
+      "dominique-de-villepin": 5.0,
+      "bruno-retailleau": 13.0,
+      "nicolas-dupont-aignan": 2.5,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 2.0,
+      "jean-luc-melenchon": 10.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 4.5,
+      "raphael-glucksmann": 13.0,
+      "sebastien-lecornu": 6.0,
+      "dominique-de-villepin": 5.0,
+      "bruno-retailleau": 13.0,
+      "nicolas-dupont-aignan": 3.0,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 2.0,
+      "jean-luc-melenchon": 12.0,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 4.5,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 23.0,
+      "nicolas-dupont-aignan": 3.0,
+      "eric-zemmour": 5.0
+     },
+     {
+      "nathalie-arthaud": 2.0,
+      "jean-luc-melenchon": 12.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 5.0,
+      "raphael-glucksmann": 16.0,
+      "bruno-retailleau": 17.0,
+      "nicolas-dupont-aignan": 3.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 2.0,
+      "jean-luc-melenchon": 11.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 5.0,
+      "francois-hollande": 8.0,
+      "edouard-philippe": 18.0,
+      "bruno-retailleau": 11.0,
+      "nicolas-dupont-aignan": 2.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 2.0,
+      "jean-luc-melenchon": 11.0,
+      "fabien-roussel": 3.0,
+      "marine-tondelier": 5.0,
+      "olivier-faure": 5.0,
+      "edouard-philippe": 19.0,
+      "bruno-retailleau": 11.0,
+      "nicolas-dupont-aignan": 3.5,
+      "eric-zemmour": 4.5
+     }
+    ]
+   }
+  ]
+ },
+ "r2": [
+  {
+   "id": "jean-luc-melenchon--marine-le-pen",
+   "a": "jean-luc-melenchon",
+   "b": "marine-le-pen",
+   "label": "Mélenchon – Le Pen",
+   "polls": [
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10333-pres-iv-opinionway-cnews-22-octobre.pdf",
+     "notice": 10333,
+     "dates": "21-22 octobre 2026",
+     "end": "2026-10-22",
+     "n": 973,
+     "a": 31.0,
+     "b": 69.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10332-pres-iv-toluna-harris-interactive-23-octobre.pdf",
+     "notice": 10332,
+     "dates": "19-21 octobre 2026",
+     "end": "2026-10-21",
+     "n": 2094,
+     "a": 30.0,
+     "b": 70.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10327-pres-barometre-election-v7-ifop-20-octobre.pdf",
+     "notice": 10327,
+     "dates": "17-19 octobre 2026",
+     "end": "2026-10-19",
+     "n": 2081,
+     "a": 32.0,
+     "b": 68.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10324-pres-iv-elabe-17-octobre.pdf",
+     "notice": 10324,
+     "dates": "14-16 octobre 2026",
+     "end": "2026-10-16",
+     "n": 1701,
+     "a": 31.0,
+     "b": 69.0
+    },
+    {
+     "pollster": "YouGov",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10323-pres-iv-yougov-le-huffpost-18-octobre.pdf",
+     "notice": 10323,
+     "dates": "12-15 octobre 2026",
+     "end": "2026-10-15",
+     "n": 1094,
+     "a": 32.0,
+     "b": 68.0
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10319-pres-iv-opinionway-cnews-15-octobre.pdf",
+     "notice": 10319,
+     "dates": "13-14 octobre 2026",
+     "end": "2026-10-14",
+     "n": 1043,
+     "a": 32.0,
+     "b": 68.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10305-pres-iv-toluna-harris-interactive-12-octobre.pdf",
+     "notice": 10305,
+     "dates": "5-8 octobre 2026",
+     "end": "2026-10-08",
+     "n": 2004,
+     "a": 33.0,
+     "b": 67.0
+    },
+    {
+     "pollster": "Odoxa",
+     "url": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2325",
+     "notice": 10310,
+     "dates": "24 septembre - 7 octobre 2026",
+     "end": "2026-10-07",
+     "n": 12005,
+     "a": 32.0,
+     "b": 68.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10277-pres-toluna-harris-interactive-rtl-28-septembre.pdf",
+     "notice": 10277,
+     "dates": "22-24 septembre 2026",
+     "end": "2026-09-24",
+     "n": 1974,
+     "a": 31.0,
+     "b": 69.0
+    },
+    {
+     "pollster": "YouGov",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10270-pres-iv-yougov-huffpost-23-septembre.pdf",
+     "notice": 10270,
+     "dates": "17-21 septembre 2026",
+     "end": "2026-09-21",
+     "n": 1103,
+     "a": 36.0,
+     "b": 64.0
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10260-pres-iv-opinionway-cnews-11-septembre.pdf",
+     "notice": 10260,
+     "dates": "9-10 septembre 2026",
+     "end": "2026-09-10",
+     "n": 1001,
+     "a": 33.0,
+     "b": 67.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10263-pres-iv-toluna-harris-interactive-rtl-14-septembre.pdf",
+     "notice": 10263,
+     "dates": "8-10 septembre 2026",
+     "end": "2026-09-10",
+     "n": 2052,
+     "a": 33.0,
+     "b": 67.0
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10252-pres-iv-opinionway-jdd-7-septembre.pdf",
+     "notice": 10252,
+     "dates": "2-3 septembre 2026",
+     "end": "2026-09-03",
+     "n": 1003,
+     "a": 34.0,
+     "b": 66.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10245-pres-iv-elabe-29-aout.pdf",
+     "notice": 10245,
+     "dates": "26-28 août 2026",
+     "end": "2026-08-28",
+     "n": 1503,
+     "a": 30.5,
+     "b": 69.5
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10242-pres-barometre-election-pres-iv-v5-ifop-26-aout.pdf",
+     "notice": 10242,
+     "dates": "24-25 août 2026",
+     "end": "2026-08-25",
+     "n": 1598,
+     "a": 33.0,
+     "b": 67.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10239-pres-toluna-harris-interactive-rtl-24-aout.pdf",
+     "notice": 10239,
+     "dates": "18-19 août 2026",
+     "end": "2026-08-19",
+     "n": 1764,
+     "a": 32.0,
+     "b": 68.0
+    },
+    {
+     "pollster": "Cluster17",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10246-pres-cluster17-le-grand-continent-31-aout.pdf",
+     "notice": 10246,
+     "dates": "22-24 juillet 2026",
+     "end": "2026-07-24",
+     "n": 1506,
+     "a": 39.0,
+     "b": 61.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10226-pres-elabe-11-juillet.pdf",
+     "notice": 10226,
+     "dates": "9-10 juillet 2026",
+     "end": "2026-07-10",
+     "n": 1503,
+     "a": 32.5,
+     "b": 67.5
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10222-pres-ifop-le-figaro-8-juillet.pdf",
+     "notice": 10222,
+     "dates": "7-8 juillet 2026",
+     "end": "2026-07-08",
+     "n": 984,
+     "a": 30.0,
+     "b": 70.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10223-pres-iv-toluna-harris-interactive-rtl-8-juillet.pdf",
+     "notice": 10223,
+     "dates": "7-8 juillet 2026",
+     "end": "2026-07-08",
+     "n": 1592,
+     "a": 33.0,
+     "b": 67.0
+    },
+    {
+     "pollster": "Cluster 17",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2024/avril/9753-pdt-ruffin-cluster-17-picardie-debout-21-avril-2024.pdf",
+     "notice": 9753,
+     "dates": "2-5 avril 2024",
+     "end": "2024-04-05",
+     "n": 1713,
+     "a": 35.0,
+     "b": 65.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2024/fevrier/9715-pdtielle-ifop-valeurs-actuelles-7-fevrier.pdf",
+     "notice": 9715,
+     "dates": "31 janvier - 1er février 2024",
+     "end": "2024-02-01",
+     "n": 1081,
+     "a": 36.0,
+     "b": 64.0
+    }
+   ],
+   "average": {
+    "a": 31.6,
+    "b": 68.4,
+    "polls": 9,
+    "from": "2026-09-24",
+    "to": "2026-10-22"
+   }
+  },
+  {
+   "id": "edouard-philippe--marine-le-pen",
+   "a": "edouard-philippe",
+   "b": "marine-le-pen",
+   "label": "Philippe – Le Pen",
+   "polls": [
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10333-pres-iv-opinionway-cnews-22-octobre.pdf",
+     "notice": 10333,
+     "dates": "21-22 octobre 2026",
+     "end": "2026-10-22",
+     "n": 973,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10332-pres-iv-toluna-harris-interactive-23-octobre.pdf",
+     "notice": 10332,
+     "dates": "19-21 octobre 2026",
+     "end": "2026-10-21",
+     "n": 2094,
+     "a": 43.0,
+     "b": 57.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10327-pres-barometre-election-v7-ifop-20-octobre.pdf",
+     "notice": 10327,
+     "dates": "17-19 octobre 2026",
+     "end": "2026-10-19",
+     "n": 2081,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10324-pres-iv-elabe-17-octobre.pdf",
+     "notice": 10324,
+     "dates": "14-16 octobre 2026",
+     "end": "2026-10-16",
+     "n": 1701,
+     "a": 47.5,
+     "b": 52.5
+    },
+    {
+     "pollster": "YouGov",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10323-pres-iv-yougov-le-huffpost-18-octobre.pdf",
+     "notice": 10323,
+     "dates": "12-15 octobre 2026",
+     "end": "2026-10-15",
+     "n": 1094,
+     "a": 48.0,
+     "b": 52.0
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10319-pres-iv-opinionway-cnews-15-octobre.pdf",
+     "notice": 10319,
+     "dates": "13-14 octobre 2026",
+     "end": "2026-10-14",
+     "n": 1043,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10305-pres-iv-toluna-harris-interactive-12-octobre.pdf",
+     "notice": 10305,
+     "dates": "5-8 octobre 2026",
+     "end": "2026-10-08",
+     "n": 2004,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "Odoxa",
+     "url": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2325",
+     "notice": 10310,
+     "dates": "24 septembre - 7 octobre 2026",
+     "end": "2026-10-07",
+     "n": 12005,
+     "a": 47.0,
+     "b": 53.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10277-pres-toluna-harris-interactive-rtl-28-septembre.pdf",
+     "notice": 10277,
+     "dates": "22-24 septembre 2026",
+     "end": "2026-09-24",
+     "n": 1974,
+     "a": 43.0,
+     "b": 57.0
+    },
+    {
+     "pollster": "YouGov",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10270-pres-iv-yougov-huffpost-23-septembre.pdf",
+     "notice": 10270,
+     "dates": "17-21 septembre 2026",
+     "end": "2026-09-21",
+     "n": 1103,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10260-pres-iv-opinionway-cnews-11-septembre.pdf",
+     "notice": 10260,
+     "dates": "9-10 septembre 2026",
+     "end": "2026-09-10",
+     "n": 1001,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10263-pres-iv-toluna-harris-interactive-rtl-14-septembre.pdf",
+     "notice": 10263,
+     "dates": "8-10 septembre 2026",
+     "end": "2026-09-10",
+     "n": 2052,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10252-pres-iv-opinionway-jdd-7-septembre.pdf",
+     "notice": 10252,
+     "dates": "2-3 septembre 2026",
+     "end": "2026-09-03",
+     "n": 1003,
+     "a": 48.0,
+     "b": 52.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10245-pres-iv-elabe-29-aout.pdf",
+     "notice": 10245,
+     "dates": "26-28 août 2026",
+     "end": "2026-08-28",
+     "n": 1503,
+     "a": 47.5,
+     "b": 52.5
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10242-pres-barometre-election-pres-iv-v5-ifop-26-aout.pdf",
+     "notice": 10242,
+     "dates": "24-25 août 2026",
+     "end": "2026-08-25",
+     "n": 1598,
+     "a": 48.0,
+     "b": 52.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10239-pres-toluna-harris-interactive-rtl-24-aout.pdf",
+     "notice": 10239,
+     "dates": "18-19 août 2026",
+     "end": "2026-08-19",
+     "n": 1764,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "Cluster17",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10246-pres-cluster17-le-grand-continent-31-aout.pdf",
+     "notice": 10246,
+     "dates": "22-24 juillet 2026",
+     "end": "2026-07-24",
+     "n": 1506,
+     "a": 48.0,
+     "b": 52.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10226-pres-elabe-11-juillet.pdf",
+     "notice": 10226,
+     "dates": "9-10 juillet 2026",
+     "end": "2026-07-10",
+     "n": 1503,
+     "a": 48.0,
+     "b": 52.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10222-pres-ifop-le-figaro-8-juillet.pdf",
+     "notice": 10222,
+     "dates": "7-8 juillet 2026",
+     "end": "2026-07-08",
+     "n": 984,
+     "a": 46.0,
+     "b": 54.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10223-pres-iv-toluna-harris-interactive-rtl-8-juillet.pdf",
+     "notice": 10223,
+     "dates": "7-8 juillet 2026",
+     "end": "2026-07-08",
+     "n": 1592,
+     "a": 49.0,
+     "b": 51.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/mars/10166-pres-elabe-28-mars.pdf",
+     "notice": 10166,
+     "dates": "25-27 mars 2026",
+     "end": "2026-03-27",
+     "n": 1504,
+     "a": 53.0,
+     "b": 47.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2025/mai/9930-pres-ifop-hexagone-5-mai.pdf",
+     "notice": 9930,
+     "dates": "29-30 avril 2025",
+     "end": "2025-04-30",
+     "n": 1838,
+     "a": 52.0,
+     "b": 48.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2024/avril/9766-pdt-ifop-le-figaro-magazine-26-04.pdf",
+     "notice": 9766,
+     "dates": "16-18 avril 2024",
+     "end": "2024-04-18",
+     "n": 1090,
+     "a": 49.0,
+     "b": 51.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2024/fevrier/9715-pdtielle-ifop-valeurs-actuelles-7-fevrier.pdf",
+     "notice": 9715,
+     "dates": "31 janvier - 1er février 2024",
+     "end": "2024-02-01",
+     "n": 1081,
+     "a": 50.0,
+     "b": 50.0
+    }
+   ],
+   "average": {
+    "a": 44.9,
+    "b": 55.1,
+    "polls": 9,
+    "from": "2026-09-24",
+    "to": "2026-10-22"
+   }
+  },
+  {
+   "id": "raphael-glucksmann--marine-le-pen",
+   "a": "raphael-glucksmann",
+   "b": "marine-le-pen",
+   "label": "Glucksmann – Le Pen",
+   "polls": [
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10333-pres-iv-opinionway-cnews-22-octobre.pdf",
+     "notice": 10333,
+     "dates": "21-22 octobre 2026",
+     "end": "2026-10-22",
+     "n": 973,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10332-pres-iv-toluna-harris-interactive-23-octobre.pdf",
+     "notice": 10332,
+     "dates": "19-21 octobre 2026",
+     "end": "2026-10-21",
+     "n": 2094,
+     "a": 41.0,
+     "b": 59.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10327-pres-barometre-election-v7-ifop-20-octobre.pdf",
+     "notice": 10327,
+     "dates": "17-19 octobre 2026",
+     "end": "2026-10-19",
+     "n": 2081,
+     "a": 43.0,
+     "b": 57.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10324-pres-iv-elabe-17-octobre.pdf",
+     "notice": 10324,
+     "dates": "14-16 octobre 2026",
+     "end": "2026-10-16",
+     "n": 1701,
+     "a": 46.5,
+     "b": 53.5
+    },
+    {
+     "pollster": "YouGov",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10323-pres-iv-yougov-le-huffpost-18-octobre.pdf",
+     "notice": 10323,
+     "dates": "12-15 octobre 2026",
+     "end": "2026-10-15",
+     "n": 1094,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10319-pres-iv-opinionway-cnews-15-octobre.pdf",
+     "notice": 10319,
+     "dates": "13-14 octobre 2026",
+     "end": "2026-10-14",
+     "n": 1043,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "YouGov",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10270-pres-iv-yougov-huffpost-23-septembre.pdf",
+     "notice": 10270,
+     "dates": "17-21 septembre 2026",
+     "end": "2026-09-21",
+     "n": 1103,
+     "a": 41.0,
+     "b": 59.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10245-pres-iv-elabe-29-aout.pdf",
+     "notice": 10245,
+     "dates": "26-28 août 2026",
+     "end": "2026-08-28",
+     "n": 1503,
+     "a": 43.0,
+     "b": 57.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10242-pres-barometre-election-pres-iv-v5-ifop-26-aout.pdf",
+     "notice": 10242,
+     "dates": "24-25 août 2026",
+     "end": "2026-08-25",
+     "n": 1598,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "Cluster17",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10246-pres-cluster17-le-grand-continent-31-aout.pdf",
+     "notice": 10246,
+     "dates": "22-24 juillet 2026",
+     "end": "2026-07-24",
+     "n": 1506,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10226-pres-elabe-11-juillet.pdf",
+     "notice": 10226,
+     "dates": "9-10 juillet 2026",
+     "end": "2026-07-10",
+     "n": 1503,
+     "a": 41.5,
+     "b": 58.5
+    }
+   ],
+   "average": {
+    "a": 43.9,
+    "b": 56.1,
+    "polls": 6,
+    "from": "2026-10-14",
+    "to": "2026-10-22"
+   }
+  },
+  {
+   "id": "gabriel-attal--marine-le-pen",
+   "a": "gabriel-attal",
+   "b": "marine-le-pen",
+   "label": "Attal – Le Pen",
+   "polls": [
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10327-pres-barometre-election-v7-ifop-20-octobre.pdf",
+     "notice": 10327,
+     "dates": "17-19 octobre 2026",
+     "end": "2026-10-19",
+     "n": 2081,
+     "a": 42.0,
+     "b": 58.0
+    },
+    {
+     "pollster": "YouGov",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10323-pres-iv-yougov-le-huffpost-18-octobre.pdf",
+     "notice": 10323,
+     "dates": "12-15 octobre 2026",
+     "end": "2026-10-15",
+     "n": 1094,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "YouGov",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10270-pres-iv-yougov-huffpost-23-septembre.pdf",
+     "notice": 10270,
+     "dates": "17-21 septembre 2026",
+     "end": "2026-09-21",
+     "n": 1103,
+     "a": 43.0,
+     "b": 57.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10263-pres-iv-toluna-harris-interactive-rtl-14-septembre.pdf",
+     "notice": 10263,
+     "dates": "8-10 septembre 2026",
+     "end": "2026-09-10",
+     "n": 2052,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10252-pres-iv-opinionway-jdd-7-septembre.pdf",
+     "notice": 10252,
+     "dates": "2-3 septembre 2026",
+     "end": "2026-09-03",
+     "n": 1003,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10245-pres-iv-elabe-29-aout.pdf",
+     "notice": 10245,
+     "dates": "26-28 août 2026",
+     "end": "2026-08-28",
+     "n": 1503,
+     "a": 43.0,
+     "b": 57.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10242-pres-barometre-election-pres-iv-v5-ifop-26-aout.pdf",
+     "notice": 10242,
+     "dates": "24-25 août 2026",
+     "end": "2026-08-25",
+     "n": 1598,
+     "a": 46.0,
+     "b": 54.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10239-pres-toluna-harris-interactive-rtl-24-aout.pdf",
+     "notice": 10239,
+     "dates": "18-19 août 2026",
+     "end": "2026-08-19",
+     "n": 1764,
+     "a": 43.0,
+     "b": 57.0
+    },
+    {
+     "pollster": "Cluster17",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10246-pres-cluster17-le-grand-continent-31-aout.pdf",
+     "notice": 10246,
+     "dates": "22-24 juillet 2026",
+     "end": "2026-07-24",
+     "n": 1506,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10226-pres-elabe-11-juillet.pdf",
+     "notice": 10226,
+     "dates": "9-10 juillet 2026",
+     "end": "2026-07-10",
+     "n": 1503,
+     "a": 46.0,
+     "b": 54.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10222-pres-ifop-le-figaro-8-juillet.pdf",
+     "notice": 10222,
+     "dates": "7-8 juillet 2026",
+     "end": "2026-07-08",
+     "n": 984,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10223-pres-iv-toluna-harris-interactive-rtl-8-juillet.pdf",
+     "notice": 10223,
+     "dates": "7-8 juillet 2026",
+     "end": "2026-07-08",
+     "n": 1592,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/mars/10166-pres-elabe-28-mars.pdf",
+     "notice": 10166,
+     "dates": "25-27 mars 2026",
+     "end": "2026-03-27",
+     "n": 1504,
+     "a": 49.0,
+     "b": 51.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2024/avril/9766-pdt-ifop-le-figaro-magazine-26-04.pdf",
+     "notice": 9766,
+     "dates": "16-18 avril 2024",
+     "end": "2024-04-18",
+     "n": 1093,
+     "a": 47.0,
+     "b": 53.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2024/fevrier/9715-pdtielle-ifop-valeurs-actuelles-7-fevrier.pdf",
+     "notice": 9715,
+     "dates": "31 janvier - 1er février 2024",
+     "end": "2024-02-01",
+     "n": 1081,
+     "a": 49.0,
+     "b": 51.0
+    }
+   ],
+   "average": {
+    "a": 43.3,
+    "b": 56.7,
+    "polls": 3,
+    "from": "2026-09-21",
+    "to": "2026-10-19"
+   }
+  },
+  {
+   "id": "jean-luc-melenchon--edouard-philippe",
+   "a": "jean-luc-melenchon",
+   "b": "edouard-philippe",
+   "label": "Mélenchon – Philippe",
+   "polls": [
+    {
+     "pollster": "YouGov",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10323-pres-iv-yougov-le-huffpost-18-octobre.pdf",
+     "notice": 10323,
+     "dates": "12-15 octobre 2026",
+     "end": "2026-10-15",
+     "n": 1094,
+     "a": 34.0,
+     "b": 66.0
+    },
+    {
+     "pollster": "YouGov",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10270-pres-iv-yougov-huffpost-23-septembre.pdf",
+     "notice": 10270,
+     "dates": "17-21 septembre 2026",
+     "end": "2026-09-21",
+     "n": 1103,
+     "a": 39.0,
+     "b": 61.0
+    }
+   ],
+   "average": {
+    "a": 36.5,
+    "b": 63.5,
+    "polls": 2,
+    "from": "2026-09-21",
+    "to": "2026-10-15"
+   }
+  },
+  {
+   "id": "bruno-retailleau--marine-le-pen",
+   "a": "bruno-retailleau",
+   "b": "marine-le-pen",
+   "label": "Retailleau – Le Pen",
+   "polls": [
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10242-pres-barometre-election-pres-iv-v5-ifop-26-aout.pdf",
+     "notice": 10242,
+     "dates": "24-25 août 2026",
+     "end": "2026-08-25",
+     "n": 1598,
+     "a": 42.0,
+     "b": 58.0
+    },
+    {
+     "pollster": "Cluster17",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10246-pres-cluster17-le-grand-continent-31-aout.pdf",
+     "notice": 10246,
+     "dates": "22-24 juillet 2026",
+     "end": "2026-07-24",
+     "n": 1506,
+     "a": 43.0,
+     "b": 57.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10226-pres-elabe-11-juillet.pdf",
+     "notice": 10226,
+     "dates": "9-10 juillet 2026",
+     "end": "2026-07-10",
+     "n": 1503,
+     "a": 44.0,
+     "b": 56.0
+    }
+   ],
+   "average": {
+    "a": 42.0,
+    "b": 58.0,
+    "polls": 1,
+    "from": "2026-08-25",
+    "to": "2026-08-25"
+   }
+  },
+  {
+   "id": "francois-ruffin--marine-le-pen",
+   "a": "francois-ruffin",
+   "b": "marine-le-pen",
+   "label": "Ruffin – Le Pen",
+   "polls": [
+    {
+     "pollster": "Cluster 17",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2024/avril/9753-pdt-ruffin-cluster-17-picardie-debout-21-avril-2024.pdf",
+     "notice": 9753,
+     "dates": "2-5 avril 2024",
+     "end": "2024-04-05",
+     "n": 1713,
+     "a": 50.0,
+     "b": 50.0
+    }
+   ],
+   "average": {
+    "a": 50.0,
+    "b": 50.0,
+    "polls": 1,
+    "from": "2024-04-05",
+    "to": "2024-04-05"
+   }
+  }
+ ]
+}

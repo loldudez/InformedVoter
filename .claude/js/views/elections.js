@@ -1,7 +1,7 @@
 // "My elections": the races on the visitor's ballot, matching against their views,
 // and the similarities / differences / unclear breakdown for each candidate.
 
-import { html, initials, fmtPct, fmtProb, fmtDate, fmtDR } from '../util.js';
+import { html, fmtPct, fmtProb, fmtDate, fmtDR } from '../util.js';
 import { icon } from '../icons.js';
 import { store } from '../store.js';
 import { STATE_BY_ABBR, legislatureChambers, ELECTION_DATE_LABEL } from '../data/states.js';
@@ -10,7 +10,8 @@ import { fc, statewideRaces, getRace, legislativeRaces, ensureRace, raceTitle, o
 import { rank, MIN_COMPARED } from '../model/match.js';
 import { candColors } from '../lib/charts.js';
 import { howToVote } from '../components/vote.js';
-import { PARTY_NAME, partyClass, heartBtn, starBtn, demoChip, dataChip, lastName, ratingChip } from '../components/race.js';
+import { reminderButton } from '../components/reminders.js';
+import { PARTY_NAME, partyClass, heartBtn, starBtn, demoChip, dataChip, lastName, ratingChip, candBadge, photoCredits } from '../components/race.js';
 
 async function ballotFor(ad) {
   const st = ad.state;
@@ -48,7 +49,7 @@ function raceCard(race) {
     ${f.kind === 'field' ? html`<p class="small muted" style="margin:0">No forecast for state legislative races. ${f.cands.length ? '' : 'Wikipedia doesn’t list this district’s candidates yet. '}${f.dr != null ? `The district voted ${fmtDR(f.dr)} for president in 2024.` : ''}</p>` : ''}
     ${f.open && f.kind !== 'field' ? html`<p class="small muted" style="margin:0">Open primary: all ${f.cands.length} candidates share one ballot. A majority wins outright; otherwise the top two meet in a runoff${race.runoff ? ` on ${fmtDate(race.runoff + 'T12:00:00')}` : ''}. Percentages are from the latest published poll.</p>` : ''}
     <div class="grid grid-2" style="gap:10px">${f.cands.map((c) => html`<div class="compact-cand ${partyClass(c.party)}">
-      <div class="badge" style="background:${colors[c.id]}">${initials(c.name)}</div>
+      ${candBadge(c, colors[c.id])}
       <div style="min-width:0"><div class="nm">${c.name}</div><div class="tiny faint">${PARTY_NAME[c.party] || c.party}${f.open ? '' : ` · ${fmtProb(c.win)} to win`}</div></div>
       ${c.share != null ? html`<div class="sh" style="color:${colors[c.id]};font-size:18px">${fmtPct(c.share, 0)}</div>` : ''}
       ${heartBtn(c.id, c.name, { small: true })}
@@ -68,6 +69,7 @@ function raceCard(race) {
 
 export const elections = {
   title: () => 'My elections',
+  rerenderOn: ['reminders'],
   async render() {
     const ad = store.get().address;
     if (!ad || !ad.state) {
@@ -78,15 +80,21 @@ export const elections = {
     }
     const items = await ballotFor(ad);
     const s = STATE_BY_ABBR[ad.state];
+    const runoff = items.map((it) => it.race?.runoff).find(Boolean);
     return html`<div class="wrap page stack-lg" style="max-width:1000px">
-      <div>
-        <div class="eyebrow">My elections · ${ELECTION_DATE_LABEL}</div>
-        <h1 style="margin:6px 0 8px">What’s on your ballot</h1>
-        <p class="muted" style="margin:0">${icon.pin()} ${ad.matched} · <a href="#/profile?tab=location">Change</a></p>
+      <div class="row between" style="align-items:flex-end">
+        <div>
+          <div class="eyebrow">My elections · ${ELECTION_DATE_LABEL}</div>
+          <h1 style="margin:6px 0 8px">What’s on your ballot</h1>
+          <p class="muted" style="margin:0">${icon.pin()} ${ad.matched} · <a href="#/profile?tab=location">Change</a></p>
+        </div>
+        <div class="row">${reminderButton({ id: 'us:general-2026', name: 'Election Day, November 3, 2026', date: '2026-11-03', section: 'us' })}
+          ${runoff ? reminderButton({ id: `us:runoff-${ad.state}-${runoff}`, name: `${s.name} runoff`, date: runoff, section: 'us' }) : ''}</div>
       </div>
       ${isDemo(items.find((x) => x.race)?.race) ? html`<div class="notice warn">${icon.info()}<div>The offices and districts below are your real 2026 races. The candidates, forecasts and positions are <b>demo data</b> until real candidate data is connected. Always confirm your sample ballot with ${s.name}’s election office.</div></div>` : ''}
       <div class="stack">${items.map((it) => (it.race ? raceCard(it.race) : html`<div class="card tight"><div class="row between"><b>${it.none}</b><span class="chip">No election this year</span></div><p class="small muted" style="margin:6px 0 0">${it.why}</p></div>`))}</div>
       ${howToVote(ad.state)}
+      ${photoCredits(items.flatMap((it) => (it.race ? fc(it.race).cands : [])))}
     </div>`;
   },
 };
@@ -115,7 +123,7 @@ function overlay(row, race) {
       ${row.similarities.length ? row.similarities.map((it) => evidence(it, c)) : html`<p class="muted small">No issues where you and ${lastName(c.name)} line up.</p>`}</section>
     <section class="panel p-center">
       <button type="button" class="toggle-icon close-x" data-close aria-label="Close">${icon.close()}</button>
-      <div class="badge" style="background:${colors[c.id]};width:64px;height:64px;font-size:22px;margin:4px auto 10px;border-radius:18px">${initials(c.name)}</div>
+      ${candBadge(c, colors[c.id], 'width:64px;height:64px;font-size:22px;margin:4px auto 10px;border-radius:18px')}
       <h2 style="margin:0">${c.name}</h2>
       <div class="cand-party" style="margin-bottom:10px">${PARTY_NAME[c.party] || c.party}${isDemo(c) ? ' · demo' : ''}</div>
       <div style="font-size:52px;font-weight:800;letter-spacing:-.03em;line-height:1">${row.score == null ? '—' : `${row.score}%`}</div>
@@ -155,12 +163,13 @@ export const match = {
       ${isDemo(race) ? html`<div class="notice warn">${icon.info()}<div>These candidates and their positions are <b>demo data</b>, so this ranking only shows how matching works.</div></div>` : ''}
       <div class="match-list">${ranked.map((row, i) => html`<button type="button" class="match-row" data-cand="${row.cand.id}">
         <span class="rank">${i + 1}</span>
-        <span style="min-width:0"><span class="row" style="gap:8px"><span class="badge" style="width:30px;height:30px;font-size:11px;border-radius:8px;background:${colors[row.cand.id]}">${initials(row.cand.name)}</span><b>${row.cand.name}</b></span><span class="tiny faint">${PARTY_NAME[row.cand.party] || row.cand.party} · compared on ${row.compared} of ${row.userAnswered} issues</span></span>
+        <span style="min-width:0"><span class="row" style="gap:8px">${candBadge(row.cand, colors[row.cand.id], 'width:30px;height:30px;font-size:11px;border-radius:8px')}<b>${row.cand.name}</b></span><span class="tiny faint">${PARTY_NAME[row.cand.party] || row.cand.party} · compared on ${row.compared} of ${row.userAnswered} issues</span></span>
         <span class="meter"><span style="width:${row.score ?? 0}%"></span></span>
         <span class="pct">${row.score == null ? '—' : `${row.score}%`}</span>
       </button>`)}</div>
       <p class="small faint">How the score works: each issue scores 100% for identical answers down to 0% for opposite extremes, averaged over issues where the candidate’s position is documented. A candidate needs at least ${MIN_COMPARED} documented positions to get a score.</p>
       <div class="row"><a class="btn btn-sm" href="#/elections/${id}/quiz">Answer differently for this election</a><a class="btn btn-sm btn-ghost" href="#/race/${id}">Full forecast</a></div>
+      ${photoCredits(ranked.map((row) => row.cand))}
     </div>`;
   },
   async mount(root, ctx) {

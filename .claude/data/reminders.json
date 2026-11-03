@@ -1,0 +1,49 @@
+{
+ "updated": "2026-11-03T11:13:48+00:00",
+ "elections": {
+  "us:general-2026": {
+   "section": "us",
+   "page": "#/elections",
+   "rounds": [
+    {
+     "date": "2026-11-03",
+     "name": {
+      "en": "Election Day, November 3, 2026"
+     }
+    }
+   ]
+  },
+  "us:runoff-LA-2026-12-12": {
+   "section": "us",
+   "page": "#/elections",
+   "rounds": [
+    {
+     "date": "2026-12-12",
+     "name": {
+      "en": "Louisiana runoff"
+     }
+    }
+   ]
+  },
+  "fr:presidentielle-2027": {
+   "section": "fr",
+   "page": "#/fr/calendrier?e=presidentielle-2027",
+   "rounds": [
+    {
+     "date": "2027-04-18",
+     "name": {
+      "fr": "Élection présidentielle, 1er tour",
+      "en": "Presidential election, round 1"
+     }
+    },
+    {
+     "date": "2027-05-02",
+     "name": {
+      "fr": "Élection présidentielle, 2nd tour",
+      "en": "Presidential election, round 2"
+     }
+    }
+   ]
+  }
+ }
+}

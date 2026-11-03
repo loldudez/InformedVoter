@@ -238,9 +238,21 @@ class HouseRecord:
                 ids.add(m["id"])
         if len(ids) > 1 and party:
             ids = {i for i in ids if any(m["id"] == i and m["party"] == party for ms in self.rolls.values() for m in ms)}
+        if len(ids) > 1:
+            # A sitting member and a predecessor with the same surname (Adelita and Raúl
+            # Grijalva, whom the Clerk lists by surname alone): only the member is still
+            # voting, so keep whoever appears in the latest roll call.
+            latest = max(self.rolls, key=lambda k: HOUSE_VOTES[k][:2])
+            current = {m["id"] for m in self.rolls[latest]} & ids
+            if len(current) == 1:
+                ids = current
         if len(ids) != 1:
             return None
-        mid = ids.pop()
+        return self.votes_for(ids.pop())
+
+    def votes_for(self, mid):
+        """{vote key: vote} for the Clerk's member id `mid` (also used for former
+        members, who are named by id because their seats belong to others now)."""
         votes = {}
         for k, members in self.rolls.items():
             for m in members:

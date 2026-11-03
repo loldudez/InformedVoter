@@ -5,7 +5,8 @@ figures: update_races.py drops it as soon as a report with numbers arrives.
 
 NO_REPORT: the FEC lists the candidate, but its page had no report for the 2026
 campaign yet. NOT_FOUND: no FEC record for the candidate in that district turned up
-by name; candidates who raise or spend under $5,000 don't have to register.
+by name (Wikipedia's spellings hid two who do have one: Maria Rodriguez, now in
+fec_house_2026.py, and Timothy Teagan; Dave Wood, CO-8, has none under either name); candidates who raise or spend under $5,000 don't have to register.
 
     py scripts/research/fec_notes_2026.py
 """
@@ -89,6 +90,7 @@ NO_REPORT = [
     ('MI-H-06:smiley', 'H4MI06154'),
     ('MI-H-07:dedrick', 'H6MI07306'),
     ('MI-H-08:casha', 'H4MI08176'),
+    ('MI-H-06:tegan', 'H6MI06258'),  # Teagan on the FEC's list (searched again Oct. 27)
     ('MI-H-08:goodwin', 'H8MI05124'),
     ('MI-H-08:pettus', 'H6MI08320'),
     ('MI-H-09:clayton', 'H6MI09260'),
@@ -216,7 +218,6 @@ NOT_FOUND = [
     'GA-H-05:salvesen',
     'IA-H-02:stewart',
     'IN-H-02:henry',
-    'KY-H-03:rodriquez',
     'LA-H-01:glass',
     'LA-H-02:beach',
     'LA-H-02:collins',
@@ -226,7 +227,6 @@ NOT_FOUND = [
     'MA-H-03:conlon',
     'MD-H-04:husseini',
     'MD-H-04:mcdermott',
-    'MI-H-06:tegan',
     'MI-H-10:nkromo',
     'MI-H-13:coleman',
     'MO-H-02:daugherty',

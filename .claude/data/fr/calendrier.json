@@ -1,0 +1,160 @@
+{
+ "updated": "2026-11-03T11:13+00:00",
+ "elections": [
+  {
+   "id": "presidentielle-2027",
+   "type": "presidentielle",
+   "date": "2027-04-18",
+   "round2": "2027-05-02",
+   "status": "fixed",
+   "scope": "national",
+   "name": {
+    "fr": "Élection présidentielle",
+    "en": "Presidential election"
+   },
+   "what": {
+    "fr": "Élection du président de la République pour cinq ans, au suffrage universel direct, en deux tours.",
+    "en": "Elects the President of the Republic for five years by direct universal suffrage, in two rounds."
+   },
+   "href": "#/fr/presidentielle",
+   "source": {
+    "title": "Élection présidentielle française de 2027",
+    "url": "https://fr.wikipedia.org/wiki/Élection_présidentielle_française_de_2027",
+    "revid": 240947719,
+    "checked": "2026-10-28"
+   }
+  },
+  {
+   "id": "regionales-2028",
+   "type": "regionales",
+   "month": "2028-03",
+   "status": "expected",
+   "scope": "region",
+   "excludeRegs": [
+    "06"
+   ],
+   "special": {
+    "94": {
+     "fr": "En Corse, l’Assemblée de Corse est élue le même jour.",
+     "en": "In Corsica, the Corsican Assembly is elected the same day."
+    },
+    "02": {
+     "fr": "En Martinique, l’Assemblée de Martinique est élue le même jour.",
+     "en": "In Martinique, the Assembly of Martinique is elected the same day."
+    },
+    "03": {
+     "fr": "En Guyane, l’Assemblée de Guyane est élue le même jour.",
+     "en": "In French Guiana, the Assembly of French Guiana is elected the same day."
+    }
+   },
+   "name": {
+    "fr": "Élections régionales",
+    "en": "Regional elections"
+   },
+   "what": {
+    "fr": "Renouvellement des conseils régionaux (et des assemblées de Corse, de Martinique et de Guyane), prévu en mars 2028 en même temps que les départementales. Le jour exact n’est pas encore fixé.",
+    "en": "Elects the regional councils (and the assemblies of Corsica, Martinique and French Guiana), planned for March 2028 alongside the departmental elections. The exact day isn’t set yet."
+   },
+   "source": {
+    "title": "Wikipédia : Élections régionales françaises de 2028",
+    "url": "https://fr.wikipedia.org/wiki/Élections_régionales_françaises_de_2028",
+    "checked": "2026-10-28"
+   }
+  },
+  {
+   "id": "departementales-2028",
+   "type": "departementales",
+   "month": "2028-03",
+   "status": "expected",
+   "scope": "departement",
+   "excludeDeps": [
+    "75",
+    "2A",
+    "2B",
+    "972",
+    "973",
+    "976"
+   ],
+   "special": {
+    "69": {
+     "fr": "Dans les communes de la Métropole de Lyon, il n’y a pas d’élection départementale : le conseil de la Métropole est élu avec les municipales.",
+     "en": "In the communes of the Lyon Metropolis there is no departmental election: the Metropolis council is elected with the municipal elections."
+    }
+   },
+   "name": {
+    "fr": "Élections départementales",
+    "en": "Departmental elections"
+   },
+   "what": {
+    "fr": "Renouvellement des 95 conseils départementaux, prévu en mars 2028 en même temps que les régionales. Paris, la Corse, la Martinique, la Guyane et Mayotte n’ont pas de conseil départemental. Le jour exact n’est pas encore fixé.",
+    "en": "Elects the 95 departmental councils, planned for March 2028 alongside the regional elections. Paris, Corsica, Martinique, French Guiana and Mayotte have no departmental council. The exact day isn’t set yet."
+   },
+   "source": {
+    "title": "Wikipédia : Élections départementales françaises de 2028",
+    "url": "https://fr.wikipedia.org/wiki/Élections_départementales_françaises_de_2028",
+    "checked": "2026-10-28"
+   }
+  },
+  {
+   "id": "legislatives",
+   "type": "legislatives",
+   "date": "2029-06-17",
+   "round2": "2029-06-24",
+   "status": "latest",
+   "scope": "national",
+   "name": {
+    "fr": "Élections législatives",
+    "en": "Legislative elections"
+   },
+   "what": {
+    "fr": "Élection des 577 députés de l’Assemblée nationale, au plus tard les 17 et 24 juin 2029 ; plus tôt en cas de dissolution.",
+    "en": "Elects the 577 members of the National Assembly, by June 17 and 24, 2029 at the latest; sooner if the Assembly is dissolved."
+   },
+   "source": {
+    "title": "Wikipédia : Prochaines élections législatives françaises",
+    "url": "https://fr.wikipedia.org/wiki/Prochaines_élections_législatives_françaises",
+    "checked": "2026-10-28"
+   }
+  },
+  {
+   "id": "europeennes-2029",
+   "type": "europeennes",
+   "month": "2029-06",
+   "status": "expected",
+   "scope": "national",
+   "name": {
+    "fr": "Élections européennes",
+    "en": "European elections"
+   },
+   "what": {
+    "fr": "Élection des députés français au Parlement européen. Ces élections ont lieu début juin, tous les cinq ans ; les prochaines auront lieu en 2029.",
+    "en": "Elects France’s members of the European Parliament. They are held in early June every five years; the next are in 2029."
+   },
+   "source": {
+    "title": "Wikipédia : Élections du Parlement européen",
+    "url": "https://fr.wikipedia.org/wiki/Élections_du_Parlement_européen",
+    "checked": "2026-10-28"
+   }
+  },
+  {
+   "id": "municipales-2032",
+   "type": "municipales",
+   "month": "2032-03",
+   "status": "expected",
+   "scope": "commune",
+   "name": {
+    "fr": "Élections municipales",
+    "en": "Municipal elections"
+   },
+   "what": {
+    "fr": "Élection des conseils municipaux, qui élisent le maire. Les dernières ont eu lieu les 15 et 22 mars 2026 ; le mandat dure six ans.",
+    "en": "Elects the municipal councils, which then elect the mayor. The last were held on March 15 and 22, 2026; the term is six years."
+   },
+   "source": {
+    "title": "Wikipédia : Élections municipales en France",
+    "url": "https://fr.wikipedia.org/wiki/Élections_municipales_en_France",
+    "checked": "2026-10-28"
+   }
+  }
+ ]
+}

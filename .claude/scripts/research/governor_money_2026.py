@@ -16,7 +16,6 @@ from common import write
 AR = ("Steve Brawner’s column, Arkadelphian, July 23, 2026", "https://arkadelphian.com/2026/07/23/governor-has-money-opponents-had-debate/", "2026-07-23")
 CO = ("Colorado Newsline, Oct. 8, 2026", "https://coloradonewsline.com/2026/10/08/weiser-democrats-fundraising-edge/", "2026-10-08")
 CT = ("CT Mirror, Oct. 13, 2026", "https://ctmirror.org/2026/10/13/fazio-lamont-campaign-finance-report/", "2026-10-13")
-FL = ("Florida Phoenix, Sept. 25, 2026", "https://floridaphoenix.com/2026/09/25/jolly-to-national-democrats-show-me-some-money/", "2026-09-25")
 HI = ("Hawaii News Now, July 11, 2026", "https://www.hawaiinewsnow.com/2026/07/11/new-campaign-spending-reports-show-fundraising-gaps-across-key-hawaii-races/", "2026-07-11")
 IA = ("Iowa Public Radio, Oct. 20, 2026", "https://www.iowapublicradio.org/political-news/2026-10-20/zach-lahn-rob-sand-fundraising-iowa-governors-race-midterm-elections", "2026-10-20")
 ID = ("Idaho Capital Sun, June 16, 2026", "https://idahocapitalsun.com/2026/06/16/idaho-gov-brad-little-reports-raising-more-campaign-money-than-all-other-statewide-candidates/", "2026-06-16")
@@ -57,10 +56,8 @@ RACES = {
         "CT-GOV:lamont": reported(CT, "Opted out of public financing and has largely paid for his campaign himself. Spent $10.6 million from July through September 2026 and $13.6 million since his campaign opened in 2025, with nearly $2.2 million on hand at the end of September."),
         "CT-GOV:fazio": reported(CT, "Runs on public financing: an $18 million Citizens’ Election Program grant arrived July 15. Spent $9.6 million from July through September 2026 and $10.6 million since his campaign opened, and began October with $8.4 million."),
     },
-    "FL-GOV": {
-        # Donalds has a total from the automatic refresh, which a note-only record would replace.
-        "FL-GOV:jolly": reported(FL, "Had raised $15.8 million across his campaign account and his political committee by late September 2026."),
-    },
+    # FL-GOV: every candidate's account is grouped by contributor from the state's
+    # database in florida_money_2026.py.
     "HI-GOV": {
         "HI-GOV:green": reported(HI, "Had collected $3.5 million since his 2022 win and had $2 million on hand in the July 2026 reports."),
         "HI-GOV:cordery": reported(HI, "Had raised just over $300,000 and spent all of it, reporting $14,000 in debt, in the July 2026 reports."),

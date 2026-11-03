@@ -66,6 +66,10 @@ GOV_HOLDOVER = {"D": ["DE", "KY", "NJ", "NC", "VA", "WA"], "R": ["IN", "LA", "MS
 SENATE_INDEPENDENTS_CAUCUS = "D"
 # Midterm turnout relative to the last presidential election: 0.71 in 2022, 0.85 in 2018.
 MIDTERM_RATIO = 0.75
+# The UF Election Lab's early-vote data is licensed for non-commercial use only (CC
+# BY-NC-ND). The site has carried ads since Nov. 3, 2026, so it is neither read nor
+# published until that is settled; SHOW_EARLY_VOTE in js/config.js hides the tab.
+EARLY_VOTE = False
 POLYMARKET = {
     "senate": "which-party-will-win-the-senate-in-2026",
     "house": "which-party-will-win-the-house-in-2026",
@@ -287,6 +291,23 @@ def overall_rows(html_text, sec, key_head):
     return out
 
 
+def merge_member_rows(first, second):
+    """Redistricting can put two sitting members' seats in one new district, and the
+    House page then gives that district a row per member, sharing one candidates
+    cell (Texas 25: Roger Williams, then Marc Veasey). Keeping only the last row
+    dropped Williams as the incumbent and called the seat Democratic. Every member
+    running here stays flagged, the seat is held by the party of the first member
+    running (else the first row's), and every member's article is kept for matching
+    their recorded votes."""
+    running = [r for r in (first, second) if not r["open"]]
+    keep = running[0] if running else first
+    flagged = {c["id"] for r in (first, second) for c in r["candidates"] if c.get("incumbent")}
+    for c in first["candidates"]:
+        c["incumbent"] = c["id"] in flagged
+    return dict(keep, candidates=first["candidates"], open=not running,
+                memberWikis=first["memberWikis"] + [w for w in second["memberWikis"] if w not in first["memberWikis"]])
+
+
 def house_races(pages, status, map_index):
     races = {}
     h = pages.html(PAGES["house"])
@@ -333,18 +354,19 @@ def house_races(pages, status, map_index):
                 if held not in ("D", "R", "I"):
                     held = None
                 n_cd = map_index.get(st, {}).get("cd", 0)
+                member_wiki = None if vacant or c_member is None else next(("https://en.wikipedia.org" + l["href"] for l in row[c_member]["links"] if l["href"].startswith("/wiki/") and ":" not in l["href"]), None)
                 race = {
                     "id": rid, "state": st, "office": "house", "level": "federal", "district": code,
                     "districtName": "Delegate (at large)" if st == "DC" else ("At-large district" if code == "00" else f"District {int(code)}"),
                     "statewide": n_cd == 1, "special": False, "held": held, "incumbentName": None if vacant else member,
                     "open": not inc_running, "statusText": status_text,
-                    "incumbentWiki": None if vacant or c_member is None else next(("https://en.wikipedia.org" + l["href"] for l in row[c_member]["links"] if l["href"].startswith("/wiki/") and ":" not in l["href"]), None),
+                    "incumbentWiki": member_wiki, "memberWikis": [member_wiki] if member_wiki else [],
                     "pvi": el.parse_pvi(wt.text(row[c_pvi])) if c_pvi is not None else None,
                     "candidates": people,
                 }
                 race.update(FORMATS.get((st, "house"), {}))
                 race["rcv"] = (st, "house") in RCV
-                races[rid] = race
+                races[rid] = merge_member_rows(races[rid], race) if rid in races else race
     # Ratings for competitive seats.
     rh = pages.html(PAGES["ratings"])
     rated = el.ratings_table(rh, "District")
@@ -588,7 +610,9 @@ def combine_overlays(a, b):
     for c in b.get("candidates", []):
         old = cands.get(c["id"])
         if old:
-            merged = {**old, **{k: v for k, v in c.items() if v is not None}}
+            # None means "not researched here", except officialSite: None, which drops
+            # a dead campaign link and must survive a later file's merge.
+            merged = {**old, **{k: v for k, v in c.items() if v is not None or k == "officialSite"}}
             if old.get("positions") and c.get("positions"):
                 merged["positions"] = {**old["positions"], **c["positions"]}
             if old.get("finance") and c.get("finance") and (c["finance"].get("asOf") or "") < (old["finance"].get("asOf") or ""):
@@ -627,25 +651,40 @@ def load_overlays(status):
 
 SUFFIX = re.compile(r"\s+(Jr\.?|Sr\.?|II|III|IV)$")
 
+# Former House members on the 2026 ballot whose votes fall inside the roll calls in
+# house_votes.py, by the Clerk's member id. Matched by hand: a name search alone also
+# finds relatives and namesakes (Hannah and Chellie Pingree, Alan and Joe Wilson,
+# Trever and Troy Nehls).
+FORMER_MEMBERS = {
+    "AK-SEN:peltola": "P000619",  # Mary Peltola, Alaska at-large, 2022-2025
+    "AL-H-01:carl": "C001054",    # Jerry Carl, Alabama 1st, 2021-2025
+    "TX-H-33:allred": "A000376",  # Colin Allred, Texas 32nd, 2019-2025
+    "VA-H-02:luria": "L000591",   # Elaine Luria, Virginia 2nd, 2019-2023
+}
+
 
 def attach_house_votes(races, status):
     """Every current House member on the ballot (running again, or for Senate or
     governor) gets positions from their recorded votes. Members are identified by
     the Wikipedia article their House seat links to, then matched to the Clerk's
-    roll calls by state and name. Returns how many candidates got positions."""
+    roll calls by state and name; former members come from FORMER_MEMBERS. Returns
+    how many candidates got positions."""
     try:
         record = house_votes.HouseRecord()
     except Exception as e:
         status.warn(f"House roll calls unavailable: {e}")
         return 0
-    seats = {r["incumbentWiki"]: r for r in races.values() if r["office"] == "house" and r.get("incumbentWiki")}
+    seats = {w: r for r in races.values() if r["office"] == "house" for w in r.get("memberWikis") or []}
     n = 0
     for race in races.values():
         for c in race["candidates"]:
-            seat = race if race["office"] == "house" and c.get("incumbent") else seats.get(c.get("wiki"))
-            if not seat:
-                continue
-            votes = record.member_votes(seat["state"], c["name"], c["party"] if c["party"] in ("D", "R") else None)
+            if c["id"] in FORMER_MEMBERS:
+                votes = record.votes_for(FORMER_MEMBERS[c["id"]])
+            else:
+                seat = race if race["office"] == "house" and c.get("incumbent") else seats.get(c.get("wiki"))
+                if not seat:
+                    continue
+                votes = record.member_votes(seat["state"], c["name"], c["party"] if c["party"] in ("D", "R") else None)
             if not votes:
                 continue
             surname = SUFFIX.sub("", c["name"]).split()[-1]
@@ -768,11 +807,16 @@ def main():
     voted = attach_house_votes(races, status)
 
     log("Early vote")
-    ev_states, ev_districts, ev_info = early_vote.load({st: v.get("cd", 0) for st, v in map_index.items()})
-    status.check("early-vote", "Early-vote returns found", bool(ev_info.get("states")),
-                 (f"{ev_info['states']} states and {ev_info['districts']} House districts from the UF Election Lab, latest {ev_info['latest']}"
-                  + (f"; district files left out as incomplete: {', '.join(ev_info['partial'])}" if ev_info.get("partial") else ""))
-                 if ev_info.get("ok") else ev_info.get("reason"))
+    if EARLY_VOTE:
+        ev_states, ev_districts, ev_info = early_vote.load({st: v.get("cd", 0) for st, v in map_index.items()})
+        status.check("early-vote", "Early-vote returns found", bool(ev_info.get("states")),
+                     (f"{ev_info['states']} states and {ev_info['districts']} House districts from the UF Election Lab, latest {ev_info['latest']}"
+                      + (f"; district files left out as incomplete: {', '.join(ev_info['partial'])}" if ev_info.get("partial") else ""))
+                     if ev_info.get("ok") else ev_info.get("reason"))
+    else:
+        ev_states, ev_districts = {}, {}
+        status.check("early-vote", "Early-vote returns", True,
+                     "Not read or shown while the site carries ads: the UF Election Lab's data is licensed for non-commercial use only")
 
     log("State legislatures")
     try:
@@ -833,6 +877,7 @@ def main():
         r.pop("incumbentName", None)
         r.pop("statusText", None)
         r.pop("incumbentWiki", None)
+        r.pop("memberWikis", None)
         if not r.get("candidates"):
             status.warn(f"{rid}: no candidates listed; left to the demo set")
             continue

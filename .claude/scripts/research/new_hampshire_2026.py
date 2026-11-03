@@ -1,5 +1,5 @@
 """Researched positions for New Hampshire's statewide races: U.S. Senate (Pappas vs.
-Sununu) and governor (Ayotte vs. Warmington). Writes data/research/NH.json.
+Sununu) and governor (Ayotte vs. Warmington, with Libertarian Stephen Villee). Writes data/research/NH.json.
 
 Senate positions come from guides.vote's nonpartisan New Hampshire guide, which
 ties each stance to a vote, bill or statement (read Oct. 25, 2026); Pappas's
@@ -82,8 +82,18 @@ senate = {
     ],
 }
 
+CC_VILLEE = lambda note: page(f"Citizens Count, Stephen Villee’s answers to its issue survey: {note}", "https://www.citizenscount.org/candidate/stephen-villee", "2026-10-26")
+
 governor = {
     "id": "NH-GOV",
+    # Wikipedia lists Jon Kiper, who missed the signature cutoff, and not Stephen
+    # Villee, who qualified; the researched list is the ballot.
+    "candidatesOnly": True,
+    "notes": [
+        {"text": "Jon Kiper, still listed by Wikipedia, ended his independent campaign in August after falling short of the signatures needed for the ballot.",
+         "source": "Citizens Count", "url": "https://www.citizenscount.org/candidate/jonathan-adam-kiper"},
+        {"text": "Libertarian Stephen Villee qualified for the ballot by petition (WMUR, Oct. 20).",
+         "source": "Citizens Count", "url": "https://www.citizenscount.org/candidate/stephen-villee"}],
     "candidates": [
         {"id": "NH-GOV:ayotte", "name": "Kelly Ayotte", "party": "R",
          "bio": "Governor of New Hampshire since 2025, U.S. senator from 2011 to 2017 and earlier state attorney general.",
@@ -109,6 +119,20 @@ governor = {
              ("eco-10", -1, WCAX("Warmington would push for consumer refunds on tariffs"), None),
              ("eco-02", 1, WCAX("Warmington would suspend the state gas tax and rules out new taxes on working people"), None),
              ("imm-08", -1, WARMINGTON_SITE("Warmington opposes the planned ICE detention facility in Merrimack"), "say no to ICE's human warehouse in Merrimack or anywhere else"))},
+        {"id": "NH-GOV:villee", "name": "Stephen Villee", "party": "L",
+         "bio": "Hampton software developer with a math degree from Harvard; on the ballot as a Libertarian.",
+         "positions": P(
+             ("soc-12", -1, CC_VILLEE("Villee would let the anti-discrimination law allow separation by biological sex in bathrooms and locker rooms (2026)"), None),
+             ("eco-01", -1, CC_VILLEE("Villee opposes an income tax and bringing back the interest and dividends tax (2026)"), None),
+             ("eco-12", -1, CC_VILLEE("Villee opposes an income tax (2026)"), None),
+             ("hou-04", 1, CC_VILLEE("Villee wants the state to push towns to remove zoning barriers to housing (2026)"), None),
+             ("ene-02", 1, CC_VILLEE("Villee wants the state to encourage nuclear power (2026)"), None),
+             ("soc-05", 2, CC_VILLEE("Villee supports legalizing recreational marijuana in each form asked (2026)"), None),
+             ("soc-03", 0, CC_VILLEE("Villee answered Undecided on every abortion question, saying he would stay neutral (2026)"), None),
+             ("soc-04", 0, CC_VILLEE("Villee answered Undecided on every abortion question, saying he would stay neutral (2026)"), None),
+             ("sta-03", -1, CC_VILLEE("Villee opposed raising the minimum wage (2024)"), None),
+             ("soc-07", -1, CC_VILLEE("Villee opposed more state money for child care providers (2024)"), None),
+             ("ene-06", -1, CC_VILLEE("Villee opposed more state action on climate change (2024)"), None))},
     ],
 }
 

@@ -106,6 +106,7 @@ AK_BRONSON = site("Dave Bronson campaign site", "https://www.davebronson.com/")
 AK_BRONSON_ABOUT = site("Dave Bronson campaign site, About Dave", "https://www.davebronson.com/about-dave")
 AR_SHOFFNER = site("Hallie Shoffner campaign site, Priorities", "https://www.hallieshoffner.com/platform")
 OR_SMITH = site("David Brock Smith campaign site, Issues", "https://www.davidbrocksmithfororegon.com/issues")
+OR_KATU = lambda note: page(f"KATU Know Your Candidates interview: {note}", "https://katu.com/news/know-your-candidates/david-brock-smith-us-senate-republican", "2026-10-27")  # noqa: E731
 VA_MIZUSAWA = site("Bert Mizusawa campaign site, Where I Stand", "https://bertforsenate.com/issues")
 HI_CB = article("Honolulu Civil Beat candidate Q&A, July 20, 2026", "https://www.civilbeat.org/2026/07/candidate-qa-governor-josh-green-2/", "2026-07-20")
 HI_GREEN_COST = site("Josh Green campaign site, Cost of Living", "https://joshgreenforhawaii.com/issues/cost-of-living/")
@@ -623,7 +624,12 @@ races = [
     {"id": "OR-SEN", "candidates": [cand(
         "OR-SEN:smith", "David Brock Smith", "https://www.davidbrocksmithfororegon.com/",
         ("hea-06", 1, OR_SMITH("Ending the Homelessness Crisis"), "We need drug and mental health treatment that works"),
-        ("ene-08", 1, OR_SMITH("Wildfire Prevention Policy"), "address the desperate need for active forest management, fuel reduction, and working with landowners to better protect homes and communities"))]},
+        ("ene-08", 1, OR_SMITH("Wildfire Prevention Policy"), "address the desperate need for active forest management, fuel reduction, and working with landowners to better protect homes and communities"),
+        ("def-15", 2, OR_KATU("Brock Smith says the U.S. must finish what it started in Iran"), "we cannot allow Iran to have a nuclear weapon, and we need to finish what we started"),
+        ("def-04", 1, OR_KATU("Brock Smith says Congress should play a pivotal role in any military action"), "Congress needs to play a pivotal role in any military action."),
+        ("gov-05", 2, OR_KATU("Brock Smith fully supports voter ID"), "I am fully supportive of voter ID, as the country has overwhelmingly supported"),
+        ("ene-10", 1, OR_KATU("Brock Smith warns that Oregon’s decarbonization plans will drive up fuel prices"), "$6.50 diesel today is going to seem cheap in less than a decade to Oregonians"),
+        ("ene-06", -1, OR_KATU("Brock Smith opposes continuing the Climate Protection Program’s decarbonization plans"), None))]},
     {"id": "VA-SEN", "candidates": [cand(
         "VA-SEN:mizusawa", "Bert Mizusawa", "https://bertforsenate.com/",
         ("def-03", 2, VA_MIZUSAWA("Defending Our Military"), "I will protect veterans' benefits, expand access to quality healthcare, and ensure veterans aren't stuck waiting on Washington for the care they earned."),

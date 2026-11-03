@@ -101,22 +101,6 @@
    ]
   },
   {
-   "id": "FL-GOV",
-   "financeOnly": true,
-   "candidates": [
-    {
-     "id": "FL-GOV:jolly",
-     "finance": {
-      "source": "Florida Phoenix, Sept. 25, 2026",
-      "url": "https://floridaphoenix.com/2026/09/25/jolly-to-national-democrats-show-me-some-money/",
-      "asOf": "2026-09-25",
-      "note": "Had raised $15.8 million across his campaign account and his political committee by late September 2026.",
-      "parts": {}
-     }
-    }
-   ]
-  },
-  {
    "id": "HI-GOV",
    "financeOnly": true,
    "candidates": [

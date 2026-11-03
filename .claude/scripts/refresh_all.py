@@ -9,6 +9,15 @@
 4. Every race, the forecasts and chamber control (update_races.py).
 5. The validator. If the new race data fails it, the previous race, control and
    status files are put back, so the site never shows a broken refresh.
+   Then who sits in Congress (update_congress.py) and the candidates' photos
+   (update_photos.py), once a day; each keeps its previous file when a source can't be
+   read.
+6. The France section (scripts/fr/): the presidential candidates and polls, the
+   parties, who sits in Parliament and the figures behind "Les grands enjeux" once a
+   day, the election calendar and the candidates' researched positions every run. Its
+   own files, kept apart from step 5.
+7. The elections the mail service may send reminders for (update_reminders.py, no
+   network), every run.
 
 Each run is appended to data/cache/refresh.log.
 """
@@ -91,9 +100,28 @@ def main():
             })
             st_path.write_text(json.dumps(st, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         log("race data restored from the last good refresh")
+    if older_than(DATA / "congress.json", 20):                     # who sits in Congress: once a day
+        ok &= run(["scripts/update_congress.py"])
+    if older_than(DATA / "photos.json", 20):                       # candidates' photos: once a day
+        ok &= run(["scripts/update_photos.py"])
+
+    # The France section (data/fr/): separate files, so a failure here never touches the
+    # U.S. data; each script keeps its previous file when it can't build a new one.
+    fr_ok = True
+    if older_than(DATA / "fr" / "presidentielle-2027.json", 20):   # candidates and polls: once a day
+        fr_ok &= run(["scripts/fr/update_presidentielle.py"])
+    if older_than(DATA / "fr" / "partis.json", 20):                # parties and leaders: once a day
+        fr_ok &= run(["scripts/fr/partis.py"])
+    if older_than(DATA / "fr" / "parlement.json", 20):             # who sits in Parliament: once a day
+        fr_ok &= run(["scripts/fr/parlement.py"])
+    if older_than(DATA / "fr" / "enjeux.json", 20):                # "Les grands enjeux" figures: once a day
+        fr_ok &= run(["scripts/fr/enjeux.py"])
+    fr_ok &= run(["scripts/fr/calendrier.py"])
+    fr_ok &= run(["scripts/fr/positions_2027.py"])                  # hand research; no network
+    ok &= run(["scripts/update_reminders.py"])                      # what email reminders may cover; no network
     trim_log()
-    log("refresh finished" + ("" if ok else " with errors"))
-    return 0 if ok else 1
+    log("refresh finished" + ("" if ok and fr_ok else " with errors"))
+    return 0 if ok and fr_ok else 1
 
 
 if __name__ == "__main__":

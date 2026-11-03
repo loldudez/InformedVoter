@@ -68,6 +68,8 @@ def party_code(name):
         return "D"
     if n.startswith("libertarian"):
         return "L"
+    if n.startswith("green mountain"):  # Vermont's Green Mountain Peace and Justice Party, not the Greens
+        return "Peace and Justice"
     if n.startswith("green"):
         return "G"
     if n in ("independent", "unaffiliated", "no party preference", "nonpartisan", "no party", "nonaffiliated"):

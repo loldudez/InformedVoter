@@ -11,25 +11,42 @@ it; anything else stays "unclear".
     py scripts/research/candidates_2026.py
 """
 
-from common import P, page, write
+from common import P, article, page, write
 
 READ = "2026-10-26"
+READ27 = "2026-10-27"  # sites found and read a day later
 
 
-def site(name, url):
-    return lambda note: page(f"{name} campaign site: {note}", url, READ)
+def site(name, url, read=READ):
+    return lambda note: page(f"{name} campaign site: {note}", url, read)
 
 
 RACES = {}
+RACE_FIELDS = {}  # race-level fields, such as candidatesOnly where Wikipedia's list is wrong
 
 
-def cand(race, cid, name, party, bio, *rows):
-    out = {"id": cid, "name": name, "party": party}
+def cand(race, cid, name, party, bio, *rows, **fields):
+    """fields: other candidate fields, such as officialSite=None to drop a dead
+    campaign link that the automatic refresh picked up."""
+    out = {"id": cid, "name": name, "party": party, **fields}
     if bio:
         out["bio"] = bio
     if rows:
         out["positions"] = P(*rows)
     RACES.setdefault(race, []).append(out)
+
+
+def more(race, cid, *rows, bio=None, **fields):
+    """Add positions (and a bio, if the entry has none) to a candidate entered earlier
+    in this file, so one candidate never gets two entries."""
+    entry = next(c for c in RACES[race] if c["id"] == cid)
+    if rows:
+        added = P(*rows)
+        assert not set(added) & set(entry.get("positions", {})), cid
+        entry.setdefault("positions", {}).update(added)
+    if bio and not entry.get("bio"):
+        entry["bio"] = bio
+    entry.update(fields)
 
 
 # Texas Senate: Ted Brown (Libertarian) ---------------------------------------------
@@ -124,8 +141,12 @@ cand("FL-GOV", "FL-GOV:abrams", "Dean Abrams", "I",
      ("sta-04", 2, ABRAMS("Abrams would end property tax on homesteads worth up to twice the county median"), "No property tax on homesteaded homes worth up to twice your county’s median."),
      ("hou-02", 2, ABRAMS("Abrams would stop corporations buying single-family homes"), "Corporations stop buying up single-family homes."),
      ("hea-03", 1, ABRAMS("Abrams would close the coverage gap for roughly 800,000 Floridians"), None))
+BURKETT = site("Charles Burkett", "https://burkettforgov.com/")
 cand("FL-GOV", "FL-GOV:burkett", "Charles Burkett", "I",
-     "Lifelong Floridian and investor from Surfside, running with no party and taking no contributions.")
+     "Real estate investor and longtime mayor of Surfside, including after the 2021 condo collapse; running with no party and taking no contributions.",
+     ("sta-04", 2, BURKETT("Burkett would phase out property taxes for long-term residents"), "Slash and eventually eliminate property taxes for vested Florida homeowners and renters."),
+     ("hou-04", -1, BURKETT("Burkett would stop the construction boom and favor renovation"), "Stop the current radical new construction boom which is turning our roads into parking lots."),
+     ("sta-08", 1, BURKETT("Burkett would give first responders every tool they need"), "Give our first responders every tool they need to be the best in the business."))
 RUSSO = site("Frank Russo", "https://russo2026.com/priorities/")
 cand("FL-GOV", "FL-GOV:russo", "Frank Russo", "I",
      "Insurance executive for more than 30 years, running as an independent.",
@@ -298,9 +319,25 @@ cand("MA-GOV", "MA-GOV:james", "Andrea James", "I",
      ("cri-07", 1, JAMES("James would invest in communities rather than incarceration"), "Invest in Communities, Not Mass Incarceration"),
      ("gov-11", 1, JAMES_BIO("James refuses corporate campaign contributions"), "She refuses campaign contributions from corporations"))
 ELLIS = site("Andy Ellis", "https://www.gogreen2026.com/platform")
-cand("MD-GOV", "MD-GOV:ellis", "Andy Ellis", "G", None,
+MM_GOV = lambda note: page(f"Maryland Matters voter guide, candidates’ answers: {note}", "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/", READ)
+cand("MD-GOV", "MD-GOV:ellis", "Andy Ellis", "G",
+     "Debate coach and founder of Debate Strategies LLC, active in the Green Party for a decade.",
      ("sta-02", 2, ELLIS("Ellis would fully fund public education"), "Build out and fully fund our public education system so it truly works for all."),
-     ("edu-01", 2, ELLIS("Ellis would fully fund public education"), None))
+     ("edu-01", 2, ELLIS("Ellis would fully fund public education"), None),
+     ("eco-01", 2, MM_GOV("Ellis would tax the rich and end corporate tax breaks"), "We need to tax the rich and end corporate tax breaks!"),
+     ("sta-10", -1, MM_GOV("Ellis would end corporate tax breaks"), None),
+     ("eco-02", 1, MM_GOV("Ellis would use the money for bigger tax credits for working-class Marylanders"), None),
+     ("gov-07", 2, MM_GOV("Ellis supports ranked-choice voting and proportional representation"), "public financing for all races, and ranked choice voting and proportional representation"),
+     ("gov-11", 1, MM_GOV("Ellis supports public financing for all races"), None),
+     ("hea-01", 1, MM_GOV("Ellis would explore single-payer health care at the state level"), "We should explore a single-payer model at the state level."),
+     ("imm-08", -2, MM_GOV("Ellis says no Maryland government or police agency should work with ICE"), "In Maryland, no government or law enforcement entities should collaborate with ICE"))
+cand("MD-GOV", "MD-GOV:white", "Cathy White", "Working Class",
+     "Factory worker for 40 years and caregiver for her mother and sister; the Working Class Party nominee.",
+     ("hea-01", 1, MM_GOV("White says health care should be a human right"), "Health care should be a human right and not based on how much money you have."),
+     ("sta-03", 1, MM_GOV("White says everyone able to work needs a job with a living wage"), "Every person able to work needs a job with a living wage."),
+     ("sta-01", 1, MM_GOV("White would put the unemployed to work fixing roads and bridges"), "people who are now unemployed could be put to work fixing the crumbling roads and bridges that need to be repaired or replaced"),
+     ("eco-09", 1, MM_GOV("White says workers must organize to win higher wages"), None),
+     ("imm-08", -1, MM_GOV("White opposes ICE’s actions"), "I am opposed to the actions of ICE."))
 HUDSON = site("Anthony Hudson", "https://electanthonyhudson.com/")
 HUDSON_POL = site("Anthony Hudson", "https://electanthonyhudson.com/policies/")
 cand("MI-GOV", "MI-GOV:hudson", "Anthony Hudson", "L",
@@ -389,7 +426,7 @@ cand("NC-SEN", "NC-SEN:bray", "Shannon Bray", "L",
 
 # Nebraska and New Hampshire Senate ------------------------------------------------
 cand("NE-SEN", "NE-SEN:marvin", "Mike Marvin", "Legal Marijuana Now",
-     "Retired executive director of NAPE/AFSCME Local 61, the state employees’ union. He remains on the ballot but has urged his supporters to back Dan Osborn.")
+     "Retired executive director of NAPE/AFSCME Local 61, the state employees’ union. He withdrew on Aug. 21 (VOTE411) and has urged his supporters to back Dan Osborn, but his name remains on the ballot.")
 CONBOY = site("Chuck Conboy", "https://conboyforsenate.com/platform")
 cand("NE-SEN", "NE-SEN:conboy", "Chuck Conboy", "America First",
      "Lifelong Nebraskan who worked in management and sales and as vice president of a local meatpackers and butchers union.",
@@ -439,7 +476,597 @@ cand("OH-SEN", "OH-SEN:levy", "Greg Levy", "I",
      ("gov-11", 2, LEVY("Levy would outlaw corporate lobbying and political donations"), "We will outlaw corporate lobbying and political donations"),
      ("gov-13", -2, LEVY("Levy would outlaw corporate political donations"), None),
      ("cri-03", 1, LEVY("Levy would put police under community control and prosecute police violence"), None))
+REDPATH = site("Bill Redpath", "https://billredpath.com/faq/")
+cand("OH-SEN", "OH-SEN:redpath", "William Redpath", "L",
+     "Findlay native, CPA and retired business-valuation analyst; chaired the Libertarian National Committee from 2006 to 2010.",
+     ("eco-10", -2, REDPATH("Redpath would end all tariffs"), "The United States should end all tariffs on imported goods and services, regardless of the policies of other nations."),
+     ("agr-07", -2, REDPATH("Redpath supports unilateral free trade"), None),
+     ("agr-06", 1, REDPATH("Redpath supports unilateral free trade"), None),
+     ("eco-07", 2, REDPATH("Redpath calls the debt a spending problem and would eliminate the Education and HUD departments"), "it is a too much spending, not too little taxing, problem."),
+     ("agr-01", -2, REDPATH("Redpath would end farm subsidies"), "an end to all corporate welfare and farm subsidies"),
+     ("edu-01", -1, REDPATH("Redpath would eliminate the Department of Education"), None),
+     ("hou-01", -1, REDPATH("Redpath would eliminate the Department of Housing and Urban Development"), None),
+     ("soc-05", 1, REDPATH("Redpath would end federal drug prohibition and leave it to the states"), "the Federal government should end its drug prohibition and allow the states to address this issue"),
+     ("def-15", -2, REDPATH("Redpath calls U.S. participation in the war on Iran unconstitutional"), "the United States participation in the war against Iran is clearly unconstitutional"),
+     ("def-04", 2, REDPATH("Redpath says the Iran war needed Congress’s approval"), None),
+     ("def-12", -1, REDPATH("Redpath would end the special relationship with Israel"), "We should treat Israel like any other allied nation."),
+     ("imm-03", 2, REDPATH("Redpath supports open immigration with exceptions for criminals and threats"), "Open immigration would be the greatest anti-poverty program the world has ever known."),
+     ("eco-12", -2, REDPATH("Redpath would replace the tax code with a 20% flat tax"), "A Flat Tax of 20 percent on individual income"),
+     ("eco-01", -1, REDPATH("Redpath would replace the tax code with a 20% flat tax"), None),
+     ("hea-03", -2, REDPATH("Redpath would phase out federal Medicaid funding"), "phasing out Federal subsidies over a ten year period"),
+     ("gov-07", 2, REDPATH("Redpath supports ranked-choice voting"), "I support the use of Ranked Choice Voting for single winner elections"))
+KISSICK = site("Don Kissick", "https://donkissick.com/on-the-issues")
+cand("OH-GOV", "OH-GOV:kissick", "Donald Kissick", "L",
+     "Navy veteran (six years, including Desert Storm) from Ottawa in northwestern Ohio; running with James Mills.",
+     ("sta-04", 2, KISSICK("Kissick supports the amendment to end property taxes"), "We are in favor of the end property tax amendment."),
+     ("sta-10", -1, KISSICK("Kissick would end corporate welfare for large institutions"), "eliminate corporate welfare for the larger institutions"),
+     ("gov-11", 2, KISSICK("Kissick wants no more corporate money in politics"), "We want to see no more corporate bribery."),
+     ("gov-13", -1, KISSICK("Kissick opposes contributions from regulated monopolies"), None),
+     ("sta-06", 2, KISSICK("Kissick would bar legislators from lobbying for five years"), "We want to ban legislators from becoming lobbyists for 5 years after they’re in office."),
+     ("gov-12", 2, KISSICK("Kissick wants contracts and budgets in a searchable public database"), "We want total transparency in government contracts and budgets"),
+     ("soc-10", 1, KISSICK("Kissick backs the petition to protect same-sex marriage in Ohio’s constitution"), None),
+     ("soc-05", 1, KISSICK("Kissick would get government bureaucracy out of the marijuana industry"), None),
+     ("imm-02", 2, KISSICK("Kissick supports a clear lawful path to citizenship"), "Immigrants should have a straightforward and clear lawful path to citizenship"),
+     ("imm-08", -1, KISSICK("Kissick wants civil, not militarized, immigration enforcement"), "immigration enforcement should be civil not militarized"))
+
+# Oklahoma and Oregon -------------------------------------------------------------
+MEINHARDT = site("Ron Meinhardt", "https://www.running4ok.com/")
+cand("OK-SEN", "OK-SEN:meinhardt", "Ron Meinhardt", "I",
+     "Registered nurse and Oklahoma Republican running as an independent conservative.",
+     ("def-04", 2, MEINHARDT("Meinhardt says Congress must authorize war"), "Congress must authorize war."),
+     ("def-07", 1, MEINHARDT("Meinhardt opposes forever wars"), None),
+     ("imm-01", 1, MEINHARDT("Meinhardt would secure the border and streamline deportation"), "That means securing the border, streamlining deportation, and ensuring a process that is constitutional, enforceable, and accountable."),
+     ("imm-08", 1, MEINHARDT("Meinhardt supports enforcing immigration laws"), None),
+     ("imm-02", -1, MEINHARDT("Meinhardt criticizes politicians who drift toward amnesty"), None),
+     ("ene-10", 1, MEINHARDT("Meinhardt calls affordable domestic energy a family issue"), None),
+     ("gov-03", 1, MEINHARDT("Meinhardt says voters deserve to know who funds political influence"), "Voters deserve to know who is funding political influence and what those interests expect in return."),
+     ("eco-07", 1, MEINHARDT("Meinhardt wants a solvent future, not endless debt"), None))
+STINNETT = site("Curtis Stinnett", "https://www.stinnettforsenate.org/main-ideas")
+STINNETT_HOME = site("Curtis Stinnett", "https://www.stinnettforsenate.org/")
+cand("OK-SEN", "OK-SEN:stinnett", "Curtis Stinnett", "I",
+     "Pharmacist from Lindsay, now in Tulsa; takes no campaign contributions.",
+     ("hea-01", 2, STINNETT("Stinnett supports Medicare for All"), "Healthcare is a Human Right"),
+     ("hea-03", 2, STINNETT("Stinnett supports Medicare for All"), None),
+     ("soc-03", 2, STINNETT("Stinnett would codify Roe"), "Codify Roe"),
+     ("soc-04", -2, STINNETT("Stinnett would codify Roe"), None),
+     ("gov-11", 2, STINNETT_HOME("Stinnett calls money in politics the main obstacle to better government"), "money in politics is the primary obstacle to better government"),
+     ("gov-13", -2, STINNETT("Stinnett would overturn Citizens United"), None),
+     ("eco-03", 1, STINNETT("Stinnett supports a living wage"), None))
+SMITH = site("Brett Smith", "https://brett-smith.us/")
+cand("OR-GOV", "OR-GOV:smith", "Brett Smith", "Pacific Green", None,
+     ("sta-06", 2, SMITH("Smith calls corruption the most important issue"), "Corruption is the single most important issue facing us today."),
+     ("hea-01", 2, SMITH("Smith would open the Oregon Health Plan to every resident"), "This plan expands the Oregon Health Plan into a universal public option available to every Oregon resident"),
+     ("hea-03", 2, SMITH("Smith would open the Oregon Health Plan to every resident"), None))
+
+# Rhode Island and West Virginia Senate --------------------------------------------
+BAHRY = site("Michael Bahry", "https://bahryforsenate.com/")
+cand("RI-SEN", "RI-SEN:bahry", "Michael Bahry", "I",
+     "Retired construction executive who founded the Providence nonprofit Fifty-Three: Five; teaches theology at Salve Regina University.",
+     ("gov-01", 2, BAHRY("Bahry supports term limits for Congress"), "term limits break the cycle of financial dominance, name recognition, and office perks"),
+     ("def-02", -2, BAHRY("Bahry would withdraw from NATO"), "As for the United States, I believe it's time to withdraw from NATO."),
+     ("def-07", 2, BAHRY("Bahry would focus on diplomacy over war"), "We must focus on diplomacy-not war."),
+     ("def-01", -1, BAHRY("Bahry says military spending is not a jobs program"), "War and military spending are not sustainable job programs."),
+     ("def-13", -1, BAHRY("Bahry wants peace in Ukraine rather than more weapons"), "peace over more bombs"),
+     ("def-05", -1, BAHRY("Bahry wants peace in Ukraine rather than more weapons"), None),
+     ("def-12", -1, BAHRY("Bahry calls for peace in Gaza, not more bombs"), "A call for peace, not more bombs"),
+     ("soc-04", 2, BAHRY("Bahry is pro-life"), "I am Catholic and I am pro-life."),
+     ("soc-03", -2, BAHRY("Bahry is pro-life"), None),
+     ("imm-02", 1, BAHRY("Bahry wants a compassionate solution rather than removing hardworking people"), "Rhode Islanders want a compassionate solution - not the removal of good hardworking people."),
+     ("imm-08", -1, BAHRY("Bahry objects to spending billions on mass deportations"), None),
+     ("imm-01", 1, BAHRY("Bahry would secure the border against trafficking"), "We must secure our border to stop human and drug trafficking."),
+     ("soc-12", -1, BAHRY("Bahry says biological males should not compete in women’s sports"), "clearly, biological males should not compete in women's or girls' sports"),
+     ("soc-11", -2, BAHRY("Bahry opposes medical transition for minors"), "We must protect our children from irreversible decisions they are too young to fully understand"),
+     ("soc-06", 1, BAHRY("Bahry’s platform is rooted in religious liberty"), None))
+WILSON = site("S. Marshall Wilson", "https://wilsonwv.com/")
+cand("WV-SEN", "WV-SEN:wilson", "S. Marshall Wilson", "Constitution",
+     "Army combat veteran (Iraq), former missionary in the Peruvian Amazon and former state delegate; the Constitution Party’s 2024 nominee for governor.",
+     ("eco-07", 2, WILSON("Wilson would vote against every unbalanced budget"), "Marshall will vote against every budget that doesn't balance"))
+
+# South Carolina ------------------------------------------------------------------
+WHITENER = site("Kasie Whitener", "https://kasiesouthcarolina.com/")
+cand("SC-SEN", "SC-SEN:whitener", "Kasie Whitener", "L",
+     "University of South Carolina business professor, author and radio host from Blythewood; a former chair of the South Carolina Libertarian Party.",
+     ("eco-07", 2, WHITENER("Whitener would cut federal spending 5% across all agencies and pass a balanced budget amendment"), "reduce federal spending by 5% across all agencies"),
+     ("hea-04", 1, WHITENER("Whitener would separate health insurance from employment with more free-market options"), "Separate health insurance from employment, more free market options"),
+     ("def-07", 1, WHITENER("Whitener says no more foreign wars"), "No more foreign wars"),
+     ("soc-04", -1, WHITENER("Whitener wants no new federal laws on abortion"), "No new federal laws or taxpayer dollars spent on abortion"),
+     ("eco-10", -1, WHITENER("Whitener would end protectionist policies"), "end protectionist policies and laws"),
+     ("agr-07", -1, WHITENER("Whitener would end protectionist policies"), None))
+HAKIM = site("Walid Hakim", "https://www.walidnhakim.com/Platform.html")
+cand("SC-GOV", "SC-GOV:hakim", "Walid Hakim", "G",
+     "Marine veteran and Columbia businessman; a former military policeman and executive director of the S.C. Libertarian Party, now the Green nominee.",
+     ("sta-02", 2, HAKIM("Hakim would invest deeply in schools rather than cut funding"), "Instead of cutting funding, South Carolina must invest deeply in its schools and students."),
+     ("edu-01", 2, HAKIM("Hakim would invest deeply in schools"), None),
+     ("edu-09", 2, HAKIM("Hakim would provide breakfast and lunch to all students"), "Every school in South Carolina would provide healthy breakfast and lunch to all students"),
+     ("soc-07", 2, HAKIM("Hakim would build child care into the school system"), "Childcare would be incorporated into the state school system"),
+     ("edu-03", 2, HAKIM("Hakim would turn grades 11 and 12 into trade school or associate degree programs"), "Grades 11 and 12 would be transformed into trade school or associate degree programs"),
+     ("eco-12", 2, HAKIM("Hakim supports a progressive state tax system"), "he would support a progressive tax system where those who earn more contribute more"),
+     ("eco-01", 2, HAKIM("Hakim would have those who earn more contribute more"), None),
+     ("hea-01", 2, HAKIM("Hakim would create a state-owned insurer covering every resident"), "a state-owned insurer, offering full coverage to every resident"),
+     ("hea-03", 2, HAKIM("Hakim would create a state-owned insurer"), None),
+     ("hou-02", 1, HAKIM("Hakim would limit ownership to twelve homes per corporation or individual"), "limit property ownership to twelve residential properties per corporation or individual"),
+     ("sta-12", 2, HAKIM("Hakim would build high-speed rail between the state’s cities"), "contract the development of a high-speed rail systems connecting the state’s major cities"),
+     ("ene-07", 2, HAKIM("Hakim wants free public transportation"), None))
+
+# Tennessee Senate ----------------------------------------------------------------
+GERENA = site("Andrew Gerena", "https://www.jeranimo4senate.org/issues")
+cand("TN-SEN", "TN-SEN:gerena", "Andrew Gerena", "I",
+     "Army veteran who has worked in security, trucking, IT and scientific research; known by his military callsign “Jeranimo.”",
+     ("def-01", -1, GERENA("Gerena would redirect money from the war budget to education and infrastructure"), "Re-direct federal funding from the War Budget towards Education, Infrastructure, Research, and Job training programs"),
+     ("def-12", -2, GERENA("Gerena would cut military aid to countries suspected of war crimes and separate U.S. forces from Israel’s government"), "Separate our military and intelligence agencies from all branches of the Israeli government"),
+     ("def-11", -1, GERENA("Gerena would investigate AIPAC and separate U.S. agencies from Israel’s government"), None),
+     ("eco-01", -1, GERENA("Gerena rejects any tax increase"), "Common sense budgeting, rejecting any Tax increase"),
+     ("soc-08", 1, GERENA("Gerena wants data privacy rules for AI data centers"), "Serious environmental and data privacy regulations on AI Data centers"),
+     ("ene-04", 1, GERENA("Gerena wants environmental rules for AI data centers"), None),
+     ("edu-01", 1, GERENA("Gerena would redirect war spending to education"), None),
+     ("edu-03", 1, GERENA("Gerena would redirect war spending to job training"), None))
+MATTHEWS = site("Yoshi Matthews", "https://yoshimatthewssenate.com/issues/")
+cand("TN-SEN", "TN-SEN:matthews", "Yoshi Matthews", "I",
+     "Accountant and founder of FTP Nonprofit, which serves local communities and people with disabilities.",
+     ("imm-01", 1, MATTHEWS("Matthews would secure the border and enforce immigration laws"), "Secure the border, enforce immigration laws, and support a functional legal immigration system."),
+     ("imm-08", 1, MATTHEWS("Matthews would enforce immigration laws"), None))
+SUTMAN = site("David Sutman Jr.", "https://sutmanjr4senate.com/")
+cand("TN-SEN", "TN-SEN:sutman", "David Sutman Jr.", "I",
+     "Working-class Tennessean with a business background, running as an independent.",
+     ("gov-01", 1, SUTMAN("Sutman would push for term limits"), "Push for term limits"),
+     ("gov-12", 1, SUTMAN("Sutman would increase transparency in spending"), "Increase transparency in spending"),
+     ("eco-07", 1, SUTMAN("Sutman would cut wasteful spending"), None))
+WHITSON = site("Catherine Whitson", "https://senatorbarcy.org/issues")
+cand("TN-SEN", "TN-SEN:whitson", "Catherine Whitson", "I",
+     "Pastor, life coach and mentor for 20 years after 30 years in the insurance industry.",
+     ("ene-01", 1, WHITSON("Whitson would promote green energy"), "Promoting green energy and creativity"),
+     ("edu-01", 2, WHITSON("Whitson would boost funding for public schools"), "Boosting funding for public schools and expanding vocational training programs"),
+     ("edu-03", 2, WHITSON("Whitson would expand vocational training"), None),
+     ("edu-06", 1, WHITSON("Whitson would also promote private and home schooling"), "promoting private and home schooling initiatives"),
+     ("edu-05", 1, WHITSON("Whitson would find ways to pay off student debt"), "Finding ways to pay off student debt"),
+     ("hou-01", 1, WHITSON("Whitson supports affordable housing for all Tennesseans"), "Affordable housing for all Tennesseans"),
+     ("soc-07", 1, WHITSON("Whitson would promote better child care"), None),
+     ("ene-07", 1, WHITSON("Whitson would promote mass transit"), "Promote mass transit options"),
+     ("hou-03", 1, WHITSON("Whitson would promote mass transit"), None),
+     ("hea-07", 1, WHITSON("Whitson would use the Affordable Care Act to help people without group coverage"), None))
+
+# Tennessee governor ----------------------------------------------------------------
+# Wikipedia lists independents Santiago Asconape and Taylor Hafley, who are not on the
+# ballot, and leaves out Victor L. Scoggin and Dave Seeman, who are. The Hamilton County
+# Election Commission's official sample ballot (the state's own list is a PDF/Excel
+# download) gives the 15 names below, as do WSMV and the Tennessee Lookout.
+RACE_FIELDS["TN-GOV"] = {
+    "candidatesOnly": True,
+    "notes": [{"text": "The ballot lists 15 candidates for governor: Republican Marsha Blackburn, Democrat Jerri Green and 13 independents.",
+               "source": "Hamilton County Election Commission, official sample ballot, Nov. 3, 2026",
+               "url": "https://elect.hamiltontn.gov/Portals/12/HTML/GenSample.html"}],
+}
+for _cid, _name in (("brewer", "Dean Brewer"), ("brown", "Ray Brown"), ("morgan", "Charles Van Morgan"),
+                    ("murphy", "Eddie Lee Murphy"), ("scoggin", "Victor L. Scoggin"), ("seeman", "Dave Seeman"),
+                    ("smithson", "Karl Knox Smithson"), ("taylor", "L. Webb Taylor")):
+    cand("TN-GOV", f"TN-GOV:{_cid}", _name, "I", None)
+HATLEY = site("David Hatley", "https://hatleyforgovernor.com/")
+cand("TN-GOV", "TN-GOV:hatley", "David Hatley", "I",
+     "East Tennessee manufacturer who built nine companies, including a hot tub maker; running with no party and no donors.",
+     ("hou-01", 1, HATLEY("Hatley would give infrastructure grants for developments that set aside starter homes"), "The state helps pay for the water, sewer, and road work a city would otherwise push onto the developer."),
+     ("hou-04", 1, HATLEY("Hatley would roll back building-code costs and speed approvals"), "Roll back the code changes that priced people out."),
+     ("gov-12", 2, HATLEY("Hatley would post every contract and payment within 30 days"), "Every legally disclosable contract, grant, amendment, and payment posted within 30 days"),
+     ("sta-06", 2, HATLEY("Hatley would ban contributions from state contractors and create an elected auditor"), "David Hatley would ban contributions from significant state contractors"),
+     ("gov-11", 1, HATLEY("Hatley would ban contributions from state contractors"), None),
+     ("sta-11", 1, HATLEY("Hatley would end data center tax breaks"), "ends the giveaways: no PILOTs, no abatements"),
+     ("sta-04", 1, HATLEY("Hatley would put data center tax revenue toward cutting homeowners’ property taxes"), None),
+     ("sta-07", 2, HATLEY("Hatley would end technical college waitlists and pay instructors competitively"), "Pay TCAT instructors competitively, because you can’t scale a program you can’t staff."),
+     ("edu-03", 2, HATLEY("Hatley would double registered apprenticeships"), "Double registered apprenticeships in four years."),
+     ("cri-04", 1, HATLEY("Hatley would make life without parole mandatory for repeat child sex offenders"), None),
+     ("cri-05", 2, HATLEY("Hatley would start reentry help 180 days before release"), "David Hatley will cut recidivism in half by giving them a path to work"),
+     ("cri-08", 2, HATLEY("Hatley would expand drug, mental-health and veterans courts statewide"), "Drug, mental-health, and veterans courts expand to reach every judicial district, with treatment capacity funded alongside them."),
+     ("sta-08", 2, HATLEY("Hatley would hire detectives and triple the TBI drug division"), "First we need to triple that division to about 150."))
+JACKSON = site("Wendell Jackson", "https://www.wendelljackson4tngov2026.com/")
+cand("TN-GOV", "TN-GOV:jackson", "Wendell Jackson", "I",
+     "Comedian and spoken-word performer running a campaign that takes no money.",
+     ("hea-01", 2, JACKSON("Jackson supports health care for all"), "Healthcare for all."),
+     ("hea-06", 1, JACKSON("Jackson includes mental health care"), None),
+     ("hou-01", 1, JACKSON("Jackson would make secure housing for all a priority"), "Secure housing for all will be a priority, for all Tennesseans."),
+     ("sta-10", 1, JACKSON("Jackson would create incentives for businesses that hire local talent"), "Creating incentives for businesses that hire and train local talent."),
+     ("sta-07", 1, JACKSON("Jackson would develop workforce training programs"), "Developing workforce training programs to equip Tennesseans with essential skills and knowledge."),
+     ("edu-03", 1, JACKSON("Jackson would develop workforce training programs"), None))
+PINKSTON = site("Lauren Pinkston", "https://www.pinkstonfortn.com/issues")
+cand("TN-GOV", "TN-GOV:pinkston", "Lauren Pinkston", "I",
+     "Former elementary school teacher who has worked against human trafficking for 15 years.",
+     ("soc-07", 2, PINKSTON("Pinkston would add 50,000 day care and preschool slots by 2030"), "Add 50,000 daycare and preschool slots by 2030"),
+     ("edu-06", -2, PINKSTON("Pinkston would end the 2025 voucher program and move its money to early childhood"), "End the school voucher experiment"),
+     ("sta-02", 2, PINKSTON("Pinkston would invest in public schools"), "Lauren will invest in the schools nearly a million Tennessee students actually attend."),
+     ("edu-01", 2, PINKSTON("Pinkston would invest in public schools"), None),
+     ("edu-04", 2, PINKSTON("Pinkston would better fund teacher salaries"), "Lauren, a former teacher herself, will better fund salaries"),
+     ("ene-02", 1, PINKSTON("Pinkston would expand nuclear capacity"), "expand nuclear and renewable capacity"),
+     ("ene-01", 1, PINKSTON("Pinkston would expand renewable capacity and cut red tape on renewable projects"), None),
+     ("hou-05", 1, PINKSTON("Pinkston would work with banks to lower down payments for first-time buyers"), "Partner with Tennessee banks to expand loan access and lower down payments"),
+     ("eco-09", 2, PINKSTON("Pinkston would defend workers’ freedom to organize"), "Lauren will defend every Tennessean's freedom to organize"),
+     ("gov-04", 2, PINKSTON("Pinkston wants an independent redistricting commission"), "Establish an independent commission to draw district maps."),
+     ("gov-01", 1, PINKSTON("Pinkston supports term limits for legislators"), "Support term limits for legislators"),
+     ("gov-07", 1, PINKSTON("Pinkston would repeal the state ban on ranked-choice voting"), "Repeal Tennessee's ban, imposed before it was ever tried"),
+     ("gov-11", 1, PINKSTON("Pinkston supports public campaign financing"), None),
+     ("sta-04", 1, PINKSTON("Pinkston would fully fund property tax freezes for low-income seniors"), None),
+     ("sta-11", 1, PINKSTON("Pinkston would slow tax incentives to large corporations"), "the state should slow down tax incentives to large corporations already benefiting from Tennessee’s tax haven"),
+     ("soc-08", 2, PINKSTON("Pinkston would close data broker loopholes in the state privacy law"), "close the loopholes in Tennessee's data privacy law that exempt many data brokers"),
+     ("sta-07", 2, PINKSTON("Pinkston would expand technical college scholarships"), "Invest in high school trade education, expand TCAT scholarships"),
+     ("edu-03", 2, PINKSTON("Pinkston would invest in high school trade education"), None),
+     ("eco-02", 1, PINKSTON("Pinkston would end the grocery tax"), "End the grocery tax"),
+     ("sta-12", 1, PINKSTON("Pinkston would explore statewide passenger rail"), "Lauren supports exploring a statewide passenger rail system connecting Memphis to Bristol and Nashville to Chattanooga"),
+     ("soc-05", 0, PINKSTON("Pinkston backs medical cannabis and would let evidence guide recreational legalization"), "On recreational legalization, Lauren wants to see a well-run medical program work and let the evidence guide the next steps."),
+     ("hea-09", 1, PINKSTON("Pinkston would expand primary and preventive care for adults"), None),
+     ("hea-06", 1, PINKSTON("Pinkston would expand rural mental health access"), "support expanding rural mental health access"))
+VICK = site("Robert Vick", "https://drvick4tn.com/issues")
+cand("TN-GOV", "TN-GOV:vick", "Robert Vick", "I",
+     "Career educator from White Pine in Jefferson County: 12 years a teacher and 28 an administrator.",
+     ("sta-09", 1, VICK("Vick would fund rural hospitals, ERs and maternity wards for the long term"), "create sustainable, long-term funding models that keep rural ERs and maternity wards open"),
+     ("hea-06", 2, VICK("Vick calls mental health a core priority"), "Mental Health is one of my core priorities"),
+     ("agr-01", 1, VICK("Vick would expand the farmland preservation fund and cut taxes on farm inputs"), None),
+     ("sta-08", 1, VICK("Vick would give officers the training and resources they need"), None),
+     ("edu-04", 1, VICK("Vick wants teachers well compensated"), "ensuring our outstanding educators are respected, well-compensated, and supported"),
+     ("edu-03", 1, VICK("Vick would push for vocational training"), "I will continue to prioritize literacy and push for vocational training."),
+     ("ene-10", 1, VICK("Vick would push TVA to put ratepayers first"), None))
+
+# Texas governor --------------------------------------------------------------------
+DIXON = lambda path, note: page(f"Pat Dixon campaign site: {note}", f"https://patdixon.org/{path}/", READ)
+cand("TX-GOV", "TX-GOV:dixon", "Pat Dixon", "L",
+     "Libertarian and former city council member who has worked with the Texas Legislature since 2004.",
+     ("cri-09", -2, DIXON("death-penalty", "Dixon opposes the death penalty and would support repeal"), "I oppose the death penalty."),
+     ("soc-04", -1, DIXON("abortion", "Dixon calls himself pro-life but prefers persuasion and adoption to police action"), None),
+     ("sta-04", 1, DIXON("property-tax", "Dixon would cut spending first to lower taxes"), "I will work on identifying spending cuts first, which will lead to lower taxes."),
+     ("edu-06", 2, DIXON("school-choice", "Dixon would like a statewide scholarship that follows every child"), "Every child would be given the same amount of money to follow them to any school."),
+     ("gov-04", 1, DIXON("non-partisan-redistricting", "Dixon supports nonpartisan district maps drawn by software"), "It would allow the software to produce non-partisan district maps that are compact and fair."),
+     ("gov-07", 1, DIXON("approval-voting", "Dixon would let cities use approval or ranked-choice voting"), "I also support Ranked Choice"),
+     ("imm-03", 1, DIXON("the-border", "Dixon says legal immigration paperwork is nearly impossible"), None),
+     ("soc-05", 2, DIXON("texas-cannabis-policy-questionnaire", "Dixon says adult-use cannabis should be legal"), "It should be legal. End the war on drugs."))
+
+# Sites that load only in a browser (read in the browser pane, quotes checked
+# against each live page's text) ----------------------------------------------------
+LOMBARDO = site("Risa Lombardo", "https://risalombardo.com/issues/")
+cand("AZ-GOV", "AZ-GOV:lombardo", "Risa Lombardo", "G",
+     "Registered with both major parties over the years, mostly as a Democrat; now the Green Party nominee.",
+     ("ene-01", 2, LOMBARDO("Lombardo’s issues page calls for moving off fossil fuels to renewable energy"), "We need to get off fossil fuels and on to renewable energy."),
+     ("ene-03", -2, LOMBARDO("Lombardo’s issues page calls for getting off fossil fuels"), None),
+     ("sta-03", 1, LOMBARDO("Lombardo’s issues page demands a living wage"), "We demand a living wage and a real safety net."),
+     ("gov-11", 1, LOMBARDO("Lombardo’s issues page calls for public financing of elections"), "We demand public financing of elections, open debates, and more representative voting systems."))
+HARRINGTON = site("Whitfield Harrington Jr.", "https://whit4ilsenate.com/")
+HARRINGTON_QA = site("Whitfield Harrington Jr.", "https://whit4ilsenate.com/where-i-stand")
+cand("IL-SEN", "IL-SEN:harrington", "Whitfield Harrington Jr.", "I",
+     "Born in Belzoni, Mississippi, the son of a civil rights leader; running as an independent while forming the American Center Party.",
+     ("ene-03", 1, HARRINGTON("Harrington would use domestic energy to bring costs down"), "Use America's domestic energy resources to bring costs down now while continuing to build the renewable capacity the country will need for the future."),
+     ("ene-01", 1, HARRINGTON("Harrington would keep building renewable capacity"), None),
+     ("hou-05", 1, HARRINGTON("Harrington would make smaller mortgages available to working families"), "Make smaller mortgages available so working families can buy affordable homes"),
+     ("edu-02", 1, HARRINGTON("Harrington would make the first year of community college free"), "Make the first year of community college free"),
+     ("def-01", -1, HARRINGTON("Harrington would redirect part of defense spending to infrastructure at home"), "Redirect a portion of defense spending toward America's bases, roads, bridges, rail, power grid, and strategic stockpiles"),
+     ("eco-06", 1, HARRINGTON("Harrington would put money into roads, bridges, rail and the grid"), None),
+     ("def-04", 1, HARRINGTON("Harrington wants clear missions and congressional accountability overseas"), None),
+     ("def-08", -1, HARRINGTON("Harrington would have allies carry more of their own defense and cut open-ended commitments"), "require allies to carry more of their own defense burden, reduce open-ended commitments"),
+     ("gov-01", 2, HARRINGTON("Harrington supports consecutive term limits"), "Break Washington's cycle of permanent power through consecutive term limits"),
+     ("imm-07", 2, HARRINGTON("Harrington would deport criminals and prevent family separation"), "deport criminals, enforce the law with dignity, prevent family separation"),
+     ("imm-03", 1, HARRINGTON("Harrington would make legal immigration easier than illegal entry"), "make legal immigration easier than illegal entry"),
+     ("edu-06", 1, HARRINGTON_QA("Harrington supports school choice"), "I support school choice"),
+     ("edu-01", 1, HARRINGTON_QA("Harrington supports fairer funding for schools in poorer communities"), None),
+     ("gov-05", 1, HARRINGTON_QA("Harrington supports voter ID"), "I support voter identification, early in-person voting, absentee ballots for people who request or need them"),
+     ("gov-06", 0, HARRINGTON_QA("Harrington supports early in-person voting and absentee ballots on request but opposes universal mail-in voting"), "I oppose universal mail-in voting"),
+     ("soc-04", 2, HARRINGTON_QA("Harrington is pro-life and would protect unborn life in all circumstances"), "the law should protect that life in all circumstances"),
+     ("soc-03", -2, HARRINGTON_QA("Harrington is pro-life"), None),
+     ("def-11", 1, HARRINGTON_QA("Harrington says the U.S. should remain a friend of Israel"), None),
+     ("def-12", -1, HARRINGTON_QA("Harrington would give military aid as arms sales or loans rather than grants"), "United States military assistance should generally be provided through American arms sales or repayable loans"),
+     ("def-13", -1, HARRINGTON_QA("Harrington would give military aid as arms sales or loans rather than grants"), None),
+     ("soc-12", -1, HARRINGTON_QA("Harrington opposes biological males in female sports"), "I do not support biological males competing in female sports."),
+     ("soc-06", 1, HARRINGTON_QA("Harrington would protect the freedom to practice any faith or none"), None),
+     ("soc-10", -1, HARRINGTON_QA("Harrington would vote his biblical view of marriage"), "If called upon to vote on the definition of marriage, I would vote according to my biblical convictions."))
+CHRISTENSEN = site("Lydia Christensen", "https://www.lydialynnchristensen.com/issues")
+cand("MI-SEN", "MI-SEN:christensen", "Lydia Christensen", "L",
+     "Upper Peninsula native from an Ironwood family; the Libertarian nominee.",
+     ("soc-08", 2, CHRISTENSEN("Christensen would introduce a Bill of Digital Rights making data your property"), "introduce a Bill of Digital Rights making your data your property"),
+     ("soc-05", 2, CHRISTENSEN("Christensen would legalize cannabis and psilocybin federally"), "Lydia will push for federal legalization of cannabis and psilocybin"),
+     ("cri-09", -2, CHRISTENSEN("Christensen opposes the death penalty"), "Lydia opposes the death penalty."),
+     ("eco-02", 2, CHRISTENSEN("Christensen would end federal income tax on earnings under $150,000"), "No federal income tax on any earnings under $150,000 a year"),
+     ("eco-10", -2, CHRISTENSEN("Christensen would remove tariffs"), "Lydia supports removing tariffs and other government barriers to trade."),
+     ("agr-07", -2, CHRISTENSEN("Christensen would remove tariffs"), None),
+     ("agr-06", 1, CHRISTENSEN("Christensen supports free trade"), None),
+     ("ene-02", 1, CHRISTENSEN("Christensen wants faster nuclear licensing"), "faster nuclear licensing without cutting safety"),
+     ("ene-01", 1, CHRISTENSEN("Christensen would fix the permitting queue stalling wind and solar"), "a fix for the federal permitting queue stalling wind and solar"),
+     ("def-04", 2, CHRISTENSEN("Christensen would vote to end unauthorized hostilities"), "Lydia will vote for binding resolutions to end unauthorized hostilities"),
+     ("def-15", -2, CHRISTENSEN("Christensen opposes the war in Iran without authorization"), "oppose further war funding without authorization"),
+     ("def-07", 2, CHRISTENSEN("Christensen would make diplomacy the first response"), "restore real diplomacy as the first response"),
+     ("def-12", -1, CHRISTENSEN("Christensen would vote against military aid to Israel until compliance is verified"), "Lydia would vote against continued military aid until compliance is independently verified"),
+     ("def-11", -1, CHRISTENSEN("Christensen cites findings of genocidal acts in Gaza"), None),
+     ("def-01", -1, CHRISTENSEN("Christensen would cap the Pentagon budget to fund rapid rehousing"), "funded by capping the Pentagon budget rather than cutting help for people"),
+     ("gov-11", 2, CHRISTENSEN("Christensen would end Citizens United"), "Unchain Michigan’s democracy by ending Citizens United"),
+     ("gov-13", -2, CHRISTENSEN("Christensen would end Citizens United"), None),
+     ("gov-05", -1, CHRISTENSEN("Christensen opposes voter ID rules that turn away legal citizens"), "oppose voter ID rules that turn away legal citizens over a name or gender-marker mismatch"),
+     ("gov-07", 2, CHRISTENSEN("Christensen supports ranked-choice voting"), "Ranked choice voting lets voters rank candidates instead of picking just one, ending the spoiler effect."),
+     ("hea-01", 2, CHRISTENSEN("Christensen proposes Medicaid for All"), "Medicaid for All is opt-in coverage for citizens and legal residents."),
+     ("hea-03", 2, CHRISTENSEN("Christensen proposes Medicaid for All"), None),
+     ("hea-02", 1, CHRISTENSEN("Christensen would fund it partly through drug price negotiation"), None),
+     ("eco-03", 2, CHRISTENSEN("Christensen would raise the federal minimum wage to $15"), "a federal minimum wage increase to $15 per hour"),
+     ("eco-09", 2, CHRISTENSEN("Christensen would restore secondary and sympathy strikes"), "restore the right to secondary and sympathy strikes"),
+     ("soc-02", 2, CHRISTENSEN("Christensen would pass the Equality Act"), "Lydia will fight to pass the Equality Act"),
+     ("soc-12", 2, CHRISTENSEN("Christensen would defend LGBTQIA+ civil rights"), None),
+     ("soc-10", 2, CHRISTENSEN("Christensen would defend marriage equality in federal law"), "defend equal marriage rights for everyone under federal law"),
+     ("soc-03", 2, CHRISTENSEN("Christensen would codify abortion rights up to viability"), "Lydia will codify the right to abortion up to viability"),
+     ("soc-04", -2, CHRISTENSEN("Christensen would codify abortion rights"), None),
+     ("imm-02", 2, CHRISTENSEN("Christensen would give Dreamers a path to citizenship"), "offering them a pathway to citizenship"),
+     ("imm-08", -2, CHRISTENSEN("Christensen would abolish ICE"), "Lydia will work to abolish ICE"),
+     ("cri-05", 1, CHRISTENSEN("Christensen would focus the justice system on rehabilitation"), "reforms that reduce mass incarceration and focus on rehabilitation"),
+     ("hou-09", 2, CHRISTENSEN("Christensen supports federal investment in fiber broadband for all"), "federal investment in fiber optic broadband for all"),
+     ("hou-04", 1, CHRISTENSEN("Christensen would fund zoning reform"), "She will fund zoning reform"),
+     ("ene-04", 2, CHRISTENSEN("Christensen wants tougher Clean Water Act enforcement"), "push for federal enforcement of the Clean Water Act with real teeth"))
+USTPM = lambda note: page(f"U.S. Taxpayers Party of Michigan candidate page (brandenburgforgovernor.com forwards here): {note}", "https://ustpm.org/candidates?id=74", READ)
+cand("MI-GOV", "MI-GOV:brandenburg", "Donna Brandenburg", "U.S. Taxpayers",
+     "Michigan-born entrepreneur in energy, real estate, farming and technology.",
+     ("sta-04", 2, USTPM("Brandenburg would eliminate property taxes"), "eliminating property taxes and the state income tax"),
+     ("eco-02", 2, USTPM("Brandenburg would eliminate the state income tax"), None))
+cand("MN-SEN", "MN-SEN:simonetti", "Marisa Simonetti", "I", None, officialSite=None)  # domain is parked
+YOUNG = site("Steven Young", "https://steveformngov.info/")
+cand("MN-GOV", "MN-GOV:young", "Steven Young", "G",
+     "Former Marine, attorney and neighborhood grocery store owner from Minneapolis.",
+     ("imm-08", -2, YOUNG("Young would make Minnesota a sanctuary state and resist ICE"), "Abolishing ICE"),
+     ("hea-01", 1, YOUNG("Young lists Medicare for All among his answers"), "UBI, M4A, jobs jobs and more jobs!"))
+cand("MT-SEN", "MT-SEN:austin", "Kyle Austin", "L",
+     "Pharmacist who founded an independent pharmacy in Billings and owns his grandfather’s farm on the Hi-Line.")
+RICHARDS = site("Robin Richards", "https://robinforne.com/issues")
+cand("NE-SEN", "NE-SEN:richards", "Robin Richards", "Working People",
+     "Ralston school board member running for the Nebraska Working People Party.",
+     ("edu-01", 2, RICHARDS("Richards wants fully funded public schools"), "Our public schools deserve the support to serve every community."))
+LINDSTROM = lambda note: page(f"Brett Lindstrom campaign site (The Nebraska Doctrine): {note}", "https://nebraskadoctrine.com/", READ)
+cand("NE-GOV", "NE-GOV:lindstrom", "Brett Lindstrom", "America First", None,
+     ("sta-04", 1, LINDSTROM("Lindstrom would take pressure off property taxes"), "Take the pressure off property taxes and make valuations something you can plan around."),
+     ("hou-09", 1, LINDSTROM("Lindstrom would finish expanding rural internet"), "Finish the job on rural internet."))
+GOTRA = site("Jasjit Gotra", "https://governorgotra.com/")
+cand("RI-GOV", "RI-GOV:gotra", "Jasjit Gotra", "I",
+     "Entrepreneur from East Greenwich running with the Unaffiliated Movement.",
+     ("eco-02", 1, GOTRA("Gotra would end the state tax on Social Security within two years"), None),
+     ("hou-04", 2, GOTRA("Gotra would build 20,000 homes in four years and cut zoning barriers"), "Build 20,000 units in 4 years. Cut zoning barriers."),
+     ("hea-01", 1, GOTRA("Gotra calls health care a right and would cap out-of-pocket costs"), "Healthcare is a right, not a luxury."),
+     ("gov-12", 2, GOTRA("Gotra would publish a quarterly state profit-and-loss statement"), "Every taxpayer sees where every dollar goes."),
+     ("ene-10", 1, GOTRA("Gotra would cut energy costs 30% in four years"), None))
+cand("SC-GOV", "SC-GOV:addison", "Michael Addison", "United Citizens",
+     "Orangeburg medical director and community organizer (foreclosure prevention, job training, homeless relief); also a licensed asbestos inspector.")
+JONES = site("Robert Jones", "https://www.robertfortn.com/issues")
+cand("TN-SEN", "TN-SEN:jones", "Robert Jones", "I",
+     "Independent who takes no campaign donations and asks supporters to give to local nonprofits instead.",
+     ("ene-01", 1, JONES("Jones would focus on renewable energy and conservation"), "By focusing on renewable energy, conservation efforts, and responsible resource management"),
+     ("eco-09", 1, JONES("Jones would advocate for fair treatment and wages for workers"), "I will advocate for equitable treatment, wages that represent your value, and improved work-life balance."),
+     ("gov-11", 1, JONES("Jones would limit big business influence in politics"), "The goal is to limit or prevent any corruptibility of the party system and any large businesses interfering within the political realm."),
+     ("def-07", 1, JONES("Jones warns that striking first makes enemies"), "Striking first radicalizes generations of people against your power."))
+ABIDI = lambda n, note: page(f"Misam Abidi campaign site: {note}", f"https://www.misamforgovernor.com/pillar/{n}", READ)
+cand("TN-GOV", "TN-GOV:abidi", "Misam Abidi", "I",
+     "Banker and entrepreneur, including in crypto, from Nolensville; came to the U.S. in 1997.",
+     ("hea-07", 1, ABIDI(3, "Abidi would create a state reinsurance program to cut premiums"), "Establish a state reinsurance structure"),
+     ("hea-09", 1, ABIDI(3, "Abidi would encourage preventive care"), None),
+     ("edu-03", 2, ABIDI(4, "Abidi would guarantee every graduate a practical skill, with trade training and apprenticeships"), "The Tennessee Skills Guarantee ensures every student graduates with at least one practical economic skill they can rely on."),
+     ("edu-10", 1, ABIDI(4, "Abidi would teach financial literacy"), None),
+     ("sta-07", 1, ABIDI(4, "Abidi would expand trade skill training"), None))
+cand("VT-GOV", "VT-GOV:roy", "Dean Roy", "Freedom and Unity",
+     "Stowe native and former Vermont legislative page.")
+JEWETT = site("Scott Jewett", "https://scottjewett.com/")
+JEWETT_PLATFORM = lambda note: page(f"Scott Jewett campaign site, platform page (the Libertarian Party of Florida platform): {note}", "https://scottjewett.com/platform/", READ)
+cand("FL-GOV", "FL-GOV:jewett", "Scott Jewett", "L",
+     "Boca Raton entrepreneur running as the Libertarian nominee with Nicole Skelly.",
+     ("edu-06", 2, JEWETT("Jewett wants education dollars to follow the child"), "We support real school choice so education dollars follow the child, not the system."),
+     ("eco-02", 1, JEWETT("Jewett would cut taxes"), "Cut Taxes and Regulations"),
+     ("imm-08", -1, JEWETT_PLATFORM("The platform opposes enlisting state and local employees to enforce federal immigration law"), None),
+     ("gov-07", 1, JEWETT_PLATFORM("The platform supports ranked-choice voting"), "We support Ranked Choice."),
+     ("gov-03", -1, JEWETT_PLATFORM("The platform favors voluntary disclosure of campaign contributions"), "We support a structure for candidates to voluntarily disclose campaign contributions."),
+     ("gov-12", 1, JEWETT_PLATFORM("The platform would apply Sunshine laws to all public employees"), None))
+KRAWCHUK = lambda path, note: page(f"Ken Krawchuk campaign site: {note}", f"https://www.kenk4pa.com/{path}", READ)
+cand("PA-GOV", "PA-GOV:krawchuk", "Ken Krawchuk", "L", None,
+     ("edu-06", 2, KRAWCHUK("", "Krawchuk would privatize the public schools"), "Privatize the public schools!"),
+     ("sta-02", -1, KRAWCHUK("", "Krawchuk would privatize the public schools"), None),
+     ("sta-04", 2, KRAWCHUK("", "Krawchuk would eliminate most property tax"), "Property tax is the worst tax imaginable."),
+     ("eco-02", 1, KRAWCHUK("", "Krawchuk would veto all tax increases"), "Veto all tax increases and pork barrel spending."),
+     ("soc-05", 2, KRAWCHUK("issues/drugs/", "Krawchuk would decriminalize marijuana and treat it like alcohol"), "Immediately decriminalize marijuana and other drugs, and treat them like we do alcohol."),
+     ("cri-08", 1, KRAWCHUK("issues/drugs/", "Krawchuk favors treatment, not jail"), "Treatment, not jail."),
+     ("soc-10", 1, KRAWCHUK("issues/lgbt/", "Krawchuk would give same-sex couples the same legal privileges"), "Whatever legal privileges are made available to traditional couples should also be made available for same-sex couples"),
+     ("soc-02", -1, KRAWCHUK("issues/lgbt/", "Krawchuk opposes special protections for any group"), "I would oppose any law granting special protections or quotas for gays, women, minorities, businesses, or politicians"),
+     ("ene-03", 1, KRAWCHUK("issues/environment/", "Krawchuk calls the fracking boom good for Pennsylvania"), "The fracking boom is good for Pennsylvania"),
+     ("gov-06", -2, KRAWCHUK("issues/elections/", "Krawchuk would eliminate mail-in ballots"), "Eliminate mail-in ballots in favor of in-person voting"),
+     ("gov-05", 2, KRAWCHUK("issues/elections/", "Krawchuk would require ID to vote"), "Require positive ID for citizens to vote"),
+     ("gov-01", 1, KRAWCHUK("issues/elections/", "Krawchuk supports term limits"), "Institute term limits"),
+     ("gov-04", 1, KRAWCHUK("issues/elections/", "Krawchuk would end gerrymandering with algorithmic districting"), None),
+     ("cri-04", 2, KRAWCHUK("issues/crime/", "Krawchuk would eliminate parole for violent criminals"), "Eliminate parole for violent criminals."))
+FORD = site("Danielle Ford", "https://daniellefornevada.com/platform/")
+cand("NV-GOV", "NV-GOV:danielle-ford", "Danielle Ford", "I",
+     "Las Vegas native and marketer on the Nevada State Board of Education; a former Clark County School District trustee.",
+     ("soc-03", 2, FORD("Ford supports Nevada’s protection of abortion access through 24 weeks"), "She supports Nevada’s current legal framework protecting abortion access through 24 weeks"),
+     ("soc-04", -1, FORD("Ford supports the current framework"), None),
+     ("gov-05", 0, FORD("Ford supports identity verification but only if ID rules are accessible and phased in"), "Any ID or document requirement must be constitutional, funded, accessible, carefully phased in"),
+     ("sta-11", 2, FORD("Ford would scrutinize contracts and tax abatements before any new taxes"), "the state should take a much harder look at public contracts, procurement loopholes, no-bid arrangements, tax abatements"),
+     ("gov-12", 2, FORD("Ford says public money belongs to the public"), "Public money belongs to the public."),
+     ("ene-10", 1, FORD("Ford wants stronger ratepayer protection and affordable energy"), "push for policies that keep energy reliable and affordable"),
+     ("imm-07", 1, FORD("Ford would keep enforcement focused on serious harm"), "Danielle does not believe undocumented status alone should be treated the same as violent crime or organized criminal activity."),
+     ("sta-02", 1, FORD("Ford wants school funding to reflect the real cost of serving students"), "Danielle believes school funding should reflect the real cost of serving students well."),
+     ("edu-01", 1, FORD("Ford wants school funding to reflect the real cost of serving students"), None),
+     ("cri-08", 1, FORD("Ford would strengthen mental health care and addiction treatment alongside policing"), "Danielle supports law enforcement while also strengthening mental health care, addiction treatment, crisis response"),
+     ("hea-06", 1, FORD("Ford would strengthen mental health care"), None),
+     ("hou-02", 1, FORD("Ford would scrutinize corporate ownership and build-to-rent practices"), "scrutinizing corporate ownership and build-to-rent practices"),
+     ("gov-03", 2, FORD("Ford supports stronger campaign finance transparency"), "Danielle supports stronger campaign finance transparency"),
+     ("gov-11", 1, FORD("Ford supports reforms that reduce the influence of money"), None),
+     ("soc-08", 1, FORD("Ford supports privacy protections and student data safeguards"), None))
+
+# Candidates without a working campaign site: news interviews and voter guides --------
+NE_EXAMINER = article("Nebraska Examiner, July 27, 2026", "https://nebraskaexaminer.com/2026/07/27/beard-talks-priorities-pivot-from-nebraska-primary-election-to-nov-3-faceoff/", "2026-07-27")
+cand("NE-GOV", "NE-GOV:beard", "Rick Beard", "Legal Marijuana Now",
+     "Omaha wine professional and private chef; the Legal Marijuana NOW nominee.",
+     ("gov-11", 2, NE_EXAMINER("Beard would get corporate and PAC money out of state politics"), "getting corporate and political action committee money out of the state"),
+     ("soc-05", 0, NE_EXAMINER("Beard would keep cannabis medical for now, citing federal protections, with a state-run medical program"), None),
+     ("sta-10", -1, NE_EXAMINER("Beard says the state must eliminate tax breaks for corporations"), None),
+     ("eco-01", 1, NE_EXAMINER("Beard would end tax breaks for Nebraska’s ultra-rich"), None),
+     ("sta-04", 1, NE_EXAMINER("Beard would use cannabis revenue to reduce property taxes"), "the actual ability to reduce property taxes"),
+     officialSite=None)  # rickforgov.org answers with a 404 page
+WHYY_NJ = article("WHYY, Sept. 22, 2026", "https://whyy.org/articles/election-2026-new-jersey-senate-voter-guide-booker/", "2026-09-22")
+cand("NJ-SEN", "NJ-SEN:kuniansky", "Joanne Kuniansky", "Socialist Workers",
+     "Union activist who has worked as a refinery operator, meatpacker and Walmart deli worker; a Socialist Workers Party member since 1977, from West New York.",
+     ("eco-09", 2, WHYY_NJ("Kuniansky calls on workers to build union solidarity"), "The Socialist Workers Party calls on workers to build solidarity with unions fighting attacks on our wages and conditions"),
+     ("eco-06", 2, WHYY_NJ("Kuniansky supports a public works program building hospitals, child care centers and other infrastructure"), "a public works program to provide jobs at union-scale wages to build hospitals, child care centers and other infrastructure"),
+     ("eco-13", 2, WHYY_NJ("Kuniansky supports a shorter work week with no pay cut"), "She also supports enacting a shorter work week with no pay cuts."),
+     ("imm-02", 2, WHYY_NJ("Kuniansky calls for amnesty for workers without papers"), "calling for an amnesty for workers in the U.S. without papers"),
+     ("def-15", -2, WHYY_NJ("Kuniansky opposes the U.S. war in Iran"), "an imperialist war by the U.S. rulers to plunder oil, gas and labor of the region"))
+SEVEN_DAYS_VT = article("Seven Days, Oct. 13, 2026", "https://www.sevendaysvt.com/guides/electionvoterguide/candidates-vermont-governor-2026/", "2026-10-13")
+GOODBAND = site("June Goodband", "https://june4govvt.org/")
+cand("VT-GOV", "VT-GOV:goodband", "June Goodband", "Peace and Justice",
+     "Licensed clinical mental health counselor from Springfield; the Peace and Justice Party nominee.",
+     ("hea-01", 2, SEVEN_DAYS_VT("Goodband would fully implement Vermont’s universal health care law"), "We can cut health care costs by fully implementing our universal health care law, cutting out insurance companies"),
+     ("hea-04", -2, SEVEN_DAYS_VT("Goodband would cut insurance companies out of health care"), None),
+     ("hou-01", 2, SEVEN_DAYS_VT("Goodband would have the state build and renovate housing"), "The state should build and buy/renovate housing"),
+     ("hou-05", 1, GOODBAND("Goodband supports home ownership through co-ops and no-interest mortgages"), None),
+     ("sta-03", 2, GOODBAND("Goodband would require profitable businesses to pay a living wage"), "require profitable businesses to pay a living wage so their workers don’t need state assistance"),
+     ("eco-01", 2, GOODBAND("Goodband would raise taxes on high incomes"), "Increase taxes on high incomes"),
+     ("eco-12", 2, GOODBAND("Goodband would pay for schools with progressive taxes instead of homestead taxes"), "Use Progressive taxation instead of homestead taxes to pay for education."),
+     ("cri-07", 1, GOODBAND("Goodband wants safety strategies that work better than prisons"), "Develop creative strategies that protect people, work better than prisons, and cost less."),
+     officialSite="https://june4govvt.org/")
+
+HUBER = site("Blake Huber", "https://lpcocolorado.my.canva.site/blake-huber-us-senate-website")
+cand("CO-SEN", "CO-SEN:huber", "Blake Huber", "L",
+     "Longtime election-reform activist and former property and business manager; a former chair of the Colorado Libertarian Party.",
+     ("imm-03", 2, HUBER("Huber would streamline legal entry for background-checked workers"), "We support streamlining legal pathways so that background-checked, hard-working individuals can legally enter, work, and contribute"),
+     ("imm-01", 1, HUBER("Huber says a sovereign nation needs secure, orderly borders"), None),
+     officialSite="https://lpcocolorado.my.canva.site/blake-huber-us-senate-website")
+OCC_SEN = lambda note: page(f"Oregon Capital Chronicle voter guide, candidates’ answers: {note}", "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/", READ)
+cand("OR-SEN", "OR-SEN:henry", "Chris Henry", "Progressive",
+     "Long-haul truck driver and former aircraft electrician; the Progressive and Pacific Green nominee, taking no corporate money.",
+     ("edu-02", 2, OCC_SEN("Henry supports free public education from pre-K through college"), "free publicly-funded education from pre-K to trade guilds and higher education"),
+     ("hea-01", 2, OCC_SEN("Henry would adopt single-payer health care"), "Adopt comprehensive single-payer medical care for all."),
+     ("hea-03", 2, OCC_SEN("Henry would adopt single-payer health care"), None),
+     ("hea-02", 2, OCC_SEN("Henry would negotiate prices on all prescription drugs"), "Negotiate prescription-drug prices on all drugs (not just a select few)"),
+     ("ene-06", 1, OCC_SEN("Henry would tax emissions that cause climate change"), "Adopt comprehensive taxation of emissions and other practices that contribute to climate change."),
+     ("ene-01", 2, OCC_SEN("Henry would accelerate the move to renewable energy"), "Accelerate the transition to renewable energy and energy-efficient buildings and transportation."),
+     ("ene-07", 2, OCC_SEN("Henry would expand public transit and passenger rail"), "Expand public transportation, including passenger rail and freight rail"),
+     ("ene-03", -1, OCC_SEN("Henry would end fossil fuel subsidies"), None),
+     ("eco-01", 2, OCC_SEN("Henry would raise taxes on extreme income and wealth"), "Raise federal taxes on extreme concentrations of income and wealth."),
+     ("eco-12", 2, OCC_SEN("Henry supports a progressive wealth tax"), "Establish a carefully designed progressive wealth tax."),
+     ("eco-02", 2, OCC_SEN("Henry would substantially cut income taxes for non-wealthy families"), "Substantially reduce federal income taxes on non-wealthy families and individuals."),
+     ("imm-02", 2, OCC_SEN("Henry supports a path to citizenship for long-term undocumented residents"), "Establish a fair path to citizenship for long-term undocumented residents."),
+     ("imm-04", 2, OCC_SEN("Henry would expand immigration courts and judges"), "Expand immigration courts, judges, interpreters and access to legal representation."),
+     ("imm-06", 1, OCC_SEN("Henry would preserve access to asylum and refugee protection"), None),
+     ("imm-08", -1, OCC_SEN("Henry would replace ICE’s militarized model"), None),
+     ("gov-11", 2, OCC_SEN("Henry would amend the Constitution to reverse Citizens United"), "Reverse Citizens United and establish that corporations do not have the rights of individuals"),
+     ("gov-13", -2, OCC_SEN("Henry says corporations do not have the rights of individuals"), None),
+     ("gov-06", 2, OCC_SEN("Henry would require vote-by-mail nationwide"), "requiring universal availability of vote-by-mail"),
+     ("def-07", 1, OCC_SEN("Henry would end pointless wars"), None),
+     ("eco-09", 1, OCC_SEN("Henry supports workplace democracy and strong workplace safety"), None),
+     officialSite="https://chrishenry.org/")
+cand("OR-SEN", "OR-SEN:dye", "Gary Lyndon Dye", "L",
+     "Got 1.8% for the U.S. Senate in 2020 and has run as a Libertarian or Republican in every election since at least 2016; did not answer the Capital Chronicle’s questionnaire.")
+cand("OK-GOV", "OK-GOV:brooks", "Robert Brooks Sr.", "I",
+     "Independent who would poll voters through an app before signing or vetoing bills.",
+     ("sta-06", 1, site("Robert Brooks Sr.", "https://votewethepeople.com/")("Brooks has zero tolerance for pay-to-play politics"), "Zero tolerance for pay-to-play politics."),
+     officialSite="https://votewethepeople.com/")
+cand("OK-GOV", "OK-GOV:griffin", "Jerry Griffin", "I", None,
+     officialSite="https://drjerrtg.substack.com/p/griffin-for-governor-2026")  # governorgriffin2027.com doesn't load
+
+# Campaign sites found Oct. 27 through the candidates' Wikipedia articles and
+# BallotReady profiles (the links are in campaign_sites_2026.py) -----------------
+WITHROW = site("Adam Withrow", "https://www.senatorwithrow.com/", READ27)
+WITHROW2 = site("Adam Withrow", "https://www.senatorwithrow.com/platform-discussion", READ27)
+cand("CO-SEN", "CO-SEN:withrow", "Adam Withrow", "Unity", "Former county jail detention officer and contractor, running on the Unity Party line.",
+     ("ene-01", 2, WITHROW2("Withrow would raise the solar tax credit, make it permanent and restore rebates"), "Let's increase the solar tax credit, make it permanent, and bring back the rebates!"),
+     ("ene-09", 1, WITHROW2("Withrow wants incentives for American companies to make solar panels"), "let's create incentives for American companies to make 'em here"),
+     ("ene-03", -1, WITHROW("Withrow calls fossil fuels obsolete and wants a transition away from them"), "Fossil fuels are obsolete."),
+     ("hea-01", 1, WITHROW("Withrow wants a health care system that works for everyone"), "Healthcare for all would cost less than half of our defense budget."),
+     ("def-07", 2, WITHROW("Withrow is against every war and favors free trade and equality over bombs"), "Free trade and mutual global recognition of equality will accomplish what a billion pounds of bombs can not."),
+     ("agr-06", 1, WITHROW("Withrow favors free trade over war"), None),
+     ("eco-03", 2, WITHROW2("Withrow says raising the federal minimum wage is vital, pegged to consumer prices"), "I believe a raise in the Federal Minimum Wage is vital."),
+     ("def-03", 1, WITHROW2("Withrow supports expanded re-entry programs for veterans"), "Yes, I support expanded re-entry programs to help adapt to civilian life."),
+     ("soc-03", 1, WITHROW2("Withrow supports women’s reproductive health care choices"), "Anybody out here think women should have reproductive healthcare choices? Good."))
+GILLESPIE = site("Neil Gillespie", "https://neilgillespie4senate.blogspot.com/", READ27)
+cand("FL-SEN", "FL-SEN:gillespie", "Neil Gillespie", "I", "Founder and director of the Justice Network, an advocacy blog; a licensed motor vehicle dealer in Pennsylvania before moving to Florida in 1993.",
+     ("imm-02", 1, GILLESPIE("Gillespie supports a path to citizenship for immigrants who follow the rules (his League of Women Voters answers)"), "I also support a path to citizenship for immigrants who follow the rules"),
+     ("imm-01", 1, GILLESPIE("Gillespie supports secure borders and vetting immigrants (his League of Women Voters answers)"), None),
+     ("hea-01", 1, GILLESPIE("Gillespie proposes national health coverage with the ability to opt out"), "I propose national health coverage, with the ability to opt-out."),
+     ("def-11", -1, GILLESPIE("Gillespie says Israel’s wars are creating antisemitism worldwide"), "Its wars are creating antisemitism worldwide."),
+     ("soc-01", 1, GILLESPIE("Gillespie lists the First Amendment’s freedoms of speech and the press among his top priorities"), None))
+MARSH = site("Douglas P. Marsh", "https://www.electmarsh.org/", READ27)
+cand("MI-SEN", "MI-SEN:marsh", "Douglas P. Marsh", "G", None,
+     ("hea-01", 2, MARSH("Marsh supports a single-payer health system"), "The best way to ensure this is with a single-payer system."),
+     ("hea-03", 2, MARSH("Marsh supports a single-payer health system"), None),
+     ("hou-02", 2, MARSH("Marsh says private equity companies should not own homes"), "Private equity companies should not own residential property."),
+     ("hou-06", 1, MARSH("Marsh would tie rents to local wages and regulate short-term rentals"), "Rental rates should be tied to an area's prevailing wages"),
+     ("def-15", -2, MARSH("Marsh would immediately end hostilities against Iran"), "The United States of America should immediately cease hostilities against Iran"),
+     ("def-12", -2, MARSH("Marsh calls continued weapons and funding for proxy wars, apartheid and genocide unconscionable"), "The continued supply of weapons and funding for proxy wars, apartheid, and genocide is unconscionable."),
+     ("def-13", -1, MARSH("Marsh opposes arming proxy wars and seeks permanent ceasefires, Ukraine included"), None),
+     ("def-07", 2, MARSH("Marsh would use U.S. economic and diplomatic leverage for permanent ceasefires"), None),
+     ("hou-08", 1, MARSH("Marsh wants jobs rebuilding bridges and roads"), "Michiganders need quality, longterm jobs rebuilding our bridges and roads"),
+     ("ene-01", 1, MARSH("Marsh wants jobs developing green energy infrastructure"), None),
+     ("ene-03", -1, MARSH("Marsh would build green energy instead of kowtowing to big oil"), "developing green energy infrastructure for our children, instead of kowtowing to big oil"))
+
+# Campaign sites that load only in a browser, read in the browser pane on Oct. 27;
+# every quote was checked against the live page's text.
+more("OK-GOV", "OK-GOV:griffin", bio="Marine veteran and educator who has taught at the University of Tulsa, Texas State and the University of Oklahoma; chief executive of The Palomega Company.")
+
+# Alaska Senate: the namesake on the ballot ----------------------------------------
+cand("AK-SEN", "AK-SEN:dan-j-sullivan", "Dan J. Sullivan", "R",
+     "Petersburg resident for nearly 50 years: former U.S. Forest Service timber worker and elementary school teacher. Not the incumbent senator, Dan S. Sullivan.")
+
+# VOTE411, the League of Women Voters' guide: candidates' own unedited answers, read
+# Oct. 27 in the browser pane; quotes were checked against the page text.
+V411_MIGOV = lambda note: page(f"VOTE411 (League of Women Voters) voter guide, candidates’ answers: {note}", "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753", READ27)  # noqa: E731
+cand("MI-GOV", "MI-GOV:campbell", "Douglas Campbell", "G", "Retired registered professional engineer and substitute high-school teacher; takes no corporate PAC contributions.",
+     ("edu-06", -2, V411_MIGOV("Campbell would eliminate Michigan’s charter school system"), "Eliminate the charter system."),
+     ("hea-01", 2, V411_MIGOV("Campbell wants a not-for-profit national health system"), "We need to create a not-for-profit National Health System."),
+     ("ene-01", 2, V411_MIGOV("Campbell would cover every flat roof and parking lot with solar panels"), "Every flat roof and parking lot should be covered with photovoltaic collectors"),
+     ("ene-05", 1, V411_MIGOV("Campbell would encourage electric vehicles"), "Electric vehicles should be encouraged at every opportunity."),
+     ("ene-04", 1, V411_MIGOV("Campbell would close the Line 5 pipeline to protect the Great Lakes"), "Line 5 needs to be closed before we poison the entire Great Lakes."),
+     ("sta-10", -2, V411_MIGOV("Campbell calls incentives for private job creation corporate welfare"), "Every time the government tries encouraging job creation in the private sector, it always ends up as corporate welfare"))
+
+# Tennessee governor in VOTE411, read Oct. 27: of the independents with no site or
+# statement, Dave Seeman and Dean Brewer answered; Murphy, Smithson, L. Webb Taylor and
+# Scoggin left every question blank.
+V411_TNGOV = lambda note: page(f"VOTE411 (League of Women Voters) voter guide, candidates’ answers: {note}", "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085", READ27)  # noqa: E731
+more("TN-GOV", "TN-GOV:seeman",
+     ("soc-02", 1, V411_TNGOV("Seeman would enact statewide nondiscrimination protections"), "enact statewide nondiscrimination protections in employment, housing, and public accommodations"),
+     ("soc-03", 1, V411_TNGOV("Seeman would keep government out of personal medical decisions"), "keep government out of personal medical decisions"),
+     ("gov-06", 1, V411_TNGOV("Seeman wants automatic registration and no-excuse absentee voting"), "protect the vote with automatic registration and no-excuse absentee ballots"),
+     ("hea-03", 2, V411_TNGOV("Seeman would expand Medicaid"), "I'll close the coverage gap through Medicaid expansion"),
+     ("edu-06", -2, V411_TNGOV("Seeman would repeal Tennessee’s private-school voucher program"), "repeal the private-school voucher program"),
+     ("sta-02", 2, V411_TNGOV("Seeman would fund public schools through an endowment fed by taxes on extreme wealth"), "fund public schools through the Future Families Fund a permanent endowment fed by two taxes on extreme wealth"),
+     ("eco-01", 1, V411_TNGOV("Seeman would tax extreme wealth to fund schools"), None),
+     ("sta-03", 2, V411_TNGOV("Seeman would raise the minimum wage to $19 over four years"), "raise the minimum wage from the $7.25 federal floor to a $19 living wage over four years"),
+     ("eco-02", 1, V411_TNGOV("Seeman would end the state grocery tax"), "I will end the 4% state grocery tax giving about $400 back to every Tennessee family per year"),
+     ("hea-02", 1, V411_TNGOV("Seeman would lower drug prices through state bulk buying"), "bring down prescription prices by buying in bulk for seven million Tennesseans"),
+     ("hou-04", 1, V411_TNGOV("Seeman would cut red tape on building homes"), "cut the red tape on building homes"),
+     ("hou-01", 1, V411_TNGOV("Seeman would fund community land trusts for permanent affordable housing"), "making affordable housing permanent through state funded community land trusts"),
+     ("edu-04", 1, V411_TNGOV("Seeman would pay retention stipends to teachers at high-need schools"), "pay $5,000 retention stipends at the highest-need schools"),
+     ("sta-09", 2, V411_TNGOV("Seeman would put a community health center in every county"), "I will put a community health center in each county"),
+     bio="Mechanical engineer; co-founder of the design firm Ovyl and founder of Squarish, a public benefit firm.",
+     officialSite="https://davefortn.com/")
+more("TN-GOV", "TN-GOV:brewer",
+     ("sta-01", 1, V411_TNGOV("Brewer would dedicate more money to infrastructure"), "Infrastructure- dedicate more money and expand."),
+     ("edu-06", -1, V411_TNGOV("Brewer says state money should stay with public schools"), "State money should stay with public schools."),
+     ("edu-04", 1, V411_TNGOV("Brewer would give teachers more money"), "Strive to give teachers more money to attract quality teachers"))
+
+V411 = lambda race_id: lambda note: page(f"VOTE411 (League of Women Voters) voter guide, candidates’ answers: {note}", f"https://www.vote411.org/ballot?lwv-ballot-widget-raceid={race_id}", READ27)  # noqa: E731
+V411_COGOV = V411(3697674)
+cand("CO-GOV", "CO-GOV:hamilton", "Stephen Hamilton", "American Constitution", "Cañon City small-business owner; his running mate is James Tribert.",
+     ("hea-08", 1, V411_COGOV("Hamilton would protect people with pre-existing conditions"), "I believe in access to high-quality, affordable coverage through competition, transparency, and protecting people with pre-existing conditions."),
+     ("hea-04", 1, V411_COGOV("Hamilton backs direct primary care and health savings accounts"), "support for direct primary care and Health Savings Accounts so families can actually afford care"),
+     ("soc-01", 1, V411_COGOV("Hamilton would protect free speech for everybody"), "protecting free speech for everybody"),
+     ("imm-07", 1, V411_COGOV("Hamilton would work with federal authorities against violent criminals"), "I support working with federal authorities to get violent criminals and real public safety threats off our streets"),
+     ("imm-01", 1, V411_COGOV("Hamilton wants a secure border"), "We need a secure border and a legal immigration system that actually works"),
+     ("ene-10", 1, V411_COGOV("Hamilton would push for energy that keeps bills down"), "push for affordable, reliable energy that keeps bills down"),
+     ("edu-03", 1, V411_COGOV("Hamilton would expand vo-tech, apprenticeships and trade schools"), "I'm for expanding vo-tech, apprenticeships, trade schools, and community colleges."),
+     ("sta-07", 1, V411_COGOV("Hamilton would expand technical schools and community colleges"), None),
+     ("eco-07", 1, V411_COGOV("Hamilton would cut wasteful spending"), "cut wasteful spending to ease tax pressure"),
+     ("sta-08", 1, V411_COGOV("Hamilton would train and support local law enforcement"), "properly train and support local law enforcement"))
+
+# Oklahoma governor in VOTE411 (read Oct. 27). Jerry Griffin lists governorgriffin2027.com,
+# which didn't load, so his link stays as it was.
+V411_OKGOV = lambda note: page(f"VOTE411 (League of Women Voters) voter guide, candidates’ answers: {note}", "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72638034", READ27)  # noqa: E731
+more("OK-GOV", "OK-GOV:griffin",
+     ("eco-07", 1, V411_OKGOV("Griffin would have state agencies cut waste and duplication"), "State agencies should regularly review spending and eliminate waste and duplication."),
+     ("sta-09", 1, V411_OKGOV("Griffin wants dependable rural access to hospitals, doctors and mental health care"), "Rural communities need dependable access to hospitals, doctors, emergency care, and mental-health services."),
+     ("sta-01", 1, V411_OKGOV("Griffin would maintain roads and water systems"), "We must also maintain roads, water systems, and public safety."))
+
+# Dean Abrams's VOTE411 answers (League of Women Voters of Florida, read Oct. 27; quotes
+# checked against the page text).
+V411_FLGOV = V411(27129037)
+more("FL-GOV", "FL-GOV:abrams",
+     ("ene-04", 1, V411_FLGOV("Abrams would enforce runoff rules with real inspections and penalties"), "Enforce existing runoff rules with real inspections and penalties, and speed up septic-to-sewer conversion near springs."),
+     ("sta-05", 1, V411_FLGOV("Abrams would protect dunes, mangroves and seagrass as storm defenses"), "Protect beach access, dunes, mangroves and seagrass, our first storm defense."),
+     ("hea-02", 1, V411_FLGOV("Abrams would pool state drug purchasing and import cheaper drugs"), "pool state drug purchasing, and push to import from other safe countries"),
+     ("hea-07", 1, V411_FLGOV("Abrams would seek a reinsurance waiver to lower marketplace premiums"), "Pursue a federal reinsurance waiver to lower marketplace premiums for everyone."),
+     ("edu-04", 1, V411_FLGOV("Abrams would set minimum teacher pay by county cost of living"), "Set minimum pay by county, based on local cost of living, so teachers can afford to live where they teach."),
+     ("edu-06", 1, V411_FLGOV("Abrams supports vouchers with income limits restored"), "I support vouchers, but restore income limits so public dollars go first to families who need them."),
+     ("edu-10", 1, V411_FLGOV("Abrams wants every graduate to understand the Constitution"), "Every graduate should understand the Constitution and the Federalist and Anti-Federalist debates that shaped it."))
 
 write("data/research/candidates.json",
-      [{"id": rid, "partial": True, "candidates": cands} for rid, cands in RACES.items()],
+      [{"id": rid, "partial": True, **RACE_FIELDS.get(rid, {}), "candidates": cands} for rid, cands in RACES.items()],
       "Bios and positions for candidates who had none, from their campaign sites, researched Oct. 26, 2026.", updated=READ)

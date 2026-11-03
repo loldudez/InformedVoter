@@ -470,6 +470,53 @@
        }
       }
      }
+    },
+    {
+     "id": "AZ-GOV:lombardo",
+     "name": "Risa Lombardo",
+     "party": "G",
+     "bio": "Registered with both major parties over the years, mostly as a Democrat; now the Green Party nominee.",
+     "positions": {
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "Risa Lombardo campaign site: Lombardo’s issues page calls for moving off fossil fuels to renewable energy",
+        "url": "https://risalombardo.com/issues/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We need to get off fossil fuels and on to renewable energy."
+       }
+      },
+      "ene-03": {
+       "stance": -2,
+       "source": {
+        "title": "Risa Lombardo campaign site: Lombardo’s issues page calls for getting off fossil fuels",
+        "url": "https://risalombardo.com/issues/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-03": {
+       "stance": 1,
+       "source": {
+        "title": "Risa Lombardo campaign site: Lombardo’s issues page demands a living wage",
+        "url": "https://risalombardo.com/issues/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We demand a living wage and a real safety net."
+       }
+      },
+      "gov-11": {
+       "stance": 1,
+       "source": {
+        "title": "Risa Lombardo campaign site: Lombardo’s issues page calls for public financing of elections",
+        "url": "https://risalombardo.com/issues/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We demand public financing of elections, open debates, and more representative voting systems."
+       }
+      }
+     }
     }
    ]
   },
@@ -602,6 +649,113 @@
        }
       }
      }
+    },
+    {
+     "id": "CO-GOV:hamilton",
+     "name": "Stephen Hamilton",
+     "party": "American Constitution",
+     "bio": "Cañon City small-business owner; his running mate is James Tribert.",
+     "positions": {
+      "hea-08": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would protect people with pre-existing conditions",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I believe in access to high-quality, affordable coverage through competition, transparency, and protecting people with pre-existing conditions."
+       }
+      },
+      "hea-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton backs direct primary care and health savings accounts",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "support for direct primary care and Health Savings Accounts so families can actually afford care"
+       }
+      },
+      "soc-01": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would protect free speech for everybody",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "protecting free speech for everybody"
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would work with federal authorities against violent criminals",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I support working with federal authorities to get violent criminals and real public safety threats off our streets"
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton wants a secure border",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "We need a secure border and a legal immigration system that actually works"
+       }
+      },
+      "ene-10": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would push for energy that keeps bills down",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "push for affordable, reliable energy that keeps bills down"
+       }
+      },
+      "edu-03": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would expand vo-tech, apprenticeships and trade schools",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I'm for expanding vo-tech, apprenticeships, trade schools, and community colleges."
+       }
+      },
+      "sta-07": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would expand technical schools and community colleges",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would cut wasteful spending",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "cut wasteful spending to ease tax pressure"
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Hamilton would train and support local law enforcement",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=3697674",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "properly train and support local law enforcement"
+       }
+      }
+     }
     }
    ]
   },
@@ -643,6 +797,76 @@
         "date": "2026-10-26",
         "accessed": true
        }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams would enforce runoff rules with real inspections and penalties",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Enforce existing runoff rules with real inspections and penalties, and speed up septic-to-sewer conversion near springs."
+       }
+      },
+      "sta-05": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams would protect dunes, mangroves and seagrass as storm defenses",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Protect beach access, dunes, mangroves and seagrass, our first storm defense."
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams would pool state drug purchasing and import cheaper drugs",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "pool state drug purchasing, and push to import from other safe countries"
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams would seek a reinsurance waiver to lower marketplace premiums",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Pursue a federal reinsurance waiver to lower marketplace premiums for everyone."
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams would set minimum teacher pay by county cost of living",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Set minimum pay by county, based on local cost of living, so teachers can afford to live where they teach."
+       }
+      },
+      "edu-06": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams supports vouchers with income limits restored",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I support vouchers, but restore income limits so public dollars go first to families who need them."
+       }
+      },
+      "edu-10": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Abrams wants every graduate to understand the Constitution",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=27129037",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Every graduate should understand the Constitution and the Federalist and Anti-Federalist debates that shaped it."
+       }
       }
      }
     },
@@ -650,7 +874,39 @@
      "id": "FL-GOV:burkett",
      "name": "Charles Burkett",
      "party": "I",
-     "bio": "Lifelong Floridian and investor from Surfside, running with no party and taking no contributions."
+     "bio": "Real estate investor and longtime mayor of Surfside, including after the 2021 condo collapse; running with no party and taking no contributions.",
+     "positions": {
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "Charles Burkett campaign site: Burkett would phase out property taxes for long-term residents",
+        "url": "https://burkettforgov.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Slash and eventually eliminate property taxes for vested Florida homeowners and renters."
+       }
+      },
+      "hou-04": {
+       "stance": -1,
+       "source": {
+        "title": "Charles Burkett campaign site: Burkett would stop the construction boom and favor renovation",
+        "url": "https://burkettforgov.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Stop the current radical new construction boom which is turning our roads into parking lots."
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "Charles Burkett campaign site: Burkett would give first responders every tool they need",
+        "url": "https://burkettforgov.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Give our first responders every tool they need to be the best in the business."
+       }
+      }
+     }
     },
     {
      "id": "FL-GOV:russo",
@@ -700,6 +956,72 @@
        "source": {
         "title": "Frank Russo campaign site: Russo would demand measurable results where public incentives are involved",
         "url": "https://russo2026.com/priorities/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "FL-GOV:jewett",
+     "name": "Scott Jewett",
+     "party": "L",
+     "bio": "Boca Raton entrepreneur running as the Libertarian nominee with Nicole Skelly.",
+     "positions": {
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "Scott Jewett campaign site: Jewett wants education dollars to follow the child",
+        "url": "https://scottjewett.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We support real school choice so education dollars follow the child, not the system."
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Scott Jewett campaign site: Jewett would cut taxes",
+        "url": "https://scottjewett.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Cut Taxes and Regulations"
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "Scott Jewett campaign site, platform page (the Libertarian Party of Florida platform): The platform opposes enlisting state and local employees to enforce federal immigration law",
+        "url": "https://scottjewett.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "gov-07": {
+       "stance": 1,
+       "source": {
+        "title": "Scott Jewett campaign site, platform page (the Libertarian Party of Florida platform): The platform supports ranked-choice voting",
+        "url": "https://scottjewett.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We support Ranked Choice."
+       }
+      },
+      "gov-03": {
+       "stance": -1,
+       "source": {
+        "title": "Scott Jewett campaign site, platform page (the Libertarian Party of Florida platform): The platform favors voluntary disclosure of campaign contributions",
+        "url": "https://scottjewett.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We support a structure for candidates to voluntarily disclose campaign contributions."
+       }
+      },
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Scott Jewett campaign site, platform page (the Libertarian Party of Florida platform): The platform would apply Sunshine laws to all public employees",
+        "url": "https://scottjewett.com/platform/",
         "date": "2026-10-26",
         "accessed": true
        }
@@ -1979,6 +2301,7 @@
      "id": "MD-GOV:ellis",
      "name": "Andy Ellis",
      "party": "G",
+     "bio": "Debate coach and founder of Debate Strategies LLC, active in the Green Party for a decade.",
      "positions": {
       "sta-02": {
        "stance": 2,
@@ -1997,6 +2320,130 @@
         "url": "https://www.gogreen2026.com/platform",
         "date": "2026-10-26",
         "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "Maryland Matters voter guide, candidates’ answers: Ellis would tax the rich and end corporate tax breaks",
+        "url": "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We need to tax the rich and end corporate tax breaks!"
+       }
+      },
+      "sta-10": {
+       "stance": -1,
+       "source": {
+        "title": "Maryland Matters voter guide, candidates’ answers: Ellis would end corporate tax breaks",
+        "url": "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide, candidates’ answers: Ellis would use the money for bigger tax credits for working-class Marylanders",
+        "url": "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "gov-07": {
+       "stance": 2,
+       "source": {
+        "title": "Maryland Matters voter guide, candidates’ answers: Ellis supports ranked-choice voting and proportional representation",
+        "url": "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "public financing for all races, and ranked choice voting and proportional representation"
+       }
+      },
+      "gov-11": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide, candidates’ answers: Ellis supports public financing for all races",
+        "url": "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide, candidates’ answers: Ellis would explore single-payer health care at the state level",
+        "url": "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We should explore a single-payer model at the state level."
+       }
+      },
+      "imm-08": {
+       "stance": -2,
+       "source": {
+        "title": "Maryland Matters voter guide, candidates’ answers: Ellis says no Maryland government or police agency should work with ICE",
+        "url": "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "In Maryland, no government or law enforcement entities should collaborate with ICE"
+       }
+      }
+     }
+    },
+    {
+     "id": "MD-GOV:white",
+     "name": "Cathy White",
+     "party": "Working Class",
+     "bio": "Factory worker for 40 years and caregiver for her mother and sister; the Working Class Party nominee.",
+     "positions": {
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide, candidates’ answers: White says health care should be a human right",
+        "url": "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Health care should be a human right and not based on how much money you have."
+       }
+      },
+      "sta-03": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide, candidates’ answers: White says everyone able to work needs a job with a living wage",
+        "url": "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Every person able to work needs a job with a living wage."
+       }
+      },
+      "sta-01": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide, candidates’ answers: White would put the unemployed to work fixing roads and bridges",
+        "url": "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "people who are now unemployed could be put to work fixing the crumbling roads and bridges that need to be repaired or replaced"
+       }
+      },
+      "eco-09": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide, candidates’ answers: White says workers must organize to win higher wages",
+        "url": "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "Maryland Matters voter guide, candidates’ answers: White opposes ICE’s actions",
+        "url": "https://marylandmatters.org/voter-guides/contests/governor-lieutenant-governor-general/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I am opposed to the actions of ICE."
        }
       }
      }
@@ -2068,6 +2515,101 @@
         "url": "https://electanthonyhudson.com/",
         "date": "2026-10-26",
         "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "MI-GOV:brandenburg",
+     "name": "Donna Brandenburg",
+     "party": "U.S. Taxpayers",
+     "bio": "Michigan-born entrepreneur in energy, real estate, farming and technology.",
+     "positions": {
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "U.S. Taxpayers Party of Michigan candidate page (brandenburgforgovernor.com forwards here): Brandenburg would eliminate property taxes",
+        "url": "https://ustpm.org/candidates?id=74",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "eliminating property taxes and the state income tax"
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "U.S. Taxpayers Party of Michigan candidate page (brandenburgforgovernor.com forwards here): Brandenburg would eliminate the state income tax",
+        "url": "https://ustpm.org/candidates?id=74",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "MI-GOV:campbell",
+     "name": "Douglas Campbell",
+     "party": "G",
+     "bio": "Retired registered professional engineer and substitute high-school teacher; takes no corporate PAC contributions.",
+     "positions": {
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Campbell would eliminate Michigan’s charter school system",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Eliminate the charter system."
+       }
+      },
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Campbell wants a not-for-profit national health system",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "We need to create a not-for-profit National Health System."
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Campbell would cover every flat roof and parking lot with solar panels",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Every flat roof and parking lot should be covered with photovoltaic collectors"
+       }
+      },
+      "ene-05": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Campbell would encourage electric vehicles",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Electric vehicles should be encouraged at every opportunity."
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Campbell would close the Line 5 pipeline to protect the Great Lakes",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Line 5 needs to be closed before we poison the entire Great Lakes."
+       }
+      },
+      "sta-10": {
+       "stance": -2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Campbell calls incentives for private job creation corporate welfare",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=25687753",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Every time the government tries encouraging job creation in the private sector, it always ends up as corporate welfare"
        }
       }
      }
@@ -2171,6 +2713,12 @@
        }
       }
      }
+    },
+    {
+     "id": "MN-SEN:simonetti",
+     "name": "Marisa Simonetti",
+     "party": "I",
+     "officialSite": null
     }
    ]
   },
@@ -2643,7 +3191,7 @@
      "id": "NE-SEN:marvin",
      "name": "Mike Marvin",
      "party": "Legal Marijuana Now",
-     "bio": "Retired executive director of NAPE/AFSCME Local 61, the state employees’ union. He remains on the ballot but has urged his supporters to back Dan Osborn."
+     "bio": "Retired executive director of NAPE/AFSCME Local 61, the state employees’ union. He withdrew on Aug. 21 (VOTE411) and has urged his supporters to back Dan Osborn, but his name remains on the ballot."
     },
     {
      "id": "NE-SEN:conboy",
@@ -2728,6 +3276,24 @@
         "date": "2026-10-26",
         "accessed": true,
         "quote": "Make childcare affordable for American families"
+       }
+      }
+     }
+    },
+    {
+     "id": "NE-SEN:richards",
+     "name": "Robin Richards",
+     "party": "Working People",
+     "bio": "Ralston school board member running for the Nebraska Working People Party.",
+     "positions": {
+      "edu-01": {
+       "stance": 2,
+       "source": {
+        "title": "Robin Richards campaign site: Richards wants fully funded public schools",
+        "url": "https://robinforne.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Our public schools deserve the support to serve every community."
        }
       }
      }
@@ -2903,6 +3469,59 @@
        }
       }
      }
+    },
+    {
+     "id": "NJ-SEN:kuniansky",
+     "name": "Joanne Kuniansky",
+     "party": "Socialist Workers",
+     "bio": "Union activist who has worked as a refinery operator, meatpacker and Walmart deli worker; a Socialist Workers Party member since 1977, from West New York.",
+     "positions": {
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "WHYY, Sept. 22, 2026: Kuniansky calls on workers to build union solidarity",
+        "url": "https://whyy.org/articles/election-2026-new-jersey-senate-voter-guide-booker/",
+        "date": "2026-09-22",
+        "quote": "The Socialist Workers Party calls on workers to build solidarity with unions fighting attacks on our wages and conditions"
+       }
+      },
+      "eco-06": {
+       "stance": 2,
+       "source": {
+        "title": "WHYY, Sept. 22, 2026: Kuniansky supports a public works program building hospitals, child care centers and other infrastructure",
+        "url": "https://whyy.org/articles/election-2026-new-jersey-senate-voter-guide-booker/",
+        "date": "2026-09-22",
+        "quote": "a public works program to provide jobs at union-scale wages to build hospitals, child care centers and other infrastructure"
+       }
+      },
+      "eco-13": {
+       "stance": 2,
+       "source": {
+        "title": "WHYY, Sept. 22, 2026: Kuniansky supports a shorter work week with no pay cut",
+        "url": "https://whyy.org/articles/election-2026-new-jersey-senate-voter-guide-booker/",
+        "date": "2026-09-22",
+        "quote": "She also supports enacting a shorter work week with no pay cuts."
+       }
+      },
+      "imm-02": {
+       "stance": 2,
+       "source": {
+        "title": "WHYY, Sept. 22, 2026: Kuniansky calls for amnesty for workers without papers",
+        "url": "https://whyy.org/articles/election-2026-new-jersey-senate-voter-guide-booker/",
+        "date": "2026-09-22",
+        "quote": "calling for an amnesty for workers in the U.S. without papers"
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "WHYY, Sept. 22, 2026: Kuniansky opposes the U.S. war in Iran",
+        "url": "https://whyy.org/articles/election-2026-new-jersey-senate-voter-guide-booker/",
+        "date": "2026-09-22",
+        "quote": "an imperialist war by the U.S. rulers to plunder oil, gas and labor of the region"
+       }
+      }
+     }
     }
    ]
   },
@@ -3031,6 +3650,3853 @@
        }
       }
      }
+    },
+    {
+     "id": "OH-SEN:redpath",
+     "name": "William Redpath",
+     "party": "L",
+     "bio": "Findlay native, CPA and retired business-valuation analyst; chaired the Libertarian National Committee from 2006 to 2010.",
+     "positions": {
+      "eco-10": {
+       "stance": -2,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath would end all tariffs",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "The United States should end all tariffs on imported goods and services, regardless of the policies of other nations."
+       }
+      },
+      "agr-07": {
+       "stance": -2,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath supports unilateral free trade",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "agr-06": {
+       "stance": 1,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath supports unilateral free trade",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 2,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath calls the debt a spending problem and would eliminate the Education and HUD departments",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "it is a too much spending, not too little taxing, problem."
+       }
+      },
+      "agr-01": {
+       "stance": -2,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath would end farm subsidies",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "an end to all corporate welfare and farm subsidies"
+       }
+      },
+      "edu-01": {
+       "stance": -1,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath would eliminate the Department of Education",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hou-01": {
+       "stance": -1,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath would eliminate the Department of Housing and Urban Development",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-05": {
+       "stance": 1,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath would end federal drug prohibition and leave it to the states",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "the Federal government should end its drug prohibition and allow the states to address this issue"
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath calls U.S. participation in the war on Iran unconstitutional",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "the United States participation in the war against Iran is clearly unconstitutional"
+       }
+      },
+      "def-04": {
+       "stance": 2,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath says the Iran war needed Congress’s approval",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": -1,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath would end the special relationship with Israel",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We should treat Israel like any other allied nation."
+       }
+      },
+      "imm-03": {
+       "stance": 2,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath supports open immigration with exceptions for criminals and threats",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Open immigration would be the greatest anti-poverty program the world has ever known."
+       }
+      },
+      "eco-12": {
+       "stance": -2,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath would replace the tax code with a 20% flat tax",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "A Flat Tax of 20 percent on individual income"
+       }
+      },
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath would replace the tax code with a 20% flat tax",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hea-03": {
+       "stance": -2,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath would phase out federal Medicaid funding",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "phasing out Federal subsidies over a ten year period"
+       }
+      },
+      "gov-07": {
+       "stance": 2,
+       "source": {
+        "title": "Bill Redpath campaign site: Redpath supports ranked-choice voting",
+        "url": "https://billredpath.com/faq/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I support the use of Ranked Choice Voting for single winner elections"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "OH-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "OH-GOV:kissick",
+     "name": "Donald Kissick",
+     "party": "L",
+     "bio": "Navy veteran (six years, including Desert Storm) from Ottawa in northwestern Ohio; running with James Mills.",
+     "positions": {
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "Don Kissick campaign site: Kissick supports the amendment to end property taxes",
+        "url": "https://donkissick.com/on-the-issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We are in favor of the end property tax amendment."
+       }
+      },
+      "sta-10": {
+       "stance": -1,
+       "source": {
+        "title": "Don Kissick campaign site: Kissick would end corporate welfare for large institutions",
+        "url": "https://donkissick.com/on-the-issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "eliminate corporate welfare for the larger institutions"
+       }
+      },
+      "gov-11": {
+       "stance": 2,
+       "source": {
+        "title": "Don Kissick campaign site: Kissick wants no more corporate money in politics",
+        "url": "https://donkissick.com/on-the-issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We want to see no more corporate bribery."
+       }
+      },
+      "gov-13": {
+       "stance": -1,
+       "source": {
+        "title": "Don Kissick campaign site: Kissick opposes contributions from regulated monopolies",
+        "url": "https://donkissick.com/on-the-issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-06": {
+       "stance": 2,
+       "source": {
+        "title": "Don Kissick campaign site: Kissick would bar legislators from lobbying for five years",
+        "url": "https://donkissick.com/on-the-issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We want to ban legislators from becoming lobbyists for 5 years after they’re in office."
+       }
+      },
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Don Kissick campaign site: Kissick wants contracts and budgets in a searchable public database",
+        "url": "https://donkissick.com/on-the-issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We want total transparency in government contracts and budgets"
+       }
+      },
+      "soc-10": {
+       "stance": 1,
+       "source": {
+        "title": "Don Kissick campaign site: Kissick backs the petition to protect same-sex marriage in Ohio’s constitution",
+        "url": "https://donkissick.com/on-the-issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-05": {
+       "stance": 1,
+       "source": {
+        "title": "Don Kissick campaign site: Kissick would get government bureaucracy out of the marijuana industry",
+        "url": "https://donkissick.com/on-the-issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "imm-02": {
+       "stance": 2,
+       "source": {
+        "title": "Don Kissick campaign site: Kissick supports a clear lawful path to citizenship",
+        "url": "https://donkissick.com/on-the-issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Immigrants should have a straightforward and clear lawful path to citizenship"
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "Don Kissick campaign site: Kissick wants civil, not militarized, immigration enforcement",
+        "url": "https://donkissick.com/on-the-issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "immigration enforcement should be civil not militarized"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "OK-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "OK-SEN:meinhardt",
+     "name": "Ron Meinhardt",
+     "party": "I",
+     "bio": "Registered nurse and Oklahoma Republican running as an independent conservative.",
+     "positions": {
+      "def-04": {
+       "stance": 2,
+       "source": {
+        "title": "Ron Meinhardt campaign site: Meinhardt says Congress must authorize war",
+        "url": "https://www.running4ok.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Congress must authorize war."
+       }
+      },
+      "def-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ron Meinhardt campaign site: Meinhardt opposes forever wars",
+        "url": "https://www.running4ok.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Ron Meinhardt campaign site: Meinhardt would secure the border and streamline deportation",
+        "url": "https://www.running4ok.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "That means securing the border, streamlining deportation, and ensuring a process that is constitutional, enforceable, and accountable."
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "Ron Meinhardt campaign site: Meinhardt supports enforcing immigration laws",
+        "url": "https://www.running4ok.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "imm-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ron Meinhardt campaign site: Meinhardt criticizes politicians who drift toward amnesty",
+        "url": "https://www.running4ok.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "ene-10": {
+       "stance": 1,
+       "source": {
+        "title": "Ron Meinhardt campaign site: Meinhardt calls affordable domestic energy a family issue",
+        "url": "https://www.running4ok.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "gov-03": {
+       "stance": 1,
+       "source": {
+        "title": "Ron Meinhardt campaign site: Meinhardt says voters deserve to know who funds political influence",
+        "url": "https://www.running4ok.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Voters deserve to know who is funding political influence and what those interests expect in return."
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Ron Meinhardt campaign site: Meinhardt wants a solvent future, not endless debt",
+        "url": "https://www.running4ok.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "OK-SEN:stinnett",
+     "name": "Curtis Stinnett",
+     "party": "I",
+     "bio": "Pharmacist from Lindsay, now in Tulsa; takes no campaign contributions.",
+     "positions": {
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Curtis Stinnett campaign site: Stinnett supports Medicare for All",
+        "url": "https://www.stinnettforsenate.org/main-ideas",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Healthcare is a Human Right"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "Curtis Stinnett campaign site: Stinnett supports Medicare for All",
+        "url": "https://www.stinnettforsenate.org/main-ideas",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Curtis Stinnett campaign site: Stinnett would codify Roe",
+        "url": "https://www.stinnettforsenate.org/main-ideas",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Codify Roe"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "Curtis Stinnett campaign site: Stinnett would codify Roe",
+        "url": "https://www.stinnettforsenate.org/main-ideas",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "gov-11": {
+       "stance": 2,
+       "source": {
+        "title": "Curtis Stinnett campaign site: Stinnett calls money in politics the main obstacle to better government",
+        "url": "https://www.stinnettforsenate.org/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "money in politics is the primary obstacle to better government"
+       }
+      },
+      "gov-13": {
+       "stance": -2,
+       "source": {
+        "title": "Curtis Stinnett campaign site: Stinnett would overturn Citizens United",
+        "url": "https://www.stinnettforsenate.org/main-ideas",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": 1,
+       "source": {
+        "title": "Curtis Stinnett campaign site: Stinnett supports a living wage",
+        "url": "https://www.stinnettforsenate.org/main-ideas",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "OR-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "OR-GOV:smith",
+     "name": "Brett Smith",
+     "party": "Pacific Green",
+     "positions": {
+      "sta-06": {
+       "stance": 2,
+       "source": {
+        "title": "Brett Smith campaign site: Smith calls corruption the most important issue",
+        "url": "https://brett-smith.us/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Corruption is the single most important issue facing us today."
+       }
+      },
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Brett Smith campaign site: Smith would open the Oregon Health Plan to every resident",
+        "url": "https://brett-smith.us/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "This plan expands the Oregon Health Plan into a universal public option available to every Oregon resident"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "Brett Smith campaign site: Smith would open the Oregon Health Plan to every resident",
+        "url": "https://brett-smith.us/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "RI-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "RI-SEN:bahry",
+     "name": "Michael Bahry",
+     "party": "I",
+     "bio": "Retired construction executive who founded the Providence nonprofit Fifty-Three: Five; teaches theology at Salve Regina University.",
+     "positions": {
+      "gov-01": {
+       "stance": 2,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry supports term limits for Congress",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "term limits break the cycle of financial dominance, name recognition, and office perks"
+       }
+      },
+      "def-02": {
+       "stance": -2,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry would withdraw from NATO",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "As for the United States, I believe it's time to withdraw from NATO."
+       }
+      },
+      "def-07": {
+       "stance": 2,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry would focus on diplomacy over war",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We must focus on diplomacy-not war."
+       }
+      },
+      "def-01": {
+       "stance": -1,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry says military spending is not a jobs program",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "War and military spending are not sustainable job programs."
+       }
+      },
+      "def-13": {
+       "stance": -1,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry wants peace in Ukraine rather than more weapons",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "peace over more bombs"
+       }
+      },
+      "def-05": {
+       "stance": -1,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry wants peace in Ukraine rather than more weapons",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": -1,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry calls for peace in Gaza, not more bombs",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "A call for peace, not more bombs"
+       }
+      },
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry is pro-life",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I am Catholic and I am pro-life."
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry is pro-life",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "imm-02": {
+       "stance": 1,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry wants a compassionate solution rather than removing hardworking people",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Rhode Islanders want a compassionate solution - not the removal of good hardworking people."
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry objects to spending billions on mass deportations",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry would secure the border against trafficking",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We must secure our border to stop human and drug trafficking."
+       }
+      },
+      "soc-12": {
+       "stance": -1,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry says biological males should not compete in women’s sports",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "clearly, biological males should not compete in women's or girls' sports"
+       }
+      },
+      "soc-11": {
+       "stance": -2,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry opposes medical transition for minors",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We must protect our children from irreversible decisions they are too young to fully understand"
+       }
+      },
+      "soc-06": {
+       "stance": 1,
+       "source": {
+        "title": "Michael Bahry campaign site: Bahry’s platform is rooted in religious liberty",
+        "url": "https://bahryforsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "WV-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "WV-SEN:wilson",
+     "name": "S. Marshall Wilson",
+     "party": "Constitution",
+     "bio": "Army combat veteran (Iraq), former missionary in the Peruvian Amazon and former state delegate; the Constitution Party’s 2024 nominee for governor.",
+     "positions": {
+      "eco-07": {
+       "stance": 2,
+       "source": {
+        "title": "S. Marshall Wilson campaign site: Wilson would vote against every unbalanced budget",
+        "url": "https://wilsonwv.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Marshall will vote against every budget that doesn't balance"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "SC-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "SC-SEN:whitener",
+     "name": "Kasie Whitener",
+     "party": "L",
+     "bio": "University of South Carolina business professor, author and radio host from Blythewood; a former chair of the South Carolina Libertarian Party.",
+     "positions": {
+      "eco-07": {
+       "stance": 2,
+       "source": {
+        "title": "Kasie Whitener campaign site: Whitener would cut federal spending 5% across all agencies and pass a balanced budget amendment",
+        "url": "https://kasiesouthcarolina.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "reduce federal spending by 5% across all agencies"
+       }
+      },
+      "hea-04": {
+       "stance": 1,
+       "source": {
+        "title": "Kasie Whitener campaign site: Whitener would separate health insurance from employment with more free-market options",
+        "url": "https://kasiesouthcarolina.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Separate health insurance from employment, more free market options"
+       }
+      },
+      "def-07": {
+       "stance": 1,
+       "source": {
+        "title": "Kasie Whitener campaign site: Whitener says no more foreign wars",
+        "url": "https://kasiesouthcarolina.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "No more foreign wars"
+       }
+      },
+      "soc-04": {
+       "stance": -1,
+       "source": {
+        "title": "Kasie Whitener campaign site: Whitener wants no new federal laws on abortion",
+        "url": "https://kasiesouthcarolina.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "No new federal laws or taxpayer dollars spent on abortion"
+       }
+      },
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "Kasie Whitener campaign site: Whitener would end protectionist policies",
+        "url": "https://kasiesouthcarolina.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "end protectionist policies and laws"
+       }
+      },
+      "agr-07": {
+       "stance": -1,
+       "source": {
+        "title": "Kasie Whitener campaign site: Whitener would end protectionist policies",
+        "url": "https://kasiesouthcarolina.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "SC-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "SC-GOV:hakim",
+     "name": "Walid Hakim",
+     "party": "G",
+     "bio": "Marine veteran and Columbia businessman; a former military policeman and executive director of the S.C. Libertarian Party, now the Green nominee.",
+     "positions": {
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "Walid Hakim campaign site: Hakim would invest deeply in schools rather than cut funding",
+        "url": "https://www.walidnhakim.com/Platform.html",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Instead of cutting funding, South Carolina must invest deeply in its schools and students."
+       }
+      },
+      "edu-01": {
+       "stance": 2,
+       "source": {
+        "title": "Walid Hakim campaign site: Hakim would invest deeply in schools",
+        "url": "https://www.walidnhakim.com/Platform.html",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "edu-09": {
+       "stance": 2,
+       "source": {
+        "title": "Walid Hakim campaign site: Hakim would provide breakfast and lunch to all students",
+        "url": "https://www.walidnhakim.com/Platform.html",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Every school in South Carolina would provide healthy breakfast and lunch to all students"
+       }
+      },
+      "soc-07": {
+       "stance": 2,
+       "source": {
+        "title": "Walid Hakim campaign site: Hakim would build child care into the school system",
+        "url": "https://www.walidnhakim.com/Platform.html",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Childcare would be incorporated into the state school system"
+       }
+      },
+      "edu-03": {
+       "stance": 2,
+       "source": {
+        "title": "Walid Hakim campaign site: Hakim would turn grades 11 and 12 into trade school or associate degree programs",
+        "url": "https://www.walidnhakim.com/Platform.html",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Grades 11 and 12 would be transformed into trade school or associate degree programs"
+       }
+      },
+      "eco-12": {
+       "stance": 2,
+       "source": {
+        "title": "Walid Hakim campaign site: Hakim supports a progressive state tax system",
+        "url": "https://www.walidnhakim.com/Platform.html",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "he would support a progressive tax system where those who earn more contribute more"
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "Walid Hakim campaign site: Hakim would have those who earn more contribute more",
+        "url": "https://www.walidnhakim.com/Platform.html",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Walid Hakim campaign site: Hakim would create a state-owned insurer covering every resident",
+        "url": "https://www.walidnhakim.com/Platform.html",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "a state-owned insurer, offering full coverage to every resident"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "Walid Hakim campaign site: Hakim would create a state-owned insurer",
+        "url": "https://www.walidnhakim.com/Platform.html",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hou-02": {
+       "stance": 1,
+       "source": {
+        "title": "Walid Hakim campaign site: Hakim would limit ownership to twelve homes per corporation or individual",
+        "url": "https://www.walidnhakim.com/Platform.html",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "limit property ownership to twelve residential properties per corporation or individual"
+       }
+      },
+      "sta-12": {
+       "stance": 2,
+       "source": {
+        "title": "Walid Hakim campaign site: Hakim would build high-speed rail between the state’s cities",
+        "url": "https://www.walidnhakim.com/Platform.html",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "contract the development of a high-speed rail systems connecting the state’s major cities"
+       }
+      },
+      "ene-07": {
+       "stance": 2,
+       "source": {
+        "title": "Walid Hakim campaign site: Hakim wants free public transportation",
+        "url": "https://www.walidnhakim.com/Platform.html",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "SC-GOV:addison",
+     "name": "Michael Addison",
+     "party": "United Citizens",
+     "bio": "Orangeburg medical director and community organizer (foreclosure prevention, job training, homeless relief); also a licensed asbestos inspector."
+    }
+   ]
+  },
+  {
+   "id": "TN-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "TN-SEN:gerena",
+     "name": "Andrew Gerena",
+     "party": "I",
+     "bio": "Army veteran who has worked in security, trucking, IT and scientific research; known by his military callsign “Jeranimo.”",
+     "positions": {
+      "def-01": {
+       "stance": -1,
+       "source": {
+        "title": "Andrew Gerena campaign site: Gerena would redirect money from the war budget to education and infrastructure",
+        "url": "https://www.jeranimo4senate.org/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Re-direct federal funding from the War Budget towards Education, Infrastructure, Research, and Job training programs"
+       }
+      },
+      "def-12": {
+       "stance": -2,
+       "source": {
+        "title": "Andrew Gerena campaign site: Gerena would cut military aid to countries suspected of war crimes and separate U.S. forces from Israel’s government",
+        "url": "https://www.jeranimo4senate.org/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Separate our military and intelligence agencies from all branches of the Israeli government"
+       }
+      },
+      "def-11": {
+       "stance": -1,
+       "source": {
+        "title": "Andrew Gerena campaign site: Gerena would investigate AIPAC and separate U.S. agencies from Israel’s government",
+        "url": "https://www.jeranimo4senate.org/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "Andrew Gerena campaign site: Gerena rejects any tax increase",
+        "url": "https://www.jeranimo4senate.org/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Common sense budgeting, rejecting any Tax increase"
+       }
+      },
+      "soc-08": {
+       "stance": 1,
+       "source": {
+        "title": "Andrew Gerena campaign site: Gerena wants data privacy rules for AI data centers",
+        "url": "https://www.jeranimo4senate.org/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Serious environmental and data privacy regulations on AI Data centers"
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "Andrew Gerena campaign site: Gerena wants environmental rules for AI data centers",
+        "url": "https://www.jeranimo4senate.org/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "Andrew Gerena campaign site: Gerena would redirect war spending to education",
+        "url": "https://www.jeranimo4senate.org/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "edu-03": {
+       "stance": 1,
+       "source": {
+        "title": "Andrew Gerena campaign site: Gerena would redirect war spending to job training",
+        "url": "https://www.jeranimo4senate.org/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "TN-SEN:matthews",
+     "name": "Yoshi Matthews",
+     "party": "I",
+     "bio": "Accountant and founder of FTP Nonprofit, which serves local communities and people with disabilities.",
+     "positions": {
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Yoshi Matthews campaign site: Matthews would secure the border and enforce immigration laws",
+        "url": "https://yoshimatthewssenate.com/issues/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Secure the border, enforce immigration laws, and support a functional legal immigration system."
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "Yoshi Matthews campaign site: Matthews would enforce immigration laws",
+        "url": "https://yoshimatthewssenate.com/issues/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "TN-SEN:sutman",
+     "name": "David Sutman Jr.",
+     "party": "I",
+     "bio": "Working-class Tennessean with a business background, running as an independent.",
+     "positions": {
+      "gov-01": {
+       "stance": 1,
+       "source": {
+        "title": "David Sutman Jr. campaign site: Sutman would push for term limits",
+        "url": "https://sutmanjr4senate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Push for term limits"
+       }
+      },
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "David Sutman Jr. campaign site: Sutman would increase transparency in spending",
+        "url": "https://sutmanjr4senate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Increase transparency in spending"
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "David Sutman Jr. campaign site: Sutman would cut wasteful spending",
+        "url": "https://sutmanjr4senate.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "TN-SEN:whitson",
+     "name": "Catherine Whitson",
+     "party": "I",
+     "bio": "Pastor, life coach and mentor for 20 years after 30 years in the insurance industry.",
+     "positions": {
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Catherine Whitson campaign site: Whitson would promote green energy",
+        "url": "https://senatorbarcy.org/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Promoting green energy and creativity"
+       }
+      },
+      "edu-01": {
+       "stance": 2,
+       "source": {
+        "title": "Catherine Whitson campaign site: Whitson would boost funding for public schools",
+        "url": "https://senatorbarcy.org/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Boosting funding for public schools and expanding vocational training programs"
+       }
+      },
+      "edu-03": {
+       "stance": 2,
+       "source": {
+        "title": "Catherine Whitson campaign site: Whitson would expand vocational training",
+        "url": "https://senatorbarcy.org/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "edu-06": {
+       "stance": 1,
+       "source": {
+        "title": "Catherine Whitson campaign site: Whitson would also promote private and home schooling",
+        "url": "https://senatorbarcy.org/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "promoting private and home schooling initiatives"
+       }
+      },
+      "edu-05": {
+       "stance": 1,
+       "source": {
+        "title": "Catherine Whitson campaign site: Whitson would find ways to pay off student debt",
+        "url": "https://senatorbarcy.org/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Finding ways to pay off student debt"
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "Catherine Whitson campaign site: Whitson supports affordable housing for all Tennesseans",
+        "url": "https://senatorbarcy.org/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Affordable housing for all Tennesseans"
+       }
+      },
+      "soc-07": {
+       "stance": 1,
+       "source": {
+        "title": "Catherine Whitson campaign site: Whitson would promote better child care",
+        "url": "https://senatorbarcy.org/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "ene-07": {
+       "stance": 1,
+       "source": {
+        "title": "Catherine Whitson campaign site: Whitson would promote mass transit",
+        "url": "https://senatorbarcy.org/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Promote mass transit options"
+       }
+      },
+      "hou-03": {
+       "stance": 1,
+       "source": {
+        "title": "Catherine Whitson campaign site: Whitson would promote mass transit",
+        "url": "https://senatorbarcy.org/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "Catherine Whitson campaign site: Whitson would use the Affordable Care Act to help people without group coverage",
+        "url": "https://senatorbarcy.org/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "TN-SEN:jones",
+     "name": "Robert Jones",
+     "party": "I",
+     "bio": "Independent who takes no campaign donations and asks supporters to give to local nonprofits instead.",
+     "positions": {
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Robert Jones campaign site: Jones would focus on renewable energy and conservation",
+        "url": "https://www.robertfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "By focusing on renewable energy, conservation efforts, and responsible resource management"
+       }
+      },
+      "eco-09": {
+       "stance": 1,
+       "source": {
+        "title": "Robert Jones campaign site: Jones would advocate for fair treatment and wages for workers",
+        "url": "https://www.robertfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I will advocate for equitable treatment, wages that represent your value, and improved work-life balance."
+       }
+      },
+      "gov-11": {
+       "stance": 1,
+       "source": {
+        "title": "Robert Jones campaign site: Jones would limit big business influence in politics",
+        "url": "https://www.robertfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "The goal is to limit or prevent any corruptibility of the party system and any large businesses interfering within the political realm."
+       }
+      },
+      "def-07": {
+       "stance": 1,
+       "source": {
+        "title": "Robert Jones campaign site: Jones warns that striking first makes enemies",
+        "url": "https://www.robertfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Striking first radicalizes generations of people against your power."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "TN-GOV",
+   "partial": true,
+   "candidatesOnly": true,
+   "notes": [
+    {
+     "text": "The ballot lists 15 candidates for governor: Republican Marsha Blackburn, Democrat Jerri Green and 13 independents.",
+     "source": "Hamilton County Election Commission, official sample ballot, Nov. 3, 2026",
+     "url": "https://elect.hamiltontn.gov/Portals/12/HTML/GenSample.html"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "TN-GOV:brewer",
+     "name": "Dean Brewer",
+     "party": "I",
+     "positions": {
+      "sta-01": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Brewer would dedicate more money to infrastructure",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Infrastructure- dedicate more money and expand."
+       }
+      },
+      "edu-06": {
+       "stance": -1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Brewer says state money should stay with public schools",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "State money should stay with public schools."
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Brewer would give teachers more money",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Strive to give teachers more money to attract quality teachers"
+       }
+      }
+     }
+    },
+    {
+     "id": "TN-GOV:brown",
+     "name": "Ray Brown",
+     "party": "I"
+    },
+    {
+     "id": "TN-GOV:morgan",
+     "name": "Charles Van Morgan",
+     "party": "I"
+    },
+    {
+     "id": "TN-GOV:murphy",
+     "name": "Eddie Lee Murphy",
+     "party": "I"
+    },
+    {
+     "id": "TN-GOV:scoggin",
+     "name": "Victor L. Scoggin",
+     "party": "I"
+    },
+    {
+     "id": "TN-GOV:seeman",
+     "name": "Dave Seeman",
+     "party": "I",
+     "positions": {
+      "soc-02": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would enact statewide nondiscrimination protections",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "enact statewide nondiscrimination protections in employment, housing, and public accommodations"
+       }
+      },
+      "soc-03": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would keep government out of personal medical decisions",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "keep government out of personal medical decisions"
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman wants automatic registration and no-excuse absentee voting",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "protect the vote with automatic registration and no-excuse absentee ballots"
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would expand Medicaid",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I'll close the coverage gap through Medicaid expansion"
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would repeal Tennessee’s private-school voucher program",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "repeal the private-school voucher program"
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would fund public schools through an endowment fed by taxes on extreme wealth",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "fund public schools through the Future Families Fund a permanent endowment fed by two taxes on extreme wealth"
+       }
+      },
+      "eco-01": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would tax extreme wealth to fund schools",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "sta-03": {
+       "stance": 2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would raise the minimum wage to $19 over four years",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "raise the minimum wage from the $7.25 federal floor to a $19 living wage over four years"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would end the state grocery tax",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I will end the 4% state grocery tax giving about $400 back to every Tennessee family per year"
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would lower drug prices through state bulk buying",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "bring down prescription prices by buying in bulk for seven million Tennesseans"
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would cut red tape on building homes",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "cut the red tape on building homes"
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would fund community land trusts for permanent affordable housing",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "making affordable housing permanent through state funded community land trusts"
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would pay retention stipends to teachers at high-need schools",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "pay $5,000 retention stipends at the highest-need schools"
+       }
+      },
+      "sta-09": {
+       "stance": 2,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Seeman would put a community health center in every county",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72646085",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I will put a community health center in each county"
+       }
+      }
+     },
+     "bio": "Mechanical engineer; co-founder of the design firm Ovyl and founder of Squarish, a public benefit firm.",
+     "officialSite": "https://davefortn.com/"
+    },
+    {
+     "id": "TN-GOV:smithson",
+     "name": "Karl Knox Smithson",
+     "party": "I"
+    },
+    {
+     "id": "TN-GOV:taylor",
+     "name": "L. Webb Taylor",
+     "party": "I"
+    },
+    {
+     "id": "TN-GOV:hatley",
+     "name": "David Hatley",
+     "party": "I",
+     "bio": "East Tennessee manufacturer who built nine companies, including a hot tub maker; running with no party and no donors.",
+     "positions": {
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would give infrastructure grants for developments that set aside starter homes",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "The state helps pay for the water, sewer, and road work a city would otherwise push onto the developer."
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would roll back building-code costs and speed approvals",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Roll back the code changes that priced people out."
+       }
+      },
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would post every contract and payment within 30 days",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Every legally disclosable contract, grant, amendment, and payment posted within 30 days"
+       }
+      },
+      "sta-06": {
+       "stance": 2,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would ban contributions from state contractors and create an elected auditor",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "David Hatley would ban contributions from significant state contractors"
+       }
+      },
+      "gov-11": {
+       "stance": 1,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would ban contributions from state contractors",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-11": {
+       "stance": 1,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would end data center tax breaks",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "ends the giveaways: no PILOTs, no abatements"
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would put data center tax revenue toward cutting homeowners’ property taxes",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-07": {
+       "stance": 2,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would end technical college waitlists and pay instructors competitively",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Pay TCAT instructors competitively, because you can’t scale a program you can’t staff."
+       }
+      },
+      "edu-03": {
+       "stance": 2,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would double registered apprenticeships",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Double registered apprenticeships in four years."
+       }
+      },
+      "cri-04": {
+       "stance": 1,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would make life without parole mandatory for repeat child sex offenders",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "cri-05": {
+       "stance": 2,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would start reentry help 180 days before release",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "David Hatley will cut recidivism in half by giving them a path to work"
+       }
+      },
+      "cri-08": {
+       "stance": 2,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would expand drug, mental-health and veterans courts statewide",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Drug, mental-health, and veterans courts expand to reach every judicial district, with treatment capacity funded alongside them."
+       }
+      },
+      "sta-08": {
+       "stance": 2,
+       "source": {
+        "title": "David Hatley campaign site: Hatley would hire detectives and triple the TBI drug division",
+        "url": "https://hatleyforgovernor.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "First we need to triple that division to about 150."
+       }
+      }
+     }
+    },
+    {
+     "id": "TN-GOV:jackson",
+     "name": "Wendell Jackson",
+     "party": "I",
+     "bio": "Comedian and spoken-word performer running a campaign that takes no money.",
+     "positions": {
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Wendell Jackson campaign site: Jackson supports health care for all",
+        "url": "https://www.wendelljackson4tngov2026.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Healthcare for all."
+       }
+      },
+      "hea-06": {
+       "stance": 1,
+       "source": {
+        "title": "Wendell Jackson campaign site: Jackson includes mental health care",
+        "url": "https://www.wendelljackson4tngov2026.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "Wendell Jackson campaign site: Jackson would make secure housing for all a priority",
+        "url": "https://www.wendelljackson4tngov2026.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Secure housing for all will be a priority, for all Tennesseans."
+       }
+      },
+      "sta-10": {
+       "stance": 1,
+       "source": {
+        "title": "Wendell Jackson campaign site: Jackson would create incentives for businesses that hire local talent",
+        "url": "https://www.wendelljackson4tngov2026.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Creating incentives for businesses that hire and train local talent."
+       }
+      },
+      "sta-07": {
+       "stance": 1,
+       "source": {
+        "title": "Wendell Jackson campaign site: Jackson would develop workforce training programs",
+        "url": "https://www.wendelljackson4tngov2026.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Developing workforce training programs to equip Tennesseans with essential skills and knowledge."
+       }
+      },
+      "edu-03": {
+       "stance": 1,
+       "source": {
+        "title": "Wendell Jackson campaign site: Jackson would develop workforce training programs",
+        "url": "https://www.wendelljackson4tngov2026.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "TN-GOV:pinkston",
+     "name": "Lauren Pinkston",
+     "party": "I",
+     "bio": "Former elementary school teacher who has worked against human trafficking for 15 years.",
+     "positions": {
+      "soc-07": {
+       "stance": 2,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would add 50,000 day care and preschool slots by 2030",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Add 50,000 daycare and preschool slots by 2030"
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would end the 2025 voucher program and move its money to early childhood",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "End the school voucher experiment"
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would invest in public schools",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Lauren will invest in the schools nearly a million Tennessee students actually attend."
+       }
+      },
+      "edu-01": {
+       "stance": 2,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would invest in public schools",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "edu-04": {
+       "stance": 2,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would better fund teacher salaries",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Lauren, a former teacher herself, will better fund salaries"
+       }
+      },
+      "ene-02": {
+       "stance": 1,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would expand nuclear capacity",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "expand nuclear and renewable capacity"
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would expand renewable capacity and cut red tape on renewable projects",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hou-05": {
+       "stance": 1,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would work with banks to lower down payments for first-time buyers",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Partner with Tennessee banks to expand loan access and lower down payments"
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would defend workers’ freedom to organize",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Lauren will defend every Tennessean's freedom to organize"
+       }
+      },
+      "gov-04": {
+       "stance": 2,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston wants an independent redistricting commission",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Establish an independent commission to draw district maps."
+       }
+      },
+      "gov-01": {
+       "stance": 1,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston supports term limits for legislators",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Support term limits for legislators"
+       }
+      },
+      "gov-07": {
+       "stance": 1,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would repeal the state ban on ranked-choice voting",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Repeal Tennessee's ban, imposed before it was ever tried"
+       }
+      },
+      "gov-11": {
+       "stance": 1,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston supports public campaign financing",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would fully fund property tax freezes for low-income seniors",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-11": {
+       "stance": 1,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would slow tax incentives to large corporations",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "the state should slow down tax incentives to large corporations already benefiting from Tennessee’s tax haven"
+       }
+      },
+      "soc-08": {
+       "stance": 2,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would close data broker loopholes in the state privacy law",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "close the loopholes in Tennessee's data privacy law that exempt many data brokers"
+       }
+      },
+      "sta-07": {
+       "stance": 2,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would expand technical college scholarships",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Invest in high school trade education, expand TCAT scholarships"
+       }
+      },
+      "edu-03": {
+       "stance": 2,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would invest in high school trade education",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would end the grocery tax",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "End the grocery tax"
+       }
+      },
+      "sta-12": {
+       "stance": 1,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would explore statewide passenger rail",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Lauren supports exploring a statewide passenger rail system connecting Memphis to Bristol and Nashville to Chattanooga"
+       }
+      },
+      "soc-05": {
+       "stance": 0,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston backs medical cannabis and would let evidence guide recreational legalization",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "On recreational legalization, Lauren wants to see a well-run medical program work and let the evidence guide the next steps."
+       }
+      },
+      "hea-09": {
+       "stance": 1,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would expand primary and preventive care for adults",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hea-06": {
+       "stance": 1,
+       "source": {
+        "title": "Lauren Pinkston campaign site: Pinkston would expand rural mental health access",
+        "url": "https://www.pinkstonfortn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "support expanding rural mental health access"
+       }
+      }
+     }
+    },
+    {
+     "id": "TN-GOV:vick",
+     "name": "Robert Vick",
+     "party": "I",
+     "bio": "Career educator from White Pine in Jefferson County: 12 years a teacher and 28 an administrator.",
+     "positions": {
+      "sta-09": {
+       "stance": 1,
+       "source": {
+        "title": "Robert Vick campaign site: Vick would fund rural hospitals, ERs and maternity wards for the long term",
+        "url": "https://drvick4tn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "create sustainable, long-term funding models that keep rural ERs and maternity wards open"
+       }
+      },
+      "hea-06": {
+       "stance": 2,
+       "source": {
+        "title": "Robert Vick campaign site: Vick calls mental health a core priority",
+        "url": "https://drvick4tn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Mental Health is one of my core priorities"
+       }
+      },
+      "agr-01": {
+       "stance": 1,
+       "source": {
+        "title": "Robert Vick campaign site: Vick would expand the farmland preservation fund and cut taxes on farm inputs",
+        "url": "https://drvick4tn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "Robert Vick campaign site: Vick would give officers the training and resources they need",
+        "url": "https://drvick4tn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "Robert Vick campaign site: Vick wants teachers well compensated",
+        "url": "https://drvick4tn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "ensuring our outstanding educators are respected, well-compensated, and supported"
+       }
+      },
+      "edu-03": {
+       "stance": 1,
+       "source": {
+        "title": "Robert Vick campaign site: Vick would push for vocational training",
+        "url": "https://drvick4tn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I will continue to prioritize literacy and push for vocational training."
+       }
+      },
+      "ene-10": {
+       "stance": 1,
+       "source": {
+        "title": "Robert Vick campaign site: Vick would push TVA to put ratepayers first",
+        "url": "https://drvick4tn.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "TN-GOV:abidi",
+     "name": "Misam Abidi",
+     "party": "I",
+     "bio": "Banker and entrepreneur, including in crypto, from Nolensville; came to the U.S. in 1997.",
+     "positions": {
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "Misam Abidi campaign site: Abidi would create a state reinsurance program to cut premiums",
+        "url": "https://www.misamforgovernor.com/pillar/3",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Establish a state reinsurance structure"
+       }
+      },
+      "hea-09": {
+       "stance": 1,
+       "source": {
+        "title": "Misam Abidi campaign site: Abidi would encourage preventive care",
+        "url": "https://www.misamforgovernor.com/pillar/3",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "edu-03": {
+       "stance": 2,
+       "source": {
+        "title": "Misam Abidi campaign site: Abidi would guarantee every graduate a practical skill, with trade training and apprenticeships",
+        "url": "https://www.misamforgovernor.com/pillar/4",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "The Tennessee Skills Guarantee ensures every student graduates with at least one practical economic skill they can rely on."
+       }
+      },
+      "edu-10": {
+       "stance": 1,
+       "source": {
+        "title": "Misam Abidi campaign site: Abidi would teach financial literacy",
+        "url": "https://www.misamforgovernor.com/pillar/4",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-07": {
+       "stance": 1,
+       "source": {
+        "title": "Misam Abidi campaign site: Abidi would expand trade skill training",
+        "url": "https://www.misamforgovernor.com/pillar/4",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "TX-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "TX-GOV:dixon",
+     "name": "Pat Dixon",
+     "party": "L",
+     "bio": "Libertarian and former city council member who has worked with the Texas Legislature since 2004.",
+     "positions": {
+      "cri-09": {
+       "stance": -2,
+       "source": {
+        "title": "Pat Dixon campaign site: Dixon opposes the death penalty and would support repeal",
+        "url": "https://patdixon.org/death-penalty/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I oppose the death penalty."
+       }
+      },
+      "soc-04": {
+       "stance": -1,
+       "source": {
+        "title": "Pat Dixon campaign site: Dixon calls himself pro-life but prefers persuasion and adoption to police action",
+        "url": "https://patdixon.org/abortion/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "Pat Dixon campaign site: Dixon would cut spending first to lower taxes",
+        "url": "https://patdixon.org/property-tax/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I will work on identifying spending cuts first, which will lead to lower taxes."
+       }
+      },
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "Pat Dixon campaign site: Dixon would like a statewide scholarship that follows every child",
+        "url": "https://patdixon.org/school-choice/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Every child would be given the same amount of money to follow them to any school."
+       }
+      },
+      "gov-04": {
+       "stance": 1,
+       "source": {
+        "title": "Pat Dixon campaign site: Dixon supports nonpartisan district maps drawn by software",
+        "url": "https://patdixon.org/non-partisan-redistricting/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "It would allow the software to produce non-partisan district maps that are compact and fair."
+       }
+      },
+      "gov-07": {
+       "stance": 1,
+       "source": {
+        "title": "Pat Dixon campaign site: Dixon would let cities use approval or ranked-choice voting",
+        "url": "https://patdixon.org/approval-voting/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I also support Ranked Choice"
+       }
+      },
+      "imm-03": {
+       "stance": 1,
+       "source": {
+        "title": "Pat Dixon campaign site: Dixon says legal immigration paperwork is nearly impossible",
+        "url": "https://patdixon.org/the-border/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-05": {
+       "stance": 2,
+       "source": {
+        "title": "Pat Dixon campaign site: Dixon says adult-use cannabis should be legal",
+        "url": "https://patdixon.org/texas-cannabis-policy-questionnaire/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "It should be legal. End the war on drugs."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "IL-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "IL-SEN:harrington",
+     "name": "Whitfield Harrington Jr.",
+     "party": "I",
+     "bio": "Born in Belzoni, Mississippi, the son of a civil rights leader; running as an independent while forming the American Center Party.",
+     "positions": {
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would use domestic energy to bring costs down",
+        "url": "https://whit4ilsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Use America's domestic energy resources to bring costs down now while continuing to build the renewable capacity the country will need for the future."
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would keep building renewable capacity",
+        "url": "https://whit4ilsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hou-05": {
+       "stance": 1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would make smaller mortgages available to working families",
+        "url": "https://whit4ilsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Make smaller mortgages available so working families can buy affordable homes"
+       }
+      },
+      "edu-02": {
+       "stance": 1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would make the first year of community college free",
+        "url": "https://whit4ilsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Make the first year of community college free"
+       }
+      },
+      "def-01": {
+       "stance": -1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would redirect part of defense spending to infrastructure at home",
+        "url": "https://whit4ilsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Redirect a portion of defense spending toward America's bases, roads, bridges, rail, power grid, and strategic stockpiles"
+       }
+      },
+      "eco-06": {
+       "stance": 1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would put money into roads, bridges, rail and the grid",
+        "url": "https://whit4ilsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "def-04": {
+       "stance": 1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington wants clear missions and congressional accountability overseas",
+        "url": "https://whit4ilsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "def-08": {
+       "stance": -1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would have allies carry more of their own defense and cut open-ended commitments",
+        "url": "https://whit4ilsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "require allies to carry more of their own defense burden, reduce open-ended commitments"
+       }
+      },
+      "gov-01": {
+       "stance": 2,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington supports consecutive term limits",
+        "url": "https://whit4ilsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Break Washington's cycle of permanent power through consecutive term limits"
+       }
+      },
+      "imm-07": {
+       "stance": 2,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would deport criminals and prevent family separation",
+        "url": "https://whit4ilsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "deport criminals, enforce the law with dignity, prevent family separation"
+       }
+      },
+      "imm-03": {
+       "stance": 1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would make legal immigration easier than illegal entry",
+        "url": "https://whit4ilsenate.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "make legal immigration easier than illegal entry"
+       }
+      },
+      "edu-06": {
+       "stance": 1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington supports school choice",
+        "url": "https://whit4ilsenate.com/where-i-stand",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I support school choice"
+       }
+      },
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington supports fairer funding for schools in poorer communities",
+        "url": "https://whit4ilsenate.com/where-i-stand",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington supports voter ID",
+        "url": "https://whit4ilsenate.com/where-i-stand",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I support voter identification, early in-person voting, absentee ballots for people who request or need them"
+       }
+      },
+      "gov-06": {
+       "stance": 0,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington supports early in-person voting and absentee ballots on request but opposes universal mail-in voting",
+        "url": "https://whit4ilsenate.com/where-i-stand",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I oppose universal mail-in voting"
+       }
+      },
+      "soc-04": {
+       "stance": 2,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington is pro-life and would protect unborn life in all circumstances",
+        "url": "https://whit4ilsenate.com/where-i-stand",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "the law should protect that life in all circumstances"
+       }
+      },
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington is pro-life",
+        "url": "https://whit4ilsenate.com/where-i-stand",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "def-11": {
+       "stance": 1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington says the U.S. should remain a friend of Israel",
+        "url": "https://whit4ilsenate.com/where-i-stand",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "def-12": {
+       "stance": -1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would give military aid as arms sales or loans rather than grants",
+        "url": "https://whit4ilsenate.com/where-i-stand",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "United States military assistance should generally be provided through American arms sales or repayable loans"
+       }
+      },
+      "def-13": {
+       "stance": -1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would give military aid as arms sales or loans rather than grants",
+        "url": "https://whit4ilsenate.com/where-i-stand",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-12": {
+       "stance": -1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington opposes biological males in female sports",
+        "url": "https://whit4ilsenate.com/where-i-stand",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I do not support biological males competing in female sports."
+       }
+      },
+      "soc-06": {
+       "stance": 1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would protect the freedom to practice any faith or none",
+        "url": "https://whit4ilsenate.com/where-i-stand",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-10": {
+       "stance": -1,
+       "source": {
+        "title": "Whitfield Harrington Jr. campaign site: Harrington would vote his biblical view of marriage",
+        "url": "https://whit4ilsenate.com/where-i-stand",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "If called upon to vote on the definition of marriage, I would vote according to my biblical convictions."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "MI-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "MI-SEN:christensen",
+     "name": "Lydia Christensen",
+     "party": "L",
+     "bio": "Upper Peninsula native from an Ironwood family; the Libertarian nominee.",
+     "positions": {
+      "soc-08": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would introduce a Bill of Digital Rights making data your property",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "introduce a Bill of Digital Rights making your data your property"
+       }
+      },
+      "soc-05": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would legalize cannabis and psilocybin federally",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Lydia will push for federal legalization of cannabis and psilocybin"
+       }
+      },
+      "cri-09": {
+       "stance": -2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen opposes the death penalty",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Lydia opposes the death penalty."
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would end federal income tax on earnings under $150,000",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "No federal income tax on any earnings under $150,000 a year"
+       }
+      },
+      "eco-10": {
+       "stance": -2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would remove tariffs",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Lydia supports removing tariffs and other government barriers to trade."
+       }
+      },
+      "agr-07": {
+       "stance": -2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would remove tariffs",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "agr-06": {
+       "stance": 1,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen supports free trade",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "ene-02": {
+       "stance": 1,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen wants faster nuclear licensing",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "faster nuclear licensing without cutting safety"
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would fix the permitting queue stalling wind and solar",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "a fix for the federal permitting queue stalling wind and solar"
+       }
+      },
+      "def-04": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would vote to end unauthorized hostilities",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Lydia will vote for binding resolutions to end unauthorized hostilities"
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen opposes the war in Iran without authorization",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "oppose further war funding without authorization"
+       }
+      },
+      "def-07": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would make diplomacy the first response",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "restore real diplomacy as the first response"
+       }
+      },
+      "def-12": {
+       "stance": -1,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would vote against military aid to Israel until compliance is verified",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Lydia would vote against continued military aid until compliance is independently verified"
+       }
+      },
+      "def-11": {
+       "stance": -1,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen cites findings of genocidal acts in Gaza",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "def-01": {
+       "stance": -1,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would cap the Pentagon budget to fund rapid rehousing",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "funded by capping the Pentagon budget rather than cutting help for people"
+       }
+      },
+      "gov-11": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would end Citizens United",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Unchain Michigan’s democracy by ending Citizens United"
+       }
+      },
+      "gov-13": {
+       "stance": -2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would end Citizens United",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": -1,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen opposes voter ID rules that turn away legal citizens",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "oppose voter ID rules that turn away legal citizens over a name or gender-marker mismatch"
+       }
+      },
+      "gov-07": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen supports ranked-choice voting",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Ranked choice voting lets voters rank candidates instead of picking just one, ending the spoiler effect."
+       }
+      },
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen proposes Medicaid for All",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Medicaid for All is opt-in coverage for citizens and legal residents."
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen proposes Medicaid for All",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 1,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would fund it partly through drug price negotiation",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would raise the federal minimum wage to $15",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "a federal minimum wage increase to $15 per hour"
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would restore secondary and sympathy strikes",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "restore the right to secondary and sympathy strikes"
+       }
+      },
+      "soc-02": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would pass the Equality Act",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Lydia will fight to pass the Equality Act"
+       }
+      },
+      "soc-12": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would defend LGBTQIA+ civil rights",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-10": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would defend marriage equality in federal law",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "defend equal marriage rights for everyone under federal law"
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would codify abortion rights up to viability",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Lydia will codify the right to abortion up to viability"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would codify abortion rights",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "imm-02": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would give Dreamers a path to citizenship",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "offering them a pathway to citizenship"
+       }
+      },
+      "imm-08": {
+       "stance": -2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would abolish ICE",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Lydia will work to abolish ICE"
+       }
+      },
+      "cri-05": {
+       "stance": 1,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would focus the justice system on rehabilitation",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "reforms that reduce mass incarceration and focus on rehabilitation"
+       }
+      },
+      "hou-09": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen supports federal investment in fiber broadband for all",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "federal investment in fiber optic broadband for all"
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen would fund zoning reform",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "She will fund zoning reform"
+       }
+      },
+      "ene-04": {
+       "stance": 2,
+       "source": {
+        "title": "Lydia Christensen campaign site: Christensen wants tougher Clean Water Act enforcement",
+        "url": "https://www.lydialynnchristensen.com/issues",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "push for federal enforcement of the Clean Water Act with real teeth"
+       }
+      }
+     }
+    },
+    {
+     "id": "MI-SEN:marsh",
+     "name": "Douglas P. Marsh",
+     "party": "G",
+     "positions": {
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh supports a single-payer health system",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "The best way to ensure this is with a single-payer system."
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh supports a single-payer health system",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "hou-02": {
+       "stance": 2,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh says private equity companies should not own homes",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Private equity companies should not own residential property."
+       }
+      },
+      "hou-06": {
+       "stance": 1,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh would tie rents to local wages and regulate short-term rentals",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Rental rates should be tied to an area's prevailing wages"
+       }
+      },
+      "def-15": {
+       "stance": -2,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh would immediately end hostilities against Iran",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "The United States of America should immediately cease hostilities against Iran"
+       }
+      },
+      "def-12": {
+       "stance": -2,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh calls continued weapons and funding for proxy wars, apartheid and genocide unconscionable",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "The continued supply of weapons and funding for proxy wars, apartheid, and genocide is unconscionable."
+       }
+      },
+      "def-13": {
+       "stance": -1,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh opposes arming proxy wars and seeks permanent ceasefires, Ukraine included",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "def-07": {
+       "stance": 2,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh would use U.S. economic and diplomatic leverage for permanent ceasefires",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "hou-08": {
+       "stance": 1,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh wants jobs rebuilding bridges and roads",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Michiganders need quality, longterm jobs rebuilding our bridges and roads"
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh wants jobs developing green energy infrastructure",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "ene-03": {
+       "stance": -1,
+       "source": {
+        "title": "Douglas P. Marsh campaign site: Marsh would build green energy instead of kowtowing to big oil",
+        "url": "https://www.electmarsh.org/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "developing green energy infrastructure for our children, instead of kowtowing to big oil"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "MN-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "MN-GOV:young",
+     "name": "Steven Young",
+     "party": "G",
+     "bio": "Former Marine, attorney and neighborhood grocery store owner from Minneapolis.",
+     "positions": {
+      "imm-08": {
+       "stance": -2,
+       "source": {
+        "title": "Steven Young campaign site: Young would make Minnesota a sanctuary state and resist ICE",
+        "url": "https://steveformngov.info/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Abolishing ICE"
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Steven Young campaign site: Young lists Medicare for All among his answers",
+        "url": "https://steveformngov.info/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "UBI, M4A, jobs jobs and more jobs!"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "MT-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "MT-SEN:austin",
+     "name": "Kyle Austin",
+     "party": "L",
+     "bio": "Pharmacist who founded an independent pharmacy in Billings and owns his grandfather’s farm on the Hi-Line."
+    }
+   ]
+  },
+  {
+   "id": "NE-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "NE-GOV:lindstrom",
+     "name": "Brett Lindstrom",
+     "party": "America First",
+     "positions": {
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "Brett Lindstrom campaign site (The Nebraska Doctrine): Lindstrom would take pressure off property taxes",
+        "url": "https://nebraskadoctrine.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Take the pressure off property taxes and make valuations something you can plan around."
+       }
+      },
+      "hou-09": {
+       "stance": 1,
+       "source": {
+        "title": "Brett Lindstrom campaign site (The Nebraska Doctrine): Lindstrom would finish expanding rural internet",
+        "url": "https://nebraskadoctrine.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Finish the job on rural internet."
+       }
+      }
+     }
+    },
+    {
+     "id": "NE-GOV:beard",
+     "name": "Rick Beard",
+     "party": "Legal Marijuana Now",
+     "officialSite": null,
+     "bio": "Omaha wine professional and private chef; the Legal Marijuana NOW nominee.",
+     "positions": {
+      "gov-11": {
+       "stance": 2,
+       "source": {
+        "title": "Nebraska Examiner, July 27, 2026: Beard would get corporate and PAC money out of state politics",
+        "url": "https://nebraskaexaminer.com/2026/07/27/beard-talks-priorities-pivot-from-nebraska-primary-election-to-nov-3-faceoff/",
+        "date": "2026-07-27",
+        "quote": "getting corporate and political action committee money out of the state"
+       }
+      },
+      "soc-05": {
+       "stance": 0,
+       "source": {
+        "title": "Nebraska Examiner, July 27, 2026: Beard would keep cannabis medical for now, citing federal protections, with a state-run medical program",
+        "url": "https://nebraskaexaminer.com/2026/07/27/beard-talks-priorities-pivot-from-nebraska-primary-election-to-nov-3-faceoff/",
+        "date": "2026-07-27"
+       }
+      },
+      "sta-10": {
+       "stance": -1,
+       "source": {
+        "title": "Nebraska Examiner, July 27, 2026: Beard says the state must eliminate tax breaks for corporations",
+        "url": "https://nebraskaexaminer.com/2026/07/27/beard-talks-priorities-pivot-from-nebraska-primary-election-to-nov-3-faceoff/",
+        "date": "2026-07-27"
+       }
+      },
+      "eco-01": {
+       "stance": 1,
+       "source": {
+        "title": "Nebraska Examiner, July 27, 2026: Beard would end tax breaks for Nebraska’s ultra-rich",
+        "url": "https://nebraskaexaminer.com/2026/07/27/beard-talks-priorities-pivot-from-nebraska-primary-election-to-nov-3-faceoff/",
+        "date": "2026-07-27"
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "Nebraska Examiner, July 27, 2026: Beard would use cannabis revenue to reduce property taxes",
+        "url": "https://nebraskaexaminer.com/2026/07/27/beard-talks-priorities-pivot-from-nebraska-primary-election-to-nov-3-faceoff/",
+        "date": "2026-07-27",
+        "quote": "the actual ability to reduce property taxes"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "RI-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "RI-GOV:gotra",
+     "name": "Jasjit Gotra",
+     "party": "I",
+     "bio": "Entrepreneur from East Greenwich running with the Unaffiliated Movement.",
+     "positions": {
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Jasjit Gotra campaign site: Gotra would end the state tax on Social Security within two years",
+        "url": "https://governorgotra.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hou-04": {
+       "stance": 2,
+       "source": {
+        "title": "Jasjit Gotra campaign site: Gotra would build 20,000 homes in four years and cut zoning barriers",
+        "url": "https://governorgotra.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Build 20,000 units in 4 years. Cut zoning barriers."
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Jasjit Gotra campaign site: Gotra calls health care a right and would cap out-of-pocket costs",
+        "url": "https://governorgotra.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Healthcare is a right, not a luxury."
+       }
+      },
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Jasjit Gotra campaign site: Gotra would publish a quarterly state profit-and-loss statement",
+        "url": "https://governorgotra.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Every taxpayer sees where every dollar goes."
+       }
+      },
+      "ene-10": {
+       "stance": 1,
+       "source": {
+        "title": "Jasjit Gotra campaign site: Gotra would cut energy costs 30% in four years",
+        "url": "https://governorgotra.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "VT-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "VT-GOV:roy",
+     "name": "Dean Roy",
+     "party": "Freedom and Unity",
+     "bio": "Stowe native and former Vermont legislative page."
+    },
+    {
+     "id": "VT-GOV:goodband",
+     "name": "June Goodband",
+     "party": "Peace and Justice",
+     "officialSite": "https://june4govvt.org/",
+     "bio": "Licensed clinical mental health counselor from Springfield; the Peace and Justice Party nominee.",
+     "positions": {
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Seven Days, Oct. 13, 2026: Goodband would fully implement Vermont’s universal health care law",
+        "url": "https://www.sevendaysvt.com/guides/electionvoterguide/candidates-vermont-governor-2026/",
+        "date": "2026-10-13",
+        "quote": "We can cut health care costs by fully implementing our universal health care law, cutting out insurance companies"
+       }
+      },
+      "hea-04": {
+       "stance": -2,
+       "source": {
+        "title": "Seven Days, Oct. 13, 2026: Goodband would cut insurance companies out of health care",
+        "url": "https://www.sevendaysvt.com/guides/electionvoterguide/candidates-vermont-governor-2026/",
+        "date": "2026-10-13"
+       }
+      },
+      "hou-01": {
+       "stance": 2,
+       "source": {
+        "title": "Seven Days, Oct. 13, 2026: Goodband would have the state build and renovate housing",
+        "url": "https://www.sevendaysvt.com/guides/electionvoterguide/candidates-vermont-governor-2026/",
+        "date": "2026-10-13",
+        "quote": "The state should build and buy/renovate housing"
+       }
+      },
+      "hou-05": {
+       "stance": 1,
+       "source": {
+        "title": "June Goodband campaign site: Goodband supports home ownership through co-ops and no-interest mortgages",
+        "url": "https://june4govvt.org/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-03": {
+       "stance": 2,
+       "source": {
+        "title": "June Goodband campaign site: Goodband would require profitable businesses to pay a living wage",
+        "url": "https://june4govvt.org/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "require profitable businesses to pay a living wage so their workers don’t need state assistance"
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "June Goodband campaign site: Goodband would raise taxes on high incomes",
+        "url": "https://june4govvt.org/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Increase taxes on high incomes"
+       }
+      },
+      "eco-12": {
+       "stance": 2,
+       "source": {
+        "title": "June Goodband campaign site: Goodband would pay for schools with progressive taxes instead of homestead taxes",
+        "url": "https://june4govvt.org/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Use Progressive taxation instead of homestead taxes to pay for education."
+       }
+      },
+      "cri-07": {
+       "stance": 1,
+       "source": {
+        "title": "June Goodband campaign site: Goodband wants safety strategies that work better than prisons",
+        "url": "https://june4govvt.org/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Develop creative strategies that protect people, work better than prisons, and cost less."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "PA-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "PA-GOV:krawchuk",
+     "name": "Ken Krawchuk",
+     "party": "L",
+     "positions": {
+      "edu-06": {
+       "stance": 2,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk would privatize the public schools",
+        "url": "https://www.kenk4pa.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Privatize the public schools!"
+       }
+      },
+      "sta-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk would privatize the public schools",
+        "url": "https://www.kenk4pa.com/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk would eliminate most property tax",
+        "url": "https://www.kenk4pa.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Property tax is the worst tax imaginable."
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk would veto all tax increases",
+        "url": "https://www.kenk4pa.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Veto all tax increases and pork barrel spending."
+       }
+      },
+      "soc-05": {
+       "stance": 2,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk would decriminalize marijuana and treat it like alcohol",
+        "url": "https://www.kenk4pa.com/issues/drugs/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Immediately decriminalize marijuana and other drugs, and treat them like we do alcohol."
+       }
+      },
+      "cri-08": {
+       "stance": 1,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk favors treatment, not jail",
+        "url": "https://www.kenk4pa.com/issues/drugs/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Treatment, not jail."
+       }
+      },
+      "soc-10": {
+       "stance": 1,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk would give same-sex couples the same legal privileges",
+        "url": "https://www.kenk4pa.com/issues/lgbt/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Whatever legal privileges are made available to traditional couples should also be made available for same-sex couples"
+       }
+      },
+      "soc-02": {
+       "stance": -1,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk opposes special protections for any group",
+        "url": "https://www.kenk4pa.com/issues/lgbt/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "I would oppose any law granting special protections or quotas for gays, women, minorities, businesses, or politicians"
+       }
+      },
+      "ene-03": {
+       "stance": 1,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk calls the fracking boom good for Pennsylvania",
+        "url": "https://www.kenk4pa.com/issues/environment/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "The fracking boom is good for Pennsylvania"
+       }
+      },
+      "gov-06": {
+       "stance": -2,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk would eliminate mail-in ballots",
+        "url": "https://www.kenk4pa.com/issues/elections/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Eliminate mail-in ballots in favor of in-person voting"
+       }
+      },
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk would require ID to vote",
+        "url": "https://www.kenk4pa.com/issues/elections/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Require positive ID for citizens to vote"
+       }
+      },
+      "gov-01": {
+       "stance": 1,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk supports term limits",
+        "url": "https://www.kenk4pa.com/issues/elections/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Institute term limits"
+       }
+      },
+      "gov-04": {
+       "stance": 1,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk would end gerrymandering with algorithmic districting",
+        "url": "https://www.kenk4pa.com/issues/elections/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "cri-04": {
+       "stance": 2,
+       "source": {
+        "title": "Ken Krawchuk campaign site: Krawchuk would eliminate parole for violent criminals",
+        "url": "https://www.kenk4pa.com/issues/crime/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Eliminate parole for violent criminals."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "NV-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "NV-GOV:danielle-ford",
+     "name": "Danielle Ford",
+     "party": "I",
+     "bio": "Las Vegas native and marketer on the Nevada State Board of Education; a former Clark County School District trustee.",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford supports Nevada’s protection of abortion access through 24 weeks",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "She supports Nevada’s current legal framework protecting abortion access through 24 weeks"
+       }
+      },
+      "soc-04": {
+       "stance": -1,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford supports the current framework",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "gov-05": {
+       "stance": 0,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford supports identity verification but only if ID rules are accessible and phased in",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Any ID or document requirement must be constitutional, funded, accessible, carefully phased in"
+       }
+      },
+      "sta-11": {
+       "stance": 2,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford would scrutinize contracts and tax abatements before any new taxes",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "the state should take a much harder look at public contracts, procurement loopholes, no-bid arrangements, tax abatements"
+       }
+      },
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford says public money belongs to the public",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Public money belongs to the public."
+       }
+      },
+      "ene-10": {
+       "stance": 1,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford wants stronger ratepayer protection and affordable energy",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "push for policies that keep energy reliable and affordable"
+       }
+      },
+      "imm-07": {
+       "stance": 1,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford would keep enforcement focused on serious harm",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Danielle does not believe undocumented status alone should be treated the same as violent crime or organized criminal activity."
+       }
+      },
+      "sta-02": {
+       "stance": 1,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford wants school funding to reflect the real cost of serving students",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Danielle believes school funding should reflect the real cost of serving students well."
+       }
+      },
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford wants school funding to reflect the real cost of serving students",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "cri-08": {
+       "stance": 1,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford would strengthen mental health care and addiction treatment alongside policing",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Danielle supports law enforcement while also strengthening mental health care, addiction treatment, crisis response"
+       }
+      },
+      "hea-06": {
+       "stance": 1,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford would strengthen mental health care",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hou-02": {
+       "stance": 1,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford would scrutinize corporate ownership and build-to-rent practices",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "scrutinizing corporate ownership and build-to-rent practices"
+       }
+      },
+      "gov-03": {
+       "stance": 2,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford supports stronger campaign finance transparency",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Danielle supports stronger campaign finance transparency"
+       }
+      },
+      "gov-11": {
+       "stance": 1,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford supports reforms that reduce the influence of money",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "soc-08": {
+       "stance": 1,
+       "source": {
+        "title": "Danielle Ford campaign site: Ford supports privacy protections and student data safeguards",
+        "url": "https://daniellefornevada.com/platform/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CO-SEN:huber",
+     "name": "Blake Huber",
+     "party": "L",
+     "officialSite": "https://lpcocolorado.my.canva.site/blake-huber-us-senate-website",
+     "bio": "Longtime election-reform activist and former property and business manager; a former chair of the Colorado Libertarian Party.",
+     "positions": {
+      "imm-03": {
+       "stance": 2,
+       "source": {
+        "title": "Blake Huber campaign site: Huber would streamline legal entry for background-checked workers",
+        "url": "https://lpcocolorado.my.canva.site/blake-huber-us-senate-website",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "We support streamlining legal pathways so that background-checked, hard-working individuals can legally enter, work, and contribute"
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Blake Huber campaign site: Huber says a sovereign nation needs secure, orderly borders",
+        "url": "https://lpcocolorado.my.canva.site/blake-huber-us-senate-website",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "CO-SEN:withrow",
+     "name": "Adam Withrow",
+     "party": "Unity",
+     "bio": "Former county jail detention officer and contractor, running on the Unity Party line.",
+     "positions": {
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow would raise the solar tax credit, make it permanent and restore rebates",
+        "url": "https://www.senatorwithrow.com/platform-discussion",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Let's increase the solar tax credit, make it permanent, and bring back the rebates!"
+       }
+      },
+      "ene-09": {
+       "stance": 1,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow wants incentives for American companies to make solar panels",
+        "url": "https://www.senatorwithrow.com/platform-discussion",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "let's create incentives for American companies to make 'em here"
+       }
+      },
+      "ene-03": {
+       "stance": -1,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow calls fossil fuels obsolete and wants a transition away from them",
+        "url": "https://www.senatorwithrow.com/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Fossil fuels are obsolete."
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow wants a health care system that works for everyone",
+        "url": "https://www.senatorwithrow.com/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Healthcare for all would cost less than half of our defense budget."
+       }
+      },
+      "def-07": {
+       "stance": 2,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow is against every war and favors free trade and equality over bombs",
+        "url": "https://www.senatorwithrow.com/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Free trade and mutual global recognition of equality will accomplish what a billion pounds of bombs can not."
+       }
+      },
+      "agr-06": {
+       "stance": 1,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow favors free trade over war",
+        "url": "https://www.senatorwithrow.com/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "eco-03": {
+       "stance": 2,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow says raising the federal minimum wage is vital, pegged to consumer prices",
+        "url": "https://www.senatorwithrow.com/platform-discussion",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I believe a raise in the Federal Minimum Wage is vital."
+       }
+      },
+      "def-03": {
+       "stance": 1,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow supports expanded re-entry programs for veterans",
+        "url": "https://www.senatorwithrow.com/platform-discussion",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Yes, I support expanded re-entry programs to help adapt to civilian life."
+       }
+      },
+      "soc-03": {
+       "stance": 1,
+       "source": {
+        "title": "Adam Withrow campaign site: Withrow supports women’s reproductive health care choices",
+        "url": "https://www.senatorwithrow.com/platform-discussion",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Anybody out here think women should have reproductive healthcare choices? Good."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "OR-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "OR-SEN:henry",
+     "name": "Chris Henry",
+     "party": "Progressive",
+     "officialSite": "https://chrishenry.org/",
+     "bio": "Long-haul truck driver and former aircraft electrician; the Progressive and Pacific Green nominee, taking no corporate money.",
+     "positions": {
+      "edu-02": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry supports free public education from pre-K through college",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "free publicly-funded education from pre-K to trade guilds and higher education"
+       }
+      },
+      "hea-01": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would adopt single-payer health care",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Adopt comprehensive single-payer medical care for all."
+       }
+      },
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would adopt single-payer health care",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "hea-02": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would negotiate prices on all prescription drugs",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Negotiate prescription-drug prices on all drugs (not just a select few)"
+       }
+      },
+      "ene-06": {
+       "stance": 1,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would tax emissions that cause climate change",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Adopt comprehensive taxation of emissions and other practices that contribute to climate change."
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would accelerate the move to renewable energy",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Accelerate the transition to renewable energy and energy-efficient buildings and transportation."
+       }
+      },
+      "ene-07": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would expand public transit and passenger rail",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Expand public transportation, including passenger rail and freight rail"
+       }
+      },
+      "ene-03": {
+       "stance": -1,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would end fossil fuel subsidies",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "eco-01": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would raise taxes on extreme income and wealth",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Raise federal taxes on extreme concentrations of income and wealth."
+       }
+      },
+      "eco-12": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry supports a progressive wealth tax",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Establish a carefully designed progressive wealth tax."
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would substantially cut income taxes for non-wealthy families",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Substantially reduce federal income taxes on non-wealthy families and individuals."
+       }
+      },
+      "imm-02": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry supports a path to citizenship for long-term undocumented residents",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Establish a fair path to citizenship for long-term undocumented residents."
+       }
+      },
+      "imm-04": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would expand immigration courts and judges",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Expand immigration courts, judges, interpreters and access to legal representation."
+       }
+      },
+      "imm-06": {
+       "stance": 1,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would preserve access to asylum and refugee protection",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "imm-08": {
+       "stance": -1,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would replace ICE’s militarized model",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "gov-11": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would amend the Constitution to reverse Citizens United",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Reverse Citizens United and establish that corporations do not have the rights of individuals"
+       }
+      },
+      "gov-13": {
+       "stance": -2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry says corporations do not have the rights of individuals",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "gov-06": {
+       "stance": 2,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would require vote-by-mail nationwide",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "requiring universal availability of vote-by-mail"
+       }
+      },
+      "def-07": {
+       "stance": 1,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry would end pointless wars",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      },
+      "eco-09": {
+       "stance": 1,
+       "source": {
+        "title": "Oregon Capital Chronicle voter guide, candidates’ answers: Henry supports workplace democracy and strong workplace safety",
+        "url": "https://oregoncapitalchronicle.com/voter-guides/contests/2026-general-u-s-senate/",
+        "date": "2026-10-26",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "OR-SEN:dye",
+     "name": "Gary Lyndon Dye",
+     "party": "L",
+     "bio": "Got 1.8% for the U.S. Senate in 2020 and has run as a Libertarian or Republican in every election since at least 2016; did not answer the Capital Chronicle’s questionnaire."
+    }
+   ]
+  },
+  {
+   "id": "OK-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "OK-GOV:brooks",
+     "name": "Robert Brooks Sr.",
+     "party": "I",
+     "officialSite": "https://votewethepeople.com/",
+     "bio": "Independent who would poll voters through an app before signing or vetoing bills.",
+     "positions": {
+      "sta-06": {
+       "stance": 1,
+       "source": {
+        "title": "Robert Brooks Sr. campaign site: Brooks has zero tolerance for pay-to-play politics",
+        "url": "https://votewethepeople.com/",
+        "date": "2026-10-26",
+        "accessed": true,
+        "quote": "Zero tolerance for pay-to-play politics."
+       }
+      }
+     }
+    },
+    {
+     "id": "OK-GOV:griffin",
+     "name": "Jerry Griffin",
+     "party": "I",
+     "officialSite": "https://drjerrtg.substack.com/p/griffin-for-governor-2026",
+     "bio": "Marine veteran and educator who has taught at the University of Tulsa, Texas State and the University of Oklahoma; chief executive of The Palomega Company.",
+     "positions": {
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Griffin would have state agencies cut waste and duplication",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72638034",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "State agencies should regularly review spending and eliminate waste and duplication."
+       }
+      },
+      "sta-09": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Griffin wants dependable rural access to hospitals, doctors and mental health care",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72638034",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Rural communities need dependable access to hospitals, doctors, emergency care, and mental-health services."
+       }
+      },
+      "sta-01": {
+       "stance": 1,
+       "source": {
+        "title": "VOTE411 (League of Women Voters) voter guide, candidates’ answers: Griffin would maintain roads and water systems",
+        "url": "https://www.vote411.org/ballot?lwv-ballot-widget-raceid=72638034",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "We must also maintain roads, water systems, and public safety."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "FL-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "FL-SEN:gillespie",
+     "name": "Neil Gillespie",
+     "party": "I",
+     "bio": "Founder and director of the Justice Network, an advocacy blog; a licensed motor vehicle dealer in Pennsylvania before moving to Florida in 1993.",
+     "positions": {
+      "imm-02": {
+       "stance": 1,
+       "source": {
+        "title": "Neil Gillespie campaign site: Gillespie supports a path to citizenship for immigrants who follow the rules (his League of Women Voters answers)",
+        "url": "https://neilgillespie4senate.blogspot.com/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I also support a path to citizenship for immigrants who follow the rules"
+       }
+      },
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Neil Gillespie campaign site: Gillespie supports secure borders and vetting immigrants (his League of Women Voters answers)",
+        "url": "https://neilgillespie4senate.blogspot.com/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      },
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Neil Gillespie campaign site: Gillespie proposes national health coverage with the ability to opt out",
+        "url": "https://neilgillespie4senate.blogspot.com/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "I propose national health coverage, with the ability to opt-out."
+       }
+      },
+      "def-11": {
+       "stance": -1,
+       "source": {
+        "title": "Neil Gillespie campaign site: Gillespie says Israel’s wars are creating antisemitism worldwide",
+        "url": "https://neilgillespie4senate.blogspot.com/",
+        "date": "2026-10-27",
+        "accessed": true,
+        "quote": "Its wars are creating antisemitism worldwide."
+       }
+      },
+      "soc-01": {
+       "stance": 1,
+       "source": {
+        "title": "Neil Gillespie campaign site: Gillespie lists the First Amendment’s freedoms of speech and the press among his top priorities",
+        "url": "https://neilgillespie4senate.blogspot.com/",
+        "date": "2026-10-27",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "AK-SEN",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "AK-SEN:dan-j-sullivan",
+     "name": "Dan J. Sullivan",
+     "party": "R",
+     "bio": "Petersburg resident for nearly 50 years: former U.S. Forest Service timber worker and elementary school teacher. Not the incumbent senator, Dan S. Sullivan."
     }
    ]
   }

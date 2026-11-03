@@ -21,9 +21,14 @@ export function candColors(cands) {
 }
 
 const timeFmt = (span) => (span > 400 * 864e5 ? d3.timeFormat('%b %Y') : d3.timeFormat('%b %-d'));
+const keyStyle = (s) => `background:${s.color}${s.edge ? `;box-shadow:0 0 0 1px ${s.edge}` : ''}`;
 
-// series: [{ name, color, values: [{ x: Date, y: number }], points?: [{ x: Date, y, title }] }]
+// series: [{ name, color, edge?, values: [{ x: Date, y: number }], points?: [{ x: Date, y, title }] }]
 // `points` are drawn as dots behind the line (e.g. the individual polls behind an average).
+// `edge` outlines a line whose color nearly vanishes on the page (white on the light
+// theme, black on the dark one), and its key and end dot with it.
+// xFormat and tipDate (Date -> text) and emptyText let a page set its own language and
+// period (months, quarters, years); without them, dates print as in U.S. English.
 export function lineChart(el, opts) {
   const draw = () => drawLine(el, opts);
   draw();
@@ -35,11 +40,11 @@ export function lineChart(el, opts) {
   el._ro.observe(el);
 }
 
-function drawLine(el, { series, height = 220, yFormat = (v) => v.toFixed(1), tipFormat, yDomain, area = false, baseline = null, label = 'Chart', endLabels = true }) {
+function drawLine(el, { series, height = 220, yFormat = (v) => v.toFixed(1), tipFormat, yDomain, area = false, baseline = null, label = 'Chart', endLabels = true, xFormat, tipDate, emptyText = 'No data yet.' }) {
   el.innerHTML = '';
   const all = series.flatMap((s) => s.values);
   if (!all.length) {
-    el.innerHTML = '<p class="muted small">No data yet.</p>';
+    el.innerHTML = `<p class="muted small">${esc(emptyText)}</p>`;
     return;
   }
   const W = Math.max(280, el.clientWidth || 600);
@@ -49,7 +54,7 @@ function drawLine(el, { series, height = 220, yFormat = (v) => v.toFixed(1), tip
   if (series.length > 1) {
     const legend = document.createElement('div');
     legend.className = 'chart-legend';
-    legend.innerHTML = series.map((s) => `<span><i class="key-line" style="background:${s.color}"></i>${esc(s.name)}</span>`).join('');
+    legend.innerHTML = series.map((s) => `<span><i class="key-line" style="${keyStyle(s)}"></i>${esc(s.name)}</span>`).join('');
     el.appendChild(legend);
   }
 
@@ -77,7 +82,7 @@ function drawLine(el, { series, height = 220, yFormat = (v) => v.toFixed(1), tip
     svg.append('line').attr('class', 'baseline').attr('x1', m.left).attr('x2', W - m.right).attr('y1', y(baseline)).attr('y2', y(baseline));
   }
   const span = x.domain()[1] - x.domain()[0];
-  const fmt = timeFmt(span);
+  const fmt = xFormat || timeFmt(span);
   svg.append('g').attr('class', 'axis-label')
     .selectAll('text').data(x.ticks(Math.max(2, Math.floor(W / 130)))).join('text')
     .attr('x', (d) => x(d)).attr('y', height - 6).attr('text-anchor', 'middle').text(fmt);
@@ -94,10 +99,12 @@ function drawLine(el, { series, height = 220, yFormat = (v) => v.toFixed(1), tip
   }
   const ends = [];
   for (const s of series) {
+    if (s.edge) svg.append('path').datum(s.values).attr('class', 'line').attr('stroke', s.edge).style('stroke-width', '4.5px').attr('d', line);
     svg.append('path').datum(s.values).attr('class', 'line').attr('stroke', s.color).attr('d', line);
     const last = [...s.values].reverse().find((d) => d.y != null);
     if (last) {
-      svg.append('circle').attr('class', 'end-dot').attr('cx', x(last.x)).attr('cy', y(last.y)).attr('r', 4).attr('fill', s.color);
+      const dot = svg.append('circle').attr('class', 'end-dot').attr('cx', x(last.x)).attr('cy', y(last.y)).attr('r', 4).attr('fill', s.color);
+      if (s.edge) dot.style('stroke', s.edge);
       ends.push({ x: x(last.x) + 8, y: y(last.y), text: yFormat(last.y) });
     }
   }
@@ -126,12 +133,12 @@ function drawLine(el, { series, height = 220, yFormat = (v) => v.toFixed(1), tip
       cross.attr('x1', x(dx)).attr('x2', x(dx)).style('opacity', 1);
       const rows = series.map((s) => {
         const pt = s.values.find((v) => +v.x === +dx);
-        return `<div class="tip-row"><i class="key-line" style="background:${s.color}"></i><strong>${pt && pt.y != null ? esc(tipFmt(pt.y)) : '—'}</strong><span>${esc(s.name)}</span></div>`;
+        return `<div class="tip-row"><i class="key-line" style="${keyStyle(s)}"></i><strong>${pt && pt.y != null ? esc(tipFmt(pt.y)) : '—'}</strong><span>${esc(s.name)}</span></div>`;
       }).join('');
       const today = +d3.timeDay.floor(dx);
       const polls = [...new Set(pts.filter((p) => p.title && +d3.timeDay.floor(p.x) === today).map((p) => p.title.split(':')[0]))];
       const pollNote = polls.length ? `<div class="tip-date" style="margin-top:6px">Poll${polls.length > 1 ? 's' : ''} ending this day: ${esc(polls.join(', '))}</div>` : '';
-      tip.innerHTML = `<div class="tip-date">${esc(d3.timeFormat('%b %-d, %Y')(dx))}</div>${rows}${pollNote}`;
+      tip.innerHTML = `<div class="tip-date">${esc((tipDate || d3.timeFormat('%b %-d, %Y'))(dx))}</div>${rows}${pollNote}`;
       tip.hidden = false;
       const rect = el.getBoundingClientRect();
       const left = (x(dx) / W) * rect.width;

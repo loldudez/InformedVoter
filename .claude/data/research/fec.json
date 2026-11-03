@@ -14981,6 +14981,30 @@
    "financeOnly": true,
    "candidates": [
     {
+     "id": "KY-H-03:rodriquez",
+     "name": "Maria Rodriguez",
+     "finance": {
+      "total": 75079,
+      "parts": {
+       "small": 4879,
+       "large": 61200,
+       "pac": 8000,
+       "party": 1000,
+       "self": 0,
+       "public": 0,
+       "transfers": 0,
+       "other": 0
+      },
+      "spent": 42618,
+      "cashOnHand": 32361,
+      "from": "2026-01-01",
+      "asOf": "2026-09-30",
+      "source": "FEC",
+      "fecId": "H6KY03223",
+      "url": "https://www.fec.gov/data/candidate/H6KY03223/?cycle=2026&election_full=true"
+     }
+    },
+    {
      "id": "KY-H-03:mcgarvey",
      "name": "Morgan McGarvey",
      "finance": {

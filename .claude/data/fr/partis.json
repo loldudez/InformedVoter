@@ -1,0 +1,506 @@
+{
+ "updated": "2026-11-03T03:27+00:00",
+ "parties": [
+  {
+   "abbr": "LFI",
+   "name": "La France insoumise",
+   "en": "France Unbowed",
+   "article": "La France insoumise",
+   "revid": 240906779,
+   "leaders": [
+    {
+     "role": "Coordinateur",
+     "article": "Manuel Bompard",
+     "name": "Manuel Bompard",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Bompard_MEP_2019.jpg/330px-Bompard_MEP_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "Bompard MEP 2019.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Bompard_MEP_2019.jpg",
+      "artist": "European Parliament",
+      "license": "European Parliament",
+      "licenseUrl": "https://www.europarl.europa.eu/legal-notice/"
+     }
+    }
+   ],
+   "founded": "10 février 2016",
+   "position": "Gauche, Gauche radicale, voire extrême gauche, (contesté)",
+   "ideology": [
+    "Écosocialisme",
+    "Socialisme démocratique",
+    "Antilibéralisme",
+    "Altermondialisme",
+    "Populisme de gauche",
+    "Protectionnisme",
+    "Souverainisme",
+    "Euroscepticisme"
+   ],
+   "site": "https://lafranceinsoumise.fr/",
+   "seats": "71 / 577",
+   "candidates": [
+    "jean-luc-melenchon"
+   ],
+   "source": {
+    "title": "Wikipédia : La France insoumise",
+    "url": "https://fr.wikipedia.org/wiki/La_France_insoumise"
+   }
+  },
+  {
+   "abbr": "PCF",
+   "name": "Parti communiste français",
+   "en": "French Communist Party",
+   "article": "Parti communiste français",
+   "revid": 240509829,
+   "leaders": [
+    {
+     "role": "Secrétaire national",
+     "article": "Fabien Roussel",
+     "name": "Fabien Roussel",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Roussel_Fabien_1.jpg/330px-Roussel_Fabien_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "Roussel Fabien 1.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Roussel_Fabien_1.jpg",
+      "artist": "Zouhair NAKARA",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+     }
+    }
+   ],
+   "founded": "1920 (SFIC), 1921 (PC-SFIC), 1943 (PCF)",
+   "position": "Gauche radicale",
+   "ideology": [
+    "Communisme",
+    "Souverainisme",
+    "Euroscepticisme",
+    "Eurocommunisme"
+   ],
+   "site": "https://www.pcf.fr/",
+   "seats": "8 / 577",
+   "candidates": [
+    "fabien-roussel"
+   ],
+   "source": {
+    "title": "Wikipédia : Parti communiste français",
+    "url": "https://fr.wikipedia.org/wiki/Parti_communiste_français"
+   }
+  },
+  {
+   "abbr": "LE",
+   "name": "Les Écologistes",
+   "en": "The Ecologists",
+   "article": "Les Écologistes",
+   "revid": 240840782,
+   "leaders": [
+    {
+     "role": "Secrétaire nationale",
+     "article": "Marine Tondelier",
+     "name": "Marine Tondelier",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Huma2023MarineTondelier.jpg/330px-Huma2023MarineTondelier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "Huma2023MarineTondelier.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Huma2023MarineTondelier.jpg",
+      "artist": "Selbymay",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+     }
+    }
+   ],
+   "founded": "29 janvier 1984 (Les Verts, Confédération écologiste - Parti écologiste) 13 novembre 2010 (Europe Écologie Les Verts) 14 octobre 2023 (Les Écologistes – Europe Écologie Les Verts)",
+   "position": "Centre gauche, à gauche radicale",
+   "ideology": [
+    "Écologie politique",
+    "Fédéralisme européen",
+    "Progrès social",
+    "Régionalisme",
+    "Démocratie participative",
+    "Altermondialisme",
+    "Écoféminisme",
+    "Décroissance"
+   ],
+   "site": "https://lesecologistes.fr",
+   "seats": "28 / 577",
+   "candidates": [
+    "marine-tondelier"
+   ],
+   "source": {
+    "title": "Wikipédia : Les Écologistes",
+    "url": "https://fr.wikipedia.org/wiki/Les_Écologistes"
+   }
+  },
+  {
+   "abbr": "PS",
+   "name": "Parti socialiste",
+   "en": "Socialist Party",
+   "article": "Parti socialiste (France)",
+   "revid": 240910349,
+   "leaders": [
+    {
+     "role": "Premier secrétaire",
+     "article": "Olivier Faure (homme politique)",
+     "name": "Olivier Faure",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Portrait_d%27Olivier_Faure.jpg/330px-Portrait_d%27Olivier_Faure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "Portrait d'Olivier Faure.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Portrait_d%27Olivier_Faure.jpg",
+      "artist": "Olivier Faure",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+     }
+    }
+   ],
+   "founded": "1905 (SFIO) 1969 (PS)",
+   "position": "Centre gauche à gauche",
+   "ideology": [
+    "Progressisme",
+    "Social-démocratie",
+    "Social-écologie",
+    "Europhilie"
+   ],
+   "site": "https://www.parti-socialiste.fr/",
+   "seats": "62 / 577",
+   "candidates": [
+    "karim-bouamrane"
+   ],
+   "source": {
+    "title": "Wikipédia : Parti socialiste (France)",
+    "url": "https://fr.wikipedia.org/wiki/Parti_socialiste_(France)"
+   }
+  },
+  {
+   "abbr": "PP",
+   "name": "Place publique",
+   "en": "Public Place",
+   "article": "Place publique (parti politique)",
+   "revid": 240967509,
+   "leaders": [
+    {
+     "role": "Co-présidents",
+     "article": "Aurore Lalucq",
+     "name": "Aurore Lalucq",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Aurore_Lalucq_-_20250320_EP-182300A_AHA_014_%28cropped%29.jpg/330px-Aurore_Lalucq_-_20250320_EP-182300A_AHA_014_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "Aurore Lalucq - 20250320 EP-182300A AHA 014 (cropped).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Aurore_Lalucq_-_20250320_EP-182300A_AHA_014_(cropped).jpg",
+      "artist": "Philippe Buissin / European Union",
+      "license": "European Parliament",
+      "licenseUrl": "https://www.europarl.europa.eu/legal-notice/"
+     }
+    },
+    {
+     "role": "Co-présidents",
+     "article": "Raphaël Glucksmann",
+     "name": "Raphaël Glucksmann",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg/330px-1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "1720448398743 20240708 GLUCKSMANN Raphael FR 006.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg",
+      "artist": "European Union 2024 - Source : EP",
+      "license": "European Parliament",
+      "licenseUrl": "https://www.europarl.europa.eu/legal-notice/"
+     }
+    }
+   ],
+   "founded": "6 novembre 2018",
+   "position": "Centre gauche",
+   "ideology": [
+    "Social-écologie",
+    "Social-démocratie",
+    "Écologie politique",
+    "Fédéralisme européen"
+   ],
+   "site": "https://place-publique.eu",
+   "seats": "2 / 577",
+   "candidates": [
+    "raphael-glucksmann"
+   ],
+   "source": {
+    "title": "Wikipédia : Place publique (parti politique)",
+    "url": "https://fr.wikipedia.org/wiki/Place_publique_(parti_politique)"
+   }
+  },
+  {
+   "abbr": "RE",
+   "name": "Renaissance",
+   "en": "Renaissance",
+   "article": "Renaissance (parti)",
+   "revid": 240960856,
+   "leaders": [
+    {
+     "role": "Secrétaire général",
+     "article": "Gabriel Attal",
+     "name": "Gabriel Attal",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Gabriel_Attal_2025_%28close_crop%29.jpg/330px-Gabriel_Attal_2025_%28close_crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "Gabriel Attal 2025 (close crop).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_2025_(close_crop).jpg",
+      "artist": "Ismail Aissoub",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+     }
+    }
+   ],
+   "founded": "6 avril 2016 (En marche) 4 août 2017 (La République en marche) 17 septembre 2022 (Renaissance)",
+   "position": "Centre gauche, à droite, voire extrême centre, ou attrape-tout",
+   "ideology": [
+    "Social-libéralisme",
+    "Néolibéralisme",
+    "Réformisme",
+    "Europhilie",
+    "Troisième voie",
+    "Transformisme",
+    "Conservatisme",
+    "Social-démocratie"
+   ],
+   "site": "https://parti-renaissance.fr/",
+   "seats": "87 / 577",
+   "candidates": [
+    "gabriel-attal",
+    "olivier-becht"
+   ],
+   "source": {
+    "title": "Wikipédia : Renaissance (parti)",
+    "url": "https://fr.wikipedia.org/wiki/Renaissance_(parti)"
+   }
+  },
+  {
+   "abbr": "MoDem",
+   "name": "Mouvement démocrate",
+   "en": "Democratic Movement",
+   "article": "Mouvement démocrate (France)",
+   "revid": 240807590,
+   "leaders": [
+    {
+     "role": "Président",
+     "article": "François Bayrou",
+     "name": "François Bayrou",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Bayrou_Matignon_%28cropped%29.jpg/330px-Bayrou_Matignon_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "Bayrou Matignon (cropped).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Bayrou_Matignon_(cropped).jpg",
+      "artist": "Service photographique de Matignon",
+      "license": "Licence Ouverte",
+      "licenseUrl": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+     }
+    }
+   ],
+   "founded": "10 mai 2007",
+   "position": "Centre, (centre gauche à centre droit)",
+   "ideology": [
+    "Démocratie chrétienne",
+    "Social-libéralisme",
+    "Humanisme",
+    "Réformisme",
+    "Europhilie"
+   ],
+   "site": "http://www.mouvementdemocrate.fr/",
+   "seats": "33 / 577",
+   "candidates": [],
+   "source": {
+    "title": "Wikipédia : Mouvement démocrate (France)",
+    "url": "https://fr.wikipedia.org/wiki/Mouvement_démocrate_(France)"
+   }
+  },
+  {
+   "abbr": "HOR",
+   "name": "Horizons",
+   "en": "Horizons",
+   "article": "Horizons",
+   "revid": 240952032,
+   "leaders": [
+    {
+     "role": "Président",
+     "article": "Édouard Philippe",
+     "name": "Édouard Philippe",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/%C3%89douard_Philippe_2019_%28cropped%29.jpg/330px-%C3%89douard_Philippe_2019_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "Édouard Philippe 2019 (cropped).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%C3%89douard_Philippe_2019_(cropped).jpg",
+      "artist": "Jacques Paquier",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+     }
+    }
+   ],
+   "founded": "9 octobre 2021",
+   "position": "Centre droit, (centre à droite)",
+   "ideology": [
+    "Libéralisme économique",
+    "Europhilie",
+    "Libéral-conservatisme"
+   ],
+   "site": "https://horizonsleparti.fr",
+   "seats": "34 / 577",
+   "candidates": [
+    "edouard-philippe"
+   ],
+   "source": {
+    "title": "Wikipédia : Horizons",
+    "url": "https://fr.wikipedia.org/wiki/Horizons"
+   }
+  },
+  {
+   "abbr": "LR",
+   "name": "Les Républicains",
+   "en": "The Republicans",
+   "article": "Les Républicains",
+   "revid": 240898661,
+   "leaders": [
+    {
+     "role": "Président",
+     "article": "Bruno Retailleau",
+     "name": "Bruno Retailleau",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_%28cropped%29.jpg/330px-Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "Bruno Retailleau - Ministre de l'Intérieur français (cropped).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_(cropped).jpg",
+      "artist": "Anthonymontardyfr",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+     }
+    }
+   ],
+   "founded": "23 avril 2002 (UMP) 30 mai 2015 (LR)",
+   "position": "Droite, à droite radicale",
+   "ideology": [
+    "Conservatisme",
+    "Gaullisme",
+    "Libéralisme économique",
+    "Libéral-conservatisme",
+    "Opposition à l'immigration"
+   ],
+   "site": "https://republicains.fr/",
+   "seats": "50 / 577",
+   "candidates": [
+    "bruno-retailleau"
+   ],
+   "source": {
+    "title": "Wikipédia : Les Républicains",
+    "url": "https://fr.wikipedia.org/wiki/Les_Républicains"
+   }
+  },
+  {
+   "abbr": "UDR",
+   "name": "Union des droites pour la République",
+   "en": "Union of the Right for the Republic",
+   "article": "Union des droites pour la République",
+   "revid": 240630364,
+   "leaders": [
+    {
+     "role": "Président",
+     "article": "Éric Ciotti",
+     "name": "Éric Ciotti",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/%C3%89ric_Ciotti%2C_EPP_Summit%2C_23_March%2C_Brussels_%2852765298047%29_%28cropped%29.jpg/330px-%C3%89ric_Ciotti%2C_EPP_Summit%2C_23_March%2C_Brussels_%2852765298047%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "Éric Ciotti, EPP Summit, 23 March, Brussels (52765298047) (cropped).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%C3%89ric_Ciotti,_EPP_Summit,_23_March,_Brussels_(52765298047)_(cropped).jpg",
+      "artist": "European People's Party",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+     }
+    }
+   ],
+   "founded": "3 septembre 2012 (ADAEC) 31 août 2024 (UDR)",
+   "position": "Extrême droite",
+   "ideology": [
+    "Conservatisme",
+    "Populisme de droite",
+    "Libéralisme économique",
+    "Libertarianisme",
+    "Identitarisme",
+    "Ultralibéralisme"
+   ],
+   "site": "https://www.udr.fr/",
+   "seats": "17 / 577",
+   "candidates": [],
+   "source": {
+    "title": "Wikipédia : Union des droites pour la République",
+    "url": "https://fr.wikipedia.org/wiki/Union_des_droites_pour_la_République"
+   }
+  },
+  {
+   "abbr": "RN",
+   "name": "Rassemblement national",
+   "en": "National Rally",
+   "article": "Rassemblement national",
+   "revid": 240908966,
+   "leaders": [
+    {
+     "role": "Président",
+     "article": "Jordan Bardella",
+     "name": "Jordan Bardella",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_%28Cropped%29.jpg/330px-Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_%28Cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "Jordan Bardella - Strasbourg European Parliament September 2022 (Cropped).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_(Cropped).jpg",
+      "artist": "Raphael ATTAL @BootEXE",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+     }
+    }
+   ],
+   "founded": "5 octobre 1972 (FN) 1 er juin 2018 (RN)",
+   "position": "Extrême droite",
+   "ideology": [
+    "Nationalisme en France",
+    "National-populisme",
+    "Conservatisme social",
+    "Néo-conservatisme",
+    "National-conservatisme",
+    "Nativisme",
+    "Opposition à l'immigration",
+    "Nationalisme économique"
+   ],
+   "site": "https://rassemblementnational.fr/",
+   "seats": "118 / 577",
+   "candidates": [
+    "marine-le-pen"
+   ],
+   "source": {
+    "title": "Wikipédia : Rassemblement national",
+    "url": "https://fr.wikipedia.org/wiki/Rassemblement_national"
+   }
+  },
+  {
+   "abbr": "REC",
+   "name": "Reconquête",
+   "en": "Reconquest",
+   "article": "Reconquête (parti politique)",
+   "revid": 240909698,
+   "leaders": [
+    {
+     "role": "Président",
+     "article": "Éric Zemmour",
+     "name": "Éric Zemmour",
+     "photo": {
+      "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Portrait_d%27%C3%89ric_Zemmour%2C_avril_2022.jpg/330px-Portrait_d%27%C3%89ric_Zemmour%2C_avril_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file": "Portrait d'Éric Zemmour, avril 2022.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Portrait_d%27%C3%89ric_Zemmour,_avril_2022.jpg",
+      "artist": "Anh De France",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+     }
+    }
+   ],
+   "founded": "30 avril 2021 (Les Amis d'Éric Zemmour) 5 décembre 2021 (Reconquête)",
+   "position": "Extrême droite",
+   "ideology": [
+    "Nationalisme en France",
+    "Mouvance identitaire",
+    "National-conservatisme",
+    "Populisme de droite",
+    "Opposition à l'immigration",
+    "Critique de l'islam",
+    "Souverainisme",
+    "Euroscepticisme"
+   ],
+   "site": "https://www.parti-reconquete.fr",
+   "seats": null,
+   "candidates": [
+    "eric-zemmour"
+   ],
+   "source": {
+    "title": "Wikipédia : Reconquête (parti politique)",
+    "url": "https://fr.wikipedia.org/wiki/Reconquête_(parti_politique)"
+   }
+  }
+ ]
+}
