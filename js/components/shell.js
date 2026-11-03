@@ -7,16 +7,19 @@ import { store } from '../store.js';
 import { daysToElection } from '../model/forecast.js';
 import { allRaces, fc, chamberSummary, raceShortTitle, realRaceCount, researchedCount } from '../data/world.js';
 import { lastName } from './race.js';
+import { section } from '../i18n.js';
 
 export const MAIN_MENU = [
   ['#/', 'Homepage', 'globe'],
-  ['#/country', 'Which country?', 'globe'],
   ['#/parties', 'The main parties and values', 'user'],
+  ['#/congress', 'U.S. Congress', 'parliament'],
   ['#/starred', 'Starred elections', 'star'],
   ['#/liked', 'Liked candidates', 'heart'],
   ['#/close', 'Close elections', 'ballot'],
   ['#/news', 'Major news regarding the election', 'news'],
   ['#/inflation', 'Inflation tracker', 'dollar'],
+  ['#/country', 'Which country?', 'globe'],
+  ['#/about', 'About the data', 'info'],
   ['#/donate', 'Donating to the site', 'dollar'],
 ];
 export const PROFILE_MENU = [
@@ -25,9 +28,11 @@ export const PROFILE_MENU = [
   ['#/donations', 'Donations', 'heart'],
 ];
 
+// A picture the visitor chose shows in both sections; otherwise each section shows its flag.
 export const avatarSrc = () => {
   const a = store.get().avatar;
-  return a && a.startsWith('data:image/') ? a : 'assets/flag-us-square.svg';
+  if (a && a.startsWith('data:image/')) return a;
+  return section() === 'fr' ? 'assets/flag-fr-square.svg' : 'assets/flag-us-square.svg';
 };
 
 function topbar() {
@@ -121,7 +126,7 @@ export function markActive(hash) {
 function wireMenus() {
   const pairs = [['#main-menu-btn', '#main-menu'], ['#profile-menu-btn', '#profile-menu']];
   const closeAll = (except) => pairs.forEach(([b, m]) => {
-    if (m === except) return;
+    if (m === except || !$(m)) return;
     $(m).hidden = true;
     $(b).setAttribute('aria-expanded', 'false');
   });

@@ -275,6 +275,11 @@ button.chip[aria-pressed="true"] { background: var(--text-1); color: var(--bg); 
 .cand.party-x { --party: var(--third); }
 .cand-top { display: flex; align-items: flex-start; gap: 12px; }
 .badge { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; font-weight: 750; color: #fff; background: var(--party, var(--other)); flex: none; font-size: 15px; }
+/* A candidate's photo (Wikidata and Commons, scripts/update_photos.py) in the badge's
+   place: gray like the France section's photos, ringed in the candidate's color. */
+.badge.photo { background: var(--surface-3); box-shadow: 0 0 0 2px var(--party, var(--other)); overflow: hidden; }
+.badge.photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; filter: grayscale(1) contrast(1.05); mix-blend-mode: luminosity; opacity: .9; }
+:root[data-theme="light"] .badge.photo img { mix-blend-mode: multiply; opacity: 1; }
 .cand-name { font-weight: 750; font-size: 18px; line-height: 1.2; }
 .cand-party { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-3); margin-top: 3px; }
 .cand .big { font-size: clamp(38px, 5vw, 54px); font-weight: 800; letter-spacing: -.03em; line-height: 1; margin: 16px 0 6px; color: var(--party, var(--text-1)); }
@@ -622,3 +627,274 @@ body.is-intro .topbar, body.is-intro .site-header, body.is-intro .ticker, body.i
 .check-list .st.info { color: var(--text-3); }
 :root[data-theme="light"] .check-list .st.pass { color: #006300; }
 .check-list .detail { color: var(--text-3); font-size: 13px; margin-top: 2px; overflow-wrap: anywhere; }
+
+/* ==== France section, language switch, help, reminders ======================
+   French party colors, ordered left to right. Validated with the dataviz palette
+   checker (scripts/validate_palette) in both themes: every check passes against
+   #15121f (dark) and #ffffff (light). Every use sits beside a name or label. */
+:root,
+:root[data-theme="dark"] {
+  --fr-lfi: #a066e8; --fr-pcf: #c73b3b; --fr-le: #3fae55; --fr-ps: #e0609f; --fr-ens: #b38a0a;
+  --fr-hor: #16a58a; --fr-lr: #5596ea; --fr-rn: #5257cc; --fr-rec: #c46d33; --fr-other: #77748a;
+}
+:root[data-theme="light"] {
+  --fr-lfi: #8e52de; --fr-pcf: #a92e2e; --fr-le: #36a852; --fr-ps: #d4488f; --fr-ens: #a67c00;
+  --fr-hor: #0e927a; --fr-lr: #4189e2; --fr-rn: #3442b0; --fr-rec: #b2632c; --fr-other: #8a8799;
+}
+
+/* FR | EN switch */
+.lang-switch { display: inline-flex; padding: 3px; border-radius: 999px; border: 1px solid var(--border-2); background: var(--surface-1); gap: 2px; }
+.lang-switch button { min-width: 38px; height: 32px; padding: 0 10px; border-radius: 999px; border: 0; background: transparent; color: var(--text-2); font: 650 13px/1 'JetBrains Mono', monospace; letter-spacing: .06em; cursor: pointer; }
+.lang-switch button:hover { color: var(--text-1); }
+.lang-switch button[aria-pressed="true"] { background: var(--text-1); color: var(--bg); }
+.intro-top .lang-switch { align-self: flex-start; }
+
+/* Floating help */
+.help-root { position: fixed; right: 18px; bottom: 18px; z-index: 60; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+.help-fab { display: inline-flex; align-items: center; gap: 8px; height: 50px; padding: 0 18px 0 14px; border-radius: 999px; border: 0; cursor: pointer; color: #fff; font: 650 15px/1 'Inter', sans-serif; background: linear-gradient(90deg, var(--brand-1), var(--brand-2) 55%, var(--brand-3)); box-shadow: 0 10px 28px rgba(0, 0, 0, .35); }
+.help-fab:hover { filter: brightness(1.08); }
+.help-fab .icon { width: 22px; height: 22px; }
+.help-panel { width: min(380px, calc(100vw - 32px)); max-height: min(620px, calc(100vh - 110px)); overflow: auto; box-shadow: var(--shadow); background: var(--surface-1); display: grid; gap: 14px; }
+.help-panel .seg { width: 100%; }
+.help-panel .seg button { flex: 1; justify-content: center; padding: 0 10px; border: 0; background: transparent; cursor: pointer; font: inherit; color: var(--text-2); }
+.help-search { position: relative; }
+.help-search .icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-3); width: 18px; height: 18px; }
+.help-search .input { padding-left: 38px; }
+.help-links { display: grid; gap: 2px; }
+.help-links a { display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 10px; text-decoration: none; color: var(--text-1); font-size: 14px; }
+.help-links a:hover, .help-links a:focus-visible { background: var(--surface-2); }
+.help-links a[hidden] { display: none; }
+.help-links .icon { color: var(--text-3); flex: none; }
+.help-faq { border-bottom: 1px solid var(--border); padding: 6px 0; }
+.help-faq summary { cursor: pointer; font-weight: 600; font-size: 14px; }
+.help-faq p { margin: 6px 0 4px; }
+.help-panel textarea.input { min-height: 96px; padding: 10px 14px; resize: vertical; }
+.help-panel select.input { appearance: auto; }
+@media (max-width: 560px) { .help-fab span { display: none; } .help-fab { padding: 0 14px; } .help-root { right: 12px; bottom: 12px; } }
+@media print { .help-root { display: none; } }
+
+/* Dialog (reminders) */
+.modal-backdrop { position: fixed; inset: 0; z-index: 70; background: var(--veil); display: grid; place-items: center; padding: 16px; overflow: auto; }
+.modal { width: min(560px, 100%); max-height: calc(100vh - 32px); overflow: auto; background: var(--surface-1); box-shadow: var(--shadow); }
+.modal fieldset .check { margin: 4px 0; }
+
+/* France: hero, countdowns, next elections */
+.fr-hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: center; background: linear-gradient(120deg, color-mix(in srgb, #000091 22%, var(--surface-1)), var(--surface-1) 45%, color-mix(in srgb, #e1000f 16%, var(--surface-1))); }
+.fr-counts { display: flex; gap: 12px; }
+.fr-start { display: grid; justify-items: center; gap: 12px; }
+.fr-start-btn { min-height: 50px; padding: 0 26px; font-size: 16px; }
+.fr-start-btn svg:last-child { transition: transform .15s; }
+.fr-start-btn[aria-expanded="true"] svg:last-child { transform: rotate(180deg); }
+.fr-start-choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; width: 100%; max-width: 900px; }
+.fr-start-choices[hidden] { display: none; }
+.fr-choice { display: flex; gap: 14px; align-items: center; padding: 16px 18px; color: inherit; text-decoration: none; transition: border-color .15s; }
+.fr-choice:hover, .fr-choice:focus-visible { border-color: var(--brand-2); }
+.fr-choice > span { display: grid; gap: 4px; flex: 1; min-width: 0; }
+.fr-choice > svg:first-child { width: 28px; height: 28px; flex: none; color: var(--brand-2); }
+.fr-count { min-width: 132px; padding: 14px 16px; border-radius: 18px; background: var(--surface-2); border: 1px solid var(--border); text-align: center; }
+.fr-count .num { font: 800 44px/1 'Bricolage', 'Inter', sans-serif; letter-spacing: -.02em; }
+.fr-count .lbl { font-size: 13px; color: var(--text-2); margin-top: 2px; }
+.fr-count .what { font-weight: 650; margin-top: 8px; font-size: 14px; }
+.fr-count .when { font-size: 12px; margin-top: 2px; }
+.fr-count.small { min-width: 150px; padding: 12px; }
+.fr-count.small .num { font-size: 30px; }
+.fr-next { display: flex; gap: 12px; flex-wrap: wrap; }
+.fr-next-item { text-decoration: none; color: inherit; display: block; }
+a.fr-next-item:hover .fr-count { border-color: var(--border-2); }
+@media (max-width: 760px) { .fr-hero { grid-template-columns: 1fr; } .fr-counts { justify-content: flex-start; } .fr-count { min-width: 0; flex: 1; } }
+
+/* France: photos in gray, blended into the page */
+.fr-photo { --size: 56px; width: var(--size); height: var(--size); flex: none; border-radius: 50%; overflow: hidden; display: inline-grid; place-items: center; background: var(--surface-3); box-shadow: 0 0 0 2px var(--pc, var(--fr-other)); }
+.fr-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; filter: grayscale(1) contrast(1.05); mix-blend-mode: luminosity; opacity: .9; }
+:root[data-theme="light"] .fr-photo img { mix-blend-mode: multiply; opacity: 1; }
+.fr-initials { font: 700 calc(var(--size) * .36)/1 'Inter', sans-serif; color: var(--text-2); }
+.fr-party { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--text-2); font-weight: 600; }
+.fr-party i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+
+/* France: poll average bars */
+.fr-bars { display: grid; gap: 10px; }
+.fr-bar-row { display: grid; grid-template-columns: 40px minmax(0, 1fr) 70px; gap: 12px; align-items: center; }
+.fr-bar-row .mid { display: grid; gap: 6px; min-width: 0; }
+.fr-bar-row .who { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
+.fr-bar-row .who b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fr-bar-row .track { position: relative; height: 12px; border-radius: 6px; background: var(--surface-3); }
+.fr-bar-row .fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 6px; }
+.fr-bar-row .range { position: absolute; top: -3px; bottom: -3px; border-radius: 6px; background: color-mix(in srgb, var(--text-1) 16%, transparent); }
+.fr-bar-row .val { text-align: right; font-weight: 700; display: grid; }
+
+/* France: second-round match-ups */
+.fr-duel { display: grid; gap: 8px; }
+.fr-duel.stale { opacity: .75; }
+.fr-duel .duel-row { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: 10px; align-items: center; }
+.fr-duel .duel-row .who { display: grid; min-width: 0; }
+.fr-duel .duel-row .who b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fr-duel .pct { font: 800 22px/1 'Bricolage', 'Inter', sans-serif; }
+.fr-duel .duel-bar { display: flex; height: 12px; border-radius: 6px; overflow: hidden; gap: 2px; background: var(--surface-1); }
+.fr-duel .duel-bar span:first-child { border-radius: 6px 0 0 6px; }
+.fr-duel .duel-bar span:last-child { border-radius: 0 6px 6px 0; }
+.fr-duel-polls summary { cursor: pointer; font-size: 13px; color: var(--text-2); }
+.fr-duel-polls .table-wrap { margin-top: 8px; }
+
+/* France: faces of the main candidates */
+.fr-faces { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 14px; }
+.fr-face { display: grid; justify-items: center; text-align: center; gap: 4px; }
+.fr-face .fr-photo { margin-bottom: 4px; }
+.fr-face .num { font-weight: 700; font-size: 18px; }
+
+/* France: maps */
+.fr-map .region { stroke: var(--bg); stroke-width: 1.6; }
+:root[data-theme="light"] .fr-map .region { stroke: #ffffff; }
+.fr-insets rect { fill: none; stroke: var(--border-2); stroke-dasharray: 3 3; }
+.fr-insets text { fill: var(--text-3); font-size: 11px; font-family: 'Inter', sans-serif; }
+.fr-cities .fr-city { cursor: pointer; outline: none; }
+.fr-cities .hit { fill: transparent; }
+.fr-cities .dot { fill: var(--text-1); stroke: var(--bg); stroke-width: 1.5; }
+.fr-cities .fr-city:hover .dot, .fr-cities .fr-city:focus .dot { fill: var(--brand-2); r: 7; }
+.fr-cities text { font-size: 12px; font-weight: 650; fill: var(--text-1); paint-order: stroke; stroke: var(--bg); stroke-width: 3px; pointer-events: none; font-family: 'Inter', sans-serif; }
+.map-tip .tt-title { font-weight: 700; font-size: 14px; margin-bottom: 2px; }
+.map-tip .tt-sub { color: var(--text-2); }
+.fr-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 4px 12px; }
+.fr-links a { padding: 6px 0; text-decoration: none; border-bottom: 1px solid var(--border); }
+.fr-links a:hover { color: var(--brand-2); }
+
+/* France: candidates and parties */
+.fr-cand { display: flex; gap: 14px; align-items: flex-start; }
+.fr-colhead { display: inline-flex; align-items: center; gap: 5px; }
+.fr-colhead i { width: 8px; height: 8px; border-radius: 50%; }
+table.fr-polls tr.first td { border-top: 1px solid var(--border-2); }
+table.fr-polls td, table.fr-polls th { padding: 7px 10px; }
+.fr-party-card { display: grid; gap: 14px; border-top: 4px solid var(--pc); }
+.fr-party-head { display: flex; align-items: center; gap: 12px; }
+.fr-party-swatch { width: 14px; height: 14px; border-radius: 4px; background: var(--pc); flex: none; }
+.fr-leaders { display: flex; gap: 18px; flex-wrap: wrap; }
+.fr-leader { display: flex; gap: 12px; align-items: center; }
+.fr-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.fr-tags .chip { font-size: 12.5px; padding: 4px 10px; }
+.fr-out { margin: 10px 0 0; padding-left: 18px; }
+.fr-out li { margin: 7px 0; }
+
+/* France: candidate pages, sourced positions and the match ranking */
+.fr-cand-head { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+.fr-score { font-size: 44px; font-weight: 800; letter-spacing: -.03em; line-height: 1; }
+.fr-pos .quote { display: block; }
+a.match-row, a.fr-face { color: inherit; text-decoration: none; }
+a.fr-face:hover b { text-decoration: underline; }
+.fr-bar-row .who a, .fr-cand h3 a { color: inherit; text-decoration: none; }
+.fr-bar-row .who a:hover, .fr-cand h3 a:hover { text-decoration: underline; }
+@media (max-width: 620px) { .sec-fr .match-row .pct { grid-row: 1; grid-column: 3; font-size: 22px; } }
+.fr-compare-cta { padding: 14px 16px; border-radius: 16px; border: 1px solid color-mix(in srgb, var(--brand-2) 45%, var(--border)); background: color-mix(in srgb, var(--brand-2) 8%, var(--surface-1)); }
+.fr-compare .p-center .fr-photo { margin: 4px auto 0; }
+.fr-compare .p-center .fr-party { justify-content: center; }
+
+/* ==== Parliaments: half-circle seat charts (js/components/hemicycle.js) ==========
+   Groups without a party color of their own take --seat-other, darker than --other and
+   --fr-other: in the chambers it sits beside pink, green, teal and blue groups, and the
+   lighter gray failed the colorblind check beside pink. Validated with the dataviz
+   checker in both themes, in each French chamber's left-to-right order and in the U.S.
+   order (D, independent, R); only the "reads gray" check flags it, as intended. */
+:root,
+:root[data-theme="dark"] { --seat-other: #686870; }
+:root[data-theme="light"] { --seat-other: #57575f; }
+.hemi-chart { position: relative; max-width: 880px; margin: 0 auto; }
+.hemi-svg { display: block; width: 100%; height: auto; touch-action: manipulation; cursor: default; }
+.hemi-svg:focus-visible { outline: 2px solid var(--brand-2); outline-offset: 6px; border-radius: 14px; }
+.hemi-group, .hemi-vacant { transition: opacity .15s; }
+.hemi-group.dim, .hemi-vacant.dim { opacity: .14; }
+.hemi-vacant { fill: none; stroke: var(--text-3); stroke-width: 1.6; }
+.hemi-ring { fill: none; stroke: var(--text-1); stroke-width: 2.5; opacity: 0; pointer-events: none; }
+.hemi-c0 { font: 800 62px/1 'Bricolage', 'Inter', sans-serif; letter-spacing: -.02em; fill: var(--text-1); text-anchor: middle; }
+.hemi-c1, .hemi-c2 { font: 500 21px/1 'Inter', sans-serif; fill: var(--text-2); text-anchor: middle; }
+.hemi-hint { text-align: center; margin: 4px 0 0; }
+.hemi-key { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; margin-top: 16px; }
+.hemi-key-item { display: flex; gap: 10px; align-items: flex-start; text-align: left; padding: 10px 12px; border-radius: 14px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-1); font: inherit; font-size: 14px; cursor: pointer; }
+.hemi-key-item:hover { border-color: var(--border-2); background: var(--surface-2); }
+.hemi-key-item[aria-pressed="true"] { border-color: var(--text-2); background: var(--surface-3); }
+.hemi-key-item .hemi-swatch { flex: none; margin-top: 3px; }
+.hemi-key-text { display: grid; gap: 1px; min-width: 0; }
+.hemi-key-text .meta { font-size: 12.5px; color: var(--text-2); }
+.map-tip .hemi-swatch { vertical-align: -2px; margin-right: 5px; }
+/* Four leaders and six figures on both countries' pages: even rows, never 3 + 1. */
+.parl-people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+@media (min-width: 1180px) { .parl-people { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .parl-people { grid-template-columns: minmax(0, 1fr); } }
+.parl-person { display: flex; gap: 12px; align-items: center; }
+.parl-person .eyebrow { margin-bottom: 2px; }
+.parl-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 560px) { .parl-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.parl-stats .stat { padding: 12px 14px; }
+.parl-stats .value { font-size: 22px; }
+.parl-find { max-width: 340px; }
+table.parl-members td { padding: 7px 12px; }
+
+/* "Les grands enjeux" (js/fr/views/enjeux.js). Each country takes a color from its flag,
+   at the owner's request (Nov. 3, 2026): France the navy its flag has had since 2020
+   (Bleu France, #000091; lighter in the dark theme), Spain yellow, the European Union
+   white, Germany gray, Italy green, the Netherlands orange, the United Kingdom red, the
+   United States a lighter blue, and Belgium black (unnamed by the owner: the flag color
+   left over). The OECD average stays hatched gray. Each hue sits as close to its flag as
+   the palette validator allows, checked on every pair since bars sort by value: colorblind
+   ΔE ≥ 8.1 light, 9.1 dark; normal vision ≥ 15.8; France against any one country (the
+   line charts) ≥ 16. Its lightness-band and chroma checks flag navy, yellow, white, gray
+   and black, which the flags call for; white (light theme), black (dark) and yellow
+   (light, contrast 1.75) get an outline (--cty-*-edge), and every bar prints its country
+   and value. France's own figures, with no other country, are all navy. */
+:root, :root[data-theme="dark"] {
+  --cty-fr: #3959da; --cty-eu: #f2f0fa; --cty-de: #77748a; --cty-be: #000000; --cty-it: #00a75e;
+  --cty-es: #efbd00; --cty-nl: #f16a00; --cty-uk: #cf002f; --cty-us: #54b3fd;
+  --cty-eu-edge: transparent; --cty-be-edge: #8f8ba1; --cty-es-edge: transparent;
+}
+:root[data-theme="light"] {
+  --cty-fr: #000091; --cty-eu: #ffffff; --cty-de: #8a8799; --cty-be: #14111f; --cty-it: #00a05a;
+  --cty-es: #edbe00; --cty-nl: #f86211; --cty-uk: #c60027; --cty-us: #00a0f6;
+  --cty-eu-edge: #6b6880; --cty-be-edge: transparent; --cty-es-edge: #9c7c00;
+}
+.enj-tabs { border-radius: 27px; }
+@media (max-width: 620px) { .seg.big.enj-tabs a { min-height: 40px; padding: 0 14px; font-size: 14px; } }
+/* Four figures per topic: 4, 2 or 1 per row, never 3 + 1. */
+.enj-tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 1000px) { .enj-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 460px) { .enj-tiles { grid-template-columns: minmax(0, 1fr); } }
+.enj-card { scroll-margin-top: 84px; }
+.enj-vs { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.enj-select { width: auto; min-width: 200px; max-width: 100%; min-height: 40px; appearance: auto; }
+.enj-switches { gap: 10px 16px; }
+.enj-switches .seg { border-radius: 18px; }
+.enj-line { min-height: 240px; }
+.enj-hist { position: relative; }
+.enj-hbar { fill: var(--cty-fr); fill-opacity: .5; }
+.enj-mark { stroke: var(--text-1); stroke-width: 2; }
+.enj-key-solid { background: var(--text-1); }
+.enj-key-dash { width: 18px; height: 0; border-top: 2px dashed var(--text-1); border-radius: 0; }
+/* One set of columns for every row (subgrid), so every track has the same length and
+   the bars share one scale whatever the width of each row's value. */
+.enj-bars { display: grid; grid-template-columns: minmax(96px, 180px) minmax(0, 1fr) auto; column-gap: 12px; row-gap: 8px; }
+.enj-bar { display: grid; grid-column: 1 / -1; grid-template-columns: minmax(96px, 180px) minmax(0, 1fr) auto; grid-template-columns: subgrid; align-items: center; row-gap: 2px; font-size: 14px; }
+.enj-bar .who { color: var(--text-2); overflow-wrap: anywhere; }
+.enj-bar .track { position: relative; height: 14px; }
+.enj-bar .fill { position: absolute; top: 0; bottom: 0; background: var(--bar, var(--other)); box-shadow: inset 0 0 0 1.5px var(--bar-edge, transparent); border-radius: 0 4px 4px 0; }
+.enj-bar.neg .fill { border-radius: 4px 0 0 4px; }
+.enj-bar .zero { position: absolute; top: -4px; bottom: -4px; width: 1px; background: var(--text-3); }
+.enj-bar .val { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.enj-bar .sub { grid-column: 2 / -1; font-size: 12px; color: var(--text-3); }
+.enj-bar.is-focus .who, .enj-bar.is-focus .val { color: var(--text-1); font-weight: 650; }
+.enj-bars.solo .who, .enj-bars.solo .val { font-weight: inherit; }
+.enj-bar.is-ref .fill { background: repeating-linear-gradient(135deg, var(--other) 0 2px, transparent 2px 5px); box-shadow: inset 0 0 0 1.5px var(--other); }
+.enj-table summary { cursor: pointer; color: var(--text-2); width: fit-content; }
+.enj-quote { margin: 0; padding: 10px 14px; border-left: 3px solid var(--text-1); background: var(--surface-2); border-radius: 0 12px 12px 0; }
+.enj-quote-en { display: block; margin-top: 4px; }
+.enj-why, .enj-notes ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+.enj-notes ul { color: var(--text-2); font-size: 14.5px; }
+.enj-grid { gap: 16px; align-items: start; }
+.enj-q { display: grid; gap: 8px; padding-top: 14px; border-top: 1px solid var(--border); }
+.enj-q .q { font-weight: 600; }
+.enj-stance { display: grid; gap: 6px; }
+a.chip.enj-cand { color: var(--text-1); }
+a.chip.enj-cand:hover { border-color: var(--text-3); }
+@media (max-width: 620px) {
+  .enj-bars { grid-template-columns: minmax(80px, 108px) minmax(0, 1fr) auto; column-gap: 8px; }
+  .enj-bar { font-size: 13px; }
+  .enj-select { min-width: 0; width: 100%; }
+  /* Each switch group is one row of equal buttons whose labels may wrap. */
+  .enj-switches .seg { display: flex; width: 100%; flex-wrap: nowrap; }
+  .enj-switches .seg button { flex: 1 1 0; min-width: 0; justify-content: center; text-align: center; white-space: normal; line-height: 1.25; padding: 6px 8px; border-radius: 14px; font-size: 13px; }
+}

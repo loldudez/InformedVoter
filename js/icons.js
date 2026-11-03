@@ -36,6 +36,14 @@ export const icon = {
   globe: () => svg('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/>'),
   upload: () => svg('<path d="M12 16V4M7 9l5-5 5 5M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/>'),
   trash: () => svg('<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>'),
+  bell: () => svg('<path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/>'),
+  bellFill: () => svg('<path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z" fill="currentColor"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/>'),
+  help: () => svg('<circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.8M12 17.2v.3"/>'),
+  send: () => svg('<path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/>'),
+  calendar: () => svg('<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>'),
+  search: () => svg('<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>'),
+  parliament: () => svg('<path d="M3 18a9 9 0 0 1 18 0M7.5 18a4.5 4.5 0 0 1 9 0M2 18h20"/>'),
+  chart: () => svg('<path d="M4 4v16h16M8 16v-5M12 16V7M16 16v-8"/>'),
 };
 
 // Each copy gets its own gradient id: a shared id breaks once the first copy is hidden.

@@ -38,6 +38,7 @@ jobs:
         run: |
           git config user.name "informed-voter-refresh"
           git config user.email "actions@users.noreply.github.com"
-          git add data/races.json data/control.json data/status.json data/news.json data/inflation.json data/research
+          # Every generated file (races, legislature, Congress, photos, France...); data/cache is ignored.
+          git add data
           git diff --cached --quiet || git commit -m "Refresh election data"
           git push

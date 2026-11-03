@@ -5,7 +5,7 @@ import { fc, statewideRaces, houseRaces, loadLayer, legislativeRaces } from '../
 import { cleanDistrictName } from '../data/demo.js';
 import { drawMap, ratingColor, ratingLegendHTML } from '../lib/map.js';
 import { cssVar } from '../lib/charts.js';
-import { raceFull, compactRace, mountRaceTabs, leadStr, lastName } from '../components/race.js';
+import { raceFull, compactRace, mountRaceTabs, leadStr, lastName, photoCredits } from '../components/race.js';
 import { howToVote } from '../components/vote.js';
 
 const ODD_YEAR_STATES = new Set(['LA', 'MS', 'NJ', 'VA']);
@@ -67,7 +67,7 @@ export const stateView = {
     let body;
     if (m.level === 'federal' && m.chamber === 'senate') {
       body = senate
-        ? html`<section class="card" style="padding:clamp(16px,3vw,28px)">${raceFull(senate, { tag: 'h2' })}</section>`
+        ? html`<section class="card" style="padding:clamp(16px,3vw,28px)">${raceFull(senate, { tag: 'h2', credits: false })}</section>`
         : emptyState(`No U.S. Senate election in ${s.name} in 2026`, `Neither of ${s.name}’s Senate seats is on the ballot this year. They are next up in 2028 and 2030.`);
     } else if (m.level === 'state' && st === 'DC') {
       body = emptyState('No state legislature', 'The District of Columbia has a city council instead of a state legislature, so there are no state legislative races here.');
@@ -92,6 +92,12 @@ export const stateView = {
       }
     }
 
+    // One credits list for the governor's two candidates and, on the Senate view, the
+    // Senate race's; a district's race brings its own when it opens.
+    const credits = photoCredits([
+      ...(governor && !fc(governor).open ? fc(governor).cands.slice(0, 2) : []),
+      ...(senate && m.level === 'federal' && m.chamber === 'senate' ? fc(senate).cands : []),
+    ]);
     return html`<div class="wrap page">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span><span>${s.name}</span></nav>
       <div class="state-head">
@@ -102,6 +108,7 @@ export const stateView = {
       ${governor ? html`<div style="margin-bottom:20px">${compactRace(governor, { label: 'Statewide · Governor' })}</div>` : ''}
       ${body}
       <div id="how-to-vote" style="margin-top:28px">${howToVote(st)}</div>
+      ${credits ? html`<div style="margin-top:20px">${credits}</div>` : ''}
     </div>`;
   },
 

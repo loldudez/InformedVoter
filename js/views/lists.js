@@ -1,12 +1,12 @@
 // Starred elections, liked candidates, close elections, and profile donations.
 
-import { html, raw, initials, fmtPct, fmtProb, fmtMoney, signed, fmtShortDate, fmtDR } from '../util.js';
+import { html, raw, fmtPct, fmtProb, fmtMoney, signed, fmtShortDate, fmtDR } from '../util.js';
 import { icon } from '../icons.js';
 import { store } from '../store.js';
 import { STATE_BY_ABBR } from '../data/states.js';
 import { fc, hist, weekChange, allRaces, ensureRace, ensureCandidate, getRace, raceTitle, officeLabel, financeOf, hasFigures, isDemo } from '../data/world.js';
 import { candColors, sparkline, lineChart } from '../lib/charts.js';
-import { PARTY_NAME, starBtn, heartBtn, demoChip, dataChip, lastName, miniH2H, ratingChip, financeCard, financeNote, leadStr } from '../components/race.js';
+import { PARTY_NAME, starBtn, heartBtn, demoChip, dataChip, lastName, miniH2H, ratingChip, financeCard, financeNote, leadStr, candBadge, photoCredits } from '../components/race.js';
 import { verifiedDonateUrl } from './elections.js';
 
 const arrow = (d, unit = ' pts', digits = 1) => {
@@ -108,7 +108,7 @@ function likedCard({ c, race, f, fin, wk }) {
   const hasTotal = hasFigures(fin);
   return html`<article class="card stack">
     <div class="row" style="align-items:flex-start">
-      <div class="badge" style="background:${colors[c.id]}">${initials(c.name)}</div>
+      ${candBadge(c, colors[c.id])}
       <div style="flex:1;min-width:0"><div class="cand-name">${c.name}</div><div class="cand-party">${PARTY_NAME[c.party] || c.party} · <a href="#/race/${encodeURIComponent(race.id)}">${raceTitle(race)}</a></div></div>
       <div class="row">${dataChip(race)}${heartBtn(c.id, c.name)}</div>
     </div>
@@ -142,7 +142,8 @@ export const liked = {
       <div><div class="eyebrow">Liked candidates</div><h1>Candidates you’ve liked</h1><p class="muted">Weekly change in their odds, how much they’ve raised, and how much comes from small donors versus PACs or public financing.</p></div>
       ${items.length ? html`<div class="filters" role="group" aria-label="Sort">${Object.entries(SORTS).map(([k, [label]]) => html`<a class="chip" href="#/liked?sort=${k}" ${raw(k === sort ? 'aria-current="page" style="background:var(--text-1);color:var(--bg);border-color:var(--text-1)"' : '')}>${label}</a>`)}</div>
         <div class="notice">${icon.info()}<div>Corporations can’t give directly to federal candidates; their money reaches campaigns through PACs and outside super PAC spending. Some states fund candidates publicly. Real numbers come from FEC and state filings.</div></div>
-        ${items.map(likedCard)}`
+        ${items.map(likedCard)}
+        ${photoCredits(cands)}`
         : html`<div class="empty">${icon.heart()}<h3>No liked candidates yet</h3><p>Tap the heart on any candidate to keep them here.</p><a class="btn" href="#/">Browse the map</a></div>`}
     </div>`;
   },
@@ -207,11 +208,12 @@ export const donations = {
         const race = getRace(c.raceId);
         const url = verifiedDonateUrl(c);
         return html`<div class="card row between">
-          <div class="row"><div class="badge" style="background:${candColors(fc(race).cands)[c.id]}">${initials(c.name)}</div><div><b>${c.name}</b><div class="small faint">${PARTY_NAME[c.party] || c.party} · ${raceTitle(race)}</div></div></div>
+          <div class="row">${candBadge(c, candColors(fc(race).cands)[c.id])}<div><b>${c.name}</b><div class="small faint">${PARTY_NAME[c.party] || c.party} · ${raceTitle(race)}</div></div></div>
           ${url ? html`<a class="btn btn-primary btn-sm" href="${url}" target="_blank" rel="noopener noreferrer">Donate on official site ${icon.external()}</a>`
             : html`<span class="small faint">${isDemo(c) ? 'Demo candidate: no donation link' : 'No verified official link yet'}</span>`}
         </div>`;
       }) : html`<div class="empty">${icon.heart()}<h3>No liked candidates yet</h3><p>Heart a candidate and their official donation link will appear here.</p></div>`}
+      ${photoCredits(cands)}
     </div>`;
   },
 };

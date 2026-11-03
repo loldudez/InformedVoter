@@ -22,10 +22,13 @@ legislative races").
 | Campaign websites | Each race page's "External links" list of official campaign websites, such as "Ted Brown (L)" (`campaign_sites` in `scripts/lib/elections.py`) | Attached when the name (and major party, where given) matches one candidate without doubt. A researched `officialSite` wins; `officialSite: null` in an overlay drops a dead link. California's page lists none, so `scripts/research/campaign_sites_2026.py` adds links from candidates' own Wikipedia articles and BallotReady profiles, kept only when the site answers and shows the candidate's name. |
 | National environment | Generic congressional ballot average on the Senate page | Feeds the partisan baseline. |
 | Seats held today | Wikipedia's party summaries for the 119th Congress; governors from the 36 races plus the 14 not on the ballot | Expected gains are measured from these. |
+| Who sits in Congress (the seat charts on `#/congress`) | The House Clerk's member list (`MemberData.xml`: party, caucus, state, district, vacancies and why, delegates); Wikipedia's "List of current United States senators" (senate.gov refuses scripts) and each chamber's infobox for its leaders and which side the independents caucus with; Wikidata for the President (P35 of Q30) | `scripts/update_congress.py`, once a day; keeps the previous file when the Clerk's list or the senators' table can't be read. Democrats blue, Republicans red, independents gray, with the side they caucus with in the tooltip. |
+| Candidates' photos | Wikidata's image (P18) for the Wikipedia article each candidate's name links to (`wiki`), on Wikimedia Commons with its author and license (`scripts/lib/wikiphotos.py`, shared with the France section) | `scripts/update_photos.py` → `data/photos.json`, once a day, answers cached a week in `data/cache/wiki/photos.json`. Kept only when the item is a person, a U.S. citizen wherever Wikidata gives a citizenship, and the article's title carries the candidate's last name. Shown in gray with the credit in the tooltip and a "Photo credits" list on each page; candidates without one keep their initials. The President's and Congress leaders' photos sit in `data/congress.json`. |
 | House members' positions | The House Clerk's roll-call XML for 39 votes (2021 to 2026) | See "Positions from votes". |
 | Betting market | Polymarket's Senate and House control markets | A cross-check shown beside the model, never an input. |
 | Projected votes | 2024 presidential votes by state × 0.75 (House: divided by districts) | Midterm turnout ran 0.71 of the presidential vote in 2022 and 0.85 in 2018. |
-| Early vote | The University of Florida Election Lab's 2026 tracker (Michael McDonald): `US.csv` for states, `ST_cd.csv` for House districts (`scripts/lib/early_vote.py`) | Refreshed with the races. Districts only where the file covers every district and 98% of the state's ballots. CC BY-NC-ND: credited on every Early vote tab, no commercial use. |
+| Early vote | The University of Florida Election Lab's 2026 tracker (Michael McDonald): `US.csv` for states, `ST_cd.csv` for House districts (`scripts/lib/early_vote.py`) | Refreshed with the races. Districts only where the file covers every district and 98% of the state's ballots. CC BY-NC-ND: credited on every Early vote tab, no commercial use, so since the site carries ads (Nov. 3, 2026) it is neither read nor shown: `EARLY_VOTE` in `update_races.py` and `SHOW_EARLY_VOTE` in `js/config.js` are off, to be turned back on together. |
+| Elections email reminders may cover | Election Day and the runoffs in `data/races.json`; the French elections in `data/fr/calendrier.json` whose dates are fixed | `scripts/update_reminders.py` → `data/reminders.json`, every refresh, no network. The mail service (`services/mail/Code.gs`) reads it from the live site, so its emails carry the site's names and dates, never a visitor's text. |
 | State legislative races | Each chamber's 2026 Wikipedia page, such as "2026 Michigan House of Representatives election" (`scripts/lib/legislature.py`) | Seats on the ballot, holders, 2024 presidential margins, November candidates where listed, forecasters' district ratings. No win odds. |
 
 Wikipedia pages are cached by revision in `data/cache/wiki/`, so a refresh only
@@ -342,3 +345,222 @@ in the page).
 Summaries from automated page readers can misquote: one returned a Hochul quote that
 appears nowhere in the release it cited. Check every quote against the page text
 (in the browser pane) before it goes into a research script.
+
+## The France section
+
+Everything for France lives apart from the U.S. data: pages under `#/fr`, code in
+`js/fr/`, data in `data/fr/`, builders in `scripts/fr/`, and a visitor's answers and
+address under their own browser key (`iv:fr:v1`). `scripts/refresh_all.py` runs the
+builders after the U.S. steps; each keeps its previous file if it can't build a new
+one, and a France failure never triggers the U.S. restore.
+
+| What | Source | Builder, schedule |
+|---|---|---|
+| 2027 presidential dates and declared candidates | French Wikipedia, "Élection présidentielle française de 2027" (infobox and the "Candidats déclarés" tables), cross-checked against franceinfo's tracker of declared candidates and the hand check in `candidats_2027.py` | `update_presidentielle.py`, daily |
+| First- and second-round polls | French Wikipedia, "Liste de sondages sur l'élection présidentielle française de 2027", each row linked to its notice at the Commission des sondages (or matched to one in the Commission's list of notices) | same |
+| Candidates' and leaders' photos | Wikidata (P18) and Commons, with author and license | `frwiki.photos` (`scripts/lib/wikiphotos.py`), cached a day |
+| Parties: leader, position, ideology, seats, site | Each party's French Wikipedia infobox, "current" part only | `partis.py`, daily |
+| Who sits in Parliament: deputies and senators with their group, party, constituency and seat; the chambers' presidents; the government | The Assemblée nationale's open data (AMO10) and the Sénat's (`senateurs.json`, `ODSEN_GENERAL.csv`), Licence Ouverte; French Wikipedia's tables of each chamber's groups (presidents, declared positions); Wikidata (President P35, Prime Minister P6, chamber presidents P488) | `parlement.py`, daily |
+| Election calendar | One French Wikipedia page per election, hand-checked | `calendrier.py`, every run |
+| Regions and departments | IGN ADMIN EXPRESS COG CARTO via the Géoplateforme WFS (Licence Ouverte 2.0) | `build_maps_fr.py`, by hand |
+| Largest cities | geo.api.gouv.fr (INSEE populations), five per region, two overseas | same |
+| Address to commune | Géoplateforme geocoder (IGN), in the browser, after consent | `js/fr/geocode.js` |
+| Candidates' positions on the 144 questions | Programs, campaign sites, party documents, speeches, interviews and press reports, read by hand | `positions_2027.py` (no network), every run |
+| "Les grands enjeux": economy, inflation, immigration, crime, wealth gap, education, salaries | Eurostat (JSON-stat API), the OECD (SDMX API), the World Bank (API, with the UN's migrant estimates and UNODC's homicide rates), the U.S. BLS (public API), the Interior Ministry's crime statistics (SSMSI, on data.gouv.fr); INSEE's, the ONS's and PISA's published figures typed in `enjeux_sources.py` | `enjeux.py` → `data/fr/enjeux.json`, daily; see "Les grands enjeux" below |
+
+**Who is running.** Only declared candidates are listed, averaged and compared; people
+polls test without a candidacy (Hollande, Villepin, Bardella) keep their values in the
+poll tables' line-ups and nowhere else. Wikipedia's "Candidats déclarés" table is the daily aggregator, cross-checked every day
+against franceinfo's tracker of declared candidates; `scripts/fr/candidats_2027.py`
+records the check made person by person on Nov. 2, 2026: each candidate with the
+article that reports their own announcement, and the people polls test or trackers list
+who aren't running, with the reason and its source. Someone checked as declared stays
+declared unless franceinfo marks them withdrawn or neither tracker lists them any more;
+someone checked as not running stays out unless both trackers list them; anyone else
+needs both. Every disagreement goes to the data's `checks`, shown on the About page, to
+be settled in `candidats_2027.py` with a source. On Nov. 2 the trackers differed on
+eight people: franceinfo left out Zemmour and Bertrand (both announced) and listed
+Lassalle (whose statement was conditional on a fundraiser); Wikipedia still listed
+Cazeneuve (who said on Oct. 21 that he would help Glucksmann win) and left out Branco, Legendre, Billetdoux,
+Collovati and Rohou. That gave 35 declared candidates of the 47 people listed or tested.
+Positions of people who aren't running (Villepin, Cazeneuve, Bardella) stay on their own
+pages for reference and count nowhere else.
+
+**Polls.** A row counts only with its notice at the Commission des sondages. Wikipedia
+links most rows to it; a row linked to the pollster's own page instead gets the one
+vote-intention notice in the Commission's list from that pollster, filed within ten
+days after the fieldwork ended and not already another poll's, and stays out without
+one. A vote-intention notice newer than every listed poll goes to `checks` as a poll
+Wikipedia hasn't added yet. A poll often tests several line-ups of candidates (one
+table row each); the average takes each poll once, using the candidate's median across
+that poll's line-ups made only of declared candidates (a line-up with someone who isn't
+running counts only for a candidate the poll tested nowhere else), over the 30 days
+before the latest poll, and shows the lowest-to-highest range beside it. "<1" counts as
+0.5, and a value cell that names someone else ("6,5 / Hollande (PS)") goes to that
+person. Second-round match-ups need two declared candidates and are averaged the same
+way; one not polled in 60 days is shown as stale. There are no win probabilities. Polls
+refresh every day (44 first-round polls and 7 match-ups on Nov. 2).
+
+**Parliament** (`#/fr/parlement`, and `#/congress` for the U.S.). Each chamber is a
+half-circle of seats (`js/components/hemicycle.js`) filled left to right by group: in the
+Assembly by where the group's members sit (the median seat number, which runs from right
+to left), in the Senate by each group's stated position in its Wikipedia infobox. A
+group takes the color of the party most of its members belong to (the Assembly's data
+gives each deputy's party; Senate groups take the first party their infobox lists, set by
+group code in `parlement.py`). A group whose party has no color of its own is gray
+(`--seat-other`, darker than the parties' gray, which failed the colorblind check beside
+pink), and groups sharing a color get a different seat shape (circle, square, diamond).
+A seat's tooltip gives the member's name, office if any, group, party (deputies only: the
+Senate publishes groups, not parties), constituency and region; empty seats are vacancies. The page names the President of the Republic, the
+Prime Minister and government, each chamber's president and the group presidents; the
+Wikidata names are checked against the chambers' own data, and a mismatch goes to the
+file's `checks`.
+
+**Parties.** Infobox fields often list a party's past beside its present ("Actuel : …
+Historique : …") or its internal currents; only the current part is kept, so the
+Communist Party shows communism, not the Stalinism of its history. Links to party
+congresses are dropped from ideologies. English mode translates the terms
+(`js/fr/views/partis.js`).
+
+**Calendar.** Departmental elections leave out Paris, Corsica, Martinique, French Guiana
+and Mayotte (no departmental council) and note the Lyon Metropolis; regional elections
+leave out Mayotte and note that Corsica, Martinique and French Guiana elect their
+assemblies the same day. Dates not yet set by decree carry only a month and show no day
+count; the legislative date is a deadline ("au plus tard").
+
+**Questionnaire.** The 144 questions in `js/fr/questions.js` are the owner's French text,
+numbered as given; the English is a labelled translation.
+
+### Candidates' positions (France)
+
+`scripts/fr/positions_2027.py` holds every position by hand and writes
+`data/fr/positions.json`: for each candidate id, question id → `{stance, source, quote}`.
+Stances run from +2 (très favorable / tout à fait d'accord) to -2, as the visitor's
+answers do. As of Nov. 2, 2026 it covers 27 of the 35 declared candidates, 851
+positions (902 with Villepin, Cazeneuve and Bardella, kept for reference), from 3
+(Mikolajczak, until Équinoxe's program on Nov. 4) and 4 (Egger) to 80 (Tondelier). Eight
+declared candidates have no program or usable statement yet (Platret, Durif, Lalanne,
+Mathieu, Mlekuz, Billetdoux, Collovati, Rohou). Each source records the day it was read
+and its quotes checked (`accessed`: Oct. 28, or Nov. 2 for the candidates in `LATER` and
+sources wrapped in `later()`); a candidate page shows its latest, and the About page the
+latest across declared candidates.
+
+- **Sources.** The candidate's program, campaign site, own speeches, op-eds and
+  interviews, and their party's program or booklets (Rassemblement national,
+  Renaissance's thematic conventions, Les Républicains' "Nos propositions pour la
+  France", Les Écologistes, Place publique, the PCF's congress texts and "cahiers",
+  Debout la France, Nouvelle Énergie, Lutte ouvrière), labelled as party documents.
+  programmes-2027.fr and votons-2027.fr, independent directories of the programs, were
+  used only to find them; nothing is cited from them, and their links were followed to
+  the candidate's own text (they sometimes point at a home page or an older program).
+  A PDF is cited page by page (`#page=N`). Asselineau's positions come from his 2022
+  program, which the UPR still presents as its program (none for 2027 yet); Bardella's
+  from the RN's 2024 legislative program (his signed foreword as candidate for Prime
+  Minister) and European program (he led the list). Markovic's party (Parti animaliste)
+  has no 2027 program, so its 2022 national and 2024 European programs are cited as the
+  party's; Egger's party (Solution Démocratique) publishes a program limited on purpose to
+  institutions. Legendre's manifesto is a Google Doc, read through its public text view
+  (`/mobilebasic`) and cached under the cited link. Becht and Polony have no program yet:
+  their positions come from interviews published as transcripts (Sud Radio) and, for
+  Polony, Pleinchamp's report of her remarks at the Sommet de l'élevage. Sites that refuse
+  scripts (generationecologie.fr) were read in the browser pane; the text read there was
+  saved to the check's cache so the quotes could be compared all the same.
+- **Quotes.** Copied word for word, at most 25 words, and checked against the source's
+  text (on the cited PDF page) before they go in. A press report that describes a
+  proposal without quoting the candidate is cited with `quote: null`, and the page
+  says it is a press summary.
+- **Stances.** Taken from what the text says, never from party or reputation. Where a
+  proposal answers a question only partly (repealing a law that sped up evictions, a
+  bigger EU budget that may come from its own resources), the stance is ±1. A candidate
+  who opposes keeping the retirement age at 64 because they want 65 (Philippe) or no
+  legal age at all (Attal) gets -1 there, not -2. A carbon border adjustment isn't read
+  as a carbon tax. A program that leaves a choice to a referendum or a constituent or
+  citizens' assembly (Legendre's manifesto, Branco's "La Voie") gives no position on it;
+  only what it proposes itself counts, and a view on a past reform (Legendre on
+  retirement at 60 and the 35-hour week) is a partial answer. A question nothing answers
+  stays out.
+- **Matching** (`js/fr/match.js`) uses the U.S. rule: each question both sides answered
+  scores 1 - |gap| / 4, and fewer than 5 shared questions give no percentage. "Mes
+  élections" has the "Comparer avec mes opinions" button, which leads to the ranking
+  (`#/fr/elections/comparer`); each candidate card and candidate page
+  (`#/fr/candidat/<id>`) has its own button. Each opens the three-panel comparison of
+  `js/fr/compare.js`, laid out like the U.S. one: agreements left, differences right,
+  questions the visitor answered but the candidate has no known position on along the
+  bottom. The candidate page also lists every position by topic with quotes and links.
+
+To add positions: find the candidate's own text, add a row `(qid, stance, source,
+quote)` to their list (sources through the helpers at the top of each block), and run
+the script; it checks ids, stances, https links and quote length. The quote check
+against the source text was done with scratch tools (fetch the page or PDF, extract
+the text with pypdf, compare after normalizing spaces, apostrophes and quotation
+marks); do the same for new quotes.
+
+### Les grands enjeux (France)
+
+`scripts/fr/enjeux.py` writes `data/fr/enjeux.json` (20 blocks, about 146 KB) once a
+day from `refresh_all.py`; the page is `js/fr/views/enjeux.js` (`#/fr/enjeux?t=<tab>`,
+in the France menu), seven tabs: economy, inflation, immigration, crime, the wealth gap,
+education and salaries in France.
+
+- **One source per comparison.** Every country in a chart comes from the same source
+  wherever one exists (Eurostat for EU countries, the OECD or the World Bank where the
+  UK and the US are needed), so the definitions match. Where only national sources exist
+  (median pay in the UK, from the ONS's earnings survey, and in the US, from BLS's Current
+  Population Survey) the page says so. Each block names its dataset and the day its
+  source last updated it.
+- **Stale blocks.** A block whose source can't be read keeps its last good values and its
+  id goes into `stale`; the page then says those figures weren't reread today.
+- **Hand figures.** Publications with no API (INSEE's private-sector salaries for 2025,
+  the ONS's earnings survey, PISA 2025) are typed in `enjeux_sources.py`, each with its
+  source, publication date, `accessed` and the sentence its main figure comes from
+  (verbatim, under 25 words). A new edition replaces the entry instead of editing numbers
+  in place: INSEE's salaries and the ONS survey every October, PISA every three years.
+  oecd.org refuses scripts, so PISA's tables were read in the browser pane.
+- **Salaries: the median, never the mean or GDP per head** (the owner asked for medians
+  throughout on Nov. 3, as more realistic). GDP per head isn't an income: it divides
+  everything produced, company profits, investment and what taxes pay for included, by
+  every inhabitant, children and retirees included, and an average is pulled up by the
+  highest pay. The median salary is what the employee in the middle earns. The page
+  explains this, shows the three measures side by side (median full-time pay, median
+  disposable income, GDP per head) and how far the US is ahead of France on each. France's
+  own figures are INSEE's: the median, the deciles, and the medians for women and men
+  (figure 4). INSEE gives pay by occupational category (cadres, employés, ouvriers) only
+  as means, so that chart was dropped; the mean appears only where the page explains
+  why it misleads (the "why the median" card, the histogram's dashed line, one choice in
+  the index chart, and the net-to-gross note).
+- **Money across countries** is converted with the OECD's yearly figures two ways: at the
+  year's average exchange rate, and at purchasing power parities for household
+  consumption ("euros at French prices": what the amount buys in France), the default.
+  GDP per head uses GDP parities. A year the OECD hasn't published takes the nearest
+  year's rates.
+- **By sector, not by job.** No source publishes median pay by occupation for these
+  countries: Eurostat's Structure of Earnings Survey gives occupations only as means
+  (`earn_ses22_21`, `_25`, `_28`), with medians only by sex, age, education, contract and
+  economic activity, and the OECD's teachers' and health workers' pay are means too. So
+  the "By sector" card shows Eurostat's median gross hourly earnings by NACE section
+  (`earn_ses_pub2n`: employees except apprentices, part-timers included, firms with 10 or
+  more employees; the latest survey, 2022) for France, Germany, Belgium, Italy, Spain and
+  the Netherlands, all 17 sections from B to S except O plus all of them together, with
+  hourly figures to the cent. A sector counts everyone it employs (education isn't only
+  teachers, and the card says so). The statutory minimum wage stays, as a yearly amount
+  (the OECD; Italy has none, the US figure is the federal minimum): the OECD has no
+  hourly minimum for Belgium or the Netherlands. The teacher and health figures (the
+  OECD's `DF_TCH` and `DF_REMUN`) and the eight ISCO groups were removed with this. An
+  entry opens directly with `#/fr/enjeux?t=salaires&metier=<id>` (`sector-P`, linked from
+  the Education tab; `sector-all`, `minimum`).
+- **Country colors.** Each country takes its flag's color (owner's request, Nov. 3):
+  France navy, Spain yellow, the EU white, Germany gray, Belgium black, Italy green, the
+  Netherlands orange, the UK red, the US light blue (`--cty-*` in `css/styles.css`, one
+  set per theme), and the OECD average stays hatched gray. See CLAUDE.md, Conventions.
+- **Crime** counts offences recorded by the police and the gendarmerie (SSMSI), not every
+  offence committed, and the page says that reporting and police checks move them;
+  homicide rates (UNODC, via the World Bank) are the only crime figure compared across
+  countries.
+- **Candidates.** Each tab ends with the questionnaire's questions on its issue and which
+  declared candidates are for, against or have no known position, from `positions.json`;
+  nothing is inferred from the figures.
+- **Colors.** France in ink (`--text-1`), every other country in gray, aggregates (EU,
+  OECD) hatched, so no country borrows a party's color. The pair passes the palette
+  validator's colorblind and contrast checks in both themes (CVD ΔE 39.0 dark and 44.4
+  light; normal vision 39.1 and 44.3); its lightness-band and chroma checks fail, as they
+  do for any neutral pair, and every value is printed beside its bar.

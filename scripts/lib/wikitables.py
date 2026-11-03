@@ -48,9 +48,11 @@ _last = [0.0]
 stats = {"requests": 0, "cached": 0}
 
 
-def api(params, retries=8):
+def api(params, retries=8, base=API):
+    """One MediaWiki API call. `base` picks the wiki (French Wikipedia, Wikidata and
+    Commons serve the France section); every wiki shares the pacing below."""
     params = {**params, "format": "json", "formatversion": "2"}
-    url = f"{API}?{urllib.parse.urlencode(params)}"
+    url = f"{base}?{urllib.parse.urlencode(params)}"
     for attempt in range(retries):
         wait = SPACING - (time.time() - _last[0])
         if wait > 0:

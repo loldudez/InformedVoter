@@ -24,6 +24,7 @@ let summaryCache = null;
 let control = null;
 let status = null;
 let meta = null;
+let photos = {};
 export let realRaceCount = 0;
 export let researchedCount = 0;
 export let modelCheck = null; // { checked, mismatches: [{id, expected, got}] }
@@ -75,7 +76,8 @@ const noOdds = (race) => race.format === 'open-primary' || race.format === 'fiel
 export async function initWorld() {
   mapIndex = await fetchJSON('data/maps/index.json');
   demo.federalAndGovernor(mapIndex).forEach(addRace);
-  const [real, ctl, st] = await Promise.all([optional('data/races.json'), optional('data/control.json'), optional('data/status.json')]);
+  const [real, ctl, st, ph] = await Promise.all([optional('data/races.json'), optional('data/control.json'), optional('data/status.json'), optional('data/photos.json')]);
+  photos = ph?.photos || {};
   if (real) {
     const list = (real.races || []).map(normalizeReal);
     list.forEach(addRace);
@@ -107,6 +109,11 @@ function verifyModel(list) {
   if (mismatches.length) console.warn(`Informed Voter: the browser model disagrees with the refresh in ${mismatches.length} races`, mismatches);
   return { checked, mismatches };
 }
+
+// A person's photo and its credit: one the data carries (Congress's leaders), else the
+// candidate's from data/photos.json (scripts/update_photos.py), keyed by the Wikipedia
+// article their name links to. Null for everyone else, who keeps their initials.
+export const photoOf = (c) => c?.photo || (c?.wiki && photos[c.wiki]) || null;
 
 export const getMapIndex = () => mapIndex;
 export const getRace = (id) => races.get(id) || legRaceById(id);

@@ -6,6 +6,8 @@ const KEY = 'iv:v1';
 
 const DEFAULTS = {
   countryChosen: false,
+  country: null,         // 'us' | 'fr': the section #/ opens; the France section keeps its own data (js/fr/store.js)
+  lang: null,            // 'fr' | 'en' once chosen; null follows the browser (js/i18n.js)
   theme: null,           // 'dark' | 'light'
   starred: [],           // race ids
   liked: [],             // candidate ids
@@ -14,6 +16,7 @@ const DEFAULTS = {
   quizPos: 0,
   address: null,         // { consent, input, matched, lat, lon, state, cd, sldu, sldl, county, savedAt }
   avatar: null,          // data: URL; null shows the flag
+  reminders: {},         // election id -> { leads: ['30', '14', '7'], savedAt } (components/reminders.js)
 };
 
 function load() {
@@ -66,7 +69,7 @@ export const store = {
   isLiked: (id) => state.liked.includes(id),
   answered: (answers = state.answers) => Object.values(answers).filter((v) => v !== 'skip').length,
   clearAll() {
-    state = { ...DEFAULTS, countryChosen: true, theme: state.theme };
+    state = { ...DEFAULTS, countryChosen: true, country: state.country, lang: state.lang, theme: state.theme };
     save();
     listeners.forEach((fn) => fn(state, {}));
   },

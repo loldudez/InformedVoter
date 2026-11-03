@@ -66,6 +66,10 @@ GOV_HOLDOVER = {"D": ["DE", "KY", "NJ", "NC", "VA", "WA"], "R": ["IN", "LA", "MS
 SENATE_INDEPENDENTS_CAUCUS = "D"
 # Midterm turnout relative to the last presidential election: 0.71 in 2022, 0.85 in 2018.
 MIDTERM_RATIO = 0.75
+# The UF Election Lab's early-vote data is licensed for non-commercial use only (CC
+# BY-NC-ND). The site has carried ads since Nov. 3, 2026, so it is neither read nor
+# published until that is settled; SHOW_EARLY_VOTE in js/config.js hides the tab.
+EARLY_VOTE = False
 POLYMARKET = {
     "senate": "which-party-will-win-the-senate-in-2026",
     "house": "which-party-will-win-the-house-in-2026",
@@ -803,11 +807,16 @@ def main():
     voted = attach_house_votes(races, status)
 
     log("Early vote")
-    ev_states, ev_districts, ev_info = early_vote.load({st: v.get("cd", 0) for st, v in map_index.items()})
-    status.check("early-vote", "Early-vote returns found", bool(ev_info.get("states")),
-                 (f"{ev_info['states']} states and {ev_info['districts']} House districts from the UF Election Lab, latest {ev_info['latest']}"
-                  + (f"; district files left out as incomplete: {', '.join(ev_info['partial'])}" if ev_info.get("partial") else ""))
-                 if ev_info.get("ok") else ev_info.get("reason"))
+    if EARLY_VOTE:
+        ev_states, ev_districts, ev_info = early_vote.load({st: v.get("cd", 0) for st, v in map_index.items()})
+        status.check("early-vote", "Early-vote returns found", bool(ev_info.get("states")),
+                     (f"{ev_info['states']} states and {ev_info['districts']} House districts from the UF Election Lab, latest {ev_info['latest']}"
+                      + (f"; district files left out as incomplete: {', '.join(ev_info['partial'])}" if ev_info.get("partial") else ""))
+                     if ev_info.get("ok") else ev_info.get("reason"))
+    else:
+        ev_states, ev_districts = {}, {}
+        status.check("early-vote", "Early-vote returns", True,
+                     "Not read or shown while the site carries ads: the UF Election Lab's data is licensed for non-commercial use only")
 
     log("State legislatures")
     try:

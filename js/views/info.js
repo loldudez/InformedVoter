@@ -6,6 +6,7 @@ import { PARTIES, GROUPS, PARTIES_AS_OF } from '../data/parties.js';
 import { lineChart, cssVar } from '../lib/charts.js';
 import { wireTableToggles } from '../components/race.js';
 import { realRaceCount, researchedCount, statusData, modelCheck, racesMeta, controlData } from '../data/world.js';
+import { DONATE_URL, SHOW_EARLY_VOTE, SUPPORT_EMAIL, MAIL_SERVICE_URL, REMINDER_FROM } from '../config.js';
 
 const ext = (href, label) => html`<a href="${href}" target="_blank" rel="noopener noreferrer">${label} ${icon.external()}</a>`;
 
@@ -192,12 +193,16 @@ export const donate = {
   render: () => html`<div class="wrap page stack" style="max-width:820px">
     <div><div class="eyebrow">Donating to the site</div><h1>Keep Informed Voter running</h1><p class="muted">Informed Voter is independent and free to use. Donations go to running the site, not to any candidate, party or campaign.</p></div>
     <div class="card stack" style="text-align:center;padding:32px">
+      <div class="eyebrow">PayPal</div>
+      <div><a class="btn btn-primary" href="${DONATE_URL}" target="_blank" rel="noopener noreferrer">${icon.dollar()} Donate via PayPal ${icon.external()}</a></div>
+      <p class="small faint" style="margin:0">Opens PayPal’s donation page in a new tab.</p>
+    </div>
+    <div class="card stack" style="text-align:center;padding:32px">
       <div class="eyebrow">Cash App</div>
       <div class="cashtag grad-text">$KoCai</div>
       <div><a class="btn btn-primary" href="https://cash.app/$KoCai" target="_blank" rel="noopener noreferrer">${icon.dollar()} Donate with Cash App ${icon.external()}</a></div>
       <p class="small faint" style="margin:0">Opens Cash App’s page for $KoCai in a new tab.</p>
     </div>
-    <div class="card"><h3>More ways to give</h3><p class="muted" style="margin:0">Coming soon.</p></div>
     <p class="small faint">Donations to Informed Voter are not political contributions and are not tax-deductible.</p>
   </div>`,
 };
@@ -249,7 +254,7 @@ export const about = {
         ${realRaceCount ? html`<li><b>Every U.S. Senate, U.S. House and governor race</b>, refreshed every 8 hours: the candidates on the ballot, forecasters’ ratings (Cook, Sabato, Inside Elections and up to eight more), polls with a link to each poll’s source, and fundraising reports.</li>
         <li>${researchedCount} race${researchedCount === 1 ? '' : 's'} also ${researchedCount === 1 ? 'has' : 'have'} hand-researched bios and issue positions, each linked to the candidate’s own words or votes (tagged <span class="real-chip">Sourced</span>).</li>
         <li><b>State legislative races</b>: every seat on the ballot, who holds it, the district’s 2024 presidential margin and the November candidates where Wikipedia’s 2026 chamber page lists them, refreshed every 8 hours. They get no win odds: almost none are polled and few are rated.</li>
-        <li>Early voting: ballots cast so far in each state, and in House districts where the count is complete, from the University of Florida Election Lab’s tracker (Michael McDonald).</li>` : ''}
+        ${SHOW_EARLY_VOTE ? html`<li>Early voting: ballots cast so far in each state, and in House districts where the count is complete, from the University of Florida Election Lab’s tracker (Michael McDonald).</li>` : ''}` : ''}
         <li>District maps: U.S. Census Bureau 2026 TIGER/Line boundaries (120th Congress districts and 2026 state legislative districts), clipped to the shoreline.</li>
         <li>Address lookup: the Census Bureau geocoder, which already reflects mid-decade redistricting.</li>
         <li>How-to-vote links: vote.gov, each state’s official election office, and NASS. Every link checked October 2026.</li>
@@ -268,6 +273,8 @@ export const about = {
       <p class="muted small">Polls are averaged with more weight on recent (14-day half-life), larger and likely-voter surveys, and the average gets more say the more polling there is, up to 85%. The gap between the top two candidates, divided by a typical polling miss (wider with few polls or more time left), gives each candidate’s chance of winning. Open primaries, where every candidate shares one ballot, show the expected split between the parties instead of a winner.</p>
       <p class="muted small" style="margin:0">Chamber control simulates every race 20,000 times. Each simulation draws one national polling miss (3.5 points on the margin) shared by every race, so races move together the way they do on a real election night. Expected seats are the average across simulations, rounded to whole seats that add up to the full chamber (seats likely to go to independents who caucus with neither party are counted separately); expected gains compare them with each party’s seats today${controlData()?.senate?.current?.asOf ? ` (as of ${fmtDate(controlData().senate.current.asOf + 'T12:00:00')})` : ''}. Every refresh checks the totals add up, compares the polling averages with published ones, compares expected seats with each forecaster’s own count, and compares control odds with the betting market. The results are in Data status above.</p>
     </div>
-    <div class="card"><h3>Your privacy</h3><p class="muted small" style="margin:0">There are no accounts and no server. Your views, address, stars, likes and picture are stored only in this browser’s local storage. Your address is sent only to the U.S. Census Bureau to find your districts. Clearing your browser data removes everything.</p></div>
+    <div class="card"><h3>Your privacy</h3><p class="muted small">There are no accounts. Your views, address, stars, likes and picture are stored only in this browser’s local storage. Your address is sent only to the U.S. Census Bureau to find your districts. Clearing your browser data removes all of it.</p>
+      <p class="muted small">Help tickets go to ${SUPPORT_EMAIL} (Gmail), with your email address only if you give one, and are used only to answer you.${MAIL_SERVICE_URL ? ` If you sign up for email reminders, your address, the election and the dates you chose are kept in the site’s Google account (a Google Sheets file) and used only to send those reminders, from ${REMINDER_FROM}. Nothing is sent until you confirm by email, and the address is deleted when you unsubscribe (there’s a link in every email), once the election is over, or after 7 days if you never confirm.` : ''} To see, correct or delete what the site holds about you, write to ${SUPPORT_EMAIL}. If you’re in the EU or the UK, you can also complain to your data protection authority.</p>
+      <p class="muted small" style="margin:0">Ads are served by Google AdSense. Google and its partners use cookies and receive your IP address and the address of the page you’re on to choose and measure ads, including ads based on your visits to other sites. Informed Voter doesn’t send them your views or your address. You can turn off personalized ads in ${ext('https://adssettings.google.com/', 'Google’s Ads Settings')} and read ${ext('https://policies.google.com/technologies/partner-sites', 'how Google uses information from sites that show its ads')}.</p></div>
   </div>`,
 };
