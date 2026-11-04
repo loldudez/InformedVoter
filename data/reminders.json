@@ -1,18 +1,6 @@
 {
- "updated": "2026-11-03T22:00:25+00:00",
+ "updated": "2026-11-04T06:23:42+00:00",
  "elections": {
-  "us:general-2026": {
-   "section": "us",
-   "page": "#/elections",
-   "rounds": [
-    {
-     "date": "2026-11-03",
-     "name": {
-      "en": "Election Day, November 3, 2026"
-     }
-    }
-   ]
-  },
   "us:runoff-LA-2026-12-12": {
    "section": "us",
    "page": "#/elections",
