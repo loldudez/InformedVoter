@@ -1,13 +1,15 @@
-// One place the views ask for races, candidates and forecasts.
+// One place the views ask for races, candidates, forecasts and results.
 //
 // Races start as the demo set. data/races.json (written every 8 hours by
 // scripts/update_races.py, see DATA.md) replaces each demo race with the same id
-// with real data. data/control.json holds the chamber-control simulation and
-// data/status.json the refresh's automatic checks.
+// with real data. data/offices.json adds the statewide offices below governor
+// (attorney general, secretary of state, lieutenant governor, treasurer, auditor),
+// which have no demo stand-ins. data/control.json holds the chamber-control
+// simulation and data/status.json the refresh's automatic checks.
 
 import { STATES, STATE_BY_ABBR, HOLDOVER, CURRENT, legislatureChambers } from './states.js';
 import * as demo from './demo.js';
-import { forecast, history, chamberOdds, pollAverage, simEntry, day } from '../model/forecast.js';
+import { forecast, history, chamberOdds, pollAverage, simEntry, day, live, forecastAsOf, ELECTION_DAY } from '../model/forecast.js';
 import { fetchJSON } from '../util.js';
 import { store } from '../store.js';
 
@@ -15,6 +17,7 @@ const races = new Map();
 const candidates = new Map();
 const aliases = new Map();   // old candidate id -> current id (e.g. LA-SEN:R -> LA-SEN:letlow)
 const fcCache = new Map();
+const liveCache = new Map();
 const histCache = new Map();
 const pollHistCache = new Map();
 const layerCache = new Map();
@@ -27,6 +30,8 @@ let meta = null;
 let photos = {};
 export let realRaceCount = 0;
 export let researchedCount = 0;
+export let officeCount = 0;
+export let officesResearched = 0;
 export let modelCheck = null; // { checked, mismatches: [{id, expected, got}] }
 
 function addRace(race) {
@@ -36,6 +41,7 @@ function addRace(race) {
     for (const a of c.aliases || []) aliases.set(a, c.id);
   }
   fcCache.delete(race.id);
+  liveCache.delete(race.id);
   histCache.delete(race.id);
   pollHistCache.delete(race.id);
 }
@@ -70,24 +76,58 @@ function legFile(st) {
   return legFiles.get(st);
 }
 
-// Races shown as a field with no win odds: open primaries and state legislative races.
-const noOdds = (race) => race.format === 'open-primary' || race.format === 'field';
+// Races shown as a field with no win odds: open primaries, state legislative races
+// and the statewide offices below governor.
+const noOdds = (race) => race.format === 'open-primary' || race.format === 'field' || race.format === 'office';
 
 export async function initWorld() {
   mapIndex = await fetchJSON('data/maps/index.json');
   demo.federalAndGovernor(mapIndex).forEach(addRace);
-  const [real, ctl, st, ph] = await Promise.all([optional('data/races.json'), optional('data/control.json'), optional('data/status.json'), optional('data/photos.json')]);
+  const [real, ctl, st, ph, off] = await Promise.all([optional('data/races.json'), optional('data/control.json'), optional('data/status.json'), optional('data/photos.json'), optional('data/offices.json')]);
   photos = ph?.photos || {};
+  loadRaces(real, off, ctl, st);
+  loaded = true;
+}
+
+// While races are still being counted, scripts/update_results.py rewrites the race files
+// every 10 minutes. Open pages ask for status.json on the same beat (main.js) and reload
+// the races when it is newer than what they have. True when something changed.
+let loaded = false;
+const fresh = (url) => optional(`${url}?t=${Date.now()}`);
+const stampOf = (st) => st?.resultsUpdated || st?.updated || null;
+export async function refreshData() {
+  if (!loaded) return false;
+  const st = await fresh('data/status.json');
+  if (!st || !stampOf(st) || stampOf(st) === stampOf(status)) return false;
+  const [real, ctl, off] = await Promise.all([fresh('data/races.json'), fresh('data/control.json'), fresh('data/offices.json')]);
+  if (!real) return false;
+  loadRaces(real, off, ctl, st);
+  return true;
+}
+
+// Races not called yet (a runoff counts as decided until its own day), the ones the
+// 10-minute results refresh keeps reading.
+const decided = (r) => r.result?.status === 'won' || r.result?.status === 'runoff';
+export const stillCounting = () => afterElection() && allRaces().some((r) => !r.demo && !decided(r));
+
+function loadRaces(real, off, ctl, st) {
+  summaryCache = null;
   if (real) {
     const list = (real.races || []).map(normalizeReal);
     list.forEach(addRace);
     realRaceCount = list.length;
     researchedCount = list.filter((r) => r.research).length;
     meta = real.meta || null;
-    // Likes saved under an old candidate id follow the candidate to the new one.
-    if (aliases.size) store.renameIds('liked', aliases);
     modelCheck = verifyModel(list);
   }
+  if (off) {
+    const list = (off.races || []).map(normalizeReal);
+    list.forEach(addRace);
+    officeCount = list.length;
+    officesResearched = list.filter((r) => r.research).length;
+  }
+  // Likes saved under an old candidate id follow the candidate to the new one.
+  if (aliases.size) store.renameIds('liked', aliases);
   control = ctl;
   status = st;
 }
@@ -105,6 +145,11 @@ function verifyModel(list) {
     if (f.lead.id !== mc.lead || Math.abs(f.pLead - mc.pLead) > 0.002 || Math.abs(f.margin - mc.margin) > 0.02) {
       mismatches.push({ id: r.id, expected: mc, got: { lead: f.lead.id, pLead: f.pLead, margin: f.margin } });
     }
+    // The count-adjusted projection of a race still being counted, the same way.
+    const lv = live(r, f);
+    if (!!lv !== !!mc.live || (lv && (lv.lead.id !== mc.live.lead || Math.abs(lv.pLead - mc.live.pLead) > 0.002 || Math.abs(lv.margin - mc.live.margin) > 0.02))) {
+      mismatches.push({ id: r.id, expected: { live: mc.live || null }, got: { live: lv ? { lead: lv.lead.id, pLead: lv.pLead, margin: lv.margin } : null } });
+    }
   }
   if (mismatches.length) console.warn(`Informed Voter: the browser model disagrees with the refresh in ${mismatches.length} races`, mismatches);
   return { checked, mismatches };
@@ -119,6 +164,10 @@ export const getMapIndex = () => mapIndex;
 export const getRace = (id) => races.get(id) || legRaceById(id);
 export const getCandidate = (id) => candidates.get(id) || candidates.get(aliases.get(id));
 export const allRaces = () => [...races.values()];
+// The Senate, House and governor races, the ones the maps, control tiles and close-race
+// lists are about (allRaces also holds the statewide offices below governor).
+const FEDERAL_AND_GOVERNOR = new Set(['senate', 'house', 'governor']);
+export const mainRaces = () => allRaces().filter((r) => FEDERAL_AND_GOVERNOR.has(r.office));
 export const controlData = () => control;
 export const statusData = () => status;
 export const racesMeta = () => meta;
@@ -127,10 +176,11 @@ export const racesMeta = () => meta;
 // top two. The head-to-head model doesn't fit, so these races report the field,
 // the polls as published and the forecasters' consensus rating, with no win odds.
 // The expected margin is between the parties' combined vote (`lean`).
-// State legislative races (kind "field") work the same way, except that `dr` is the
-// district's 2024 presidential margin, not an expected result.
+// State legislative races (kind "field") and the statewide offices below governor (kind
+// "office") work the same way, except that `dr` is the 2024 presidential margin of the
+// district or state, not an expected result.
 function fieldForecast(race) {
-  const kind = race.format === 'field' ? 'field' : 'open-primary';
+  const kind = race.format === 'field' ? 'field' : race.format === 'office' ? 'office' : 'open-primary';
   const avg = pollAverage(race.polls, new Date());
   const raised = (c) => c.finance?.total || 0;
   const cands = race.candidates
@@ -140,21 +190,31 @@ function fieldForecast(race) {
   const ratingParty = / R$/.test(rating) ? 'R' : / D$/.test(rating) ? 'D' : null; // "Safe R" -> R
   return {
     open: true, kind, asOf: new Date(), cands, lead: cands[0], second: cands[1],
-    margin: null, dr: kind === 'field' ? race.pres24 ?? null : race.lean ?? null, pollDR: null, pollMargin: null, sigma: 12, range80: null,
+    margin: null, dr: kind === 'open-primary' ? race.lean ?? null : race.pres24 ?? null, pollDR: null, pollMargin: null, sigma: 12, range80: null,
     pLead: null, rating, ratingParty, held: race.held || null, poll: avg, turnout: race.turnout,
   };
 }
 
+// The forecast, run for now until the polls close and frozen at Election Day after that
+// (the final forecast).
 export function fc(race) {
   let f = fcCache.get(race.id);
-  if (!f) { f = noOdds(race) ? fieldForecast(race) : forecast(race); fcCache.set(race.id, f); }
+  if (!f) { f = noOdds(race) ? fieldForecast(race) : forecast(race, forecastAsOf()); fcCache.set(race.id, f); }
   return f;
+}
+
+// After Election Day, the final forecast adjusted for the votes counted so far, for a race
+// that has a count and no call yet (null otherwise, and always for races with no odds).
+export function liveFc(race) {
+  if (!race || noOdds(race) || !afterElection()) return null;
+  if (!liveCache.has(race.id)) liveCache.set(race.id, live(race, fc(race)));
+  return liveCache.get(race.id);
 }
 
 export function hist(race) {
   if (noOdds(race)) return [];
   let h = histCache.get(race.id);
-  if (!h) { h = history(race, 30); histCache.set(race.id, h); }
+  if (!h) { h = history(race, 30, forecastAsOf()); histCache.set(race.id, h); }
   return h;
 }
 
@@ -166,7 +226,7 @@ export function pollHist(race) {
   if (noOdds(race)) return [];
   let h = pollHistCache.get(race.id);
   if (!h) {
-    const now = new Date();
+    const now = forecastAsOf();
     const ends = race.polls.map((p) => day(p.end).getTime()).filter((t) => t <= now.getTime());
     const first = ends.length ? Math.min(...ends) : now - 30 * 864e5;
     const days = Math.max(30, Math.ceil((now - first) / 864e5) + 2);
@@ -218,6 +278,97 @@ export function statewideRaces(st) {
 }
 export function houseRaces(st) {
   return allRaces().filter((r) => r.state === st && r.office === 'house').sort((a, b) => a.district.localeCompare(b.district));
+}
+// The statewide offices below governor on a state's 2026 ballot, in the order ballots
+// usually list them.
+const OFFICE_ORDER = ['lieutenant-governor', 'attorney-general', 'secretary-of-state', 'treasurer', 'auditor'];
+export function officeRaces(st) {
+  return allRaces().filter((r) => r.state === st && r.format === 'office')
+    .sort((a, b) => OFFICE_ORDER.indexOf(a.office) - OFFICE_ORDER.indexOf(b.office) || a.id.localeCompare(b.id));
+}
+
+// Results ----------------------------------------------------------------------------
+//
+// After Election Day the pages lead with the results the refresh reads
+// (scripts/lib/results.py): a race is decided only once Wikipedia's national table
+// marks its winner, and vote counts are unofficial until the state certifies them. The
+// pre-election forecast stays on each race page, labelled as such.
+
+export const afterElection = (now = new Date()) => now >= ELECTION_DAY;
+export const resultOf = (race) => race?.result || null;
+// Any real race with results in: the switch that turns maps and lists to results.
+export const resultsIn = () => afterElection() && mainRaces().some((r) => r.result);
+// What the maps show: the results (the default once any are in) or the pre-election
+// forecast, as the visitor last chose during this visit.
+let mapViewChoice = null;
+export const mapView = () => (resultsIn() ? mapViewChoice || 'results' : 'forecast');
+export const setMapView = (v) => { mapViewChoice = v; };
+
+// A row's share: the final round where a ranked-choice count has one.
+export const rowShare = (row) => row.final ?? row.pct ?? null;
+
+// The results box joined to the race's candidates, strongest first (by the final round
+// in a ranked-choice count), with write-in and "others" lines last.
+export function resultRows(race) {
+  const res = race?.result;
+  if (!res?.rows?.length) return [];
+  const byId = new Map(race.candidates.map((c) => [c.id, c]));
+  const won = new Set(res.winners || []), adv = new Set(res.advance || []);
+  const key = (r) => rowShare(r) ?? (r.votes != null && res.total ? (100 * r.votes) / res.total : -1);
+  return res.rows
+    .map((r) => ({ ...r, cand: r.id ? byId.get(r.id) || null : null, won: won.has(r.id), advance: adv.has(r.id) }))
+    .sort((a, b) => !!a.other - !!b.other || key(b) - key(a));
+}
+
+export const resultWinners = (race) => (race?.result?.winners || []).map((id) => race.candidates.find((c) => c.id === id)).filter(Boolean);
+export const resultAdvancing = (race) => (race?.result?.advance || []).map((id) => race.candidates.find((c) => c.id === id)).filter(Boolean);
+
+// The gap between the top two in the count, and who they are.
+export function resultMargin(race) {
+  const rows = resultRows(race).filter((r) => !r.other && rowShare(r) != null);
+  if (rows.length < 2) return null;
+  return { a: rows[0], b: rows[1], pts: rowShare(rows[0]) - rowShare(rows[1]) };
+}
+
+// The party a results map colors the race by: the winner's once called, the leader's
+// while votes are counted (shown lighter), none for a runoff or before any count.
+export function resultParty(race) {
+  const res = race?.result;
+  if (!res) return null;
+  if (res.status === 'won') return resultWinners(race)[0]?.party || null;
+  if (res.status === 'counting') {
+    const top = resultRows(race).find((r) => !r.other);
+    return top?.party || null;
+  }
+  return null;
+}
+
+// Seats each party has won so far in a chamber (governorships for "governor"): the
+// called races by the winner's party, plus the seats not up this year. Independents and
+// third parties are counted apart, since results don't say whom a newly elected
+// independent caucuses with. The same rule as seat_tally in scripts/update_races.py.
+export function resultsTally(office) {
+  const rs = mainRaces().filter((r) => r.office === office && !(office === 'house' && r.state === 'DC'));
+  const hold = control?.[office]?.holdover || (office === 'house' ? { D: 0, R: 0 } : HOLDOVER[office]);
+  const won = { D: 0, R: 0, I: 0 };
+  const flips = [], uncalled = [], runoff = [], counting = [];
+  for (const r of rs) {
+    const res = r.result;
+    if (res?.status === 'won') {
+      const p = resultParty(r);
+      won[p === 'D' || p === 'R' ? p : 'I']++;
+      if (res.flip) flips.push(r);
+    } else if (res?.status === 'runoff') runoff.push(r);
+    else {
+      uncalled.push(r);
+      if (res?.status === 'counting') counting.push(r);
+    }
+  }
+  return {
+    up: rs.length, called: won.D + won.R + won.I, won, hold,
+    seats: { D: won.D + (hold.D || 0), R: won.R + (hold.R || 0), I: won.I + (hold.I || 0) },
+    flips, uncalled, runoff, counting, current: control?.[office]?.current || CURRENT[office],
+  };
 }
 
 export async function loadLayer(st, layer) {
@@ -307,8 +458,12 @@ export function chamberSummary() {
   return summaryCache;
 }
 
+// The office's own name in that state ("State Comptroller", "Lieutenant Governor"),
+// short forms for tight spots.
+const OFFICE_SHORT = { 'attorney-general': 'AG', 'secretary-of-state': 'SoS', 'lieutenant-governor': 'Lt. Gov.' };
 export function raceTitle(race) {
   const s = STATE_BY_ABBR[race.state];
+  if (race.format === 'office') return `${s.name} ${race.officeName}${race.special ? ' (special)' : ''}`;
   switch (race.office) {
     case 'senate': return `${s.name} Senate${race.special ? ' (special)' : ''}`;
     case 'governor': return `${s.name} Governor`;
@@ -323,6 +478,7 @@ export function raceTitle(race) {
 }
 export function raceShortTitle(race) {
   const s = race.state;
+  if (race.format === 'office') return `${s} ${OFFICE_SHORT[race.office] || race.officeName.replace(/^State /, '')}`;
   switch (race.office) {
     case 'senate': return `${s} Sen`;
     case 'governor': return `${s} Gov`;
@@ -331,6 +487,7 @@ export function raceShortTitle(race) {
   }
 }
 export function officeLabel(race) {
+  if (race.format === 'office') return race.officeName;
   return {
     senate: 'U.S. Senate', governor: 'Governor', house: 'U.S. House',
     'state-senate': STATE_BY_ABBR[race.state].upper?.name, 'state-house': STATE_BY_ABBR[race.state].lower?.name,

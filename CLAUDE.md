@@ -3,7 +3,10 @@
 A nonpartisan voter-information website for the 2026 U.S. elections and the 2027
 French presidential election: interactive race maps, forecasts or polls, the
 visitor's own ballot from their address, and a questionnaire that matches voters to
-candidates with sources. The United States section is finished; the France section
+candidates with sources. The United States section is finished (since Nov. 4, 2026 it shows the
+election's results, re-read every 10 minutes while votes are counted, with projections
+from the count, a House district map and the elections of 2027-2029, plus the statewide
+offices below governor); the France section
 (`#/fr`, started Oct. 28, 2026) is the work in progress; the UK and Canada are
 planned and shown greyed out.
 
@@ -146,12 +149,14 @@ consent through a Google-certified platform, which the owner sets up in AdSense 
 & messaging); nothing in the code does it.
 
 **Help tickets and email reminders go through one mail service** (owner's request,
-Nov. 3): `services/mail/Code.gs`, a Google Apps Script web app the owner deploys from
-the Workspace account caissonez@informedvoter.io (`REMINDER_FROM`), its `/exec` address
-in `MAIL_SERVICE_URL` (`js/config.js`; README, "Email reminders and help tickets").
-Tickets go to theinformedvoter.help@gmail.com (`SUPPORT_EMAIL`, the script's `HELP_TO`)
-with the visitor's address as Reply-To; until the service is live the form opens the
-visitor's own email app addressed there. Reminders are double opt-in behind a consent box
+Nov. 3): `services/mail/Code.gs`, a Google Apps Script web app deployed on Nov. 4 from
+the Workspace account caissonez@informedvoter.io (`REMINDER_FROM`; project "Informed
+Voter mail", version 1), its `/exec` address in `MAIL_SERVICE_URL` (`js/config.js`;
+README, "Email reminders and help tickets"). A change to Code.gs goes out as a new
+version of the same deployment, so the address stays. Tickets go to
+theinformedvoter.help@gmail.com (`SUPPORT_EMAIL`, the script's `HELP_TO`) with the
+visitor's address as Reply-To; without `MAIL_SERVICE_URL` the form opens the visitor's
+own email app addressed there. Reminders are double opt-in behind a consent box
 (GDPR): sign-ups sit in a Google Sheet of that account, are deleted when the election is
 over, on unsubscribing or after 7 days unconfirmed, and are sent by a daily trigger 30, 14
 or 7 days ahead. The script takes elections, names and dates only from the live site's
@@ -186,6 +191,18 @@ margins). They live in `data/legislature/ST.json`, written by
 `scripts/lib/legislature.py` from each chamber's 2026 Wikipedia page during the
 refresh and loaded with a state's chamber map, so they never weigh down races.json.
 
+**Statewide offices below governor get no win probabilities either** (owner's
+request, Nov. 4: "smaller elections for individuals such as state treasurer"):
+attorney general, secretary of state, lieutenant governor (where it has its own ballot
+line), treasurer and auditor or comptroller, from Wikipedia's national 2026 page for
+each office (`scripts/lib/offices.py` → `data/offices.json`, `format: "office"`, ids
+`ST-AG`, `ST-SOS`, `ST-LG`, `ST-TREAS`, `ST-AUD`). Almost none are polled, so they
+carry Sabato's Crystal Ball rating where it rates one, the state's 2024 margin and the
+results. They follow the governor in My elections and on state pages, each with its
+own race page and the U.S. match (state-level questions, as for governors).
+Positions come from research overlays (`scripts/research/offices_2026.py`); a race is
+researched only when every main candidate has positions, otherwise `partial`.
+
 **Early voting comes from the UF Election Lab's tracker** (`scripts/lib/early_vote.py`),
 refreshed with the races: every state's total, mail and in-person split and party
 registration split, plus House districts only where the Lab's district file covers
@@ -200,10 +217,74 @@ together, and only with the Lab's permission or without ads.
 verifiable source naming the pollster and dates. Campaign internals are labelled
 with their sponsor; claims without details go in race `notes`, not `polls`.
 
+**Results: called only by a check mark, and never a forecast shown as one** (Nov. 4,
+2026, the owner's request once the midterms were over). `scripts/lib/results.py`
+takes a winner only from the green check mark in Wikipedia's national tables (Senate,
+governor, House, the statewide office pages) and the counts from each race page's
+results box, labelled unofficial until the state certifies them. A race with neither
+reads "No result yet" (`awaitingResult` in `js/components/race.js`): after Election
+Day no page shows forecast or poll shares where a result belongs. The final forecast
+stays on each race page, set against the count. Once any race has a result
+(`resultsIn()`), the maps open on Results with a "Final forecast" switch: winners in
+their party's color, flips striped, an uncalled count's leader lighter, runoffs hatched
+gray. Seat tallies are the called races plus the seats not up (`holdover`), with
+independents counted apart. The ticker, Close elections ("Results within 5 points"),
+My elections and the starred and liked pages show results, and "How to vote" becomes
+"Official results in <state>".
+
+**Results every 10 minutes until every race is called** (owner's request, Nov. 4: "the
+expected vote to update once every 10 minutes as of now until every race is called").
+`scripts/update_results.py`, Task Scheduler's "\InformedVoter\Informed Voter results"
+(every 10 minutes from Nov. 4, 2026; the trigger ends Dec. 31), re-reads only Wikipedia's
+national tables, the race pages edited since the last run and California's own count,
+recomputes the projections and seat tallies, validates, and rewrites races, offices,
+control and status in place. It shares `data/cache/refresh.lock` with refresh_all.py
+(stale after 45 minutes; the full refresh waits up to 15 for it) and turns its own task
+off once every race is won or in a runoff. Open pages re-read `status.json` every 10
+minutes while anything is counted (`pollResults` in main.js, `refreshData` in world.js)
+and redraw the views marked `live`.
+
+**Projections from the count, never calls** (same request: "The forecast also needs to
+be adjusted, alongside the current vote count"). A counted, uncalled race blends its
+count with the final forecast (`live()`, identical in forecast.js and model.py, checked
+through `modelCheck.live`): the share counted is the reported one, or the votes over the
+expected turnout (2024 presidential vote × 0.75) at five turnouts 20% either side; the
+votes still out lean like the count in proportion to it, with their uncertainty running
+from the forecast's to 12 points near the end. The first version, without the turnout
+scenarios, put SC-1 at 99% and Alaska at a certainty. Chamber projections draw each race
+still out on its own (`project_control`): `projection` in control.json, "Projected
+final" on the home tiles. The final forecast is frozen at poll closing (`forecastAsOf`).
+Open primaries and races without odds get no projection.
+
+**States' own counts where a script can read them** (`scripts/lib/official_results.py`):
+so far California's Secretary of State JSON (api.sos.ca.gov, 58 contests), which replaces
+a race page's box only when the top two names match (`official: true`, `countAsOf`).
+electionresults.sos.ca.gov sits behind a bot wall and is only linked. Calls still come
+only from Wikipedia's check marks.
+
+**The home map is Senate | House | Governor, with no "All states" view** (owner's
+request, Nov. 4: "just be able to click on the map itself"). A click opens a state's page
+(Senate, Governor) or a district's race (House: `data/maps/cd-us.json`, 436 districts
+built by `scripts/build_house_map.py`, state lines drawn over them).
+
+**"Get ready to vote" opens the U.S. home page** (owner's request, Nov. 4, in place of
+"Find the best candidate that matches your views", like France's "Préparer mon vote"):
+one button with two choices, "Click here to view my elections" (`#/elections`) and "Click
+here to help find the best candidate for me" (`#/views`, the questionnaire; matching
+itself stays race by race in My elections). It reuses the `.fr-start` styles.
+
+**Upcoming elections: 2027 to 2029** (`#/upcoming`, U.S. menu; owner's request, Nov. 4:
+"near future elections (within 3 years)", read as the next three calendar years, plus the
+2026 runoffs still ahead). President, Senate (and specials), House, governors and the
+statewide offices below governor, from Wikipedia's national pages once a day
+(`scripts/update_upcoming.py` → `data/upcoming.json`): the date, who holds the office and
+their plans, and declared candidates only, as in France. No forecasts. State
+legislatures, local offices and primaries aren't covered.
+
 **Real race data is rebuilt automatically every 8 hours, never hand-edited.**
 `scripts/refresh_all.py` (Windows Task Scheduler, \InformedVoter\, 6:00/14:00/22:00)
 runs `scripts/update_races.py`, which writes `data/races.json`, `control.json`,
-`status.json` and `data/legislature/`. Wikipedia is the aggregator for candidates, ratings, PVI and polls;
+`status.json`, `data/offices.json` and `data/legislature/`. Wikipedia is the aggregator for candidates, ratings, PVI and polls;
 the FEC API for money (falls back to Wikipedia's cited FEC totals without a key);
 the House Clerk's roll-call XML for House members' positions. Hand research goes
 in `scripts/research/<state>.py`, which write overlays to `data/research/`. The same run
@@ -304,6 +385,28 @@ candidates, all 400 incumbents among them, out of the 618 whose name links to a
 Wikipedia article (the other 52 articles have no Wikidata image that passes the
 checks), plus the President and the 11 officers and party leaders on the Congress page;
 everyone else shows initials.
+
+Results (Nov. 4, 2026 build, the day after the election): Wikipedia's national tables
+had called 33 of 35 Senate races, 384 of 436 House races (435 plus D.C.), 34 of 36
+governor races and 100 of the 116 statewide offices below governor, but race pages had
+posted counts for only 9 Senate, 18 House, 6 governor and 4 office races, so most called
+races say the count isn't posted yet. LA-H-05 goes to the Dec. 12 runoff. Iowa's
+governor shares are worked out from the counts. Wikipedia's lieutenant governor table
+hadn't marked any winner yet (9 of its 10 races show "No result yet"). Statewide
+offices: 31 attorney general, 26 secretary of state, 10 lieutenant governor, 26
+treasurer and 23 auditor or comptroller races, 56 rated by Sabato's Crystal Ball;
+`offices_2026.py` gives 130 positions to 57 candidates in 33 races (20 researched, 13
+partial), from the States Newsroom guides of 11 states; only 4 candidates have five or
+more.
+
+Counting (the 10:40 p.m. CST results run, Nov. 4): 58 races still open, 10 of them with a
+projection from the count; California's own count for 58 contests (posted 5:18 p.m.
+Pacific). Projected final: Senate 55 D–45 R, House 255 D–180 R (80% range 252 to 258
+Democrats), governors 29 D–21 R. Upcoming (Nov. 4 build): 96 races (2027: 17, 2028: 77,
+2029: 2) from 15 Wikipedia pages, 25 declared candidates; 2028 has the President (two
+declared Republicans, no declared Democrat), 35 Senate seats (Tennessee's a special) and
+11 governors; 2027 has Minnesota's Senate special (Nov. 2) and Louisiana's statewide
+offices (Oct. 9); no 2029 statewide-office pages exist yet beyond the governors.
 
 France (Nov. 2, 2026): the 2027 presidential dates, candidates and polls refresh daily
 from French Wikipedia (who is running cross-checked with franceinfo and
@@ -610,9 +713,80 @@ the ONS's 2022 and 2026 earnings surveys and PISA 2025 typed in by hand.
 - **Bars in one grid row each lose their common scale.** Each row sized its own
   columns, so equal values drew different lengths when a label wrapped; `.enj-bar` rows
   use `subgrid`, so every bar list has one track width.
+- **Maine's primary tabulations have no caption**, so the first results box on a page
+  can be a primary's. `results.py` cuts every primary, convention, runoff, polling and
+  fundraising section (`NOT_GENERAL`) before looking for the general election's box.
+- **A check mark's hidden text is "Y"**, at the start of the winner's line; bold names
+  are the fallback for a mark drawn without it. Louisiana's open-primary cells split
+  into "General election:" and "Runoff:" and list the two advancing again under
+  "Runoff:", where only a check mark makes a winner (`candidate_lines` and
+  `table_candidates` in `elections.py`).
+- **A governor's results box lists the running mate on a second line** of the same
+  cell (kept as `mate`); lieutenant governors elected on a ticket are not office races.
+- **Results boxes mistype shares.** Iowa's governor box printed 55.5% and 45.5%: shares
+  more than 0.3 points off the counts are worked out from the votes, and the result
+  says so (`sharesFromVotes`).
+- **The day after the election, race pages lag the national tables**: a box can still
+  be blank (candidates, no counts) while the table already check-marks the winner. The
+  call stands and the page says the count isn't posted yet.
+- **A blank results box can sit under a filled infobox.** On Nov. 4 Mississippi's Senate
+  page had "Reporting 96%" and Colom 49.01% to Hyde-Smith 48.89% in its infobox while its
+  box was empty, so the site showed no count at all for a near-tie (the owner: "The
+  mississippi election is wrong"). `page_box` (results.py) reads the infobox when the box
+  is blank, for statewide pages only; 86 statewide races got their counts that way. It
+  lists only the leading nominees, so the total is worked out from the shares
+  (`totalFromShares`, "About" on the page) and "Others" takes the rest. Editors also
+  write "(projected)" after a name in the box; it is stripped, never read as a call.
+- **Forecast shares read as results after Election Day.** My elections, the starred
+  page and Georgia's lieutenant governor card once showed forecast or poll shares next
+  to called races, and the liked page called winners "Lost". A race without a count
+  now shows no shares (`awaitingResult`), and outcomes come from `winners`.
+- **The States Newsroom statewide guides differ by state.** Some republish candidates'
+  Ballotpedia survey answers, some carry the newsroom's interviews or its summaries,
+  and eleven (Arkansas, Florida, Kansas, Michigan, Minnesota, North Dakota, Ohio,
+  Oklahoma, South Carolina, South Dakota, Wisconsin) have bios only. Each source names
+  its kind; summaries are cited, never quoted.
+- **`python -I` hides user site-packages**, so shapely (installed for this user) is
+  missing under it. Run our own map builders (`build_maps.py`, `build_house_map.py`)
+  without `-I`; keep `-I` for scripts that read downloaded files.
+- **A results box can say "gain" or "hold" before anyone calls the race** (MN-1), and
+  the old hold pattern read "Democratic (DFL) hold" as a candidate's row. `outcome` is
+  kept only once a race is `won`.
+- **"Precincts reporting" is not a share of the vote.** California's counts run for
+  weeks after every precinct reports, so a precincts caption goes to `precincts`, never
+  `reporting`, and the projection estimates the share counted from turnout instead.
+- **A projection's chance and its mean margin can point different ways** in a near-tie
+  (CA-4 showed a negative margin with a 51% chance): the leader is whoever has at least
+  an even chance, and the page says "About even" under 0.05 points.
+- **A Bash heredoc also collapses `\\n` and breaks on backticks**: it broke an f-string
+  in refresh_all.py. Write patch scripts with Write and run them.
+- **Wikipedia's tables for future elections**: Vermont's two-year offices say "TBD in
+  2026" until the winner is filled in (the page names it from our own results), the
+  Senate table's state cells link to their own sections ("#Alabama"), the infobox prints
+  "October 9 ( Louisiana )" with spaces from the link, and an infobox's "Incumbent"
+  cell can lack the party (Minnesota's 2027 special). Exploratory committees and "Potential"
+  lists are not candidacies.
+- **The browser pane blocks tabs that a scripted click opens.** Drive's "Create Apps
+  Script" and the Apps Script permission window both open one, so the project was made
+  at `script.google.com/u/1/create` (`/u/N/` picks the signed-in account) and the owner
+  clicked through the permissions themself. The editor exposes `window.monaco`: a file's
+  text goes in as one edit of its model, not typed. A run whose permissions were turned
+  down logs "requires access to your Google Account"; run it again to be asked again.
 
 ## Open questions
 
+- Counts from the states: only California's feed is read so far. Another state needs a
+  results feed a script may read (no bot wall); until then its counts come from
+  Wikipedia's race pages, which can lag the state by hours.
+- Upcoming elections: state legislatures (Louisiana, Mississippi, New Jersey and Virginia
+  in 2027), local offices, primaries and House candidates aren't listed, and there are no
+  2029 statewide-office pages yet beyond the governors.
+
+- Statewide offices below governor: 33 of the 116 races have sourced positions (130
+  for 57 candidates, from the States Newsroom guides), and only four candidates have
+  the five a match percentage needs (Mayes, AZ-AG; Myricks, ID-LG; Brown, MD-AG;
+  Ahern, RI-AG). Campaign sites, VOTE411 and newsroom questionnaires, as for House
+  challengers, should fill in the rest.
 - France: 27 of the 35 declared candidates have sourced positions (851, Nov. 2, 2026),
   but most cover only 10 to 80 of the 144 questions; Mikolajczak (3) and Egger (4) are
   below the 5 a match percentage needs, and Becht (5) and Batho (6) just above. Eight have
@@ -624,10 +798,10 @@ the ONS's 2022 and 2026 earnings surveys and PISA 2025 typed in by hand.
 - France by address: the commune, department and region are known, but not the
   legislative circonscription (577 districts; needs a district map) or local
   by-elections, so "next elections" is the national calendar filtered by place.
-- The mail service waits for the owner to deploy it (README, "Email reminders and help
-  tickets") and set `MAIL_SERVICE_URL`; until then tickets go through visitors' own email
-  apps and reminders are calendar files. informedvoter.io has SPF and DKIM but no DMARC
-  record, which some inboxes hold against its mail.
+- The mail service's quota: `setup` reported 100 emails a day on Nov. 4, not the 1,500
+  Google lists for Workspace accounts, and confirmations, reminders and tickets share it.
+  informedvoter.io has SPF and DKIM but no DMARC record, which some inboxes hold against
+  its mail.
 - Pay by job in France and next door: medians by occupation exist only in national
   sources (INSEE, Destatis and others), with their own definitions and years, so
   "Les grands enjeux" compares sectors instead.

@@ -18,7 +18,7 @@
 //                   while the site carries ads; EARLY_VOTE in scripts/update_races.py
 //                   stops the refresh from reading it. Turn both back on together.
 
-export const MAIL_SERVICE_URL = '';
+export const MAIL_SERVICE_URL = 'https://script.google.com/macros/s/AKfycbxRFac2JX9mBQast9cN8e5cti4j2lKe5Bq0AGITNA7hauP1h2P3cr9p24qY_Dvjm5ru/exec';
 export const SUPPORT_EMAIL = 'theinformedvoter.help@gmail.com';
 export const REMINDER_FROM = 'caissonez@informedvoter.io';
 export const DONATE_URL = 'https://www.paypal.com/donate/?hosted_button_id=RG9GTZ3R3TQAW';

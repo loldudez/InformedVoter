@@ -9,9 +9,9 @@
 4. Every race, the forecasts and chamber control (update_races.py).
 5. The validator. If the new race data fails it, the previous race, control and
    status files are put back, so the site never shows a broken refresh.
-   Then who sits in Congress (update_congress.py) and the candidates' photos
-   (update_photos.py), once a day; each keeps its previous file when a source can't be
-   read.
+   Then who sits in Congress (update_congress.py), the candidates' photos
+   (update_photos.py) and the elections of the next three years (update_upcoming.py),
+   once a day; each keeps its previous file when a source can't be read.
 6. The France section (scripts/fr/): the presidential candidates and polls, the
    parties, who sits in Parliament and the figures behind "Les grands enjeux" once a
    day, the election calendar and the candidates' researched positions every run. Its
@@ -23,6 +23,7 @@ Each run is appended to data/cache/refresh.log.
 """
 
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -34,7 +35,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 LOG = DATA / "cache" / "refresh.log"
 PY = sys.executable.replace("pythonw.exe", "python.exe")  # child scripts print; give them a console interpreter
-GUARDED = ["races.json", "control.json", "status.json"]
+GUARDED = ["races.json", "offices.json", "control.json", "status.json"]
+LOCK = DATA / "cache" / "refresh.lock"  # shared with update_results.py, which writes the same files
 
 
 def log(msg):
@@ -60,6 +62,25 @@ def run(args, timeout=1800):
     return p.returncode == 0
 
 
+def take_lock(wait_minutes=15, stale_minutes=45):
+    """Wait for a results refresh (update_results.py) to finish writing, then hold the
+    lock while the race files are rebuilt. A lock older than `stale_minutes` is left from
+    a run that died."""
+    LOCK.parent.mkdir(parents=True, exist_ok=True)
+    deadline = time.time() + wait_minutes * 60
+    while True:
+        try:
+            fd = os.open(LOCK, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            with os.fdopen(fd, "w") as f:
+                f.write(f"refresh_all {os.getpid()} {datetime.now().isoformat(timespec='seconds')}\n")
+            return
+        except FileExistsError:
+            if time.time() - LOCK.stat().st_mtime > stale_minutes * 60 or time.time() > deadline:
+                LOCK.unlink(missing_ok=True)
+                continue
+            time.sleep(15)
+
+
 def older_than(path, hours):
     return not path.exists() or (time.time() - path.stat().st_mtime) > hours * 3600
 
@@ -71,17 +92,8 @@ def trim_log(max_lines=4000):
             LOG.write_text("\n".join(lines[-max_lines:]) + "\n", encoding="utf-8")
 
 
-def main():
-    log("refresh started")
-    run(["scripts/update_news.py"])
-    if older_than(DATA / "inflation.json", 20):
-        run(["scripts/update_inflation.py"])
-    for script in sorted((ROOT / "scripts" / "research").glob("*.py")):
-        if script.name != "common.py":
-            run([str(script.relative_to(ROOT))])
-
-    backup = DATA / "cache" / "last-good"
-    backup.mkdir(parents=True, exist_ok=True)
+def guarded_races(backup):
+    """Rebuild the race files and validate them; put the last good ones back on failure."""
     for name in GUARDED:
         if (DATA / name).exists():
             shutil.copy2(DATA / name, backup / name)
@@ -100,10 +112,31 @@ def main():
             })
             st_path.write_text(json.dumps(st, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         log("race data restored from the last good refresh")
+    return ok
+
+
+def main():
+    log("refresh started")
+    run(["scripts/update_news.py"])
+    if older_than(DATA / "inflation.json", 20):
+        run(["scripts/update_inflation.py"])
+    for script in sorted((ROOT / "scripts" / "research").glob("*.py")):
+        if script.name != "common.py":
+            run([str(script.relative_to(ROOT))])
+
+    backup = DATA / "cache" / "last-good"
+    backup.mkdir(parents=True, exist_ok=True)
+    take_lock()
+    try:
+        ok = guarded_races(backup)
+    finally:
+        LOCK.unlink(missing_ok=True)
     if older_than(DATA / "congress.json", 20):                     # who sits in Congress: once a day
         ok &= run(["scripts/update_congress.py"])
     if older_than(DATA / "photos.json", 20):                       # candidates' photos: once a day
         ok &= run(["scripts/update_photos.py"])
+    if older_than(DATA / "upcoming.json", 20):                     # the elections of 2027-2029: once a day
+        ok &= run(["scripts/update_upcoming.py"])
 
     # The France section (data/fr/): separate files, so a failure here never touches the
     # U.S. data; each script keeps its previous file when it can't build a new one.

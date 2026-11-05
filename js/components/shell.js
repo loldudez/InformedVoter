@@ -5,8 +5,8 @@ import { html, raw, $, fmtProb } from '../util.js';
 import { icon, logo } from '../icons.js';
 import { store } from '../store.js';
 import { daysToElection } from '../model/forecast.js';
-import { allRaces, fc, chamberSummary, raceShortTitle, realRaceCount, researchedCount } from '../data/world.js';
-import { lastName } from './race.js';
+import { mainRaces, fc, chamberSummary, raceShortTitle, realRaceCount, researchedCount, officeCount, officesResearched, resultsIn, resultsTally, resultMargin, resultWinners, resultParty, liveFc, stillCounting, racesMeta } from '../data/world.js';
+import { lastName, resultMarginStr } from './race.js';
 import { section } from '../i18n.js';
 
 export const MAIN_MENU = [
@@ -16,6 +16,7 @@ export const MAIN_MENU = [
   ['#/starred', 'Starred elections', 'star'],
   ['#/liked', 'Liked candidates', 'heart'],
   ['#/close', 'Close elections', 'ballot'],
+  ['#/upcoming', 'Upcoming elections', 'calendar'],
   ['#/news', 'Major news regarding the election', 'news'],
   ['#/inflation', 'Inflation tracker', 'dollar'],
   ['#/country', 'Which country?', 'globe'],
@@ -35,7 +36,24 @@ export const avatarSrc = () => {
   return section() === 'fr' ? 'assets/flag-fr-square.svg' : 'assets/flag-us-square.svg';
 };
 
+// After Election Day: seats each party has so far (called races plus seats not up).
+function resultsBar() {
+  const seg = (label, key) => {
+    const t = resultsTally(key);
+    const open = t.uncalled.length + t.runoff.length;
+    return html`<span class="chamber-odd">${label} <b class="d-text">${t.seats.D} D</b> <b class="r-text">${t.seats.R} R</b>${t.seats.I ? html` <b>${t.seats.I} other</b>` : ''}${open ? html` <span class="faint">· ${open} open</span>` : ''}</span>`;
+  };
+  return html`<div class="wrap">
+    <span><span class="live"></span>2026 results · <strong>unofficial</strong></span>
+    <span class="faint">Seats so far:</span>
+    ${seg('Senate', 'senate')} ${seg('House', 'house')} ${seg('Governors', 'governor')}
+    <span class="sep"></span>
+    <a href="#/about" class="faint">About the data</a>
+  </div>`;
+}
+
 function topbar() {
+  if (resultsIn()) return resultsBar();
   const days = daysToElection();
   const sum = chamberSummary();
   const odd = (label, o) => {
@@ -76,8 +94,26 @@ function header() {
   </div>`;
 }
 
+// After Election Day: the races still open, then the closest called ones.
+function resultsTicker() {
+  const rs = mainRaces().filter((r) => r.result && (r.office !== 'house' || r.result.status !== 'won' || (resultMargin(r)?.pts ?? 99) < 3))
+    .sort((a, b) => (a.result.status === 'won') - (b.result.status === 'won') || (resultMargin(a)?.pts ?? 99) - (resultMargin(b)?.pts ?? 99))
+    .slice(0, 18);
+  const items = rs.map((r) => {
+    const res = r.result;
+    const w = res.status === 'won' ? resultWinners(r)[0] : null;
+    const p = resultParty(r);
+    const m = resultMarginStr(r, { named: false });
+    const label = res.status === 'won' ? `${w ? lastName(w.name) : ''} won` : res.status === 'runoff' ? 'Runoff' : `${resultMargin(r) ? lastName(resultMargin(r).a.name) : ''} leads`;
+    const lv = res.status === 'counting' ? liveFc(r) : null;
+    return html`<a href="#/race/${r.id}"><b>${raceShortTitle(r)}</b>${label}${m && res.status !== 'runoff' ? html` <span class="m ${p === 'D' ? 'd-text' : p === 'R' ? 'r-text' : ''}">${m}</span>` : ''}${lv ? html` <span class="faint">· ${lastName(lv.lead.name)} ${fmtProb(lv.pLead)}</span>` : ''}</a>`;
+  });
+  return html`<div class="inner"><span class="tag">RESULTS</span><div class="track" aria-hidden="false">${items}${raw('<span aria-hidden="true" style="display:contents">')}${items}${raw('</span>')}</div></div>`;
+}
+
 function ticker() {
-  const close = allRaces().filter((r) => r.office !== 'house' || (!fc(r).open && Math.abs(fc(r).margin) < 4))
+  if (resultsIn()) return resultsTicker();
+  const close = mainRaces().filter((r) => r.office !== 'house' || (!fc(r).open && Math.abs(fc(r).margin) < 4))
     .map((r) => ({ r, f: fc(r) }))
     .filter(({ f }) => !f.open)
     .sort((a, b) => Math.abs(a.f.pLead - 0.5) - Math.abs(b.f.pLead - 0.5))
@@ -88,6 +124,9 @@ function ticker() {
 }
 
 function banner() {
+  if (realRaceCount && resultsIn()) {
+    return html`<div class="wrap">${icon.info()}<span><b>2026 results for every Senate, House and governor race</b>${officeCount ? html`, and for ${officeCount} statewide offices below governor` : ''}, ${stillCounting() && racesMeta()?.resultsUpdated ? 'with the results re-read every 10 minutes until every race is called' : 'refreshed every 8 hours'} (<span class="live-chip">Live data</span>). A race shows a winner once Wikipedia’s national results table marks one; vote counts are unofficial until each state certifies them. The final forecasts stay on every race page. ${researchedCount + officesResearched} race${researchedCount + officesResearched === 1 ? ' has' : 's have'} researched issue positions with sources (<span class="real-chip">Sourced</span>). <a href="#/about">What’s real?</a></span></div>`;
+  }
   if (realRaceCount) {
     return html`<div class="wrap">${icon.info()}<span><b>Real data for every Senate, House and governor race</b>, refreshed every 8 hours: candidates, forecasters’ ratings, polls and fundraising (<span class="live-chip">Live data</span>). ${researchedCount} race${researchedCount === 1 ? ' also has' : 's also have'} researched issue positions with sources (<span class="real-chip">Sourced</span>). State legislative races show the real seats, and the holders and candidates Wikipedia lists, without forecasts. <a href="#/about">What’s real?</a></span></div>`;
   }

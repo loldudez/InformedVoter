@@ -97,15 +97,32 @@ def campaign_sites(html_text):
     return out
 
 
-def candidate_lines(cell_text):
-    """'▌Barry Moore (Republican)\n▌Everett Wess (Democratic)' -> [(name, party code)].
-    Write-in candidates are left out."""
+def candidate_lines(cell_text, ticks=0, bolds=()):
+    """'▌Barry Moore (Republican)\n▌Everett Wess (Democratic)' -> [(name, party code, won,
+    part)]. Write-in candidates are left out, and sub-headings ("General election:",
+    "Runoff:") name the `part` of the cell the lines below them belong to.
+
+    After an election the tables mark each winner (or each candidate advancing to a
+    runoff) with a green check mark, whose hidden text "Y" starts the line, and set
+    the name in bold: `ticks` is the cell's number of check marks and `bolds` its
+    bold runs. A share printed after the party ("(Republican) 62.3%") is dropped."""
     out = []
+    # The hidden "Y" says which line each check mark is on; bold names are the fallback
+    # for a check mark drawn without it.
+    marked = bool(ticks) and any(re.match(r"^Y\s+\S", l.strip().lstrip("▌").strip()) for l in cell_text.split("\n"))
+    bold = set() if marked else {norm(b) for b in bolds}
+    part = ""
     for line in cell_text.split("\n"):
         line = line.strip().lstrip("▌").strip()
+        if line.endswith(":") and "(" not in line:
+            part = line[:-1].strip().lower()
+            continue
         if not line or "write-in" in line.lower():
             continue
-        m = re.match(r"^(.*?)\s*\(([^)]*)\)\s*$", line)
+        won = False
+        if ticks and re.match(r"^Y\s+\S", line):
+            line, won = line[1:].strip(), True
+        m = re.match(r"^(.*?)\s*\(([^)]*)\)\s*(?:[\d.]+\s*%)?\s*$", line)
         if m:
             name, parties = m.group(1), m.group(2)
             party = party_code(parties.split(",")[0].split("/")[0])
@@ -113,7 +130,7 @@ def candidate_lines(cell_text):
             name, party = line, "I"
         name = re.sub(r"\s+", " ", re.sub(r"[†‡*]", "", name)).strip(" ,;")
         if name:
-            out.append((name, party))
+            out.append((name, party, won or bool(ticks and norm(name) in bold), part))
     return out
 
 
@@ -123,6 +140,57 @@ def assign_ids(race_id, people):
     for p, ln in zip(people, lasts):
         p["id"] = f"{race_id}:{ln if lasts.count(ln) == 1 else slug(p['name'])}"
     return people
+
+
+RUNNING = ("renominated", "advanced", "running", "appointee nominated", "seeking re-election", "re-elected",
+           "lost re-election", "interim appointee elected", "interim appointee lost")
+
+
+def table_candidates(race_id, cand_cell, inc_cell=None, status_text=""):
+    """Candidates from a national table's '▌Name (Party)' cell -> (people, incumbent running,
+    winners, advancing). The incumbent is found by the Wikipedia article both cells link
+    to (which tells apart, say, Alaska's two Dan Sullivans), falling back to the name.
+    `winners` are the people the table check-marks once the race is called (two when
+    both advance to a runoff). A cell split into "General election:" and "Runoff:"
+    (Louisiana's open primaries) lists the two advancing again under "Runoff:": they are
+    `advancing`, and only a check mark there makes a winner."""
+    lines = candidate_lines(text(cand_cell), cand_cell.get("ticks", 0), cand_cell.get("bolds", ()))
+    people, by_name = [], {}
+    for n, p, won, part in lines:
+        key = norm(n)
+        if key not in by_name:
+            by_name[key] = {"name": n, "party": p, "_marks": set(), "_parts": set()}
+            people.append(by_name[key])
+        by_name[key]["_parts"].add(part)
+        if won:
+            by_name[key]["_marks"].add(part)
+    assign_ids(race_id, people)
+    runoff_part = next((part for *_, part in lines if "runoff" in part), None)
+    if runoff_part is not None:
+        advancing = [p for p in people if runoff_part in p["_parts"]]
+        winners = [p for p in people if runoff_part in p["_marks"]]
+    else:
+        advancing = []
+        winners = [p for p in people if p["_marks"]]
+    for p in people:
+        del p["_marks"], p["_parts"]
+    links = {norm(l["text"]): l["href"] for l in cand_cell["links"] if l["href"].startswith("/wiki/") and l["text"].strip()}
+    for p in people:
+        href = links.get(norm(p["name"]))
+        if href:
+            p["wiki"] = "https://en.wikipedia.org" + href
+    inc = None
+    if inc_cell is not None:
+        inc_href = next((l["href"] for l in inc_cell["links"] if l["href"].startswith("/wiki/") and ":" not in l["href"]), None)
+        if inc_href:
+            inc = next((p for p in people if p.get("wiki") == "https://en.wikipedia.org" + inc_href), None)
+        name = text(inc_cell).split("\n")[0].strip()
+        if inc is None and name and not name.lower().startswith(("vacant", "new seat", "none")):
+            inc = match_candidate(name, people)
+    for p in people:
+        p["incumbent"] = p is inc
+    running = inc is not None or any(w in status_text.lower() for w in RUNNING)
+    return people, running, winners, advancing
 
 
 NICKNAMES = [
@@ -261,9 +329,10 @@ def heads_of(t, i):
     return [re.sub(r"\s+", " ", text(c).replace("\n", " ")).strip().lower() for c in t["rows"][i]]
 
 
-def ratings_table(html_text, key_head):
+def ratings_table(html_text, key_head, min_outlets=3):
     """Forecaster ratings table -> {row key: {"pvi", "ratings": [{outlet, rating, date}]}}.
-    `key_head` is the first column's heading ("State" or "District")."""
+    `key_head` is the first column's heading ("State" or "District"). Down-ballot
+    pages carry a single outlet (Sabato's Crystal Ball), hence `min_outlets`."""
     for t in tables(html_text):
         hi = header_row(t, key_head)
         if hi is None:
@@ -279,7 +348,7 @@ def ratings_table(html_text, key_head):
             if key in OUTLETS:
                 _, end = parse_range(" ".join(bits[1:])) if len(bits) > 1 else (None, None)
                 outlet_cols.append((j, OUTLETS[key], iso(end)))
-        if len(outlet_cols) < 3:
+        if len(outlet_cols) < min_outlets:
             continue
         pvi_col = col(heads, "pvi", "cpvi", "2026 pvi", "2025 pvi")
         out = {}

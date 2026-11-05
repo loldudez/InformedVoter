@@ -195,6 +195,94 @@ export function forecast(race, asOf = new Date()) {
   };
 }
 
+// The moment a forecast is run for: now until the polls close, then Election Day itself,
+// so the final forecast stays as it stood when voting ended (polls only age after that).
+export const forecastAsOf = (now = new Date()) => (now < ELECTION_DAY ? now : ELECTION_DAY);
+
+// --- Counted votes ------------------------------------------------------------
+//
+// After Election Day, a race not called yet blends its final forecast with the votes
+// counted so far (scripts/lib/model.py has the same `live`). The count covers a share of
+// the expected vote: the share the results report when they give one, otherwise the
+// count against the expected turnout (race.turnout: the state's 2024 presidential vote
+// times the midterm ratio, split across its districts). That turnout is itself an
+// estimate, off by TURNOUT_SD either way, so the projection averages five equally likely
+// turnouts (the 10th to 90th percentiles); in each, an uncalled race keeps at least
+// 1 - MAX_COUNTED of its vote still out. The votes still out lean like the count in
+// proportion to the share already counted, and like the forecast otherwise. Their margin
+// is as uncertain as the forecast's while little is counted, and up to REST_SD points
+// when what is left is a last batch of late ballots, which can lean quite differently;
+// COUNT_SD allows for corrections to the posted count. Ranked-choice races are read on
+// their final round, with each party's other candidates' votes going to its strongest
+// one, as in the forecast. Open primaries and races with no odds get no projection.
+export const TURNOUT_SD = 0.2;
+export const TURNOUT_Z = [-1.2816, -0.5244, 0, 0.5244, 1.2816];
+export const MAX_COUNTED = 0.98;
+export const REST_SD = 12;
+export const COUNT_SD = 0.3;
+
+export function live(race, fc) {
+  const res = race.result || {};
+  if (!fc || res.status === 'won' || res.status === 'runoff') return null;
+  const cands = race.candidates;
+  const votes = Object.fromEntries(cands.map((c) => [c.id, 0]));
+  let total = 0;
+  for (const r of res.rows || []) {
+    if (r.votes == null) continue;
+    total += r.votes;
+    if (r.id != null && Object.prototype.hasOwnProperty.call(votes, r.id)) votes[r.id] += r.votes;
+  }
+  total = Math.max(total, res.total || 0);
+  if (total <= 0 || cands.filter((c) => votes[c.id] > 0).length < 2) return null;
+  let counted = Object.fromEntries(cands.map((c) => [c.id, (100 * votes[c.id]) / total]));
+  if (race.rcv) counted = rcvFinal(cands, counted);
+  let fracs, basis;
+  if (res.reporting != null) {
+    fracs = [Math.min(res.reporting / 100, 0.999)];
+    basis = 'reported';
+  } else {
+    const base = race.turnout || 0;
+    fracs = TURNOUT_Z.map((z) => total / Math.max(base * (1 + TURNOUT_SD * z), total / MAX_COUNTED));
+    basis = 'estimated';
+  }
+  const fs = Object.fromEntries(fc.cands.map((c) => [c.id, c.share]));
+  const ranked = [...cands].sort((x, y) => counted[y.id] - counted[x.id]);
+  const [a, b] = ranked;
+  const mCount = counted[a.id] - counted[b.id];
+  const mFc = fs[a.id] - fs[b.id];
+  const n = fracs.length;
+  let pA = 0, mean = 0, moment2 = 0;
+  const shares = Object.fromEntries(cands.map((c) => [c.id, 0]));
+  for (const x of fracs) {
+    const mRest = x * mCount + (1 - x) * mFc;
+    const m = x * mCount + (1 - x) * mRest;
+    const sRest = (1 - x) * fc.sigma + x * REST_SD;
+    const sd = Math.sqrt(((1 - x) * sRest) ** 2 + COUNT_SD ** 2);
+    pA += normCdf(m / sd) / n;
+    mean += m / n;
+    moment2 += (sd ** 2 + m ** 2) / n;
+    for (const c of cands) shares[c.id] += (x * counted[c.id] + (1 - x) * (x * counted[c.id] + (1 - x) * fs[c.id])) / n;
+  }
+  const sd = Math.sqrt(Math.max(moment2 - mean ** 2, 0));
+  const frac = fracs.reduce((s, x) => s + x, 0) / n;
+  const expected = total / frac;
+  const [lead, second, pLead, margin] = pA >= 0.5 ? [a, b, pA, mean] : [b, a, 1 - pA, -mean];
+  // The page's view of it: candidates by projected share, with their counted votes.
+  const out = [...cands].sort((x, y) => shares[y.id] - shares[x.id]).map((c) => ({
+    ...c,
+    share: shares[c.id],
+    counted: counted[c.id],
+    countVotes: votes[c.id],
+    votes: (expected * shares[c.id]) / 100,
+    win: c.id === lead.id ? pLead : c.id === second.id ? 1 - pLead : 0,
+  }));
+  return {
+    lead, second, margin, sigma: sd, pLead, counted: total, expected, frac, basis, shares,
+    votes: Object.fromEntries(Object.entries(shares).map(([i, s]) => [i, (expected * s) / 100])),
+    cands: out, countLead: a, countSecond: b, countMargin: mCount, range80: [margin - Z80 * sd, margin + Z80 * sd],
+  };
+}
+
 // Daily forecast snapshots, for trend lines and "change over the past week".
 export function history(race, days = 30, now = new Date()) {
   const out = [];

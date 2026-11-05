@@ -6,12 +6,11 @@ import { icon } from '../icons.js';
 import { store } from '../store.js';
 import { STATE_BY_ABBR, legislatureChambers, ELECTION_DATE_LABEL } from '../data/states.js';
 import { questionsForLevel, stanceSentence, userSentence } from '../data/questions.js';
-import { fc, statewideRaces, getRace, legislativeRaces, ensureRace, raceTitle, officeLabel, positionsOf, isDemo } from '../data/world.js';
+import { fc, statewideRaces, officeRaces, getRace, legislativeRaces, ensureRace, raceTitle, officeLabel, positionsOf, isDemo, afterElection, resultRows, rowShare } from '../data/world.js';
 import { rank, MIN_COMPARED } from '../model/match.js';
-import { candColors } from '../lib/charts.js';
 import { howToVote } from '../components/vote.js';
 import { reminderButton } from '../components/reminders.js';
-import { PARTY_NAME, partyClass, heartBtn, starBtn, demoChip, dataChip, lastName, ratingChip, candBadge, photoCredits } from '../components/race.js';
+import { PARTY_NAME, partyClass, heartBtn, starBtn, demoChip, dataChip, lastName, ratingChip, candBadge, photoCredits, resultChip, raceColors, awaitingResult } from '../components/race.js';
 
 async function ballotFor(ad) {
   const st = ad.state;
@@ -20,6 +19,8 @@ async function ballotFor(ad) {
   const { senate, governor } = statewideRaces(st);
   if (senate) items.push({ race: senate });
   if (governor) items.push({ race: governor });
+  // Attorney general, secretary of state, lieutenant governor, treasurer, auditor.
+  for (const race of officeRaces(st)) items.push({ race });
   const cd = st === 'DC' ? '98' : ad.cd;
   const house = cd && getRace(`${st}-H-${cd}`);
   if (house) items.push({ race: house });
@@ -37,37 +38,75 @@ async function ballotFor(ad) {
 
 function raceCard(race) {
   const f = fc(race);
-  const colors = candColors(f.cands);
+  const colors = raceColors(race);
   const mine = store.get().electionAnswers[race.id];
   const answered = store.answered();
   const id = encodeURIComponent(race.id);
+  const res = race.result;
+  // With a count in, candidates in its order with their shares. After Election Day
+  // without one, the winner (if called) first and no percentages, since the forecast's
+  // or the polls' would read as results. Before it, the forecast's order and shares.
+  const awaiting = awaitingResult(race);
+  const rows = resultRows(race).filter((r) => r.cand);
+  const byRow = new Map(rows.map((r) => [r.cand.id, r]));
+  const winners = new Set(res?.winners || []), adv = new Set(res?.advance || []);
+  const ahead = (c) => (winners.has(c.id) || adv.has(c.id) ? 1 : 0);
+  const cands = rows.length ? [...rows.map((r) => f.cands.find((c) => c.id === r.cand.id) || r.cand), ...f.cands.filter((c) => !byRow.has(c.id))]
+    : res ? [...f.cands].sort((a, b) => ahead(b) - ahead(a)) : f.cands;
+  const office = f.kind === 'office';
+  const rated = f.rating && f.rating !== 'Not rated';
+  const s = STATE_BY_ABBR[race.state];
+  const wonBy = (c) => (byRow.has(c.id) ? byRow.get(c.id).won : winners.has(c.id));
+  const sub = (c) => {
+    const r = byRow.get(c.id);
+    if (r || res || awaiting) {
+      const toRunoff = r ? r.advance : adv.has(c.id);
+      return html`${wonBy(c) ? html`<span class="win-mark">${icon.check()} Winner</span> · ` : toRunoff ? 'To the runoff · ' : ''}${PARTY_NAME[c.party] || c.party}${c.incumbent && office ? ' · incumbent' : ''}${r?.votes != null ? ` · ${r.votes.toLocaleString('en-US')} votes` : ''}`;
+    }
+    return html`${PARTY_NAME[c.party] || c.party}${c.incumbent && office ? ' · incumbent' : ''}${f.open ? '' : ` · ${fmtProb(c.win)} to win`}`;
+  };
+  const share = (c) => {
+    const r = byRow.get(c.id);
+    if (r) return rowShare(r);
+    return rows.length || res || awaiting ? null : c.share;
+  };
+  const link = res ? 'Full results' : office || f.open ? 'Race details' : awaiting ? 'Race page' : 'Full forecast';
+  const pending = !rows.length && (res || awaiting)
+    ? (res?.status === 'won' ? 'Called; the vote count isn’t posted yet.' : res?.status === 'runoff' ? 'Headed to a runoff; the vote count isn’t posted yet.' : res ? 'Votes are being counted.' : 'No result yet.')
+    : '';
   return html`<article class="card stack">
     <div class="row between">
-      <div><div class="eyebrow">${officeLabel(race)}</div><h3 style="margin:2px 0 0;font-size:19px">${raceTitle(race)}</h3></div>
-      <div class="row">${dataChip(race)}${ratingChip(f)}${starBtn(race.id, { small: true })}</div>
+      <div><div class="eyebrow">${office ? `Statewide · ${officeLabel(race)}` : officeLabel(race)}</div><h3 style="margin:2px 0 0;font-size:19px">${raceTitle(race)}</h3></div>
+      <div class="row">${dataChip(race)}${res || awaiting ? resultChip(race) : !office || rated ? ratingChip(f) : ''}${starBtn(race.id, { small: true })}</div>
     </div>
     ${f.kind === 'field' ? html`<p class="small muted" style="margin:0">No forecast for state legislative races. ${f.cands.length ? '' : 'Wikipedia doesn’t list this district’s candidates yet. '}${f.dr != null ? `The district voted ${fmtDR(f.dr)} for president in 2024.` : ''}</p>` : ''}
-    ${f.open && f.kind !== 'field' ? html`<p class="small muted" style="margin:0">Open primary: all ${f.cands.length} candidates share one ballot. A majority wins outright; otherwise the top two meet in a runoff${race.runoff ? ` on ${fmtDate(race.runoff + 'T12:00:00')}` : ''}. Percentages are from the latest published poll.</p>` : ''}
-    <div class="grid grid-2" style="gap:10px">${f.cands.map((c) => html`<div class="compact-cand ${partyClass(c.party)}">
+    ${office ? html`<p class="small muted" style="margin:0">No forecast for statewide offices below governor${rated ? `; Sabato’s Crystal Ball rated it ${f.rating}` : ''}.${f.dr != null ? ` ${s.name} voted ${fmtDR(f.dr)} for president in 2024.` : ''}${rows.length ? ' Vote counts are unofficial until the state certifies them.' : pending ? ` ${pending}` : f.poll ? ' Percentages are the polling average.' : ''}</p>` : ''}
+    ${f.open && f.kind === 'open-primary' ? html`<p class="small muted" style="margin:0">Open primary: all ${f.cands.length} candidates share${res || awaiting ? 'd' : ''} one ballot. A majority wins outright; otherwise the top two meet in a runoff${race.runoff ? ` on ${fmtDate(race.runoff + 'T12:00:00')}` : ''}. ${rows.length ? 'Percentages are the unofficial count.' : pending || 'Percentages are from the latest published poll.'}</p>` : ''}
+    ${rows.length && !office && !f.open ? html`<p class="small muted" style="margin:0">Unofficial count${res.status === 'won' ? '; the race has been called' : res.status === 'runoff' ? '; the race goes to a runoff' : '; not called yet'}. The final forecast is on the race’s page.</p>` : ''}
+    ${pending && !office && !f.open ? html`<p class="small muted" style="margin:0">${pending} The final forecast is on the race’s page.</p>` : ''}
+    <div class="grid grid-2" style="gap:10px">${cands.map((c) => html`<div class="compact-cand ${partyClass(c.party)}${wonBy(c) ? ' winner' : ''}">
       ${candBadge(c, colors[c.id])}
-      <div style="min-width:0"><div class="nm">${c.name}</div><div class="tiny faint">${PARTY_NAME[c.party] || c.party}${f.open ? '' : ` · ${fmtProb(c.win)} to win`}</div></div>
-      ${c.share != null ? html`<div class="sh" style="color:${colors[c.id]};font-size:18px">${fmtPct(c.share, 0)}</div>` : ''}
+      <div style="min-width:0"><div class="nm">${c.name}</div><div class="tiny faint">${sub(c)}</div></div>
+      ${share(c) != null ? html`<div class="sh" style="color:${colors[c.id]};font-size:18px">${fmtPct(share(c), rows.length ? 1 : 0)}</div>` : ''}
       ${heartBtn(c.id, c.name, { small: true })}
     </div>`)}</div>
     ${!isDemo(race) && !race.research ? html`<p class="small muted" style="margin:0">${icon.info()} ${f.kind === 'field'
       ? html`The candidates here come from Wikipedia’s 2026 page for this chamber; their issue positions haven’t been researched, so matching isn’t available. <a href="#/race/${id}">See the race</a>.`
-      : html`Candidates, ratings, polls and money here are live, but not every candidate’s issue positions have been researched yet, so matching isn’t available for this race. <a href="#/race/${id}">See the full forecast</a>.`}</p>` : html`<div class="row">
+      : office
+        ? html`${race.candidates.some((c) => Object.keys(c.positions || {}).length) ? 'Some of these candidates’ positions are researched, but not every candidate’s yet' : 'These candidates’ issue positions haven’t been researched yet'}, so matching isn’t available for this race. <a href="#/race/${id}">See the candidates and results</a>.`
+        : html`Candidates, ratings, polls and money here are live, but not every candidate’s issue positions have been researched yet, so matching isn’t available for this race. <a href="#/race/${id}">See the ${res ? 'results' : awaiting ? 'race' : 'full forecast'}</a>.`}</p>` : html`<div class="row">
       ${answered >= MIN_COMPARED
         ? html`<a class="btn btn-sm btn-primary" href="#/elections/${id}/match?mode=profile">${icon.user()} Match with My views</a>`
         : html`<a class="btn btn-sm" href="#/views" title="Answer at least ${MIN_COMPARED} questions first">${icon.user()} Answer My views first</a>`}
       <a class="btn btn-sm" href="#/elections/${id}/quiz">New political views for this election</a>
       ${mine && store.answered(mine) ? html`<a class="btn btn-sm btn-ghost" href="#/elections/${id}/match?mode=election">My results for this election</a>` : ''}
-      <a class="btn btn-sm btn-ghost" href="#/race/${id}">${f.open ? 'Race details' : 'Full forecast'}</a>
+      <a class="btn btn-sm btn-ghost" href="#/race/${id}">${link}</a>
     </div>`}
   </article>`;
 }
 
 export const elections = {
+  live: true, // redrawn when new counts arrive (main.js)
   title: () => 'My elections',
   rerenderOn: ['reminders'],
   async render() {
@@ -80,17 +119,22 @@ export const elections = {
     }
     const items = await ballotFor(ad);
     const s = STATE_BY_ABBR[ad.state];
-    const runoff = items.map((it) => it.race?.runoff).find(Boolean);
+    const over = afterElection();
+    // A runoff reminder only for a race of the visitor's that is going to one (or, before
+    // the results, could), and only while the date is ahead.
+    const today = new Date().toISOString().slice(0, 10);
+    const runoff = items.map((it) => it.race).filter((r) => r?.runoff && r.runoff >= today && (!r.result || r.result.status === 'runoff')).map((r) => r.runoff)[0];
     return html`<div class="wrap page stack-lg" style="max-width:1000px">
       <div class="row between" style="align-items:flex-end">
         <div>
           <div class="eyebrow">My elections · ${ELECTION_DATE_LABEL}</div>
-          <h1 style="margin:6px 0 8px">What’s on your ballot</h1>
+          <h1 style="margin:6px 0 8px">${over ? 'Your 2026 races and results' : 'What’s on your ballot'}</h1>
           <p class="muted" style="margin:0">${icon.pin()} ${ad.matched} · <a href="#/profile?tab=location">Change</a></p>
         </div>
-        <div class="row">${reminderButton({ id: 'us:general-2026', name: 'Election Day, November 3, 2026', date: '2026-11-03', section: 'us' })}
+        <div class="row">${over ? '' : reminderButton({ id: 'us:general-2026', name: 'Election Day, November 3, 2026', date: '2026-11-03', section: 'us' })}
           ${runoff ? reminderButton({ id: `us:runoff-${ad.state}-${runoff}`, name: `${s.name} runoff`, date: runoff, section: 'us' }) : ''}</div>
       </div>
+      ${over ? html`<div class="notice">${icon.info()}<div>Results are unofficial until ${s.name} certifies them. A race shows a winner once Wikipedia’s national results table marks one; each race’s page has the full count, its source and the final forecast. Click a race below for its candidates, where they stand and the results.</div></div>` : ''}
       ${isDemo(items.find((x) => x.race)?.race) ? html`<div class="notice warn">${icon.info()}<div>The offices and districts below are your real 2026 races. The candidates, forecasts and positions are <b>demo data</b> until real candidate data is connected. Always confirm your sample ballot with ${s.name}’s election office.</div></div>` : ''}
       <div class="stack">${items.map((it) => (it.race ? raceCard(it.race) : html`<div class="card tight"><div class="row between"><b>${it.none}</b><span class="chip">No election this year</span></div><p class="small muted" style="margin:6px 0 0">${it.why}</p></div>`))}</div>
       ${howToVote(ad.state)}
@@ -117,7 +161,7 @@ function evidence(item, cand) {
 
 function overlay(row, race) {
   const c = row.cand;
-  const colors = candColors(fc(race).cands);
+  const colors = raceColors(race);
   return html`<div class="overlay" role="dialog" aria-modal="true" aria-label="${c.name}: similarities and differences">
     <section class="panel p-left"><h3><span class="sim-dot"></span> Similarities <span class="faint small">(${row.similarities.length})</span></h3>
       ${row.similarities.length ? row.similarities.map((it) => evidence(it, c)) : html`<p class="muted small">No issues where you and ${lastName(c.name)} line up.</p>`}</section>
@@ -155,7 +199,7 @@ export const match = {
         <a class="btn btn-primary" href="${mode === 'election' ? `#/elections/${id}/quiz` : '#/views'}">Answer questions</a></div></div>`;
     }
     const ranked = rank(answers, fc(race).cands, positionsOf, qids);
-    const colors = candColors(fc(race).cands);
+    const colors = raceColors(race);
     return html`<div class="wrap page stack" style="max-width:920px">
       <nav class="crumbs"><a href="#/elections">My elections</a><span>/</span><span>${raceTitle(race)}</span></nav>
       <div><div class="eyebrow">Similarity ranking</div><h1 style="font-size:clamp(28px,3.6vw,42px);margin:6px 0 8px">Who matches you in ${raceTitle(race)}?</h1>
@@ -168,7 +212,7 @@ export const match = {
         <span class="pct">${row.score == null ? '—' : `${row.score}%`}</span>
       </button>`)}</div>
       <p class="small faint">How the score works: each issue scores 100% for identical answers down to 0% for opposite extremes, averaged over issues where the candidate’s position is documented. A candidate needs at least ${MIN_COMPARED} documented positions to get a score.</p>
-      <div class="row"><a class="btn btn-sm" href="#/elections/${id}/quiz">Answer differently for this election</a><a class="btn btn-sm btn-ghost" href="#/race/${id}">Full forecast</a></div>
+      <div class="row"><a class="btn btn-sm" href="#/elections/${id}/quiz">Answer differently for this election</a><a class="btn btn-sm btn-ghost" href="#/race/${id}">${race.result ? 'Full results' : race.format === 'office' || fc(race).open ? 'Race details' : 'Full forecast'}</a></div>
       ${photoCredits(ranked.map((row) => row.cand))}
     </div>`;
   },

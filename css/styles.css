@@ -258,9 +258,6 @@ button.chip[aria-pressed="true"] { background: var(--text-1); color: var(--bg); 
 .hero .lede { max-width: 680px; margin: 0 auto 16px; color: var(--text-2); font-size: 17px; }
 .label-pill { display: inline-flex; align-items: center; gap: 10px; padding: 7px 16px; border-radius: 999px; border: 1px solid var(--border-2); background: var(--surface-1); font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; color: var(--text-2); }
 .label-pill .dots { color: var(--amber); letter-spacing: 2px; }
-.quiz-cta { text-align: center; padding-top: 6px; }
-.quiz-cta .btn-cta { min-height: 56px; padding: 0 28px; font-size: 17px; max-width: 100%; white-space: normal; line-height: 1.25; }
-.quiz-cta p { max-width: 620px; margin: 10px auto 0; }
 .verdict-d { color: var(--dem); }
 .verdict-r { color: var(--rep); }
 .verdict-x { color: var(--third); }
@@ -360,6 +357,9 @@ table.data td.r, table.data th.r { text-align: right; }
 .map .region { stroke: var(--bg); stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer; transition: filter .12s; }
 .map .region:hover, .map .region:focus { filter: brightness(1.25) saturate(1.1); outline: none; }
 :root[data-theme="light"] .map .region:hover { filter: brightness(.92) saturate(1.15); }
+/* The House view: many small districts, thin borders between them, the states' borders drawn over them. */
+.map.map-fine .region { stroke-width: .4; }
+.map .borders path { fill: none; stroke: var(--bg); stroke-width: 1.5; vector-effect: non-scaling-stroke; pointer-events: none; }
 .map .outline-hover { fill: none; stroke: var(--text-1); stroke-width: 2; vector-effect: non-scaling-stroke; pointer-events: none; opacity: 0; }
 .map .outline-selected { fill: none; stroke: var(--text-1); stroke-width: 3; vector-effect: non-scaling-stroke; pointer-events: none; opacity: 0; filter: drop-shadow(0 0 6px rgba(255,255,255,.35)); }
 .map-labels text { font-size: 12px; font-weight: 700; fill: var(--text-1); pointer-events: none; paint-order: stroke; stroke: var(--bg); stroke-width: 3px; font-family: 'JetBrains Mono', monospace; }
@@ -681,11 +681,12 @@ body.is-intro .topbar, body.is-intro .site-header, body.is-intro .ticker, body.i
 /* France: hero, countdowns, next elections */
 .fr-hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: center; background: linear-gradient(120deg, color-mix(in srgb, #000091 22%, var(--surface-1)), var(--surface-1) 45%, color-mix(in srgb, #e1000f 16%, var(--surface-1))); }
 .fr-counts { display: flex; gap: 12px; }
-.fr-start { display: grid; justify-items: center; gap: 12px; }
+/* One column as wide as the page: an auto track grew to both cards' width (532px) on a phone. */
+.fr-start { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 12px; }
 .fr-start-btn { min-height: 50px; padding: 0 26px; font-size: 16px; }
 .fr-start-btn svg:last-child { transition: transform .15s; }
 .fr-start-btn[aria-expanded="true"] svg:last-child { transform: rotate(180deg); }
-.fr-start-choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; width: 100%; max-width: 900px; }
+.fr-start-choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 12px; width: 100%; max-width: 900px; }
 .fr-start-choices[hidden] { display: none; }
 .fr-choice { display: flex; gap: 14px; align-items: center; padding: 16px 18px; color: inherit; text-decoration: none; transition: border-color .15s; }
 .fr-choice:hover, .fr-choice:focus-visible { border-color: var(--brand-2); }
@@ -898,3 +899,36 @@ a.chip.enj-cand:hover { border-color: var(--text-3); }
   .enj-switches .seg { display: flex; width: 100%; flex-wrap: nowrap; }
   .enj-switches .seg button { flex: 1 1 0; min-width: 0; justify-content: center; text-align: center; white-space: normal; line-height: 1.25; padding: 6px 8px; border-radius: 14px; font-size: 13px; }
 }
+
+/* Results (after Election Day): the winner's mark, the count's table, seats won so far. */
+.win-mark { display: inline-flex; align-items: center; gap: 4px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--good); white-space: nowrap; vertical-align: middle; }
+:root[data-theme="light"] .win-mark { color: #006300; }
+.win-mark .icon { width: 13px; height: 13px; stroke-width: 3; }
+.win-tick { display: inline-flex; color: var(--good); margin-right: 3px; vertical-align: -2px; }
+:root[data-theme="light"] .win-tick { color: #006300; }
+.win-tick .icon { width: 13px; height: 13px; stroke-width: 3; }
+.result-chip .icon { width: 14px; height: 14px; stroke-width: 3; }
+.cand.winner, .compact-cand.winner { box-shadow: inset 0 0 0 2px var(--party, var(--border-2)); }
+.results-table .res-name { display: inline-flex; align-items: baseline; gap: 8px; }
+.results-table .res-name .key-box { flex: none; transform: translateY(1px); }
+.results-table tr.won td { font-weight: 650; color: var(--text-1); }
+.results-table tr.total td { color: var(--text-2); border-top: 1px solid var(--border-2); }
+.seat-bar { position: relative; }
+.seat-bar .maj { position: absolute; left: 50%; top: 7px; height: 20px; width: 2px; margin-left: -1px; border-radius: 1px; background: var(--text-1); }
+.control .bar span.i { background: var(--third); }
+
+/* Upcoming elections (#/upcoming) */
+.up-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 12px; }
+.up-card { display: grid; gap: 8px; align-content: start; padding: 16px 18px; }
+.up-card h3 { font-size: 17px; }
+.up-who { display: flex; flex-direction: column; gap: 4px; margin: 4px 0 0; padding: 0; list-style: none; }
+.up-who li { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 7px; }
+.up-who li > .faint:last-child { flex-basis: 100%; padding-left: 16px; font-size: 12.5px; }
+.up-who-inline { display: inline-flex; align-items: center; gap: 7px; }
+.pdot { width: 9px; height: 9px; border-radius: 50%; flex: none; display: inline-block; background: var(--seat-other, var(--other)); }
+.pdot.D { background: var(--dem); }
+.pdot.R { background: var(--rep); }
+.up-date { padding: 10px 0 2px; border-top: 1px solid var(--border); }
+.up-group { margin: 6px 0 0; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--text-2); font-weight: 650; }
+.up-select { width: auto; min-width: 170px; max-width: 100%; min-height: 36px; appearance: auto; }
+@media (max-width: 560px) { .up-select { flex: 1 1 100%; } }

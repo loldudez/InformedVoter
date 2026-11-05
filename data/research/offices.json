@@ -1,0 +1,1907 @@
+{
+ "updated": "2026-11-04",
+ "note": "Positions for candidates for statewide offices below governor, from the States Newsroom voter guides, read Nov. 4, 2026.",
+ "races": [
+  {
+   "id": "AL-AUD",
+   "candidates": [
+    {
+     "id": "AL-AUD:edwards",
+     "name": "Violet Edwards",
+     "party": "D",
+     "positions": {
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Alabama Reflector voter guide (the newsroom’s summary of each platform): Edwards would bring transparency to the state auditor’s office",
+        "url": "https://alabamareflector.com/voter-guides/contests/alstateauditor/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  },
+  {
+   "id": "AL-TREAS",
+   "candidates": [
+    {
+     "id": "AL-TREAS:houston",
+     "name": "Rosilyn Houston",
+     "party": "D",
+     "bio": "Banking executive.",
+     "positions": {
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Alabama Reflector voter guide (the newsroom’s summary of each platform): Houston would modernize the treasurer’s office to improve transparency on the spending of state funds",
+        "url": "https://alabamareflector.com/voter-guides/contests/alstatetreasurer/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  },
+  {
+   "id": "AZ-AG",
+   "candidates": [
+    {
+     "id": "AZ-AG:mayes",
+     "name": "Kris Mayes",
+     "party": "D",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Arizona Mirror voter guide (candidates’ survey answers, first published by Ballotpedia): Mayes says she fought to protect access to reproductive care",
+        "url": "https://azmirror.com/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "She fought to protect access to reproductive care"
+       }
+      },
+      "soc-08": {
+       "stance": 1,
+       "source": {
+        "title": "Arizona Mirror voter guide (candidates’ survey answers, first published by Ballotpedia): Mayes says she has defended Arizonans’ private personal data",
+        "url": "https://azmirror.com/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "defend Arizonan’s private personal data"
+       }
+      },
+      "eco-09": {
+       "stance": 2,
+       "source": {
+        "title": "Arizona Mirror voter guide (candidates’ survey answers, first published by Ballotpedia): Mayes created the state’s first Worker Protection Unit to investigate wage theft and defended prevailing wage laws",
+        "url": "https://azmirror.com/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "She created the state's first Worker Protection Unit to investigate wage theft and other workplace abuses."
+       }
+      },
+      "eco-04": {
+       "stance": 1,
+       "source": {
+        "title": "Arizona Mirror voter guide (candidates’ survey answers, first published by Ballotpedia): Mayes sued landlords over alleged rent collusion and blocked the Albertsons-Kroger merger",
+        "url": "https://azmirror.com/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "She sued RealPage and eight major landlords for colluding to artificially inflate rent across Arizona."
+       }
+      },
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "Arizona Mirror voter guide (candidates’ survey answers, first published by Ballotpedia): Mayes counts overturning tariffs she calls illegal among her wins",
+        "url": "https://azmirror.com/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "overturning illegal tariffs costing Arizonans an average $1,500 a year"
+       }
+      }
+     }
+    },
+    {
+     "id": "AZ-AG:petersen",
+     "name": "Warren Petersen",
+     "party": "R",
+     "positions": {
+      "imm-01": {
+       "stance": 1,
+       "source": {
+        "title": "Arizona Mirror voter guide (candidates’ survey answers, first published by Ballotpedia): Petersen wants to secure the border through measures like the Border Security Act",
+        "url": "https://azmirror.com/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "securing the border through measures like the Border Security Act"
+       }
+      },
+      "sta-06": {
+       "stance": 1,
+       "source": {
+        "title": "Arizona Mirror voter guide (candidates’ survey answers, first published by Ballotpedia): Petersen promises to eliminate corruption through transparency and accountability",
+        "url": "https://azmirror.com/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Eliminating corruption starts with transparency and accountability at the highest levels of our state agencies."
+       }
+      },
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Arizona Mirror voter guide (candidates’ survey answers, first published by Ballotpedia): Petersen would review state contracts so every tax dollar is spent legally and ethically",
+        "url": "https://azmirror.com/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "conduct a review of state contracts and regulatory decisions to ensure that every dollar of your tax money is spent legally and ethically"
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "AZ-SOS",
+   "candidates": [
+    {
+     "id": "AZ-SOS:fontes",
+     "name": "Adrian Fontes",
+     "party": "D",
+     "positions": {
+      "gov-06": {
+       "stance": 2,
+       "source": {
+        "title": "Arizona Mirror voter guide (the newsroom’s summary of each candidate’s record and statements): Fontes would expand mail, early and in-person voting and backed a longer early voting period",
+        "url": "https://azmirror.com/voter-guides/contests/secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Mail-in voting has been a cornerstone of secure and accessible elections."
+       }
+      }
+     }
+    },
+    {
+     "id": "AZ-SOS:kolodin",
+     "name": "Alexander Kolodin",
+     "party": "R",
+     "positions": {
+      "gov-06": {
+       "stance": -2,
+       "source": {
+        "title": "Arizona Mirror voter guide (the newsroom’s summary of each candidate’s record and statements): Kolodin introduced a ballot measure to end the Active Early Voter List and shorten early voting",
+        "url": "https://azmirror.com/voter-guides/contests/secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "CO-TREAS",
+   "candidates": [
+    {
+     "id": "CO-TREAS:bridges",
+     "name": "Jeff Bridges",
+     "party": "D",
+     "positions": {
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Newsline voter guide (the newsroom’s summary of each platform): Bridges would invest some state money in housing, infrastructure and clean energy",
+        "url": "https://coloradonewsline.com/voter-guides/contests/2026-general-colorado-treasurer/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Newsline voter guide (the newsroom’s summary of each platform): Bridges would invest some state money in clean energy",
+        "url": "https://coloradonewsline.com/voter-guides/contests/2026-general-colorado-treasurer/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  },
+  {
+   "id": "GA-AG",
+   "candidates": [
+    {
+     "id": "GA-AG:miller",
+     "name": "Tanya F. Miller",
+     "party": "D",
+     "bio": "Lawyer and former Fulton County homicide prosecutor; state representative since 2023 and chair of the House Democratic Caucus.",
+     "positions": {
+      "eco-04": {
+       "stance": 1,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Miller would investigate corporations that collude on prices or violate antitrust rules",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "violating antitrust rules and rigging the economy against working and middle class folks, they need to be held to account"
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Miller would hold corporations to account for ignoring environmental regulations and poisoning water",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "ignoring environmental regulations and poisoning our water with forever chemicals"
+       }
+      },
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Miller would extend the Open Records Act to the Legislature",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Lawmakers who make decisions about how to spend taxpayer money should not be the only Georgians exempt from the sunshine."
+       }
+      },
+      "sta-06": {
+       "stance": 1,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Miller would push to extend the Open Records Act to legislators’ offices",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I think the act should be extended to the House, the Senate, their offices, including my own chamber"
+       }
+      }
+     }
+    },
+    {
+     "id": "GA-AG:strickland",
+     "name": "Brian Strickland",
+     "party": "R",
+     "bio": "Lawyer from McDonough; in the Legislature since 2013, now a state senator and chair of the Senate Judiciary Committee.",
+     "positions": {
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Strickland would make the attorney general’s office a leader on enforcing open records laws",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "We have to make sure that local governments, in particular, are not acting in secret"
+       }
+      },
+      "soc-08": {
+       "stance": 1,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Strickland wants greater oversight of tech companies and protections for users, especially children",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "We also have to hold Big Tech accountable."
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "GA-LG",
+   "candidates": [
+    {
+     "id": "GA-LG:dolezal",
+     "name": "Greg Dolezal",
+     "party": "R",
+     "bio": "Business owner from Cumming; state senator and chair of the Senate Transportation Committee.",
+     "positions": {
+      "edu-06": {
+       "stance": 1,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Dolezal points to the Georgia Promise Scholarship, state money for private school or homeschooling, as a good example of lawmaking",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Dolezal would prioritize cutting government spending",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "We can ensure that we right-size government"
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Dolezal cites state income tax cuts, gas tax suspensions and property tax refunds as making Georgia affordable",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "All of those things are directly putting money into the pockets of average Georgians"
+       }
+      },
+      "sta-04": {
+       "stance": 2,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Dolezal centered his campaign on cutting property taxes",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "GA-LG:mclaurin",
+     "name": "Josh McLaurin",
+     "party": "D",
+     "bio": "Attorney from Sandy Springs; state legislator since 2019, now a state senator.",
+     "positions": {
+      "hea-03": {
+       "stance": 2,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): McLaurin would expand Medicaid under the ACA and use state money to replace lost subsidies",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I am not only an advocate of expanding Medicaid under the ACA, which my opponent is not"
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): McLaurin would repeal Georgia’s six-week abortion ban",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): McLaurin would repeal Georgia’s six-week abortion ban",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): McLaurin would push zoning and permitting reform to bring down the cost of building homes",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "modest zoning and design standard reform"
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "GA-SOS",
+   "candidates": [
+    {
+     "id": "GA-SOS:reynolds",
+     "name": "Penny Brown Reynolds",
+     "party": "D",
+     "bio": "Former Fulton County state judge; helped lead the civil rights office at the U.S. Department of Agriculture under President Biden.",
+     "positions": {
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Brown Reynolds says voting by mail must stay an option",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "So voting by mail has to become and stay a viable alternative for people to vote."
+       }
+      },
+      "gov-05": {
+       "stance": 1,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Brown Reynolds supports requiring voters to show identification",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I believe that ID procedures that we have now have been working."
+       }
+      }
+     }
+    },
+    {
+     "id": "GA-SOS:fleming",
+     "name": "Tim Fleming",
+     "party": "R",
+     "bio": "State representative from Covington and former deputy secretary of state under Brian Kemp.",
+     "positions": {
+      "gov-06": {
+       "stance": -2,
+       "source": {
+        "title": "Georgia Recorder voter guide (the newsroom’s interviews with the candidates): Fleming would support limiting absentee ballots to elderly, disabled, military and overseas voters",
+        "url": "https://georgiarecorder.com/voter-guides/contests/2026-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I believe with all the opportunities we have to vote, we need to make it a priority to vote in person"
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "IA-AG",
+   "candidates": [
+    {
+     "id": "IA-AG:willems",
+     "name": "Nathan Willems",
+     "party": "D",
+     "bio": "Labor lawyer in Cedar Rapids; state representative from 2008 to 2012.",
+     "positions": {
+      "eco-09": {
+       "stance": 1,
+       "source": {
+        "title": "Iowa Capital Dispatch voter guide (the newsroom’s summary of each platform): Willems would set up a wage theft recovery unit in the attorney general’s office",
+        "url": "https://iowacapitaldispatch.com/voter-guides/contests/2026-iowa-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "Iowa Capital Dispatch voter guide (the newsroom’s summary of each platform): Willems would seek meaningful penalties for companies polluting Iowa’s air and water",
+        "url": "https://iowacapitaldispatch.com/voter-guides/contests/2026-iowa-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  },
+  {
+   "id": "IA-AUD",
+   "candidates": [
+    {
+     "id": "IA-AUD:wettach",
+     "name": "Taylor Wettach",
+     "party": "D",
+     "positions": {
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Iowa Capital Dispatch voter guide (the newsroom’s summary of each platform): Wettach would reverse the 2023 law limiting the auditor’s access to information in investigations",
+        "url": "https://iowacapitaldispatch.com/voter-guides/contests/2026-iowa-auditor-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  },
+  {
+   "id": "IA-SOS",
+   "candidates": [
+    {
+     "id": "IA-SOS:pate",
+     "name": "Paul Pate",
+     "party": "R",
+     "positions": {
+      "gov-05": {
+       "stance": 2,
+       "source": {
+        "title": "Iowa Capital Dispatch voter guide (the newsroom’s summary of each platform): Pate points to his support for and work on Iowa’s voter identification requirements",
+        "url": "https://iowacapitaldispatch.com/voter-guides/contests/2026-iowa-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "IA-SOS:peterman",
+     "name": "Ryan Peterman",
+     "party": "D",
+     "positions": {
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Iowa Capital Dispatch voter guide (the newsroom’s summary of each platform): Peterman opposes the changes that shortened Iowa’s early voting window",
+        "url": "https://iowacapitaldispatch.com/voter-guides/contests/2026-iowa-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "IA-TREAS",
+   "candidates": [
+    {
+     "id": "IA-TREAS:smith",
+     "name": "Roby Smith",
+     "party": "R",
+     "positions": {
+      "edu-10": {
+       "stance": 1,
+       "source": {
+        "title": "Iowa Capital Dispatch voter guide (the newsroom’s summary of each platform): Smith supports improving financial literacy education across the state",
+        "url": "https://iowacapitaldispatch.com/voter-guides/contests/2026-iowa-treasurer/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  },
+  {
+   "id": "ID-AG",
+   "candidates": [
+    {
+     "id": "ID-AG:hickman",
+     "name": "Lori Hickman",
+     "party": "D",
+     "bio": "Attorney in Boise.",
+     "positions": {
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Hickman supports Proposition 1, which would end Idaho’s strict abortion ban",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I support Proposition 1"
+       }
+      },
+      "soc-04": {
+       "stance": -1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Hickman supports Proposition 1, which would end Idaho’s strict abortion ban",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "gov-10": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Hickman believes in voters’ right to propose ballot initiatives",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I believe in respecting the right of Idaho voters to propose ballot initiatives and participate directly in our democratic process."
+       }
+      },
+      "ene-02": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Hickman is open to strengthening Idaho’s role in nuclear energy, with enforceable protections",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I am open to innovation and to strengthening Idaho’s role in nuclear energy"
+       }
+      }
+     }
+    },
+    {
+     "id": "ID-AG:labrador",
+     "name": "Raúl Labrador",
+     "party": "R",
+     "positions": {
+      "soc-03": {
+       "stance": -2,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Labrador opposes Proposition 1, which would end Idaho’s strict abortion ban",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I oppose Proposition 1 because it is too extreme."
+       }
+      },
+      "ene-02": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Labrador says Idaho should remain open to responsible nuclear innovation",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Idaho should be proud of that legacy and remain open to responsible nuclear innovation."
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "ID-AUD",
+   "candidates": [
+    {
+     "id": "ID-AUD:woolf",
+     "name": "Brandon Woolf",
+     "party": "R",
+     "bio": "Idaho’s state controller for nearly 14 years; built the Transparent Idaho and Townhall Idaho sites.",
+     "positions": {
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Woolf calls transparency in state spending his true north",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-controller/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "if the state is spending a dollar, citizens should be able to find out how, when, and why."
+       }
+      }
+     }
+    },
+    {
+     "id": "ID-AUD:mohan",
+     "name": "Rakesh Mohan",
+     "party": "D",
+     "bio": "Retired legislative auditor and evaluator (36 years in four states, 21 in Idaho); visiting professor of public policy at Boise State.",
+     "positions": {
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Mohan would make government transparency one of his highest priorities",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-controller/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "If elected, government transparency will be one of my highest priorities."
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "ID-LG",
+   "candidates": [
+    {
+     "id": "ID-LG:bedke",
+     "name": "Scott Bedke",
+     "party": "R",
+     "bio": "Rancher from Oakley; the incumbent lieutenant governor.",
+     "positions": {
+      "sta-01": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Bedke would invest in water and transportation infrastructure",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "investing in water and transportation infrastructure"
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Bedke would ease regulations and permitting barriers so the private sector builds more housing",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "addressing unnecessary regulations, permitting barriers, and infrastructure costs while respecting local communities"
+       }
+      },
+      "edu-06": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Bedke wants families to have more choices in education",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "parents should have options when deciding what is best for their children"
+       }
+      },
+      "soc-03": {
+       "stance": -1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Bedke opposes Proposition 1, which would end Idaho’s strict abortion ban",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I oppose Proposition 1"
+       }
+      }
+     }
+    },
+    {
+     "id": "ID-LG:myricks",
+     "name": "Eric Myricks",
+     "party": "D",
+     "bio": "Entrepreneur from Nampa.",
+     "positions": {
+      "edu-04": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Myricks would push for teacher pay competitive with the region",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I'll push for teacher pay that's competitive with the region"
+       }
+      },
+      "edu-06": {
+       "stance": -2,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Myricks would cap Idaho’s private school tax credit and work toward repealing it",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I support capping the credit now and working toward repealing HB 93 over time."
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Myricks would reduce or repeal Idaho’s sales tax on groceries",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I'll work to reduce or repeal the tax."
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Myricks supports Proposition 1, which would end Idaho’s strict abortion ban",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Medical decisions belong between a woman and her doctor. The government has no place in the exam room."
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Myricks supports Proposition 1, which would end Idaho’s strict abortion ban",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "hou-04": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Myricks would let communities allow greater density and manufactured housing",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "letting communities allow greater density and manufactured housing where it makes sense"
+       }
+      },
+      "eco-07": {
+       "stance": -1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Myricks opposes paying for tax cuts with across-the-board budget cuts",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "You can't build the roads and schools that growth demands on unrealistic, shrinking budgets."
+       }
+      },
+      "sta-02": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Myricks would fight for rural school funding",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I'd fight for rural school funding at least equal, per student, to the benefit flowing to urban and suburban areas."
+       }
+      },
+      "edu-01": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire): Myricks would use his platform to support education funding",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "ID-SOS",
+   "candidates": [
+    {
+     "id": "ID-SOS:mcgrane",
+     "name": "Phil McGrane",
+     "party": "R",
+     "positions": {
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire; Shawn Keenan did not respond): McGrane says Idahoans should keep the option to vote absentee by mail, without needless restrictions",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Idaho voters should continue to have the option to vote absentee by mail."
+       }
+      },
+      "gov-05": {
+       "stance": 1,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire; Shawn Keenan did not respond): McGrane points to Idaho’s voter identification requirement as part of a strong system",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "We require voter identification, maintain a statewide voter registration system"
+       }
+      },
+      "gov-03": {
+       "stance": 2,
+       "source": {
+        "title": "Idaho Capital Sun voter guide (candidates’ answers to the newsroom’s questionnaire; Shawn Keenan did not respond): McGrane would modernize Idaho’s campaign finance disclosure laws",
+        "url": "https://idahocapitalsun.com/voter-guides/contests/2026-general-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Idaho voters deserve timely, meaningful information about who is funding political activity in our state."
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  },
+  {
+   "id": "IN-AUD",
+   "candidates": [
+    {
+     "id": "IN-AUD:bailey",
+     "name": "Jessica Bailey",
+     "party": "D",
+     "bio": "Circuit court clerk in her second term; former Portage Township school board member.",
+     "positions": {
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Bailey would make the state transparency portal easier to use for contracts, vendor payments and salaries",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/comptroller-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Bailey supports property tax relief for homeowners, though not eliminating property taxes",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/comptroller-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "hou-05": {
+       "stance": 2,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Bailey supports tax-free savings and a grant for first-time homebuyers",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/comptroller-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "soc-07": {
+       "stance": 2,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Bailey supports childcare tax credits and vouchers",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/comptroller-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "IN-AUD:nieshalla",
+     "name": "Elise Nieshalla",
+     "party": "R",
+     "positions": {
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Nieshalla promotes national fiscal solvency as chair of state financial officers’ National Debt Crisis Taskforce",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/comptroller-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Nieshalla promotes transparency through the state transparency portal and a federal funding dashboard",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/comptroller-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    },
+    {
+     "id": "IN-AUD:schick",
+     "name": "John Schick",
+     "party": "L",
+     "bio": "Business consultant and former state Libertarian Party treasurer.",
+     "positions": {
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Schick told the newsroom in 2022 he wants reduced government spending",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/comptroller-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "IN-SOS",
+   "candidates": [
+    {
+     "id": "IN-SOS:ballard",
+     "name": "Greg Ballard",
+     "party": "I",
+     "bio": "Former Republican mayor of Indianapolis (2008–2015) and retired Marine lieutenant colonel, running on the new Lincoln Party line.",
+     "positions": {
+      "gov-09": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Ballard pledges not to endorse, donate to or raise money for candidates whose elections his office oversees",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I will not endorse, donate to, or raise money for candidates whose elections my office oversees."
+       }
+      },
+      "soc-07": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Ballard created a pre-K scholarship program as mayor and says no family should wonder where to find childcare",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "No family should ever worry about a roof over their head or wonder where to find food or childcare for their children."
+       }
+      }
+     }
+    },
+    {
+     "id": "IN-SOS:bayh",
+     "name": "Beau Bayh",
+     "party": "D",
+     "bio": "Indianapolis attorney who rose to captain in the Marine Corps and its reserve; clerked for federal appeals judge David Hamilton.",
+     "positions": {
+      "gov-10": {
+       "stance": 2,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Bayh would implement citizen-led ballot initiatives",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "implementing citizen-led ballot initiatives, protecting early voting"
+       }
+      },
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Bayh would protect early voting",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Bayh says working Hoosiers need tax relief, starting with the gas tax and the sales tax on utilities",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I believe that working Hoosiers are in desperate need of tax relief."
+       }
+      },
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Bayh would open an independent audit of the secretary of state’s office on day one",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Cleaning up the corruption in the Secretary of State’s office by opening an Independent audit on day one."
+       }
+      }
+     }
+    },
+    {
+     "id": "IN-SOS:engling",
+     "name": "Max Engling",
+     "party": "R",
+     "bio": "Former regional director for Sen. Jim Banks and U.S. House Republican staffer, including for Speaker Kevin McCarthy.",
+     "positions": {
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Engling would reduce property taxes while letting local governments fund their operations",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I believe it is important to reduce property taxes"
+       }
+      }
+     }
+    },
+    {
+     "id": "IN-SOS:shillings",
+     "name": "Lauri Shillings",
+     "party": "L",
+     "bio": "Chair of the Libertarian Party of Hamilton County; creative director at the University of Indianapolis.",
+     "positions": {
+      "gov-03": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Shillings would show who is paying for politicians at every level",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I want to make it so you can see who is paying for your politicians at every level."
+       }
+      },
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (candidates’ survey answers and the newsroom’s summaries): Shillings wants an assessment of how tax dollars are used",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "an assessment of how our tax dollars are used might be in order"
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "IN-TREAS",
+   "candidates": [
+    {
+     "id": "IN-TREAS:kebe",
+     "name": "Coumba Kebe",
+     "party": "D",
+     "bio": "Health care executive; founded Scope Consulting, which works with home care agencies.",
+     "positions": {
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (the newsroom’s summaries; Daniel Elliott did not return its questionnaire): Kebe would help finance affordable workforce housing through state bonding",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/treasurer/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "soc-07": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (the newsroom’s summaries; Daniel Elliott did not return its questionnaire): Kebe would help secure low-cost financing to expand childcare",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/treasurer/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Indiana Capital Chronicle voter guide (the newsroom’s summaries; Daniel Elliott did not return its questionnaire): Kebe proposes plain-language reporting on state finances and investments",
+        "url": "https://indianacapitalchronicle.com/voter-guides/contests/treasurer/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  },
+  {
+   "id": "MD-AG",
+   "candidates": [
+    {
+     "id": "MD-AG:brown",
+     "name": "Anthony Brown",
+     "party": "D",
+     "positions": {
+      "cri-05": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide (candidates’ answers to the newsroom’s questionnaire): Brown would expand mental health and reentry support and invest in rehabilitation",
+        "url": "https://marylandmatters.org/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "We must reduce recidivism, expand mental health and reentry support, and invest in prevention and rehabilitation alongside accountability."
+       }
+      },
+      "cri-08": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide (candidates’ answers to the newsroom’s questionnaire): Brown supports restorative justice and diversion programs for young people",
+        "url": "https://marylandmatters.org/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I support evidence-based approaches, including restorative justice and diversion programs"
+       }
+      },
+      "cri-07": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide (candidates’ answers to the newsroom’s questionnaire): Brown would invest in prevention",
+        "url": "https://marylandmatters.org/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "soc-02": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide (candidates’ answers to the newsroom’s questionnaire): Brown would enforce civil rights laws and protections against discrimination",
+        "url": "https://marylandmatters.org/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide (candidates’ answers to the newsroom’s questionnaire): Brown names the erosion of reproductive freedom among the greatest threats to civil rights",
+        "url": "https://marylandmatters.org/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "The greatest threat to civil rights is the erosion of equal protection, voting rights, reproductive freedom, and protections against discrimination."
+       }
+      }
+     }
+    },
+    {
+     "id": "MD-AG:rutledge",
+     "name": "James Rutledge III",
+     "party": "R",
+     "bio": "Attorney in private practice in Harford County for four decades; Bel Air town commissioner from 2023 to 2025.",
+     "positions": {
+      "soc-01": {
+       "stance": 2,
+       "source": {
+        "title": "Maryland Matters voter guide (candidates’ answers to the newsroom’s questionnaire): Rutledge would never use the office to punish political speech, which he calls censorship",
+        "url": "https://marylandmatters.org/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "that path leads to censorship, which I condemn."
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide (candidates’ answers to the newsroom’s questionnaire): Rutledge would investigate and prosecute environmental crimes that harm clean water and the Chesapeake Bay",
+        "url": "https://marylandmatters.org/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Protect clean water and our Chesapeake Bay by investigating and prosecuting environmental crimes that harm them."
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "MD-AUD",
+   "candidates": [
+    {
+     "id": "MD-AUD:dunn",
+     "name": "Sonya Dunn",
+     "party": "R",
+     "bio": "Business executive and retired military spouse.",
+     "positions": {
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "Maryland Matters voter guide (candidates’ answers to the newsroom’s questionnaire): Dunn opposed the 2025 capital gains tax on high earners",
+        "url": "https://marylandmatters.org/voter-guides/contests/comptroller-comptroller/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "2% capital gains tax on high earners and 3% tax on IT/data services discourages investment"
+       }
+      },
+      "sta-10": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide (candidates’ answers to the newsroom’s questionnaire): Dunn backs tax bills she says help retain manufacturing jobs in Maryland",
+        "url": "https://marylandmatters.org/voter-guides/contests/comptroller-comptroller/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Short term revenue loss but helps retain manufacturing jobs and reduce food deserts in Maryland."
+       }
+      },
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide (candidates’ answers to the newsroom’s questionnaire): Dunn would strengthen oversight of budgets and contracts",
+        "url": "https://marylandmatters.org/voter-guides/contests/comptroller-comptroller/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Strengthen financial management oversight of budgets and contracts."
+       }
+      }
+     }
+    },
+    {
+     "id": "MD-AUD:lierman",
+     "name": "Brooke Lierman",
+     "party": "D",
+     "positions": {
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Maryland Matters voter guide (candidates’ answers to the newsroom’s questionnaire): Lierman modernized contract spending reporting so Marylanders can see how their money is spent",
+        "url": "https://marylandmatters.org/voter-guides/contests/comptroller-comptroller/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I've also modernized contract spending reporting so Marylanders can see exactly how their money is being spent."
+       }
+      },
+      "eco-02": {
+       "stance": 1,
+       "source": {
+        "title": "Maryland Matters voter guide (candidates’ answers to the newsroom’s questionnaire): Lierman has championed access to the Earned Income and Child Tax Credits",
+        "url": "https://marylandmatters.org/voter-guides/contests/comptroller-comptroller/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I've championed access to Earned Income Tax Credit and the Child Tax Credit"
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "NE-AG",
+   "candidates": [
+    {
+     "id": "NE-AG:brasher",
+     "name": "Jocelyn Brasher",
+     "party": "D",
+     "bio": "Former assistant attorney general in Nebraska’s Consumer Protection Bureau (five years).",
+     "positions": {
+      "eco-04": {
+       "stance": 2,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire): Brasher would use antitrust law aggressively against price gouging and corporate consolidation",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "using our consumer protection and antitrust laws to ensure markets are fair and competitive so life stays affordable for Nebraskans"
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  },
+  {
+   "id": "NE-AUD",
+   "candidates": [
+    {
+     "id": "NE-AUD:knight",
+     "name": "John Knight",
+     "party": "America First",
+     "positions": {
+      "sta-11": {
+       "stance": 2,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire): Knight would oversee economic development subsidies such as tax increment financing",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-auditor-of-public-accounts/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "taxpayers deserve to know whether these programs actually deliver what they promise"
+       }
+      },
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire): Knight would post a public dashboard tracking every audit recommendation",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-auditor-of-public-accounts/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I would post a public, searchable dashboard that tracks every recommendation"
+       }
+      }
+     }
+    },
+    {
+     "id": "NE-AUD:foley",
+     "name": "Mike Foley",
+     "party": "R",
+     "positions": {
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire): Foley posts every audit report and finding on the office’s website",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-auditor-of-public-accounts/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Every audit report, audit letter or other official statement of findings is always posted immediately to our website."
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "NE-SOS",
+   "candidates": [
+    {
+     "id": "NE-SOS:krist",
+     "name": "Bob Krist",
+     "party": "America First",
+     "bio": "State senator for 10 years.",
+     "positions": {
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire): Krist would keep absentee, early and mail-in voting, including the all-mail counties",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "In-person, absentee, early and mail-in voting must be protected!"
+       }
+      },
+      "gov-10": {
+       "stance": 1,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire): Krist would work to enact initiatives voters pass",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "When 72% of the voters petition an action, we need to listen, regardless of any bias."
+       }
+      }
+     }
+    },
+    {
+     "id": "NE-SOS:petersen",
+     "name": "Scott Petersen",
+     "party": "R",
+     "positions": {
+      "gov-06": {
+       "stance": -1,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire): Petersen wants in-person voting to stay the primary method, with mail voting kept for those who rely on it",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I believe in-person voting should remain the primary method of casting a ballot whenever practical."
+       }
+      },
+      "gov-10": {
+       "stance": 1,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire): Petersen calls the initiative and referendum process an important constitutional right",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Nebraska's initiative and referendum process is an important constitutional right that allows citizens to bring issues directly before the voters."
+       }
+      }
+     }
+    },
+    {
+     "id": "NE-SOS:rumbaugh",
+     "name": "Paul Rumbaugh",
+     "party": "Working People",
+     "positions": {
+      "gov-10": {
+       "stance": 1,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire): Rumbaugh calls ballot measures a vital tool for everyday Nebraskans",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "My stance on ballot measures is that they are a vital tool for giving a voice to everyday Nebraskans."
+       }
+      }
+     }
+    },
+    {
+     "id": "NE-SOS:slattery",
+     "name": "Sarah Slattery",
+     "party": "D",
+     "positions": {
+      "gov-06": {
+       "stance": 1,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire): Slattery would keep mail-in voting as it is, including the all-mail counties",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "eliminating mail-in options for rural communities is simply the wrong move."
+       }
+      },
+      "gov-10": {
+       "stance": 1,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire): Slattery calls the ballot initiative process a vital constitutional tool",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "The voter-led ballot initiative process is a vital constitutional tool designed to give everyday Nebraskans a direct voice in our democracy."
+       }
+      },
+      "gov-03": {
+       "stance": 1,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire): Slattery says Nebraskans have a right to know who funds petition campaigns",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Nebraskans have a fundamental right to know who is funding these campaigns"
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "NE-TREAS",
+   "candidates": [
+    {
+     "id": "NE-TREAS:spellerberg",
+     "name": "Joey Spellerberg",
+     "party": "R",
+     "positions": {
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire; Daniel Ebers did not respond to most of it): Spellerberg’s priorities include increasing transparency in government spending",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-state-treasurer/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Nebraskans should be able to see where their tax dollars are coming from and where they are going."
+       }
+      },
+      "edu-10": {
+       "stance": 1,
+       "source": {
+        "title": "Nebraska Examiner voter guide (candidates’ answers to the newsroom’s questionnaire; Daniel Ebers did not respond to most of it): Spellerberg would expand financial literacy",
+        "url": "https://nebraskaexaminer.com/voter-guides/contests/2026-general-nebraska-state-treasurer/",
+        "date": "2026-11-04",
+        "accessed": true
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  },
+  {
+   "id": "NM-AG",
+   "candidates": [
+    {
+     "id": "NM-AG:torrez",
+     "name": "Raúl Torrez",
+     "party": "D",
+     "bio": "Attorney general since 2023; former Bernalillo County district attorney and federal prosecutor.",
+     "positions": {
+      "soc-08": {
+       "stance": 2,
+       "source": {
+        "title": "Source NM voter guide (the newsroom’s interviews with the candidates): Torrez would modernize consumer protection law and the laws regulating big tech, including data brokering",
+        "url": "https://sourcenm.com/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "We have a lot of work to do in both modernizing our consumer protection and our laws that regulate big tech."
+       }
+      },
+      "soc-02": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM voter guide (the newsroom’s interviews with the candidates): Torrez will seek new authority for his office to investigate civil rights",
+        "url": "https://sourcenm.com/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "We’re also going to push for new authority to investigate civil rights"
+       }
+      }
+     }
+    },
+    {
+     "id": "NM-AG:kane",
+     "name": "Sam Kane",
+     "party": "R",
+     "bio": "Las Cruces lawyer in private practice since 2004, mostly personal injury cases; has contracted with the public defender’s office.",
+     "positions": {
+      "cri-04": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM voter guide (the newsroom’s interviews with the candidates): Kane supports a bill toughening penalties for juveniles who commit serious, heinous crimes",
+        "url": "https://sourcenm.com/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "there are situations where if you kill in cold blood, then you need to be tried as an adult."
+       }
+      },
+      "cri-07": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM voter guide (the newsroom’s interviews with the candidates): Kane would put much of his energy into preventing crime",
+        "url": "https://sourcenm.com/voter-guides/contests/attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I would put a lot of my energy on preventing it from happening in the first place."
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "NM-AUD",
+   "candidates": [
+    {
+     "id": "NM-AUD:lawrence",
+     "name": "Joshua Lawrence",
+     "party": "R",
+     "bio": "Tucumcari resident; previously ran for Bernalillo County sheriff.",
+     "positions": {
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Source NM voter guide (the newsroom’s interviews with the candidates): Lawrence would set up a New Mexico DOGE office to show where every penny is spent",
+        "url": "https://sourcenm.com/voter-guides/contests/state-auditor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "see where every penny is spent, and making it completely transparent so that people can see everything that’s going on."
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM voter guide (the newsroom’s interviews with the candidates): Lawrence plans to shrink the auditor’s office toward small government",
+        "url": "https://sourcenm.com/voter-guides/contests/state-auditor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Ultimately, the plan is for small government."
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  },
+  {
+   "id": "NM-SOS",
+   "candidates": [
+    {
+     "id": "NM-SOS:goolsby",
+     "name": "Ramona Goolsby",
+     "party": "R",
+     "bio": "Retired nurse practitioner and rancher; moved to New Mexico in 2019.",
+     "positions": {
+      "gov-05": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM voter guide (the newsroom’s interviews with the candidates): Goolsby wants a voter ID bill debated in the 2027 session, with help for voters who lack documents",
+        "url": "https://sourcenm.com/voter-guides/contests/secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "Voter ID is something that’s very important to the public."
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  },
+  {
+   "id": "NM-TREAS",
+   "candidates": [
+    {
+     "id": "NM-TREAS:montoya",
+     "name": "Laura Montoya",
+     "party": "D",
+     "bio": "State treasurer since 2023; Sandoval County treasurer for two terms before that.",
+     "positions": {
+      "edu-10": {
+       "stance": 2,
+       "source": {
+        "title": "Source NM voter guide (the newsroom’s interviews with the candidates): Montoya wants financial literacy to be a high school graduation requirement",
+        "url": "https://sourcenm.com/voter-guides/contests/state-treasurer/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "financial literacy as a graduation requirement"
+       }
+      },
+      "eco-10": {
+       "stance": -1,
+       "source": {
+        "title": "Source NM voter guide (the newsroom’s interviews with the candidates): Montoya says tariffs’ costs fall on U.S. consumers",
+        "url": "https://sourcenm.com/voter-guides/contests/state-treasurer/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "The burden is on whoever purchases in the United States, which then goes on to the consumer"
+       }
+      }
+     }
+    },
+    {
+     "id": "NM-TREAS:ellison",
+     "name": "Jim Ellison",
+     "party": "R",
+     "bio": "Chartered financial analyst; researched natural disasters’ effect on the power grid at Sandia National Laboratories.",
+     "positions": {
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Source NM voter guide (the newsroom’s interviews with the candidates): Ellison would publish a plain-English investment performance report with benchmarks",
+        "url": "https://sourcenm.com/voter-guides/contests/state-treasurer/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "which would be in plain English and would have appropriate benchmarks"
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "RI-AG",
+   "candidates": [
+    {
+     "id": "RI-AG:ahern",
+     "name": "Kimberly Ahern",
+     "party": "D",
+     "bio": "Former state prosecutor (Special Victims Unit) and state government administrator; first run for office.",
+     "positions": {
+      "eco-09": {
+       "stance": 1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Ahern would fight for workers’ rights and fair wages for health care providers and staff",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "It means fighting for workers’ rights and fair wages for providers and staff."
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Ahern would sue the federal government over cuts to Medicare and Medicaid",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "taking the federal government to court over President Trump’s unconscionable cuts to Medicare and Medicaid"
+       }
+      },
+      "soc-10": {
+       "stance": 1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Ahern says the Trump administration is attacking her right to be married to her wife, and she would fight it",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "The Trump administration is attacking my right to be married to my wife."
+       }
+      },
+      "soc-03": {
+       "stance": 1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Ahern says the administration is attacking her daughters’ right to control their own bodies",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "They are attacking my three daughters’ rights to control their own bodies."
+       }
+      },
+      "ene-04": {
+       "stance": 1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Ahern opposes federal moves she says undermine clean air and water",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "They are undermining the clean air we breathe, the clean water we drink"
+       }
+      }
+     }
+    },
+    {
+     "id": "RI-AG:gordon",
+     "name": "Alan Gordon",
+     "party": "R",
+     "bio": "Canon lawyer from West Greenwich; ran for attorney general as an independent in 2018.",
+     "positions": {
+      "gov-09": {
+       "stance": 1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Gordon would recuse the office from open-records cases about itself, as he reads state ethics law",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I will not only recuse the office properly for the first time"
+       }
+      },
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Gordon would end what he calls the office’s history of hiding open records",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "The Rhode Island Attorney General’s Office has a long history of hiding supposedly open records, and I will end that."
+       }
+      },
+      "cri-03": {
+       "stance": 1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Gordon says someone other than the police must investigate when police are investigating themselves",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-attorney-general/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "When the police are investigating themselves, someone else has to step in."
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "RI-LG",
+   "candidates": [
+    {
+     "id": "RI-LG:loughlin",
+     "name": "John Loughlin",
+     "party": "R",
+     "bio": "Retired Army Reserve lieutenant colonel, combat veteran and former radio host; former state representative and House minority whip.",
+     "positions": {
+      "gov-12": {
+       "stance": 2,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Loughlin would have the office hire auditors to review government spending, at no new cost",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "This would give Rhode Islanders clearer insight into how their tax dollars are being spent."
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Loughlin would identify government waste, duplication and inefficiency to save taxpayers money",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "identify government waste, duplication, and inefficiency"
+       }
+      }
+     }
+    },
+    {
+     "id": "RI-LG:matos",
+     "name": "Sabina Matos",
+     "party": "D",
+     "bio": "Lieutenant governor since 2021; former Providence City Council president.",
+     "positions": {
+      "hou-01": {
+       "stance": 2,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Matos has pushed for historic state investments in affordable housing",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "advocating for the state to make historic investments in affordable housing"
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Matos says she has fought to protect reproductive freedoms",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-lieutenant-governor/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I’ve also faced the tough fights to protect reproductive freedoms"
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "RI-SOS",
+   "candidates": [
+    {
+     "id": "RI-SOS:amore",
+     "name": "Gregg Amore",
+     "party": "D",
+     "bio": "Secretary of state since 2023; state representative for 10 years before that.",
+     "positions": {
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Amore supports changes to the public records law that make records easier and cheaper to get",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-secretary-of-state/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "I support changes to the APRA that make public records easier to access, reduce unnecessary costs and delays"
+       }
+      }
+     }
+    }
+   ],
+   "researchNote": "Positions from a States Newsroom voter guide, read Nov. 4, 2026: the candidates’ own answers, or the newsroom’s summary of them where the source says so."
+  },
+  {
+   "id": "RI-TREAS",
+   "candidates": [
+    {
+     "id": "RI-TREAS:diossa",
+     "name": "James Diossa",
+     "party": "D",
+     "bio": "General treasurer since 2023; former mayor of Central Falls.",
+     "positions": {
+      "hou-05": {
+       "stance": 2,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire; Micholas Credle did not respond): Diossa set up RI AnchorHome, which uses state deposits to make mortgages cheaper for first-time homebuyers",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-general-treasurer/",
+        "date": "2026-11-04",
+        "accessed": true,
+        "quote": "The program developed in my first term, RI AnchorHome, has already delivered meaningful results"
+       }
+      }
+     }
+    }
+   ],
+   "partial": true
+  }
+ ]
+}

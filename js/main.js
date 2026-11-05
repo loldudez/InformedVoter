@@ -1,7 +1,8 @@
 import { store } from './store.js';
 import { icon } from './icons.js';
 import { refreshAvatar } from './components/shell.js';
-import { route, currentView, rerenderShell } from './router.js';
+import { route, currentView, currentSection, rerenderShell } from './router.js';
+import { refreshData, stillCounting } from './data/world.js';
 import { mountHelp } from './components/help.js';
 import { wireReminders } from './components/reminders.js';
 import { frStore } from './fr/store.js';
@@ -53,6 +54,29 @@ function boot() {
   mountHelp();
   wireReminders();
   route();
+  pollResults();
+}
+
+// While races are still being counted, U.S. pages ask every 10 minutes whether the
+// results refresh (scripts/update_results.py) has written new counts, and redraw the
+// header's ticker and the pages that show results (views marked `live`). A hidden tab
+// asks again as soon as it is shown.
+const POLL_MS = 10 * 60 * 1000;
+function pollResults() {
+  let last = Date.now();
+  const tick = async () => {
+    if (document.hidden || currentSection() !== 'us' || !stillCounting()) return;
+    last = Date.now();
+    try {
+      if (!(await refreshData())) return;
+      await rerenderShell();
+      if (currentView()?.live) route({ keepScroll: true });
+    } catch (e) {
+      console.warn('Informed Voter: could not check for new results', e);
+    }
+  };
+  setInterval(tick, POLL_MS);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden && Date.now() - last > POLL_MS) tick(); });
 }
 
 boot();

@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-03T03:27+00:00",
+ "updated": "2026-11-05T03:29+00:00",
  "parties": [
   {
    "abbr": "LFI",
    "name": "La France insoumise",
    "en": "France Unbowed",
    "article": "La France insoumise",
-   "revid": 240906779,
+   "revid": 241008816,
    "leaders": [
     {
      "role": "Coordinateur",
@@ -193,7 +193,7 @@
       "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg/330px-1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "file": "1720448398743 20240708 GLUCKSMANN Raphael FR 006.jpg",
       "page": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg",
-      "artist": "European Union 2024 - Source : EP",
+      "artist": "European Union 2024 - Source: EP",
       "license": "European Parliament",
       "licenseUrl": "https://www.europarl.europa.eu/legal-notice/"
      }
@@ -222,7 +222,7 @@
    "name": "Renaissance",
    "en": "Renaissance",
    "article": "Renaissance (parti)",
-   "revid": 240960856,
+   "revid": 240986058,
    "leaders": [
     {
      "role": "Secrétaire général",

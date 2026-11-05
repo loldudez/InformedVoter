@@ -30,6 +30,8 @@ legislative races").
 | Early vote | The University of Florida Election Lab's 2026 tracker (Michael McDonald): `US.csv` for states, `ST_cd.csv` for House districts (`scripts/lib/early_vote.py`) | Refreshed with the races. Districts only where the file covers every district and 98% of the state's ballots. CC BY-NC-ND: credited on every Early vote tab, no commercial use, so since the site carries ads (Nov. 3, 2026) it is neither read nor shown: `EARLY_VOTE` in `update_races.py` and `SHOW_EARLY_VOTE` in `js/config.js` are off, to be turned back on together. |
 | Elections email reminders may cover | Election Day and the runoffs in `data/races.json`; the French elections in `data/fr/calendrier.json` whose dates are fixed | `scripts/update_reminders.py` → `data/reminders.json`, every refresh, no network. The mail service (`services/mail/Code.gs`) reads it from the live site, so its emails carry the site's names and dates, never a visitor's text. |
 | State legislative races | Each chamber's 2026 Wikipedia page, such as "2026 Michigan House of Representatives election" (`scripts/lib/legislature.py`) | Seats on the ballot, holders, 2024 presidential margins, November candidates where listed, forecasters' district ratings. No win odds. |
+| Results (from Nov. 3, 2026) | Calls: the green check marks in Wikipedia's national Senate, governor, House and down-ballot office tables. Counts: each race page's general-election box, which cites the official returns (`scripts/lib/results.py`) | A race is decided only when a national table check-marks its winner; counts alone never call one. Counts are unofficial until each state certifies them. See "Results". |
+| Statewide offices below governor | Wikipedia's national 2026 attorney general, secretary of state, lieutenant governor, state treasurer and state auditor pages (`scripts/lib/offices.py`) | → `data/offices.json`. Candidates, holders, Sabato's Crystal Ball ratings, results, and the race pages' polls, money and campaign sites. No win odds. See "Statewide offices below governor".
 
 Wikipedia pages are cached by revision in `data/cache/wiki/`, so a refresh only
 downloads pages edited since the last one (about 30 requests on a quiet day).
@@ -87,9 +89,15 @@ Every refresh writes `data/status.json`, shown on the About page:
   allowed: they are races where polls point the other way);
 - our polling average is within 4 points of the published averages;
 - expected seats fall within the range of each forecaster's own seat count;
-- control odds are within 20 points of the betting market;
+- control odds are within 20 points of the betting market (after Election Day, a note
+  of the final forecast next to the settling market instead);
 - the national environment was found, and fundraising data is current;
-- close statewide races have a poll from the last 30 days.
+- close statewide races have a poll from the last 30 days (after Election Day, from
+  the campaign's last 30 days);
+- from Election Day on: how many races each table has called and how many race pages
+  have counts, that every check-marked winner leads its count (or is one of the two
+  advancing to a runoff; ranked-choice winners can trail the first round, so they
+  aren't held to it), and which boxes' shares were worked out from their votes.
 
 `scripts/validate_races.py` then checks the file itself (stances, sources, poll
 fields, baseline shares, donation links). If it fails, `refresh_all.py` restores
@@ -219,6 +227,7 @@ to the stance it supports, run it, then run `py scripts/update_races.py`.
 | State senate | `ST-SS-CODE` | `TX-SS-014` |
 | State house | `ST-SH-CODE` | `MA-SH-001` |
 | Nebraska Legislature | `NE-LEG-CODE` | `NE-LEG-002` |
+| Statewide office below governor | `ST-AG`, `ST-SOS`, `ST-LG`, `ST-TREAS`, `ST-AUD` | `AZ-AG` |
 
 Candidate ids are `RACEID:surname` (`TX-SEN:talarico`), or `RACEID:full-name` when
 two candidates share a surname (`AK-SEN:dan-s-sullivan`).
@@ -322,6 +331,189 @@ positions) go in `data/research/legislature/*.json`, written by
 doesn't list is added with a warning, and the race counts as researched only when
 every candidate has positions (which turns on its "Where they stand" tab and the
 side-by-side match).
+
+## Results
+
+From Election Day (polls close Nov. 3, 2026, 8 p.m. local time: `ELECTION_DAY` in
+`js/model/forecast.js`) every race can carry a `result`, built by
+`scripts/lib/results.py` during the refresh:
+
+| Field | What it holds |
+|---|---|
+| `status` | `won` (a national table check-marks the winner), `runoff` (two candidates check-marked for one seat, or listed under "Runoff:" in Louisiana's open primaries) or `counting` (votes posted, nobody marked) |
+| `winners`, `advance` | Candidate ids of the check-marked winners and of the candidates going to a runoff |
+| `rows` | The race page's general-election box as published, in its order: candidate id, name, party, votes, share, the running mate (`mate`) where a governor's box names one, and `final` (the last round's share) where a ranked-choice tabulation repeats "Votes \| %" per round. Write-in and "other" lines, and names not on the candidate list, have no id |
+| `total`, `reporting` | Total votes, and the share of the vote reporting when the box's caption gives one |
+| `precincts` | The share of precincts reporting, when that is all a caption gives (never used as a share of the vote) |
+| `official`, `countAsOf` | Set when the count comes from the state itself (California, below), with the state's reporting time |
+| `outcome`, `note`, `flip` | "Democratic gain", "Republican hold"; the table's status text; whether the winner's party differs from the holder's |
+| `source`, `page` | The official returns the box cites; the Wikipedia page read, with its last edit |
+| `sharesFromVotes` | Set when the box's percentages didn't match its counts (Iowa's governor box printed 55.5% and 45.5%), so the shares were worked out from the votes |
+| `via`, `totalFromShares` | `via: "infobox"` when a statewide race page's results box is still blank and the count comes from its infobox instead (below); `totalFromShares` when the infobox lists only the leading candidates, so the total is worked out from their votes and shares and an "Others" line takes the share that remains |
+
+**The infobox while the box is blank.** On the night of the count, editors often fill a
+statewide race page's infobox first ("Reporting 96% as of 6:32 PM EST", citing the AP
+and the New York Times, then each leading nominee's "Popular vote" and "Percentage")
+and leave the results box blank. `page_box` in results.py reads the infobox only then,
+only for Senate, governor and office pages (a state's House page has one infobox for all
+its districts), and only when it is dated November 3, 2026 (never a primary's or a
+December runoff's): every nominee it names needs votes and a share, and the shares may
+not add up to more than 100.5. When they add up to less than 99.95, the total is the
+nominees' votes over their shares, rounded to what the printed shares allow (to the
+hundred with two decimals, the thousand with one), and "Others" takes the rest; it reads
+"About 948,600" on the page. The "Reporting" line becomes `reporting` (or `precincts`
+if it says so), and its first cited source becomes `source`. As of Nov. 4, 2026 this
+gave counts to 86 statewide races, the four uncalled ones among them (Mississippi's
+Senate race: Colom 49.01%, Hyde-Smith 48.89%, 96% reporting).
+
+A race with no mark and no count after Election Day shows "No result yet". The
+final forecast stays on every race page ("The final forecast", with the waffle and
+stat tiles) and is compared with the count once there is one.
+
+On the site, `resultsIn()` (js/data/world.js) switches maps and lists to results
+once any real race has one: the home map and each state's House map open on
+**Results** with a **Final forecast** switch (remembered for the visit, `setMapView`);
+winners take their party's color, flips the same color with stripes (an SVG pattern,
+one id per map), the leader of an uncalled count a lighter tint, runoffs gray
+hatching, and races without a result plain gray. The seat tallies count called races
+plus the seats not up this year (`holdover` in `control.json`, the same rule as
+`seat_tally` in update_races.py); independents are counted apart, since a result
+doesn't say whom a newly elected independent caucuses with. Close elections becomes
+"Results within 5 points", and My elections, starred races and liked candidates show
+each race's result.
+
+### Counts from the states
+
+`scripts/lib/official_results.py` reads a state's own count where a script can: so far
+California, whose Secretary of State publishes JSON (`api.sos.ca.gov/returns/<contest>`)
+for the governor, the five statewide offices and all 52 House districts (58 contests).
+The governor's contest is read first; the rest only when its reporting time has moved
+since the last read (cached in `data/cache/official/ca.json`), 0.3 seconds apart, under
+the User-Agent "InformedVoterResearch/1.0". A state's count replaces the race page's box
+only when its top two names match the race's candidates; it recomputes the shares, drops
+`reporting`, `precincts` and `sharesFromVotes`, and links the state's own results page
+(`electionresults.sos.ca.gov`, which a script can't read) as the source. Calls still come
+only from Wikipedia's check marks. "Precincts reporting" is never read as a share of the
+vote: California counts mail ballots for weeks after every precinct has reported.
+
+### Projections from the count
+
+A race counted but not called (`status: counting`) gets a projection, `live()` in
+`js/model/forecast.js`, mirrored by `live()` in `scripts/lib/model.py`:
+
+- **How much is counted** (`frac`): the share reporting where the results give one
+  (`basis: "reported"`); otherwise the votes counted over the expected turnout
+  (`race.turnout`: the state's 2024 presidential vote × 0.75, shared among its districts
+  for House seats), tried at five turnouts, 20% (one standard deviation) either side at
+  the 10th, 30th, 50th, 70th and 90th percentiles, and never above 98% counted
+  (`basis: "estimated"`).
+- **The votes still out** lean like the count in proportion to the share counted, and like
+  the final forecast otherwise. Their uncertainty runs from the forecast's own (`sigma`)
+  when little is counted to 12 points (`REST_SD`) near the end, when the last ballots
+  (provisional, late mail) can lean differently, plus 0.3 points for the count itself
+  (`COUNT_SD`).
+- The chance (`pLead`) is the average over the five turnouts. The projected leader is
+  whoever has at least an even chance, so the projected margin's sign can differ from it
+  in a near-tie (the page then says "About even"). Shares, the margin and its 80% range
+  come from the same blend.
+- Ranked-choice races are projected on their final round, as they are forecast; open
+  primaries and races without odds get none.
+
+Every counted race carries `modelCheck.live` (`lead`, `pLead`, `margin`, `frac`) from the
+Python copy, which the browser checks like the forecast (pLead within 0.002, the margin
+within 0.02); the About page reports any mismatch. The final forecast itself is frozen at
+poll closing (`forecast_as_of`, `forecastAsOf`: the earlier of now and `ELECTION_DAY`), so
+late polls or rating changes never move it.
+
+**Chamber projections** (`control.json`, `projection` in each chamber, after Election
+Day): called seats count as they are, and each race still out is drawn on its own,
+20,000 times: a counted race by its projected chance, a runoff between the parties by the
+seat's lean, any other by its final forecast (`projection_entries` and `project_control`
+in model.py). Fields: `pD`, `pR`, `pNone` (each side's chance of a majority, or neither),
+`meanD`, `meanR`, `medianD`, `medianR`, `range80D`, `range80R`, `sims`, and `asOf`,
+`open` (races still out), `counting` (with a projection) and `runoff`. Races are drawn
+independently, so the 80% range is probably a little narrow.
+
+### Results every 10 minutes
+
+`scripts/update_results.py` (README, "Results every 10 minutes") rebuilds only the
+results, projections and seat tallies between full refreshes, and stamps when:
+`resultsUpdated` in `status.json`, `control.json` and both files' `meta`;
+`nextResultsMinutes` in `status.json` (10 while any race is open, null after);
+`resultsWarnings` (its last run's warnings, at most 50). Its own status checks start with
+"results" and replace the previous run's. The pages re-read `status.json` every 10
+minutes while anything is being counted (`refreshData` in js/data/world.js) and redraw
+the views marked `live`.
+
+## Statewide offices below governor
+
+`scripts/lib/offices.py` reads Wikipedia's national 2026 pages for attorney general,
+secretary of state, lieutenant governor, state treasurer and state auditor (the
+comptroller or controller where the state calls it that): each "Race summary" row
+gives the state, the officeholder and party, a status and the candidates, check-marked
+once called, and links the race's own page, where the refresh reads the results box,
+polls, money and campaign sites like any race page. The "Predictions" table carries
+Sabato's Crystal Ball, the one outlet that rates these races; its rating is shown as
+is (`consensus`), with no margin or odds drawn from it. Lieutenant governors elected
+on a ticket with the governor are not separate races (the governor's results box
+names the running mate).
+
+The races go to `data/offices.json` with `format: "office"`, `level: "state"` and ids
+`ST-AG`, `ST-SOS`, `ST-LG`, `ST-TREAS` and `ST-AUD`. Like state legislative races
+they get no win probabilities (almost none are polled), only the state's 2024
+presidential margin for context, any rating, and the results. They appear in the
+state pages' "Statewide offices" list, in My elections after the governor, and on
+their own race pages, where the match with My views uses the state-level questions
+(as for governors: defense and foreign policy are left out).
+
+Research overlays merge into them exactly as for federal races.
+`scripts/research/offices_2026.py` (→ `data/research/offices.json`) holds positions
+from the States Newsroom voter guides' statewide contest pages, read Nov. 4, 2026: the
+candidates' own survey answers first published by Ballotpedia, the newsroom's
+interviews (quoted) and its platform summaries (cited, not quoted). Eleven states'
+guides answer issues (Alabama, Arizona, Colorado, Georgia, Idaho, Indiana, Iowa,
+Maryland, Nebraska, New Mexico, Rhode Island); the Arkansas, Florida, Kansas, Michigan,
+Minnesota, North Dakota, Ohio, Oklahoma, South Carolina, South Dakota and Wisconsin
+pages carry only bios, so their races have no positions yet. A race whose main
+candidates all have positions there is marked researched, which turns on side-by-side
+matching; otherwise the entry is `partial`. Below five compared questions no
+percentage is shown, as everywhere.
+
+## The national House map
+
+`data/maps/cd-us.json`, for the House view of the home page's map, is built by
+`scripts/build_house_map.py` from the state district maps (`data/maps/cd/ST.json`, Census
+TIGER 2026): each state's districts are simplified again as one coverage (0.012 degrees,
+three decimals, islands under 0.2% of their district dropped), so neighbours keep a
+shared border, with clockwise rings. Ids are the race ids without the "-H-" (`CA-13` for
+`CA-H-13`, `AK-00`, `DC-98`), with `st`, `n` and `lp` as in the state maps; 436 districts,
+about 0.9 MB, loaded only when the House view first opens. The state lines are drawn over
+them (`borders` in `drawMap`). Rebuild it after `build_maps.py`.
+
+## Upcoming elections (2027-2029)
+
+`data/upcoming.json`, for `#/upcoming`, is rebuilt once a day by
+`scripts/update_upcoming.py` from English Wikipedia's national pages for each office and
+year (the governor, lieutenant governor, attorney general, secretary of state, treasurer
+and auditor pages for 2027-2029 where they exist, the 2028 Senate and presidential pages,
+and each odd year's special Senate elections from the "U.S. Senate" line of "<year>
+United States elections"). Each entry of `races`:
+
+| Field | What it holds |
+|---|---|
+| `id` | `2027-KY-GOV`, `2028-AL-SEN`, `2028-TN-SEN-SP` (special), `2028-US-PRES`, `2028-US-HOUSE` |
+| `year`, `date` | Election day: the page's own date, "October 9 (Louisiana)" for Louisiana's open primary (`dateNote` says so), else the first Tuesday after the first Monday in November |
+| `office`, `officeName`, `state`, `special` | As for the 2026 races; `officeName` from the race page's title ("Auditor of Public Accounts") |
+| `holder` | `name`, `party`, `wiki`; `name: null` with `appointment: true` for a seat to be filled by appointment, and with neither where the table says "TBD in 2026" (Vermont's two-year offices: the page then names the 2026 winner from the site's own results) |
+| `firstElected`, `lastRace` | The table's "First elected" (or the Senate's "Electoral history") and "Last race" ("52.5% D") |
+| `statusText`, `plans` | The table's status as written ("Term-limited", "Incumbent's intent unknown") and `running`, `leaving` or `unknown` |
+| `candidates` | Declared candidates only: the "Candidates" column ("TBD" and any part headed "Potential:" or "Declined:" left out), the officeholder added when the status says "Incumbent running"; for president, the "Declared" tables of each party's primaries, with `announced`, `experience` and `home`, and `primaries` counting them per party |
+| `page`, `source` | The race's own Wikipedia page (or the national page's section), and the table read, with its last edit (`asOf`) |
+
+No forecasts: none of these races are rated, and the only polls test people who aren't
+running. The 2028 House entry has the date only (Wikipedia has no 2028 House page yet).
+The 2026 runoffs at the top of the page come from `races.json` (`result.status:
+"runoff"`, `runoff` for the date). State legislatures and local offices aren't covered.
 
 ## Rules for donation links
 

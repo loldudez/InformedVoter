@@ -111,6 +111,11 @@ def _slug(title):
     return re.sub(r"[^A-Za-z0-9]+", "_", title).strip("_")[:120]
 
 
+def is_cached(title, rev):
+    """Whether page_at would answer this revision from the disk cache (no request)."""
+    return (CACHE / f"{_slug(title)}.{rev['revid']}.html").exists()
+
+
 def page_at(title, rev):
     """HTML of one revision of a page, from the disk cache when possible."""
     CACHE.mkdir(parents=True, exist_ok=True)
@@ -199,9 +204,12 @@ class _Tables(HTMLParser):
     """Collect every <table> as a grid of cells, expanding rowspan/colspan.
 
     Each cell keeps its text, its links, and the ids of its footnote references
-    (whose markers are left out of the text). A table keeps its caption, which is
-    how election boxes say "Republican primary results" or "General election".
-    Nested tables are parsed separately and their text is kept out of the parent.
+    (whose markers are left out of the text), plus what election tables mark winners
+    with: check-mark images ("ticks") and the text of each bold run ("bolds"). A
+    table keeps its caption and the caption's footnotes ("caprefs"), which is how
+    election boxes say "Republican primary results" or "General election" and cite
+    the official count. Nested tables are parsed separately and their text is kept
+    out of the parent.
     """
 
     def __init__(self):
@@ -213,11 +221,14 @@ class _Tables(HTMLParser):
         self.link = None      # the <a> whose text is being collected
         self.in_caption = False
         self.span_color = None  # a colored <span>, which is how "▌" party markers are drawn
+        self.bold = 0           # depth of <b>/<strong> inside the current cell
+        self.bold_buf = ""
+        self.li_breaks = False  # see tables()
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if tag == "table":
-            self.stack.append({"classes": a.get("class", ""), "rows": [], "row": None, "cell": None, "caption": ""})
+            self.stack.append({"classes": a.get("class", ""), "rows": [], "row": None, "cell": None, "caption": "", "caprefs": []})
             return
         if not self.stack:
             return
@@ -227,15 +238,18 @@ class _Tables(HTMLParser):
             self.in_ref = tag == "sup"
             return
         if self.skip:
-            if self.in_ref and tag == "a" and t["cell"] is not None and (a.get("href") or "").startswith("#cite_note"):
-                t["cell"]["refs"].append(a["href"][1:])
+            if self.in_ref and tag == "a" and (a.get("href") or "").startswith("#cite_note"):
+                if t["cell"] is not None:
+                    t["cell"]["refs"].append(a["href"][1:])
+                elif self.in_caption:
+                    t["caprefs"].append(a["href"][1:])
             return
         if tag == "caption":
             self.in_caption = True
         elif tag == "tr":
             t["row"] = []
         elif tag in ("td", "th") and t["row"] is not None:
-            t["cell"] = {"text": "", "links": [], "refs": [], "marks": [], "bold": False, "th": tag == "th",
+            t["cell"] = {"text": "", "links": [], "refs": [], "marks": [], "bold": False, "ticks": 0, "bolds": [], "th": tag == "th",
                          "rowspan": int(re.sub(r"\D", "", a.get("rowspan") or "1") or 1),
                          "colspan": int(re.sub(r"\D", "", a.get("colspan") or "1") or 1),
                          "style": a.get("style") or "", "classes": a.get("class") or ""}
@@ -244,8 +258,18 @@ class _Tables(HTMLParser):
             self.link = t["cell"]["links"][-1]
         elif tag == "br" and t["cell"] is not None:
             t["cell"]["text"] += "\n"
+        elif tag == "li" and t["cell"] is not None and self.li_breaks and t["cell"]["text"].strip():
+            t["cell"]["text"] += "\n"
         elif tag in ("b", "strong") and t["cell"] is not None:
             t["cell"]["bold"] = True  # election boxes bold the winners and those who advance
+            self.bold += 1
+            if self.bold == 1:
+                self.bold_buf = ""
+        elif tag == "img" and t["cell"] is not None:
+            # Results tables put a green check mark before each winner ({{Won}}, {{Y}}).
+            alt = (a.get("alt") or "").lower()
+            if alt in ("yes", "won", "✓", "✔") or "tick" in alt or "check" in alt:
+                t["cell"]["ticks"] += 1
         elif tag == "span" and t["cell"] is not None:
             m = re.search(r"color:\s*(#[0-9A-Fa-f]{3,6})", a.get("style") or "")
             self.span_color = m.group(1).lower() if m else None
@@ -265,8 +289,15 @@ class _Tables(HTMLParser):
             self.span_color = None
         if tag == "a":
             self.link = None
+        if tag in ("b", "strong") and self.bold and t["cell"] is not None:
+            self.bold -= 1
+            if not self.bold:
+                self._flush_bold(t["cell"])
         if tag in ("td", "th") and t["cell"] is not None and t["row"] is not None:
             c = t["cell"]
+            if self.bold:  # an unclosed <b> ends with its cell
+                self.bold = 0
+                self._flush_bold(c)
             c["text"] = re.sub(r"[ \t\xa0]+", " ", c["text"]).strip()
             t["row"].append(c)
             t["cell"] = None
@@ -275,7 +306,8 @@ class _Tables(HTMLParser):
             t["row"] = None
         elif tag == "table":
             done = self.stack.pop()
-            self.tables.append({"classes": done["classes"], "rows": _expand(done["rows"]), "caption": " ".join(done["caption"].split())})
+            self.tables.append({"classes": done["classes"], "rows": _expand(done["rows"]), "caption": " ".join(done["caption"].split()),
+                                "caprefs": done["caprefs"]})
 
     def handle_data(self, data):
         if self.stack and not self.skip and self.in_caption and self.stack[-1]["cell"] is None:
@@ -283,10 +315,18 @@ class _Tables(HTMLParser):
             return
         if self.stack and not self.skip and self.stack[-1]["cell"] is not None:
             self.stack[-1]["cell"]["text"] += data
+            if self.bold:
+                self.bold_buf += data
             if "▌" in data:  # each party marker keeps its color, in order
                 self.stack[-1]["cell"]["marks"].extend([self.span_color] * data.count("▌"))
             if self.link is not None:
                 self.link["text"] += data
+
+    def _flush_bold(self, cell):
+        txt = " ".join(self.bold_buf.split())
+        if txt:
+            cell["bolds"].append(txt)
+        self.bold_buf = ""
 
 
 def _expand(rows):
@@ -311,8 +351,13 @@ def _expand(rows):
     return grid
 
 
-def tables(html_text):
+def tables(html_text, li_breaks=False):
+    """Every table in a chunk of page HTML. `li_breaks` starts a new line of cell text
+    at each list item, for cells that list a governor and running mate as
+    <li>Dan Cox</li><li>Robert Krop</li> with nothing between them (results boxes);
+    other readers keep the old text."""
     p = _Tables()
+    p.li_breaks = li_breaks
     p.feed(html_text)
     return [t for t in p.tables if t["rows"]]
 

@@ -18,7 +18,8 @@ from urllib.parse import urlparse
 
 QUESTION_FILE = "js/data/questions.js"
 PROCESSORS = {"secure.actblue.com", "secure.winred.com", "secure.anedot.com"}
-OFFICES = {"senate", "governor", "house", "state-senate", "state-house", "legislature"}
+OFFICES = {"senate", "governor", "house", "state-senate", "state-house", "legislature",
+           "attorney-general", "secretary-of-state", "lieutenant-governor", "treasurer", "auditor"}
 
 
 def question_ids():
@@ -118,6 +119,7 @@ def main(path):
                 errors.append(f"{who} adds up to more than 100%")
             if not p.get("url"):
                 no_url += 1
+        check_result(rid, race, cands, errors)
     for w in warnings:
         print("warning:", w)
     if no_url:
@@ -129,5 +131,43 @@ def main(path):
     return 1 if errors else 0
 
 
+def check_result(rid, race, cands, errors):
+    """A race's results (see scripts/lib/results.py): the winners and those advancing are
+    candidates in the race, counts are whole and not negative, shares sit in 0-100 and
+    add up to about 100, and a cited source is https."""
+    res = race.get("result")
+    if not res:
+        return
+    if res.get("status") not in ("won", "runoff", "counting"):
+        errors.append(f"{rid}: unknown result status {res.get('status')!r}")
+    for k in ("winners", "advance"):
+        for cid in res.get(k) or []:
+            if cid not in cands:
+                errors.append(f"{rid}: result names {cid}, who isn't a candidate")
+    if res.get("status") == "won" and not res.get("winners"):
+        errors.append(f"{rid}: a decided race needs its winner")
+    total = 0
+    for row in res.get("rows") or []:
+        if row.get("id") is not None and row["id"] not in cands:
+            errors.append(f"{rid}: results row for unknown candidate {row['id']}")
+        v, p = row.get("votes"), row.get("pct")
+        if v is not None and not (finite(v) and v >= 0):
+            errors.append(f"{rid}: bad vote count {v!r} for {row.get('name')}")
+        if p is not None and not (finite(p) and 0 <= p <= 100):
+            errors.append(f"{rid}: vote share outside 0-100 for {row.get('name')}: {p!r}")
+        total += p if finite(p) else 0
+    if res.get("rows") and total > 101.5:
+        errors.append(f"{rid}: vote shares add up to {total:.1f}%")
+    src = res.get("source")
+    if src and not str(src.get("url", "")).startswith("https://"):
+        errors.append(f"{rid}: the results source must be an https link")
+
+
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1] if len(sys.argv) > 1 else "data/races.json"))
+    # With no path, both files the refresh writes: the federal and governor races, and the
+    # down-ballot statewide races (data/offices.json, when it exists).
+    if len(sys.argv) > 1:
+        sys.exit(main(sys.argv[1]))
+    import os
+    codes = [main(p) for p in ("data/races.json", "data/offices.json") if p == "data/races.json" or os.path.exists(p)]
+    sys.exit(max(codes))

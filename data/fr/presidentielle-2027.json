@@ -1,6 +1,6 @@
 {
  "meta": {
-  "updated": "2026-11-03T00:14+00:00",
+  "updated": "2026-11-05T03:27+00:00",
   "sources": [
    {
     "title": "Élection présidentielle française de 2027",
@@ -10,7 +10,7 @@
    {
     "title": "Liste de sondages sur l'élection présidentielle française de 2027",
     "url": "https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l'élection_présidentielle_française_de_2027",
-    "revid": 240766888
+    "revid": 241019119
    }
   ],
   "windowDays": 30,
@@ -23,7 +23,7 @@
   "pollCheck": {
    "url": "https://www.commission-des-sondages.fr/notices/",
    "read": true,
-   "newest": 10339,
+   "newest": 10352,
    "missing": []
   },
   "checks": []
@@ -384,7 +384,7 @@
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg/330px-1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "file": "1720448398743 20240708 GLUCKSMANN Raphael FR 006.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg",
-    "artist": "European Union 2024 - Source : EP",
+    "artist": "European Union 2024 - Source: EP",
     "license": "European Parliament",
     "licenseUrl": "https://www.europarl.europa.eu/legal-notice/"
    }
@@ -1048,7 +1048,7 @@
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Dominique_de_Villepin_%282010%29.jpg/330px-Dominique_de_Villepin_%282010%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "file": "Dominique de Villepin (2010).jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Dominique_de_Villepin_(2010).jpg",
-    "artist": "Georges Seguin ( Okki )",
+    "artist": "Georges Seguin ( Okki)",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
    }
@@ -1291,97 +1291,104 @@
    "wiki": true,
    "role": "",
    "slogan": "",
-   "photo": null
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_%28Cropped%29.jpg/330px-Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_%28Cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Jordan Bardella - Strasbourg European Parliament September 2022 (Cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_(Cropped).jpg",
+    "artist": "Raphael ATTAL @BootEXE",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   }
  ],
  "r1": {
   "average": {
-   "from": "2026-09-24",
-   "to": "2026-10-22",
-   "polls": 15,
+   "from": "2026-10-07",
+   "to": "2026-10-29",
+   "polls": 14,
    "candidates": [
     {
-     "avg": 34.9,
+     "avg": 35.1,
      "lo": 32.0,
      "hi": 37.5,
-     "polls": 15,
+     "polls": 14,
      "id": "marine-le-pen"
     },
     {
-     "avg": 16.7,
+     "avg": 16.8,
      "lo": 15.0,
      "hi": 20.0,
-     "polls": 15,
+     "polls": 14,
      "id": "jean-luc-melenchon"
     },
     {
-     "avg": 14.8,
+     "avg": 14.5,
      "lo": 11.5,
      "hi": 18.5,
-     "polls": 15,
+     "polls": 14,
      "id": "edouard-philippe"
     },
     {
-     "avg": 12.8,
+     "avg": 13.0,
      "lo": 10.0,
      "hi": 15.75,
-     "polls": 15,
+     "polls": 14,
      "id": "raphael-glucksmann"
     },
     {
-     "avg": 8.8,
+     "avg": 8.4,
      "lo": 4.0,
      "hi": 17.0,
-     "polls": 15,
+     "polls": 14,
      "id": "gabriel-attal"
     },
     {
-     "avg": 7.6,
-     "lo": 6.0,
+     "avg": 7.4,
+     "lo": 5.0,
      "hi": 12.25,
-     "polls": 15,
+     "polls": 14,
      "id": "bruno-retailleau"
     },
     {
-     "avg": 6.4,
-     "lo": 3.5,
+     "avg": 6.8,
+     "lo": 4.0,
      "hi": 12.0,
      "polls": 11,
      "id": "david-lisnard"
     },
     {
-     "avg": 4.2,
+     "avg": 4.1,
      "lo": 3.0,
      "hi": 6.0,
-     "polls": 15,
+     "polls": 14,
      "id": "eric-zemmour"
     },
     {
-     "avg": 2.8,
+     "avg": 2.7,
      "lo": 1.0,
      "hi": 6.0,
-     "polls": 15,
+     "polls": 14,
      "id": "marine-tondelier"
     },
     {
-     "avg": 2.4,
+     "avg": 2.2,
      "lo": 2.0,
      "hi": 3.0,
-     "polls": 5,
+     "polls": 4,
      "id": "francois-ruffin"
     },
     {
      "avg": 2.1,
      "lo": 1.0,
      "hi": 3.25,
-     "polls": 15,
+     "polls": 14,
      "id": "nicolas-dupont-aignan"
     },
     {
-     "avg": 2.0,
+     "avg": 1.9,
      "lo": 1.0,
      "hi": 3.0,
-     "polls": 15,
+     "polls": 14,
      "id": "fabien-roussel"
     },
     {
@@ -1395,7 +1402,7 @@
      "avg": 0.7,
      "lo": 0.0,
      "hi": 1.0,
-     "polls": 15,
+     "polls": 14,
      "id": "nathalie-arthaud"
     },
     {
@@ -1408,6 +1415,67 @@
    ]
   },
   "polls": [
+   {
+    "pollster": "Ifop",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10352-pres-iv-ifop-lci-3-novembre.pdf",
+    "notice": 10352,
+    "dates": "27-29 octobre 2026",
+    "end": "2026-10-29",
+    "n": 1501,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "gabriel-attal": 5.0,
+      "edouard-philippe": 9.5,
+      "david-lisnard": 7.0,
+      "bruno-retailleau": 4.0,
+      "nicolas-dupont-aignan": 1.5,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 4.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.5,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 13.0,
+      "gabriel-attal": 9.0,
+      "david-lisnard": 7.5,
+      "bruno-retailleau": 5.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 4.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.5,
+      "fabien-roussel": 1.5,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 11.5,
+      "edouard-philippe": 15.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 37.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.5,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 15.0,
+      "david-lisnard": 9.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
    {
     "pollster": "Ipsos",
     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10338-pres-iv-ipsos-bva-le-parisien-24-octobre.pdf",

@@ -5,7 +5,7 @@ import { icon } from '../icons.js';
 import { PARTIES, GROUPS, PARTIES_AS_OF } from '../data/parties.js';
 import { lineChart, cssVar } from '../lib/charts.js';
 import { wireTableToggles } from '../components/race.js';
-import { realRaceCount, researchedCount, statusData, modelCheck, racesMeta, controlData } from '../data/world.js';
+import { realRaceCount, researchedCount, statusData, modelCheck, racesMeta, controlData, officeCount, officesResearched, resultsIn } from '../data/world.js';
 import { DONATE_URL, SHOW_EARLY_VOTE, SUPPORT_EMAIL, MAIL_SERVICE_URL, REMINDER_FROM } from '../config.js';
 
 const ext = (href, label) => html`<a href="${href}" target="_blank" rel="noopener noreferrer">${label} ${icon.external()}</a>`;
@@ -252,10 +252,14 @@ export const about = {
     <div class="grid grid-2">
       <div class="card"><h3>${icon.check()} Real data</h3><ul class="small muted" style="padding-left:18px">
         ${realRaceCount ? html`<li><b>Every U.S. Senate, U.S. House and governor race</b>, refreshed every 8 hours: the candidates on the ballot, forecasters’ ratings (Cook, Sabato, Inside Elections and up to eight more), polls with a link to each poll’s source, and fundraising reports.</li>
+        ${resultsIn() ? html`<li><b>2026 results</b>, re-read every 10 minutes from the day after the election until every race is called, and with every full refresh. A race counts as called only once Wikipedia’s national results table marks its winner. Vote counts come from California’s Secretary of State directly, and elsewhere from each race’s page, which cites the official returns; all are unofficial until each state certifies them. The final forecasts, as they stood when the polls closed, stay on each race page next to the count.</li>
+        <li><b>Projections from the count</b> for races counted but not called: each blends the votes counted so far with the final forecast, allowing for how much of the vote is still out (an estimate from the state’s 2024 turnout) and for late ballots leaning differently. They are not calls. The chamber projections count every called seat as it is and each race still out by its projection, or by its final forecast where no count is posted.</li>` : ''}
         <li>${researchedCount} race${researchedCount === 1 ? '' : 's'} also ${researchedCount === 1 ? 'has' : 'have'} hand-researched bios and issue positions, each linked to the candidate’s own words or votes (tagged <span class="real-chip">Sourced</span>).</li>
         <li><b>State legislative races</b>: every seat on the ballot, who holds it, the district’s 2024 presidential margin and the November candidates where Wikipedia’s 2026 chamber page lists them, refreshed every 8 hours. They get no win odds: almost none are polled and few are rated.</li>
+        ${officeCount ? html`<li><b>Statewide offices below governor</b> (attorney general, secretary of state, lieutenant governor, treasurer, auditor or comptroller): ${officeCount} races from Wikipedia’s national 2026 pages, with the candidates, who holds each office, Sabato’s Crystal Ball’s ratings and the results. ${officesResearched} of them have researched positions for every main candidate, from the States Newsroom voter guides. No win odds, for the same reason.</li>` : ''}
         ${SHOW_EARLY_VOTE ? html`<li>Early voting: ballots cast so far in each state, and in House districts where the count is complete, from the University of Florida Election Lab’s tracker (Michael McDonald).</li>` : ''}` : ''}
-        <li>District maps: U.S. Census Bureau 2026 TIGER/Line boundaries (120th Congress districts and 2026 state legislative districts), clipped to the shoreline.</li>
+        <li><b><a href="#/upcoming">Upcoming elections</a></b>, 2027 to 2029: each race’s date, who holds the office and whether they can or will run again, and the declared candidates, from Wikipedia’s national pages for each office and year, read once a day. Only people who have announced a run are listed; no forecasts this early.</li>
+        <li>District maps: U.S. Census Bureau 2026 TIGER/Line boundaries (120th Congress districts and 2026 state legislative districts), clipped to the shoreline; the home page’s House map joins them into one national map.</li>
         <li>Address lookup: the Census Bureau geocoder, which already reflects mid-decade redistricting.</li>
         <li>How-to-vote links: vote.gov, each state’s official election office, and NASS. Every link checked October 2026.</li>
         <li>News: headlines from 18 outlets’ public feeds, refreshed by script.</li>
@@ -263,7 +267,7 @@ export const about = {
         <li>Parties: summaries of each party’s own platform, with leadership verified in October 2026.</li>
       </ul></div>
       <div class="card"><h3>${icon.info()} ${realRaceCount ? 'Missing, not invented' : html`Still demo <span class="demo-chip">Demo</span>`}</h3><ul class="small muted" style="padding-left:18px">
-        ${realRaceCount ? html`<li>Every race now uses real data. What isn’t known yet is shown as missing, never made up: state legislative candidates a chamber’s page doesn’t list yet, and their positions and money, which aren’t loaded.</li>
+        ${realRaceCount ? html`<li>Every race now uses real data. What isn’t known yet is shown as missing, never made up: state legislative candidates a chamber’s page doesn’t list yet, and their positions and money, which aren’t loaded.${resultsIn() ? ' A race nobody has called yet says so rather than showing the forecast as a result.' : ''}</li>
         <li>Issue positions for races not yet researched are left blank rather than guessed, so those races can’t be matched against your views yet.</li>` : html`<li>Candidate names, bios, polls, fundraising and positions are fictional.</li>`}
       </ul><p class="small faint" style="margin:0">Everything demo carries a yellow DEMO tag. See DATA.md in the project for how real data is added.</p></div>
     </div>

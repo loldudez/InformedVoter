@@ -11,6 +11,7 @@ import { elections, match } from './views/elections.js';
 import { starred, liked, close, donations } from './views/lists.js';
 import { news, inflation, parties, donate, about } from './views/info.js';
 import { congress } from './views/congress.js';
+import { upcoming } from './views/upcoming.js';
 import { FR_ROUTES } from './fr/routes.js';
 import { renderFrShell } from './fr/shell.js';
 import { lang } from './i18n.js';
@@ -34,6 +35,7 @@ const ROUTES = [
   [/^\/inflation$/, inflation],
   [/^\/parties$/, parties],
   [/^\/congress$/, congress],
+  [/^\/upcoming$/, upcoming],
   [/^\/donate$/, donate],
   [/^\/about$/, about],
   ...FR_ROUTES,
@@ -133,3 +135,4 @@ export async function route({ keepScroll = false } = {}) {
 }
 
 export const currentView = () => current?.view;
+export const currentSection = () => lastSection;

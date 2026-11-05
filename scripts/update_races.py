@@ -42,6 +42,9 @@ import fec  # noqa: E402
 import house_votes  # noqa: E402
 import legislature  # noqa: E402
 import model  # noqa: E402
+import official_results  # noqa: E402
+import offices  # noqa: E402
+import results  # noqa: E402
 import wikitables as wt  # noqa: E402
 
 DATA = ROOT / "data"
@@ -170,32 +173,11 @@ def state_key(label):
     return el.STATE_ABBR.get(base), "special" in label.lower() or "class 3" in label.lower()
 
 
-RUNNING = ("renominated", "advanced", "running", "appointee nominated", "seeking re-election")
-
-
 def new_candidates(race_id, cand_cell, inc_cell=None, status_text=""):
-    """Candidates from a '▌Name (Party)' cell. The incumbent is found by the
-    Wikipedia article both cells link to (which tells apart, say, Alaska's two
-    Dan Sullivans), falling back to the name."""
-    people = [{"name": n, "party": p} for n, p in el.candidate_lines(wt.text(cand_cell))]
-    el.assign_ids(race_id, people)
-    links = {el.norm(l["text"]): l["href"] for l in cand_cell["links"] if l["href"].startswith("/wiki/") and l["text"].strip()}
-    for p in people:
-        href = links.get(el.norm(p["name"]))
-        if href:
-            p["wiki"] = "https://en.wikipedia.org" + href
-    inc = None
-    if inc_cell is not None:
-        inc_href = next((l["href"] for l in inc_cell["links"] if l["href"].startswith("/wiki/") and ":" not in l["href"]), None)
-        if inc_href:
-            inc = next((p for p in people if p.get("wiki") == "https://en.wikipedia.org" + inc_href), None)
-        name = wt.text(inc_cell).split("\n")[0].strip()
-        if inc is None and name and not name.lower().startswith(("vacant", "new seat", "none")):
-            inc = el.match_candidate(name, people)
-    for p in people:
-        p["incumbent"] = p is inc
-    running = inc is not None or any(w in status_text.lower() for w in RUNNING)
-    return people, running
+    """Candidates from a '▌Name (Party)' cell (see el.table_candidates), plus the
+    winners the table check-marks. Winners are the candidate dicts themselves, so they
+    stay right when a research overlay renames a candidate's id."""
+    return el.table_candidates(race_id, cand_cell, inc_cell, status_text)
 
 
 def statewide_races(pages, status):
@@ -227,7 +209,7 @@ def statewide_races(pages, status):
                 rid = f"{st}-{'SEN' if office == 'senate' else 'GOV'}"
                 inc_name = wt.text(row[c_inc]).split("\n")[0].strip() if c_inc is not None else None
                 status_text = wt.text(row[c_status]).replace("\n", " ") if c_status is not None else ""
-                people, inc_running = new_candidates(rid, row[c_cand], row[c_inc] if c_inc is not None else None, status_text)
+                people, inc_running, winners, advancing = new_candidates(rid, row[c_cand], row[c_inc] if c_inc is not None else None, status_text)
                 link = next((l["title"] for l in row[0]["links"] if l["title"].startswith("2026")), None)
                 races[rid] = {
                     "rcv": (st, office) in RCV,
@@ -235,7 +217,7 @@ def statewide_races(pages, status):
                     "district": None, "statewide": True, "special": is_special,
                     "held": el.party_code(wt.text(row[c_party])) if c_party is not None else None,
                     "incumbentName": inc_name, "open": not inc_running, "statusText": status_text,
-                    "candidates": people, "page": link,
+                    "candidates": people, "page": link, "_winners": winners, "_advance": advancing,
                 }
 
     candidates_table(sen_html, "Elections leading to the next Congress", "senate", False)
@@ -304,7 +286,10 @@ def merge_member_rows(first, second):
     flagged = {c["id"] for r in (first, second) for c in r["candidates"] if c.get("incumbent")}
     for c in first["candidates"]:
         c["incumbent"] = c["id"] in flagged
-    return dict(keep, candidates=first["candidates"], open=not running,
+    won = {w["id"] for r in (first, second) for w in r.get("_winners", [])}
+    adv = {w["id"] for r in (first, second) for w in r.get("_advance", [])}
+    return dict(keep, candidates=first["candidates"], open=not running, _winners=[c for c in first["candidates"] if c["id"] in won],
+                _advance=[c for c in first["candidates"] if c["id"] in adv],
                 memberWikis=first["memberWikis"] + [w for w in second["memberWikis"] if w not in first["memberWikis"]])
 
 
@@ -349,7 +334,7 @@ def house_races(pages, status, map_index):
                 member = wt.text(row[c_member]).split("\n")[0].strip() if c_member is not None else ""
                 vacant = not member or member.lower().startswith(("vacant", "new seat", "none"))
                 status_text = wt.text(row[c_status]).replace("\n", " ") if c_status is not None else ""
-                people, inc_running = new_candidates(rid, row[c_cand], None if vacant or c_member is None else row[c_member], status_text)
+                people, inc_running, winners, advancing = new_candidates(rid, row[c_cand], None if vacant or c_member is None else row[c_member], status_text)
                 held = el.party_code(wt.text(row[c_party])) if c_party is not None and not vacant else None
                 if held not in ("D", "R", "I"):
                     held = None
@@ -362,7 +347,7 @@ def house_races(pages, status, map_index):
                     "open": not inc_running, "statusText": status_text,
                     "incumbentWiki": member_wiki, "memberWikis": [member_wiki] if member_wiki else [],
                     "pvi": el.parse_pvi(wt.text(row[c_pvi])) if c_pvi is not None else None,
-                    "candidates": people,
+                    "candidates": people, "_winners": winners, "_advance": advancing,
                 }
                 race.update(FORMATS.get((st, "house"), {}))
                 race["rcv"] = (st, "house") in RCV
@@ -729,6 +714,7 @@ def main():
     races, sen_html, gov_html = statewide_races(pages, status)
     house, state_pages, house_html, ratings_html = house_races(pages, status, map_index)
     races.update(house)
+    downballot, _ = offices.races(pages, status, states)
     generic = el.generic_ballot(wt.section_by_title(sen_html, "Generic congressional ballot aggregate polls") or "") or \
         el.generic_ballot(wt.section_by_title(house_html, "Generic congressional ballot aggregate polls") or "")
     gmargin = generic["margin"] if generic else 0.0
@@ -739,21 +725,25 @@ def main():
     log("Race pages")
     finance_auto = {}
     sites = 0
-    titles = [r["page"] for r in races.values() if r.get("page")]
+    titles = [r["page"] for r in list(races.values()) + list(downballot.values()) if r.get("page")]
     titles += list(state_pages.values())
     pages.prefetch(titles)
-    for rid, race in sorted(races.items()):
+    for rid, race in sorted({**races, **downballot}.items()):
         if race["office"] == "house" or not race.get("page"):
             continue
         h = pages.html(race["page"])
         if not h:
-            status.warn(f"{rid}: page {race['page']} missing")
+            if race.get("format") != "office":  # not every down-ballot race has a page of its own
+                status.warn(f"{rid}: page {race['page']} missing")
             continue
         refs = wt.references(h)
         fund = attach_page_data(race, h, refs, status)
         finance_auto.update(fund)
-        race["sources"] = [{"title": f"Wikipedia: {pages.revs[race['page']]['title']}", "url": pages.url(race["page"])}]
+        page = {"title": f"Wikipedia: {pages.revs[race['page']]['title']}", "url": pages.url(race["page"])}
+        race["sources"] = race.get("sources", []) + [page] if race.get("format") == "office" else [page]
         sites += attach_sites([race], el.campaign_sites(h))
+        race["_box"] = results.page_box(h, refs)
+        race["_respage"] = {**page, "asOf": pages.revs[race["page"]]["timestamp"]}
     for st, title in sorted(state_pages.items()):
         h = pages.html(title)
         if not h:
@@ -769,6 +759,8 @@ def main():
             fund = attach_page_data(race, chunk, refs, status)
             finance_auto.update(fund)
             race["sources"] = [{"title": f"Wikipedia: {pages.revs[title]['title']}", "url": pages.url(title) + (f"#District_{int(code)}" if code != "00" else "")}]
+            race["_box"] = results.general_box(chunk, refs)
+            race["_respage"] = {**race["sources"][0], "asOf": pages.revs[title]["timestamp"]}
 
     status.check("campaign-sites", "Campaign websites found", sites > 0,
                  f"{sites} candidates linked to the official campaign sites their Wikipedia race page lists")
@@ -804,7 +796,7 @@ def main():
                 fec_matched += 1
 
     log("House votes")
-    voted = attach_house_votes(races, status)
+    voted = attach_house_votes({**races, **downballot}, status)
 
     log("Early vote")
     if EARLY_VOTE:
@@ -849,22 +841,50 @@ def main():
             merge_overlay(race, overlays[rid], status)
             prominence(race, {c["id"]: c.get("finance") for c in race["candidates"]})
             set_prior(race, gmargin)  # ids may have changed
+    # Down-ballot races: no forecast, so no baseline; money only from the state filings a
+    # race page tabulates; research overlays as for any race.
+    for rid, race in downballot.items():
+        for c in race["candidates"]:
+            fin = finance_auto.get(c["id"])
+            if fin:
+                fin = {k: v for k, v in fin.items() if not k.startswith("_") and v is not None}
+                fin.setdefault("parts", {})
+                fin.setdefault("source", "State campaign finance reports via Wikipedia")
+                c["finance"] = fin
+        race["auto"] = True
+        # The forecasters' rating (Sabato's Crystal Ball, the one outlet rating most of
+        # these), shown as is: no margin or odds come from it.
+        cons = model.consensus(race.get("ratings") or [], None)
+        if cons:
+            race["consensus"] = {"rating": cons["rating"], "outlets": cons["outlets"]}
+        if rid in overlays:
+            merge_overlay(race, overlays[rid], status)
+        prominence(race, {c["id"]: c.get("finance") for c in race["candidates"]})
     for rid in overlays:
-        if rid not in races:
+        if rid not in races and rid not in downballot:
             status.warn(f"research overlay {rid} matches no race on the ballot")
 
+    log("Results")
+    for race in list(races.values()) + list(downballot.values()):
+        res = results.build(race, race.pop("_winners", []), race.get("statusText"), race.pop("_box", None), race.pop("_respage", None),
+                            advance=race.pop("_advance", None))
+        if res:
+            race["result"] = res
+        else:
+            race.pop("result", None)
+    # The states' own counts where a script can read them (California), ahead of the
+    # race pages' boxes, which copy them by hand.
+    offs, off_info = official_results.load(log=log)
+    applied, unmatched = official_results.apply_all({**races, **downballot}, offs)
+    ca = off_info.get("CA") or {}
+    status.check("official-counts", "Official counts read from the states that publish them for scripts", ca.get("ok", False) and not unmatched,
+                 f"California: {len(applied)} races" + (f", posted {ca['asOf']}" if ca.get("asOf") else "")
+                 + (f"; names not matched in {', '.join(unmatched)}" if unmatched else "")
+                 + ("" if ca.get("ok", False) else f"; the API could not be read ({ca.get('reason')}), so the last read was used"), "info")
+    results_checks(races, downballot, status)
+
     log("Forecasts")
-    forecasts = {}
-    for rid, race in races.items():
-        if not race["candidates"]:
-            continue
-        if race.get("format") == "open-primary":
-            forecasts[rid] = None
-            continue
-        f = model.forecast(race, NOW)
-        forecasts[rid] = f
-        race["modelCheck"] = {"asOf": NOW.isoformat(timespec="seconds"), "lead": f["lead"]["id"], "pLead": round(f["pLead"], 4),
-                              "margin": round(f["margin"], 3), "dr": None if f["dr"] is None else round(f["dr"], 3)}
+    forecasts = forecast_all(races)
 
     control = chamber_control(races, forecasts, pages, status)
     run_checks(races, forecasts, control, status, generic, sen_html, gov_html, ratings_html, fec_info, fec_matched, overlays)
@@ -886,6 +906,15 @@ def main():
             "sources": [{"title": f"Wikipedia: {t}", "url": pages.url(t)} for t in PAGES.values() if t != PAGES["pres24"]]}
     write_json(DATA / "races.json", {"meta": meta, "races": out})
     write_json(DATA / "control.json", control)
+    down = []
+    for rid in sorted(downballot):
+        r = downballot[rid]
+        for k in ("page", "incumbentName", "statusText"):
+            r.pop(k, None)
+        if r.get("candidates"):
+            down.append(r)
+    write_json(DATA / "offices.json", {"meta": {"updated": meta["updated"], "sources": [{"title": f"Wikipedia: {t}", "url": pages.url(t)} for t in offices.PAGES]},
+                                        "races": down})
     st = {
         "updated": meta["updated"], "nextRefreshHours": 8, "seconds": round(time.time() - t0, 1),
         "counts": {"races": len(out), "senate": sum(r["office"] == "senate" for r in out), "governor": sum(r["office"] == "governor" for r in out),
@@ -893,7 +922,11 @@ def main():
                    "polls": sum(len(r.get("polls", [])) for r in out), "rated": sum(r.get("priorKind") == "ratings" for r in out),
                    "withMoney": sum(any(c.get("finance", {}).get("total") for c in r["candidates"]) for r in out),
                    "researched": sum(bool(r.get("research")) for r in out),
-                   "withVotes": voted},
+                   "withVotes": voted,
+                   "called": sum((r.get("result") or {}).get("status") == "won" for r in out),
+                   "withCounts": sum(bool((r.get("result") or {}).get("rows")) for r in out),
+                   "offices": len(down), "officesCalled": sum((r.get("result") or {}).get("status") == "won" for r in down),
+                   "officesResearched": sum(bool(r.get("research")) for r in down)},
         "fec": fec_info, "wikipedia": dict(wt.stats), "checks": status.checks, "warnings": status.warnings[:200],
     }
     write_json(DATA / "status.json", st)
@@ -913,7 +946,132 @@ def write_json(path, obj):
     tmp.replace(path)
 
 
+# Results -------------------------------------------------------------------------
+
+def winner_party(race):
+    res = race.get("result") or {}
+    if res.get("status") != "won" or not res.get("winners"):
+        return None
+    c = next((c for c in race["candidates"] if c["id"] == res["winners"][0]), None)
+    return c["party"] if c else None
+
+
+def seat_tally(rs, hold_d=0, hold_r=0, hold_i=0):
+    """Seats won so far: called races by the winner's party, plus the seats not up.
+    Independents and third parties are counted apart, since whom a newly elected
+    independent caucuses with isn't in the results."""
+    won = {"D": 0, "R": 0, "I": 0}
+    uncalled, runoff, flips = [], [], []
+    for r in rs:
+        p = winner_party(r)
+        if p:
+            won[p if p in ("D", "R") else "I"] += 1
+            if (r.get("result") or {}).get("flip"):
+                flips.append(r["id"])
+        elif (r.get("result") or {}).get("status") == "runoff":
+            runoff.append(r["id"])
+        else:
+            uncalled.append(r["id"])
+    return {"won": won, "seats": {"D": won["D"] + hold_d, "R": won["R"] + hold_r, "I": won["I"] + hold_i},
+            "called": sum(won.values()), "up": len(rs), "uncalled": sorted(uncalled), "runoff": sorted(runoff), "flips": sorted(flips)}
+
+
+def results_checks(races, downballot, status):
+    """What the refresh can verify about the results it read."""
+    groups = [("Senate", [r for r in races.values() if r["office"] == "senate"]),
+              ("House", [r for r in races.values() if r["office"] == "house"]),
+              ("governor", [r for r in races.values() if r["office"] == "governor"]),
+              ("down-ballot", list(downballot.values()))]
+    parts = []
+    for label, rs in groups:
+        called = sum((r.get("result") or {}).get("status") == "won" for r in rs)
+        counts = sum(bool((r.get("result") or {}).get("rows")) for r in rs)
+        parts.append(f"{label} {called} of {len(rs)} called, {counts} with vote counts")
+    status.check("results", "Results read from Wikipedia", True, "; ".join(parts), "info")
+    # A check-marked winner should lead the count (or be one of the two advancing).
+    odd, unmatched, fixed = [], [], []
+    for r in list(races.values()) + list(downballot.values()):
+        res = r.get("result") or {}
+        rows = [x for x in res.get("rows", []) if x.get("votes") is not None]
+        ids = res.get("winners") or res.get("advance") or []
+        if res.get("sharesFromVotes"):
+            fixed.append(r["id"])
+        if not rows or not ids:
+            continue
+        ranked = [x["id"] for x in sorted(rows, key=lambda x: -x["votes"])]
+        if any(i not in ranked for i in ids):
+            unmatched.append(r["id"])
+        elif any(ranked.index(i) >= len(ids) for i in ids) and not r.get("rcv"):
+            odd.append(r["id"])
+    status.check("results-winners", "Called winners lead their vote counts", not odd and not unmatched,
+                 "all called races with counts" if not odd and not unmatched else
+                 "; ".join(([f"winner trails the count in {', '.join(odd[:15])}"] if odd else []) +
+                           ([f"winner not found in the results box of {', '.join(unmatched[:15])}"] if unmatched else [])))
+    if fixed:
+        status.check("results-shares", "Vote shares match the vote counts", False,
+                     f"shares recomputed from the cited counts in {', '.join(fixed[:20])}", "info")
+
+
+# Forecasts -----------------------------------------------------------------------
+
+def forecast_all(races):
+    """Each race's forecast (frozen at Election Day once the polls have closed), with the
+    check the site re-runs in the browser: the forecast and, for a race still being
+    counted, its count-adjusted projection (model.live)."""
+    as_of = model.forecast_as_of(NOW)
+    forecasts = {}
+    for rid, race in races.items():
+        if not race["candidates"]:
+            continue
+        if race.get("format") == "open-primary":
+            forecasts[rid] = None
+            continue
+        f = model.forecast(race, as_of)
+        forecasts[rid] = f
+        race["modelCheck"] = {"asOf": as_of.isoformat(timespec="seconds"), "lead": f["lead"]["id"], "pLead": round(f["pLead"], 4),
+                              "margin": round(f["margin"], 3), "dr": None if f["dr"] is None else round(f["dr"], 3)}
+        lv = model.live(race, f) if NOW >= model.ELECTION_DAY else None
+        if lv:
+            race["modelCheck"]["live"] = {"lead": lv["lead"]["id"], "pLead": round(lv["pLead"], 4), "margin": round(lv["margin"], 3)}
+    return forecasts
+
+
 # Chamber control -----------------------------------------------------------------
+
+CHAMBERS = {  # who needs what for control: Senate ties go to the vice president (a Republican)
+    "senate": {"office": "senate", "d_needs": 51, "r_needs": 50},
+    "house": {"office": "house", "d_needs": 218, "r_needs": 218},
+    "governor": {"office": "governor", "d_needs": 26, "r_needs": 26},
+}
+
+
+def chamber_races(races, key):
+    return [r for r in races.values() if r["office"] == CHAMBERS[key]["office"] and not (key == "house" and r["state"] == "DC")]
+
+
+def after_count(control, races, forecasts):
+    """Once the polls have closed: each chamber's seats won so far, and the projection of
+    its final make-up (called seats fixed, the races still out from their counts and
+    final forecasts, see model.projection_entries)."""
+    for key, c in CHAMBERS.items():
+        s = control.get(key)
+        if not s:
+            continue
+        rs = chamber_races(races, key)
+        hold = s.get("holdover") or {"D": 0, "R": 0}
+        s["results"] = seat_tally(rs, hold.get("D", 0), hold.get("R", 0))
+        if NOW < model.ELECTION_DAY:
+            s.pop("projection", None)
+            continue
+        entries = model.projection_entries([r for r in rs if r["candidates"]], forecasts)
+        p = model.project_control(entries, hold.get("D", 0), hold.get("R", 0), d_needs=c["d_needs"], r_needs=c["r_needs"])
+        open_ = [r for r in rs if (r.get("result") or {}).get("status") not in ("won", "runoff")]
+        p.update(asOf=datetime.now(timezone.utc).isoformat(timespec="seconds"), open=len(open_),
+                 counting=sum(1 for r in open_ if model.live(r, forecasts.get(r["id"]))),
+                 runoff=sum(1 for r in rs if (r.get("result") or {}).get("status") == "runoff"))
+        s["projection"] = p
+    return control
+
 
 def chamber_control(races, forecasts, pages, status):
     cong = pages.html(PAGES["congress"]) or ""
@@ -947,6 +1105,7 @@ def chamber_control(races, forecasts, pages, status):
         s["gainD"] = s["meanD"] - cur_d
         s["gainR"] = s["meanR"] - cur_r
         s["market"] = polymarket(POLYMARKET["senate"])
+        s["results"] = seat_tally(sen, hold_d, hold_r)
         result["senate"] = s
     if house_now:
         s = model.simulate_control(entries(hou), 0, 0, d_needs=218, r_needs=218)
@@ -955,6 +1114,7 @@ def chamber_control(races, forecasts, pages, status):
         s["gainD"] = s["meanD"] - house_now["D"]
         s["gainR"] = s["meanR"] - house_now["R"]
         s["market"] = polymarket(POLYMARKET["house"])
+        s["results"] = seat_tally(hou)
         result["house"] = s
     hold_d, hold_r = len(GOV_HOLDOVER["D"]), len(GOV_HOLDOVER["R"])
     cur_d = hold_d + sum(r["held"] == "D" for r in gov)
@@ -965,7 +1125,9 @@ def chamber_control(races, forecasts, pages, status):
     s["gainD"] = s["meanD"] - cur_d
     s["gainR"] = s["meanR"] - cur_r
     s["market"] = None
+    s["results"] = seat_tally(gov, hold_d, hold_r)
     result["governor"] = s
+    after_count(result, races, forecasts)
 
     # Keep a history so the site can show how control odds have moved.
     prev = json.loads((DATA / "control.json").read_text(encoding="utf-8")) if (DATA / "control.json").exists() else {}
@@ -1074,9 +1236,15 @@ def run_checks(races, forecasts, control, status, generic, sen_html, gov_html, r
         status.check(f"{key}-seats-vs-forecasters", f"Expected {key} seats sit within forecasters' range",
                      lo - 1 <= mean <= hi + 1, f"model {math.floor(mean + 0.5)} D; forecasters {lo} to {hi} D counting their toss-ups")
 
+    # Once results are in, the market settles on them: a record, no longer a cross-check.
+    results_in = any(r.get("result") for r in races.values())
     for key in ("senate", "house"):
         c = control.get(key)
         if not c or not c.get("market"):
+            continue
+        if results_in:
+            status.check(f"{key}-market", f"{key.title()} betting market after the election", False,
+                         f"final forecast {c['pD']:.0%} D; Polymarket {c['market']['pD']:.0%} D, settling on the results", "info")
             continue
         diff = c["pD"] - c["market"]["pD"]
         status.check(f"{key}-market", f"{key.title()} control odds near the betting market (within 20 pts)", abs(diff) <= 0.2,
@@ -1090,13 +1258,17 @@ def run_checks(races, forecasts, control, status, generic, sen_html, gov_html, r
                  f"{fec_matched} candidates matched to FEC filings by the API; {hand_fec} more with full breakdowns from the FEC summaries in scripts/research/fec_2026.py; {fec_info.get('note')}"
                  + (f"; last download {fec_info['fetched']}" if fec_info.get("fetched") else ""))
     stale = []
+    # After Election Day the window is the last 30 days of the campaign, so the check
+    # doesn't flag every close race once the polls stop.
+    until = min(NOW, model.ELECTION_DAY)
     for rid, r in races.items():
         cons = (r.get("consensus") or {}).get("rating", "")
         if r.get("priorKind") == "ratings" and r["office"] != "house" and (cons.startswith(("Toss", "Tilt", "Lean"))):
             last = max((p["end"] for p in r.get("polls", [])), default=None)
-            if not last or last < (NOW - timedelta(days=30)).date().isoformat():
+            if not last or last < (until - timedelta(days=30)).date().isoformat():
                 stale.append(f"{rid} (last poll {last or 'none'})")
-    status.check("fresh-polls", "Close statewide races have a poll from the last 30 days", not stale,
+    status.check("fresh-polls", "Close statewide races had a poll in the campaign's last 30 days" if NOW > model.ELECTION_DAY
+                 else "Close statewide races have a poll from the last 30 days", not stale,
                  "all close races" if not stale else "; ".join(stale), "info")
     researched = sorted(rid for rid, ov in overlays.items() if not ov.get("financeOnly") and not ov.get("partial"))
     status.check("overlays", "Researched races merged", True,

@@ -1,12 +1,12 @@
 import { html, raw, fmtProb, fmtPct, fmtDR } from '../util.js';
 import { icon } from '../icons.js';
 import { STATE_BY_ABBR, legislatureChambers, ELECTION_DATE_LABEL } from '../data/states.js';
-import { fc, statewideRaces, houseRaces, loadLayer, legislativeRaces } from '../data/world.js';
+import { fc, statewideRaces, houseRaces, officeRaces, loadLayer, legislativeRaces, mapView, setMapView, resultsIn, resultParty, resultWinners, resultMargin } from '../data/world.js';
 import { cleanDistrictName } from '../data/demo.js';
-import { drawMap, ratingColor, ratingLegendHTML } from '../lib/map.js';
+import { drawMap, ratingColor, ratingLegendHTML, resultFill, resultsLegendHTML } from '../lib/map.js';
 import { cssVar } from '../lib/charts.js';
-import { raceFull, compactRace, mountRaceTabs, leadStr, lastName, photoCredits } from '../components/race.js';
-import { howToVote } from '../components/vote.js';
+import { raceFull, compactRace, raceRow, mountRaceTabs, leadStr, lastName, photoCredits, resultMarginStr } from '../components/race.js';
+import { howToVote, voteCardLabel } from '../components/vote.js';
 
 const ODD_YEAR_STATES = new Set(['LA', 'MS', 'NJ', 'VA']);
 
@@ -17,8 +17,32 @@ function chips(st) {
   if (senate) out.push(html`<span class="chip">${icon.check()} U.S. Senate${senate.special ? ' (special)' : ''}</span>`);
   if (governor) out.push(html`<span class="chip">${icon.check()} Governor</span>`);
   out.push(html`<span class="chip">${icon.check()} U.S. House</span>`);
+  for (const r of officeRaces(st)) out.push(html`<span class="chip">${icon.check()} ${r.officeName}${r.special ? ' (special)' : ''}</span>`);
   for (const c of legislatureChambers(st)) if (c.up !== 'none') out.push(html`<span class="chip">${icon.check()} ${c.name}${c.up === 'partial' ? ' (some seats)' : ''}</span>`);
   return out;
+}
+
+// The statewide offices below governor, each opening its own race page.
+function officesSection(st) {
+  const rs = officeRaces(st);
+  if (!rs.length) return '';
+  return html`<section class="card stack-sm" style="margin-bottom:20px">
+    <div class="section-head"><div><div class="eyebrow">Statewide offices</div><h2 style="margin:4px 0 0">Below the governor</h2></div><span class="small faint">${rs.length} race${rs.length === 1 ? '' : 's'} · click one for the candidates, their positions and the results</span></div>
+    <div class="race-list">${rs.map((r) => raceRow(r))}</div>
+  </section>`;
+}
+
+// A House district on the results map: winner and margin, runoff, leader, or nothing yet.
+function districtResult(r) {
+  const res = r.result;
+  if (!res) return { text: 'No result yet', party: null, won: false };
+  if (res.status === 'won') {
+    const w = resultWinners(r)[0];
+    return { text: `${w ? lastName(w.name) : ''} ${resultMarginStr(r) || ''}${res.flip ? ' · flip' : ''}`.trim(), party: w?.party, won: true };
+  }
+  if (res.status === 'runoff') return { text: 'Runoff', party: null, won: false };
+  const m = resultMargin(r);
+  return { text: m ? `${lastName(m.a.name)} leads, ${resultMarginStr(r)}` : 'Counting', party: m?.a.party || null, won: false };
 }
 
 function parseMode(st, q) {
@@ -56,6 +80,7 @@ function emptyState(title, body) {
 }
 
 export const stateView = {
+  live: true, // redrawn when new counts arrive (main.js)
   title: (ctx) => STATE_BY_ABBR[ctx.params[0]]?.name || 'State',
   async render(ctx) {
     const st = ctx.params[0];
@@ -65,23 +90,31 @@ export const stateView = {
     const { senate, governor } = statewideRaces(st);
 
     let body;
+    const results = m.level === 'federal' && m.chamber === 'house' && resultsIn();
     if (m.level === 'federal' && m.chamber === 'senate') {
       body = senate
         ? html`<section class="card" style="padding:clamp(16px,3vw,28px)">${raceFull(senate, { tag: 'h2', credits: false })}</section>`
         : emptyState(`No U.S. Senate election in ${s.name} in 2026`, `Neither of ${s.name}’s Senate seats is on the ballot this year. They are next up in 2028 and 2030.`);
     } else if (m.level === 'state' && st === 'DC') {
-      body = emptyState('No state legislature', 'The District of Columbia has a city council instead of a state legislature, so there are no state legislative races here.');
+      body = html`${officesSection(st)}${emptyState('No state legislature', 'The District of Columbia has a city council instead of a state legislature, so there are no state legislative races here.')}`;
     } else {
       const chamber = m.level === 'federal' ? null : legislatureChambers(st).find((c) => c.key === m.chamber);
       if (chamber && chamber.up === 'none') {
         body = emptyState(`No ${chamber.name} elections in ${s.name} in 2026`, ODD_YEAR_STATES.has(st) ? `${s.name} elects its legislature in odd-numbered years; the next election is in 2027.` : `${s.name}’s ${chamber.name} has four-year terms and is next elected in 2028.`);
       } else {
         const label = m.level === 'federal' ? (st === 'DC' ? 'Delegate to the U.S. House' : 'U.S. House districts') : `${chamber.name} districts`;
+        const view = mapView();
         body = html`<section class="stack">
           <div class="card map-card">
             <div class="section-head">
-              <div><div class="eyebrow">${m.level === 'federal' ? 'Federal' : 'State'} · 2026 district map</div><h2 style="margin:4px 0 0">${label}</h2></div>
-              <p class="small muted">${chamber && chamber.up === 'partial' ? 'Staggered terms: only some districts elect in 2026; the rest are grayed out. ' : ''}Click a district to see its race. Ctrl + scroll or the buttons to zoom.</p>
+              <div><div class="eyebrow">${m.level === 'federal' ? 'Federal' : 'State'} · 2026 district ${results ? (view === 'results' ? 'results' : 'final forecast') : 'map'}</div><h2 style="margin:4px 0 0">${label}</h2></div>
+              <div class="stack-sm" style="align-items:flex-end">
+                ${results ? html`<div class="seg" role="group" aria-label="Show on the map">
+                  <button type="button" data-view="results" aria-pressed="${String(view === 'results')}">Results</button>
+                  <button type="button" data-view="forecast" aria-pressed="${String(view === 'forecast')}">Final forecast</button>
+                </div>` : ''}
+                <p class="small muted" style="margin:0">${chamber && chamber.up === 'partial' ? 'Staggered terms: only some districts elect in 2026; the rest are grayed out. ' : ''}Click a district to see its race. Ctrl + scroll or the buttons to zoom.</p>
+              </div>
             </div>
             <div id="district-map"><div class="row muted"><span class="spinner"></span> Loading district map…</div></div>
             <div id="district-legend"></div>
@@ -102,10 +135,11 @@ export const stateView = {
       <nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span><span>${s.name}</span></nav>
       <div class="state-head">
         <div><div class="eyebrow">${ELECTION_DATE_LABEL}</div><h1 style="margin:6px 0 10px">${s.name}</h1><div class="ballot-chips">${chips(st)}</div></div>
-        <a class="btn" href="#how-to-vote" data-scroll="how-to-vote">${icon.ballot()} How to vote in ${s.name}</a>
+        <a class="btn" href="#how-to-vote" data-scroll="how-to-vote">${icon.ballot()} ${voteCardLabel(st)}</a>
       </div>
       ${toggles(st, m)}
       ${governor ? html`<div style="margin-bottom:20px">${compactRace(governor, { label: 'Statewide · Governor' })}</div>` : ''}
+      ${m.level === 'state' && st !== 'DC' ? officesSection(st) : ''}
       ${body}
       <div id="how-to-vote" style="margin-top:28px">${howToVote(st)}</div>
       ${credits ? html`<div style="margin-top:20px">${credits}</div>` : ''}
@@ -155,16 +189,33 @@ export const stateView = {
       }
       return r.held === 'D' || r.held === 'R' ? d3.interpolateLab(mid, pole(r.held))(0.68) : mid;
     };
-    const fillFor = (r) => (!r ? cssVar('--not-up') : r.format === 'field' ? fieldColor(r) : ratingColor(fc(r)));
+    // House results (federal level, after Election Day): see resultFill in lib/map.js.
+    const withResults = m.level === 'federal' && resultsIn();
+    const showResults = () => withResults && mapView() === 'results';
+    const fillFor = (r, pattern) => {
+      if (!r) return cssVar('--not-up');
+      if (r.format === 'field') return fieldColor(r);
+      if (showResults()) return resultFill(r.result, resultParty(r), pattern) || mid;
+      return ratingColor(fc(r));
+    };
 
     const few = features.features.length <= 40;
     const map = drawMap(mapEl, features, {
-      fillFor: (f) => fillFor(raceFor(f)),
+      fillFor: (f, pattern) => fillFor(raceFor(f), pattern),
       tooltipFor: (f) => {
         const r = raceFor(f);
         const name = r ? r.districtName : f.properties.n;
         if (!r) return html`<div class="t-title">${name}</div><div class="faint small">No election in 2026</div>`;
         const ff = fc(r);
+        if (showResults()) {
+          const res = r.result;
+          const rows = (res?.rows || []).filter((x) => !x.other).slice().sort((a, b) => (b.final ?? b.pct ?? 0) - (a.final ?? a.pct ?? 0)).slice(0, 3);
+          const won = new Set(res?.winners || []);
+          return html`<div class="t-title">${name}</div>
+            ${rows.length ? rows.map((x) => html`<div class="t-row"><span>${won.has(x.id) ? html`${icon.check()} ` : ''}${x.name} (${x.party || '?'})</span><b>${(x.final ?? x.pct) != null ? fmtPct(x.final ?? x.pct) : '—'}</b></div>`) : html`<div class="faint small">No vote count yet</div>`}
+            <div class="t-row"><span>Result</span><b>${!res ? 'Not in yet' : res.status === 'won' ? `Called${res.flip ? ' · flip' : ''}` : res.status === 'runoff' ? 'Runoff' : 'Not called yet'}</b></div>
+            <div class="t-row"><span>Final forecast</span><b>${ff.rating}</b></div>`;
+        }
         if (ff.kind === 'field') {
           const incs = (r.incumbents || []).filter((i) => i.name);
           return html`<div class="t-title">${name}</div>
@@ -180,6 +231,7 @@ export const stateView = {
       labelFor: few ? (f) => String(parseInt(f.id, 10) || f.id) : null,
       regionLabel: (f) => {
         const r = raceFor(f);
+        if (r && showResults() && r.format !== 'field') return `${r.districtName}: ${districtResult(r).text}`;
         return r ? `${r.districtName}: ${r.format === 'field' ? leadStr(fc(r)) : fc(r).rating}` : `${f.properties.n}: no election in 2026`;
       },
       zoomable: true,
@@ -187,22 +239,46 @@ export const stateView = {
     });
     const notUp = `<span><i style="background:${cssVar('--not-up')}"></i>No election in 2026</span>`;
     const sw = (c, label) => `<span><i style="background:${c}"></i>${label}</span>`;
+    const resultsLegend = () => resultsLegendHTML({
+      other: up.some((r) => r.result?.status === 'won' && !['D', 'R'].includes(resultParty(r))),
+      flips: up.some((r) => r.result?.flip), counting: up.some((r) => r.result?.status === 'counting'),
+      runoff: up.some((r) => r.result?.status === 'runoff'), extra: notUp,
+    });
     root.querySelector('#district-legend').innerHTML = !field.length
-      ? ratingLegendHTML(notUp)
+      ? (showResults() ? resultsLegend() : ratingLegendHTML(notUp))
       : byLean
         ? `<div class="map-legend"><span class="faint">2024 president:</span>${[['R', 1, 'R+15 or more'], ['R', 0.68, 'R+7 to 15'], ['R', 0.4, 'R+3 to 7'], [null, 0, 'Within 3'], ['D', 0.4, 'D+3 to 7'], ['D', 0.68, 'D+7 to 15'], ['D', 1, 'D+15 or more']]
           .map(([p, t, label]) => sw(d3.interpolateLab(mid, pole(p))(t), label)).join('')}${notUp}</div>`
         : `<div class="map-legend"><span class="faint">Seat now held by:</span>${sw(d3.interpolateLab(mid, pole('R'))(0.68), 'Republican')}${sw(d3.interpolateLab(mid, pole('D'))(0.68), 'Democrat')}${sw(mid, 'Other, split, vacant or not listed')}${notUp}</div>`;
 
-    list.innerHTML = features.features.map((f) => {
-      const r = raceFor(f);
-      const label = r ? r.districtName : cleanDistrictName(f.properties.n);
-      if (!r) return String(html`<span class="district-btn not-up"><span class="dn">${label}</span><span class="tiny faint">No 2026 race</span></span>`);
-      const ff = fc(r);
-      const lp = ff.kind === 'field' ? (ff.dr != null ? (ff.dr > 0 ? 'D' : 'R') : ff.held) : ff.open ? ff.ratingParty : ff.lead.party;
-      const color = lp === 'D' ? 'd-text' : lp === 'R' ? 'r-text' : '';
-      return String(html`<button type="button" class="district-btn" data-district="${f.id}" aria-pressed="false"><span class="dn">${label}</span><span class="dm ${color}">${leadStr(ff)}</span></button>`);
-    }).join('');
+    const fillList = () => {
+      list.innerHTML = features.features.map((f) => {
+        const r = raceFor(f);
+        const label = r ? r.districtName : cleanDistrictName(f.properties.n);
+        if (!r) return String(html`<span class="district-btn not-up"><span class="dn">${label}</span><span class="tiny faint">No 2026 race</span></span>`);
+        const ff = fc(r);
+        if (showResults() && r.format !== 'field') {
+          const dr = districtResult(r);
+          const color = dr.party === 'D' ? 'd-text' : dr.party === 'R' ? 'r-text' : '';
+          return String(html`<button type="button" class="district-btn" data-district="${f.id}" aria-pressed="false"><span class="dn">${label}</span><span class="dm ${color}">${dr.won ? html`<span class="win-tick">${icon.check()}</span>` : ''}${dr.text}</span></button>`);
+        }
+        const lp = ff.kind === 'field' ? (ff.dr != null ? (ff.dr > 0 ? 'D' : 'R') : ff.held) : ff.open ? ff.ratingParty : ff.lead.party;
+        const color = lp === 'D' ? 'd-text' : lp === 'R' ? 'r-text' : '';
+        return String(html`<button type="button" class="district-btn" data-district="${f.id}" aria-pressed="false"><span class="dn">${label}</span><span class="dm ${color}">${leadStr(ff)}</span></button>`);
+      }).join('');
+    };
+    fillList();
+    root.querySelectorAll('[data-view]').forEach((b) => b.addEventListener('click', () => {
+      setMapView(b.dataset.view);
+      root.querySelectorAll('[data-view]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      const eb = root.querySelector('.map-card .eyebrow');
+      if (eb) eb.textContent = `Federal · 2026 district ${mapView() === 'results' ? 'results' : 'final forecast'}`;
+      map.refill();
+      root.querySelector('#district-legend').innerHTML = showResults() ? resultsLegend() : ratingLegendHTML(notUp);
+      const pressed = list.querySelector('[aria-pressed="true"]')?.dataset.district;
+      fillList();
+      if (pressed) list.querySelector(`[data-district="${CSS.escape(pressed)}"]`)?.setAttribute('aria-pressed', 'true');
+    }));
     list.addEventListener('click', (e) => {
       const b = e.target.closest('[data-district]');
       if (b) select(b.dataset.district, true);
@@ -229,8 +305,11 @@ export const stateView = {
     // Start on the requested district, else the closest race, so the panel is never empty.
     // (For state legislative races, the closest 2024 presidential result with candidates listed.)
     const closeField = field.filter((r) => r.candidates.length && r.pres24 != null).sort((a, b) => Math.abs(a.pres24) - Math.abs(b.pres24))[0];
+    // (With results in, the closest count: an uncalled race first.)
+    const closeResult = withResults ? up.filter((r) => resultMargin(r))
+      .sort((a, b) => (a.result.status === 'won') - (b.result.status === 'won') || resultMargin(a).pts - resultMargin(b).pts)[0] : null;
     const start = ctx.query.d && races.has(ctx.query.d) ? ctx.query.d
-      : (closeField || up.find((r) => !r.demo) || up.slice().sort((a, b) => Math.abs((fc(a).pLead ?? 1) - 0.5) - Math.abs((fc(b).pLead ?? 1) - 0.5))[0])?.district;
+      : (closeField || closeResult || up.find((r) => !r.demo) || up.slice().sort((a, b) => Math.abs((fc(a).pLead ?? 1) - 0.5) - Math.abs((fc(b).pLead ?? 1) - 0.5))[0])?.district;
     if (start) select(start, false);
   },
 };

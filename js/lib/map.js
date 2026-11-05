@@ -33,13 +33,44 @@ export function ratingLegendHTML(extra = '') {
   return `<div class="map-legend">${sw}${extra}</div>`;
 }
 
+// Results: the winner's party color, striped where the seat changed parties; a lighter
+// tint of the leader's color while votes are counted; hatched gray for a runoff; plain
+// gray before any count. `pattern(base, stripe)` is the map's own stripe fill (drawMap
+// hands it to fillFor). A race with no result yet returns null.
+const RESULT_TINT = 0.42;
+const poleOf = (party) => (party === 'D' ? cssVar('--dem') : party === 'R' ? cssVar('--rep') : cssVar('--third'));
+export function resultFill(res, party, pattern) {
+  const mid = cssVar('--neutral-mid');
+  if (!res) return null;
+  if (res.status === 'runoff') return pattern(mid, cssVar('--text-3'));
+  if (res.status === 'won' && party) return res.flip ? pattern(poleOf(party), cssVar('--bg')) : poleOf(party);
+  if (res.status === 'counting' && party) return d3.interpolateLab(mid, poleOf(party))(RESULT_TINT);
+  return mid;
+}
+// The legend's swatches, drawn with the same colors (stripes as a CSS gradient).
+const stripes = (base, stripe) => `repeating-linear-gradient(45deg, ${base} 0 4px, ${stripe} 4px 6px)`;
+export function resultsLegendHTML({ other = false, flips = true, counting = true, runoff = true, extra = '' } = {}) {
+  const mid = cssVar('--neutral-mid');
+  const sw = (bg, label) => `<span><i style="background:${bg}"></i>${label}</span>`;
+  return `<div class="map-legend">
+    ${sw(cssVar('--rep'), 'Republican won')}${sw(cssVar('--dem'), 'Democrat won')}${other ? sw(cssVar('--third'), 'Independent or other won') : ''}
+    ${flips ? sw(stripes(cssVar('--rep'), cssVar('--bg')), 'Flipped to Republicans') + sw(stripes(cssVar('--dem'), cssVar('--bg')), 'Flipped to Democrats') : ''}
+    ${counting ? sw(d3.interpolateLab(mid, cssVar('--rep'))(RESULT_TINT), 'R leading, not called') + sw(d3.interpolateLab(mid, cssVar('--dem'))(RESULT_TINT), 'D leading, not called') : ''}
+    ${runoff ? sw(stripes(mid, cssVar('--text-3')), 'Runoff') : ''}${sw(mid, 'No result yet')}${extra}
+  </div>`;
+}
+
+let mapSeq = 0;
+
 export function drawMap(el, fcoll, opts) {
   const {
     fillFor, tooltipFor, onSelect, selectedId = null, labelFor = null,
     zoomable = false, ariaLabel = 'Map', regionLabel = (f) => f.id, maxHeight = 640,
+    borders = null, // outlines drawn over the regions (the states over the House's districts)
   } = opts;
   el.innerHTML = '';
   el.classList.add('map');
+  el.classList.toggle('map-fine', !!borders);
 
   const proj = d3.geoAlbersUsa();
   const probe = d3.geoPath(proj.fitSize([1000, 1000], fcoll)).bounds(fcoll);
@@ -52,8 +83,26 @@ export function drawMap(el, fcoll, opts) {
   const svg = d3.select(el).append('svg')
     .attr('viewBox', `0 0 ${W} ${H}`).attr('class', 'map-svg')
     .attr('role', 'group').attr('aria-label', ariaLabel);
+  // Stripe fills, made on demand, with ids unique to this map (two maps on a page, or a
+  // hidden first copy, must not share them).
+  const uid = `map${++mapSeq}`;
+  const defs = svg.append('defs');
+  const pats = new Map();
+  const pattern = (base, stripe) => {
+    const key = `${base}|${stripe}`;
+    if (!pats.has(key)) {
+      const id = `${uid}-p${pats.size}`;
+      const p = defs.append('pattern').attr('id', id).attr('patternUnits', 'userSpaceOnUse')
+        .attr('width', 6).attr('height', 6).attr('patternTransform', 'rotate(45)');
+      p.append('rect').attr('width', 6).attr('height', 6).attr('fill', base);
+      p.append('rect').attr('width', 2).attr('height', 6).attr('fill', stripe);
+      pats.set(key, id);
+    }
+    return `url(#${pats.get(key)})`;
+  };
   const layer = svg.append('g');
   const regions = layer.append('g').attr('class', 'regions');
+  if (borders) layer.append('g').attr('class', 'borders').attr('aria-hidden', 'true').selectAll('path').data(borders.features).join('path').attr('d', path);
   const hoverOutline = layer.append('path').attr('class', 'outline-hover');
   const selOutline = layer.append('path').attr('class', 'outline-selected');
   const labels = layer.append('g').attr('class', 'map-labels');
@@ -83,7 +132,7 @@ export function drawMap(el, fcoll, opts) {
   regions.selectAll('path').data(fcoll.features, (f) => f.id).join('path')
     .attr('class', 'region')
     .attr('d', path)
-    .attr('fill', (f) => fillFor(f))
+    .attr('fill', (f) => fillFor(f, pattern))
     .attr('tabindex', 0)
     .attr('role', 'button')
     .attr('aria-label', (f) => regionLabel(f))
@@ -148,7 +197,7 @@ export function drawMap(el, fcoll, opts) {
 
   return {
     select,
-    refill: () => regions.selectAll('path').attr('fill', (f) => fillFor(f)),
+    refill: () => regions.selectAll('path').attr('fill', (f) => fillFor(f, pattern)),
     zoomTo(id) {
       const f = byId.get(id);
       if (!f || !zoom) return;

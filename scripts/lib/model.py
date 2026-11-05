@@ -98,6 +98,13 @@ def poll_average(polls, as_of):
     return {"shares": {k: acc[k] / wts[k] for k in acc}, "weight": total, "count": len(live)}
 
 
+def forecast_as_of(now):
+    """The moment a forecast is run for: now until the polls close, then Election Day
+    itself, so the final forecast stays as it stood when voting ended (polls only age
+    after that). js/model/forecast.js has the same `forecastAsOf`."""
+    return now if now < ELECTION_DAY else ELECTION_DAY
+
+
 def blind_sigma(race):
     """Typical miss on the margin with no polls: tighter when forecasters have rated the race."""
     if race.get("priorKind") == "ratings":
@@ -301,4 +308,154 @@ def simulate_control(entries, hold_d, hold_r, d_needs, r_needs, sims=20000, seed
         "medianD": qd["median"], "medianR": qr["median"],
         "range80D": [qd["lo"], qd["hi"]], "range80R": [qr["lo"], qr["hi"]],
         "sims": sims, "distD": {str(k): v for k, v in sorted(dist_d.items())},
+    }
+
+
+# Counted votes -----------------------------------------------------------------
+#
+# After Election Day, a race not called yet blends its final forecast with the votes
+# counted so far (js/model/forecast.js has the same `live`). The count covers a share of
+# the expected vote: the share the results report when they give one, otherwise the
+# count against the expected turnout (race["turnout"]: the state's 2024 presidential
+# vote times the midterm ratio, split across its districts). That turnout is itself an
+# estimate, off by TURNOUT_SD either way, so the projection averages five equally likely
+# turnouts (the 10th to 90th percentiles); in each, an uncalled race keeps at least
+# 1 - MAX_COUNTED of its vote still out. The votes still out lean like the count in
+# proportion to the share already counted, and like the forecast otherwise. Their margin
+# is as uncertain as the forecast's while little is counted, and up to REST_SD points
+# when what is left is a last batch of late ballots, which can lean quite differently;
+# COUNT_SD allows for corrections to the posted count. Ranked-choice races are read on
+# their final round, with each party's other candidates' votes going to its strongest
+# one, as in the forecast. Open primaries and races with no odds get no projection.
+TURNOUT_SD = 0.2
+TURNOUT_Z = (-1.2816, -0.5244, 0.0, 0.5244, 1.2816)
+MAX_COUNTED = 0.98
+REST_SD = 12.0
+COUNT_SD = 0.3
+
+
+def live(race, f):
+    res = race.get("result") or {}
+    if not f or res.get("status") in ("won", "runoff"):
+        return None
+    cands = race["candidates"]
+    votes = {c["id"]: 0.0 for c in cands}
+    total = 0.0
+    for r in res.get("rows") or []:
+        if r.get("votes") is None:
+            continue
+        total += r["votes"]
+        if r.get("id") in votes:
+            votes[r["id"]] += r["votes"]
+    total = max(total, res.get("total") or 0)
+    if total <= 0 or sum(1 for c in cands if votes[c["id"]] > 0) < 2:
+        return None
+    counted = {c["id"]: 100 * votes[c["id"]] / total for c in cands}
+    if race.get("rcv"):
+        counted = rcv_final(cands, counted)
+    if res.get("reporting") is not None:
+        fracs = [min(res["reporting"] / 100, 0.999)]
+        basis = "reported"
+    else:
+        base = race.get("turnout") or 0
+        fracs = [total / max(base * (1 + TURNOUT_SD * z), total / MAX_COUNTED) for z in TURNOUT_Z]
+        basis = "estimated"
+    fs = f["shares"]
+    ranked = sorted(cands, key=lambda c: -counted[c["id"]])
+    a, b = ranked[0], ranked[1]
+    m_count = counted[a["id"]] - counted[b["id"]]
+    m_fc = fs[a["id"]] - fs[b["id"]]
+    n = len(fracs)
+    p_a = mean = moment2 = 0.0
+    shares = {c["id"]: 0.0 for c in cands}
+    for x in fracs:
+        m_rest = x * m_count + (1 - x) * m_fc
+        m = x * m_count + (1 - x) * m_rest
+        s_rest = (1 - x) * f["sigma"] + x * REST_SD
+        sd = math.sqrt(((1 - x) * s_rest) ** 2 + COUNT_SD ** 2)
+        p_a += norm_cdf(m / sd) / n
+        mean += m / n
+        moment2 += (sd ** 2 + m ** 2) / n
+        for c in cands:
+            shares[c["id"]] += (x * counted[c["id"]] + (1 - x) * (x * counted[c["id"]] + (1 - x) * fs[c["id"]])) / n
+    sd = math.sqrt(max(moment2 - mean ** 2, 0.0))
+    frac = sum(fracs) / n
+    expected = total / frac
+    lead, second, p_lead, margin = (a, b, p_a, mean) if p_a >= 0.5 else (b, a, 1 - p_a, -mean)
+    return {"lead": lead, "second": second, "margin": margin, "sigma": sd, "pLead": p_lead,
+            "counted": total, "expected": expected, "frac": frac, "basis": basis, "shares": shares,
+            "votes": {i: expected * s / 100 for i, s in shares.items()}}
+
+
+def projection_entries(rs, forecasts):
+    """After Election Day, each race as the seat projection sees it, with `p` the chance
+    that side `a` takes the seat: a called race is a seat for its winner's side; a runoff
+    between two sides is open (a coin weighted by the expected margin); a race not called
+    takes its count-adjusted chance where a count is in, and its final forecast otherwise.
+    The called races have shown the national picture, so the races still open are drawn
+    on their own, with no shared national miss."""
+    out = []
+    for r in rs:
+        if not r["candidates"]:
+            continue
+        res = r.get("result") or {}
+        by_id = {c["id"]: c for c in r["candidates"]}
+        if res.get("status") == "won" and by_id.get((res.get("winners") or [None])[0]):
+            side = caucus(by_id[res["winners"][0]])
+            out.append({"id": r["id"], "a": side, "b": side, "p": 1.0})
+            continue
+        adv = [by_id[i] for i in res.get("advance") or [] if i in by_id]
+        if res.get("status") == "runoff" and len(adv) >= 2:
+            a, b = caucus(adv[0]), caucus(adv[1])
+            lean = float(r.get("lean") or 0.0)
+            m = lean if a == "D" else -lean if b == "D" else 0.0
+            out.append({"id": r["id"], "a": a, "b": b, "p": 1.0 if a == b else norm_cdf(m / blind_sigma(r))})
+            continue
+        f = forecasts.get(r["id"])
+        lv = live(r, f)
+        if lv:
+            out.append({"id": r["id"], "a": caucus(lv["lead"]), "b": caucus(lv["second"]), "p": lv["pLead"]})
+            continue
+        e = sim_entry(r, f)
+        out.append({"id": r["id"], "a": e["a"], "b": e["b"], "p": 1.0 if e["a"] == e["b"] else norm_cdf(e["m"] / e["sigma"])})
+    return out
+
+
+def project_control(entries, hold_d, hold_r, d_needs, r_needs, sims=20000, seed=2026):
+    """Seat totals once the polls have closed: every race still open is drawn on its own
+    with its chance `p` (projection_entries), so the chamber odds agree with the chances
+    the race pages show."""
+    rnd = random.Random(seed)
+    dist_d, dist_r = {}, {}
+    d_ctrl = r_ctrl = 0
+    sum_d = sum_r = 0
+    for _ in range(sims):
+        d, r = hold_d, hold_r
+        for e in entries:
+            w = e["a"] if e["a"] == e["b"] or rnd.random() < e["p"] else e["b"]
+            if w == "D":
+                d += 1
+            elif w == "R":
+                r += 1
+        dist_d[d] = dist_d.get(d, 0) + 1
+        dist_r[r] = dist_r.get(r, 0) + 1
+        sum_d += d
+        sum_r += r
+        d_ctrl += d >= d_needs
+        r_ctrl += r >= r_needs
+
+    def quantiles(dist):
+        acc, q = 0, {}
+        for s in sorted(dist):
+            acc += dist[s]
+            for name, cut in (("lo", 0.1), ("median", 0.5), ("hi", 0.9)):
+                if name not in q and acc >= sims * cut:
+                    q[name] = s
+        return q
+
+    qd, qr = quantiles(dist_d), quantiles(dist_r)
+    return {
+        "pD": d_ctrl / sims, "pR": r_ctrl / sims, "pNone": max(0.0, 1 - (d_ctrl + r_ctrl) / sims),
+        "meanD": sum_d / sims, "meanR": sum_r / sims, "medianD": qd["median"], "medianR": qr["median"],
+        "range80D": [qd["lo"], qd["hi"]], "range80R": [qr["lo"], qr["hi"]], "sims": sims,
     }
