@@ -27,6 +27,7 @@ work: browsers block a page opened from disk from loading its own data files.
 | **Every U.S. Senate, U.S. House and governor race**, refreshed every 8 hours: candidates on the ballot, forecasters' ratings, polls (each linked to its source), fundraising, forecasts and chamber control | Nothing in the races is fictional; what isn't known yet is shown as missing |
 | **2026 results** for every Senate, House and governor race and every statewide office below governor, refreshed every 8 hours: a race is called once Wikipedia's national results table marks its winner, and each race page's vote count is shown as unofficial until the state certifies it. The final forecast stays on every race page, next to the count | Races nobody has called yet say so ("No result yet") rather than showing the forecast as a result |
 | **Statewide offices below governor** (attorney general, secretary of state, lieutenant governor, treasurer, auditor or comptroller): 116 races from Wikipedia's national 2026 pages, with the candidates, who holds the office, Sabato's Crystal Ball ratings and the results, each one clickable from My elections and the state page. Sourced positions for 57 of their candidates in 33 races, from the States Newsroom voter guides (the candidates' own survey answers and interviews) | The other office candidates have no positions loaded yet; no win odds for these races |
+| **Future elections, 2027 to 2029** (`#/upcoming`, and "Future elections for <year>" in My elections), read every day from Wikipedia: the President, the Senate, the House, governors and the statewide offices below them (106 races), four more statewide offices (agriculture and insurance commissioners, Wisconsin's Supreme Court), the 2027 state legislatures district by district (Louisiana, Mississippi, New Jersey, Virginia), 175 mayors and Los Angeles County's district attorney and county executive: the date, who holds the office and whether they can or will run again, declared candidates only, and for each person the first two sentences of their Wikipedia article, their photo and a website (their campaign's, else their official one), each checked to answer and show their name | No forecasts this early; primaries, district attorneys and other county offices outside Los Angeles County, school boards, the 2028 state legislatures and seats elected by district below the legislature aren't covered (Wikipedia has no pages for them) |
 | **Every state legislative seat on the 2026 ballot** (88 chambers), refreshed every 8 hours from Wikipedia's chamber pages: who holds it, the district's 2024 presidential margin, and the November candidates where the page lists them (about 3,400 of 5,600 districts). No win odds for these races | State legislative candidates' positions and money aren't loaded |
 | Early voting by state and House district, from the University of Florida Election Lab's tracker: switched off while the site carries ads, since the Lab's data is for non-commercial use only (`SHOW_EARLY_VOTE` in `js/config.js` and `EARLY_VOTE` in `scripts/update_races.py` turn it back on together) | |
 | Issue positions for every current U.S. House member on the ballot, and four former members running again, from 39 recorded House votes (2021 to 2026, including war powers resolutions) | Issue positions for candidates not yet researched are left blank, not invented |
@@ -57,7 +58,7 @@ automatic check from the last refresh.
 - **Get ready to vote**: the first button on the homepage, as "Préparer mon vote" on the France home page. It opens two choices, "Click here to view my elections" (My elections) and "Click here to help find the best candidate for me" (the My views questionnaire, whose answers My elections then matches against the candidates' sourced positions).
 - **Homepage map**: three views, Senate, House and Governor; click the map itself to open a race or a state (the old "All states" view is gone). The Senate and governor views color each state, and a click opens the state's page; the House view shows all 436 districts with the state lines drawn over them, and a click on a district opens its race. Color by the forecast, or, from Election Day on, by the results: winners in their party's color, flips striped, the leader of a count not called yet in a lighter tint, runoffs hatched gray, with a switch back to the final forecast (each state's House map works the same way). Above it, Senate, House and governor control: before the election, chance of control, expected seats and the expected gain from today's totals, the 80% range, the betting market for comparison, and how the odds have moved; after it, the seats won so far, the projected final tally with its 80% range and, while races are still being counted, a "Still being counted" list.
 - **Projections from the count**: every race counted but not called shows, on its page, in the ticker and on the map's tooltips, a projection that blends the votes counted so far with the final forecast (the share of the vote still out is estimated from the state's 2024 turnout). They are not calls. Counts are re-read every 10 minutes until every race is called (see "Results every 10 minutes").
-- **Upcoming elections (`#/upcoming`, in the U.S. menu)**: every election for president, Congress, governor and the statewide offices below governor in 2027, 2028 and 2029, plus the 2026 runoffs still ahead: the date, who holds the office and whether they can or will run again, and the declared candidates, filterable by state and office. No forecasts this early.
+- **Upcoming elections (`#/upcoming`, in the U.S. menu)**: every election from now through 2029 that Wikipedia lists, plus the 2026 runoffs still ahead: president, Congress, governor and the statewide offices below governor, and further down the other statewide offices (agriculture and insurance commissioners, a state supreme court seat), the 2027 state legislatures district by district, mayors, and the county offices Wikipedia covers (Los Angeles County's district attorney and its first county executive, in 2028). For each: the date, who holds the office and whether they can or will run again, the declared candidates, and who each person is: the start of their Wikipedia article, their photo and their website (the campaign's, else their official one, each checked to answer and show their name). Filterable by state and office. No forecasts this early.
 - **State page**: Federal / State toggle, then Senators / House Representatives (Nebraska shows its single-chamber Legislature). The governor's race appears whenever there is one, followed by the statewide offices below governor. House and legislature views show the real district map; click a district for its race. State legislative districts are colored by their 2024 presidential margin (or by the party holding the seat where a chamber's page has no margins), with no win odds.
 - **Candidate photos**: candidates with a Wikipedia article show their Wikidata photo in black and white, ringed in their party's color, as on the France pages, with the photographer and license in the tooltip and a "Photo credits" list on each page; the others keep their initials. Congress's leaders have theirs too.
 - **Race forecasts**: chance of winning, projected vote share and votes, 100 simulated elections, rating, 80% range and forecasters' ratings, plus tabs for polling (every poll as a dot, the average's change over 7 and 30 days, and a check against published averages), the trend since the first poll, early vote, money by source, and positions.
@@ -67,7 +68,7 @@ automatic check from the last refresh.
 - **Inflation tracker**: 28 official series over 1 to 5 years.
 - **Parties and values**: platforms and top-down leadership, including groups like DSA, the Progressive Caucus and the Freedom Caucus.
 - **My profile**: US-flag avatar (changeable), **My views** (the 136-question questionnaire, one question per slide, with short definitions for harder terms on hover, focus or tap; the homepage's "Get ready to vote" button leads to it), **My location** (address with consent, matched by the Census Bureau).
-- **My elections**: the races on your ballot, statewide offices such as attorney general and treasurer included, each opening its own page, and after Election Day each race's result; match with My views or answer fresh for one election; a ranking, then Similarities (left), Differences (right) and Unclear (bottom) with sources.
+- **My elections**: the races on your ballot, statewide offices such as attorney general and treasurer included, each opening its own page, and after Election Day each race's result; match with My views or answer fresh for one election; a ranking, then Similarities (left), Differences (right) and Unclear (bottom) with sources. Below them, "Future elections for 2027", "Future elections for 2028" and so on: one dropdown for each year with an election on your ballot (your state, your congressional and state legislative districts, your city or county), each race with its date, who holds the office, who they are and their website, and who has declared.
 - **Donations**: official donation links for liked candidates (verified domains only).
 - **Donate to the site** (`#/donate`, and `#/fr/soutenir` in French): "Donate via PayPal" first (`DONATE_URL` in `js/config.js`), then Cash App `$KoCai`.
 - Dark and light themes; works on phones.
@@ -158,9 +159,10 @@ election calendar and the candidates' positions every run. Last, every run write
 `data/cache/refresh.log`.
 
 On this computer it is scheduled in Windows Task Scheduler as
-**Informed Voter refresh** (in the InformedVoter folder), running at 6:00, 14:00 and 22:00 (a
-missed run, say while the PC was asleep, runs as soon as it wakes). To change or
-remove it, open Task Scheduler, or run:
+**Informed Voter refresh** (in the InformedVoter folder), running at 5:00, 13:00 and 21:00
+Central Standard Time (6:00, 14:00 and 22:00 in daylight saving time: the triggers are
+fixed to UTC). A missed run, say while the PC was asleep, runs as soon as it wakes. To
+change or remove it, open Task Scheduler, or run:
 
 ```
 schtasks /Delete /TN "\InformedVoter\Informed Voter refresh" /F
@@ -217,15 +219,58 @@ schtasks /Change /TN "\InformedVoter\Informed Voter results" /DISABLE
 
 The open pages re-read the data every 10 minutes too, while any race is being counted.
 
+## Publishing from this computer
+
+```
+py scripts/publish.py --dry-run
+```
+
+The live site, www.informedvoter.io, is GitHub Pages from the repository
+`loldudez/InformedVoter` (branch `main`). This computer sends it the new data itself:
+`update_results.py` after every results run (the four files it rewrites, so results
+reach the site every 10 minutes), and `refresh_all.py` after every full refresh (every
+data file that changed). `scripts/publish.py` works in a clone of its own,
+`%LOCALAPPDATA%\InformedVoter\publish`, never the GitHub Desktop clone, and commits
+only `data/` (`data/cache/` excepted) as "informed-voter-refresh". Code still reaches
+the site only when it is pushed from GitHub Desktop, so a data file must change in a
+way the code already online still reads (new keys, never renamed ones).
+
+It is on when `%USERPROFILE%\.informed-voter\publish.json` names the repository:
+
+```
+{"repo": "https://github.com/loldudez/InformedVoter.git", "branch": "main"}
+```
+
+Delete that file to turn it off. Pushing uses this computer's git sign-in, made once
+by hand (GitHub Desktop keeps its own sign-in, which command-line git can't use): run
+this in a Command Prompt (in PowerShell, write `$env:LOCALAPPDATA` for
+`%LOCALAPPDATA%`), choose "Sign in with your browser" in the Git Credential Manager
+window, and authorize it as the repository's owner.
+
+```
+git -C "%LOCALAPPDATA%\InformedVoter\publish" push --dry-run origin main
+```
+
+Then `py scripts/publish.py --dry-run` lists what would go out and, when anything
+would, tries the push: "The sign-in works: a real run would push." The script itself
+never asks for a sign-in, so
+no window opens from the scheduler; until the sign-in is made, each run logs "FAIL
+results: this computer isn't signed in to GitHub for git" in `data/cache/refresh.log`
+and the next one tries again. A push refused because the branch moved (a push from
+GitHub Desktop in between) is redone on top of it.
+
 ## Deploying
 
 It is a static site, so any static host works (GitHub Pages, Netlify, Cloudflare
 Pages): upload the whole folder except `data/cache/`. AdSense reads `ads.txt` only at
 the root of the domain, so a site served from a subfolder (a GitHub Pages project
-site, say) needs it copied to the domain's root. To keep a hosted copy fresh
-without this computer, `.github/workflows/refresh.yml` runs the same refresh every
-8 hours on GitHub Actions and commits the new data (add `FEC_API_KEY` as a
-repository secret).
+site, say) needs it copied to the domain's root. The live site's data comes from this
+computer (above). For when it is off, `.github/workflows/refresh.yml` runs the same
+refresh on GitHub Actions every 8 hours, but only when the live data is more than 12
+hours old (GitHub often starts scheduled runs late, and a cold cache can take over an
+hour), and commits the new data; it can also be run by hand (Actions → Refresh election
+data → Run workflow). Add `FEC_API_KEY` as a repository secret for full fundraising
+data. It doesn't run the 10-minute results job.
 
 ## Project layout
 
@@ -261,13 +306,15 @@ data/cache/   page and vote caches, refresh log (local only)
 scripts/      refresh_all.py, update_races.py, validate_races.py, update_news.py,
               update_inflation.py, update_congress.py, update_photos.py, build_maps.py, serve.py,
               update_results.py (results every 10 minutes after Election Day),
+              publish.py (sends the new data to the live site),
               update_upcoming.py (the elections of the next three years),
               build_house_map.py (the national House district map)
 scripts/lib/  wikitables.py, elections.py (parsers), model.py (Python copy of the
               forecast), house_votes.py, fec.py, early_vote.py, legislature.py,
               results.py (election results), official_results.py (states' own counts:
               California), offices.py (statewide offices),
-              wikiphotos.py (people's photos from Wikidata and Commons, both sections)
+              wikiphotos.py (people's photos from Wikidata and Commons, both sections),
+              people.py (who the people on the upcoming elections are: bio, photo, website)
 scripts/research/  one script per researched state, plus common.py
 vendor/       d3 v7.9.0 (ISC licence)
 assets/fonts/ Inter, Bricolage Grotesque, JetBrains Mono (SIL Open Font Licence)

@@ -82,7 +82,10 @@ export const isoDay = (d) => new Date(d).toISOString().slice(0, 10);
 export const addDays = (d, n) => new Date(new Date(d).getTime() + n * 864e5);
 
 export function initials(name) {
-  return name.split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join('').toUpperCase();
+  const all = name.split(/\s+/).filter(Boolean);
+  // A nickname in quotes or brackets (Charles "Bruiser" Martin) gives no initial.
+  const words = all.filter((w) => /^\p{L}/u.test(w));
+  return (words.length ? words : all).map((w) => w[0]).slice(0, 2).join('').toUpperCase();
 }
 export const ordinal = (n) => {
   const s = ['th', 'st', 'nd', 'rd'], v = n % 100;

@@ -11,6 +11,11 @@ import { rank, MIN_COMPARED } from '../model/match.js';
 import { howToVote } from '../components/vote.js';
 import { reminderButton } from '../components/reminders.js';
 import { PARTY_NAME, partyClass, heartBtn, starBtn, demoChip, dataChip, lastName, ratingChip, candBadge, photoCredits, resultChip, raceColors, awaitingResult } from '../components/race.js';
+import { futureElections } from './upcoming.js';
+
+// The "Future elections for <year>" disclosures the visitor has open, kept across the
+// redraws while votes are counted (the view is `live`).
+const openYears = new Set();
 
 async function ballotFor(ad) {
   const st = ad.state;
@@ -118,6 +123,7 @@ export const elections = {
       </div>`;
     }
     const items = await ballotFor(ad);
+    const future = await futureElections(ad, openYears);
     const s = STATE_BY_ABBR[ad.state];
     const over = afterElection();
     // A runoff reminder only for a race of the visitor's that is going to one (or, before
@@ -137,9 +143,17 @@ export const elections = {
       ${over ? html`<div class="notice">${icon.info()}<div>Results are unofficial until ${s.name} certifies them. A race shows a winner once Wikipedia’s national results table marks one; each race’s page has the full count, its source and the final forecast. Click a race below for its candidates, where they stand and the results.</div></div>` : ''}
       ${isDemo(items.find((x) => x.race)?.race) ? html`<div class="notice warn">${icon.info()}<div>The offices and districts below are your real 2026 races. The candidates, forecasts and positions are <b>demo data</b> until real candidate data is connected. Always confirm your sample ballot with ${s.name}’s election office.</div></div>` : ''}
       <div class="stack">${items.map((it) => (it.race ? raceCard(it.race) : html`<div class="card tight"><div class="row between"><b>${it.none}</b><span class="chip">No election this year</span></div><p class="small muted" style="margin:6px 0 0">${it.why}</p></div>`))}</div>
+      ${future.html}
       ${howToVote(ad.state)}
-      ${photoCredits(items.flatMap((it) => (it.race ? fc(it.race).cands : [])))}
+      ${photoCredits([...items.flatMap((it) => (it.race ? fc(it.race).cands : [])), ...future.people])}
     </div>`;
+  },
+  mount(root) {
+    root.querySelectorAll('details.future-year').forEach((d) => d.addEventListener('toggle', () => {
+      const y = Number(d.dataset.year);
+      if (d.open) openYears.add(y); else openYears.delete(y);
+    }));
+    return null;
   },
 };
 

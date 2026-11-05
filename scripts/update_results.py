@@ -16,8 +16,10 @@ place: everything else in them stays as the last full refresh (update_races.py, 
 hours) left it. The new files must pass the validator before they replace the old ones.
 
 A lock file (data/cache/refresh.lock) keeps it from running while the full refresh
-writes the same files. Once every race is called or sent to a runoff, the script turns
-its own scheduled task off. Each run is appended to data/cache/refresh.log.
+writes the same files. After a good run, scripts/publish.py sends the four files to the
+live site when this computer is set up to publish (README, "Publishing from this
+computer"). Once every race is called or sent to a runoff, the script turns its own
+scheduled task off. Each run is appended to data/cache/refresh.log.
 """
 
 import json
@@ -169,6 +171,17 @@ def write_checked(outputs):
     return True
 
 
+def publish():
+    """Send the new files to the live site (scripts/publish.py, which does nothing unless
+    this computer is set up to publish). It runs while this run still holds the lock, so
+    no other run rewrites the files under it."""
+    try:
+        subprocess.run([PY, "scripts/publish.py", "results"], cwd=ROOT, capture_output=True, text=True, encoding="utf-8",
+                       errors="replace", timeout=1500, creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
+    except subprocess.TimeoutExpired:
+        log("publishing took over 25 minutes and was stopped; the next run tries again")
+
+
 def stop_task(reason):
     p = subprocess.run(["schtasks", "/Change", "/TN", TASK, "/DISABLE"], capture_output=True, text=True,
                        creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
@@ -302,6 +315,7 @@ def run(t0, now):
     if not write_checked({"races.json": races_doc, "offices.json": offices_doc, "control.json": control, "status.json": st}):
         return 1
     log(f"ok ({time.time() - t0:.0f}s) {detail}")
+    publish()
     if not open_after:
         stop_task("every race is called or sent to a runoff")
     return 0

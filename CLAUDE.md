@@ -244,6 +244,19 @@ off once every race is won or in a runoff. Open pages re-read `status.json` ever
 minutes while anything is counted (`pollResults` in main.js, `refreshData` in world.js)
 and redraw the views marked `live`.
 
+**This computer publishes the live site's data** (owner's request, Nov. 5: "Do the 10
+minute results for the website here"). www.informedvoter.io is GitHub Pages from
+loldudez/InformedVoter (`main`). `scripts/publish.py` commits only `data/` (cache
+excepted) from a clone of its own (`%LOCALAPPDATA%\InformedVoter\publish`, never the
+GitHub Desktop clone): the four results files after each results run, every changed data
+file after each full refresh. It is on while `~/.informed-voter/publish.json` names the
+repository, and pushes with this computer's Git Credential Manager sign-in, which the
+owner makes once by hand (README, "Publishing from this computer"); it never prompts.
+Code goes out only when the owner pushes from GitHub Desktop, so a data change must stay
+readable by the code already online (new keys, never renamed ones). The cloud workflow
+is the fallback: on its schedule it refreshes only when the live data is over 12 hours
+old.
+
 **Projections from the count, never calls** (same request: "The forecast also needs to
 be adjusted, alongside the current vote count"). A counted, uncalled race blends its
 count with the final forecast (`live()`, identical in forecast.js and model.py, checked
@@ -278,8 +291,29 @@ itself stays race by race in My elections). It reuses the `.fr-start` styles.
 2026 runoffs still ahead). President, Senate (and specials), House, governors and the
 statewide offices below governor, from Wikipedia's national pages once a day
 (`scripts/update_upcoming.py` → `data/upcoming.json`): the date, who holds the office and
-their plans, and declared candidates only, as in France. No forecasts. State
-legislatures, local offices and primaries aren't covered.
+their plans, and declared candidates only, as in France. No forecasts. Below them (owner's
+request, Nov. 5: "expand greatly on the smaller elections that are for treasurer,
+district attorney, and all others ... to give information on the individuals and their
+potential website"): the other statewide offices from each state's "<year> <State>
+elections" page (`more`), the 2028 attorneys general from the yearly page's navigation
+box, the 2027 state legislatures district by district (`legislatures`), mayors from
+Wikipedia's yearly lists and the county offices its county pages cover (`local`: Los
+Angeles County's district attorney and county executive in 2028). Each person gets the
+first two sentences of their Wikipedia article, their photo and a website, the
+campaign's or else their official one on Wikidata, each checked to answer and show
+their name (`scripts/lib/people.py` → `people`), all only when the article's title has
+their last name. Primaries, district attorneys elsewhere, other local offices and seats
+elected by district below the legislature aren't covered: Wikipedia has no pages for them.
+
+**Future elections in My elections** (owner's request, Nov. 5: "a dropdown saying
+"future elections for ____ year" ... only for years where elections are actually
+available in the person's district and statewide"): under the 2026 races, one closed
+"Future elections for <year>" disclosure per year with an election on the visitor's
+ballot: President and House for everyone, their state's races, their legislative
+districts (the Census answer's `sldu`/`sldl`; New Jersey's Assembly districts are its
+Senate districts), their city (the Census place name matched to Wikipedia's) or county.
+Open ones stay open across the 10-minute redraws (`openYears` in elections.js). The cards
+are #/upcoming's (`futureElections` in js/views/upcoming.js).
 
 **Real race data is rebuilt automatically every 8 hours, never hand-edited.**
 `scripts/refresh_all.py` (Windows Task Scheduler, \InformedVoter\, 6:00/14:00/22:00)
@@ -399,14 +433,25 @@ treasurer and 23 auditor or comptroller races, 56 rated by Sabato's Crystal Ball
 partial), from the States Newsroom guides of 11 states; only 4 candidates have five or
 more.
 
-Counting (the 10:40 p.m. CST results run, Nov. 4): 58 races still open, 10 of them with a
-projection from the count; California's own count for 58 contests (posted 5:18 p.m.
-Pacific). Projected final: Senate 55 D–45 R, House 255 D–180 R (80% range 252 to 258
-Democrats), governors 29 D–21 R. Upcoming (Nov. 4 build): 96 races (2027: 17, 2028: 77,
-2029: 2) from 15 Wikipedia pages, 25 declared candidates; 2028 has the President (two
-declared Republicans, no declared Democrat), 35 Senate seats (Tennessee's a special) and
-11 governors; 2027 has Minnesota's Senate special (Nov. 2) and Louisiana's statewide
-offices (Oct. 9); no 2029 statewide-office pages exist yet beyond the governors.
+Counting (the 12:20 p.m. CST results run, Nov. 5): 47 races still open, 13 of them with a
+projection from the count; California's own count for 58 contests (posted 9:23 a.m.
+Pacific). Projected final: Senate 55 D–45 R (80% range 54 to 56 Democrats), House
+260 D–175 R (257 to 262), governors 30 D–20 R. None of it reaches the live site until
+the owner signs git in on this computer (see the publishing decision).
+
+Upcoming (Nov. 5 build): 106 races (2027: 17, 2028: 87, 2029: 2) from 15 national pages,
+30 declared candidates (four of them only on Kentucky's governor page); 2028 has the
+President (two declared Republicans, no declared Democrat), 35 Senate seats (Tennessee's
+a special), 11 governors and 10 attorneys general (holders from each office's article);
+2027 has Minnesota's Senate special (Nov. 2) and Louisiana's statewide offices (Oct. 9);
+no 2029 statewide-office pages exist yet beyond the governors. Below them, from 53 more
+pages: 4 other statewide offices (Kentucky's and Mississippi's agriculture
+commissioners, Mississippi's insurance commissioner, Wisconsin's Supreme Court seat),
+175 mayors (2027: 118, 2028: 57; 15 with a race page and a date, 80 declared candidates
+in 20 cities), Los Angeles County's district attorney and new county executive, and the
+2027 legislatures of Louisiana, Mississippi, New Jersey and Virginia (8 chambers, 578
+seats, 7 vacant). 862 people have a bio, 430 a photo and 109 a website, plus 30
+campaign sites.
 
 France (Nov. 2, 2026): the 2027 presidential dates, candidates and polls refresh daily
 from French Wikipedia (who is running cross-checked with franceinfo and
@@ -772,15 +817,71 @@ the ONS's 2022 and 2026 earnings surveys and PISA 2025 typed in by hand.
   clicked through the permissions themself. The editor exposes `window.monaco`: a file's
   text goes in as one edit of its model, not typed. A run whose permissions were turned
   down logs "requires access to your Google Account"; run it again to be asked again.
+- **Command-line git doesn't share GitHub Desktop's sign-in.** Desktop keeps its own
+  token, so `publish.py` failed with "could not read Username" until Git Credential
+  Manager was signed in from a terminal. The sign-in and the first push to the live
+  site's repository are the owner's: Claude Code's auto mode refused even a
+  `git push --dry-run` there as a production deploy.
+- **GitHub Actions starts scheduled runs late, and a cold page cache is slow.** At
+  Wikipedia's 7-second pace a refresh without its cache ran past the workflow's
+  45 minutes; the workflow now allows 170, saves its cache even after a failure and, on
+  schedule, runs only when the live data is over 12 hours old.
+- **The Census Bureau names places with their kind**: "Baton Rouge city",
+  "Nashville-Davidson metropolitan government (balance)", "Boise City city", where
+  Wikipedia's lists say "Baton Rouge", "Nashville", "Boise". `samePlace` (upcoming.js)
+  strips the kind and accepts a hyphenated prefix. Counties come as "East Baton Rouge
+  Parish".
+- **"<year> United States elections" is the index below the national pages.** Its
+  navigation box's lines ("Attorneys general", "States and territories", "State
+  legislatures", "Local") link each year's pages, red links included (their title ends
+  "(page does not exist)"); 2028's attorneys general have no pages, so their holders come
+  from each office's article, whose infobox can name the holder as a department's
+  "executive" (Montana's Department of Justice). Its "Mayoral elections" lists give each
+  city's mayor and plans in one sentence.
+- **Members tables mark empty seats "Vacant"**, which dropped those districts until they
+  were kept as `vacant: true` (Louisiana House 77 and 92, Louisiana Senate 14,
+  Mississippi House 70 and 77, Mississippi Senate 34, Virginia House 20, Nov. 5).
+- **A year's race page can redirect to a general article** ("2027 Madison mayoral
+  election" → "Mayoral elections in Madison, Wisconsin"): read only that year's section,
+  or past races' candidates come along.
+- **"District" in a section title isn't always a seat by district**: the skip list for
+  offices elected by district once dropped Los Angeles County's "District Attorney".
+  County pages use their own list (boards, councils, courts).
+- **Most race links on the 2027-2029 pages are redirects.** "2028 United States Senate
+  election in Alabama" and its like lead back to the national page, and Kentucky's 2027
+  attorney general, secretary of state, treasurer and auditor links lead to "2027
+  Kentucky elections", whose declared lists cover every office: read as race pages, all
+  four races got the same six people (Nov. 5). `own_article` (update_upcoming.py) reads
+  a race page only when it is an article of its own; the real ones (Kentucky's governor)
+  list declared candidates the national tables lack.
+- **A county elections page can name its state nowhere in its text** ("2028 Los Angeles
+  County elections"); its "Elections in California" sidebar link gives it.
+- **Wikidata gives several official websites in no set order.** Trump's are his own site
+  (ranked preferred) and his former office's, which the page showed first;
+  `people.facts` puts the preferred rank first.
+- **A judge's party on Wikidata is an earlier career's**: Pedro Colón (Wisconsin Supreme
+  Court, 2027) showed "D" from his years as a Democratic legislator. Judges keep only
+  the party their page's list gives (`JUDICIAL`).
+- **godaddysites.com is a website builder, not a parking service.** It was on the parking
+  list and refused Brett St. Amand's campaign site; a parked page fails the name check
+  anyway, and `PARKED_TEXT` catches "this domain is for sale".
 
 ## Open questions
 
 - Counts from the states: only California's feed is read so far. Another state needs a
   results feed a script may read (no bot wall); until then its counts come from
   Wikipedia's race pages, which can lag the state by hours.
-- Upcoming elections: state legislatures (Louisiana, Mississippi, New Jersey and Virginia
-  in 2027), local offices, primaries and House candidates aren't listed, and there are no
-  2029 statewide-office pages yet beyond the governors.
+- Upcoming elections: primaries and House candidates aren't listed, and there are no
+  2029 statewide-office pages yet beyond the governors. Below the statewide offices,
+  Wikipedia covers only what its pages have: the 2027 legislatures, mayors, Los Angeles
+  County. Missing: district attorneys elsewhere (Mississippi's and Virginia's are elected
+  in 2027, Pennsylvania's counties' too), other county and city offices, school boards,
+  courts below the supreme court, offices elected by district (county supervisors,
+  public service commissions: the address gives no such district), the 2028 state
+  legislatures (no 2028 chamber pages yet), and Louisiana's 2027 agriculture and
+  insurance commissioners (no page lists them). Ballotpedia has most of these but blocks
+  scripted reading, and its text isn't free to reuse; state election offices' candidate
+  lists would be the source, state by state, once filing opens.
 
 - Statewide offices below governor: 33 of the 116 races have sourced positions (130
   for 57 candidates, from the States Newsroom guides), and only four candidates have

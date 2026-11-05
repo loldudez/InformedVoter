@@ -507,13 +507,42 @@ United States elections"). Each entry of `races`:
 | `holder` | `name`, `party`, `wiki`; `name: null` with `appointment: true` for a seat to be filled by appointment, and with neither where the table says "TBD in 2026" (Vermont's two-year offices: the page then names the 2026 winner from the site's own results) |
 | `firstElected`, `lastRace` | The table's "First elected" (or the Senate's "Electoral history") and "Last race" ("52.5% D") |
 | `statusText`, `plans` | The table's status as written ("Term-limited", "Incumbent's intent unknown") and `running`, `leaving` or `unknown` |
-| `candidates` | Declared candidates only: the "Candidates" column ("TBD" and any part headed "Potential:" or "Declined:" left out), the officeholder added when the status says "Incumbent running"; for president, the "Declared" tables of each party's primaries, with `announced`, `experience` and `home`, and `primaries` counting them per party |
-| `page`, `source` | The race's own Wikipedia page (or the national page's section), and the table read, with its last edit (`asOf`) |
+| `candidates` | Declared candidates only: the "Candidates" column ("TBD" and any part headed "Potential:" or "Declined:" left out), the officeholder added when the status says "Incumbent running", then the "Declared" lists of the race's own page, which the tables lag behind (Kentucky's 2027 governor table lacked four of them): a person already listed gains the page's `experience`, article and campaign site, anyone else is added with the party of the primary they are listed under ("I" under "Independents"), and an officeholder listed as declared is running again. For president, the "Declared" tables of each party's primaries, with `announced`, `experience` and `home`, and `primaries` counting them per party |
+| `page`, `source` | The race's own Wikipedia page (linked from the table, or from the navigation box where the table points at its own section), or the national page's section; and the table read, with its last edit (`asOf`). A race page that redirects to a page about many races (most of 2028's, and Kentucky's 2027 offices, which go to "2027 Kentucky elections") isn't read for candidates |
 
 No forecasts: none of these races are rated, and the only polls test people who aren't
 running. The 2028 House entry has the date only (Wikipedia has no 2028 House page yet).
 The 2026 runoffs at the top of the page come from `races.json` (`result.status:
-"runoff"`, `runoff` for the date). State legislatures and local offices aren't covered.
+"runoff"`, `runoff` for the date).
+
+Offices the "<year> United States elections" navigation box lists without a national page
+(2028's ten attorneys general) join `races` with their holder from the office's own
+article (its infobox's "Incumbent", or "Agency executive" and the like: Montana's
+attorney general heads its Department of Justice), `holderSource` naming it, and a
+`source` noting the navigation box. Below the national pages, four more keys (pages built
+before them read only `races`):
+
+| Key | What it holds | Where it comes from |
+|---|---|---|
+| `more` | Other statewide offices, `level: "state"`: agriculture and insurance commissioners, superintendents, labor and public lands commissioners, state supreme court seats (`2027-MS-AGRICULTURE`, `2027-WI-SUPREME-COURT`) | Each office's section of "<year> <State> elections" (the states on the navigation box's "States and territories" line): the holder from the section's "Incumbent …" sentence, else the office's article; declared candidates from the section or its main article. Offices elected by district (public service commissions, appeals courts) are left out |
+| `local` | Mayors (`office: "mayor"`, `place`, `terms`; `2027-IL-MAYOR-chicago`) and county offices (`office: "county"`, `county`; `2028-CA-los-angeles-county-district-attorney`), `level: "local"` | Mayors from the "Mayoral elections" lists of "<year> United States elections" (the city, the mayor, their terms and plans), with the date, declared candidates and campaign sites from each race's own page where one exists (only that year's section when it redirects to a city's general article). County offices from the county pages on the navigation box's "Local" line (so far "2028 Los Angeles County elections"); boards, councils and courts, elected by district, are left out. `date: null` where no page gives one |
+| `legislatures` | One entry per chamber (`2027-LA-HD`, `2027-VA-SD`): `chamber`, `layer` (`sldu`, `sldl`, as in the Census answer), `seats`, and `districts` {"12": [members]}, each member with `name`, `party`, `wiki`, `firstElected`, `dr` (the district's 2024 presidential margin, where the election page gives it), `statusText` and `plans`; an empty seat is `{"name": null, "vacant": true}` | The chambers on the navigation box's "State legislatures" line: the election page's "results by district" table (New Jersey, Virginia's Senate), else the chamber's own article's members table; plans from the election page's retirement lists and term-limit columns |
+| `people` | {Wikipedia link: `bio`, `photo`, `site`, `party`} for everyone above whose name links to an article | `scripts/lib/people.py`: the first two sentences of the article (TextExtracts, CC BY-SA, without pronunciation respellings), the Wikidata photo (`wikiphotos.py`, U.S. rules), the official website (Wikidata P856, without an end date, the one Wikidata ranks preferred first) and the current party (P102, kept only when all agree), which fills in a party the page's list leaves out, except for judges (`JUDICIAL`): most states print no party for them on the ballot, and the party of an earlier career isn't the one running. Kept only when the article's title has the person's last name and the item is a person; each website, and each candidate's campaign `site`, must answer, show the last name and not be a parked domain (checked weekly, cached in `data/cache/sites.json`; sites made with a website builder such as godaddysites.com count) |
+
+Dates come from each page's own sentence ("will be held on November 2, 2027"), passing
+over sentences about primaries, runoffs and deadlines. Louisiana's chambers take the date
+of its statewide offices' first round, with the same note: they share that open primary,
+and their own pages give the runoff's day.
+
+`moreSources` lists the extra pages read, with their revisions. An officeholder whose
+own page gives no plans but who has declared for another office the same year
+(Mississippi's agriculture commissioner for governor in 2027) gets "Running for
+<office>" as `statusText` (and `plans: "leaving"` when it is on the same state's ballot),
+matched by article, or by name within the state. Not covered yet: district attorneys
+and other county offices beyond the county pages Wikipedia has, city councils, school
+boards, courts below the supreme court, offices elected by district (county
+supervisors, public service commissions), primaries, and the 2028 state legislatures
+(Wikipedia has no 2028 chamber pages yet).
 
 ## Rules for donation links
 

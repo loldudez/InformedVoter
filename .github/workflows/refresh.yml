@@ -1,44 +1,80 @@
-# Optional: when the site is hosted from a GitHub repository, this refreshes the
-# data every 8 hours in the cloud and commits it, so the published site stays
-# current without this computer being on. Add a free FEC API key as the
-# repository secret FEC_API_KEY for full fundraising data, and a contact (an
-# email address or the site's URL) as the repository variable
-# INFORMED_VOTER_CONTACT so Wikipedia allows the refresh its full request rate.
+# The fallback for when the owner's computer is off. That computer publishes the live
+# site's data itself (scripts/publish.py): every 10 minutes while votes are counted, and
+# after each full refresh. On its schedule this workflow refreshes only when the live
+# data is more than 12 hours old; it can always be run by hand (Actions > Refresh
+# election data > Run workflow). Add a free FEC API key as the repository secret
+# FEC_API_KEY for full fundraising data, and a contact (an email address or the site's
+# URL) as the repository variable INFORMED_VOTER_CONTACT so Wikipedia allows the
+# refresh its full request rate.
 name: Refresh election data
 
 on:
   schedule:
-    - cron: "15 */8 * * *"   # every 8 hours (UTC)
+    - cron: "15 */8 * * *"   # every 8 hours (UTC); GitHub often starts these late
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 170
     steps:
       - uses: actions/checkout@v4
+      - name: Skip while the owner's computer is publishing
+        id: fresh
+        if: github.event_name == 'schedule'
+        run: |
+          python3 - <<'EOF'
+          import json, os
+          from datetime import datetime, timezone
+          st = json.load(open("data/status.json", encoding="utf-8"))
+          age = (datetime.now(timezone.utc) - datetime.fromisoformat(st["updated"])).total_seconds() / 3600
+          print(f"The live data was last fully refreshed {age:.1f} hours ago.")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"skip={'true' if age < 12 else 'false'}\n")
+          EOF
       - uses: actions/setup-python@v5
+        if: steps.fresh.outputs.skip != 'true'
         with:
           python-version: "3.12"
       - name: Restore page cache
-        uses: actions/cache@v4
+        if: steps.fresh.outputs.skip != 'true'
+        uses: actions/cache/restore@v4
         with:
           path: data/cache
           key: refresh-cache-${{ github.run_id }}
           restore-keys: refresh-cache-
       - name: Refresh races, forecasts, control odds and news
+        if: steps.fresh.outputs.skip != 'true'
+        # A step that fails keeps its previous files (the race files are put back), so
+        # the rest is still worth committing.
+        continue-on-error: true
         env:
           FEC_API_KEY: ${{ secrets.FEC_API_KEY }}
           INFORMED_VOTER_CONTACT: ${{ vars.INFORMED_VOTER_CONTACT }}
+          INFORMED_VOTER_STEP_MINUTES: "100"   # a cold cache makes the race step slow
         run: python scripts/refresh_all.py
+      # Saved even after a failed refresh, so the next run starts where this one stopped.
+      - name: Save page cache
+        if: always() && steps.fresh.outputs.skip != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: data/cache
+          key: refresh-cache-${{ github.run_id }}
       - name: Commit updated data
+        if: steps.fresh.outputs.skip != 'true'
         run: |
           git config user.name "informed-voter-refresh"
           git config user.email "actions@users.noreply.github.com"
           # Every generated file (races, legislature, Congress, photos, France...); data/cache is ignored.
           git add data
-          git diff --cached --quiet || git commit -m "Refresh election data"
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "Refresh election data"
+          # If the owner's computer published in the meantime, its newer data stands.
+          git push || echo "The branch moved during the refresh; leaving the newer data in place."

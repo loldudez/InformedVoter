@@ -18,6 +18,8 @@
    own files, kept apart from step 5.
 7. The elections the mail service may send reminders for (update_reminders.py, no
    network), every run.
+8. Publishing: every data file that changed goes to the live site (publish.py, when
+   this computer is set up to publish; README, "Publishing from this computer").
 
 Each run is appended to data/cache/refresh.log.
 """
@@ -37,6 +39,7 @@ LOG = DATA / "cache" / "refresh.log"
 PY = sys.executable.replace("pythonw.exe", "python.exe")  # child scripts print; give them a console interpreter
 GUARDED = ["races.json", "offices.json", "control.json", "status.json"]
 LOCK = DATA / "cache" / "refresh.lock"  # shared with update_results.py, which writes the same files
+STEP_MINUTES = int(os.environ.get("INFORMED_VOTER_STEP_MINUTES") or 30)
 
 
 def log(msg):
@@ -50,11 +53,19 @@ def log(msg):
         pass  # no console when run by the scheduler
 
 
-def run(args, timeout=1800):
+def run(args, timeout=None):
+    """Run one script; False when it fails or outlasts its time (30 minutes here,
+    INFORMED_VOTER_STEP_MINUTES in the cloud workflow, whose cache can be colder)."""
+    timeout = timeout or STEP_MINUTES * 60
     t0 = time.time()
-    p = subprocess.run([PY, *args], cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace",
-                       timeout=timeout, env={**__import__("os").environ, "PYTHONIOENCODING": "utf-8"},
-                       creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))  # no console flashes when scheduled
+    try:
+        p = subprocess.run([PY, *args], cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace",
+                           timeout=timeout, env={**os.environ, "PYTHONIOENCODING": "utf-8"},
+                           creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))  # no console flashes when scheduled
+    except subprocess.TimeoutExpired:
+        # A timeout is a failed step, not a crash: the guarded race files are put back.
+        log(f"FAIL {' '.join(args)} stopped after {timeout // 60} minutes")
+        return False
     tail = " | ".join((p.stdout or "").strip().splitlines()[-2:])
     log(f"{'ok  ' if p.returncode == 0 else 'FAIL'} {' '.join(args)} ({time.time() - t0:.0f}s) {tail}")
     if p.returncode != 0 and p.stderr:
@@ -152,6 +163,7 @@ def main():
     fr_ok &= run(["scripts/fr/calendrier.py"])
     fr_ok &= run(["scripts/fr/positions_2027.py"])                  # hand research; no network
     ok &= run(["scripts/update_reminders.py"])                      # what email reminders may cover; no network
+    run(["scripts/publish.py"])  # the new data to the live site, when this computer publishes (README)
     trim_log()
     log("refresh finished" + ("" if ok and fr_ok else " with errors"))
     return 0 if ok and fr_ok else 1
