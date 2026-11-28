@@ -7,6 +7,8 @@
 // The "Current" vintage already carries the 120th Congress districts and the 2026
 // state legislative districts, so mid-decade redistricting is reflected.
 
+import { L } from '../i18n.js';
+
 let seq = 0;
 const ENDPOINT = 'https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress';
 
@@ -24,7 +26,7 @@ export function geocode(address, { timeoutMs = 25000 } = {}) {
     const script = document.createElement('script');
     const timer = setTimeout(() => {
       cleanup();
-      reject(new Error('The Census Bureau geocoder took too long to answer. Please try again.'));
+      reject(new Error(L('Le géocodeur du Census Bureau a mis trop de temps à répondre. Veuillez réessayer.', 'The Census Bureau geocoder took too long to answer. Please try again.')));
     }, timeoutMs);
     function cleanup() {
       clearTimeout(timer);
@@ -37,7 +39,7 @@ export function geocode(address, { timeoutMs = 25000 } = {}) {
     };
     script.onerror = () => {
       cleanup();
-      reject(new Error('Could not reach the Census Bureau geocoder. Check your connection and try again.'));
+      reject(new Error(L('Impossible de joindre le géocodeur du Census Bureau. Vérifiez votre connexion et réessayez.', 'Could not reach the Census Bureau geocoder. Check your connection and try again.')));
     };
     script.src = `${ENDPOINT}?${params}`;
     document.head.appendChild(script);

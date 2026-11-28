@@ -100,10 +100,10 @@ def _spread(key, days):
 RESPELL = r"(?=[^;)]*\b[A-Z]{2,})(?=[^;)]*-)(?=[^;)]*[a-zəɪʊʌæɒɔɛ])[A-Za-zəɪʊʌæɒɔɛːˈ'’ -]+?"
 
 
-def tidy_bio(s):
+def tidy_bio(s, limit=420):
     """Plain text of a lead: collapse spaces, drop pronunciation respellings ("Nungesser
     ( NUN-ghess-ər; born January 10, 1959)") and the empty brackets IPA guides leave
-    behind, and cut at a sentence end past 420 characters. Safe to run twice."""
+    behind, and cut at a sentence end past `limit` characters. Safe to run twice."""
     if not s:
         return None
     s = re.sub(r"\s+", " ", s).strip()
@@ -114,9 +114,9 @@ def tidy_bio(s):
     s = re.sub(r"\(\s+", "(", s)
     s = re.sub(r"\s+([,.;])", r"\1", s)
     s = re.sub(r"\s{2,}", " ", s).strip()
-    if len(s) > 420:
-        cut = s.rfind(". ", 0, 420)
-        s = s[:cut + 1] if cut > 80 else s[:417].rsplit(" ", 1)[0] + "…"
+    if len(s) > limit:
+        cut = s.rfind(". ", 0, limit)
+        s = s[:cut + 1] if cut > 80 else s[:limit - 3].rsplit(" ", 1)[0] + "…"
     return s or None
 
 

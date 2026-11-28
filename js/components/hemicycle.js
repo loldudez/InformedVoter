@@ -1,10 +1,13 @@
 // Half-circle seat charts for parliaments: France's Assemblée nationale and Sénat
 // (js/fr/views/parlement.js) and the U.S. House and Senate (js/views/congress.js).
 // Seats sit in concentric rows, each holding as many as its length allows, and fill
-// left to right in the groups' order, so each group forms a wedge; empty seats stay
-// hollow at the right end. Groups that share a color get their own seat shape.
+// left to right in the groups' order, so each group forms a wedge (members keep the order
+// they come in within their group); empty seats stay hollow at the right end, or after the
+// group `vacantAfter` names. Groups that share a color get their own seat shape.
 // Hovering or tapping a seat, or moving through the seats with the arrow keys, shows
-// who sits there; the key under the chart highlights a group.
+// who sits there; the key under the chart highlights a group, and the chart's `mark(test)`
+// highlights the members `test` picks wherever they sit (the U.S. caucuses), `mark(null)`
+// none.
 
 import { html, raw, esc } from '../util.js';
 
@@ -41,12 +44,13 @@ export function seatLayout(n) {
   };
 }
 
-// One seat: circle, square, diamond or triangle of about the same weight.
+// One seat: circle, square, diamond, triangle or downward triangle of about the same weight.
 function mark(shape, x, y, s) {
   x = r1(x); y = r1(y);
   if (shape === 'square') { const h = r1(s * 0.88); return `<rect x="${r1(x - h)}" y="${r1(y - h)}" width="${r1(2 * h)}" height="${r1(2 * h)}" rx="${r1(s * 0.2)}"/>`; }
   if (shape === 'diamond') { const h = r1(s * 1.22); return `<path d="M${x} ${r1(y - h)}L${r1(x + h)} ${y}L${x} ${r1(y + h)}L${r1(x - h)} ${y}Z"/>`; }
   if (shape === 'triangle') { const h = s * 1.3; return `<path d="M${x} ${r1(y - h)}L${r1(x + h * 0.87)} ${r1(y + h / 2)}L${r1(x - h * 0.87)} ${r1(y + h / 2)}Z"/>`; }
+  if (shape === 'tri-down') { const h = s * 1.3; return `<path d="M${x} ${r1(y + h)}L${r1(x + h * 0.87)} ${r1(y - h / 2)}L${r1(x - h * 0.87)} ${r1(y - h / 2)}Z"/>`; }
   return `<circle cx="${x}" cy="${y}" r="${r1(s)}"/>`;
 }
 
@@ -56,27 +60,44 @@ export const swatch = (g, px = 14) => raw(`<svg class="hemi-swatch" width="${px}
 export function drawHemicycle(el, opts) {
   const {
     seats: total, groups, tipFor, vacantTip = '', ariaLabel = '', hint = '', center = [],
-    legendItem = (g) => g.id, legendLabel = '',
+    legendItem = (g) => g.id, legendLabel = '', vacantAfter = null,
   } = opts;
   const order = new Map(groups.map((g, i) => [g.id, i]));
   const members = opts.members.filter((m) => order.has(m.g)).sort((a, b) => order.get(a.g) - order.get(b.g));
   const lay = seatLayout(Math.max(total, members.length));
   const { size } = lay;
 
-  // Seat i holds members[i]; the seats after the last member are vacant.
+  // slots[i] is what seat i holds: a member, or the k-th empty seat. Empty seats come
+  // right after the group `vacantAfter` names (the U.S. chambers keep seats not decided
+  // yet in the middle), otherwise at the right end.
+  const slots = [];
   const starts = [];
-  let at = 0;
+  const empty = lay.seats.length - members.length;
+  let vacant = '';
+  const emptyRun = () => {
+    for (let k = 0; k < empty; k++) {
+      const p = lay.seats[slots.length];
+      vacant += mark('circle', p.x, p.y, size * 0.8);
+      slots.push({ vacant: k });
+    }
+  };
   const layers = groups.map((g) => {
-    const n = members.filter((m) => m.g === g.id).length;
-    starts.push(at);
-    const body = lay.seats.slice(at, at + n).map((p) => mark(g.shape, p.x, p.y, size)).join('');
-    at += n;
+    starts.push(slots.length);
+    const body = members.filter((m) => m.g === g.id).map((m) => {
+      const p = lay.seats[slots.length];
+      // The seat's number, so mark() can highlight one member wherever they sit.
+      const shape = mark(g.shape, p.x, p.y, size).replace(/^<(\w+)/, `<$1 data-i="${slots.length}"`);
+      slots.push({ m });
+      return shape;
+    }).join('');
+    if (g.id === vacantAfter && empty > 0) { starts.push(slots.length); emptyRun(); }
     return `<g class="hemi-group" data-g="${esc(g.id)}" style="fill:${esc(g.color)}">${body}</g>`;
   }).join('');
-  const vacant = lay.seats.slice(at).map((p) => mark('circle', p.x, p.y, size * 0.8)).join('');
+  if (slots.length < lay.seats.length) emptyRun();
   // Up to three lines in the middle: a big number, then two short labels.
   const lines = center.slice(0, 3).map((t, i) => `<text class="hemi-c${i}" x="${W / 2}" y="${r1(lay.cy - [74, 40, 12][i])}">${esc(t)}</text>`).join('');
   const hintId = `hemi-hint-${Math.random().toString(36).slice(2, 8)}`;
+  const keyButton = (g) => html`<button type="button" class="hemi-key-item" data-g="${g.id}" aria-pressed="false">${swatch(g)}<span class="hemi-key-text">${legendItem(g)}</span></button>`;
 
   el.innerHTML = String(html`<div class="hemi-chart">
       <svg class="hemi-svg" viewBox="0 0 ${W} ${r1(lay.height)}" role="img" tabindex="0" aria-label="${ariaLabel}" ${raw(hint ? `aria-describedby="${hintId}"` : '')}>${raw(layers)}<g class="hemi-vacant">${raw(vacant)}</g>${raw(lines)}<circle class="hemi-ring" r="${r1(size + 4)}" cx="-50" cy="-50"/></svg>
@@ -84,7 +105,7 @@ export function drawHemicycle(el, opts) {
     </div>
     ${hint ? html`<p class="tiny faint hemi-hint" id="${hintId}">${hint}</p>` : ''}
     <p class="sr-only" aria-live="polite"></p>
-    <div class="hemi-key" role="group" aria-label="${legendLabel}">${groups.map((g) => html`<button type="button" class="hemi-key-item" data-g="${g.id}" aria-pressed="false">${swatch(g)}<span class="hemi-key-text">${legendItem(g)}</span></button>`)}</div>`);
+    <div class="hemi-key" role="group" aria-label="${legendLabel}">${groups.map(keyButton)}</div>`);
 
   const chart = el.querySelector('.hemi-chart');
   const svg = chart.querySelector('svg');
@@ -97,8 +118,9 @@ export function drawHemicycle(el, opts) {
   // vacantTip is one tooltip for every empty seat, or a function of the empty seat's
   // number (0 for the first).
   const show = (i, px, py) => {
-    const content = i < members.length ? tipFor(members[i])
-      : typeof vacantTip === 'function' ? vacantTip(i - members.length) : vacantTip;
+    const s = slots[i];
+    const content = s.m ? tipFor(s.m)
+      : typeof vacantTip === 'function' ? vacantTip(s.vacant) : vacantTip;
     if (!content) { hide(); return; }
     tip.innerHTML = String(content);
     tip.hidden = false;
@@ -177,5 +199,13 @@ export function drawHemicycle(el, opts) {
     b.addEventListener('blur', () => highlight(pinned));
   }
 
-  return { destroy: () => document.removeEventListener('pointerdown', outside) };
+  // Highlight the members `test` picks, wherever they sit, and dim every other seat;
+  // mark(null) shows them all again.
+  const seatEls = [...svg.querySelectorAll('[data-i]')];
+  const markSeats = (test) => {
+    for (const s of seatEls) s.classList.toggle('off', !!test && !test(slots[+s.dataset.i].m));
+    vacantEl.classList.toggle('off', !!test);
+  };
+
+  return { destroy: () => document.removeEventListener('pointerdown', outside), mark: markSeats };
 }

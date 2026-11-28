@@ -20,8 +20,9 @@ import { MAIL_SERVICE_URL, REMINDER_FROM } from '../config.js';
 const LEADS = [['30', 'Un mois avant', 'A month before'], ['14', 'Deux semaines avant', 'Two weeks before'], ['7', 'Une semaine avant', 'A week before']];
 
 const storeFor = (section) => (section === 'fr' ? frStore : store);
-// The U.S. section is in English; the France section follows the visitor's language.
-const tx = (section, fr, en) => (section === 'fr' ? L(fr, en) : en);
+// Both sections follow the visitor's language (the U.S. section has been bilingual since
+// Nov. 25, 2026). Reminder emails for U.S. elections stay in English (services/mail/Code.gs).
+const tx = (section, fr, en) => L(fr, en);
 const saved = (e) => (storeFor(e.section).get().reminders || {})[e.id];
 
 // The elections the mail service sends reminders for (null when the list can't be read:
@@ -47,7 +48,7 @@ export function reminderButton(e) {
 const ymd = (s) => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
 const today = () => { const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); };
 const addDays = (d, n) => new Date(d.getFullYear(), d.getMonth(), d.getDate() + n);
-const fmt = (d, section) => d.toLocaleDateString(section === 'fr' && lang() === 'fr' ? 'fr-FR' : 'en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+const fmt = (d) => d.toLocaleDateString(lang() === 'fr' ? 'fr-FR' : 'en-US', { day: 'numeric', month: 'long', year: 'numeric' });
 
 // RFC 5545: escape text, fold nothing (lines stay short), CRLF line ends.
 const icsText = (s) => String(s).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n');
@@ -61,7 +62,7 @@ export function icsFor(e, leads) {
     const day = ymd(d);
     lines.push('BEGIN:VEVENT', `UID:${e.id.replace(/[^\w-]/g, '-')}-${icsDate(day)}@informed-voter`, `DTSTAMP:${stamp}`,
       `DTSTART;VALUE=DATE:${icsDate(day)}`, `DTEND;VALUE=DATE:${icsDate(addDays(day, 1))}`, `SUMMARY:${icsText(name)}`,
-      `DESCRIPTION:${icsText(tx(e.section, 'Rappel d’Informed Voter. Vérifiez votre bureau de vote et les horaires auprès de votre mairie.', 'Reminder from Informed Voter. Check your polling place and hours with your local election office.'))}`);
+      `DESCRIPTION:${icsText(e.section === 'fr' ? L('Rappel d’Informed Voter. Vérifiez votre bureau de vote et les horaires auprès de votre mairie.', 'Reminder from Informed Voter. Check your polling place and hours with your town hall.') : L('Rappel d’Informed Voter. Vérifiez votre bureau de vote et ses horaires auprès du bureau électoral local.', 'Reminder from Informed Voter. Check your polling place and hours with your local election office.'))}`);
     if (e.url) lines.push(`URL:${e.url}`);
     for (const lead of leads) {
       if (addDays(day, -lead) < today()) continue;
@@ -82,7 +83,7 @@ function emailPart(e, mail) {
   const signed = saved(e)?.email ? note('Une inscription par e-mail a été faite depuis ce navigateur. Pour arrêter les rappels : le lien en bas de chaque e-mail.', 'An email sign-up was made from this browser. To stop the reminders, use the link at the bottom of any email.') : '';
   if (mail === 'unset') return html`${signed}${note('Proposés dès que le jour de l’élection sera officiellement fixé.', 'Offered once the election day is officially set.')}`;
   if (mail === 'past') return html`${signed}${note('Toutes les dates de rappel de cette élection sont passées.', 'All the reminder dates for this election have passed.')}`;
-  return html`${signed}<p class="small muted" style="margin:0">${tx(s, 'Envoyés par', 'Sent from')} <b>${REMINDER_FROM}</b>. ${tx(s, 'Un premier e-mail vous demande de confirmer : rien d’autre n’est envoyé avant.', 'A first email asks you to confirm: nothing else is sent until you do.')}</p>
+  return html`${signed}<p class="small muted" style="margin:0">${tx(s, 'Envoyés par', 'Sent from')} <b>${REMINDER_FROM}</b>. ${tx(s, 'Un premier e-mail vous demande de confirmer : rien d’autre n’est envoyé avant.', 'A first email asks you to confirm: nothing else is sent until you do.')}${s === 'us' && lang() === 'fr' ? ' Les e-mails de rappel des élections américaines sont en anglais.' : ''}</p>
     <div class="field"><label for="rem-email">${tx(s, 'Adresse e-mail', 'Email address')}</label><input class="input" id="rem-email" type="email" autocomplete="email" required></div>
     <label class="check"><input type="checkbox" id="rem-consent" required> <span class="small">${tx(s, 'J’accepte qu’Informed Voter garde mon adresse e-mail pour m’envoyer ces rappels, puis l’efface une fois l’élection passée. Je peux me désinscrire depuis chaque e-mail.', 'I agree that Informed Voter keeps my email address to send me these reminders, and deletes it once the election is over. I can unsubscribe from any email.')}</span></label>
     <p class="small faint" style="margin:0">${tx(s, 'L’adresse est gardée dans le compte Google du site (une feuille Google Sheets) et ne sert à rien d’autre.', 'The address is kept in the site’s Google account (a Google Sheets file) and used for nothing else.')} <a href="${s === 'fr' ? '#/fr/a-propos' : '#/about'}" data-close-modal>${tx(s, 'Confidentialité', 'Privacy')}</a></p>

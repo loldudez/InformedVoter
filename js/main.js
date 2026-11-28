@@ -6,6 +6,7 @@ import { refreshData, stillCounting } from './data/world.js';
 import { mountHelp } from './components/help.js';
 import { wireReminders } from './components/reminders.js';
 import { frStore } from './fr/store.js';
+import { L } from './i18n.js';
 
 // Stars and hearts work anywhere on any page through one delegated handler.
 function onClick(e) {
@@ -18,8 +19,8 @@ function onClick(e) {
     const on = store.toggle('starred', id);
     document.querySelectorAll(`[data-star="${CSS.escape(id)}"]`).forEach((b) => {
       b.setAttribute('aria-pressed', String(on));
-      b.setAttribute('aria-label', on ? 'Remove from starred elections' : 'Star this election');
-      b.title = on ? 'Starred' : 'Star this election';
+      b.setAttribute('aria-label', on ? L('Retirer des élections suivies', 'Remove from starred elections') : L('Suivre cette élection', 'Star this election'));
+      b.title = on ? L('Suivie', 'Starred') : L('Suivre cette élection', 'Star this election');
       b.innerHTML = String(on ? icon.starFill() : icon.star());
     });
     return;
@@ -30,8 +31,8 @@ function onClick(e) {
     const on = store.toggle('liked', id);
     document.querySelectorAll(`[data-like="${CSS.escape(id)}"]`).forEach((b) => {
       b.setAttribute('aria-pressed', String(on));
-      b.setAttribute('aria-label', on ? `Remove ${name} from liked candidates` : `Like ${name}`);
-      b.title = on ? 'Liked' : 'Like this candidate';
+      b.setAttribute('aria-label', on ? L(`Retirer ${name} des candidats favoris`, `Remove ${name} from liked candidates`) : L(`Ajouter ${name} aux favoris`, `Like ${name}`));
+      b.title = on ? L('Favori', 'Liked') : L('Ajouter aux candidats favoris', 'Like this candidate');
       b.innerHTML = String(on ? icon.heartFill() : icon.heart());
     });
   }

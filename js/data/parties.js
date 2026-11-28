@@ -4,14 +4,19 @@
 // statement of principles; every card links to that source so readers can check
 // the wording. Leadership was verified against news coverage and official pages
 // in October 2026 and changes over time, so every card shows its as-of date.
+//
+// The French fields (nameFr, blurbFr, valuesFr, sourceLabelFr, ROLE_FR and a
+// leader's third entry) translate the English ones; the sources stay in English.
 
 export const PARTIES_AS_OF = 'October 2026';
+export const PARTIES_AS_OF_FR = 'octobre 2026';
 
 export const PARTIES = [
   {
-    id: 'dem', name: 'Democratic Party', tone: 'dem',
-    site: 'https://democrats.org', source: 'https://democrats.org/where-we-stand/party-platform/', sourceLabel: '2024 Democratic Party Platform',
+    id: 'dem', name: 'Democratic Party', nameFr: 'Parti démocrate', tone: 'dem',
+    site: 'https://democrats.org', source: 'https://democrats.org/where-we-stand/party-platform/', sourceLabel: '2024 Democratic Party Platform', sourceLabelFr: 'Programme 2024 du Parti démocrate',
     blurb: 'One of the two major parties. Holds the minority in both chambers of Congress after the 2024 election.',
+    blurbFr: 'L’un des deux grands partis. Minoritaire dans les deux chambres du Congrès depuis l’élection de 2024.',
     values: [
       'Lower costs for families, including housing, prescription drugs and child care, and expand the Child Tax Credit.',
       'Protect and build on the Affordable Care Act, with Medicare negotiating drug prices and capped insulin costs.',
@@ -22,6 +27,17 @@ export const PARTIES = [
       'Ask the wealthiest people and large corporations to pay more in taxes, with no tax increases on households under $400,000.',
       'Pair border-security funding with immigration reform that includes a path to citizenship.',
       'Stand with NATO allies and Ukraine.',
+    ],
+    valuesFr: [
+      'Réduire le coût de la vie des familles, notamment le logement, les médicaments sur ordonnance et la garde d’enfants, et élargir le crédit d’impôt pour enfant.',
+      'Protéger et prolonger l’Affordable Care Act (la réforme de l’assurance maladie de 2010), avec la négociation des prix des médicaments par Medicare et un prix plafonné pour l’insuline.',
+      'Rétablir le droit à l’avortement dans tout le pays et protéger la liberté reproductive.',
+      'Adopter des protections fédérales du droit de vote et défendre les institutions démocratiques.',
+      'Investir dans l’énergie propre et l’action pour le climat tout en créant des emplois.',
+      'Soutenir le droit de se syndiquer et augmenter les salaires.',
+      'Demander aux plus riches et aux grandes entreprises de payer plus d’impôts, sans hausse pour les ménages qui gagnent moins de 400 000 $ par an.',
+      'Associer le financement de la sécurité aux frontières à une réforme de l’immigration ouvrant une voie vers la citoyenneté.',
+      'Soutenir les alliés de l’OTAN et l’Ukraine.',
     ],
     leaders: [
       ['Chair, Democratic National Committee', 'Ken Martin'],
@@ -36,9 +52,10 @@ export const PARTIES = [
     groups: ['dsa', 'cpc', 'newdem', 'bluedog'],
   },
   {
-    id: 'gop', name: 'Republican Party', tone: 'rep',
-    site: 'https://gop.com', source: 'https://gop.com/about-our-party/', sourceLabel: '2024 Republican Party Platform',
+    id: 'gop', name: 'Republican Party', nameFr: 'Parti républicain', tone: 'rep',
+    site: 'https://gop.com', source: 'https://gop.com/about-our-party/', sourceLabel: '2024 Republican Party Platform', sourceLabelFr: 'Programme 2024 du Parti républicain',
     blurb: 'One of the two major parties. Holds the White House and majorities in both chambers of Congress after the 2024 election.',
+    blurbFr: 'L’un des deux grands partis. Détient la Maison-Blanche et la majorité dans les deux chambres du Congrès depuis l’élection de 2024.',
     values: [
       'Secure the border and carry out large-scale deportations of people in the country illegally.',
       'Bring down inflation and expand domestic oil, gas and other energy production.',
@@ -51,6 +68,19 @@ export const PARTIES = [
       'Expand school choice and parental rights in education.',
       'Limit women’s sports to athletes who were born female.',
       'End electric-vehicle mandates and cut federal regulations.',
+    ],
+    valuesFr: [
+      'Sécuriser la frontière et mener des expulsions à grande échelle des personnes en situation irrégulière.',
+      'Faire baisser l’inflation et développer la production nationale de pétrole, de gaz et d’autres énergies.',
+      'Baisser les impôts de celles et ceux qui travaillent, notamment en supprimant l’impôt sur les pourboires.',
+      'Reconstruire l’industrie américaine par la politique commerciale, droits de douane compris.',
+      'Défendre la Constitution et sa Déclaration des droits (Bill of Rights), dont la liberté d’expression, la liberté religieuse et le droit de porter des armes.',
+      'Protéger la Sécurité sociale (les retraites publiques) et Medicare, sans coupes ni changement de l’âge de la retraite.',
+      'Renforcer l’armée et construire un bouclier antimissile couvrant tout le pays.',
+      'Exiger une pièce d’identité, des bulletins papier et une preuve de citoyenneté pour voter.',
+      'Élargir le libre choix de l’école et les droits des parents dans l’éducation.',
+      'Réserver les compétitions féminines aux athlètes de sexe féminin à la naissance.',
+      'Mettre fin aux obligations en faveur des véhicules électriques et réduire les réglementations fédérales.',
     ],
     leaders: [
       ['President of the United States', 'Donald J. Trump'],
@@ -68,9 +98,10 @@ export const PARTIES = [
     groups: ['hfc', 'rsc'],
   },
   {
-    id: 'lib', name: 'Libertarian Party', tone: 'third',
-    site: 'https://lp.org', source: 'https://lp.org/platform/', sourceLabel: 'Libertarian Party Platform',
+    id: 'lib', name: 'Libertarian Party', nameFr: 'Parti libertarien', tone: 'third',
+    site: 'https://lp.org', source: 'https://lp.org/platform/', sourceLabel: 'Libertarian Party Platform', sourceLabelFr: 'Programme du Parti libertarien',
     blurb: 'The largest third party by registration in many states.',
+    blurbFr: 'Le plus grand des petits partis par le nombre d’inscrits dans de nombreux États.',
     values: [
       'Maximize individual liberty and keep government as small as possible.',
       'Free markets, lower taxes and fewer regulations.',
@@ -78,12 +109,20 @@ export const PARTIES = [
       'A non-interventionist foreign policy that brings troops home.',
       'Strong protections for privacy, free speech and gun rights, and an end to mass surveillance.',
     ],
-    leaders: [['Chair, Libertarian National Committee', 'Evan McMahon (elected May 2026)']],
+    valuesFr: [
+      'Porter la liberté individuelle au plus haut et l’État au plus bas.',
+      'Le libre marché, moins d’impôts et moins de réglementations.',
+      'Mettre fin à la guerre contre la drogue et laisser à chacun les choix personnels qui ne nuisent à personne d’autre.',
+      'Une politique étrangère non interventionniste qui ramène les troupes au pays.',
+      'Une protection forte de la vie privée, de la liberté d’expression et du droit de porter des armes, et la fin de la surveillance de masse.',
+    ],
+    leaders: [['Chair, Libertarian National Committee', 'Evan McMahon (elected May 2026)', 'Evan McMahon (depuis mai 2026)']],
   },
   {
-    id: 'grn', name: 'Green Party', tone: 'third',
-    site: 'https://www.gp.org', source: 'https://www.gp.org/ten_key_values', sourceLabel: 'The Ten Key Values',
+    id: 'grn', name: 'Green Party', nameFr: 'Parti vert', tone: 'third',
+    site: 'https://www.gp.org', source: 'https://www.gp.org/ten_key_values', sourceLabel: 'The Ten Key Values', sourceLabelFr: 'Les dix valeurs clés',
     blurb: 'An environmentalist party organized around its Ten Key Values.',
+    blurbFr: 'Un parti écologiste organisé autour de ses dix valeurs clés.',
     values: [
       'Grassroots democracy and decentralized decision-making.',
       'Social justice, equal opportunity, feminism and respect for diversity.',
@@ -91,28 +130,48 @@ export const PARTIES = [
       'Nonviolence and community-based economics.',
       'Personal and global responsibility.',
     ],
-    leaders: [['National co-chairs', 'A rotating steering committee — current members are listed at gp.org']],
+    valuesFr: [
+      'La démocratie à la base et des décisions décentralisées.',
+      'La justice sociale, l’égalité des chances, le féminisme et le respect de la diversité.',
+      'La sagesse écologique et un avenir tourné vers la durabilité.',
+      'La non-violence et une économie locale et communautaire.',
+      'La responsabilité personnelle et planétaire.',
+    ],
+    leaders: [['National co-chairs', 'A rotating steering committee — current members are listed at gp.org', 'Un comité de direction tournant ; ses membres actuels sont listés sur gp.org']],
   },
   {
     id: 'wfp', name: 'Working Families Party', tone: 'third',
     site: 'https://workingfamilies.org', source: 'https://workingfamilies.org', sourceLabel: 'workingfamilies.org',
     blurb: 'A progressive party that often endorses Democrats and, in fusion-voting states like New York, lists them on its own ballot line.',
+    blurbFr: 'Le « parti des familles qui travaillent », un parti progressiste qui soutient souvent des démocrates et, dans les États qui autorisent le vote de fusion comme New York, les présente sur sa propre ligne du bulletin.',
     values: [
       'An economy that works for working people rather than the wealthy.',
       'Higher taxes on the rich and large corporations.',
       'Racial justice and a multiracial democracy.',
       'Climate action and good union jobs.',
     ],
+    valuesFr: [
+      'Une économie au service de celles et ceux qui travaillent plutôt que des plus riches.',
+      'Plus d’impôts pour les riches et les grandes entreprises.',
+      'La justice raciale et une démocratie multiraciale.',
+      'L’action pour le climat et de bons emplois syndiqués.',
+    ],
     leaders: [['National Director', 'Maurice Mitchell']],
   },
   {
-    id: 'con', name: 'Constitution Party', tone: 'third',
+    id: 'con', name: 'Constitution Party', nameFr: 'Parti de la Constitution', tone: 'third',
     site: 'https://constitutionparty.com', source: 'https://constitutionparty.com', sourceLabel: 'constitutionparty.com',
     blurb: 'A socially conservative party that emphasizes a strict reading of the Constitution.',
+    blurbFr: 'Un parti conservateur sur les questions de société, attaché à une lecture stricte de la Constitution.',
     values: [
       'Limit the federal government to the powers listed in the Constitution.',
       'Oppose abortion and defend what it describes as America’s Christian heritage.',
       'Strong protection of gun rights and state sovereignty.',
+    ],
+    valuesFr: [
+      'Limiter l’État fédéral aux pouvoirs énumérés dans la Constitution.',
+      'S’opposer à l’avortement et défendre ce qu’il décrit comme l’héritage chrétien de l’Amérique.',
+      'Une protection forte du droit de porter des armes et de la souveraineté des États.',
     ],
     leaders: [],
   },
@@ -120,9 +179,14 @@ export const PARTIES = [
     id: 'fwd', name: 'Forward Party', tone: 'third',
     site: 'https://www.forwardparty.com', source: 'https://www.forwardparty.com', sourceLabel: 'forwardparty.com',
     blurb: 'A centrist party co-founded by Andrew Yang that focuses on how elections work rather than left-right issues.',
+    blurbFr: 'Un parti centriste cofondé par Andrew Yang, qui s’intéresse au fonctionnement des élections plutôt qu’au clivage gauche-droite.',
     values: [
       'Open primaries and ranked-choice voting.',
       'Reduce polarization and reward problem-solving across party lines.',
+    ],
+    valuesFr: [
+      'Des primaires ouvertes et le vote par classement des candidats.',
+      'Réduire la polarisation et récompenser la recherche de solutions par-delà les partis.',
     ],
     leaders: [['Co-founder', 'Andrew Yang']],
   },
@@ -131,89 +195,165 @@ export const PARTIES = [
 // Groups that organize within a party (or across both) rather than on the ballot.
 export const GROUPS = {
   dsa: {
-    name: 'Democratic Socialists of America', side: 'dem',
-    site: 'https://www.dsausa.org', source: 'https://www.dsausa.org/about-us/', sourceLabel: 'About DSA',
+    name: 'Democratic Socialists of America', nameFr: 'Democratic Socialists of America (socialistes démocrates)', side: 'dem',
+    site: 'https://www.dsausa.org', source: 'https://www.dsausa.org/about-us/', sourceLabel: 'About DSA', sourceLabelFr: 'Présentation de DSA',
     blurb: 'A membership organization, not a ballot party. Its members usually run as Democrats.',
+    blurbFr: 'Une organisation d’adhérents, pas un parti présent sur les bulletins. Ses membres se présentent d’ordinaire comme démocrates.',
     values: [
       'Democratic socialism: working people should democratically run the economy and society to meet human needs rather than private profit.',
       'Medicare for All, a Green New Deal and housing as a human right, including social housing and rent control.',
       'Stronger unions and labor rights.',
       'Abolish ICE and end U.S. military aid to Israel; DSA supports boycott, divestment and sanctions.',
     ],
+    valuesFr: [
+      'Le socialisme démocratique : les personnes qui travaillent devraient diriger démocratiquement l’économie et la société pour répondre aux besoins humains plutôt qu’au profit privé.',
+      'Medicare for All (une assurance maladie publique pour tous), un Green New Deal et le logement comme droit humain, dont le logement social et l’encadrement des loyers.',
+      'Des syndicats plus forts et un droit du travail renforcé.',
+      'Supprimer l’ICE (la police de l’immigration) et mettre fin à l’aide militaire américaine à Israël ; DSA soutient le boycott, le désinvestissement et les sanctions (BDS).',
+    ],
     leaders: [
       ['National co-chair', 'Megan Romer'],
       ['National co-chair', 'Ashik Siddique'],
-      ['Notable member in office', 'Zohran Mamdani, Mayor of New York City'],
+      ['Notable member in office', 'Zohran Mamdani, Mayor of New York City', 'Zohran Mamdani, maire de New York'],
       ['Notable member in office', 'Rep. Alexandria Ocasio-Cortez (NY-14)'],
       ['Notable member in office', 'Rep. Rashida Tlaib (MI-12)'],
     ],
   },
   cpc: {
-    name: 'Congressional Progressive Caucus', side: 'dem',
+    name: 'Congressional Progressive Caucus', nameFr: 'Congressional Progressive Caucus (caucus progressiste)', side: 'dem',
     site: 'https://progressives.house.gov', source: 'https://progressives.house.gov', sourceLabel: 'progressives.house.gov',
     blurb: 'The main left-leaning caucus of House Democrats.',
+    blurbFr: 'Le principal caucus de gauche des démocrates de la Chambre.',
     values: [
       'Medicare for All and lower prescription drug prices.',
       'A higher minimum wage and stronger labor protections.',
       'Higher taxes on the wealthy and large corporations.',
       'Aggressive climate action and limits on corporate power.',
     ],
+    valuesFr: [
+      'Medicare for All et des médicaments sur ordonnance moins chers.',
+      'Un salaire minimum plus élevé et un droit du travail plus protecteur.',
+      'Plus d’impôts pour les plus riches et les grandes entreprises.',
+      'Une action pour le climat ambitieuse et des limites au pouvoir des grandes entreprises.',
+    ],
     leaders: [['Chair', 'Rep. Greg Casar (TX)']],
   },
   newdem: {
-    name: 'New Democrat Coalition', side: 'dem',
+    name: 'New Democrat Coalition', nameFr: 'New Democrat Coalition (nouveaux démocrates)', side: 'dem',
     site: 'https://newdemocratcoalition.house.gov', source: 'https://newdemocratcoalition.house.gov', sourceLabel: 'newdemocratcoalition.house.gov',
     blurb: 'A large center-left caucus of House Democrats.',
+    blurbFr: 'Un grand caucus de centre gauche des démocrates de la Chambre.',
     values: [
       'Pro-growth, pro-innovation economic policy.',
       'Fiscal responsibility and pragmatic, often bipartisan, legislating.',
       'Trade, technology and workforce policy that helps the U.S. compete.',
     ],
+    valuesFr: [
+      'Une politique économique favorable à la croissance et à l’innovation.',
+      'La responsabilité budgétaire et un travail législatif pragmatique, souvent bipartisan.',
+      'Des politiques de commerce, de technologie et de formation qui aident les États-Unis à rester compétitifs.',
+    ],
     leaders: [],
   },
   bluedog: {
     name: 'Blue Dog Coalition', side: 'dem',
-    site: 'https://bluedogs-gluesenkampperez.house.gov', source: 'https://bluedogs-gluesenkampperez.house.gov', sourceLabel: 'Blue Dog Coalition site',
+    site: 'https://bluedogs-gluesenkampperez.house.gov', source: 'https://bluedogs-gluesenkampperez.house.gov', sourceLabel: 'Blue Dog Coalition site', sourceLabelFr: 'Site de la Blue Dog Coalition',
     blurb: 'Fiscally conservative, centrist House Democrats.',
+    blurbFr: 'Des démocrates centristes de la Chambre, conservateurs en matière budgétaire.',
     values: [
       'Balanced budgets and lower deficits.',
       'A strong national defense.',
       'Bipartisan compromise over party-line votes.',
     ],
+    valuesFr: [
+      'Des budgets équilibrés et des déficits réduits.',
+      'Une défense nationale forte.',
+      'Le compromis bipartisan plutôt que les votes de parti.',
+    ],
     leaders: [['Co-chair', 'Rep. Marie Gluesenkamp Perez (WA-3)']],
   },
   hfc: {
-    name: 'House Freedom Caucus', side: 'gop',
-    site: 'https://harris.house.gov', source: 'https://harris.house.gov/media/press-releases/congressman-andy-harris-re-elected-house-freedom-caucus-chairman', sourceLabel: 'Chair’s announcement',
+    name: 'House Freedom Caucus', nameFr: 'House Freedom Caucus (caucus de la liberté)', side: 'gop',
+    site: 'https://harris.house.gov', source: 'https://harris.house.gov/media/press-releases/congressman-andy-harris-re-elected-house-freedom-caucus-chairman', sourceLabel: 'Chair’s announcement', sourceLabelFr: 'Annonce de la présidence du caucus',
     blurb: 'The House’s most conservative caucus, known for pressing GOP leaders from the right.',
+    blurbFr: 'Le caucus le plus conservateur de la Chambre, connu pour faire pression sur la direction républicaine par la droite.',
     values: [
       'Deep cuts to federal spending and a smaller federal government.',
       'Opposition to bills seen as expanding government or adding to the debt.',
       'Conservative positions on immigration and social issues.',
     ],
-    leaders: [['Chair', 'Rep. Andy Harris (MD-1), re-elected through 2026']],
+    valuesFr: [
+      'De fortes coupes dans les dépenses fédérales et un État fédéral plus petit.',
+      'L’opposition aux textes jugés comme élargissant l’État ou creusant la dette.',
+      'Des positions conservatrices sur l’immigration et les questions de société.',
+    ],
+    leaders: [['Chair', 'Rep. Andy Harris (MD-1), re-elected through 2026', 'Andy Harris (Chambre, MD-1), mandat renouvelé jusqu’à fin 2026']],
   },
   rsc: {
-    name: 'Republican Study Committee', side: 'gop',
+    name: 'Republican Study Committee', nameFr: 'Republican Study Committee (comité d’étude républicain)', side: 'gop',
     site: 'https://rsc-pfluger.house.gov', source: 'https://rsc-pfluger.house.gov', sourceLabel: 'rsc-pfluger.house.gov',
     blurb: 'The largest conservative caucus of House Republicans.',
+    blurbFr: 'Le plus grand caucus conservateur des républicains de la Chambre.',
     values: [
       'Budgets that cut spending and aim to balance.',
       'A broad conservative agenda on taxes, regulation and social policy.',
     ],
+    valuesFr: [
+      'Des budgets qui réduisent les dépenses et visent l’équilibre.',
+      'Un large programme conservateur sur les impôts, la réglementation et les questions de société.',
+    ],
     leaders: [['Chair', 'Rep. August Pfluger (TX-11)']],
   },
   psc: {
-    name: 'Problem Solvers Caucus', side: 'both',
+    name: 'Problem Solvers Caucus', nameFr: 'Problem Solvers Caucus (caucus des solutions)', side: 'both',
     site: 'https://problemsolverscaucus.house.gov', source: 'https://problemsolverscaucus.house.gov', sourceLabel: 'problemsolverscaucus.house.gov',
     blurb: 'A bipartisan House caucus split evenly between Democrats and Republicans.',
+    blurbFr: 'Un caucus bipartisan de la Chambre, partagé à parts égales entre démocrates et républicains.',
     values: [
       'Bipartisan deals on spending, infrastructure and government operations.',
       'Members agree to vote together when most of the group backs a proposal.',
+    ],
+    valuesFr: [
+      'Des accords bipartisans sur les dépenses, les infrastructures et le fonctionnement de l’État.',
+      'Ses membres s’engagent à voter ensemble quand la majorité du groupe soutient une proposition.',
     ],
     leaders: [
       ['Co-chair (R)', 'Rep. Brian Fitzpatrick (PA-1)'],
       ['Co-chair (D)', 'Rep. Tom Suozzi (NY-3)'],
     ],
   },
+};
+
+// Leadership titles in French, worded for the office rather than its holder where
+// French allows it ("Présidence du …").
+export const ROLE_FR = {
+  'Chair, Democratic National Committee': 'Présidence du Comité national démocrate (DNC)',
+  'Senate Minority Leader': 'Chef de la minorité au Sénat',
+  'House Minority Leader': 'Chef de la minorité à la Chambre',
+  'Senate Minority Whip': 'Whip de la minorité au Sénat',
+  'House Minority Whip': 'Whip de la minorité à la Chambre',
+  'House Democratic Caucus Chair': 'Présidence du groupe démocrate de la Chambre',
+  'Chair, Democratic Senatorial Campaign Committee': 'Présidence du comité de campagne démocrate pour le Sénat (DSCC)',
+  'Chair, Democratic Congressional Campaign Committee': 'Présidence du comité de campagne démocrate pour la Chambre (DCCC)',
+  'President of the United States': 'Président des États-Unis',
+  'Vice President': 'Vice-président',
+  'Speaker of the House': 'Président de la Chambre (Speaker)',
+  'Senate Majority Leader': 'Chef de la majorité au Sénat',
+  'House Majority Leader': 'Chef de la majorité à la Chambre',
+  'Senate Majority Whip': 'Whip de la majorité au Sénat',
+  'House Majority Whip': 'Whip de la majorité à la Chambre',
+  'Chair, Republican National Committee': 'Présidence du Comité national républicain (RNC)',
+  'Co-chair, Republican National Committee': 'Coprésidence du Comité national républicain',
+  'Chair, National Republican Senatorial Committee': 'Présidence du comité de campagne républicain pour le Sénat (NRSC)',
+  'Chair, National Republican Congressional Committee': 'Présidence du comité de campagne républicain pour la Chambre (NRCC)',
+  'Chair, Libertarian National Committee': 'Présidence du Comité national libertarien',
+  'National co-chairs': 'Coprésidence nationale',
+  'National co-chair': 'Coprésidence nationale',
+  'National Director': 'Direction nationale',
+  'Co-founder': 'À l’origine du parti',
+  'Notable member in office': 'Membre notable en fonction',
+  Chair: 'Présidence',
+  'Co-chair': 'Coprésidence',
+  'Co-chair (R)': 'Coprésidence (R)',
+  'Co-chair (D)': 'Coprésidence (D)',
 };

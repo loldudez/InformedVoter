@@ -6,7 +6,7 @@ import { html, raw, $ } from '../util.js';
 import { icon, logo } from '../icons.js';
 import { store } from '../store.js';
 import { L, langSwitchHTML, wireLangSwitch } from '../i18n.js';
-import { avatarSrc } from '../components/shell.js';
+import { avatarSrc, testChip } from '../components/shell.js';
 import { loadPres, daysUntil, fmtDay, fmtNum, candById, pollDates, runningIds, usedScenarios } from './data.js';
 
 export const FR_MENU = () => [
@@ -54,6 +54,7 @@ function header() {
       <div class="menu left" id="main-menu" role="menu" hidden>${menuLinks(FR_MENU())}</div>
     </div>
     <a class="brand" href="#/fr" aria-label="${L('Informed Voter, accueil France', 'Informed Voter France home')}">${logo()}<span class="brand-text">Informed Voter<small>${L('FRANCE · PRÉSIDENTIELLE 2027', 'FRANCE · 2027 ELECTIONS')}</small></span></a>
+    ${testChip()}
     <span class="header-spacer"></span>
     ${raw(langSwitchHTML())}
     <button type="button" class="pill-btn icon-only" id="theme-btn" aria-label="${dark ? L('Passer au thème clair', 'Switch to light theme') : L('Passer au thème sombre', 'Switch to dark theme')}" title="${L('Changer de thème', 'Switch theme')}">${dark ? icon.sun() : icon.moon()}</button>

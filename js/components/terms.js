@@ -5,16 +5,20 @@
 
 import { html } from '../util.js';
 import { GLOSSARY } from '../data/glossary.js';
+import { L, lang } from '../i18n.js';
 
 const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-const MATCHERS = GLOSSARY.flatMap((g) => g.phrases.map((p) => ({ g, re: new RegExp(`(?<![\\w-])${escRe(p)}(?![\\w-])`, 'i') })));
+// English phrases are matched in the owner's English, French ones in the translation.
+const matchers = (key) => GLOSSARY.flatMap((g) => (g[key] || []).map((p) => ({ g, re: new RegExp(`(?<![\\w-])${escRe(p)}(?![\\w-])`, 'i') })));
+const MATCHERS = { en: matchers('phrases'), fr: matchers('phrasesFr') };
 const MAX_TERMS = 3;
+const defOf = (g) => L(g.defFr || g.def, g.def);
 
 // The glossary terms in `text`, in reading order: the longest phrase wins where
 // two overlap, each term at most once, and at most three per question.
 export function termsIn(text) {
   const hits = [];
-  for (const { g, re } of MATCHERS) {
+  for (const { g, re } of MATCHERS[lang()] || MATCHERS.en) {
     const m = re.exec(text);
     if (m) hits.push({ g, start: m.index, end: m.index + m[0].length });
   }
@@ -45,7 +49,7 @@ export function annotate(text) {
 // The definitions, hidden on screen, that the term buttons point to.
 export function termDefs(text) {
   const found = termsIn(text);
-  return found.length ? html`<div class="sr-only">${found.map((f) => html`<span id="def-${f.g.id}">${f.g.def}</span>`)}</div>` : '';
+  return found.length ? html`<div class="sr-only">${found.map((f) => html`<span id="def-${f.g.id}">${defOf(f.g)}</span>`)}</div>` : '';
 }
 
 const BY_ID = Object.fromEntries(GLOSSARY.map((g) => [g.id, g]));
@@ -79,7 +83,7 @@ function open(btn, pin = false) {
   pinned = pin;
   if (pin) pinnedAt = Date.now();
   const word = btn.textContent.trim();
-  el.innerHTML = String(html`<b>${word.charAt(0).toUpperCase() + word.slice(1)}</b>${g.def}`);
+  el.innerHTML = String(html`<b>${word.charAt(0).toUpperCase() + word.slice(1)}</b>${defOf(g)}`);
   el.hidden = false;
   btn.setAttribute('aria-expanded', 'true');
   place(btn);

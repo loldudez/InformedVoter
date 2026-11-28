@@ -12,6 +12,13 @@ Sources, read once a day by scripts/refresh_all.py:
   * Wikidata: the President of the United States (P35 of Q30).
   * Wikidata and Commons: the photos of the President and the leaders, with their
     credits (scripts/lib/wikiphotos.py, cached a week with update_photos.py's).
+  * Voteview: each member's left-right score, the first dimension of DW-NOMINATE
+    (scripts/lib/nominate.py), as `nom`, which orders the seats within each party (the
+    score itself isn't shown since Nov. 28, 2026, the owner's request); and, under
+    "voteview", the scores of former members since 2001 who were on the 2026 ballot
+    (data/races.json), for the 120th Congress's returning members. Senators get their
+    Bioguide `id` from the same files. If Voteview can't be read, the last build's scores
+    are kept.
 
 If the Clerk's list or the senators' table can't be read, the previous file is kept.
 
@@ -31,6 +38,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 import wikitables as W  # noqa: E402
 import wikiphotos  # noqa: E402
+import nominate  # noqa: E402
 from elections import party_code  # noqa: E402  - Minnesota's senators are "DFL"
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -242,6 +250,59 @@ def groups_for(members, chamber):
             for g in GROUP_ORDER if counts.get(g)]
 
 
+VOTEVIEW = {"title": "Voteview (UCLA): members' roll-call votes, for the seat order", "url": "https://voteview.com/data"}
+RACES = ROOT / "data" / "races.json"
+
+
+def ballot():
+    """(state, last name) of every 2026 House and Senate candidate (data/races.json), for
+    the former members' scores; None when the races can't be read."""
+    try:
+        races = json.loads(RACES.read_text(encoding="utf-8"))["races"]
+    except (OSError, ValueError, KeyError):
+        return None
+    return {(r["state"], nominate.last_name_of(c["name"])) for r in races if r.get("office") in ("house", "senate")
+            for c in r.get("candidates") or [] if c.get("name")}
+
+
+def add_scores(h_members, s_members, checks):
+    """Each member's DW-NOMINATE score (`nom`) and each senator's Bioguide id, and the
+    block of former members' scores; the last build's when Voteview can't be read."""
+    try:
+        scores = nominate.Scores()
+    except Exception as e:  # noqa: BLE001
+        print(f"Voteview unreadable ({e}); keeping the last build's scores")
+        try:
+            old = json.loads(OUT.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            return None
+        for ch, ms in (("house", h_members), ("senate", s_members)):
+            was = {(m["st"], m["n"]): m for m in old["chambers"][ch]["members"]}
+            for m in ms:
+                o = was.get((m["st"], m["n"])) or {}
+                for k in ("nom", "id"):
+                    if o.get(k) is not None and not m.get(k):
+                        m[k] = o[k]
+        return old.get("voteview")
+    for p in scores.problems:
+        checks.append(f"Voteview: {p}")
+    for m in h_members:
+        v = scores.of(m["id"], m["party"])
+        if v is not None:
+            m["nom"] = v
+    for m in s_members:
+        bg = scores.senator(m["st"], m["n"])
+        if not bg:
+            checks.append(f"Senate: {m['n']} ({m['st']}) not found in Voteview's member file")
+            continue
+        m["id"] = bg
+        v = scores.of(bg, m["party"])
+        if v is not None:
+            m["nom"] = v
+    sitting = {m["id"] for m in h_members + s_members if m.get("id")}
+    return {**VOTEVIEW, "asOf": datetime.now(timezone.utc).date().isoformat(), "former": scores.former(sitting, ballot())}
+
+
 def match_house(leader, members):
     """A House leader among the Clerk's members: full name, else last name and first initial."""
     want = fold(leader["name"])
@@ -277,6 +338,8 @@ def main():
         elif l["office"] != "President":  # the Vice President presides but isn't a senator
             checks.append(f"Senate: {l['office']} {l['name']} (Wikipedia) not found in the senators' table")
 
+    voteview = add_scores(h_members, s_members, checks)
+
     for ms in (h_members, s_members):
         for m in ms:
             m["reg"] = REGION.get(m["st"])
@@ -306,12 +369,14 @@ def main():
             "house": {"seats": SEATS["house"], "majority": SEATS["house"] // 2 + 1, "control": majority_party,
                       "published": info.get("published"), "groups": groups_for(h_members, "house"), "members": h_members,
                       "vacancies": vacancies, "delegates": delegates, "leaders": h_leaders,
-                      "sources": [{"title": "Office of the Clerk, U.S. House of Representatives: member data", "url": CLERK}, h_src]},
+                      "sources": [{"title": "Office of the Clerk, U.S. House of Representatives: member data", "url": CLERK}, h_src,
+                                  *([VOTEVIEW] if voteview else [])]},
             "senate": {"seats": SEATS["senate"], "majority": SEATS["senate"] // 2 + 1,
                        "control": next((PARTY[p] for p in re.findall(r"Majority \(\d+\)\s*(Democratic|Republican)", s_groups)), None),
                        "independentsCaucus": side, "groups": groups_for(s_members, "senate"), "members": s_members,
-                       "leaders": s_leaders, "sources": [s_src, s_src2]},
+                       "leaders": s_leaders, "sources": [s_src, s_src2, *([VOTEVIEW] if voteview else [])]},
         },
+        "voteview": voteview,
         "checks": checks,
     }
     OUT.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
@@ -319,6 +384,9 @@ def main():
     print(f"wrote {OUT.relative_to(ROOT).as_posix()}: House {len(h_members)}/435 "
           f"({', '.join(f'{g['id']} {g['seats']}' for g in h['groups'])}; {len(vacancies)} vacant; {len(delegates)} delegates), "
           f"Senate ({', '.join(f'{g['id']} {g['seats']}' for g in s['groups'])}); President {pres and pres['name']}")
+    print(f"  DW-NOMINATE scores: House {sum(1 for m in h_members if m.get('nom') is not None)}, "
+          f"Senate {sum(1 for m in s_members if m.get('nom') is not None)}; "
+          f"{len((voteview or {}).get('former') or [])} former members")
     print("  House leaders:", [(l["office"], l["name"]) for l in h_leaders])
     print("  Senate leaders:", [(l["office"], l["name"]) for l in s_leaders])
     for c in checks:

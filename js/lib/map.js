@@ -3,6 +3,7 @@
 
 import { cssVar } from './charts.js';
 import { icon } from '../icons.js';
+import { L } from '../i18n.js';
 
 const W = 960;
 
@@ -24,11 +25,13 @@ export const RATING_LEGEND = [
   ['Safe R', 'R', 1], ['Likely R', 'R', 0.68], ['Lean R', 'R', 0.4], ['Toss-up', null, 0],
   ['Lean D', 'D', 0.4], ['Likely D', 'D', 0.68], ['Safe D', 'D', 1],
 ];
+// The legend in French, worded as ratingL (world.js) words the ratings.
+const RATING_LEGEND_FR = { 'Safe R': 'Sûr R', 'Likely R': 'Probable R', 'Lean R': 'Penche R', 'Toss-up': 'Incertain', 'Lean D': 'Penche D', 'Likely D': 'Probable D', 'Safe D': 'Sûr D' };
 export function ratingLegendHTML(extra = '') {
   const mid = cssVar('--neutral-mid');
   const sw = RATING_LEGEND.map(([label, party, t]) => {
     const pole = party === 'D' ? cssVar('--dem') : party === 'R' ? cssVar('--rep') : mid;
-    return `<span><i style="background:${d3.interpolateLab(mid, pole)(t)}"></i>${label}</span>`;
+    return `<span><i style="background:${d3.interpolateLab(mid, pole)(t)}"></i>${L(RATING_LEGEND_FR[label] || label, label)}</span>`;
   }).join('');
   return `<div class="map-legend">${sw}${extra}</div>`;
 }
@@ -53,10 +56,10 @@ export function resultsLegendHTML({ other = false, flips = true, counting = true
   const mid = cssVar('--neutral-mid');
   const sw = (bg, label) => `<span><i style="background:${bg}"></i>${label}</span>`;
   return `<div class="map-legend">
-    ${sw(cssVar('--rep'), 'Republican won')}${sw(cssVar('--dem'), 'Democrat won')}${other ? sw(cssVar('--third'), 'Independent or other won') : ''}
-    ${flips ? sw(stripes(cssVar('--rep'), cssVar('--bg')), 'Flipped to Republicans') + sw(stripes(cssVar('--dem'), cssVar('--bg')), 'Flipped to Democrats') : ''}
-    ${counting ? sw(d3.interpolateLab(mid, cssVar('--rep'))(RESULT_TINT), 'R leading, not called') + sw(d3.interpolateLab(mid, cssVar('--dem'))(RESULT_TINT), 'D leading, not called') : ''}
-    ${runoff ? sw(stripes(mid, cssVar('--text-3')), 'Runoff') : ''}${sw(mid, 'No result yet')}${extra}
+    ${sw(cssVar('--rep'), L('Victoire républicaine', 'Republican won'))}${sw(cssVar('--dem'), L('Victoire démocrate', 'Democrat won'))}${other ? sw(cssVar('--third'), L('Victoire indépendante ou autre', 'Independent or other won')) : ''}
+    ${flips ? sw(stripes(cssVar('--rep'), cssVar('--bg')), L('Bascule vers les républicains', 'Flipped to Republicans')) + sw(stripes(cssVar('--dem'), cssVar('--bg')), L('Bascule vers les démocrates', 'Flipped to Democrats')) : ''}
+    ${counting ? sw(d3.interpolateLab(mid, cssVar('--rep'))(RESULT_TINT), L('R en tête, pas encore attribuée', 'R leading, not called')) + sw(d3.interpolateLab(mid, cssVar('--dem'))(RESULT_TINT), L('D en tête, pas encore attribuée', 'D leading, not called')) : ''}
+    ${runoff ? sw(stripes(mid, cssVar('--text-3')), L('Second tour', 'Runoff')) : ''}${sw(mid, L('Pas encore de résultat', 'No result yet'))}${extra}
   </div>`;
 }
 
@@ -65,7 +68,7 @@ let mapSeq = 0;
 export function drawMap(el, fcoll, opts) {
   const {
     fillFor, tooltipFor, onSelect, selectedId = null, labelFor = null,
-    zoomable = false, ariaLabel = 'Map', regionLabel = (f) => f.id, maxHeight = 640,
+    zoomable = false, ariaLabel = L('Carte', 'Map'), regionLabel = (f) => f.id, maxHeight = 640,
     borders = null, // outlines drawn over the regions (the states over the House's districts)
   } = opts;
   el.innerHTML = '';
@@ -88,14 +91,16 @@ export function drawMap(el, fcoll, opts) {
   const uid = `map${++mapSeq}`;
   const defs = svg.append('defs');
   const pats = new Map();
-  const pattern = (base, stripe) => {
-    const key = `${base}|${stripe}`;
+  // `width` of each `period` is the stripe: a thin one (2 of 6) marks a flip or a runoff,
+  // half and half (4 of 8) two senators of different parties.
+  const pattern = (base, stripe, width = 2, period = 6) => {
+    const key = `${base}|${stripe}|${width}|${period}`;
     if (!pats.has(key)) {
       const id = `${uid}-p${pats.size}`;
       const p = defs.append('pattern').attr('id', id).attr('patternUnits', 'userSpaceOnUse')
-        .attr('width', 6).attr('height', 6).attr('patternTransform', 'rotate(45)');
-      p.append('rect').attr('width', 6).attr('height', 6).attr('fill', base);
-      p.append('rect').attr('width', 2).attr('height', 6).attr('fill', stripe);
+        .attr('width', period).attr('height', period).attr('patternTransform', 'rotate(45)');
+      p.append('rect').attr('width', period).attr('height', period).attr('fill', base);
+      p.append('rect').attr('width', width).attr('height', period).attr('fill', stripe);
       pats.set(key, id);
     }
     return `url(#${pats.get(key)})`;
@@ -183,7 +188,7 @@ export function drawMap(el, fcoll, opts) {
     svg.call(zoom).on('dblclick.zoom', null);
     const ctr = document.createElement('div');
     ctr.className = 'map-zoom';
-    ctr.innerHTML = `<button type="button" data-z="in" aria-label="Zoom in">${icon.plus()}</button><button type="button" data-z="out" aria-label="Zoom out">${icon.minus()}</button><button type="button" data-z="reset" aria-label="Reset zoom">${icon.reset()}</button>`;
+    ctr.innerHTML = `<button type="button" data-z="in" aria-label="${L('Zoom avant', 'Zoom in')}">${icon.plus()}</button><button type="button" data-z="out" aria-label="${L('Zoom arrière', 'Zoom out')}">${icon.minus()}</button><button type="button" data-z="reset" aria-label="${L('Réinitialiser le zoom', 'Reset zoom')}">${icon.reset()}</button>`;
     ctr.addEventListener('click', (e) => {
       const b = e.target.closest('button');
       if (!b) return;

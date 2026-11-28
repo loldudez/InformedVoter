@@ -2,7 +2,8 @@
 // a crosshair tooltip that lists every series, 8px end dots with a surface ring,
 // legends for two or more series, and no dual axes.
 
-import { esc, debounce } from '../util.js';
+import { esc, debounce, fmtNum, fmtPct } from '../util.js';
+import { L, lang } from '../i18n.js';
 
 export const cssVar = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 
@@ -20,7 +21,18 @@ export function candColors(cands) {
   return out;
 }
 
-const timeFmt = (span) => (span > 400 * 864e5 ? d3.timeFormat('%b %Y') : d3.timeFormat('%b %-d'));
+// Default dates follow the visitor's language: "Nov 3" / "3 nov.", "Nov 3, 2026" / "3 novembre 2026".
+let frTime = null;
+const frFormat = (spec) => (frTime ||= d3.timeFormatLocale({
+  dateTime: '%A %-d %B %Y à %X', date: '%d/%m/%Y', time: '%H:%M:%S', periods: ['AM', 'PM'],
+  days: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
+  shortDays: ['dim.', 'lun.', 'mar.', 'mer.', 'jeu.', 'ven.', 'sam.'],
+  months: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
+  shortMonths: ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'],
+})).format(spec);
+const timeFmt = (span) => (lang() === 'fr' ? frFormat(span > 400 * 864e5 ? '%b %Y' : '%-d %b')
+  : span > 400 * 864e5 ? d3.timeFormat('%b %Y') : d3.timeFormat('%b %-d'));
+const tipDay = () => (lang() === 'fr' ? frFormat('%-d %B %Y') : d3.timeFormat('%b %-d, %Y'));
 const keyStyle = (s) => `background:${s.color}${s.edge ? `;box-shadow:0 0 0 1px ${s.edge}` : ''}`;
 
 // series: [{ name, color, edge?, values: [{ x: Date, y: number }], points?: [{ x: Date, y, title }] }]
@@ -28,7 +40,8 @@ const keyStyle = (s) => `background:${s.color}${s.edge ? `;box-shadow:0 0 0 1px 
 // `edge` outlines a line whose color nearly vanishes on the page (white on the light
 // theme, black on the dark one), and its key and end dot with it.
 // xFormat and tipDate (Date -> text) and emptyText let a page set its own language and
-// period (months, quarters, years); without them, dates print as in U.S. English.
+// period (months, quarters, years); without them, dates print in the visitor's language
+// (U.S. English, or French with French month names).
 export function lineChart(el, opts) {
   const draw = () => drawLine(el, opts);
   draw();
@@ -40,7 +53,7 @@ export function lineChart(el, opts) {
   el._ro.observe(el);
 }
 
-function drawLine(el, { series, height = 220, yFormat = (v) => v.toFixed(1), tipFormat, yDomain, area = false, baseline = null, label = 'Chart', endLabels = true, xFormat, tipDate, emptyText = 'No data yet.' }) {
+function drawLine(el, { series, height = 220, yFormat = (v) => fmtNum(v, 1), tipFormat, yDomain, area = false, baseline = null, label = L('Graphique', 'Chart'), endLabels = true, xFormat, tipDate, emptyText = L('Pas encore de données.', 'No data yet.') }) {
   el.innerHTML = '';
   const all = series.flatMap((s) => s.values);
   if (!all.length) {
@@ -137,8 +150,9 @@ function drawLine(el, { series, height = 220, yFormat = (v) => v.toFixed(1), tip
       }).join('');
       const today = +d3.timeDay.floor(dx);
       const polls = [...new Set(pts.filter((p) => p.title && +d3.timeDay.floor(p.x) === today).map((p) => p.title.split(':')[0]))];
-      const pollNote = polls.length ? `<div class="tip-date" style="margin-top:6px">Poll${polls.length > 1 ? 's' : ''} ending this day: ${esc(polls.join(', '))}</div>` : '';
-      tip.innerHTML = `<div class="tip-date">${esc((tipDate || d3.timeFormat('%b %-d, %Y'))(dx))}</div>${rows}${pollNote}`;
+      const pl = polls.length > 1 ? 's' : '';
+      const pollNote = polls.length ? `<div class="tip-date" style="margin-top:6px">${esc(L(`Sondage${pl} terminé${pl} ce jour : `, `Poll${pl} ending this day: `))}${esc(polls.join(', '))}</div>` : '';
+      tip.innerHTML = `<div class="tip-date">${esc((tipDate || tipDay())(dx))}</div>${rows}${pollNote}`;
       tip.hidden = false;
       const rect = el.getBoundingClientRect();
       const left = (x(dx) / W) * rect.width;
@@ -168,7 +182,7 @@ export function waffle(parts) {
   const diff = 100 - counts.reduce((a, b) => a + b, 0);
   counts[0] += diff;
   parts.forEach((p, i) => { for (let k = 0; k < counts[i]; k++, n++) cells.push(`<i style="background:${p.color}" title="${esc(p.name)}"></i>`); });
-  return `<div class="waffle" role="img" aria-label="${esc(parts.map((p, i) => `${p.name} wins about ${counts[i]} of 100 simulations`).join(', '))}">${cells.join('')}</div>`;
+  return `<div class="waffle" role="img" aria-label="${esc(parts.map((p, i) => L(`${p.name} gagne dans environ ${counts[i]} simulations sur 100`, `${p.name} wins about ${counts[i]} of 100 simulations`)).join(', '))}">${cells.join('')}</div>`;
 }
 
 // Twenty segments lit in proportion to a share, like a level meter.
@@ -182,6 +196,6 @@ export function segments(share, color, total = 20) {
 // Horizontal part-to-whole bar with 2px surface gaps between segments.
 export function stackedBar(parts, { label = '' } = {}) {
   const total = parts.reduce((a, p) => a + p.value, 0) || 1;
-  const segs = parts.filter((p) => p.value > 0).map((p) => `<span style="flex:${p.value / total};background:${p.color}" title="${esc(p.name)}: ${(p.value / total * 100).toFixed(0)}%"></span>`).join('');
+  const segs = parts.filter((p) => p.value > 0).map((p) => `<span style="flex:${p.value / total};background:${p.color}" title="${esc(p.name)}${L(' : ', ': ')}${fmtPct(p.value / total * 100, 0)}"></span>`).join('');
   return `<div class="stackbar" role="img" aria-label="${esc(label)}">${segs}</div>`;
 }

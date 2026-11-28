@@ -11,7 +11,9 @@ import { elections, match } from './views/elections.js';
 import { starred, liked, close, donations } from './views/lists.js';
 import { news, inflation, parties, donate, about } from './views/info.js';
 import { congress } from './views/congress.js';
+import { money } from './views/money.js';
 import { upcoming } from './views/upcoming.js';
+import { president2028 } from './views/president2028.js';
 import { FR_ROUTES } from './fr/routes.js';
 import { renderFrShell } from './fr/shell.js';
 import { lang } from './i18n.js';
@@ -35,7 +37,10 @@ const ROUTES = [
   [/^\/inflation$/, inflation],
   [/^\/parties$/, parties],
   [/^\/congress$/, congress],
+  [/^\/money$/, money],
   [/^\/upcoming$/, upcoming],
+  [/^\/2028$/, president2028],
+  [/^\/2028\/(D|R|other)$/, president2028],
   [/^\/donate$/, donate],
   [/^\/about$/, about],
   ...FR_ROUTES,
@@ -99,11 +104,13 @@ export async function route({ keepScroll = false } = {}) {
   } catch (e) {
     console.error(e);
     if (my !== token) return;
-    document.getElementById('app').innerHTML = `<div class="wrap page"><div class="empty"><h3>The site couldn’t load its data.</h3><p>Open it through a local web server rather than by double-clicking the file. See README.md.</p></div></div>`;
+    document.getElementById('app').innerHTML = lang() === 'fr'
+      ? `<div class="wrap page"><div class="empty"><h3>Le site n’a pas pu charger ses données.</h3><p>Ouvrez-le avec un serveur web local plutôt qu’en double-cliquant sur le fichier (voir README.md).</p></div></div>`
+      : `<div class="wrap page"><div class="empty"><h3>The site couldn’t load its data.</h3><p>Open it through a local web server rather than by double-clicking the file. See README.md.</p></div></div>`;
     return;
   }
   if (my !== token) return;
-  document.documentElement.lang = sec === 'fr' || SHARED.has(view) ? lang() : 'en';
+  document.documentElement.lang = lang();
 
   const ctx = { path, query, params };
   const app = document.getElementById('app');
@@ -117,7 +124,7 @@ export async function route({ keepScroll = false } = {}) {
     out = await view.render(ctx);
   } catch (e) {
     console.error(e);
-    out = `<div class="wrap page"><div class="empty"><h3>${sec === 'fr' && lang() === 'fr' ? 'Cette page n’a pas pu se charger.' : 'Something went wrong loading this page.'}</h3><p>${String(e.message || e).replace(/[<>&]/g, '')}</p><a class="btn" href="${sec === 'fr' ? '#/fr' : '#/'}">${sec === 'fr' && lang() === 'fr' ? 'Retour à la carte' : 'Back to the map'}</a></div></div>`;
+    out = `<div class="wrap page"><div class="empty"><h3>${lang() === 'fr' ? 'Cette page n’a pas pu se charger.' : 'Something went wrong loading this page.'}</h3><p>${String(e.message || e).replace(/[<>&]/g, '')}</p><a class="btn" href="${sec === 'fr' ? '#/fr' : '#/'}">${lang() === 'fr' ? 'Retour à la carte' : 'Back to the map'}</a></div></div>`;
   }
   if (my !== token) return; // a newer navigation won the race
   app.innerHTML = String(out);

@@ -24,7 +24,9 @@ legislative races").
 | Seats held today | Wikipedia's party summaries for the 119th Congress; governors from the 36 races plus the 14 not on the ballot | Expected gains are measured from these. |
 | Who sits in Congress (the seat charts on `#/congress`) | The House Clerk's member list (`MemberData.xml`: party, caucus, state, district, vacancies and why, delegates); Wikipedia's "List of current United States senators" (senate.gov refuses scripts) and each chamber's infobox for its leaders and which side the independents caucus with; Wikidata for the President (P35 of Q30) | `scripts/update_congress.py`, once a day; keeps the previous file when the Clerk's list or the senators' table can't be read. Democrats blue, Republicans red, independents gray, with the side they caucus with in the tooltip. |
 | Candidates' photos | Wikidata's image (P18) for the Wikipedia article each candidate's name links to (`wiki`), on Wikimedia Commons with its author and license (`scripts/lib/wikiphotos.py`, shared with the France section) | `scripts/update_photos.py` → `data/photos.json`, once a day, answers cached a week in `data/cache/wiki/photos.json`. Kept only when the item is a person, a U.S. citizen wherever Wikidata gives a citizenship, and the article's title carries the candidate's last name. Shown in gray with the credit in the tooltip and a "Photo credits" list on each page; candidates without one keep their initials. The President's and Congress leaders' photos sit in `data/congress.json`. |
-| House members' positions | The House Clerk's roll-call XML for 39 votes (2021 to 2026) | See "Positions from votes". |
+| Left-right scores of members of Congress (only the seat order within each party on `#/congress`; no score is shown since Nov. 28, 2026) | Voteview (UCLA): the first dimension of DW-NOMINATE in its member files, one per chamber and Congress, 107th Congress (2001) on | `scripts/lib/nominate.py`, read by `update_congress.py` once a day (`nom` on each member, `voteview.former` for former members on the 2026 ballot); see "Left-right scores". |
+| Caucus membership (the caucus buttons on `#/congress` and each member's card) | The caucuses' own rosters where they publish one (the Progressive Caucus, the New Democrats, the Blue Dogs and Main Street on their House sites; the Governance Group's PAC), else Wikipedia's list (the Freedom Caucus, the Study Committee, the DSA's members in Congress); members-elect from Wikipedia | `scripts/lib/caucus_rosters.py`, read by `update_officeholders.py` once a day (`py scripts/update_officeholders.py --caucuses` for only this); see "Who holds each office". |
+| House members' positions | The House Clerk's roll-call XML for 44 votes (2021 to 2026), then the bills they sponsored or cosponsored (the Library of Congress's BILLSTATUS files on govinfo.gov) | See "Positions from votes" and "Positions from bills". |
 | Betting market | Polymarket's Senate and House control markets | A cross-check shown beside the model, never an input. |
 | Projected votes | 2024 presidential votes by state × 0.75 (House: divided by districts) | Midterm turnout ran 0.71 of the presidential vote in 2022 and 0.85 in 2018. |
 | Early vote | The University of Florida Election Lab's 2026 tracker (Michael McDonald): `US.csv` for states, `ST_cd.csv` for House districts (`scripts/lib/early_vote.py`) | Refreshed with the races. Districts only where the file covers every district and 98% of the state's ballots. CC BY-NC-ND: credited on every Early vote tab, no commercial use, so since the site carries ads (Nov. 3, 2026) it is neither read nor shown: `EARLY_VOTE` in `update_races.py` and `SHOW_EARLY_VOTE` in `js/config.js` are off, to be turned back on together. |
@@ -151,6 +153,75 @@ Luria), checked by hand because a name search also finds relatives and namesakes
 a sitting member shares a surname with a predecessor the Clerk lists by surname alone
 (Adelita and Raúl Grijalva), the one in the latest roll call is used.
 
+**Senators** get positions the same way from Senate roll calls (`scripts/lib/senate_votes.py`):
+the Respect for Marriage Act, the Women's Health Protection Act and the Reproductive
+Freedom for Women Act, the Inflation Reduction Act, the 2025 ACA credit extension, the
+infrastructure and CHIPS acts, H.R. 1 (2025), the Ukraine and Israel aid votes and others
+listed in `SENATE_VOTES`, with house_votes.py's strengths. senate.gov refuses scripts (and
+shows a bot check even in a browser), so the votes come from Voteview (UCLA), which copies
+the Senate's own records into one file of roll calls, members and votes per Congress; each
+position cites the roll call's page on voteview.com, and every roll call used is checked
+against the bill number written in the table, so a wrong roll number can't attach a vote
+to the wrong bill. Finished Congresses are downloaded once; the current one is reread when
+over a day old. All 100 senators sitting now have positions (Nov. 25 build); the 2028
+presidential field uses the same votes, matched by Bioguide id. `SENATE_VOTES` has 31 roll
+calls since Nov. 27 and `house_votes.py` 44: the votes added then cover the owner's seven
+topics (universal health care, trans rights, oil and gas, renewable energy, stock trading
+by members of Congress, money in politics, immigration).
+
+### Positions from bills
+
+Where no recorded vote answers one of those seven topics' questions, `scripts/lib/cosponsors.py`
+uses the bills a member sponsored or cosponsored while in office (owner's request, Nov. 27:
+the voting record first, "but if not available, mostly going on what they have endorsed or
+pushed votes for while in office"): 36 bills in 12 families, among them Medicare for All,
+the Equality Act, the TRUST in Congress and Ban Congressional Stock Trading acts, the
+DISCLOSE Act and the American Dream and Promise Act. The records are the Library of
+Congress's bill status files on govinfo.gov (BILLSTATUS, public domain): the sponsor, every
+cosponsor and the date each signed on. A name on a bill counts for the question the bill
+squarely answers, at house_votes.py's strengths (2 for a bill about that one issue, 1 where
+it reaches only part of the way); not cosponsoring says nothing, and a cosponsor who
+withdrew is left out. Each position cites the bill's congress.gov page and says it comes
+from a bill, not a vote. Every file's own title is checked against the one written in the
+table, so a wrong number can't attach a member to another bill; finished Congresses are
+downloaded once, the current one reread when over a week old. House members get these in
+`update_races.py`, senators in `update_officeholders.py`, the 2028 field in
+`update_president_2028.py`.
+
+### Left-right scores
+
+The Congress page orders each party's seats by the first dimension of DW-NOMINATE
+(Voteview, UCLA): its most moderate members nearest the middle, those furthest from the
+center on the outer edge. For one day (Nov. 27, 2026) it also shaded them by score; at the
+owner's request the seats went back to plain party colors the same day, with caucus buttons
+that light up each caucus's members (see "Who holds each office"). Since Nov. 28 the score
+itself is shown nowhere (the owner's request: "remove this altogether as it's more
+complicated than necessary. The seat order can stay"): the tooltip and the member list have
+no score, the note under the chart says only that the order comes from members' roll-call
+votes, and the sources line credits "Voteview (UCLA): members' roll-call votes, for the
+seat order". The score comes from every roll call a member has cast and runs from about −1
+(most liberal) to +1 (most conservative), one score for a whole career, shared by the House
+and the Senate.
+`scripts/lib/nominate.py` reads Voteview's member files from the 107th Congress (2001) on
+(cached with the roll calls; the current Congress's reread after a day):
+
+- `nom` on each sitting member of `data/congress.json`, by Bioguide id; a senator's id comes
+  from the Senate member file, matched on state and last name (first name to break a tie).
+  A member who changed parties keeps the score of their current party (Kevin Kiley's as an
+  independent, +0.153).
+- `voteview.former`: the latest score of every living former member since 2001 who was on
+  the 2026 ballot (38 on Nov. 27), so the 120th Congress view can place one elected again.
+- The page (`js/views/congress.js`) takes a 2026 winner's score from the same seat,
+  otherwise from exactly one member matching state, last name, party and the first three
+  letters of a first name. Members with no score sit in the middle of their party,
+  independents in gray between the parties. Nothing is estimated.
+
+DW-NOMINATE measures how members vote, not what they say: those who vote against their own
+party's bills for not going far enough (Ilhan Omar −0.296, Rashida Tlaib −0.290) score
+nearer the center than their stated positions would put them, so they sit among their
+party's moderates, and the page's note says so. If Voteview can't be read, the previous
+build's scores are kept.
+
 ## Researched races (overlays)
 
 Hand-researched details live in `data/research/*.json`, written by the scripts in
@@ -184,6 +255,12 @@ where the candidate has no other source for it, so it is regenerated after hand
 research. `campaign_sites_2026.py` adds only campaign links (117, mostly
 California's), from candidates' Wikipedia articles and BallotReady profiles, each
 checked live; the other overlays set `officialSite` for sites found in guides.
+`governors_elected_2026.py` (Nov. 28, 2026) is `partial` as well: 68 positions for the
+seven governors elected in 2026 whose race research left them fewer than ten (Sanders,
+Scott, Mazzei, Shapiro, Pritzker, Weiser, Foulkes; now 13 to 21 each), from their State of
+the State, inaugural and budget addresses, Mazzei's plan, Rhode Island Current's and
+Colorado Newsline's voter guides and news reports of bills they signed, each on a question
+no other file answers, so nothing already shown changes.
 Overlays are merged in file-name order, case-insensitively.
 `update_races.py` merges each overlay onto the automatic race with the same id;
 researched positions are added to the automatic vote positions, winning where both
@@ -382,6 +459,44 @@ doesn't say whom a newly elected independent caucuses with. Close elections beco
 "Results within 5 points", and My elections, starred races and liked candidates show
 each race's result.
 
+### Certification
+
+The results stay "unofficial" in the strip at the top of every U.S. page until all 50
+states and D.C. have certified (the owner's choice, Nov. 25, 2026: "Switch when all
+certify"). No state publishes its certification in a form a script can read, so the list
+is kept by hand in `scripts/research/certified_2026.py`, which writes `data/certified.json`
+every run (no network):
+
+```json
+{"checked": "2026-11-25", "jurisdictions": 51,
+ "states": {"MN": {"date": "2026-11-19",
+                   "source": {"title": "Minnesota Secretary of State: State Canvassing Board Certifies ...", "url": "https://sos.mn.gov/..."},
+                   "pending": {"MN-H-01": "recount"},
+                   "other": [["Minnesota Senate, District 4 (recount)", "Sénat du Minnesota, district 4 (recompte)"]]}}}
+```
+
+- A state goes in only once its own election office announced the certification (the
+  secretary of state's or the board's release, minutes or canvass), or a news report of
+  the vote did, read before it goes in; `date` is the day the board or official
+  certified. A deadline that passed is never evidence (congresscountdown.com's tracker of
+  deadlines, from Ballotpedia's calendar, and news round-ups are finders only).
+- `pending` names races on this site that the state left out (a recount, Louisiana's
+  Dec. 12 runoffs), `other` the contests that aren't races here (legislative seats,
+  district attorneys), in English and French. They come out only once the state certifies
+  them; add a `later` line with that day and source.
+- The site (`certifiedIn`, `certifiedRace`, `certPending`, `allCertified` in world.js):
+  race pages say "<State> certified its results on <date>" with the source, and that the
+  counts shown (Wikipedia's compilation) may lag the certified canvass, never that they
+  are the certified ones; a pending race says what it waits for; state pages, the
+  legislative chamber maps and "Official results in <state>" say the same. The strip
+  turns to "2026 results · official" only when every state is listed with nothing pending
+  and every Senate, House and governor race is decided. The About page lists the states
+  confirmed so far and the rest.
+
+As of Nov. 25, 2026: South Carolina (Nov. 11), North Dakota (Nov. 18), Minnesota (Nov. 19,
+except the 1st District's recount and Senate District 4) and North Carolina (Nov. 24,
+except two recounts). The Center Square counted 22 states by Nov. 24 without naming them.
+
 ### Counts from the states
 
 `scripts/lib/official_results.py` reads a state's own count where a script can: so far
@@ -490,6 +605,65 @@ shared border, with clockwise rings. Ids are the race ids without the "-H-" (`CA
 about 0.9 MB, loaded only when the House view first opens. The state lines are drawn over
 them (`borders` in `drawMap`). Rebuild it after `build_maps.py`.
 
+## Who holds each office (from January 2027)
+
+After the election the home map, the state pages and the Congress page show people, not
+races (the owner's request, Nov. 25, 2026). `js/data/holders.js` decides who holds each
+seat: the called 2026 winner where the race is decided (`fromRace`), otherwise the person
+in office now; a seat in a runoff or still counted says so, never guessing.
+
+| Who | Source | File |
+|---|---|---|
+| Senators whose seats weren't up | The House Clerk's list and Wikipedia (`update_congress.py`) | `data/congress.json` |
+| Governors, lieutenant governors, attorneys general, secretaries of state, treasurers, auditors (elected ones only) | Wikipedia's tables of current officeholders (`scripts/update_officeholders.py`, daily) | `data/officeholders.json` → `offices.GOV.ST` and so on: name, party, wiki, since, term end, term-limited |
+| Caucus membership (checked against the caucuses' own lists since Nov. 28, 2026) | The rosters the caucuses publish (`scripts/lib/caucus_rosters.py`): the Progressive Caucus (progressives.house.gov, its senator included), the New Democrats (newdemocratcoalition.house.gov), the Blue Dogs (bluedogs-gluesenkampperez.house.gov, named for the chair), the Main Street Caucus (mainstreetcaucus.house.gov) and the Republican Governance Group's PAC (republicangovernance.com, "Congressional Members"). They decide who belongs now; Wikipedia's page for each adds the article links and the members-elect, which no roster lists before January. The Freedom Caucus and the Republican Study Committee publish no roster (Wikipedia names 150 of the Study Committee's 189), so their lists are Wikipedia's, as is the DSA's (rows marked "member" only). Every current entry gets the sitting member's id (the Clerk's, or a senator's Bioguide id): the same last name and party (an independent fits either), then the seat, else the state, else the first name, never a seat alone | `officeholders.json` → `caucuses.defs` in `caucuses.order`: `source` (the roster, or Wikipedia), `listSource` (Wikipedia, beside a roster), `fromRoster`, and `house`/`senate` entries `{n, seat or st, wiki, id, elect}`; a roster that can't be read keeps its previous read, a Wikipedia page the previous build's list; `py scripts/update_officeholders.py --caucuses` redoes only this on the last build |
+| Senators' recorded positions | Voteview's Senate roll calls (`senate_votes.py`, above) | `officeholders.json` → `senators` |
+| Governors' positions (since Nov. 27, 2026) | Hand research for the 14 governors whose seats weren't up in 2026 (`scripts/research/governors_sitting.py` → `data/research/governors-sitting.json`: their own speeches, releases, executive orders and the bills they signed or vetoed, quotes checked word for word), the 2028 research for those in that field, and, for the four who served in Congress since 2021, their House or Senate votes and bills (`house_votes.py`, `senate_votes.py`, `cosponsors.py`); the research wins where both answer. The governors elected in 2026 use their race research instead (seven of them topped up on Nov. 28 by `governors_elected_2026.py`, see "Researched races") | `officeholders.json` → `offices.GOV.ST`: `positions`, `positionsFrom` (`research`, `votes` or `research+votes`), `votesCast`, `bioguide`; `py scripts/update_officeholders.py --governors` redoes only this on the last build |
+| Bios, photos, websites | The first two sentences of each person's article, their Wikidata photo and official site (`people.py`), as on the upcoming elections | `officeholders.json` → `people` |
+| State legislators whose seats weren't up (and chambers that didn't vote) | Open States' current-members files (data.openstates.org, CC0; `scripts/update_legislators.py`, daily), placed on the district maps by the chamber pages' own district-name matching; a member it can't place goes to `unmatched`, never guessed onto a district | `data/legislators/ST.json` |
+| 2026 legislative winners | The chamber pages (`legislature.py`): the summary table's "Elected" cell, else the check-marked names in a "Candidates" column or the general-election box | `data/legislature/ST.json` |
+
+Each person is drawn by `js/components/person.js`: photo, party, office and term,
+caucus, the bio with its source, links, documented positions with "Compare with my views"
+(`js/components/compare.js`, the "Match with My views" layout: agreements left,
+differences right, unknown positions along the bottom; below five compared questions no
+percentage) and, for 2026 federal and governor winners, their campaign money by filing
+line beside the main opponent's total. On the Congress page every seat wears its party's
+color (Democrats blue, Republicans red, independents gray), each party's seats ordered by
+left-right score (above, "Left-right scores"; the score isn't shown). A member's caucuses,
+from the owner's list (DSA, Progressive, Blue Dog, New Democrat; Freedom, Main Street,
+Governance Group, Study Committee), show in the tooltip and the member list, and the buttons
+above the chart, one per caucus with members in that chamber, light up one caucus's members
+wherever they sit and narrow the member list to them (owner's request, Nov. 27, 2026).
+`caucusesOf` (holders.js) matches sitting members by id, and the members re-elected in 2026
+by the sitting id their winner's card carries (`sittingId`: same state, party and last name,
+the district breaking a tie), since a roster's "Joe Morelle" is the ballot's "Joseph
+Morelle"; a member-elect matches by article link, or by last name in the same seat, and two
+people with one last name in a state (Sylvia and Johnny Garcia) need the same first three
+letters of a first name. The note under the chart links each caucus's list and says which
+caucuses publish none. The home map's Senate view
+colors a state by its two senators: both Democrats blue, both Republicans red, one of each
+`--split` purple (checked with the palette validator against D, R and the independents'
+gray in both themes), a party and an independent striped. A source that can't be read
+keeps its part of the previous file.
+
+## What the winners raised
+
+Since Nov. 27, 2026 (owner's request) a winner's money is on their own card
+(`moneyBlock` in `js/components/person.js`), which opens from a click on their seat or
+name on the state pages' maps, with the same filing lines and the main opponent's total.
+`#/money` (`js/views/money.js`) is no longer in the menu, but old links still open it. It lists
+every called Senate and House winner with their campaign's money by FEC filing line (the
+same `finance` as the race pages: small donors, large donors, PACs, party, self-funding,
+public financing, transfers, other), with the totals, the median, and the small-donor and
+PAC shares of whatever the filters show (chamber, party, sort by total or by a source's
+share). Each bar splits one winner's total by source at full width, with the amount
+printed beside it: on one scale, a $146 million Senate campaign left most House winners'
+bars a few pixels long. The runner-up's total sits underneath. A winner without figures
+is listed as not loaded yet; races not called are named, not counted. Figures are the
+pre-general reports through Oct. 14, 2026 until the post-general reports (due Dec. 3)
+reach the refresh.
+
 ## Upcoming elections (2027-2029)
 
 `data/upcoming.json`, for `#/upcoming`, is rebuilt once a day by
@@ -543,6 +717,44 @@ and other county offices beyond the county pages Wikipedia has, city councils, s
 boards, courts below the supreme court, offices elected by district (county
 supervisors, public service commissions), primaries, and the 2028 state legislatures
 (Wikipedia has no 2028 chamber pages yet).
+
+## The 2028 presidential field
+
+`#/2028` (`js/views/president2028.js`; "View the potential candidates for 2028 Presidency"
+at the top of every U.S. page and in the U.S. menu) lists who might run for President,
+party by party, from `data/president-2028.json`, built once a day by
+`scripts/update_president_2028.py`. Since Nov. 27 (owner's request) it opens on three
+doors, Democrats in blue, Republicans in red, independents and other parties in gray, each
+with its count of people and of those with positions, leading to `#/2028/D`, `#/2028/R` and
+`#/2028/other`:
+
+- **Who:** everyone who has declared, formed an exploratory committee or said publicly
+  they're weighing a run, each with that status (the owner's choice, Nov. 25, 2026).
+  People only speculated about by the media, and people who declined, are left out.
+- **From:** Wikipedia's "2028 Democratic Party presidential primaries" and "2028
+  Republican Party presidential primaries" ("Declared", exploratory-committee tables and
+  the "Expressed interest" galleries, with each person's subsection: what they said about
+  2028, word for word, with the news reports it cites) and "2028 United States
+  presidential election" for third parties, independents and the incumbent.
+- **Each person:** a summary from their article's lead, their photo and website as on the
+  upcoming elections (the campaign's site from the table, else their official one,
+  checked to answer and show their name), birth date and Bioguide id from Wikidata.
+- **Positions:** never inferred. Recorded votes since 2021 for anyone who served in
+  Congress then (House roll calls; Senate roll calls from Voteview), matched by Bioguide
+  id so a relative or namesake can't lend their votes, the Senate's record winning on a
+  question both answer, then the bills they sponsored or cosponsored ("Positions from
+  bills"); hand research in `scripts/research/president_2028.py` →
+  `data/research/president-2028.json` (`{"people": {wiki link: {"positions": {...}}}}`, the
+  overlays' format) wins over both: the person's own platforms, speeches, op-eds,
+  interviews and their office's releases, or official acts (bills signed or vetoed, budgets
+  proposed), never an advocacy group's rating. Quotes are verbatim, at most 25 words, and
+  were checked against the page's text in the browser pane (`--quotes` lists them by page).
+  No polls or odds this early.
+
+If the pages can't be read, or list fewer than five people, the previous file is kept.
+As of Nov. 27, 2026: 30 people (5 declared, 2 exploratory committees, 23 who expressed
+interest), 12 Democrats, 12 Republicans and 6 others; 27 have positions (517 in all), and
+the research covers 17 of them with 219.
 
 ## Rules for donation links
 

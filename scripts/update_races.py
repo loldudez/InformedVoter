@@ -39,6 +39,7 @@ sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 import early_vote  # noqa: E402
 import elections as el  # noqa: E402
 import fec  # noqa: E402
+import cosponsors  # noqa: E402
 import house_votes  # noqa: E402
 import legislature  # noqa: E402
 import model  # noqa: E402
@@ -195,9 +196,11 @@ def statewide_races(pages, status):
             hi = el.header_row(t, "state", "candidates")
             if hi is None:
                 continue
-            heads = el.heads_of(t, hi)
-            c_inc = el.col(heads, "senator", "governor")
-            c_party = el.col(heads, "party")
+            # After the election the tables say "Previous governor" and "Previous party",
+            # and the Senate's puts "Senator | Party" under a spanning "Incumbent".
+            heads = el.heads_two_rows(t, hi)
+            c_inc = el.col(heads, "senator", "governor", "previous governor")
+            c_party = el.col(heads, "party", "previous party")
             c_cand = el.col(heads, "candidates")
             c_status = el.col(heads, "status", "results")
             for row in t["rows"][hi + 1:]:
@@ -523,6 +526,10 @@ def merge_overlay(race, ov, status):
     for oc in ov.get("candidates", []):
         c = next((x for x in race["candidates"] if x["id"] == oc["id"]), None) or \
             el.match_candidate(oc["name"], race["candidates"], oc.get("party"))
+        if c is None and not oc.get("party"):
+            # A finance-only entry (the FEC overlays carry no party) can't add a candidate.
+            status.warn(f"{race['id']}: {oc.get('name') or oc['id']} has figures in research but isn't in the automatic list; left out")
+            continue
         if c is None:
             race["candidates"].append(dict(oc))
             race.setdefault("prior", {})[oc["id"]] = 0.0
@@ -650,34 +657,46 @@ FORMER_MEMBERS = {
 
 def attach_house_votes(races, status):
     """Every current House member on the ballot (running again, or for Senate or
-    governor) gets positions from their recorded votes. Members are identified by
-    the Wikipedia article their House seat links to, then matched to the Clerk's
-    roll calls by state and name; former members come from FORMER_MEMBERS. Returns
-    how many candidates got positions."""
+    governor) gets positions from their recorded votes, then, for questions no vote
+    answers, from the bills they sponsored or cosponsored (cosponsors.py). Members are
+    identified by the Wikipedia article their House seat links to, then matched to the
+    Clerk's roll calls by state and name, whose member id is the Bioguide id the bill
+    records use; former members come from FORMER_MEMBERS. Returns how many candidates
+    got positions."""
     try:
         record = house_votes.HouseRecord()
     except Exception as e:
         status.warn(f"House roll calls unavailable: {e}")
         return 0
+    try:
+        bills = cosponsors.Cosponsors()
+        for problem in bills.problems:
+            status.warn(f"Bill cosponsors: {problem}")
+    except Exception as e:  # noqa: BLE001  the votes still count without them
+        bills = None
+        status.warn(f"Bill cosponsors unavailable: {e}")
     seats = {w: r for r in races.values() if r["office"] == "house" for w in r.get("memberWikis") or []}
     n = 0
     for race in races.values():
         for c in race["candidates"]:
             if c["id"] in FORMER_MEMBERS:
-                votes = record.votes_for(FORMER_MEMBERS[c["id"]])
+                mid = FORMER_MEMBERS[c["id"]]
             else:
                 seat = race if race["office"] == "house" and c.get("incumbent") else seats.get(c.get("wiki"))
                 if not seat:
                     continue
-                votes = record.member_votes(seat["state"], c["name"], c["party"] if c["party"] in ("D", "R") else None)
-            if not votes:
+                mid = record.member_id(seat["state"], c["name"], c["party"] if c["party"] in ("D", "R") else None)
+            if not mid:
                 continue
+            votes = record.votes_for(mid)
             surname = SUFFIX.sub("", c["name"]).split()[-1]
-            rows = house_votes.vote_positions(surname, votes)
+            pos = {q: {"stance": st, "source": src} for q, st, src, _ in (house_votes.vote_positions(surname, votes) if votes else [])}
+            for q, p in (bills.positions(mid, surname) if bills else {}).items():
+                pos.setdefault(q, p)  # a recorded vote answers first
             if race["level"] == "state":
-                rows = [r for r in rows if not r[0].startswith("def-")]  # state races don't ask foreign policy
-            if rows:
-                c["positions"] = {q: {"stance": st, "source": src} for q, st, src, _ in rows}
+                pos = {q: p for q, p in pos.items() if not q.startswith("def-")}  # state races don't ask foreign policy
+            if pos:
+                c["positions"] = pos
                 c["positionsFrom"] = "votes"
                 n += 1
     return n
@@ -882,6 +901,7 @@ def main():
                  + (f"; names not matched in {', '.join(unmatched)}" if unmatched else "")
                  + ("" if ca.get("ok", False) else f"; the API could not be read ({ca.get('reason')}), so the last read was used"), "info")
     results_checks(races, downballot, status)
+    freeze_final_inputs(races, status)
 
     log("Forecasts")
     forecasts = forecast_all(races)
@@ -1013,6 +1033,49 @@ def results_checks(races, downballot, status):
 
 
 # Forecasts -----------------------------------------------------------------------
+
+# What a race's forecast is made of: the ratings and polls, and the baseline drawn from
+# them. After the polls close these stay as the build before had them.
+FROZEN_INPUTS = ("ratings", "ratingsSource", "polls", "finalPolls", "aggregates",
+                 "prior", "priorKind", "priorNote", "consensus", "lean")
+
+
+def freeze_final_inputs(races, status):
+    """The final forecast must not move once voting is over, but Wikipedia's pages keep
+    changing: after the 2026 election the national Senate table dropped its forecasters'
+    ratings (Nov. 16), which would have flipped 19 final forecasts, and polls published
+    late kept being added. So after Election Day each race keeps the forecast inputs of
+    the previous build (data/races.json as it stands, which carries them forward from
+    before the change), as long as it has the same candidates; a race whose candidates
+    changed is forecast afresh and named in the warnings."""
+    if NOW < model.ELECTION_DAY:
+        return
+    path = DATA / "races.json"
+    try:
+        prev = {r["id"]: r for r in json.loads(path.read_text(encoding="utf-8"))["races"]}
+    except (OSError, ValueError, KeyError) as e:
+        status.warn(f"final forecasts not frozen: the previous races.json could not be read ({e})")
+        return
+    kept, fresh = 0, []
+    for rid, race in races.items():
+        p = prev.get(rid)
+        if not p or not p.get("prior"):
+            continue
+        if set(p["prior"]) != {c["id"] for c in race["candidates"]}:
+            fresh.append(rid)
+            continue
+        for k in FROZEN_INPUTS:
+            if k in p:
+                race[k] = p[k]
+            else:
+                race.pop(k, None)
+        kept += 1
+    for rid in fresh:
+        status.warn(f"{rid}: candidates changed since the last build, so its final forecast was recomputed")
+    status.check("final-frozen", "Final forecasts kept as they stood after the polls closed", True,
+                 f"{kept} races keep the ratings, polls and baseline of their final forecast"
+                 + (f"; recomputed: {', '.join(fresh)}" if fresh else ""), "info")
+
 
 def forecast_all(races):
     """Each race's forecast (frozen at Election Day once the polls have closed), with the

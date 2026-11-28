@@ -105,7 +105,9 @@ def candidate_lines(cell_text, ticks=0, bolds=()):
     After an election the tables mark each winner (or each candidate advancing to a
     runoff) with a green check mark, whose hidden text "Y" starts the line, and set
     the name in bold: `ticks` is the cell's number of check marks and `bolds` its
-    bold runs. A share printed after the party ("(Republican) 62.3%") is dropped."""
+    bold runs. A share printed after the party ("(Republican) 62.3%") is dropped, and so
+    is "Uncontested" or "Unopposed" (the tables print "(Democratic) Uncontested" for a
+    candidate alone on the ballot)."""
     out = []
     # The hidden "Y" says which line each check mark is on; bold names are the fallback
     # for a check mark drawn without it.
@@ -122,13 +124,16 @@ def candidate_lines(cell_text, ticks=0, bolds=()):
         won = False
         if ticks and re.match(r"^Y\s+\S", line):
             line, won = line[1:].strip(), True
-        m = re.match(r"^(.*?)\s*\(([^)]*)\)\s*(?:[\d.]+\s*%)?\s*$", line)
+        m = re.match(r"^(.*?)\s*\(([^)]*)\)\s*(?:[\d.]+\s*%|(?i:un(?:contested|opposed)))?\s*$", line)
         if m:
             name, parties = m.group(1), m.group(2)
             party = party_code(parties.split(",")[0].split("/")[0])
         else:
-            name, party = line, "I"
+            name, party = re.sub(r"\s*[\d.]+\s*%$", "", line), "I"
         name = re.sub(r"\s+", " ", re.sub(r"[†‡*]", "", name)).strip(" ,;")
+        # After the election the tables lump minor candidates into one "Others" line.
+        if re.fullmatch(r"(?i)others?|other candidates|scattering", name):
+            continue
         if name:
             out.append((name, party, won or bool(ticks and norm(name) in bold), part))
     return out
@@ -327,6 +332,18 @@ def col(heads, *names):
 
 def heads_of(t, i):
     return [re.sub(r"\s+", " ", text(c).replace("\n", " ")).strip().lower() for c in t["rows"][i]]
+
+
+def heads_two_rows(t, i):
+    """Headings of row i, with a second header row's names under any heading that spans
+    several columns: "Incumbent" over "Senator | Party | Electoral history" (the national
+    Senate table after the 2026 election) reads as those three."""
+    heads = heads_of(t, i)
+    rows = t["rows"]
+    if i + 1 >= len(rows) or not all(c.get("th") for c in rows[i + 1]):
+        return heads
+    sub = heads_of(t, i + 1)
+    return [sub[j] if j < len(sub) and rows[i][j]["colspan"] > 1 and sub[j] else h for j, h in enumerate(heads)]
 
 
 def ratings_table(html_text, key_head, min_outlets=3):

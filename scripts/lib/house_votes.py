@@ -31,10 +31,17 @@ UA = "InformedVoter/1.0 (personal election-information site; data refresh script
 HOUSE_VOTES = {
     "rfma": (2022, 513, "the Respect for Marriage Act (H.R. 8404)", "2022-12-08"),
     "whpa": (2022, 360, "the Women’s Health Protection Act (H.R. 8296), to protect abortion access in federal law", "2022-07-15"),
-    "ira": (2022, 420, "the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies", "2022-08-12"),
+    "ira": (2022, 420, "the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices, extended ACA premium subsidies and funded clean energy tax credits", "2022-08-12"),
     "iija": (2021, 369, "the Infrastructure Investment and Jobs Act (H.R. 3684)", "2021-11-05"),
     "chips": (2022, 404, "the CHIPS and Science Act (H.R. 4346), funding domestic semiconductor manufacturing", "2022-07-28"),
-    "hr1_2025": (2025, 190, "H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending", "2025-07-03"),
+    "hr1_2025": (2025, 190, "H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement", "2025-07-03"),
+    # Added Nov. 27, 2026 (owner's request: positions on trans rights, immigration and
+    # money in politics from the voting record first).
+    "equality_act": (2021, 39, "the Equality Act (H.R. 5, 2021), adding sexual orientation and gender identity to federal civil rights law", "2021-02-25"),
+    "for_the_people": (2021, 62, "the For the People Act (H.R. 1, 2021), on voting access, redistricting, campaign finance disclosure and public financing of campaigns", "2021-03-03"),
+    "dream_promise": (2021, 91, "the American Dream and Promise Act (H.R. 6, 2021), a path to citizenship for immigrants brought to the U.S. as children and for people with Temporary Protected Status", "2021-03-18"),
+    "farm_workforce": (2021, 93, "the Farm Workforce Modernization Act (H.R. 1603, 2021), expanding the H-2A farmworker visa program and letting farmworkers earn legal status", "2021-03-18"),
+    "sports_2023": (2023, 192, "the Protection of Women and Girls in Sports Act (H.R. 734, 2023), barring transgender women and girls from women’s and girls’ school sports", "2023-04-20"),
     "ukraine": (2024, 151, "H.R. 8035, military aid for Ukraine", "2024-04-20"),
     "israel": (2024, 152, "H.R. 8034, military aid for Israel", "2024-04-20"),
     "border": (2023, 209, "the Secure the Border Act (H.R. 2), funding border wall construction and more Border Patrol agents", "2023-05-11"),
@@ -145,12 +152,26 @@ def vote_positions(member, votes):
 
     put("soc-10", "rfma", 2, -1)
     put("soc-03", "whpa", 2, -1)
+    put("soc-02", "equality_act", 2, -1)
     put("hea-02", "ira", 1, -1)
     put("hea-07", "aca_2026", 2, -1)
     put("hea-07", "ira", 1, -1)
     put("eco-06", "iija", 1, -1)
     put("agr-02", "chips", 1, -1)
     put("hea-03", "hr1_2025", -1)
+    # Renewable energy: the 2025 law that phased out the clean energy credits (a "yes"
+    # only, as a package), else the 2022 law that created most of them.
+    put("ene-01", "hr1_2025", -1)
+    put("ene-01", "ira", 1, -1)
+    put("imm-02", "dream_promise", 2, -1)
+    put("imm-09", "farm_workforce", 2, -1)
+    put("imm-08", "hr1_2025", 1)
+    # The For the People Act covered voting, redistricting and campaign money at once, so
+    # only a "yes" counts, at half strength.
+    put("gov-03", "for_the_people", 1)
+    put("gov-11", "for_the_people", 1)
+    put("gov-04", "for_the_people", 1)
+    put("gov-06", "for_the_people", 1)
     put("def-13", "ukraine", 2, -2)
     put("def-13", "ukraine_2026", 1, -1)
     put("def-14", "ukraine_2026", 1)
@@ -158,13 +179,17 @@ def vote_positions(member, votes):
     put("def-11", "icc", 1)
     put("def-10", "rescissions", 1, -1)
     put("imm-01", "border", 1)
+    put("imm-01", "hr1_2025", 1)
     put("imm-07", "laken_riley", 1)
     put("ene-03", "fracking", 1, -1)
     put("ene-03", "lng", 1, -1)
     put("ene-03", "energy", 1)
     put("ene-06", "methane_fee", -1, 1)
     put("ene-04", "ca_cars", -1, 1)
+    # Trans rights: the school sports bills (2025, then 2023), else the Equality Act.
     put("soc-12", "sports", -1, 1)
+    put("soc-12", "sports_2023", -1, 1)
+    put("soc-12", "equality_act", 1, -1)
     put("soc-11", "minors_care", -2, 1)
     put("agr-05", "minerals", 1)
     put("agr-01", "farm_bill", 1)
@@ -224,6 +249,12 @@ class HouseRecord:
         """{vote key: vote} for the member from `state` named `name`, or None if
         no single member matches. Matched once by name, then followed by the
         Clerk's member id across every roll call."""
+        mid = self.member_id(state, name, party)
+        return self.votes_for(mid) if mid else None
+
+    def member_id(self, state, name, party=None):
+        """The Clerk's id (the Bioguide id) of the member from `state` named `name`, or
+        None if no single member matches."""
         tokens = norm(name).split()
         if not tokens:
             return None
@@ -248,7 +279,7 @@ class HouseRecord:
                 ids = current
         if len(ids) != 1:
             return None
-        return self.votes_for(ids.pop())
+        return ids.pop()
 
     def votes_for(self, mid):
         """{vote key: vote} for the Clerk's member id `mid` (also used for former

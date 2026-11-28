@@ -146,7 +146,10 @@ def parse_box(t, hi, refs):
                      "bold": bool(row[c_cand].get("bold")), **({"mate": mate} if mate else {}),
                      **({"final": final} if final is not None else {})})
     m = REPORTING.search(t.get("caption") or "")
-    src = next((refs[r] for r in cited if r in refs), None)
+    # Only an https citation, as for the infobox below: on Nov. 27, 2026 Minnesota's
+    # secretary of state page cited its results box with an http link, the validator
+    # refused it, and the whole refresh was put back. The page itself is still cited.
+    src = next((refs[r] for r in cited if r in refs and str(refs[r].get("url", "")).startswith("https://")), None)
     precincts = bool(m and (m.group(2) or "").lower() == "precincts")
     return {"rows": rows, "total": total, "reporting": float(m.group(1)) if m and not precincts else None,
             "precincts": float(m.group(1)) if precincts else None, "outcome": outcome,

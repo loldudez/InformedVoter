@@ -13,7 +13,10 @@
 // some districts elect, "none" = no election this year. `parity` names which
 // districts elect where the pattern is known; otherwise the demo picks half.
 
+import { L } from '../i18n.js';
+
 export const ELECTION_DATE_LABEL = 'Tuesday, November 3, 2026';
+export const electionDateLabel = () => L('Mardi 3 novembre 2026', ELECTION_DATE_LABEL);
 
 const S = (abbr, fips, name, pres24, pop, senate, governor, upper, lower, office, extra = {}) => ({
   abbr, fips, name, pres24, pop, senate, governor, upper, lower, office,
@@ -86,6 +89,79 @@ export const STATES = [
 
 export const STATE_BY_ABBR = Object.fromEntries(STATES.map((s) => [s.abbr, s]));
 export const STATE_BY_FIPS = Object.fromEntries(STATES.map((s) => [s.fips, s]));
+
+// French names (Nov. 25, 2026): the usual French forms; the other states keep their
+// English names in French too. `name` itself stays English, since data is matched on it.
+const FR_NAMES = {
+  CA: 'Californie', NC: 'Caroline du Nord', SC: 'Caroline du Sud', ND: 'Dakota du Nord', SD: 'Dakota du Sud',
+  FL: 'Floride', GA: 'Géorgie', HI: 'Hawaï', LA: 'Louisiane', NM: 'Nouveau-Mexique', PA: 'Pennsylvanie',
+  VA: 'Virginie', WV: 'Virginie-Occidentale', DC: 'District de Columbia',
+};
+export const stateName = (st) => {
+  const en = STATE_BY_ABBR[st]?.name || st;
+  return L(FR_NAMES[st] || en, en);
+};
+// "en Californie", "au Texas", "à Hawaï", "dans l’État de New York": French takes a
+// different preposition by state (feminine names take "en", masculine "au", islands "à").
+const FR_IN = {
+  AL: 'en Alabama', AK: 'en Alaska', AZ: 'en Arizona', AR: 'en Arkansas', CA: 'en Californie', CO: 'au Colorado',
+  CT: 'dans le Connecticut', DE: 'dans le Delaware', DC: 'dans le district de Columbia', FL: 'en Floride', GA: 'en Géorgie',
+  HI: 'à Hawaï', ID: 'dans l’Idaho', IL: 'dans l’Illinois', IN: 'dans l’Indiana', IA: 'dans l’Iowa', KS: 'au Kansas',
+  KY: 'au Kentucky', LA: 'en Louisiane', ME: 'dans le Maine', MD: 'dans le Maryland', MA: 'dans le Massachusetts',
+  MI: 'dans le Michigan', MN: 'dans le Minnesota', MS: 'dans le Mississippi', MO: 'dans le Missouri', MT: 'dans le Montana',
+  NE: 'dans le Nebraska', NV: 'dans le Nevada', NH: 'dans le New Hampshire', NJ: 'dans le New Jersey',
+  NM: 'au Nouveau-Mexique', NY: 'dans l’État de New York', NC: 'en Caroline du Nord', ND: 'dans le Dakota du Nord',
+  OH: 'dans l’Ohio', OK: 'en Oklahoma', OR: 'en Oregon', PA: 'en Pennsylvanie', RI: 'dans le Rhode Island',
+  SC: 'en Caroline du Sud', SD: 'dans le Dakota du Sud', TN: 'dans le Tennessee', TX: 'au Texas', UT: 'dans l’Utah',
+  VT: 'dans le Vermont', VA: 'en Virginie', WA: 'dans l’État de Washington', WV: 'en Virginie-Occidentale',
+  WI: 'dans le Wisconsin', WY: 'dans le Wyoming',
+};
+// "de Pennsylvanie", "du Texas", "de l’Ohio", "d’Hawaï" (French only).
+const FR_OF = {
+  AL: 'de l’Alabama', AK: 'de l’Alaska', AZ: 'de l’Arizona', AR: 'de l’Arkansas', CA: 'de Californie', CO: 'du Colorado',
+  CT: 'du Connecticut', DE: 'du Delaware', DC: 'du district de Columbia', FL: 'de Floride', GA: 'de Géorgie', HI: 'd’Hawaï',
+  ID: 'de l’Idaho', IL: 'de l’Illinois', IN: 'de l’Indiana', IA: 'de l’Iowa', KS: 'du Kansas', KY: 'du Kentucky',
+  LA: 'de Louisiane', ME: 'du Maine', MD: 'du Maryland', MA: 'du Massachusetts', MI: 'du Michigan', MN: 'du Minnesota',
+  MS: 'du Mississippi', MO: 'du Missouri', MT: 'du Montana', NE: 'du Nebraska', NV: 'du Nevada', NH: 'du New Hampshire',
+  NJ: 'du New Jersey', NM: 'du Nouveau-Mexique', NY: 'de l’État de New York', NC: 'de Caroline du Nord', ND: 'du Dakota du Nord',
+  OH: 'de l’Ohio', OK: 'de l’Oklahoma', OR: 'de l’Oregon', PA: 'de Pennsylvanie', RI: 'du Rhode Island', SC: 'de Caroline du Sud',
+  SD: 'du Dakota du Sud', TN: 'du Tennessee', TX: 'du Texas', UT: 'de l’Utah', VT: 'du Vermont', VA: 'de Virginie',
+  WA: 'de l’État de Washington', WV: 'de Virginie-Occidentale', WI: 'du Wisconsin', WY: 'du Wyoming',
+};
+export const deState = (st) => FR_OF[st] || `de ${STATE_BY_ABBR[st]?.name || st}`;
+// A French name ending "de l’État" takes the state after it without a second "l’État":
+// "Sénat de l’État de Pennsylvanie", "Trésorier de l’État de New York".
+export const withState = (base, st) => `${base} ${/ de l’État$/.test(base) && (st === 'NY' || st === 'WA') ? `de ${STATE_BY_ABBR[st].name}` : deState(st)}`;
+// "Sénat de l’État de Pennsylvanie" / "Pennsylvania State Senate".
+export const chamberOf = (st, name) => L(withState(FR_CHAMBERS[name] || name, st), `${STATE_BY_ABBR[st]?.name || st} ${name}`);
+export const inState = (st) => L(FR_IN[st] || `dans l’État ${st}`, `in ${STATE_BY_ABBR[st]?.name || st}`);
+
+const FR_CHAMBERS = {
+  'State Senate': 'Sénat de l’État', 'State House': 'Chambre des représentants de l’État', 'State Assembly': 'Assemblée de l’État',
+  'House of Delegates': 'Chambre des délégués', Legislature: 'Assemblée législative', 'General Assembly': 'Assemblée générale',
+  'House of Representatives': 'Chambre des représentants', Senate: 'Sénat',
+};
+export const chamberName = (name) => L(FR_CHAMBERS[name] || name, name);
+
+const FR_FORMAT = {
+  AK: 'L’Alaska a une primaire à quatre qualifiés et le vote par classement à l’élection générale.',
+  CA: 'La Californie a une primaire à deux qualifiés : deux candidats du même parti peuvent s’affronter en novembre.',
+  DC: 'Le district de Columbia élit un délégué sans droit de vote à la Chambre des représentants et n’a pas d’assemblée d’État.',
+  GA: 'La Géorgie exige la majorité pour gagner : une élection où personne ne dépasse 50 % va à un second tour.',
+  LA: 'La Louisiane a choisi ses candidats au Sénat fédéral lors de primaires fermées. Cette année, ses élections à la Chambre sont des primaires ouvertes le 3 novembre, avec un second tour le 12 décembre si personne n’obtient la majorité. Le bulletin compte aussi 10 projets d’amendement constitutionnel et des élections locales ; l’assemblée sera élue en 2027.',
+  ME: 'Le Maine utilise le vote par classement pour ses élections au Sénat et à la Chambre des représentants.',
+  NE: 'Le Nebraska a une assemblée à chambre unique, officiellement non partisane.',
+  NH: 'Le New Hampshire élit son gouverneur tous les deux ans.',
+  NJ: 'Le New Jersey élit son assemblée les années impaires.',
+  NY: 'L’État de New York autorise le vote de fusion : un candidat peut figurer sur la liste de plusieurs partis.',
+  OR: 'L’Oregon vote entièrement par correspondance.',
+  UT: 'L’Utah vote surtout par correspondance.',
+  VT: 'Le Vermont élit son gouverneur tous les deux ans.',
+  VA: 'La Virginie élit son assemblée les années impaires.',
+  WA: 'L’État de Washington a une primaire à deux qualifiés et vote entièrement par correspondance.',
+  WV: 'Chaque circonscription du Sénat de Virginie-Occidentale a deux sièges ; l’un est élu tous les deux ans.',
+};
+export const stateNote = (s) => (s?.format ? L(FR_FORMAT[s.abbr] || s.format, s.format) : '');
 
 // States whose voter rolls record party registration, so early-vote returns can be
 // split by party. Used by the demo early-vote panel.

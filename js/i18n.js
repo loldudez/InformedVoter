@@ -1,7 +1,7 @@
-// Interface language. The France section and the pages every visitor shares (the
-// country choice, the help button) speak French or English; the U.S. section stays
-// in English. The first visit follows the browser's language list (the first French
-// or English entry wins); after that, the visitor's own choice is saved.
+// Interface language. Both sections and the pages every visitor shares (the country
+// choice, the help button) speak French or English (the U.S. section since Nov. 25, 2026,
+// at the owner's request). The first visit follows the browser's language list (the first
+// French or English entry wins); after that, the visitor's own choice is saved.
 
 import { store } from './store.js';
 
@@ -34,7 +34,7 @@ export function setLang(l) {
 // punctuation never wraps onto a line of its own. Wording is untouched.
 export const frType = (s) => String(s).replace(/ ([?!;:»])/g, ' $1').replace(/« /g, '« ');
 
-// L('Accueil', 'Home'): the France section's pages carry both languages side by side.
+// L('Accueil', 'Home'): pages carry both languages side by side.
 export const L = (fr, en) => (lang() === 'fr' ? frType(fr) : en);
 
 // makeT({ fr: {...}, en: {...} }) returns t(key, vars): the string for the current
@@ -104,7 +104,7 @@ export const t = makeT({
   },
 });
 
-// The FR | EN switch shown in the France section's header and on the shared pages.
+// The FR | EN switch shown in both sections' headers and on the shared pages.
 export function langSwitchHTML() {
   const l = lang();
   const b = (code) => `<button type="button" data-lang="${code}" aria-pressed="${String(l === code)}" lang="${code}" title="${code === 'fr' ? t('lang.toFr') : t('lang.toEn')}">${code.toUpperCase()}</button>`;

@@ -59,6 +59,13 @@ jobs:
           FEC_API_KEY: ${{ secrets.FEC_API_KEY }}
           INFORMED_VOTER_CONTACT: ${{ vars.INFORMED_VOTER_CONTACT }}
           INFORMED_VOTER_STEP_MINUTES: "100"   # a cold cache makes the race step slow
+          # This workflow refreshes about every 16 hours, so the once-a-day files are
+          # rebuilt on each run; they are judged by the time written inside them, since the
+          # checkout gives every file the time of the checkout (refresh_all.py).
+          INFORMED_VOTER_DAILY_HOURS: "12"
+          # Steps still waiting at 150 minutes are left for the next run: a job stopped at
+          # its 170-minute limit would commit nothing.
+          INFORMED_VOTER_BUDGET_MINUTES: "150"
         run: python scripts/refresh_all.py
       # Saved even after a failed refresh, so the next run starts where this one stopped.
       - name: Save page cache

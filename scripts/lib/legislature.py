@@ -9,7 +9,12 @@ What a page gives, where its editors have filled it in:
   "Candidates" column, a combined candidate table (Pennsylvania), or each party's
   "Nominee" list;
 - for some chambers, forecasters' district ratings (State Navigate, Capitol Inside,
-  Marquette).
+  Marquette);
+- after the election, who won: the summary table's "Elected senator" (or
+  representative, member) column with the winner's party and "Hold" or "Gain", or,
+  where a page has no such column, the bold winning line of the district's general-
+  election box. The box's vote counts become the result's rows (unofficial until the
+  state certifies them). A seat with neither has no result yet.
 
 These races get no win probabilities. Almost none have public polls and few are
 rated, so a forecast would invent precision; like Louisiana's open primaries they
@@ -36,7 +41,8 @@ SKIP_WORDS = {"state", "house", "senate", "senatorial", "legislative", "assembly
               "and", "the", "of", "representatives", "representative"}
 # Wikipedia's party colors on the "▌" markers some candidate lists use instead of names.
 MARK_COLORS = {"#0044c9": "D", "#3333ff": "D", "#e81b23": "R", "#ff3333": "R", "#fed105": "L", "#fed000": "L",
-               "#17aa5c": "G", "#00a95c": "G", "#0bda51": "G", "#a356de": "Constitution", "#dcdcdc": "I"}
+               "#17aa5c": "G", "#00a95c": "G", "#0bda51": "G", "#a356de": "Constitution", "#dcdcdc": "I",
+               "#0055aa": "D"}
 NOT_ON_BALLOT = re.compile(r"Eliminated|Withdr[ae]w|Disqualified|Lost |Defeated in|Declined|primary:|Primary results|runoff", re.I)
 
 
@@ -171,11 +177,13 @@ def is_summary(t):
 
 
 def party_of(text):
-    t = (text or "").strip().strip("()").strip()
+    t = (text or "").strip().strip("()").strip().replace("–", "-").replace("—", "-")
+    if "/" in t:
+        t = t.split("/")[0].strip()
     if not t:
         return None
     low = t.lower().rstrip(".")
-    for a, b in (("dem", "D"), ("democratic", "D"), ("dfl", "D"), ("democratic-npl", "D"), ("rep", "R"), ("republican", "R"),
+    for a, b in (("dem", "D"), ("democratic", "D"), ("dfl", "D"), ("democratic-npl", "D"), ("dem-npl", "D"), ("rep", "R"), ("republican", "R"),
                  ("ind", "I"), ("independent", "I"), ("lib", "L"), ("libertarian", "L"), ("grn", "G"), ("green", "G"),
                  ("nonpartisan", "N"), ("np", "N")):
         if low == a:
@@ -221,6 +229,20 @@ def summary_rows(t):
             j += 1
     status_col = next((j for j, n in enumerate(names) if "status" in n), None)
     cand_col = next((j for j, n in enumerate(names) if re.search(r"(^|\s)candidates$", n) and "primary" not in n), None)
+    # After the election: "Elected senator | Party" or "Elected representative | Outcome".
+    elected_col = next((j for j, n in enumerate(names) if ELECTED_HEAD.match(n)), None)
+    after_cols = []
+    if elected_col is not None:
+        j = elected_col + 1
+        while j < len(names) and re.search(r"party|outcome|result", names[j]):
+            after_cols.append(j)
+            j += 1
+    line_cand = next((j for j, n in enumerate(names) if re.fullmatch(r"candidates? name|candidate", n)), None)
+    line_votes = next((j for j, n in enumerate(names) if line_cand is not None and j > line_cand and re.search(r"(^|\s)votes$", n)), None)
+    line_pct = next((j for j, n in enumerate(names) if line_cand is not None and j > line_cand and re.search(r"(^|\s)%$", n)), None)
+    line_party = next((j for j, n in enumerate(names) if re.fullmatch(r"candidates? party", n)), None)
+    if line_cand is not None and line_party is None:
+        line_party = next((j for j in range(line_cand - 1, -1, -1) if "party" in names[j] and (inc_col is None or j > inc_col)), None)
     out = []
     for r in t["rows"][nh:]:
         if len(r) <= max(dist_cols):
@@ -245,8 +267,55 @@ def summary_rows(t):
             "party": party_of(re.sub(r"\(.*?\)", "", party)) if party and not re.search(r"vacant", party, re.I) else None,
             "status": status,
             "candidates": column_candidates(r[cand_col]) if cand_col is not None and cand_col < len(r) else None,
+            "elected": elected_cell(r, elected_col, after_cols),
+            "line": line_cell(r, line_cand, line_party, line_votes, line_pct) if line_votes is not None else None,
         })
+        row = out[-1]
+        row["marked"] = column_winners(row["candidates"], status, row["incumbent"], row["party"]) if cand_col is not None else None
     return out
+
+
+def line_cell(r, cand, party_col, votes_col, pct_col):
+    """One candidate's line in a summary table that lists every candidate with the count."""
+    if cand is None or cand >= len(r):
+        return None
+    name = W.text(r[cand])
+    if not name or re.search(r"total|write-in|no candidate|vacant", name, re.I):
+        return None
+    party = ""
+    if party_col is not None:
+        # The party sits in the last non-empty cell from the party columns up to the name
+        # (a color swatch cell comes first).
+        party = next((W.text(r[j]).strip() for j in range(cand - 1, party_col - 1, -1) if j < len(r) and W.text(r[j]).strip()), "") if party_col < cand \
+            else (W.text(r[party_col]).strip() if party_col < len(r) else "")
+    digits = re.sub(r"[^\d]", "", W.text(r[votes_col])) if votes_col < len(r) else ""
+    m = re.search(r"\d+(?:\.\d+)?", W.text(r[pct_col])) if pct_col is not None and pct_col < len(r) else None
+    person = clean_person(re.sub(r"\(.*?\)", "", name))
+    if not person:
+        return None
+    return {"name": person, "party": party_of(party.split("/")[0]) if party else None, "votes": int(digits) if digits else None,
+            "pct": float(m.group(0)) if m else None, "won": bool(r[cand].get("bold"))}
+
+
+ELECTED_HEAD = re.compile(r"(elected|winner|(member|senator|representative|delegate|assemblymember)[- ]elect)\b")
+PARTY_WORD = re.compile(r"\b(Dem|Rep|Ind|Lib|Grn|DFL|NPL|Democratic|Republican|Independent|Libertarian|Green|Nonpartisan|Forward|WFP)\w*", re.I)
+
+
+def elected_cell(r, col, after_cols):
+    """[{name, party, outcome}] from the summary table's "Elected ..." cell and the party or
+    outcome cells beside it ("Rep", "Dem Hold", "Rep Gain"); None when the column is
+    missing or blank (not called yet, a runoff, or the page not updated)."""
+    if col is None or col >= len(r):
+        return None
+    names = [clean_person(re.sub(r"\(.*?\)", "", x)) for x in W.text(r[col]).split("\n")]
+    names = [n for n in names if n and len(n.split()) >= 2 and not re.search(r"\d|\b(TBD|TBA|runoff|vacant|pending|none|to be determined|undetermined)\b", n, re.I)]
+    if not names:
+        return None
+    after = " ".join(W.text(r[j]) for j in after_cols if j < len(r))
+    parties = [party_of(m.group(1)) for m in PARTY_WORD.finditer(after)]
+    outcome = "gain" if re.search(r"gain|flip|pick[- ]?up", after, re.I) else "hold" if re.search(r"hold", after, re.I) else None
+    return [{"name": n, "party": parties[i] if i < len(parties) else (parties[0] if len(parties) == 1 else None), "outcome": outcome}
+            for i, n in enumerate(names)]
 
 
 def margin(text):
@@ -256,6 +325,16 @@ def margin(text):
         return None
     v = float(m.group(2))
     return v if m.group(1) == "D" else -v
+
+
+PARTY_NAMED = re.compile(r"\b(Dem|Rep|Ind|Lib|Grn|DFL|NPL|Democrat\w*|Republican|Independen\w*|Libertarian|Green|Nonpartisan|Forward|"
+                         r"WFP|Working Families|Constitution|Progressive|Unaffiliated|Conservative|Reform|Party)\b", re.I)
+
+
+def looks_party(s):
+    """A parenthetical that names a party ("Republican", "R", "Dem-NPL"), not a disambiguator."""
+    s = (s or "").strip()
+    return bool(PARTY_NAMED.search(s) or re.fullmatch(r"[A-Z]{1,4}", s))
 
 
 def column_candidates(cell):
@@ -268,23 +347,62 @@ def column_candidates(cell):
     if "▌" not in text:
         return [] if not text.strip() or re.fullmatch(r"\s*(TBD|TBA|None|—|-)\s*", text, re.I) else None
     marks = list(cell.get("marks") or [])
+    bolds = [clean_person(re.sub(r"\(.*?\)", "", b)) for b in (cell.get("bolds") or [])]
     out, mark_i = [], 0
     for part in re.split(r"(▌)", text):
         if part == "▌":
             mark_i += 1
             continue
         entry = part.strip()
-        entry = re.sub(r"^Y\s+", "", entry)
+        # The check mark's hidden text, after the election ("Y Javier Mabrey", "YJeff K. Livingston").
+        checked = bool(re.match(r"Y(?:\s+|(?=[A-Z]))", entry))
+        entry = re.sub(r"^Y(?:\s+|(?=[A-Z]))", "", entry)
         if not entry or re.search(r"write-in", entry, re.I):
             continue
+        share = re.search(r"\s+[-–—]\s*\d+(?:\.\d+)?\s*%\s*$", entry)  # "Rusty Cornwell - 70%"
+        if share:
+            entry = entry[:share.start()]
         color = marks[mark_i - 1] if 0 < mark_i <= len(marks) else None
         m = re.search(r"\(([^()]+)\)\s*$", entry)
-        party = party_of(m.group(1)) if m and m.group(1).lower() not in ("i", "incumbent") else None
-        name = clean_person(entry[:m.start()] if m and party else entry)
+        named = bool(m) and m.group(1).lower() not in ("i", "incumbent") and looks_party(m.group(1))
+        party = party_of(m.group(1)) if named else None
+        name = clean_person(entry[:m.start()] if m and m.group(1).lower() not in ("i", "incumbent") else entry)
         party = party or MARK_COLORS.get(color or "")
         if name and not re.search(r"\d|TBD", name):
-            out.append({"name": name, "party": party})
+            c = {"name": name, "party": party}
+            if checked:
+                c["won"] = True
+            elif name in bolds:
+                c["bold"] = True
+            if share:
+                c["share"] = True
+            out.append(c)
+    if out and all(c.get("share") for c in out) and len({c["party"] for c in out}) == 1:
+        # One party's primary, its shares beside the names, decided the seat (Oklahoma):
+        # only its winner was on the November ballot.
+        out = [c for c in out if c.get("won") or c.get("bold")] or out
+    for c in out:
+        c.pop("share", None)
     return out
+
+
+DECIDED = re.compile(r"\b(re-?elected|(?:new )?member elected|hold|gain|flip(?:ped)?|defeated)\b|lost re-?election", re.I)
+
+
+def column_winners(cands, status, incumbent=None, party=None):
+    """Who won a seat listed in a "Candidates" column: the check-marked names, else (once the
+    status says the seat was decided) the bold names, else the one name on the ballot, else
+    the incumbent when the status says "Incumbent re-elected"."""
+    cands = cands or []
+    won = [c for c in cands if c.get("won")]
+    if not won and DECIDED.search(status or ""):
+        won = [c for c in cands if c.get("bold")] or (cands if len(cands) == 1 else [])
+        if not won and incumbent and re.search(r"incumbent re-?elected", status or "", re.I):
+            won = [{"name": incumbent, "party": party}]
+    if not won:
+        return None
+    outcome = "gain" if re.search(r"\b(gain|flip(?:ped)?)\b", status or "", re.I) else "hold" if re.search(r"\bhold\b", status or "", re.I) else None
+    return [{"name": c["name"], "party": c["party"], "outcome": outcome} for c in won]
 
 
 def box_candidates(t):
@@ -298,7 +416,7 @@ def box_candidates(t):
         if cand_col >= len(r):
             continue
         name = W.text(r[cand_col])
-        if not name or re.search(r"total|majority|turnout|write-in|blank|over/under|registered", name, re.I):
+        if not name or re.search(r"total|majority|turnout|write-in|blank|over/under|registered|\b(hold|gain)\b", name, re.I):
             continue
         party = next((W.text(r[j]).strip() for j in range(cand_col - 1, -1, -1) if W.text(r[j]).strip()), "")
         if re.search(r"total|write-in", party, re.I):
@@ -306,6 +424,54 @@ def box_candidates(t):
         person = clean_person(name)
         if person and not any(c["name"] == person for c in out):  # fusion: one candidate on several party lines
             out.append({"name": person, "party": party_of(party), "incumbent": "incumbent" in name.lower()})
+    return out
+
+
+def box_result(t):
+    """[{name, party, votes, pct, won}] from a general-election box once it has a count:
+    the bold line is the winner. A fusion candidate's party lines are added up (the
+    "Total" line is skipped, as are write-ins). None before any count or winner."""
+    names, nh = header(t)
+    cand_col = next((j for j, n in enumerate(names) if n.startswith("candidate")), None)
+    vote_col = next((j for j, n in enumerate(names) if n.startswith("votes")), None)
+    pct_col = next((j for j, n in enumerate(names) if n in ("%", "percent", "pct", "pct.")), None)
+    if cand_col is None:
+        return None
+    rows = {}
+    for r in t["rows"][nh:]:
+        if cand_col >= len(r):
+            continue
+        name = W.text(r[cand_col])
+        if not name or re.search(r"total|majority|turnout|write-in|blank|over/under|registered|margin|plurality|\b(hold|gain)\b", name, re.I):
+            continue
+        party = next((W.text(r[j]).strip() for j in range(cand_col - 1, -1, -1) if W.text(r[j]).strip()), "")
+        if re.search(r"total|write-in", party, re.I):
+            continue
+        person = clean_person(name)
+        if not person:
+            continue
+        votes = None
+        if vote_col is not None and vote_col < len(r):
+            digits = re.sub(r"[^\d]", "", W.text(r[vote_col]))
+            votes = int(digits) if digits else None
+        pct = None
+        if pct_col is not None and pct_col < len(r):
+            m = re.search(r"\d+(?:\.\d+)?", W.text(r[pct_col]))
+            pct = float(m.group(0)) if m else None
+        won = bool(r[cand_col].get("bold"))
+        x = rows.get(person)
+        if x:  # fusion: one candidate on several party lines
+            x["votes"] = (x["votes"] or 0) + (votes or 0) if (x["votes"] or votes) else None
+            x["won"] = x["won"] or won
+        else:
+            rows[person] = {"name": person, "party": party_of(party), "votes": votes, "pct": pct, "won": won}
+    out = list(rows.values())
+    total = sum(x["votes"] or 0 for x in out)
+    for x in out:
+        if total and x["votes"] is not None:
+            x["pct"] = round(100 * x["votes"] / total, 2)  # one rule for every box, fusion totals included
+    if not any(x["won"] for x in out) and not total:
+        return None
     return out
 
 
@@ -459,12 +625,22 @@ def parse_chamber(html, features):
     summaries = [t for t in tabs if is_summary(t)]
     summary = max(summaries, key=lambda t: len(t["rows"]), default=None)
     districts, unmatched = {}, []
-    for row in summary_rows(summary) if summary else []:
+    # A chamber split over several tables of one layout (New York's Assembly: 1-50, 51-100, 101-150).
+    layout = header(summary)[0] if summary else None
+    parts = [t for t in summaries if header(t)[0] == layout] if summary else []
+    for row in [row for t in parts for row in summary_rows(t)]:
         fid = match_feature(row["label"], idx)
         if not fid:
             unmatched.append(row["label"])
             continue
         d = districts.setdefault(fid, {"label": row["label"], "pres24": row["pres24"], "incumbents": [], "candidates": None, "ratings": [], "via": None})
+        if row["elected"]:
+            d.setdefault("elected", []).extend(dict(e, seat=row["seat"]) for e in row["elected"])
+        if row.get("line"):
+            d.setdefault("lines", []).append(row["line"])
+        for e in row.get("marked") or []:
+            if not any(same_person(e["name"], x["name"]) for x in d.get("marked", [])):
+                d.setdefault("marked", []).append(dict(e, seat=row["seat"]))
         inc = {"name": row["incumbent"], "party": row["party"], "status": row["status"], "seat": row["seat"]}
         if not any(x["name"] == inc["name"] and x["name"] and x["party"] == inc["party"] for x in d["incumbents"]):
             d["incumbents"].append(inc)  # a vacant seat stays as an entry with no name
@@ -474,6 +650,28 @@ def parse_chamber(html, features):
         if d["pres24"] is None:
             d["pres24"] = row["pres24"]
     listed = bool(districts)
+    for d in districts.values():
+        lines = d.pop("lines", None)
+        if not lines:
+            continue
+        merged = {}
+        for x in lines:  # fusion: one candidate on several party lines
+            y = merged.get(x["name"])
+            if y:
+                y["votes"] = (y["votes"] or 0) + (x["votes"] or 0)
+                y["won"] = y["won"] or x["won"]
+            else:
+                merged[x["name"]] = dict(x)
+        box = list(merged.values())
+        total = sum(x["votes"] or 0 for x in box)
+        for x in box:
+            if total and x["votes"] is not None:
+                x["pct"] = round(100 * x["votes"] / total, 2)
+        if total or any(x["won"] for x in box):
+            d["box"] = box
+        if d["candidates"] is None:
+            d["candidates"] = [{"name": x["name"], "party": x["party"]} for x in box]
+            d["via"] = "table"
     # General-election boxes and nominee lists in each district's section.
     for fid, sec in district_sections(html, idx):
         if fid not in districts:
@@ -481,9 +679,11 @@ def parse_chamber(html, features):
                 continue  # the summary table is the list of seats up; a stray section is an old race
             districts[fid] = {"label": fid, "pres24": None, "incumbents": [], "candidates": None, "ratings": [], "via": None}
         d = districts[fid]
+        boxes = [t for t in W.tables(sec) if is_general_box(t)]
+        if boxes and not d.get("box"):
+            d["box"] = box_result(boxes[-1])
         if d["via"] == "column":
             continue
-        boxes = [t for t in W.tables(sec) if is_general_box(t)]
         if boxes:
             cands = box_candidates(boxes[-1])
             if cands:
@@ -568,12 +768,56 @@ def race_from(ch, fid, d, name, title, url, turnout):
             "sources": [{"title": f"Wikipedia: {title}", "url": url}]}
     if seats > 1:
         race["seats"] = seats
+    result = result_for(d, rid, cands, used, incs, held, title, url)
+    if result:
+        race["result"] = result
     if d["ratings"]:
         race["ratings"] = d["ratings"]
         cons = model.consensus(d["ratings"], None)
         if cons:
             race["consensus"] = cons
     return race
+
+
+def result_for(d, rid, cands, used, incs, held, title, url):
+    """The 2026 result: the summary table's elected names (else the check-marked names in its
+    "Candidates" column, else the box's bold lines) as winners, matched to the candidates
+    (a winner the list lacks is added), and the box's count as rows. A flip is a winner of
+    another party than the seat's holder."""
+    def find_or_add(name, party):
+        party = party or next((i["party"] for i in incs if i["party"] and same_person(name, i["name"])), None)
+        c = next((x for x in cands if same_person(x["name"], name)), None)
+        if c:
+            if party and c["party"] in (None, "Party not listed"):
+                c["party"] = party
+            return c
+        base = slug(name.split()[-1]) or "candidate"
+        cid = f"{rid}:{base}" if f"{rid}:{base}" not in used else f"{rid}:{slug(name)}"
+        used.add(cid)
+        c = {"id": cid, "name": name, "party": party or "Party not listed", "incumbent": any(same_person(name, i["name"]) for i in incs)}
+        cands.append(c)
+        return c
+
+    box = d.get("box") or []
+    elected = d.get("elected") or d.get("marked") or []
+    via = "summary" if d.get("elected") else "column" if d.get("marked") else "box"
+    won = elected or [x for x in box if x["won"]]
+    if not won:
+        return None
+    winners = []
+    for x in won:
+        c = find_or_add(x["name"], x["party"])
+        if c["id"] not in winners:
+            winners.append(c["id"])
+    res = {"status": "won", "winners": winners, "via": via,
+           "page": {"title": f"Wikipedia: {title}", "url": url}}
+    if any(x["votes"] for x in box):
+        res["rows"] = [{"id": find_or_add(x["name"], x["party"])["id"], "name": x["name"], "party": x["party"], "votes": x["votes"], "pct": x["pct"]}
+                       for x in box]
+    parties = {c["party"] for c in cands if c["id"] in winners}
+    if any(e.get("outcome") == "gain" for e in elected) or (held and len(parties) == 1 and next(iter(parties)) in ("D", "R", "I") and next(iter(parties)) != held):
+        res["flip"] = True
+    return res
 
 
 RESEARCH_DIR = ROOT / "data" / "research" / "legislature"
@@ -686,6 +930,9 @@ if __name__ == "__main__":
         for d in ds.values():
             vias[d["via"]] = vias.get(d["via"], 0) + 1
         nopty = sum(1 for d in ds.values() for x in (d["candidates"] or []) if not x.get("party"))
+        won_sum = sum(1 for d in ds.values() if d.get("elected"))
+        won_col = sum(1 for d in ds.values() if not d.get("elected") and d.get("marked"))
+        won_box = sum(1 for d in ds.values() if not d.get("elected") and not d.get("marked") and any(x["won"] for x in d.get("box") or []))
         print(f"{c['state']} {c['key']:6} seats {c['seats']:3} up {c['up']:7} -> districts {len(ds):3}, with candidates {with_c:3}, "
               f"pres {sum(1 for d in ds.values() if d['pres24'] is not None):3}, rated {sum(1 for d in ds.values() if d['ratings']):2}, "
-              f"via {vias}, no-party {nopty}, unmatched {info['unmatched'][:4]}")
+              f"via {vias}, no-party {nopty}, won {won_sum}+{won_col}+{won_box} (table+column+box), unmatched {info['unmatched'][:4]}")

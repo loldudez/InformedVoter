@@ -13,6 +13,20 @@
  *   {type: "ticket", subject, message, email}
  *     Forwards a help ticket to HELP_TO, with the visitor's address as Reply-To.
  *
+ * Mail goes out through GmailApp, the account's own Gmail, never MailApp: on Nov. 5,
+ * 2026, while the Workspace account was new and on its free trial, Google rejected every
+ * MailApp email to an outside address the moment it was sent ("Message rejected" in the
+ * admin console's email log), though the site was told it had gone. Gmail keeps a copy of
+ * every email it sends in Sent mail, the recipient's address included, so mail_() moves
+ * each copy to the trash as soon as it is sent (Gmail empties the trash after 30 days),
+ * and the daily run retries any it couldn't move. That takes Gmail's "read, compose and
+ * send" permission (gmail.modify), which can move mail to the trash but not delete it for
+ * good. appsscript.json lists the permissions itself, so the editor asks for no more.
+ * Google's consent screen lets each permission be refused on its own; a refused one isn't
+ * asked for again, and the call fails with "The script does not have permission" (what
+ * kept tickets failing until Nov. 25, 2026). setup() asks again for any missing one, so
+ * run it after a change.
+ *
  * Election names and dates come from the site's own data/reminders.json, never from the
  * request, so nobody can make this address send text of their choosing. Sign-ups are
  * deleted once the election is over, on unsubscribing, and after 7 days unconfirmed.
@@ -117,9 +131,9 @@ function ticket_(req) {
   if (!allow_('g:tickets', LIMITS.ticketsPerHour, 3600)) return { ok: false, error: 'too-many' };
   if (email && !allow_('t:' + email, LIMITS.ticketsPerEmail, 3600)) return { ok: false, error: 'too-many' };
   if (MailApp.getRemainingDailyQuota() < 5) return { ok: false, error: 'quota' };
-  const mail = { to: HELP_TO, subject: subject, body: message, name: 'Informed Voter help form' };
-  if (email) mail.replyTo = email;
-  MailApp.sendEmail(mail);
+  const opts = { name: 'Informed Voter help form' };
+  if (email) opts.replyTo = email;
+  mail_(HELP_TO, subject, message, opts);
   return { ok: true };
 }
 
@@ -226,8 +240,13 @@ function page_(a, token, info) {
 
 // The daily run -------------------------------------------------------------------------
 
-// setup() schedules this every day at 14:00, Paris time (8:00 in New York).
+// setup() schedules this every day between 14:00 and 15:00, Paris time.
 function sendDueReminders() {
+  try {
+    retryTrash_();  // Gmail copies mail_() couldn't remove
+  } catch (err) {
+    console.error(err);
+  }
   runReminders_(today_());
 }
 
@@ -348,15 +367,76 @@ function send_(to, subject, lines) {
   const body = lines.join('\n');
   const htmlBody = body.split('\n\n').map((p) => `<p style="margin:0 0 14px">${esc_(p).replace(/\n/g, '<br>')
     .replace(/(https:\/\/[^\s<]+)/g, '<a href="$1">$1</a>')}</p>`).join('');
-  MailApp.sendEmail({ to: to, subject: subject, body: body, name: FROM_NAME,
+  mail_(to, subject, body, { name: FROM_NAME,
     htmlBody: `<div style="font:15px/1.5 Arial,sans-serif;color:#1b1a22;max-width:560px">${htmlBody}</div>` });
+}
+
+// Every email goes out here. Gmail keeps a copy of what it sends in Sent mail, with the
+// recipient's address, so that copy goes straight to the trash, which Gmail empties after
+// 30 days. The email is sent from a draft because draft.send() returns the sent message,
+// which GmailApp.sendEmail() doesn't. A copy that can't be moved, or a draft that a failed
+// send leaves behind, is noted for the daily run.
+function mail_(to, subject, body, opts) {
+  const draft = GmailApp.createDraft(to, subject, body, opts);
+  let msg;
+  try {
+    msg = draft.send();
+  } catch (err) {
+    try {
+      draft.deleteDraft();
+    } catch (e) {
+      later_('d', draft.getId());
+    }
+    throw err;
+  }
+  try {
+    msg.moveToTrash();
+  } catch (err) {
+    console.error(`Sent copy not moved to the trash yet: ${err}`);
+    later_('m', msg.getId());
+  }
+}
+
+// Gmail copies the daily run still has to remove: [kind, id, tries], "m" for a sent
+// message to move to the trash, "d" for a draft to delete.
+function later_(kind, id) {
+  try {
+    const props = PropertiesService.getScriptProperties();
+    const list = JSON.parse(props.getProperty('TRASH') || '[]');
+    list.push([kind, id, 0]);
+    props.setProperty('TRASH', JSON.stringify(list.slice(-200)));
+  } catch (err) {
+    console.error(`Gmail copy ${kind} ${id} not noted: ${err}`);
+  }
+}
+
+// Run daily: tries each noted copy again, for a week at most.
+function retryTrash_() {
+  const props = PropertiesService.getScriptProperties();
+  const list = JSON.parse(props.getProperty('TRASH') || '[]');
+  if (!list.length) return;
+  const left = [];
+  for (const [kind, id, tries] of list) {
+    try {
+      if (kind === 'd') GmailApp.getDraft(id).deleteDraft();
+      else GmailApp.getMessageById(id).moveToTrash();
+    } catch (err) {
+      console.error(`Gmail copy ${kind} ${id} not removed yet: ${err}`);
+      if (tries < 6) left.push([kind, id, tries + 1]);
+    }
+  }
+  if (left.length) props.setProperty('TRASH', JSON.stringify(left));
+  else props.deleteProperty('TRASH');
 }
 
 // Setup, storage and helpers ------------------------------------------------------------
 
-// Run once from the editor: creates the sign-ups sheet (in this account's Drive) and the
-// daily trigger. Running it again keeps the sheet and replaces the trigger.
+// Run once from the editor: asks for every permission in appsscript.json that isn't granted
+// yet (one refused on the consent screen is otherwise never asked for again), then creates
+// the sign-ups sheet (in this account's Drive) and the daily trigger. Running it again
+// keeps the sheet and replaces the trigger.
 function setup() {
+  ScriptApp.requireAllScopes(ScriptApp.AuthMode.FULL);
   const props = PropertiesService.getScriptProperties();
   let ss = null;
   const id = props.getProperty('SHEET_ID');

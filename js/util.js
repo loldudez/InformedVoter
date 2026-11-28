@@ -1,4 +1,12 @@
 // Small shared helpers: escaping HTML templates, formatting, deterministic randomness.
+// Formatting follows the visitor's language: French uses a decimal comma, spaces between
+// thousands, a narrow space before % and French month names (Nov. 25, 2026).
+
+import { lang } from './i18n.js';
+
+const isFr = () => lang() === 'fr';
+const dec = (s) => (isFr() ? String(s).replace('.', ',') : String(s));
+const PCT = '\u202f%';
 
 export const $ = (sel, root = document) => root.querySelector(sel);
 export const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
@@ -30,17 +38,29 @@ export function html(strings, ...vals) {
 // Formatting ----------------------------------------------------------------
 
 export const clamp = (x, lo, hi) => Math.min(hi, Math.max(lo, x));
-export const fmtInt = (n) => Math.round(n).toLocaleString('en-US');
-export const fmtPct = (x, d = 1) => `${Number(x).toFixed(d)}%`;
+// x.toFixed(d) with the visitor's decimal mark.
+export const fmtNum = (x, d = 1) => dec(Number(x).toFixed(d));
+export const fmtInt = (n) => Math.round(n).toLocaleString(isFr() ? 'fr-FR' : 'en-US');
+export const fmtPct = (x, d = 1) => (isFr() ? `${fmtNum(x, d)}${PCT}` : `${Number(x).toFixed(d)}%`);
+export const pctSign = () => (isFr() ? PCT : '%');
 export const fmtProb = (p) => {
   const pct = p * 100;
-  if (pct > 99) return '>99%';
-  if (pct < 1) return '<1%';
-  return `${Math.round(pct)}%`;
+  const u = pctSign();
+  if (pct > 99) return `>99${u}`;
+  if (pct < 1) return `<1${u}`;
+  return `${Math.round(pct)}${u}`;
 };
+// French amounts in dollars: "1,2 M$", "350 k$", "2,1 Md$" (milliards), "1 234 $".
 export function fmtMoney(n, { exact = false } = {}) {
-  if (exact) return '$' + fmtInt(n);
   const a = Math.abs(n);
+  if (isFr()) {
+    if (exact) return `${fmtInt(n)}\u00a0$`;
+    if (a >= 1e9) return `${fmtNum(n / 1e9, 1)}\u00a0Md$`;
+    if (a >= 1e6) return `${fmtNum(n / 1e6, a >= 1e7 ? 0 : 1)}\u00a0M$`;
+    if (a >= 1e3) return `${fmtNum(n / 1e3, a >= 1e5 ? 0 : 1)}\u00a0k$`;
+    return `${Math.round(n)}\u00a0$`;
+  }
+  if (exact) return '$' + fmtInt(n);
   if (a >= 1e9) return `$${(n / 1e9).toFixed(1)}B`;
   if (a >= 1e6) return `$${(n / 1e6).toFixed(a >= 1e7 ? 0 : 1)}M`;
   if (a >= 1e3) return `$${(n / 1e3).toFixed(a >= 1e5 ? 0 : 1)}K`;
@@ -48,34 +68,45 @@ export function fmtMoney(n, { exact = false } = {}) {
 }
 export function fmtCompact(n) {
   const a = Math.abs(n);
-  if (a >= 1e6) return `${(n / 1e6).toFixed(a >= 1e7 ? 1 : 2)}M`;
-  if (a >= 1e3) return `${Math.round(n / 1e3)}K`;
+  if (a >= 1e6) return isFr() ? `${fmtNum(n / 1e6, a >= 1e7 ? 1 : 2)}\u00a0M` : `${(n / 1e6).toFixed(a >= 1e7 ? 1 : 2)}M`;
+  if (a >= 1e3) return isFr() ? `${Math.round(n / 1e3)}\u00a0k` : `${Math.round(n / 1e3)}K`;
   return fmtInt(n);
 }
 // Margins are stored as first-named minus second-named share, in points.
-export const fmtLead = (party, pts, d = 1) => `${party} +${Math.abs(pts).toFixed(d)}`;
+export const fmtLead = (party, pts, d = 1) => `${party} +${fmtNum(Math.abs(pts), d)}`;
 export function fmtDR(dr, d = 1) {
   if (dr == null) return '—';
-  if (Math.abs(dr) < 0.05) return 'Even';
-  return dr > 0 ? `D +${dr.toFixed(d)}` : `R +${(-dr).toFixed(d)}`;
+  if (Math.abs(dr) < 0.05) return isFr() ? 'Égalité' : 'Even';
+  return dr > 0 ? `D +${fmtNum(dr, d)}` : `R +${fmtNum(-dr, d)}`;
 }
-export const signed = (x, d = 1, unit = '') => `${x > 0 ? '+' : x < 0 ? '−' : '±'}${Math.abs(x).toFixed(d)}${unit}`;
+export const signed = (x, d = 1, unit = '') => `${x > 0 ? '+' : x < 0 ? '−' : '±'}${fmtNum(Math.abs(x), d)}${unit === '%' ? pctSign() : unit}`;
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const MONTHS_FR = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
+const dayFr = (d) => (d.getDate() === 1 ? '1er' : String(d.getDate()));
 // "2026-07-21" means that calendar day where the voter is. new Date() would read it
 // as UTC midnight, which shows as the day before anywhere in the Americas.
 const toDate = (d) => {
   const m = typeof d === 'string' && d.match(/^(\d{4})-(\d{2})-(\d{2})$/);
   return m ? new Date(+m[1], +m[2] - 1, +m[3]) : new Date(d);
 };
-export const fmtDate = (d) => { d = toDate(d); return `${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`; };
-export const fmtShortDate = (d) => { d = toDate(d); return `${MONTHS[d.getMonth()]} ${d.getDate()}`; };
+export const fmtDate = (d) => {
+  d = toDate(d);
+  return isFr() ? `${dayFr(d)} ${MONTHS_FR[d.getMonth()]} ${d.getFullYear()}` : `${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+};
+export const fmtShortDate = (d) => { d = toDate(d); return isFr() ? `${dayFr(d)} ${MONTHS_FR[d.getMonth()]}` : `${MONTHS[d.getMonth()]} ${d.getDate()}`; };
 export function timeAgo(d, now = new Date()) {
   const s = (now - new Date(d)) / 1000;
+  const days = Math.round(s / 86400);
+  if (isFr()) {
+    if (s < 90) return 'à l’instant';
+    if (s < 3600) return `il y a ${Math.round(s / 60)} min`;
+    if (s < 86400) return `il y a ${Math.round(s / 3600)} h`;
+    return days === 1 ? 'hier' : `il y a ${days} jours`;
+  }
   if (s < 90) return 'just now';
   if (s < 3600) return `${Math.round(s / 60)} min ago`;
   if (s < 86400) return `${Math.round(s / 3600)} hr ago`;
-  const days = Math.round(s / 86400);
   return days === 1 ? 'yesterday' : `${days} days ago`;
 }
 export const isoDay = (d) => new Date(d).toISOString().slice(0, 10);
@@ -88,6 +119,7 @@ export function initials(name) {
   return (words.length ? words : all).map((w) => w[0]).slice(0, 2).join('').toUpperCase();
 }
 export const ordinal = (n) => {
+  if (isFr()) return n === 1 ? '1er' : `${n}e`;
   const s = ['th', 'st', 'nd', 'rd'], v = n % 100;
   return n + (s[(v - 20) % 10] || s[v] || s[0]);
 };

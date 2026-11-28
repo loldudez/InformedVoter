@@ -19,6 +19,10 @@ Pushing uses this computer's git sign-in (Git Credential Manager), made once by 
 The script never asks for one, so no window opens from the scheduler; a failed push is
 logged to data/cache/refresh.log and the next run tries again. A push refused because
 the branch moved (the owner pushed in between) is redone on top of it.
+
+It refuses to run inside the Claude desktop app's shells and terminal tabs, where Windows
+keeps new files under AppData in the app's own folder and git would split the clone in
+two (redirected()), and it moves a damaged clone aside and clones again (sync()).
 """
 
 import json
@@ -116,6 +120,66 @@ def ensure_clone(repo, branch):
     git("clone", "-q", "--single-branch", "--branch", branch, repo, str(CLONE), cwd=CLONE.parent, timeout=900)
 
 
+# What git says when the clone itself is damaged (never a sign-in or network failure).
+BROKEN = ("bad object", "did not send all necessary objects", "does not point to a valid object",
+          "could not reset index file", "unable to create file", "index file corrupt", "not a git repository",
+          "missing blob", "missing tree", "corrupt")
+
+
+def sync(repo, branch):
+    """Bring the clone to the branch's tip. A damaged clone is moved aside (it holds
+    nothing of its own) and cloned again: on Nov. 27, 2026 git run from a shell of the
+    Claude desktop app left this one pointing at objects the scheduled tasks couldn't
+    see (see redirected())."""
+    try:
+        git("fetch", "-q", "origin", branch, timeout=600)
+        git("reset", "-q", "--hard", f"origin/{branch}")  # this clone holds nothing of its own
+    except GitError as e:
+        if not any(k in str(e).lower() for k in BROKEN):
+            raise
+        aside = CLONE.with_name(f"{CLONE.name}.broken-{datetime.now():%Y%m%d-%H%M%S}")
+        try:
+            CLONE.rename(aside)
+        except OSError as oe:
+            raise GitError(f"the clone is damaged ({e}) and couldn't be moved aside: {oe}") from oe
+        log(f"the clone was damaged ({e}); moved it to {aside.name} and cloning again")
+        ensure_clone(repo, branch)
+
+
+def redirected():
+    """True when Windows keeps this process's new files under AppData in an app's own
+    folder (%LOCALAPPDATA%\\Packages\\<app>\\LocalCache\\Local), as it does for the shells
+    and terminal tabs of the Claude desktop app, a packaged app. Such a process still
+    changes and deletes the files that were already there, so a git fetch run there puts
+    its new pack in the app's folder and lets git's housekeeping delete the old packs from
+    the real clone: on Nov. 27, 2026 that left the scheduled tasks' clone pointing at
+    objects only the app could see. Tested by writing a probe file, since such a process
+    has no package identity of its own."""
+    if os.name != "nt" or not os.environ.get("LOCALAPPDATA"):
+        return False
+    base = Path(os.environ["LOCALAPPDATA"])
+    packages = base / "Packages"
+    if not packages.is_dir():
+        return False
+    probe = base / f"informed-voter-probe-{os.getpid()}.tmp"
+    try:
+        probe.write_text("probe", encoding="utf-8")
+        for d in os.scandir(packages):
+            try:
+                if (Path(d.path) / "LocalCache" / "Local" / probe.name).exists():
+                    return True
+            except OSError:
+                continue
+        return False
+    except OSError:
+        return False
+    finally:
+        try:
+            probe.unlink(missing_ok=True)
+        except OSError:
+            pass
+
+
 def stage(paths, guard):
     """Copy the files into the clone and stage them; the paths git sees changed."""
     if guard and not take(REFRESH_LOCK, wait_minutes=15, stale_minutes=45):
@@ -144,8 +208,7 @@ def publish(which, repo, branch, dry_run=False):
                else "Refresh election data")
     for attempt in range(1, 4):
         t0 = time.time()
-        git("fetch", "-q", "origin", branch, timeout=600)
-        git("reset", "-q", "--hard", f"origin/{branch}")  # this clone holds nothing of its own
+        sync(repo, branch)
         # A results run calls this while it holds the refresh lock itself; a full publish
         # takes it while copying, so it never copies a race file half-written.
         changed = stage(paths, guard=which != "results")
@@ -190,6 +253,11 @@ def main():
         return 0
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
     repo, branch = cfg["repo"], cfg.get("branch", "main")
+    if redirected():
+        log(f"{which}: skipped: run from inside the Claude desktop app, where Windows keeps new files under "
+            f"AppData in the app's own folder and git would split the clone in two; the scheduled tasks "
+            f"publish, or run this from a terminal outside the app (README, \"Publishing from this computer\")")
+        return 0
     if not take(LOCK, wait_minutes=10, stale_minutes=30):
         log(f"{which}: another publish has been running for 10 minutes; skipped")
         return 0

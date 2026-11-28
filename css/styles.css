@@ -146,6 +146,11 @@ p { margin: 0 0 .8em; }
 .topbar strong { color: var(--text-1); font-weight: 650; }
 .topbar .sep { flex: 1; }
 .chamber-odd b { font-weight: 700; }
+/* "View the potential candidates for 2028 Presidency": a pill on the right, first on phones. */
+.top-2028 { display: inline-flex; align-items: center; gap: 2px; padding: 3px 6px 3px 11px; border-radius: 999px; border: 1px solid var(--border-2); background: var(--surface-1); color: var(--text-1); font-weight: 600; text-decoration: none; }
+.top-2028:hover { border-color: var(--text-3); background: var(--surface-2); }
+.top-2028 .icon { width: 14px; height: 14px; }
+@media (max-width: 760px) { .top-2028 { order: -1; } }
 
 /* Header -------------------------------------------------------------------- */
 .site-header { position: sticky; top: 0; z-index: 40; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); background: color-mix(in srgb, var(--bg) 78%, transparent); border-bottom: 1px solid var(--border); }
@@ -154,6 +159,16 @@ p { margin: 0 0 .8em; }
 .brand .logo-mark { width: 36px; height: 36px; }
 .brand small { display: block; font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 9.5px; letter-spacing: .3em; color: var(--text-3); margin-top: -2px; }
 .header-spacer { flex: 1; }
+.test-chip { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: .12em; font-weight: 700; text-transform: uppercase; white-space: nowrap; color: var(--text-2); border: 1px dashed var(--text-3); border-radius: 6px; padding: 3px 7px; cursor: help; }
+.test-short { display: none; }
+/* Phone width: the header keeps every control whole (the test tag shortens to "Test"). */
+@media (max-width: 440px) {
+  .site-header .wrap { gap: 8px; }
+  .site-header .brand, .site-header .icon-only, .site-header .avatar-btn { flex-shrink: 0; }
+  .site-header .lang-switch button { min-width: 32px; padding: 0 7px; }
+  .test-long { display: none; }
+  .test-short { display: inline; }
+}
 .pill-btn { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--border-2); background: var(--surface-1); cursor: pointer; font-weight: 600; font-size: 14px; text-decoration: none; transition: background .15s, border-color .15s; }
 .pill-btn:hover { background: var(--surface-2); border-color: var(--text-3); }
 .icon-only { width: 40px; padding: 0; justify-content: center; }
@@ -211,6 +226,7 @@ p { margin: 0 0 .8em; }
 .chip.rating-T { color: var(--text-1); border-color: var(--text-3); }
 button.chip { cursor: pointer; }
 button.chip[aria-pressed="true"] { background: var(--text-1); color: var(--bg); border-color: var(--text-1); }
+button.chip[aria-pressed="true"] b { color: inherit; }
 
 .seg { display: inline-flex; padding: 4px; border-radius: 999px; background: var(--surface-1); border: 1px solid var(--border-2); gap: 2px; flex-wrap: wrap; }
 .seg a, .seg button { display: inline-flex; align-items: center; gap: 6px; min-height: 38px; padding: 0 18px; border-radius: 999px; text-decoration: none; color: var(--text-2); font-weight: 600; font-size: 14px; background: none; border: 0; cursor: pointer; white-space: nowrap; }
@@ -385,7 +401,8 @@ table.data td.r, table.data th.r { text-align: right; }
 .control .bar span:first-child { background: var(--dem); }
 .control .bar span:last-child { background: var(--rep); }
 .control .bar span.n { background: var(--other); }
-.control .odds { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--text-2); }
+.control .odds { display: flex; justify-content: space-between; gap: 12px; font-size: 13.5px; color: var(--text-2); }
+.control .odds > span { min-width: 0; line-height: 1.3; }
 .control .odds b { font-size: 22px; color: var(--text-1); display: block; letter-spacing: -.02em; }
 .race-list { display: grid; gap: 8px; }
 .race-row { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 2fr) auto; gap: 14px; align-items: center; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--border); background: var(--surface-1); text-decoration: none; }
@@ -796,11 +813,23 @@ a.fr-face:hover b { text-decoration: underline; }
 :root,
 :root[data-theme="dark"] { --seat-other: #686870; }
 :root[data-theme="light"] { --seat-other: #57575f; }
+/* A state whose two senators are one Democrat and one Republican (the home map after the
+   2026 election): purple, lighter than both poles on the dark page and darker than both on
+   the light one, so it stays apart from D blue, R red and the independent gray under every
+   colorblind simulation (worst pair 15.6 dark, 12.1 light; normal vision 22.3 and 20.0)
+   with 3:1 contrast on both pages. Checked with scratch palette_check.py, Nov. 25. */
+:root,
+:root[data-theme="dark"] { --split: #deadfd; }
+:root[data-theme="light"] { --split: #820d9e; }
 .hemi-chart { position: relative; max-width: 880px; margin: 0 auto; }
 .hemi-svg { display: block; width: 100%; height: auto; touch-action: manipulation; cursor: default; }
 .hemi-svg:focus-visible { outline: 2px solid var(--brand-2); outline-offset: 6px; border-radius: 14px; }
-.hemi-group, .hemi-vacant { transition: opacity .15s; }
+.hemi-group, .hemi-vacant, .hemi-svg [data-i] { transition: opacity .15s; }
 .hemi-group.dim, .hemi-vacant.dim { opacity: .14; }
+/* mark(): the seats of members outside the highlighted caucus (js/views/congress.js). */
+.hemi-svg [data-i].off, .hemi-vacant.off { opacity: .14; }
+.parl-caucuses { display: grid; gap: 8px; }
+.parl-caucus .hemi-swatch { flex: none; }
 .hemi-vacant { fill: none; stroke: var(--text-3); stroke-width: 1.6; }
 .hemi-ring { fill: none; stroke: var(--text-1); stroke-width: 2.5; opacity: 0; pointer-events: none; }
 .hemi-c0 { font: 800 62px/1 'Bricolage', 'Inter', sans-serif; letter-spacing: -.02em; fill: var(--text-1); text-anchor: middle; }
@@ -825,6 +854,7 @@ a.fr-face:hover b { text-decoration: underline; }
 .parl-stats .stat { padding: 12px 14px; }
 .parl-stats .value { font-size: 22px; }
 .parl-find { max-width: 340px; }
+.parl-toggles { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 table.parl-members td { padding: 7px 12px; }
 
 /* "Les grands enjeux" (js/fr/views/enjeux.js). Each country takes a color from its flag,
@@ -952,3 +982,106 @@ a.chip.enj-cand:hover { border-color: var(--text-3); }
 .future-year > summary svg { margin-left: auto; width: 18px; height: 18px; transition: transform .15s; flex: none; }
 .future-year[open] > summary svg { transform: rotate(180deg); }
 .future-title { font-size: 17px; font-weight: 700; }
+
+/* People elected in 2026 or in office (js/components/person.js): the state pages'
+   governor, senators, House members and statewide officers. Cards in one row share a
+   height, with the buttons on one line at the bottom; an odd last card spans the row. */
+/* The 2028 field's cards (js/views/president2028.js): the article's summary and what each
+   person has said about 2028, quoted from Wikipedia with the reports it cites. */
+.hope-text p, .hope-said p { margin: 0; font-size: 14px; color: var(--text-2); }
+.hope-text { display: grid; gap: 6px; }
+.hope-text .person-more p { margin-top: 6px; }
+.hope-said { display: grid; gap: 6px; padding: 10px 12px; border-radius: 12px; background: var(--surface-1); border: 1px solid var(--border); }
+.hope-said p:first-of-type { color: var(--text-1); }
+/* #/2028 opens on one door per party in its color (Democrats blue, Republicans red, the
+   others gray), each leading to that party's page. White text sits on a party color only
+   at 24px bold or more (3:1 or better in both themes); smaller text stays on the surface. */
+.p28-door, .p28-tab, .p28-title { --party: var(--seat-other); }
+.p28-door.party-D, .p28-tab.party-D, .p28-title.party-D { --party: var(--dem); }
+.p28-door.party-R, .p28-tab.party-R, .p28-title.party-R { --party: var(--rep); }
+.p28-doors { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 860px) { .p28-doors { grid-template-columns: minmax(0, 1fr); } }
+.p28-door { display: flex; flex-direction: column; border-radius: 18px; overflow: hidden; text-decoration: none; color: var(--text-1); background: var(--surface-1); border: 1px solid var(--border); box-shadow: var(--shadow); transition: transform .15s, border-color .15s; }
+.p28-door:hover { color: var(--text-1); transform: translateY(-2px); border-color: var(--party); }
+.p28-door-top { background: var(--party); color: #fff; padding: 22px 20px 18px; display: grid; align-content: space-between; gap: 16px; min-height: 150px; }
+.p28-door-name { font-family: 'Bricolage', 'Inter', sans-serif; font-size: 30px; font-weight: 800; line-height: 1.08; letter-spacing: -.02em; }
+.p28-faces { display: flex; flex-wrap: wrap; gap: 8px; }
+.p28-faces .badge { width: 42px; height: 42px; border-radius: 50%; }
+.p28-door-body { flex: 1; display: grid; align-content: start; gap: 10px; padding: 16px 20px 18px; font-size: 14px; color: var(--text-2); }
+.p28-count b { color: var(--text-1); }
+.p28-cta { display: inline-flex; align-items: center; gap: 4px; font-weight: 650; color: var(--text-1); }
+.p28-door:hover .p28-cta svg { transform: translateX(2px); }
+.p28-cta svg { transition: transform .15s; }
+.p28-title { display: inline-block; margin: 8px 0 10px; padding: 4px 18px 8px; border-radius: 14px; background: var(--party); color: #fff; }
+.p28-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.p28-tab { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--border-2); background: var(--surface-1); color: var(--text-1); font-size: 14px; font-weight: 650; text-decoration: none; }
+.p28-tab::before { content: ''; width: 10px; height: 10px; border-radius: 50%; background: var(--party); }
+.p28-tab:hover { border-color: var(--party); color: var(--text-1); }
+.p28-tab[aria-current="page"] { border-color: var(--party); box-shadow: inset 0 0 0 1px var(--party); background: var(--surface-2); }
+.p28-tab b { font-weight: 650; color: var(--text-2); }
+.people-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: stretch; }
+@media (max-width: 760px) { .people-grid { grid-template-columns: minmax(0, 1fr); } }
+.person-card { display: flex; flex-direction: column; gap: 14px; min-width: 0; --party: var(--seat-other); }
+.person-card.party-D { --party: var(--dem); }
+.person-card.party-R { --party: var(--rep); }
+.person-main, .person-side { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.person-side { flex: 1; }
+.person-head { display: flex; gap: 14px; align-items: center; min-width: 0; }
+.person-head .badge { width: 64px; height: 64px; border-radius: 16px; font-size: 20px; }
+.person-name { margin: 2px 0 0; font-size: 20px; line-height: 1.2; overflow-wrap: anywhere; }
+.person-sub { font-size: 13.5px; color: var(--text-2); margin-top: 2px; }
+.person-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.person-chips .chip { font-size: 12px; padding: 3px 9px; }
+.person-term { margin: 0; font-size: 13.5px; color: var(--text-2); }
+.person-bio { margin: 0; font-size: 14px; color: var(--text-2); display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+.person-links { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13.5px; }
+.person-pos ul, .person-more ul { margin: 6px 0 0; padding-left: 18px; font-size: 13.5px; color: var(--text-2); }
+.person-pos li, .person-more li { margin: 4px 0; }
+.person-more summary { cursor: pointer; font-size: 13px; font-weight: 650; margin-top: 6px; color: var(--text-1); }
+.person-money { border-top: 1px solid var(--border); padding-top: 12px; display: grid; gap: 8px; }
+.money-figs { display: flex; flex-wrap: wrap; gap: 6px 22px; }
+.money-figs div { display: flex; flex-direction: column; }
+.money-figs b { font-size: 20px; font-weight: 750; letter-spacing: -.01em; }
+.money-figs span { font-size: 12px; color: var(--text-3); }
+.money-key { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 4px 14px; font-size: 12.5px; color: var(--text-2); }
+.money-key li { display: flex; align-items: baseline; gap: 6px; min-width: 0; }
+.money-key li span { flex: 1; min-width: 0; }
+.money-key li b { font-weight: 650; color: var(--text-1); font-variant-numeric: tabular-nums; }
+/* What the winners raised (#/money): one row per winner, every bar on one scale. */
+.money-list { list-style: none; margin: 0; padding: 0; }
+.money-row { display: grid; grid-template-columns: 2.4em minmax(0, 1.25fr) 5.5em minmax(0, 2fr); gap: 6px 14px; align-items: center; padding: 10px 0; border-top: 1px solid var(--border); }
+.money-row .rank { color: var(--text-3); font-size: 13px; font-variant-numeric: tabular-nums; text-align: right; }
+.money-row .who { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.money-row .who > div { min-width: 0; }
+.money-row .who a { text-decoration: none; }
+.money-row .who .tiny { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.money-row .amt { font-weight: 700; font-variant-numeric: tabular-nums; text-align: right; }
+.money-row .bar { display: grid; gap: 4px; min-width: 0; }
+.money-row .bar .stackbar { height: 10px; }
+@media (max-width: 620px) {
+  .money-row { grid-template-columns: 2em minmax(0, 1fr) auto; }
+  .money-row .bar { grid-column: 2 / -1; }
+}
+.person-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 4px; }
+.person-card.pending { justify-content: flex-start; }
+@media (min-width: 900px) {
+  .person-card.wide, .people-grid > .person-card:last-child:nth-child(odd) { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px 28px; }
+}
+.people-grid > .person-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.caucus-chip { text-decoration: none; }
+.flip-chip { border-style: dashed; }
+.district-grid.wide { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.district-grid.wide .district-btn .dm { font-family: inherit; font-size: 13px; font-weight: 650; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* The state page's district panel, scrolled to from the home map: clear the sticky header
+   (64px) and, on wide screens, the sticky Federal/State and chamber toggles. */
+#district-race { scroll-margin-top: 80px; }
+@media (min-width: 900px) { #district-race { scroll-margin-top: 190px; } }
+
+/* A state legislative chamber's seats by party after the 2026 election (state pages):
+   one bar, a 2px surface gap between parties, the count beside each key. */
+.leg-tally { margin: 4px 0 12px; }
+.leg-bar { display: flex; gap: 2px; height: 12px; border-radius: 6px; overflow: hidden; }
+.leg-bar i { display: block; min-width: 2px; }
+.leg-key { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 8px; font-size: 13px; color: var(--text-2); }
+.leg-key span { display: inline-flex; align-items: center; gap: 6px; }
+.leg-key b { color: var(--text-1); font-variant-numeric: tabular-nums; }

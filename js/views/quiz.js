@@ -4,9 +4,10 @@
 import { html, raw, clamp } from '../util.js';
 import { icon } from '../icons.js';
 import { store } from '../store.js';
-import { QUESTIONS, CATEGORY_BY_ID, SCALE, questionsForLevel } from '../data/questions.js';
+import { QUESTIONS, CATEGORY_BY_ID, SCALE, questionsForLevel, qText, catTitle } from '../data/questions.js';
 import { ensureRace, raceTitle } from '../data/world.js';
 import { annotate, termDefs, termsIn, wireTerms, closeTerm } from '../components/terms.js';
+import { L, lang } from '../i18n.js';
 
 function slide({ questions, answers, i, heading }) {
   const q = questions[i];
@@ -16,38 +17,40 @@ function slide({ questions, answers, i, heading }) {
   const cats = [...new Set(questions.map((x) => x.cat))];
   const curCat = cats.indexOf(q.cat);
   const current = answers[q.id];
-  const hasTerms = termsIn(q.text).length > 0;
+  const text = qText(q);
+  const hasTerms = termsIn(text).length > 0;
   return html`<div class="quiz">
-    <div class="row between" style="margin-bottom:10px"><div class="eyebrow">${heading}</div><div class="eyebrow num">Question ${i + 1} of ${questions.length}</div></div>
+    <div class="row between" style="margin-bottom:10px"><div class="eyebrow">${heading}</div><div class="eyebrow num">${L(`Question ${i + 1} sur ${questions.length}`, `Question ${i + 1} of ${questions.length}`)}</div></div>
     <div class="progress"><span style="width:${(i / questions.length) * 100}%"></span></div>
-    <div class="quiz-cats" aria-hidden="true">${cats.map((c, k) => html`<i class="${k < curCat ? 'done' : k === curCat ? 'cur' : ''}" title="${CATEGORY_BY_ID[c].title}"></i>`)}</div>
-    ${i === 0 ? html`<div class="notice" style="margin-top:16px">${icon.info()}<div>All ${questions.length} questions take less than 20 minutes. You can stop at any time and pick up where you left off, but your matches may not be fully accurate until you’ve answered every question.</div></div>` : ''}
+    <div class="quiz-cats" aria-hidden="true">${cats.map((c, k) => html`<i class="${k < curCat ? 'done' : k === curCat ? 'cur' : ''}" title="${catTitle(CATEGORY_BY_ID[c])}"></i>`)}</div>
+    ${i === 0 ? html`<div class="notice" style="margin-top:16px">${icon.info()}<div>${L(`Les ${questions.length} questions prennent moins de 20 minutes. Vous pouvez vous arrêter à tout moment et reprendre là où vous en étiez, mais vos affinités ne seront pas tout à fait exactes tant que vous n’aurez pas répondu à toutes les questions.`, `All ${questions.length} questions take less than 20 minutes. You can stop at any time and pick up where you left off, but your matches may not be fully accurate until you’ve answered every question.`)}</div></div>` : ''}
     <div class="quiz-card" style="margin-top:18px" tabindex="-1">
-      <div class="eyebrow" style="color:var(--brand-2)">${cat.title} · ${catIdx + 1}/${inCat.length}</div>
-      <p class="quiz-q${hasTerms ? ' has-terms' : ''}" id="quiz-q">${annotate(q.text)}</p>
-      ${termDefs(q.text)}
-      ${hasTerms ? html`<p class="term-hint small faint">Underlined words have a short definition: hover over, tab to or tap them.</p>` : ''}
+      <div class="eyebrow" style="color:var(--brand-2)">${catTitle(cat)} · ${catIdx + 1}/${inCat.length}</div>
+      <p class="quiz-q${hasTerms ? ' has-terms' : ''}" id="quiz-q">${annotate(text)}</p>
+      ${termDefs(text)}
+      ${lang() === 'fr' ? html`<p class="tiny faint" style="margin:-6px 0 12px">Traduit de la question originale en anglais : <span lang="en">“${q.text}”</span></p>` : ''}
+      ${hasTerms ? html`<p class="term-hint small faint">${L('Les mots soulignés ont une courte définition : survolez-les, atteignez-les avec la touche Tab ou touchez-les.', 'Underlined words have a short definition: hover over, tab to or tap them.')}</p>` : ''}
       <div class="scale" role="group" aria-labelledby="quiz-q">
         ${SCALE.map((s, k) => html`<button type="button" data-v="${s.value}" aria-pressed="${String(current === s.value)}"><span class="dot"></span>${s.label}<span class="k">${k + 1}</span></button>`)}
       </div>
       <div class="quiz-nav">
-        <button type="button" class="btn btn-sm btn-ghost" data-nav="back" ${raw(i === 0 ? 'disabled' : '')}>${icon.chevronLeft()} Back</button>
+        <button type="button" class="btn btn-sm btn-ghost" data-nav="back" ${raw(i === 0 ? 'disabled' : '')}>${icon.chevronLeft()} ${L('Retour', 'Back')}</button>
         <div class="row">
-          <button type="button" class="btn btn-sm btn-ghost" data-nav="skip">${current === 'skip' ? 'Skipped · next' : 'Skip / no opinion'}</button>
-          ${current != null ? html`<button type="button" class="btn btn-sm" data-nav="next">Next ${icon.chevronRight()}</button>` : ''}
+          <button type="button" class="btn btn-sm btn-ghost" data-nav="skip">${current === 'skip' ? L('Passée · suivante', 'Skipped · next') : L('Passer / sans avis', 'Skip / no opinion')}</button>
+          ${current != null ? html`<button type="button" class="btn btn-sm" data-nav="next">${L('Suivante', 'Next')} ${icon.chevronRight()}</button>` : ''}
         </div>
       </div>
     </div>
-    <p class="small faint" style="text-align:center;margin-top:14px">Keys 1–5 answer, ← goes back. Saved in this browser as you go, so you can leave and come back.</p>
+    <p class="small faint" style="text-align:center;margin-top:14px">${L('Les touches 1 à 5 répondent, ← revient en arrière. Vos réponses sont enregistrées dans ce navigateur au fur et à mesure : vous pouvez partir et revenir.', 'Keys 1–5 answer, ← goes back. Saved in this browser as you go, so you can leave and come back.')}</p>
   </div>`;
 }
 
 function doneScreen({ answered, total, next, nextLabel, review }) {
   return html`<div class="quiz"><div class="quiz-card" style="text-align:center">
     <div style="font-size:44px">✅</div>
-    <h2>All done</h2>
-    <p class="muted">You answered ${answered} of ${total} questions. You can change any answer later.</p>
-    <div class="row" style="justify-content:center;margin-top:10px"><a class="btn btn-primary" href="${next}">${nextLabel}</a><a class="btn" href="${review}">Review answers</a></div>
+    <h2>${L('Terminé', 'All done')}</h2>
+    <p class="muted">${L(`Vous avez répondu à ${answered} questions sur ${total}. Vous pouvez modifier chaque réponse plus tard.`, `You answered ${answered} of ${total} questions. You can change any answer later.`)}</p>
+    <div class="row" style="justify-content:center;margin-top:10px"><a class="btn btn-primary" href="${next}">${nextLabel}</a><a class="btn" href="${review}">${L('Revoir mes réponses', 'Review answers')}</a></div>
   </div></div>`;
 }
 
@@ -93,7 +96,7 @@ function runQuiz(root, { questions, getAnswers, save, start, heading, onPos, fin
 }
 
 export const viewsQuiz = {
-  title: () => 'My views questionnaire',
+  title: () => L('Questionnaire « Mes opinions »', 'My views questionnaire'),
   render: () => html`<div class="wrap page"><div id="quiz-host"></div></div>`,
   mount(root, ctx) {
     const start = ctx.query.q != null ? +ctx.query.q : store.get().quizPos || 0;
@@ -102,21 +105,23 @@ export const viewsQuiz = {
       getAnswers: () => store.get().answers,
       save: (answers) => store.set({ answers }),
       start,
-      heading: 'My views',
+      heading: L('Mes opinions', 'My views'),
       onPos: (i) => store.set({ quizPos: i }),
-      finishHTML: () => doneScreen({ answered: store.answered(), total: QUESTIONS.length, next: '#/elections', nextLabel: 'Find my matches', review: '#/profile?tab=views' }),
+      finishHTML: () => doneScreen({ answered: store.answered(), total: QUESTIONS.length, next: '#/elections', nextLabel: L('Trouver mes affinités', 'Find my matches'), review: '#/profile?tab=views' }),
     });
   },
 };
 
 export const electionQuiz = {
-  title: () => 'Views for this election',
+  title: () => L('Opinions pour cette élection', 'Views for this election'),
   async render(ctx) {
     const race = await ensureRace(decodeURIComponent(ctx.params[0]));
-    if (!race) return html`<div class="wrap page"><p>Race not found. <a href="#/elections">Back to my elections</a></p></div>`;
+    if (!race) return html`<div class="wrap page"><p>${L('Élection introuvable.', 'Race not found.')} <a href="#/elections">${L('Retour à mes élections', 'Back to my elections')}</a></p></div>`;
     return html`<div class="wrap page">
-      <nav class="crumbs"><a href="#/elections">My elections</a><span>/</span><span>${raceTitle(race)}</span></nav>
-      <div class="notice" style="max-width:760px;margin:0 auto 18px">${icon.info()}<div>These answers are only for <b>${raceTitle(race)}</b> and don’t change your saved My views. Only topics that apply to a ${race.level === 'federal' ? 'federal' : 'state'} office are asked.</div></div>
+      <nav class="crumbs"><a href="#/elections">${L('Mes élections', 'My elections')}</a><span>/</span><span>${raceTitle(race)}</span></nav>
+      <div class="notice" style="max-width:760px;margin:0 auto 18px">${icon.info()}<div>${lang() === 'fr'
+        ? html`Ces réponses valent seulement pour <b>${raceTitle(race)}</b> et ne changent pas vos opinions enregistrées. Seuls les thèmes qui concernent un poste ${race.level === 'federal' ? 'fédéral' : 'de l’État'} sont abordés.`
+        : html`These answers are only for <b>${raceTitle(race)}</b> and don’t change your saved My views. Only topics that apply to a ${race.level === 'federal' ? 'federal' : 'state'} office are asked.`}</div></div>
       <div id="quiz-host"></div>
     </div>`;
   },
@@ -130,10 +135,10 @@ export const electionQuiz = {
       getAnswers: get,
       save: (answers) => store.set({ electionAnswers: { ...store.get().electionAnswers, [race.id]: answers } }),
       start: 0,
-      heading: `New views · ${raceTitle(race)}`,
+      heading: `${L('Nouvelles opinions', 'New views')} · ${raceTitle(race)}`,
       finishHTML: () => doneScreen({
         answered: store.answered(get()), total: questions.length,
-        next: `#/elections/${encodeURIComponent(race.id)}/match?mode=election`, nextLabel: 'See who matches me',
+        next: `#/elections/${encodeURIComponent(race.id)}/match?mode=election`, nextLabel: L('Voir qui me correspond', 'See who matches me'),
         review: `#/elections/${encodeURIComponent(race.id)}/quiz`,
       }),
     });

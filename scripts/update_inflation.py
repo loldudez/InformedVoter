@@ -62,7 +62,13 @@ SOURCES = {
 
 def fetch(series_id, start):
     url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}&cosd={start}"
-    req = urllib.request.Request(url, headers={"User-Agent": "InformedVoter-data-refresh/1.0"})
+    # Since mid-November 2026 FRED leaves a request without an Accept header
+    # hanging until it times out (urllib sends none); with one it answers at once.
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "InformedVoter-data-refresh/1.0",
+        "Accept": "text/csv,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+    })
     with urllib.request.urlopen(req, timeout=60) as r:
         text = r.read().decode("utf-8")
     if not text.startswith("observation_date"):
@@ -86,10 +92,26 @@ def monthly(points):
     return [[m, round(sum(vs) / len(vs), 3)] for m, vs in sorted(buckets.items())]
 
 
+def previous(out_path):
+    """The last good file's series by label, kept for any series FRED doesn't answer."""
+    try:
+        with open(out_path, encoding="utf-8") as f:
+            return {s["label"]: s for s in json.load(f).get("series", [])}
+    except (OSError, ValueError):
+        return {}
+
+
 def main(out_path):
     start = date(date.today().year - YEARS, 1, 1).isoformat()
+    old = previous(out_path)
     series = []
+    fresh = failed = 0
     for ids, label, unit, kind, group in SERIES:
+        if failed >= 3 and not fresh:
+            # FRED isn't answering at all: stop here rather than wait out every timeout.
+            if label in old:
+                series.append(old[label])
+            continue
         last_err = None
         for sid in ids:
             try:
@@ -101,11 +123,19 @@ def main(out_path):
             finally:
                 time.sleep(0.4)
         if pts is None:
-            print(f"SKIP {label}: {last_err}")
+            failed += 1
+            print(f"SKIP {label}: {last_err}{' (kept the last copy)' if label in old else ''}")
+            if label in old:
+                series.append(old[label])
             continue
+        fresh += 1
         data = monthly(pts) if sid in ("MORTGAGE30US",) else [[d[:7], round(v, 3)] for d, v in pts]
         series.append({"id": sid, "label": label, "unit": unit, "kind": kind, "group": group, "data": data})
         print(f"{sid:16} {label:40} {len(data):3} months, latest {data[-1]}")
+    if not fresh:
+        # Never write an empty or wholly stale snapshot over the last good one.
+        print(f"FAIL no series could be read; kept {out_path} as it was")
+        sys.exit(1)
     out = {
         "updated": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "sources": SOURCES,

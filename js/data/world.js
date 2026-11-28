@@ -7,10 +7,11 @@
 // which have no demo stand-ins. data/control.json holds the chamber-control
 // simulation and data/status.json the refresh's automatic checks.
 
-import { STATES, STATE_BY_ABBR, HOLDOVER, CURRENT, legislatureChambers } from './states.js';
+import { STATES, STATE_BY_ABBR, HOLDOVER, CURRENT, legislatureChambers, deState, withState, chamberOf, chamberName } from './states.js';
+import { L, lang } from '../i18n.js';
 import * as demo from './demo.js';
 import { forecast, history, chamberOdds, pollAverage, simEntry, day, live, forecastAsOf, ELECTION_DAY } from '../model/forecast.js';
-import { fetchJSON } from '../util.js';
+import { fetchJSON, fmtDate, html } from '../util.js';
 import { store } from '../store.js';
 
 const races = new Map();
@@ -28,6 +29,7 @@ let control = null;
 let status = null;
 let meta = null;
 let photos = {};
+let certs = null;
 export let realRaceCount = 0;
 export let researchedCount = 0;
 export let officeCount = 0;
@@ -83,8 +85,9 @@ const noOdds = (race) => race.format === 'open-primary' || race.format === 'fiel
 export async function initWorld() {
   mapIndex = await fetchJSON('data/maps/index.json');
   demo.federalAndGovernor(mapIndex).forEach(addRace);
-  const [real, ctl, st, ph, off] = await Promise.all([optional('data/races.json'), optional('data/control.json'), optional('data/status.json'), optional('data/photos.json'), optional('data/offices.json')]);
+  const [real, ctl, st, ph, off, cf] = await Promise.all([optional('data/races.json'), optional('data/control.json'), optional('data/status.json'), optional('data/photos.json'), optional('data/offices.json'), optional('data/certified.json')]);
   photos = ph?.photos || {};
+  certs = cf;
   loadRaces(real, off, ctl, st);
   loaded = true;
 }
@@ -371,6 +374,51 @@ export function resultsTally(office) {
   };
 }
 
+// Which states have certified the 2026 results: data/certified.json, kept by hand from
+// each state's own announcement (scripts/research/certified_2026.py). A listed state can
+// leave contests out (`pending`: a recount, a runoff, a legislature's canvass), which stay unofficial until it
+// certifies them. The counts shown stay Wikipedia's compilation, so pages say the state
+// certified its results, never that the counts shown are the certified ones.
+export const certifiedIn = (st) => certs?.states?.[st] || null;
+export const certPending = (race) => (race && certifiedIn(race.state)?.pending?.[race.id]) || null;
+export const certifiedRace = (race) => (race && !certPending(race) && certifiedIn(race.state)) || null;
+export const certifiedCount = () => Object.keys(certs?.states || {}).length;
+// What a left-out race waits for: a recount, a runoff, or the state legislature's own
+// canvass when it meets in January (Iowa's governor and lieutenant governor).
+export const certWait = (held) => held === 'recount' ? L('un recompte', 'a recount')
+  : held === 'legislature' ? L('le recensement des votes par l’assemblée de l’État, quand elle se réunit en janvier', 'the state legislature’s canvass when it meets in January')
+  : L('un second tour', 'a runoff');
+export const certWaitShort = (held) => held === 'recount' ? L('recompte', 'recount')
+  : held === 'legislature' ? L('recensement par l’assemblée de l’État', 'canvassed by the legislature')
+  : L('second tour', 'runoff');
+// What a certified state left out, for the About card and the "Official results" card: its
+// races here grouped by what they wait for (Connecticut's five statewide offices, all
+// canvassed by the legislature), each linked to its page, then its other contests.
+export function certExceptions(c) {
+  const byWhy = {};
+  for (const [id, why] of Object.entries(c?.pending || {})) (byWhy[why] ||= []).push(id);
+  return [
+    ...Object.entries(byWhy).map(([why, ids]) => html`${ids.map((id, i) => html`${i ? ', ' : ''}<a href="#/race/${id}">${getRace(id) ? raceTitle(getRace(id)) : id}</a>`)} (${certWaitShort(why)})`),
+    ...(c?.other || []).map((o) => L(o[1], o[0])),
+  ];
+}
+export const certifiedList = () => certs;
+// "Official" at the top of every U.S. page: all 50 states and D.C. certified with nothing
+// left out, and every Senate, House and governor race decided (owner's choice, Nov. 4).
+export function allCertified() {
+  const s = certs?.states;
+  return !!s && STATES.every((x) => s[x.abbr] && !Object.keys(s[x.abbr].pending || {}).length)
+    && ['senate', 'house', 'governor'].every((k) => { const t = resultsTally(k); return !t.uncalled.length && !t.runoff.length; });
+}
+// The sentence that follows a race's count: when its state certified, or that it hasn't.
+export function certSentence(race) {
+  const c = certifiedRace(race), held = certPending(race);
+  if (c) return L(`Résultats certifiés par l’État le ${fmtDate(c.date)}.`, `${STATE_BY_ABBR[race.state]?.name || race.state} certified its results on ${fmtDate(c.date)}.`);
+  if (held) return L(`L’État a certifié ses autres résultats ; celle-ci attend ${certWait(held)}, et ses décomptes restent non officiels jusque-là.`,
+    `The state certified its other results; this race waits for ${certWait(held)}, and its counts are unofficial until then.`);
+  return L('Les décomptes restent non officiels jusqu’à leur certification par l’État.', 'Vote counts are unofficial until the state certifies them.');
+}
+
 export async function loadLayer(st, layer) {
   const key = `${layer}/${st}`;
   if (!layerCache.has(key)) layerCache.set(key, fetchJSON(`data/maps/${layer}/${st}.json`));
@@ -461,8 +509,52 @@ export function chamberSummary() {
 // The office's own name in that state ("State Comptroller", "Lieutenant Governor"),
 // short forms for tight spots.
 const OFFICE_SHORT = { 'attorney-general': 'AG', 'secretary-of-state': 'SoS', 'lieutenant-governor': 'Lt. Gov.' };
+const OFFICE_SHORT_FR = { 'attorney-general': 'Proc. gén.', 'secretary-of-state': 'Secr. d’État', 'lieutenant-governor': 'Lt-gouv.' };
+// French names of the statewide offices below governor, as the data names them.
+const OFFICE_FR = {
+  'Attorney General': 'Procureur général', 'Secretary of State': 'Secrétaire d’État', 'Lieutenant Governor': 'Lieutenant-gouverneur',
+  'State Treasurer': 'Trésorier de l’État', 'State Auditor': 'Auditeur de l’État', 'State Comptroller': 'Contrôleur de l’État',
+  'State Controller': 'Contrôleur de l’État', Comptroller: 'Contrôleur des finances', 'Comptroller of Public Accounts': 'Contrôleur des comptes publics',
+  'Auditor of Accounts': 'Auditeur des comptes', 'Chief Financial Officer': 'Directeur financier de l’État', 'General Treasurer': 'Trésorier général',
+  'Secretary of the Commonwealth': 'Secrétaire du Commonwealth', 'Secretary of the State': 'Secrétaire de l’État',
+  'Treasurer and Receiver-General': 'Trésorier et receveur général', Treasurer: 'Trésorier', Auditor: 'Auditeur',
+  'Commissioner of Agriculture': 'Commissaire à l’agriculture', 'Agriculture Commissioner': 'Commissaire à l’agriculture',
+  'Commissioner of Insurance': 'Commissaire aux assurances', 'Insurance Commissioner': 'Commissaire aux assurances',
+  'Superintendent of Public Instruction': 'Surintendant de l’instruction publique', 'Labor Commissioner': 'Commissaire au travail',
+  Governor: 'Gouverneur', Mayor: 'Maire', 'District Attorney': 'Procureur de district', 'County Executive': 'Chef de l’exécutif du comté',
+  // Offices only the upcoming elections list (data/upcoming.json).
+  President: 'Présidence', 'U.S. Senate': 'Sénat des États-Unis', 'U.S. House': 'Chambre des représentants',
+  'Auditor of Public Accounts': 'Auditeur des comptes publics', 'Auditor General': 'Auditeur général', 'Supreme Court': 'Cour suprême',
+  'Commissioner of Agriculture and Commerce': 'Commissaire à l’agriculture et au commerce', 'Justice of the Supreme Court': 'Juge à la Cour suprême',
+};
+export const officeNameL = (name) => L(OFFICE_FR[name] || name, name);
+// District names in French: "District 12" -> "Circonscription 12", "3rd Middlesex
+// District" -> "3e circonscription de Middlesex", "At-large district" -> "Circonscription
+// unique"; anything else stays as written.
+export function districtNameL(name) {
+  const s = String(name || '');
+  if (lang() !== 'fr') return name;
+  let m;
+  if (/^At[- ]large( district)?$/i.test(s)) return 'Circonscription unique';
+  if (/^Delegate \(at large\)$/i.test(s)) return 'Siège sans droit de vote';
+  if ((m = s.match(/^(\d+)(?:st|nd|rd|th) (.+) District$/))) return `${m[1] === '1' ? '1re' : `${m[1]}e`} circonscription ${/^[AEIOUYÉ]/i.test(m[2]) ? 'd’' : 'de '}${m[2]}`;
+  if ((m = s.match(/^State Representative District (.+)$/))) return `Circonscription ${m[1]}`;
+  if ((m = s.match(/^Subdistrict (.+)$/))) return `Sous-circonscription ${m[1]}`;
+  if ((m = s.match(/^District (.+)$/))) return `Circonscription ${m[1]}`;
+  if ((m = s.match(/^(.+) District$/))) return `Circonscription ${m[1]}`;
+  return s;
+}
+const lcFirst = (s) => s.charAt(0).toLowerCase() + s.slice(1);
+// Forecasters' ratings in French, for display only (the data and the code keep "Lean R").
+const RATING_FR = [[/^(Safe|Solid)\b/i, 'Sûr'], [/^Very likely\b/i, 'Très probable'], [/^Likely\b/i, 'Probable'], [/^Leans?\b/i, 'Penche'], [/^Tilts?\b/i, 'Légèrement'], [/^Toss[- ]?up\b/i, 'Incertain'], [/^Not rated$/i, 'Non coté']];
+export function ratingL(r) {
+  if (!r || lang() !== 'fr') return r;
+  for (const [re, fr] of RATING_FR) if (re.test(r)) return r.replace(re, fr);
+  return r;
+}
 export function raceTitle(race) {
   const s = STATE_BY_ABBR[race.state];
+  if (lang() === 'fr') return raceTitleFr(race, s);
   if (race.format === 'office') return `${s.name} ${race.officeName}${race.special ? ' (special)' : ''}`;
   switch (race.office) {
     case 'senate': return `${s.name} Senate${race.special ? ' (special)' : ''}`;
@@ -476,8 +568,31 @@ export function raceTitle(race) {
     default: return race.id;
   }
 }
+function raceTitleFr(race, s) {
+  const st = race.state;
+  if (race.format === 'office') return `${withState(OFFICE_FR[race.officeName] || race.officeName, st)}${race.special ? ' (partielle)' : ''}`;
+  switch (race.office) {
+    case 'senate': return `Sénateur ${deState(st)}${race.special ? ' (partielle)' : ''}`;
+    case 'governor': return `Gouverneur ${deState(st)}`;
+    case 'house': {
+      if (st === 'DC') return 'Délégué de D.C. à la Chambre des représentants';
+      const n = parseInt(race.district, 10);
+      return race.district === '00' ? `Circonscription unique ${deState(st)}` : `${n === 1 ? '1re' : `${n}e`} circonscription ${deState(st)}`;
+    }
+    case 'state-senate': return `${chamberOf(st, s.upper.name)}, ${lcFirst(districtNameL(race.districtName))}`;
+    case 'state-house': return `${chamberOf(st, s.lower.name)}, ${lcFirst(districtNameL(race.districtName))}`;
+    case 'legislature': return `${chamberOf(st, 'Legislature')}, ${lcFirst(districtNameL(race.districtName))}`;
+    default: return race.id;
+  }
+}
 export function raceShortTitle(race) {
   const s = race.state;
+  if (lang() === 'fr') {
+    if (race.format === 'office') return `${s} ${OFFICE_SHORT_FR[race.office] || (OFFICE_FR[race.officeName] || race.officeName).replace(/ de l’État$/, '').replace(/^State /, '')}`;
+    if (race.office === 'senate') return `${s} Sén.`;
+    if (race.office === 'governor') return `${s} Gouv.`;
+    if (!['house'].includes(race.office)) return `${s} ${districtNameL(race.districtName)}`;
+  }
   if (race.format === 'office') return `${s} ${OFFICE_SHORT[race.office] || race.officeName.replace(/^State /, '')}`;
   switch (race.office) {
     case 'senate': return `${s} Sen`;
@@ -487,7 +602,14 @@ export function raceShortTitle(race) {
   }
 }
 export function officeLabel(race) {
-  if (race.format === 'office') return race.officeName;
+  if (race.format === 'office') return officeNameL(race.officeName);
+  if (lang() === 'fr') {
+    return {
+      senate: 'Sénat des États-Unis', governor: 'Gouverneur', house: 'Chambre des représentants',
+      'state-senate': chamberName(STATE_BY_ABBR[race.state].upper?.name), 'state-house': chamberName(STATE_BY_ABBR[race.state].lower?.name),
+      legislature: chamberName('Legislature'),
+    }[race.office];
+  }
   return {
     senate: 'U.S. Senate', governor: 'Governor', house: 'U.S. House',
     'state-senate': STATE_BY_ABBR[race.state].upper?.name, 'state-house': STATE_BY_ABBR[race.state].lower?.name,

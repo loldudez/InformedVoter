@@ -20,17 +20,27 @@ py scripts/serve.py
 Then open <http://localhost:8765>. Double-clicking `index.html` will **not**
 work: browsers block a page opened from disk from loading its own data files.
 
+**The test site.** Double-click `scripts/test_site.cmd` to open this folder as it is
+right now at <http://localhost:8770>, on this computer only (a "Test site" tag sits next
+to the logo). Every change made here shows there on a reload; www.informedvoter.io
+changes only when the GitHub folder is pushed from GitHub Desktop. Close the window
+titled "Informed Voter test site" to stop it.
+
 ## What's real and what's demo
 
 | Real | Demo (fictional, tagged **DEMO** on screen) |
 |---|---|
 | **Every U.S. Senate, U.S. House and governor race**, refreshed every 8 hours: candidates on the ballot, forecasters' ratings, polls (each linked to its source), fundraising, forecasts and chamber control | Nothing in the races is fictional; what isn't known yet is shown as missing |
 | **2026 results** for every Senate, House and governor race and every statewide office below governor, refreshed every 8 hours: a race is called once Wikipedia's national results table marks its winner, and each race page's vote count is shown as unofficial until the state certifies it. The final forecast stays on every race page, next to the count | Races nobody has called yet say so ("No result yet") rather than showing the forecast as a result |
+| **Who holds every office from January 2027**, after the election: both senators of each state (the 2026 winner and the senator not up), every House district's winner, the governor and the statewide officers below (Wikipedia's tables of current officeholders, daily), every state legislator (2026 winners from the chamber pages; the seats not up from Open States' current-members files, daily), each with a photo, a two-sentence bio, links and caucus (DSA, Progressive, Blue Dog, New Democrat, Freedom, Main Street, Governance Group, Republican Study Committee: each caucus's own published roster where it has one, otherwise Wikipedia's list), and "Compare with my views" from documented positions: research, House votes, and Senate votes from Voteview | A seat still counted or in a runoff says so; people with no documented positions say so instead of a score |
+| **The 2028 presidential field** (`#/2028`): three doors (Democrats in blue, Republicans in red, independents and others in gray), each leading to that party's page of everyone who has declared, formed an exploratory committee or said publicly they're weighing a run, from Wikipedia's 2028 primaries pages (daily): status, office, summary, what they've said about 2028 with the cited reports, website, photo, and positions from their recorded votes and bills in Congress or, for the others, their own platforms, statements and official acts (27 of 30 people) | No polls or odds this early; three people have published nothing that answers a question |
+| **What the winners raised** (`#/money`): every called Senate and House winner's campaign money by FEC filing line (small and large donors, PACs, party, self-funding, transfers, other), sortable and filterable, with the runner-up's total | FEC pre-general reports through Oct. 14, 2026 until the post-general reports (due Dec. 3) are read |
+| **Certification**: the results strip says "official" only once all 50 states and D.C. have certified; each state's certification is entered by hand from its own announcement (`scripts/research/certified_2026.py`), and race pages say when their state certified | Until every state is listed, the strip says "unofficial" (4 of 51 confirmed on Nov. 25) |
 | **Statewide offices below governor** (attorney general, secretary of state, lieutenant governor, treasurer, auditor or comptroller): 116 races from Wikipedia's national 2026 pages, with the candidates, who holds the office, Sabato's Crystal Ball ratings and the results, each one clickable from My elections and the state page. Sourced positions for 57 of their candidates in 33 races, from the States Newsroom voter guides (the candidates' own survey answers and interviews) | The other office candidates have no positions loaded yet; no win odds for these races |
 | **Future elections, 2027 to 2029** (`#/upcoming`, and "Future elections for <year>" in My elections), read every day from Wikipedia: the President, the Senate, the House, governors and the statewide offices below them (106 races), four more statewide offices (agriculture and insurance commissioners, Wisconsin's Supreme Court), the 2027 state legislatures district by district (Louisiana, Mississippi, New Jersey, Virginia), 175 mayors and Los Angeles County's district attorney and county executive: the date, who holds the office and whether they can or will run again, declared candidates only, and for each person the first two sentences of their Wikipedia article, their photo and a website (their campaign's, else their official one), each checked to answer and show their name | No forecasts this early; primaries, district attorneys and other county offices outside Los Angeles County, school boards, the 2028 state legislatures and seats elected by district below the legislature aren't covered (Wikipedia has no pages for them) |
 | **Every state legislative seat on the 2026 ballot** (88 chambers), refreshed every 8 hours from Wikipedia's chamber pages: who holds it, the district's 2024 presidential margin, and the November candidates where the page lists them (about 3,400 of 5,600 districts). No win odds for these races | State legislative candidates' positions and money aren't loaded |
 | Early voting by state and House district, from the University of Florida Election Lab's tracker: switched off while the site carries ads, since the Lab's data is for non-commercial use only (`SHOW_EARLY_VOTE` in `js/config.js` and `EARLY_VOTE` in `scripts/update_races.py` turn it back on together) | |
-| Issue positions for every current U.S. House member on the ballot, and four former members running again, from 39 recorded House votes (2021 to 2026, including war powers resolutions) | Issue positions for candidates not yet researched are left blank, not invented |
+| Issue positions for every current U.S. House member on the ballot, and four former members running again, from 44 recorded House votes (2021 to 2026, including war powers resolutions) and, where no vote answers a question, the bills they sponsored or cosponsored (36 bills on health care, trans rights, oil and gas, renewable energy, stock trading, money in politics and immigration) | Issue positions for candidates not yet researched are left blank, not invented |
 | Hand-researched races (tagged **SOURCED**): bios and positions with sources for every Senate and governor race on the 2026 ballot, including 88 third-party and independent candidates, both main candidates in the 78 competitive House races (rated Toss-up, Tilt or Lean by any forecaster), Louisiana's six House districts, and 584 House challengers in safer seats, from campaign sites, newsroom voter guides and interviews, VOTE411 (the League of Women Voters' guide) and candidates' own iVoterGuide answers; sourced positions for 1,305 of the 1,418 federal and governor candidates (1,065 with the five a match percentage needs); campaign website links for 1,264 of them; money by source from FEC reports for every Senate candidate and every House candidate with a 2026 report; governors' fundraising from state filings (Florida's broken down by source from the state's own database, with each major candidate's political committee), or the latest news report of them where no table exists | About 113 candidates, mostly minor-party and independent, have no usable site, statement or guide answer; House candidates with no 2026 FEC report yet, and three governor candidates, show money as not loaded yet |
 | District maps: Census Bureau 2026 TIGER/Line (120th Congress + 2026 state legislative districts) | |
 | Address to district lookup (Census Bureau geocoder) | |
@@ -51,15 +61,18 @@ automatic check from the last refresh.
 - **Intro screen**: choose a country. The United States and France are live; the UK and Canada are shown greyed out. A FR | EN switch sits at the top right.
 - **France (`#/fr`)**: countdowns to both rounds of the presidential election (Sunday 18 April and Sunday 2 May 2027); France by region or department, with the largest cities clickable (each opens the race there and the elections that apply); the first-round poll average and every poll and line-up tested; every second-round match-up; the declared candidates in gray photos that blend into the page; the main parties with their leaders; the election calendar (linked from the home page), personal once an address is added; the 144-question "Mes opinions" questionnaire; "Mes élections" with reminders. Under the headline, "Préparer mon vote" opens two choices: see my elections, or help find the candidate right for me (the ranking against the visitor's answers, or the questionnaire first). Candidates and parties are colored by party (LFI purple, RN dark blue, LR blue, Ensemble yellow, Les Écologistes green, and so on).
 - **Parlement français (`#/fr/parlement`, in the France menu)**: the Assemblée nationale and the Sénat as half-circle seat charts, one button for each, colored by group with a key underneath; hover over or tap a seat for the member's name, group, party (deputies only: the Senate publishes groups, not parties), constituency and region. Above the chart: the President of the Republic, the Prime Minister and government, and both chambers' presidents; below it, every member in a searchable list.
-- **U.S. Congress (`#/congress`, in the U.S. menu)**: the House and the Senate the same way, one button for each: Democrats blue, Republicans red, independents gray, with the leaders, the vacancies and every member's state and district.
+- **U.S. Congress (`#/congress`, in the U.S. menu)**: the House and the Senate the same way, one button for each: Democrats blue, Republicans red, independents gray, with the leaders, the vacancies and every member's state and district. After the election it opens on the 120th Congress (January 2027): the 2026 winners and the senators not up. In both views every seat wears its party's color, and each party's seats run from its most moderate members, nearest the middle, to those furthest left or right, on the outer edge, by how they have voted (Voteview's DW-NOMINATE, built from every roll call a member has cast; since Nov. 28, 2026 the score itself isn't shown, at the owner's request); members new to Congress sit in the middle of their party, independents gray in the middle. Above each chart, a button for each caucus (DSA, Progressive Caucus, Blue Dogs, New Democrats; Freedom Caucus, Main Street, Governance Group, Republican Study Committee) lights up its members wherever they sit and narrows the member list to them. The members come from the caucuses' own rosters where they publish one (the Progressive Caucus, the New Democrats, the Blue Dogs, Main Street, and the Governance Group's PAC), otherwise from Wikipedia, which also gives the members-elect; the note under the chart links each list. Each member's caucuses are in the tooltip and the member list, and each name links to the person's card on their state page.
 - **Les grands enjeux (`#/fr/enjeux`, in the France menu)**: the official figures behind seven debates, one tab each (economy, inflation, immigration, crime, the wealth gap, education, salaries in France), with France next to Germany, Belgium, Italy, Spain, the Netherlands, the UK and the US wherever the figures compare, and what the declared candidates answer on the questionnaire's matching questions. Salaries are measured by the median, never the mean or GDP per head (the page explains why): INSEE's median, deciles and medians for women and men in France, and, next door, median full-time pay, median disposable income, Eurostat's median hourly pay in 17 sectors (no source publishes medians by job for these countries; the averages by job were dropped) and the minimum wage, in euros at French prices or at the exchange rate. Each country takes its flag's color: France navy, Spain yellow, the EU white, Germany gray, Belgium black, Italy green, the Netherlands orange, the UK red and the US light blue.
 - **Help button** (bottom right, every page): shortcuts to the main pages (search as you type), short answers, and a form to send a ticket about a question, an error or a data correction, which goes to theinformedvoter.help@gmail.com.
 - **Reminders** in My elections (both countries) and the French calendar: a month, two weeks and/or a week before an election, as a calendar file, and by email from caissonez@informedvoter.io once the mail service is deployed (see below).
 - **Get ready to vote**: the first button on the homepage, as "Préparer mon vote" on the France home page. It opens two choices, "Click here to view my elections" (My elections) and "Click here to help find the best candidate for me" (the My views questionnaire, whose answers My elections then matches against the candidates' sourced positions).
-- **Homepage map**: three views, Senate, House and Governor; click the map itself to open a race or a state (the old "All states" view is gone). The Senate and governor views color each state, and a click opens the state's page; the House view shows all 436 districts with the state lines drawn over them, and a click on a district opens its race. Color by the forecast, or, from Election Day on, by the results: winners in their party's color, flips striped, the leader of a count not called yet in a lighter tint, runoffs hatched gray, with a switch back to the final forecast (each state's House map works the same way). Above it, Senate, House and governor control: before the election, chance of control, expected seats and the expected gain from today's totals, the 80% range, the betting market for comparison, and how the odds have moved; after it, the seats won so far, the projected final tally with its 80% range and, while races are still being counted, a "Still being counted" list.
+- **Homepage map**: three views, Senate, House and Governor; click the map itself to open a race or a state (the old "All states" view is gone). The Senate and governor views color each state, and a click opens the state's page; the House view shows all 436 districts with the state lines drawn over them, and a click on a district opens its race. Color by the forecast, or, from Election Day on, by the results: winners in their party's color, flips striped, the leader of a count not called yet in a lighter tint, runoffs hatched gray, with a switch back to the final forecast (each state's House map works the same way). After the election the Senate view shows who represents each state from January 2027: blue for two Democrats, red for two Republicans, purple for one of each, striped where an independent holds a seat, with both senators and their party on hover. Above it, Senate, House and governor control: before the election, chance of control, expected seats and the expected gain from today's totals, the 80% range, the betting market for comparison, and how the odds have moved; after it, the seats won so far, the projected final tally with its 80% range and, while races are still being counted, a "Still being counted" list.
 - **Projections from the count**: every race counted but not called shows, on its page, in the ticker and on the map's tooltips, a projection that blends the votes counted so far with the final forecast (the share of the vote still out is estimated from the state's 2024 turnout). They are not calls. Counts are re-read every 10 minutes until every race is called (see "Results every 10 minutes").
 - **Upcoming elections (`#/upcoming`, in the U.S. menu)**: every election from now through 2029 that Wikipedia lists, plus the 2026 runoffs still ahead: president, Congress, governor and the statewide offices below governor, and further down the other statewide offices (agriculture and insurance commissioners, a state supreme court seat), the 2027 state legislatures district by district, mayors, and the county offices Wikipedia covers (Los Angeles County's district attorney and its first county executive, in 2028). For each: the date, who holds the office and whether they can or will run again, the declared candidates, and who each person is: the start of their Wikipedia article, their photo and their website (the campaign's, else their official one, each checked to answer and show their name). Filterable by state and office. No forecasts this early.
-- **State page**: Federal / State toggle, then Senators / House Representatives (Nebraska shows its single-chamber Legislature). The governor's race appears whenever there is one, followed by the statewide offices below governor. House and legislature views show the real district map; click a district for its race. State legislative districts are colored by their 2024 presidential margin (or by the party holding the seat where a chamber's page has no margins), with no win odds.
+- **2028 presidential field (`#/2028`, linked at the top of every U.S. page and from the U.S. menu)**: three doors, Democrats (blue), Republicans (red) and independents and others (gray), each opening that party's page (`#/2028/D`, `#/2028/R`, `#/2028/other`): the declared, the exploratory committees and the people weighing a run, each with a summary, website, what they've said and "Compare with my views" from their documented positions.
+- **What the winners raised**: on each 2026 winner's card (a click on their seat or name on the state page's map), their campaign money by source beside their main opponent's total. The full list (`#/money`: every Senate and House winner, with totals, the median and the small-donor and PAC shares) left the menu on Nov. 27 but still opens from old links.
+- **English or French**: the whole U.S. section is also in French (FR | EN at the top right), as the France section is in English; Wikipedia summaries, news headlines and the refresh's checks stay in English and say so.
+- **State page**: Federal / State toggle, then Senators / House Representatives (Nebraska shows its single-chamber Legislature). After the election it shows the people in office from January 2027: on the federal side the governor, then both senators and every House district's winner; on the state side the governor, lieutenant governor, attorney general and the other statewide officers, then a map of each legislative chamber where a click shows the members elected there. Each person has a photo, party, term, caucus, bio, links and "Compare with my views", and the federal winners their 2026 campaign money. Every governor in office from January has documented positions: the 2026 winners from their race research, the 14 whose seats weren't up from their own speeches, orders and signed or vetoed bills, plus their votes in Congress for the four who served there. The governor's race appears whenever there is one, followed by the statewide offices below governor. House and legislature views show the real district map; click a district for its race. State legislative districts are colored by their 2024 presidential margin (or by the party holding the seat where a chamber's page has no margins), with no win odds.
 - **Candidate photos**: candidates with a Wikipedia article show their Wikidata photo in black and white, ringed in their party's color, as on the France pages, with the photographer and license in the tooltip and a "Photo credits" list on each page; the others keep their initials. Congress's leaders have theirs too.
 - **Race forecasts**: chance of winning, projected vote share and votes, 100 simulated elections, rating, 80% range and forecasters' ratings, plus tabs for polling (every poll as a dot, the average's change over 7 and 30 days, and a check against published averages), the trend since the first poll, early vote, money by source, and positions.
 - **Star** races (star icon) and **like** candidates (heart icon); both lists have their own pages showing weekly changes and funding mix.
@@ -97,8 +110,8 @@ Google's Ads Settings and its page on partner sites, as AdSense's policies requi
 `ads.txt` names the publisher account for ad buyers.
 
 **Email reminders and help tickets** go through one small mail service,
-`services/mail/Code.gs`: a Google Apps Script web app that sends from the site's Google
-Workspace account, caissonez@informedvoter.io. Help tickets are forwarded to
+`services/mail/Code.gs`: a Google Apps Script web app that sends through the Gmail of the
+site's Google Workspace account, caissonez@informedvoter.io. Help tickets are forwarded to
 theinformedvoter.help@gmail.com, with the visitor's address as Reply-To. Reminders are
 double opt-in: the visitor ticks a consent box, gets a confirmation email, and only then
 receives reminders a month, two weeks and/or a week before each round, each with an
@@ -107,22 +120,26 @@ a Google Sheet of that account and deleted once the election is over, on unsubsc
 or after 7 days unconfirmed. The emails' election names and dates come from the live
 site's `data/reminders.json` (written by `scripts/update_reminders.py` at every refresh),
 never from the request, so nobody can make the address send text of their choosing.
-Both About pages' privacy cards say all this to visitors.
+Gmail keeps a copy of every email it sends, address included, in that account's Sent
+mail, so the service moves each copy to the trash as soon as the email has gone; Gmail
+deletes it for good 30 days later. Both About pages' privacy cards say all this to
+visitors.
 
 It has run since Nov. 4, 2026: the Apps Script project "Informed Voter mail" in
-caissonez@informedvoter.io's account, deployed as a web app (version 1), whose `/exec`
-address is `MAIL_SERVICE_URL` in `js/config.js`. Its sheet, "Informed Voter: email
-reminder sign-ups", is in that account's Drive, and its daily run is at 14:00, Paris
-time. The live site uses it once this code is published. To set it up again (another
-account, or a lost project):
+caissonez@informedvoter.io's account, deployed as a web app (version 4 since Nov. 25,
+2026), whose `/exec` address is `MAIL_SERVICE_URL` in `js/config.js`. Its sheet,
+"Informed Voter: email reminder sign-ups", is in that account's Drive, and its daily run
+is between 14:00 and 15:00, Paris time. The live site uses it. To set it up again
+(another account, or a lost project):
 
 1. Signed in to Google as caissonez@informedvoter.io, create a project at
    script.google.com. In Project Settings, tick "Show 'appsscript.json' manifest file in
    editor", then paste `services/mail/appsscript.json` into that file and
    `services/mail/Code.gs` into Code.gs.
 2. Pick `setup` in the function menu and Run it once, accepting the permissions it asks
-   for (send email, Google Sheets, read the site, triggers). It creates the sheet
-   "Informed Voter: email reminder sign-ups" and a daily run at 14:00, Paris time.
+   for (Gmail, Google Sheets, read the site, triggers) with every box ticked. It
+   creates the sheet "Informed Voter: email reminder sign-ups" and a daily run between
+   14:00 and 15:00, Paris time.
 3. Deploy → New deployment → Web app, with "Execute as: Me" and "Who has access:
    Anyone". If "Anyone" isn't offered, the Workspace admin console has to allow sharing
    outside the domain (Apps → Google Workspace → Drive and Docs → Sharing settings).
@@ -131,14 +148,32 @@ account, or a lost project):
 
 Until `MAIL_SERVICE_URL` is set, the ticket form opens the visitor's own email app
 addressed to theinformedvoter.help@gmail.com, reminders are calendar files only, and no
-email address is collected. After editing Code.gs, publish it as a new version of the
-same deployment (Deploy → Manage deployments → Edit → New version) so the address stays
-the same. Google lists about 1,500 emails a day for a Workspace account, but `setup`
-reported 100 for this one on Nov. 4, 2026. Confirmations, reminders and tickets all
-count, and the service turns down new sign-ups when fewer than 10 are left and tickets
-below 5, so a busy day can run out. To help
-delivery, add a DMARC record to informedvoter.io's DNS (SPF and DKIM are already set
-up): a TXT record named `_dmarc` with `v=DMARC1; p=none`.
+email address is collected. After editing Code.gs or appsscript.json, run `setup` once
+in the editor (it asks for any permission still missing), then publish it as a new
+version of the same deployment (Deploy → Manage deployments → Edit → New version) so the
+address stays the same.
+
+The script sends with GmailApp, not Apps Script's MailApp: on Nov. 5, 2026, while the
+account was new and on its free trial, Google rejected every MailApp email to an outside
+address the moment it was sent, though the service still told the site it had gone.
+Each email is sent from a draft, because a draft's `send()` returns the sent message,
+which then goes straight to the trash; a copy that can't be moved is retried by the daily
+run for a week. That takes Gmail's "read, compose and send" permission (`gmail.modify`),
+which can move mail to the trash but never delete it for good; `appsscript.json` lists
+the permissions itself, so the editor asks for no more. Google's consent screen lets each
+permission be unticked, and an unticked one is never asked for again: tickets failed
+until Nov. 25, 2026 because the Gmail one was missing, and `setup` now asks for any that
+are. To see whether mail really went out, open the admin console's Email Log Search
+(Reporting → Email log search): each email says Delivered, or why it was refused. Errors
+inside the script are on the project's Executions page, and a function run from the
+editor shows the whole message.
+
+Google lists about 1,500 emails a day for a Workspace account, but `setup` reported 100
+for this one on Nov. 4, 2026, and again on Nov. 25. Confirmations, reminders and tickets
+all count, and the service turns down new sign-ups when fewer than 10 are left and
+tickets below 5, so a busy day can run out. To help delivery, add a DMARC record to
+informedvoter.io's DNS (SPF and DKIM are already set up): a TXT record named `_dmarc`
+with `v=DMARC1; p=none`.
 
 ## Automatic refresh (every 8 hours)
 
@@ -151,7 +186,10 @@ inflation (daily), the research files, every race (with its result from Election
 on) and the statewide offices below governor, the forecasts and chamber
 control, then the validator. If the new race data fails validation, the previous
 files are put back and the About page says so. Who sits in Congress and the
-candidates' photos are reread once a day. Then the France section, in files of their own: its candidates and polls, parties,
+left-right scores that order their seats, the candidates' photos, the statewide officers, caucuses (their own rosters, `caucus_rosters.py`) and senators' votes
+(`update_officeholders.py`), the state legislators not up in 2026 (`update_legislators.py`)
+and the 2028 presidential field (`update_president_2028.py`) are reread once a day; the
+list of states that have certified (`scripts/research/certified_2026.py`) every run. Then the France section, in files of their own: its candidates and polls, parties,
 Parliament and the figures behind "Les grands enjeux" once a day (at the first run more
 than 20 hours after the last), the
 election calendar and the candidates' positions every run. Last, every run writes
@@ -259,6 +297,18 @@ results: this computer isn't signed in to GitHub for git" in `data/cache/refresh
 and the next one tries again. A push refused because the branch moved (a push from
 GitHub Desktop in between) is redone on top of it.
 
+Run these from a Command Prompt or PowerShell opened from the Start menu, never from a
+terminal tab of the Claude desktop app or a Claude Code session in it. Windows keeps
+the new files that the app's shells create under `AppData` in the app's own folder
+(`%LOCALAPPDATA%\Packages\Claude_…\LocalCache\Local`) while letting them change and
+delete the files already there, so git run there splits the clone in two: on Nov. 27,
+2026 a fetch from a session put its new pack in the app's folder and deleted old ones
+from the real clone, and the scheduled task's next runs found objects missing ("bad
+object refs/heads/main"). `publish.py` now tests for this and refuses to run there,
+logging "skipped: run from inside the Claude desktop app". A damaged clone is moved
+aside (`publish.broken-<date>`, which can be deleted) and cloned again on the next
+scheduled run.
+
 ## Deploying
 
 It is a static site, so any static host works (GitHub Pages, Netlify, Cloudflare
@@ -280,7 +330,8 @@ js/main.js, router.js, store.js (browser storage), util.js, icons.js,
    i18n.js (French/English), config.js (mail service, ticket address, donation link,
    early-vote switch)
 js/components/help.js (help button), reminders.js (reminders and calendar files),
-   hemicycle.js (half-circle seat charts for both parliaments)
+   hemicycle.js (half-circle seat charts for both parliaments), person.js (the cards of
+   people elected or in office), compare.js ("Compare with my views")
 js/fr/        the France section: routes, shell, store, data, map, questions, match, compare, views/
 data/fr/      presidentielle-2027.json, partis.json, parlement.json, calendrier.json,
               positions.json, enjeux.json, maps/ (generated)
@@ -290,15 +341,20 @@ scripts/fr/   update_presidentielle.py, candidats_2027.py (hand check of who is 
 services/mail/ Code.gs and appsscript.json: the mail service (reminders and tickets), a
               Google Apps Script the owner deploys; data/reminders.json lists the
               elections it may send for (scripts/update_reminders.py)
-js/data/      states, questions, parties, demo dataset, world (data access)
+js/data/      states, questions, parties, demo dataset, world (data access), holders.js (who
+              holds each seat from January 2027)
 js/model/     forecast.js (polling average, win probability, chamber simulation), match.js
 js/lib/       map.js, charts.js, census.js (address lookup)
 js/views/     one file per page group
 data/races.json, control.json, status.json   every race, chamber control, refresh checks (generated)
 data/offices.json   statewide offices below governor (generated)
-data/congress.json  who sits in Congress (generated by scripts/update_congress.py)
+data/congress.json  who sits in Congress, with the left-right scores that order the seats (generated by scripts/update_congress.py)
 data/photos.json    candidates' photos and credits (generated by scripts/update_photos.py)
 data/upcoming.json  the elections of 2027-2029 (generated by scripts/update_upcoming.py)
+data/officeholders.json  statewide officers, caucuses, senators' votes (scripts/update_officeholders.py)
+data/legislators/  state legislators in office, one file per state (scripts/update_legislators.py)
+data/president-2028.json  the 2028 presidential field (scripts/update_president_2028.py)
+data/certified.json  the states that have certified their 2026 results (scripts/research/certified_2026.py)
 data/legislature/  state legislative races, one file per state (generated)
 data/research/  hand-researched overlays (generated by scripts/research/*.py)
 data/news.json, data/inflation.json, data/maps/   (generated)
@@ -308,14 +364,23 @@ scripts/      refresh_all.py, update_races.py, validate_races.py, update_news.py
               update_results.py (results every 10 minutes after Election Day),
               publish.py (sends the new data to the live site),
               update_upcoming.py (the elections of the next three years),
-              build_house_map.py (the national House district map)
+              build_house_map.py (the national House district map),
+              update_officeholders.py, update_legislators.py, update_president_2028.py,
+              test_site.cmd (the test site at localhost:8770)
 scripts/lib/  wikitables.py, elections.py (parsers), model.py (Python copy of the
               forecast), house_votes.py, fec.py, early_vote.py, legislature.py,
               results.py (election results), official_results.py (states' own counts:
               California), offices.py (statewide offices),
               wikiphotos.py (people's photos from Wikidata and Commons, both sections),
-              people.py (who the people on the upcoming elections are: bio, photo, website)
-scripts/research/  one script per researched state, plus common.py
+              people.py (who the people on the upcoming elections are: bio, photo, website),
+              senate_votes.py (Senate roll calls from Voteview),
+              cosponsors.py (positions from bills members sponsored or cosponsored),
+              nominate.py (Voteview's DW-NOMINATE left-right scores, for the seat order),
+              caucus_rosters.py (the caucuses' own member lists)
+scripts/research/  one script per researched state, plus common.py, certified_2026.py,
+              president_2028.py (the 2028 field's own platforms and statements),
+              governors_sitting.py (the 14 governors whose seats weren't up in 2026) and
+              governors_elected_2026.py (more positions for seven governors elected in 2026)
 vendor/       d3 v7.9.0 (ISC licence)
 assets/fonts/ Inter, Bricolage Grotesque, JetBrains Mono (SIL Open Font Licence)
 ```

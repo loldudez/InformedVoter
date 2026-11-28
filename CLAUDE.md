@@ -6,7 +6,8 @@ visitor's own ballot from their address, and a questionnaire that matches voters
 candidates with sources. The United States section is finished (since Nov. 4, 2026 it shows the
 election's results, re-read every 10 minutes while votes are counted, with projections
 from the count, a House district map and the elections of 2027-2029, plus the statewide
-offices below governor); the France section
+offices below governor, and since Nov. 25 who holds each office from January 2027, the 2028
+presidential field and what the winners raised, in English or French); the France section
 (`#/fr`, started Oct. 28, 2026) is the work in progress; the UK and Canada are
 planned and shown greyed out.
 
@@ -46,7 +47,8 @@ finished: routes under `#/fr` (`js/fr/routes.js`), code in `js/fr/`, data in
 reminders under their own localStorage key (`iv:fr:v1`, `js/fr/store.js`). Shared code
 was only extended, never changed in behavior: the router draws each section's header
 (`js/fr/shell.js` reuses the U.S. element ids), loads the 7 MB U.S. race data only for
-U.S. pages, and the U.S. pages stay in English. The 144 French questions in
+U.S. pages, and the U.S. pages were English only until Nov. 25 (see Languages). The 144
+French questions in
 `js/fr/questions.js` are the owner's text, numbered as given; English is a labelled
 translation.
 
@@ -55,6 +57,12 @@ first French or English entry in the browser's language list, then the visitor's
 choice (FR | EN switch, saved as `lang`). France pages carry both languages side by
 side with `L('…', '…')`; shared pages (intro, country choice, help) use `t(key)`.
 French text gets narrow no-break spaces before `? ! : ;` automatically (`frType`).
+Since Nov. 25 (owner's request: "an english to french translation for both the US and
+French version") the U.S. pages use `L()` as well, called at render time. What comes from
+the data stays as written and carries `lang="en"` (Wikipedia summaries, news headlines,
+the refresh's checks), and French text about people is gender-neutral ("personnes élues",
+"candidatures") while office titles keep the masculine generic. U.S. reminder emails
+stay in English.
 
 **France: declared candidates only, checked by hand.** Only people who have announced
 their own candidacy are listed, averaged and compared (owner's request, Nov. 2). French
@@ -133,6 +141,9 @@ candidates' stances on its questions; nothing is inferred from the figures.
 **Menus (owner's request, Nov. 3).** The U.S. menu puts "Which country?" just above
 "About the data". The France menu has no "Les prochaines élections" entry (the calendar
 page and `#/fr/calendrier` stay, linked from the home page) and gains "Les grands enjeux".
+Since Nov. 25 the U.S. menu also has "The 2028 presidential field" after "Upcoming
+elections". "What the winners raised" was in it from Nov. 25 to Nov. 27, when the owner
+moved the money onto each politician's card (see that decision).
 
 **Donations: PayPal, then Cash App** (owner's request, Nov. 3). Both "Support the site"
 pages (`#/donate`, `#/fr/soutenir`) show "Donate via PayPal" (`DONATE_URL` in
@@ -151,9 +162,19 @@ consent through a Google-certified platform, which the owner sets up in AdSense 
 **Help tickets and email reminders go through one mail service** (owner's request,
 Nov. 3): `services/mail/Code.gs`, a Google Apps Script web app deployed on Nov. 4 from
 the Workspace account caissonez@informedvoter.io (`REMINDER_FROM`; project "Informed
-Voter mail", version 1), its `/exec` address in `MAIL_SERVICE_URL` (`js/config.js`;
-README, "Email reminders and help tickets"). A change to Code.gs goes out as a new
-version of the same deployment, so the address stays. Tickets go to
+Voter mail", version 4 since Nov. 25), its `/exec` address in `MAIL_SERVICE_URL`
+(`js/config.js`; README, "Email reminders and help tickets"). It sends with GmailApp, never
+MailApp, whose mail Google refused while the account was on its trial (Nov. 5). Gmail keeps
+a copy of everything sent in Sent mail, recipient included, so every email goes through
+`mail_`: sent from a draft (whose `send()` returns the message) and its copy moved to the
+trash at once, which Gmail empties after 30 days; the daily run retries any copy it
+couldn't move (owner's choice, Nov. 25, over telling visitors the copies are kept; both
+privacy cards say a copy goes to the trash and is deleted for good 30 days later, also
+the owner's choice). Deleting copies for good at once would take the full Gmail permission
+(`mail.google.com`) and the Gmail API. The trash takes `gmail.modify` ("read, compose and
+send", never delete for good), listed in `appsscript.json`. A change to Code.gs or
+appsscript.json: run `setup` in the editor (it asks for any permission still missing),
+then publish a new version of the same deployment, so the address stays. Tickets go to
 theinformedvoter.help@gmail.com (`SUPPORT_EMAIL`, the script's `HELP_TO`) with the
 visitor's address as Reply-To; without `MAIL_SERVICE_URL` the form opens the visitor's
 own email app addressed there. Reminders are double opt-in behind a consent box
@@ -255,7 +276,10 @@ owner makes once by hand (README, "Publishing from this computer"); it never pro
 Code goes out only when the owner pushes from GitHub Desktop, so a data change must stay
 readable by the code already online (new keys, never renamed ones). The cloud workflow
 is the fallback: on its schedule it refreshes only when the live data is over 12 hours
-old.
+old. Only the scheduled tasks publish: publish.py refuses to run from inside the Claude
+desktop app (its sessions and terminal tabs), where Windows keeps new files under AppData
+in the app's own folder and git splits the clone in two (see Pitfalls), and it moves a
+damaged clone aside (`publish.broken-<date>`) and clones again (`sync`).
 
 **Projections from the count, never calls** (same request: "The forecast also needs to
 be adjusted, alongside the current vote count"). A counted, uncalled race blends its
@@ -314,6 +338,179 @@ districts (the Census answer's `sldu`/`sldl`; New Jersey's Assembly districts ar
 Senate districts), their city (the Census place name matched to Wikipedia's) or county.
 Open ones stay open across the 10-minute redraws (`openYears` in elections.js). The cards
 are #/upcoming's (`futureElections` in js/views/upcoming.js).
+
+**After the election, every U.S. office shows who holds it from January 2027** (owner's
+request, Nov. 25: "All of these will be the official results following the US Midterms").
+`js/data/holders.js` puts each seat together: the 2026 winner where the race is called
+(races.json, offices.json, the chamber pages' winners from `scripts/lib/legislature.py`),
+otherwise the person in office, from `data/officeholders.json` (`scripts/update_officeholders.py`,
+daily: Wikipedia's tables of current governors, lieutenant governors, attorneys general,
+secretaries of state, treasurers and elected auditors, plus the senators sitting now) and
+`data/legislators/ST.json` (`scripts/update_legislators.py`, daily: Open States'
+current-members CSVs, CC0, only for seats not decided in 2026; a member the district
+matching can't place is listed as `unmatched`, never guessed onto a district). A seat still
+counted or in a runoff says so. Once results are in, the home map's Senate view colors each
+state by its two senators: blue for two Democrats, red for two Republicans, purple
+(`--split`, checked against both poles and the independent gray in both themes) for one of
+each, the party's color striped with gray where one seat is an independent's; the hover
+names both with (D), (R) or (I). The House view is unchanged. State pages show, on the
+federal side, the governor, then both senators (in every state, whether or not a seat was up
+in 2026: `parseMode` in state.js once sent Vermont's Senate view to the House) and every
+House district's winner, and on
+the state side the governor, lieutenant governor, attorney general and the other statewide
+officers, then each legislative chamber's map, where a click shows who was elected there.
+Every person is a `js/components/person.js` card (photo, party, term, caucus, two-sentence
+bio, links, the 2026 winners' money) with "Compare with my views"
+(`js/components/compare.js`: documented positions only, the U.S. matching rules).
+
+**Congress seats in party colors, caucuses lit up on request** (owner's request, Nov. 27,
+after a day of shading by score: "change the color scheme back to how it was before.
+However, for the senate and house of representatives, showing the different caucuses by
+highlighting the individuals a part of them. All republicans red, all democrats blue, all
+independents grey"). Both views (the 119th Congress sitting now, the 120th from January
+2027, the default once results are in) color every seat by party: Democrats `--dem`,
+Republicans `--rep`, independents `--seat-other`, one seat shape for all; the day's
+`--ideo-*` shades are gone from styles.css. Above each chart, one button per caucus with
+members in that chamber, in the owner's order (DSA, Progressive, Blue Dog, New Democrat;
+Freedom, Main Street, Governance Group, Study Committee), each with its count: a click
+lights up that caucus's members wherever they sit (`chart.mark(test)` in hemicycle.js dims
+the rest), narrows the member list to them and says how many are lit; a second click shows
+everyone. A member can be in several caucuses (`caucusesOf` in holders.js; a card names the
+first, `caucusOf`).
+
+**Caucus members come from the caucuses' own lists where they publish one** (owner's
+request, Nov. 28: "double check the membership for the democratic and republican party to
+make sure an appropriate account is made of who is a part of what Caucus").
+`scripts/lib/caucus_rosters.py` reads the rosters on the House sites of the Progressive
+Caucus, the New Democrats, the Blue Dogs and Main Street, and the "Congressional Members" of
+the Governance Group's PAC (the group has no House site); they decide who belongs now
+(`fromRoster`, with Wikipedia's page kept as `listSource`), because Wikipedia's lists had
+drifted from them (see Pitfalls). Wikipedia still gives each member's article link and the
+members-elect, which no roster lists before January. The Freedom Caucus and the Study
+Committee publish no roster, so theirs are Wikipedia's (which names 150 of the Study
+Committee's 189), as are the DSA's members in Congress ("List of Democratic Socialists of
+America public officeholders", rows marked "member" only). `update_officeholders.py` gives
+every current entry the sitting member's `id` (the Clerk's, a senator's Bioguide id): same
+last name and party, then the seat, else the state, else the first name, never a seat alone;
+`--caucuses` redoes only the caucuses on the last build, and a roster that can't be read
+keeps its previous read. The page matches sitting members by that id, and members re-elected
+in 2026 by the id they carry into the 120th view (`sittingId` in holders.js); a member-elect
+by article link, or by last name in the same seat. The note under the chart links each list
+and says which have none.
+
+**The seat order stays; the score is gone from view** (owner's request, Nov. 28: "for the
+point system of voting most with liberals or conservatives, I would like to remove this
+altogether as it's more complicated than necessary. The seat order can stay however").
+Within each party, seats still run from its most moderate members, nearest the middle, to
+those furthest from the center, on the outer edge (`byScore` in congress.js), by the first
+dimension of DW-NOMINATE from Voteview (`scripts/lib/nominate.py`: `nom` on each member of
+`data/congress.json`, read daily by update_congress.py, which also gives senators their
+Bioguide `id`). No tooltip, member list or note shows a score any more: the note says the
+order comes from members' roll-call votes, and the sources line credits "Voteview (UCLA):
+members' roll-call votes, for the seat order". Members with no score yet (new to Congress:
+72 Democrats and 30 Republicans of the 120th House, 11 senators) sit in the middle of their
+party. The 120th view takes a winner's score from the same seat, otherwise by state, last
+name, party and the first three letters of a first name among sitting members and the former
+members on the 2026 ballot (`voteview.former`, 38); nothing is estimated. The scores measure
+votes, not stated views: members who vote against their own party's bills for not going far
+enough (Omar, Tlaib, Ocasio-Cortez) sit among the Democrats' moderates, and the note says so.
+
+**Senators' positions come from Voteview** (Nov. 25). senate.gov refuses scripts, so
+`scripts/lib/senate_votes.py` reads Voteview's roll calls (117th to 119th Congresses), turns
+the 31 votes in `SENATE_VOTES` into positions under house_votes.py's rules, checks each roll
+call against the bill number written there, and cites the vote's voteview.com page. All 100
+sitting senators have positions; 2028 hopefuls who served get theirs the same way, matched by
+Bioguide id.
+
+**Every governor in office from January has documented positions** (owner's request, Nov.
+27: "getting political positions for every governor that is currently in charge within the
+United States"). The state pages show the governor from January 2027: the 36 elected in 2026
+carry their race research, and the 14 whose seats weren't up (Delaware, Indiana, Kentucky,
+Louisiana, Mississippi, Missouri, Montana, New Jersey, North Carolina, North Dakota, Utah,
+Virginia, Washington, West Virginia) are researched by hand in
+`scripts/research/governors_sitting.py` (→ `data/research/governors-sitting.json`, 162
+positions, 8 to 19 each): State of the State and budget addresses, their office's releases,
+executive orders and the bills they signed or vetoed, under the 2028 research's rules
+(quotes verbatim, at most 25 words, checked against the page's text; a news report of an act
+has no quote). `update_officeholders.py` lays that research over the recorded votes since
+2021 and the bills of the four who served in Congress (Braun, Armstrong, Sherrill,
+Spanberger) and over the 2028 research of those in that field (Beshear, and Newsom, DeSantis
+and Whitmer until January): `positions`, `positionsFrom`, `votesCast` and `bioguide` on each
+`GOV` row, the research winning where both answer; `--governors` redoes only that step on
+the last build. The governor's card (`holderPerson` in holders.js) shows them, with "Compare
+with my views" on the state-level questions. The seven 2026 winners whose race research gave
+them fewer than 10 positions (Sanders, Scott, Mazzei, Shapiro, Pritzker, Weiser, Foulkes) got
+68 more on Nov. 28 under the same rules: their State of the State, inaugural and budget
+addresses, Mazzei's plan, two States Newsroom voter guides (Rhode Island Current's
+questionnaire answers, Colorado Newsline's summaries) and news reports of bills they signed
+(`scripts/research/governors_elected_2026.py` →
+`data/research/governors-elected.json`, a `partial` overlay on their races that adds only
+questions nothing else answered).
+
+**Seven topics researched from the record: votes first, then bills** (owner's request,
+Nov. 27: "Universal Healthcare," "Trans rights issue," "fracking/oil expansion," "green
+energy," "stock trading," "view on PAC donations and money in politics," and "immigration",
+"focus specifically on voting record, but if not available, mostly going on what they have
+endorsed or pushed votes for while in office"). Recorded votes on them were added (House
+39 → 44 in `house_votes.py`, Senate 26 → 31), and `scripts/lib/cosponsors.py` turns 36
+bills in 12 families (Medicare for All, the Equality Act, the stock-trading bans, DISCLOSE
+and the like) into positions where no vote answers the question: a sponsor's or
+cosponsor's name counts at house_votes.py's strengths (2 for a bill about that one issue,
+1 where it reaches only part of the way), not cosponsoring says nothing, a withdrawn
+cosponsor is left out, and each position cites the bill's congress.gov page. The records
+are the Library of Congress's BILLSTATUS files on govinfo.gov (public domain), each checked
+against the title written there. It feeds House members (update_races.py), senators
+(update_officeholders.py) and the 2028 field; race pages' "Where they stand" says when a
+position comes from a bill.
+
+**The 2028 presidential field** (`#/2028`; owner's request, Nov. 25: "View the potential
+candidates for 2028 Presidency ... separated by party"): a link at the top of every U.S.
+page and an entry in the U.S. menu. Since Nov. 27 (owner's request: "a page that has 3
+options, being democrat (in blue), republican (in red), and independent/other in grey")
+`#/2028` opens on three doors, each leading to that party's page (`#/2028/D`, `#/2028/R`,
+`#/2028/other`) and counting its people and those with positions; the owner also asked
+"that each has their views filled out", hence the hand research in
+`scripts/research/president_2028.py`. Declared candidates, exploratory committees and people
+who have said publicly that they're weighing a run (the owner's choice), each labelled with
+that status, by party, from Wikipedia's 2028 primaries pages and the election's page for
+third parties (`scripts/update_president_2028.py` → `data/president-2028.json`, daily): a
+summary from their article, campaign or official website (checked to answer and show the
+name), photo, what they said about 2028 word for word with the reports it cites, and
+positions from their votes in Congress since 2021, the bills they sponsored or cosponsored,
+or hand research (`scripts/research/president_2028.py` → `data/research/president-2028.json`,
+which wins: their platforms, statements and official acts as governors or mayors, quoted
+word for word and checked against the page), with "Compare with my views". People only
+speculated about, and those who declined, aren't listed. No polls or odds this early.
+
+**"Official" only once every state certifies** (owner's choice, Nov. 25). The results strip
+says "2026 results · official" only when all 50 states and D.C. are in
+`scripts/research/certified_2026.py` (→ `data/certified.json`, every run) with nothing
+`pending` and every Senate, House and governor race decided; until then it says
+"unofficial", with the count so far in its tooltip. Each entry is the state's own
+announcement or a news report of its board's vote, dated the day it certified; races
+waiting for a recount or runoff go in `pending`, other contests in `other`. Nothing is
+inferred from deadlines, and trackers (congresscountdown, The Center Square) are only
+finders. Race pages, My elections and How to vote say when the state certified; the counts
+shown are still Wikipedia's compilation and are never called the certified canvass.
+
+**What the winners raised, on each winner's card** (owner's request, Nov. 25: "keep a view
+of how much in fundraising that major candidates on the federal level that candidates have
+raised for those who have been elected"; moved Nov. 27: "I don't want this to be a portion
+under the menu itself, I want it to be just be connected to the major politicians when you
+click on them under the elections map"). The person card (`moneyBlock` in person.js), which
+opens from a click on a seat or a name on the state pages' maps (each name in the Congress
+page's member list links there), shows
+a 2026 Senate, House or governor winner's money by the race pages' FEC or state-filing lines,
+each on its own, beside the main opponent's total; a person not on the 2026 ballot says so.
+`#/money` (every called winner, sortable, each bar one winner's own total at full width) is
+out of the menu but still answers old links. Figures are the pre-general reports (through
+Oct. 14) until the post-general ones, due Dec. 3, are read.
+
+**A test site on this computer** (owner's choice, Nov. 25: "This computer only"):
+`scripts/test_site.cmd` serves the working folder at http://localhost:8770 through
+`scripts/serve.py`, and any local address shows a "Test site" chip in the header (`testChip`
+in shell.js). Nothing is published from it; the live site changes only when the GitHub
+folder is pushed.
 
 **Real race data is rebuilt automatically every 8 hours, never hand-edited.**
 `scripts/refresh_all.py` (Windows Task Scheduler, \InformedVoter\, 6:00/14:00/22:00)
@@ -385,9 +582,10 @@ candidates, 2,074 positions) only for questions nothing else answers. All told (
 (mostly Tennessee and Michigan independents and minor-party House candidates, plus 13
 Democrats and Republicans in Louisiana's open primaries and Alaska's top-four races
 and 17 others) have no usable site, statement, guide answer or record found so far.
-Every current House member on the ballot also has positions from 39 recorded House votes, 2021 to 2026, including
+Every current House member on the ballot also has positions from 44 recorded House votes, 2021 to 2026, including
 11 war powers resolutions (`scripts/lib/house_votes.py`), so members first elected in
-2024 have about 20 each; four former members on the ballot (Peltola, Carl, Allred,
+2024 have about 20 each, and since Nov. 27 from the 36 bills of `scripts/lib/cosponsors.py`
+they sponsored or cosponsored, for questions no vote answers; four former members on the ballot (Peltola, Carl, Allred,
 Luria) get theirs by Clerk id (`FORMER_MEMBERS` in `update_races.py`). Money by source
 comes from FEC summaries for every Senate candidate and every House candidate with a
 2026 report (998 candidates through Oct. 14: `fec_2026.py` for the Senate and
@@ -452,6 +650,37 @@ in 20 cities), Los Angeles County's district attorney and new county executive, 
 2027 legislatures of Louisiana, Mississippi, New Jersey and Virginia (8 chambers, 578
 seats, 7 vacant). 862 people have a bio, 430 a photo and 109 a website, plus 30
 campaign sites.
+
+Who holds each office from January 2027 (Nov. 25 build): `officeholders.json` has rows
+for 50 governors, 45 lieutenant governors, 51 attorneys general, 51 secretaries of state,
+51 treasurers and 37 auditors or comptrollers (Wikipedia's tables, D.C. included where they
+list it), the 8 caucuses' member lists (Nov. 28: from their own rosters the Progressive
+Caucus 100 and Sanders, the New Democrats 114, the Blue Dogs 11, Main Street 90 and the
+Governance Group 47; from Wikipedia the Study Committee 150, the Freedom Caucus 31 and the
+DSA 2; plus 14 Blue Dog, 6 DSA and 3 Freedom Caucus members-elect, so the chart's buttons
+read 2, 99, 11, 112, 31, 90, 46 and 149 for the sitting House, delegates being off the chart,
+and 8, 83, 22, 102, 24, 53, 25 and 95 from January), the 100 sitting senators with positions from
+Voteview's 31 roll calls and the bills they cosponsored, 369 people with bios, and (Nov. 27)
+positions for 17 of the 50 governors in office now: the 14 not up in 2026 (162 from hand
+research, plus 62 from the votes and bills of Braun, Armstrong, Sherrill and Spanberger) and
+Newsom, DeSantis and Whitmer from the 2028 research (1,233 KB on Nov. 28). The 36 governors
+elected in 2026 have their race research, 10 positions or more each since Nov. 28: the seven
+who had fewer (Sanders and Scott 5, Mazzei and Shapiro 7, Pritzker 8, Weiser and Foulkes 9)
+now have 13 to 21 (Foulkes 13, Mazzei 15, Sanders 16, Scott 17, Pritzker and Weiser 18,
+Shapiro 21), and the fewest are now 10 (Kreiss-Tomkins, Tuberville, Blackburn, Barlow).
+`data/congress.json` (Nov. 28): a left-right score, used only for the seat order, for 433
+House members and all 100 senators, and 38 former members on the 2026 ballot (70.7 KB). `data/legislators/` covers 50 states: 6,723
+districts with sitting members, and 60 members the district matching couldn't place. The
+2028 field (Nov. 27): 30 people (5 declared, 2 exploratory committees, 23 weighing a run; 12
+Democrats, 12 Republicans, 6 others), 22 with a website and 27 with positions, 517 in all
+(10 from their votes and bills in Congress, 16 from hand research, 1 from both); the
+research covers 17 people with 219 positions, and Don Lemon, Soulja Boy and Randy Toler
+have published nothing that answers a question. Certification (Nov. 26 check): 17 of 51
+confirmed (Alabama, Arizona, Connecticut, Georgia, Idaho, Iowa, Michigan, Minnesota, Nevada,
+New Mexico, North Carolina, North Dakota, Rhode Island, South Carolina, Utah, Vermont,
+Wyoming); pending are MN-1's recount and the offices that Iowa's and Connecticut's
+legislatures canvass in January (`legislature`). What the winners raised: 467 winners,
+$2.2 billion through Oct. 14.
 
 France (Nov. 2, 2026): the 2027 presidential dates, candidates and polls refresh daily
 from French Wikipedia (who is running cross-checked with franceinfo and
@@ -817,6 +1046,29 @@ the ONS's 2022 and 2026 earnings surveys and PISA 2025 typed in by hand.
   clicked through the permissions themself. The editor exposes `window.monaco`: a file's
   text goes in as one edit of its model, not typed. A run whose permissions were turned
   down logs "requires access to your Google Account"; run it again to be asked again.
+- **Apps Script's MailApp can report "sent" for mail Google then refuses.** On Nov. 5,
+  with the Workspace account new and on its trial, every MailApp email to an outside
+  address was rejected the moment it left ("Message rejected" in the admin console's
+  Email Log Search), while the service answered the site `ok` and no bounce came back.
+  Check that log (Reporting → Email log search), never the service's answer. GmailApp's
+  mail goes through.
+- **Google's consent screen lets each permission be unticked, and never asks for it
+  again.** After the switch to GmailApp every send failed until Nov. 25 with "The script
+  does not have permission to perform that action" (the web app answered only "server";
+  a function run from the editor shows the whole message, and the Executions page lists
+  failures). `appsscript.json` now names the scopes (`gmail.modify`, not the whole
+  mailbox) and `setup` calls `ScriptApp.requireAllScopes`, which asks for any that are
+  missing.
+- **Gmail files a copy of everything a script sends in Sent mail**, MailApp's too (the
+  Nov. 5 emails Google rejected were there), with the recipient's address.
+  `GmailApp.sendEmail()` returns nothing, so its copy can't be told apart afterwards from
+  the owner's own mail; `GmailApp.createDraft(…).send()` returns the sent message, which
+  `moveToTrash()` takes. Google's reference lists only `mail.google.com` for these calls,
+  "or appropriate scopes from the related REST API": `gmail.modify` works (Nov. 25).
+- **A Workspace web app's own links carry the domain**: `ScriptApp.getService().getUrl()`
+  gives `script.google.com/a/informedvoter.io/macros/s/…/exec`, which the confirm and
+  unsubscribe links use, while `MAIL_SERVICE_URL` has no domain part. Both open without
+  any sign-in for a visitor outside the domain (checked Nov. 25 with no cookies).
 - **Command-line git doesn't share GitHub Desktop's sign-in.** Desktop keeps its own
   token, so `publish.py` failed with "could not read Username" until Git Credential
   Manager was signed in from a terminal. The sign-in and the first push to the live
@@ -866,6 +1118,96 @@ the ONS's 2022 and 2026 earnings surveys and PISA 2025 typed in by hand.
   list and refused Brett St. Amand's campaign site; a parked page fails the name check
   anyway, and `PARKED_TEXT` catches "this domain is for sale".
 
+- **The check mark's hidden "Y" can sit against the name** in a chamber page's candidates
+  cell ("YJeff K. Livingston", besides "Y Javier Mabrey"). `column_candidates`
+  (legislature.py) reads it as the call and strips it only before a capital letter.
+- **New York's Assembly page splits its districts over three tables** of one layout (1-50,
+  51-100, 101-150); reading only the largest dropped two thirds of the chamber.
+  `parse_chamber` reads every summary table with that table's header.
+- **Oklahoma decided many seats in its primaries**, and its candidate cells list the
+  primary with shares beside the names ("Rusty Cornwell - 70%"): when every name in a cell
+  has a share and one party, only the winner was on the November ballot.
+- **North Dakota's "▌" markers use #0055aa for Democrats** and its label has an en dash
+  ("Dem–NPL"). The color was missing from `MARK_COLORS`, which left those seats without a
+  party; `party_of` folds dashes before matching.
+- **Status words aren't people.** A row's "hold" or "gain" ("Democratic (DFL) hold") is the
+  outcome: it is skipped as a name and kept only once the seat is decided (`DECIDED`).
+- **FRED stopped answering requests that carry no Accept header** in mid-November 2026
+  (urllib sends none): each request hung until it timed out, and the inflation tracker was
+  empty from Nov. 17 to 25. `update_inflation.py` sends one, keeps the last good file's
+  series for any that fail, and never writes an empty snapshot over it.
+- **Writing `\u00a0` through the Write tool put the character itself in the file**, not the
+  escape: it renders the same but is invisible in a diff, so search for the character.
+- **`L()` must run at render time, and a local `L` hides it.** A label table built when its
+  module loads keeps the language of that moment, so tables hold `[fr, en]` pairs or a
+  `_FR` map; a variable named `L` inside a view silently replaced the helper.
+- **No feed says which states have certified.** Trackers count states without naming them
+  (The Center Square's 22 on Nov. 24), and a deadline says nothing about whether a board
+  met; each state is entered by hand from its own announcement.
+- **One scale for every winner hid the House**: beside the largest Senate campaigns, House
+  bars on #/money were a few pixels wide, so each bar splits one winner's own total.
+- **The header ran past a phone's width** once the test chip and the FR | EN switch joined
+  it (388 px at 375): under 440 px the chip says "Test", the switch is compact, and the
+  brand, icons and avatar never shrink.
+- **Voteview's 117th Congress files print party codes as "100.0"**, so a lookup of "100"
+  made Elaine Luria an independent. `nominate.py` reads the code before the dot.
+- **A member who changes parties gets a new Voteview id and a second score**: Kevin Kiley
+  is +0.253 as a Republican and +0.153 as an independent. `Scores.of` takes the latest
+  Congress's row in the member's current party.
+- **DW-NOMINATE is a voting score, not a statement of views.** Progressives who vote
+  against their party's bills from the left (Omar, Tlaib) land in its moderate quarter;
+  the Congress page says so rather than moving anyone by hand.
+- **GovTrack's data sits behind a Cloudflare bot check** (403 for scripts), like its
+  pages; Voteview's CSVs are the readable source of ideology scores.
+- **A state page's Senate view used to need a 2026 Senate race**, so Vermont, with no seat
+  up, opened on its House seat and never showed Sanders and Welch. After the election every
+  state but D.C. has the Senate view (`parseMode` in state.js).
+- **Git run from the Claude desktop app splits a clone under AppData.** The app is a packaged
+  Windows app: Windows keeps new files that its shells (Claude Code sessions, its terminal
+  tabs) create under `%LOCALAPPDATA%` in `%LOCALAPPDATA%\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Local`
+  but lets them change and delete the files already there, and only those shells see both
+  merged. The Nov. 5 publish clone was made from a session, so it lived only in the app's
+  folder and the scheduled task, which can't see it, cloned its own. On Nov. 27 a refresh run
+  from a session fetched into the clone: the new pack and `refs/heads/main` went to the app's
+  folder while git's housekeeping deleted old packs from the real clone, and the scheduled
+  task's next runs failed with "bad object refs/heads/main". These shells have no package
+  identity (GetCurrentPackageFullName says none), so publish.py's `redirected()` tests with a
+  probe file. Leave state that the scheduled tasks share under AppData to the tasks.
+- **A research file's name can already be taken.** On Nov. 27 the sitting governors'
+  research was first written to `governors_2026.py`, the 2026 governor races' research, and
+  replaced it; it was restored byte for byte from the GitHub Desktop clone. Read a file
+  before writing it, and give new research a file of its own (`governors_sitting.py`).
+- **A results box can cite an http page** (Minnesota's secretary of state race, Nov. 27).
+  The validator refuses any source that isn't https, so the whole refresh was put back;
+  `results.py` keeps only https citations, and the Wikipedia page is still cited.
+- **PDF text breaks words at line ends**: Kehoe's 2026 State of the State prints "pro-life"
+  across a line, which its text layer gives as "pro- life". The governors' quote check
+  (scratch `check_quotes.py`) compares exactly first, then with quote marks unified, then on
+  letters and digits only; a quote passing only the last way is checked by eye.
+- **Wikipedia's caucus lists drift from the caucuses' own rosters.** On Nov. 28 its New
+  Democrat list still had Seth Magaziner, whom the coalition's roster no longer lists; its
+  Main Street list lacked Miller-Meeks, Nunn, Feenstra, Guthrie and Barr; and its Governance
+  Group list lacked Ryan Mackenzie and still had Elise Stefanik, whom the PAC's list doesn't
+  name. Where a caucus publishes a roster, the roster decides (`caucus_rosters.py`).
+- **A seat alone names whoever holds it now.** Wikipedia's caucus lists keep departed
+  members' districts (David Scott in GA-13, Mikie Sherrill in NJ-11) and give some members
+  their 2026 districts (Utah's, Greg Casar's TX-37), so matching by seat had made Everton
+  Blair Jr. and Analilia Mejia New Democrats and Burgess Owens a Main Street member. List
+  entries now carry the member's id, found by last name and party first.
+- **A last name and a state aren't enough either.** Sylvia Garcia (TX-29) would have become
+  a Blue Dog through member-elect Johnny Garcia (TX-35). Where the two sides link different
+  articles, a name match also needs the first three letters of a first name.
+- **Names differ between the Clerk, the rosters and the ballot.** The Clerk's 'Earl L.
+  "Buddy" Carter' is the PAC's "Buddy Carter" (nicknames count as first names), and the
+  roster's "Joe Morelle" is the ballot's "Joseph Morelle" with another article link, which
+  dropped him from the New Democrats in the 120th view until re-elected members carried their
+  sitting id there (`sittingId` in holders.js).
+- **Caucus sites move and differ.** The Blue Dogs' roster sits under its chair's name
+  (bluedogs-gluesenkampperez.house.gov; bluedogcaucus.house.gov doesn't resolve), the New
+  Democrats list Puerto Rico's Resident Commissioner under the territory's name alone, and the
+  Blue Dogs' and the Governance PAC's pages give names without districts. Each reader needs a
+  minimum number of members, so a redesigned page fails loudly and the last read is kept.
+
 ## Open questions
 
 - Counts from the states: only California's feed is read so far. Another state needs a
@@ -899,14 +1241,13 @@ the ONS's 2022 and 2026 earnings surveys and PISA 2025 typed in by hand.
 - France by address: the commune, department and region are known, but not the
   legislative circonscription (577 districts; needs a district map) or local
   by-elections, so "next elections" is the national calendar filtered by place.
-- The mail service's quota: `setup` reported 100 emails a day on Nov. 4, not the 1,500
-  Google lists for Workspace accounts, and confirmations, reminders and tickets share it.
-  informedvoter.io has SPF and DKIM but no DMARC record, which some inboxes hold against
-  its mail.
+- The mail service's quota: `setup` reported 100 emails a day on Nov. 4 and again on
+  Nov. 25, not the 1,500 Google lists for Workspace accounts, and confirmations, reminders
+  and tickets share it. informedvoter.io has SPF and DKIM but no DMARC record, which some
+  inboxes hold against its mail.
 - Pay by job in France and next door: medians by occupation exist only in national
   sources (INSEE, Destatis and others), with their own definitions and years, so
   "Les grands enjeux" compares sectors instead.
-- Whether the U.S. section should also get a French version (it is English only).
 - Where challengers' positions come from at scale: research staff, candidate
   self-reporting (the Wahl-O-Mat model), or public questionnaires like WWNO's, the
   States Newsroom guides and VOTE411. Competitive races are hand-researched; safer
@@ -914,11 +1255,56 @@ the ONS's 2022 and 2026 earnings surveys and PISA 2025 typed in by hand.
   answers, but 113 candidates still have no usable site, statement or answer, 240 have
   fewer than five positions, and many VOTE411 respondents answer only some questions
   (most Republican challengers answer none). Incumbents are covered by
-  votes; senators need a source senate.gov allows.
-- Senators' recorded votes: senate.gov can't be read, so senators have only
-  Ballotpedia's key votes and what guides.vote cites, while House members have 39
-  roll calls. State legislators' votes are hand-picked where the legislature
+  votes, senators' through Voteview.
+- Senators' recorded votes: since Nov. 25 they come from Voteview (`senate_votes.py`),
+  31 roll calls next to the House's 44, plus the 36 bills of `cosponsors.py`; Ballotpedia's
+  key votes and guides.vote still cover Senate candidates who never served. State
+  legislators' votes are hand-picked where the legislature
   publishes them as pages (N.C., Minnesota); Kentucky and Florida publish PDFs.
+- Certification: 17 of 51 confirmed on Nov. 26. Most states certify by mid-December
+  (Louisiana's runoffs are Dec. 12), and each needs its announcement found and entered in
+  `certified_2026.py` before the strip can say official; Iowa's and Connecticut's
+  legislatures canvass some offices only in January, which keeps "official" off until then.
+- The 2028 field: 3 of the 30 have no positions (Don Lemon, Soulja Boy, Randy Toler), and
+  most others answer only part of the 136 questions. New platforms, speeches and debates
+  go into `scripts/research/president_2028.py`, checked word for word as for France.
+- Seat order in Congress: no score is shown since Nov. 28, and the owner kept the order,
+  which still puts some progressives (Omar, Tlaib, Ocasio-Cortez) among their party's
+  moderates, since they vote against Democratic bills from the left. Members new to Congress
+  in January 2027 sit in the middle of their party until Voteview scores the 120th Congress's
+  first roll calls.
+- Caucus lists: the Freedom Caucus and the Study Committee publish no roster, so their
+  buttons count only the members Wikipedia names (150 of the Study Committee's 189), and
+  members-elect come from Wikipedia's lists until the caucuses list them in January, so the
+  120th view's caucuses are incomplete until then (no New Democrat or Progressive newcomer is
+  listed yet).
+- `data/officeholders.json` is 1,233 KB (Nov. 28, with the governors' positions) and loads
+  with the state and Congress pages; the bios and positions could move into per-state files
+  if it grows.
+- **The live race data is still the Nov. 15 build** (found Nov. 27). The code on the live site
+  is the owner's Nov. 5 push ("Update 2.3"), and the cloud workflow running it failed its
+  checks on all 24 refreshes from Nov. 16 to Nov. 28, each keeping the old race files
+  (`status.json` lists them; the log stays in the workflow's cache). This computer's refreshes
+  failed too: on a candidate with no party (a `KeyError` in update_races.py's sort key, from
+  Nov. 19, where the log starts, until the Nov. 25 build) and on Minnesota's http results
+  citation (Nov. 27, fixed in results.py); and they can't publish until the owner signs git
+  in. The once-a-day steps never ran in the cloud either: refresh_all.py judged a file's age
+  by its modification time, which `actions/checkout` sets to the checkout's, so
+  `congress.json`, `photos.json`, `upcoming.json`, `inflation.json` and France's daily files
+  are still the ones pushed on Nov. 5. Since Nov. 27 it reads the time written inside each
+  file (`written_at`), and the workflow rebuilds them on every run (`INFORMED_VOTER_DAILY_HOURS`
+  12) within a 150-minute budget (`INFORMED_VOTER_BUDGET_MINUTES`). All of it reaches the
+  cloud when the owner pushes the code from GitHub Desktop; the files missing from the
+  repository (`officeholders.json`, `president-2028.json`, `legislators/`, `certified.json`)
+  are built on the first run after that.
+- France's polls: since the night of Nov. 16, `scripts/fr/update_presidentielle.py` parses 0
+  first-round polls (and 31 declared candidates) from French Wikipedia and keeps the old
+  file, so the average here is the Nov. 16 build's and the live site's is Nov. 5's. The
+  article's poll tables have probably changed layout; not looked into yet.
+- Governors: the 21 who leave office in January have no positions of their own on the site
+  except Newsom, DeSantis and Whitmer (from the 2028 research); the state pages show their
+  successors. The 36 elected in 2026 have 10 to 35 positions each (15 the median), well short
+  of the 136 questions (see Real data).
 - The model has no pollster house effects; Idaho's Senate race shows how far a
   plain average can sit from adjusted ones (flagged in the checks).
 - State legislative races: whether to forecast the rated ones (State Navigate rates
