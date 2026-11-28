@@ -1,16 +1,16 @@
 {
  "meta": {
-  "updated": "2026-11-05T03:27+00:00",
+  "updated": "2026-11-17T03:27+00:00",
   "sources": [
    {
     "title": "Élection présidentielle française de 2027",
     "url": "https://fr.wikipedia.org/wiki/Élection_présidentielle_française_de_2027",
-    "revid": 240947719
+    "revid": 241417168
    },
    {
     "title": "Liste de sondages sur l'élection présidentielle française de 2027",
     "url": "https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l'élection_présidentielle_française_de_2027",
-    "revid": 241019119
+    "revid": 241375145
    }
   ],
   "windowDays": 30,
@@ -23,10 +23,35 @@
   "pollCheck": {
    "url": "https://www.commission-des-sondages.fr/notices/",
    "read": true,
-   "newest": 10352,
+   "newest": 10375,
    "missing": []
   },
-  "checks": []
+  "checks": [
+   {
+    "fr": "Clara Egger est candidat(e) (vérifié), mais absent(e) de la liste de Wikipédia.",
+    "en": "Clara Egger is a candidate (checked) but missing from Wikipedia’s list."
+   },
+   {
+    "fr": "Nouveau candidat : Teddy Riner. À vérifier et à ajouter à candidats_2027.py avec sa source.",
+    "en": "New candidate: Teddy Riner. Check and add to candidats_2027.py with a source."
+   },
+   {
+    "fr": "Seul franceinfo liste Joël Chevé comme candidat(e) : à vérifier.",
+    "en": "Only franceinfo lists Joël Chevé as a candidate: to check."
+   },
+   {
+    "fr": "Seul Wikipédia liste Nombre de présences comme candidat(e) : à vérifier.",
+    "en": "Only Wikipédia lists Nombre de présences as a candidate: to check."
+   },
+   {
+    "fr": "Antoine Mikolajczak est candidat(e) (vérifié), mais absent(e) de la liste de Wikipédia.",
+    "en": "Antoine Mikolajczak is a candidate (checked) but missing from Wikipedia’s list."
+   },
+   {
+    "fr": "Seul Wikipédia liste Date comme candidat(e) : à vérifier.",
+    "en": "Only Wikipédia lists Date as a candidate: to check."
+   }
+  ]
  },
  "rounds": {
   "r1": "2027-04-18",
@@ -247,37 +272,6 @@
    }
   },
   {
-   "id": "bernard-cazeneuve",
-   "article": "Bernard Cazeneuve",
-   "name": "Bernard Cazeneuve",
-   "short": "Cazeneuve",
-   "party": null,
-   "partyName": "La Convention",
-   "declared": false,
-   "status": "rallied",
-   "statusSource": {
-    "outlet": "Le Figaro",
-    "title": "Bernard Cazeneuve au Figaro : «Emmanuel Macron n’est pas responsable de tout, mais il l’est de l’essentiel»",
-    "url": "https://www.lefigaro.fr/elections/presidentielles/bernard-cazeneuve-au-figaro-emmanuel-macron-n-est-pas-responsable-de-tout-mais-il-l-est-de-l-essentiel-20261021",
-    "date": "2026-10-21"
-   },
-   "statusNote": {
-    "fr": "A déclaré au Figaro qu’il « aidera » Raphaël Glucksmann à remporter la présidentielle (21 octobre 2026).",
-    "en": "Told Le Figaro he will “help” Raphaël Glucksmann win the presidential election (Oct. 21, 2026)."
-   },
-   "wiki": true,
-   "role": "",
-   "slogan": "Tenir la promesse de la France",
-   "photo": {
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Ministru_prezidents_Valdis_Dombrovskis_tiekas_ar_Francijas_Eiropas_lietu_ministru_Bern%C4%81ru_Kazen%C4%93vu_%28Bernard_Cazeneuve%29_%287985359635%29_%28cropped%29.jpg/330px-Ministru_prezidents_Valdis_Dombrovskis_tiekas_ar_Francijas_Eiropas_lietu_ministru_Bern%C4%81ru_Kazen%C4%93vu_%28Bernard_Cazeneuve%29_%287985359635%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "file": "Ministru prezidents Valdis Dombrovskis tiekas ar Francijas Eiropas lietu ministru Bernāru Kazenēvu (Bernard Cazeneuve) (7985359635) (cropped).jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Ministru_prezidents_Valdis_Dombrovskis_tiekas_ar_Francijas_Eiropas_lietu_ministru_Bern%C4%81ru_Kazen%C4%93vu_(Bernard_Cazeneuve)_(7985359635)_(cropped).jpg",
-    "artist": "State Chancellery of Latvia",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
-   }
-  },
-  {
    "id": "nicolas-dupont-aignan",
    "article": "Nicolas Dupont-Aignan",
    "name": "Nicolas Dupont-Aignan",
@@ -311,7 +305,7 @@
    "name": "Sylvain Durif",
    "short": "Durif",
    "party": null,
-   "partyName": "Indépendant (politique)",
+   "partyName": null,
    "declared": true,
    "status": "declared",
    "statusSource": {
@@ -325,40 +319,12 @@
    "role": "",
    "slogan": "",
    "photo": {
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Sylvain_Durif%2C_sur_une_aire_d%27autoroute%2C_en_2013.png/330px-Sylvain_Durif%2C_sur_une_aire_d%27autoroute%2C_en_2013.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "file": "Sylvain Durif, sur une aire d'autoroute, en 2013.png",
-    "page": "https://commons.wikimedia.org/wiki/File:Sylvain_Durif,_sur_une_aire_d%27autoroute,_en_2013.png",
-    "artist": "chatzefratz",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
-   }
-  },
-  {
-   "id": "clara-egger",
-   "article": "Clara Egger",
-   "name": "Clara Egger",
-   "short": "Egger",
-   "party": null,
-   "partyName": null,
-   "declared": true,
-   "status": "declared",
-   "statusSource": {
-    "outlet": "Le Dauphiné libéré",
-    "title": "L'Ardéchoise Clara Egger est candidate à l’élection présidentielle pour « rétablir un équilibre démocratique »",
-    "url": "https://www.ledauphine.com/politique/2026/05/21/l-ardechoise-clara-egger-est-candidate-a-l-election-presidentielle-pour-retablir-un-equilibre-democratique",
-    "date": "2026-05-21"
-   },
-   "statusNote": null,
-   "wiki": true,
-   "role": "Co-fondatrice et responsable de partenariats internationaux de Solution Démocratique",
-   "slogan": "Pour que voter serve enfin",
-   "photo": {
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/ClaraEgger_2021-12-29_18-16-03.jpg/330px-ClaraEgger_2021-12-29_18-16-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "file": "ClaraEgger 2021-12-29 18-16-03.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:ClaraEgger_2021-12-29_18-16-03.jpg",
-    "artist": "Thomas Binet",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Sylvain_Durif.jpg/330px-Sylvain_Durif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Sylvain Durif.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Sylvain_Durif.jpg",
+    "artist": "ThimGui",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
    }
   },
   {
@@ -483,7 +449,7 @@
    },
    "statusNote": null,
    "wiki": true,
-   "role": "Présidente du groupe RN à l'Assemblée nationale (depuis 2022)",
+   "role": "Députée de la 11e circonscription du Pas-de-Calais (depuis 2017)",
    "slogan": "",
    "photo": {
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Marine_Le_Pen_2025_%28cropped%29.jpg/330px-Marine_Le_Pen_2025_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -591,27 +557,6 @@
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
    }
-  },
-  {
-   "id": "antoine-mikolajczak",
-   "article": "Antoine Mikolajczak",
-   "name": "Antoine Mikolajczak",
-   "short": "Mikolajczak",
-   "party": null,
-   "partyName": null,
-   "declared": true,
-   "status": "declared",
-   "statusSource": {
-    "outlet": "L'Alsace",
-    "title": "Présidentielle 2027. Antoine Mikolajczak, candidat attaché « aux faits » et à « la nuance » de passage à Mulhouse",
-    "url": "https://www.lalsace.fr/elections/2026/10/03/antoine-mikolajczak-candidat-attache-aux-faits-et-a-la-nuance",
-    "date": "2026-10-03"
-   },
-   "statusNote": null,
-   "wiki": false,
-   "role": "",
-   "slogan": "Renouer avec notre avenir",
-   "photo": null
   },
   {
    "id": "manolo-mlekuz",
@@ -768,6 +713,34 @@
    }
   },
   {
+   "id": "teddy-riner",
+   "article": "Teddy Riner",
+   "name": "Teddy Riner",
+   "short": "Riner",
+   "party": null,
+   "partyName": "Indépendant (politique)",
+   "declared": true,
+   "status": "declared",
+   "statusSource": {
+    "outlet": "franceinfo",
+    "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ?",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+    "date": "2026-10-22"
+   },
+   "statusNote": null,
+   "wiki": true,
+   "role": "",
+   "slogan": "La France qu'on veut",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Teddy_Riner_Cannes_2016.jpg/330px-Teddy_Riner_Cannes_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Teddy Riner Cannes 2016.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Teddy_Riner_Cannes_2016.jpg",
+    "artist": "Georges Biard",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
+  },
+  {
    "id": "fabien-roussel",
    "article": "Fabien Roussel",
    "name": "Fabien Roussel",
@@ -869,7 +842,7 @@
    "statusNote": null,
    "wiki": true,
    "role": "Président de Reconquête (depuis 2021)",
-   "slogan": "",
+   "slogan": "Notre avenir sera français",
    "photo": {
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Portrait_d%27%C3%89ric_Zemmour%2C_avril_2022.jpg/330px-Portrait_d%27%C3%89ric_Zemmour%2C_avril_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "file": "Portrait d'Éric Zemmour, avril 2022.jpg",
@@ -878,6 +851,38 @@
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
    }
+  },
+  {
+   "id": "date",
+   "article": "Date",
+   "name": "Date",
+   "short": "Date",
+   "party": null,
+   "partyName": null,
+   "declared": false,
+   "status": "unconfirmed",
+   "statusSource": null,
+   "statusNote": null,
+   "wiki": false,
+   "role": "",
+   "slogan": "",
+   "photo": null
+  },
+  {
+   "id": "nombre-de-presences",
+   "article": "Nombre de présences",
+   "name": "Nombre de présences",
+   "short": "présences",
+   "party": null,
+   "partyName": null,
+   "declared": false,
+   "status": "unconfirmed",
+   "statusSource": null,
+   "statusNote": null,
+   "wiki": false,
+   "role": "2",
+   "slogan": "1",
+   "photo": null
   },
   {
    "id": "juan-branco",
@@ -992,37 +997,6 @@
    "photo": null
   },
   {
-   "id": "francois-hollande",
-   "article": "François Hollande",
-   "name": "François Hollande",
-   "short": "Hollande",
-   "party": "PS",
-   "partyName": "Parti socialiste (France)",
-   "declared": false,
-   "status": "not-declared",
-   "statusSource": {
-    "outlet": "LCP",
-    "title": "Présidentielle 2027: la liste des candidats déjà en lice et des prétendants",
-    "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
-    "date": "2026-10-14"
-   },
-   "statusNote": {
-    "fr": "N’a pas déclaré de candidature ; il dit qu’il se prononcera en décembre ou en janvier.",
-    "en": "Hasn’t declared; he says he will decide in December or January."
-   },
-   "wiki": true,
-   "role": "",
-   "slogan": "",
-   "photo": {
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Fran%C3%A7ois_Hollande_-_2017_%2827869823159%29_%28cropped_2%29.jpg/330px-Fran%C3%A7ois_Hollande_-_2017_%2827869823159%29_%28cropped_2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "file": "François Hollande - 2017 (27869823159) (cropped 2).jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Hollande_-_2017_(27869823159)_(cropped_2).jpg",
-    "artist": "Web Summit",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
-   }
-  },
-  {
    "id": "dominique-de-villepin",
    "article": "Dominique de Villepin",
    "name": "Dominique de Villepin",
@@ -1051,6 +1025,60 @@
     "artist": "Georges Seguin ( Okki)",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
+  },
+  {
+   "id": "christine-lagarde",
+   "article": "Christine Lagarde",
+   "name": "Christine Lagarde",
+   "short": "Lagarde",
+   "party": null,
+   "partyName": null,
+   "declared": false,
+   "status": "not-declared",
+   "statusSource": null,
+   "statusNote": null,
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Christine_Lagarde%2C_2023.jpg/330px-Christine_Lagarde%2C_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Christine Lagarde, 2023.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Christine_Lagarde,_2023.jpg",
+    "artist": "European Parliament from EU",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+   }
+  },
+  {
+   "id": "francois-hollande",
+   "article": "François Hollande",
+   "name": "François Hollande",
+   "short": "Hollande",
+   "party": "PS",
+   "partyName": "Parti socialiste (France)",
+   "declared": false,
+   "status": "not-declared",
+   "statusSource": {
+    "outlet": "LCP",
+    "title": "Présidentielle 2027: la liste des candidats déjà en lice et des prétendants",
+    "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+    "date": "2026-10-14"
+   },
+   "statusNote": {
+    "fr": "N’a pas déclaré de candidature ; il dit qu’il se prononcera en décembre ou en janvier.",
+    "en": "Hasn’t declared; he says he will decide in December or January."
+   },
+   "wiki": true,
+   "role": "",
+   "slogan": "",
+   "photo": {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Fran%C3%A7ois_Hollande_-_2017_%2827869823159%29_%28cropped_2%29.jpg/330px-Fran%C3%A7ois_Hollande_-_2017_%2827869823159%29_%28cropped_2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "François Hollande - 2017 (27869823159) (cropped 2).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Hollande_-_2017_(27869823159)_(cropped_2).jpg",
+    "artist": "Web Summit",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -1303,65 +1331,72 @@
  ],
  "r1": {
   "average": {
-   "from": "2026-10-07",
-   "to": "2026-10-29",
+   "from": "2026-10-15",
+   "to": "2026-11-13",
    "polls": 14,
    "candidates": [
     {
-     "avg": 35.1,
-     "lo": 32.0,
-     "hi": 37.5,
+     "avg": 34.1,
+     "lo": 30.75,
+     "hi": 36.0,
      "polls": 14,
      "id": "marine-le-pen"
     },
     {
-     "avg": 16.8,
+     "avg": 17.3,
      "lo": 15.0,
-     "hi": 20.0,
+     "hi": 20.25,
      "polls": 14,
      "id": "jean-luc-melenchon"
     },
     {
-     "avg": 14.5,
+     "avg": 13.7,
      "lo": 11.5,
      "hi": 18.5,
      "polls": 14,
      "id": "edouard-philippe"
     },
     {
-     "avg": 13.0,
-     "lo": 10.0,
+     "avg": 12.8,
+     "lo": 10.5,
      "hi": 15.75,
      "polls": 14,
      "id": "raphael-glucksmann"
     },
     {
-     "avg": 8.4,
+     "avg": 8.1,
      "lo": 4.0,
+     "hi": 12.0,
+     "polls": 14,
+     "id": "david-lisnard"
+    },
+    {
+     "avg": 7.9,
+     "lo": 3.5,
      "hi": 17.0,
      "polls": 14,
      "id": "gabriel-attal"
     },
     {
-     "avg": 7.4,
-     "lo": 5.0,
+     "avg": 6.8,
+     "lo": 4.0,
      "hi": 12.25,
      "polls": 14,
      "id": "bruno-retailleau"
     },
     {
-     "avg": 6.8,
-     "lo": 4.0,
-     "hi": 12.0,
-     "polls": 11,
-     "id": "david-lisnard"
-    },
-    {
-     "avg": 4.1,
-     "lo": 3.0,
+     "avg": 3.8,
+     "lo": 2.5,
      "hi": 6.0,
      "polls": 14,
      "id": "eric-zemmour"
+    },
+    {
+     "avg": 3.5,
+     "lo": 2.0,
+     "hi": 4.5,
+     "polls": 3,
+     "id": "teddy-riner"
     },
     {
      "avg": 2.7,
@@ -1371,14 +1406,14 @@
      "id": "marine-tondelier"
     },
     {
-     "avg": 2.2,
-     "lo": 2.0,
+     "avg": 2.3,
+     "lo": 1.5,
      "hi": 3.0,
-     "polls": 4,
+     "polls": 5,
      "id": "francois-ruffin"
     },
     {
-     "avg": 2.1,
+     "avg": 2.2,
      "lo": 1.0,
      "hi": 3.25,
      "polls": 14,
@@ -1392,29 +1427,361 @@
      "id": "fabien-roussel"
     },
     {
-     "avg": 1.2,
+     "avg": 1.6,
      "lo": 1.0,
-     "hi": 1.5,
-     "polls": 2,
+     "hi": 2.5,
+     "polls": 4,
      "id": "natacha-polony"
     },
     {
-     "avg": 0.7,
+     "avg": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "polls": 1,
+     "id": "francois-asselineau"
+    },
+    {
+     "avg": 0.6,
      "lo": 0.0,
      "hi": 1.0,
      "polls": 14,
      "id": "nathalie-arthaud"
     },
     {
-     "avg": 0.5,
+     "avg": 0.6,
      "lo": 0.5,
-     "hi": 0.5,
+     "hi": 0.75,
      "polls": 2,
      "id": "karim-bouamrane"
     }
    ]
   },
   "polls": [
+   {
+    "pollster": "Elabe",
+    "url": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2394",
+    "notice": 10375,
+    "dates": "12-13 novembre 2026",
+    "end": "2026-11-13",
+    "n": 1500,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 13.5,
+      "edouard-philippe": 15.0,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 4.5,
+      "dominique-de-villepin": 2.5
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.5,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 14.0,
+      "gabriel-attal": 10.0,
+      "bruno-retailleau": 9.0,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 4.5,
+      "dominique-de-villepin": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.5,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.5,
+      "raphael-glucksmann": 13.0,
+      "gabriel-attal": 5.5,
+      "edouard-philippe": 12.0,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 33.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.5,
+      "fabien-roussel": 1.5,
+      "raphael-glucksmann": 14.0,
+      "gabriel-attal": 8.5,
+      "david-lisnard": 10.5,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 2.5,
+      "marine-le-pen": 32.0,
+      "eric-zemmour": 4.0,
+      "francois-ruffin": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 18.5,
+      "fabien-roussel": 2.5,
+      "raphael-glucksmann": 13.5,
+      "edouard-philippe": 13.0,
+      "david-lisnard": 9.0,
+      "bruno-retailleau": 4.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 32.5,
+      "eric-zemmour": 3.5
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 1.5,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.5,
+      "gabriel-attal": 4.0,
+      "edouard-philippe": 9.5,
+      "david-lisnard": 8.0,
+      "bruno-retailleau": 4.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 31.0,
+      "eric-zemmour": 3.0,
+      "natacha-polony": 1.5,
+      "teddy-riner": 4.5
+     }
+    ]
+   },
+   {
+    "pollster": "OpinionWay",
+    "url": "http://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10371-pres-iv-opinionway-cnews-12-novembre.pdf",
+    "notice": 10371,
+    "dates": "10-12 novembre 2026",
+    "end": "2026-11-12",
+    "n": 964,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 10.0,
+      "gabriel-attal": 3.0,
+      "edouard-philippe": 12.0,
+      "david-lisnard": 9.0,
+      "bruno-retailleau": 4.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 31.0,
+      "eric-zemmour": 3.0,
+      "karim-bouamrane": 0.5,
+      "teddy-riner": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 1.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 4.0,
+      "edouard-philippe": 12.0,
+      "david-lisnard": 10.0,
+      "bruno-retailleau": 5.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 32.0,
+      "eric-zemmour": 2.0,
+      "karim-bouamrane": 1.0
+     }
+    ]
+   },
+   {
+    "pollster": "Opinionway",
+    "url": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2396",
+    "notice": 10372,
+    "dates": "9-10 novembre 2026",
+    "end": "2026-11-10",
+    "n": 982,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 17.0,
+      "fabien-roussel": 1.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 4.0,
+      "edouard-philippe": 11.0,
+      "david-lisnard": 10.0,
+      "bruno-retailleau": 4.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 12.0,
+      "edouard-philippe": 12.0,
+      "david-lisnard": 11.0,
+      "bruno-retailleau": 4.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 16.0,
+      "fabien-roussel": 1.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 13.0,
+      "gabriel-attal": 10.0,
+      "david-lisnard": 12.0,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.0
+     }
+    ]
+   },
+   {
+    "pollster": "Cluster17",
+    "url": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2387",
+    "notice": 10368,
+    "dates": "9-10 novembre 2026",
+    "end": "2026-11-10",
+    "n": 1164,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 20.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 1.5,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 13.5,
+      "david-lisnard": 10.0,
+      "bruno-retailleau": 5.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 30.5,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 20.5,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 1.5,
+      "raphael-glucksmann": 11.5,
+      "gabriel-attal": 11.0,
+      "david-lisnard": 10.0,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 3.0,
+      "marine-le-pen": 31.0,
+      "eric-zemmour": 3.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 20.5,
+      "fabien-roussel": 2.5,
+      "marine-tondelier": 1.5,
+      "raphael-glucksmann": 10.0,
+      "david-lisnard": 10.0,
+      "bruno-retailleau": 5.5,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 30.5,
+      "eric-zemmour": 3.0,
+      "christine-lagarde": 14.0
+     },
+     {
+      "nathalie-arthaud": 0.5,
+      "jean-luc-melenchon": 19.0,
+      "fabien-roussel": 1.5,
+      "marine-tondelier": 1.0,
+      "raphael-glucksmann": 8.0,
+      "gabriel-attal": 2.0,
+      "edouard-philippe": 8.0,
+      "david-lisnard": 8.0,
+      "bruno-retailleau": 5.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 27.0,
+      "eric-zemmour": 2.0,
+      "francois-asselineau": 1.0,
+      "christine-lagarde": 8.0,
+      "natacha-polony": 2.5,
+      "teddy-riner": 2.0,
+      "francois-ruffin": 1.5,
+      "dominique-de-villepin": 1.0
+     }
+    ]
+   },
+   {
+    "pollster": "Harris",
+    "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10362-pres-iv-toluna-harris-interactive-9-novembre.pdf",
+    "notice": 10362,
+    "dates": "3-5 novembre 2026",
+    "end": "2026-11-05",
+    "n": 2101,
+    "scenarios": [
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 19.0,
+      "fabien-roussel": 1.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 11.0,
+      "edouard-philippe": 12.0,
+      "david-lisnard": 9.0,
+      "bruno-retailleau": 5.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 34.0,
+      "eric-zemmour": 3.0,
+      "dominique-de-villepin": 2.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 19.0,
+      "fabien-roussel": 1.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 12.0,
+      "gabriel-attal": 9.0,
+      "david-lisnard": 9.0,
+      "bruno-retailleau": 6.0,
+      "nicolas-dupont-aignan": 1.0,
+      "marine-le-pen": 35.0,
+      "eric-zemmour": 3.0,
+      "dominique-de-villepin": 2.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 18.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 11.0,
+      "gabriel-attal": 6.0,
+      "edouard-philippe": 11.0,
+      "bruno-retailleau": 7.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 19.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 2.0,
+      "raphael-glucksmann": 12.0,
+      "edouard-philippe": 14.0,
+      "bruno-retailleau": 8.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 4.0
+     },
+     {
+      "nathalie-arthaud": 1.0,
+      "jean-luc-melenchon": 19.0,
+      "fabien-roussel": 2.0,
+      "marine-tondelier": 3.0,
+      "raphael-glucksmann": 13.0,
+      "gabriel-attal": 10.0,
+      "bruno-retailleau": 10.0,
+      "nicolas-dupont-aignan": 2.0,
+      "marine-le-pen": 36.0,
+      "eric-zemmour": 4.0
+     }
+    ]
+   },
    {
     "pollster": "Ifop",
     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10352-pres-iv-ifop-lci-3-novembre.pdf",
@@ -4358,11 +4725,196 @@
  },
  "r2": [
   {
+   "id": "raphael-glucksmann--marine-le-pen",
+   "a": "raphael-glucksmann",
+   "b": "marine-le-pen",
+   "label": "Glucksmann – Le Pen",
+   "polls": [
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2394",
+     "notice": 10375,
+     "dates": "12-13 novembre 2026",
+     "end": "2026-11-13",
+     "n": 1500,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10371-pres-iv-opinionway-cnews-12-novembre.pdf",
+     "notice": 10371,
+     "dates": "10-12 novembre 2026",
+     "end": "2026-11-12",
+     "n": 964,
+     "a": 42.0,
+     "b": 58.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10362-pres-iv-toluna-harris-interactive-9-novembre.pdf",
+     "notice": 10362,
+     "dates": "3-5 novembre 2026",
+     "end": "2026-11-05",
+     "n": 2101,
+     "a": 40.0,
+     "b": 60.0
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10333-pres-iv-opinionway-cnews-22-octobre.pdf",
+     "notice": 10333,
+     "dates": "21-22 octobre 2026",
+     "end": "2026-10-22",
+     "n": 973,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10332-pres-iv-toluna-harris-interactive-23-octobre.pdf",
+     "notice": 10332,
+     "dates": "19-21 octobre 2026",
+     "end": "2026-10-21",
+     "n": 2094,
+     "a": 41.0,
+     "b": 59.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10327-pres-barometre-election-v7-ifop-20-octobre.pdf",
+     "notice": 10327,
+     "dates": "17-19 octobre 2026",
+     "end": "2026-10-19",
+     "n": 2081,
+     "a": 43.0,
+     "b": 57.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10324-pres-iv-elabe-17-octobre.pdf",
+     "notice": 10324,
+     "dates": "14-16 octobre 2026",
+     "end": "2026-10-16",
+     "n": 1701,
+     "a": 46.5,
+     "b": 53.5
+    },
+    {
+     "pollster": "YouGov",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10323-pres-iv-yougov-le-huffpost-18-octobre.pdf",
+     "notice": 10323,
+     "dates": "12-15 octobre 2026",
+     "end": "2026-10-15",
+     "n": 1094,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10319-pres-iv-opinionway-cnews-15-octobre.pdf",
+     "notice": 10319,
+     "dates": "13-14 octobre 2026",
+     "end": "2026-10-14",
+     "n": 1043,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "YouGov",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10270-pres-iv-yougov-huffpost-23-septembre.pdf",
+     "notice": 10270,
+     "dates": "17-21 septembre 2026",
+     "end": "2026-09-21",
+     "n": 1103,
+     "a": 41.0,
+     "b": 59.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10245-pres-iv-elabe-29-aout.pdf",
+     "notice": 10245,
+     "dates": "26-28 août 2026",
+     "end": "2026-08-28",
+     "n": 1503,
+     "a": 43.0,
+     "b": 57.0
+    },
+    {
+     "pollster": "Ifop",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10242-pres-barometre-election-pres-iv-v5-ifop-26-aout.pdf",
+     "notice": 10242,
+     "dates": "24-25 août 2026",
+     "end": "2026-08-25",
+     "n": 1598,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "Cluster17",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10246-pres-cluster17-le-grand-continent-31-aout.pdf",
+     "notice": 10246,
+     "dates": "22-24 juillet 2026",
+     "end": "2026-07-24",
+     "n": 1506,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10226-pres-elabe-11-juillet.pdf",
+     "notice": 10226,
+     "dates": "9-10 juillet 2026",
+     "end": "2026-07-10",
+     "n": 1503,
+     "a": 41.5,
+     "b": 58.5
+    }
+   ],
+   "average": {
+    "a": 43.3,
+    "b": 56.7,
+    "polls": 8,
+    "from": "2026-10-15",
+    "to": "2026-11-13"
+   }
+  },
+  {
    "id": "jean-luc-melenchon--marine-le-pen",
    "a": "jean-luc-melenchon",
    "b": "marine-le-pen",
    "label": "Mélenchon – Le Pen",
    "polls": [
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2394",
+     "notice": 10375,
+     "dates": "12-13 novembre 2026",
+     "end": "2026-11-13",
+     "n": 1500,
+     "a": 31.5,
+     "b": 68.5
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10371-pres-iv-opinionway-cnews-12-novembre.pdf",
+     "notice": 10371,
+     "dates": "10-12 novembre 2026",
+     "end": "2026-11-12",
+     "n": 964,
+     "a": 32.0,
+     "b": 68.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10362-pres-iv-toluna-harris-interactive-9-novembre.pdf",
+     "notice": 10362,
+     "dates": "3-5 novembre 2026",
+     "end": "2026-11-05",
+     "n": 2101,
+     "a": 32.0,
+     "b": 68.0
+    },
     {
      "pollster": "OpinionWay",
      "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10333-pres-iv-opinionway-cnews-22-octobre.pdf",
@@ -4585,11 +5137,11 @@
     }
    ],
    "average": {
-    "a": 31.6,
-    "b": 68.4,
-    "polls": 9,
-    "from": "2026-09-24",
-    "to": "2026-10-22"
+    "a": 31.4,
+    "b": 68.6,
+    "polls": 8,
+    "from": "2026-10-15",
+    "to": "2026-11-13"
    }
   },
   {
@@ -4598,6 +5150,36 @@
    "b": "marine-le-pen",
    "label": "Philippe – Le Pen",
    "polls": [
+    {
+     "pollster": "Elabe",
+     "url": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2394",
+     "notice": 10375,
+     "dates": "12-13 novembre 2026",
+     "end": "2026-11-13",
+     "n": 1500,
+     "a": 45.0,
+     "b": 55.0
+    },
+    {
+     "pollster": "OpinionWay",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10371-pres-iv-opinionway-cnews-12-novembre.pdf",
+     "notice": 10371,
+     "dates": "10-12 novembre 2026",
+     "end": "2026-11-12",
+     "n": 964,
+     "a": 44.0,
+     "b": 56.0
+    },
+    {
+     "pollster": "Harris",
+     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10362-pres-iv-toluna-harris-interactive-9-novembre.pdf",
+     "notice": 10362,
+     "dates": "3-5 novembre 2026",
+     "end": "2026-11-05",
+     "n": 2101,
+     "a": 42.0,
+     "b": 58.0
+    },
     {
      "pollster": "OpinionWay",
      "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10333-pres-iv-opinionway-cnews-22-octobre.pdf",
@@ -4840,136 +5422,11 @@
     }
    ],
    "average": {
-    "a": 44.9,
-    "b": 55.1,
-    "polls": 9,
-    "from": "2026-09-24",
-    "to": "2026-10-22"
-   }
-  },
-  {
-   "id": "raphael-glucksmann--marine-le-pen",
-   "a": "raphael-glucksmann",
-   "b": "marine-le-pen",
-   "label": "Glucksmann – Le Pen",
-   "polls": [
-    {
-     "pollster": "OpinionWay",
-     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10333-pres-iv-opinionway-cnews-22-octobre.pdf",
-     "notice": 10333,
-     "dates": "21-22 octobre 2026",
-     "end": "2026-10-22",
-     "n": 973,
-     "a": 44.0,
-     "b": 56.0
-    },
-    {
-     "pollster": "Harris",
-     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10332-pres-iv-toluna-harris-interactive-23-octobre.pdf",
-     "notice": 10332,
-     "dates": "19-21 octobre 2026",
-     "end": "2026-10-21",
-     "n": 2094,
-     "a": 41.0,
-     "b": 59.0
-    },
-    {
-     "pollster": "Ifop",
-     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10327-pres-barometre-election-v7-ifop-20-octobre.pdf",
-     "notice": 10327,
-     "dates": "17-19 octobre 2026",
-     "end": "2026-10-19",
-     "n": 2081,
-     "a": 43.0,
-     "b": 57.0
-    },
-    {
-     "pollster": "Elabe",
-     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10324-pres-iv-elabe-17-octobre.pdf",
-     "notice": 10324,
-     "dates": "14-16 octobre 2026",
-     "end": "2026-10-16",
-     "n": 1701,
-     "a": 46.5,
-     "b": 53.5
-    },
-    {
-     "pollster": "YouGov",
-     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10323-pres-iv-yougov-le-huffpost-18-octobre.pdf",
-     "notice": 10323,
-     "dates": "12-15 octobre 2026",
-     "end": "2026-10-15",
-     "n": 1094,
-     "a": 45.0,
-     "b": 55.0
-    },
-    {
-     "pollster": "OpinionWay",
-     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10319-pres-iv-opinionway-cnews-15-octobre.pdf",
-     "notice": 10319,
-     "dates": "13-14 octobre 2026",
-     "end": "2026-10-14",
-     "n": 1043,
-     "a": 44.0,
-     "b": 56.0
-    },
-    {
-     "pollster": "YouGov",
-     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/septembre/10270-pres-iv-yougov-huffpost-23-septembre.pdf",
-     "notice": 10270,
-     "dates": "17-21 septembre 2026",
-     "end": "2026-09-21",
-     "n": 1103,
-     "a": 41.0,
-     "b": 59.0
-    },
-    {
-     "pollster": "Elabe",
-     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10245-pres-iv-elabe-29-aout.pdf",
-     "notice": 10245,
-     "dates": "26-28 août 2026",
-     "end": "2026-08-28",
-     "n": 1503,
-     "a": 43.0,
-     "b": 57.0
-    },
-    {
-     "pollster": "Ifop",
-     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10242-pres-barometre-election-pres-iv-v5-ifop-26-aout.pdf",
-     "notice": 10242,
-     "dates": "24-25 août 2026",
-     "end": "2026-08-25",
-     "n": 1598,
-     "a": 45.0,
-     "b": 55.0
-    },
-    {
-     "pollster": "Cluster17",
-     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/aout/10246-pres-cluster17-le-grand-continent-31-aout.pdf",
-     "notice": 10246,
-     "dates": "22-24 juillet 2026",
-     "end": "2026-07-24",
-     "n": 1506,
-     "a": 44.0,
-     "b": 56.0
-    },
-    {
-     "pollster": "Elabe",
-     "url": "https://www.commission-des-sondages.fr/notices/files/notices/2026/juillet/10226-pres-elabe-11-juillet.pdf",
-     "notice": 10226,
-     "dates": "9-10 juillet 2026",
-     "end": "2026-07-10",
-     "n": 1503,
-     "a": 41.5,
-     "b": 58.5
-    }
-   ],
-   "average": {
-    "a": 43.9,
-    "b": 56.1,
-    "polls": 6,
-    "from": "2026-10-14",
-    "to": "2026-10-22"
+    "a": 44.7,
+    "b": 55.3,
+    "polls": 8,
+    "from": "2026-10-15",
+    "to": "2026-11-13"
    }
   },
   {

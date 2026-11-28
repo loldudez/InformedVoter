@@ -30,7 +30,7 @@
       "hea-02": {
        "stance": -1,
        "source": {
-        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies: Hern voted Nay",
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices, extended ACA premium subsidies and funded clean energy tax credits: Hern voted Nay",
         "url": "https://clerk.house.gov/Votes/2022420",
         "date": "2022-08-12"
        }
@@ -38,7 +38,7 @@
       "hea-07": {
        "stance": -1,
        "source": {
-        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies: Hern voted Nay",
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices, extended ACA premium subsidies and funded clean energy tax credits: Hern voted Nay",
         "url": "https://clerk.house.gov/Votes/2022420",
         "date": "2022-08-12"
        }
@@ -62,7 +62,23 @@
       "hea-03": {
        "stance": -1,
        "source": {
-        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending: Hern voted Aye",
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement: Hern voted Aye",
+        "url": "https://clerk.house.gov/Votes/2025190",
+        "date": "2025-07-03"
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement: Hern voted Aye",
+        "url": "https://clerk.house.gov/Votes/2025190",
+        "date": "2025-07-03"
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement: Hern voted Aye",
         "url": "https://clerk.house.gov/Votes/2025190",
         "date": "2025-07-03"
        }

@@ -1,0 +1,715 @@
+{
+ "updated": "2026-11-28",
+ "note": "Seven governors elected in 2026 whose race research had fewer than ten positions; researched Nov. 28, 2026.",
+ "races": [
+  {
+   "id": "AR-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "AR-GOV:sanders",
+     "name": "Sarah Huckabee Sanders",
+     "positions": {
+      "eco-12": {
+       "stance": -1,
+       "source": {
+        "title": "Office of Gov. Sarah Huckabee Sanders, 2025 State of the State Address, Jan. 14, 2025: Sanders signed three income tax cuts, lowering the personal income tax rate by a full point",
+        "url": "https://governor.arkansas.gov/news_post/governor-sanders-delivers-state-of-the-state-address-2/",
+        "date": "2025-01-14",
+        "quote": "cut taxes not once, not twice, but three times, lowering our personal income tax rate by a full percentage point"
+       }
+      },
+      "eco-01": {
+       "stance": -1,
+       "source": {
+        "title": "Associated Press (via UA Little Rock Public Radio), Apr. 21, 2025: Sanders has called for eliminating the state income tax",
+        "url": "https://www.ualrpublicradio.org/local-regional-news/2025-04-21/arkansas-governor-says-shes-not-rushing-to-resume-executions-after-signing-nitrogen-gas-bill",
+        "date": "2025-04-21"
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Sarah Huckabee Sanders, 2025 State of the State Address, Jan. 14, 2025: Sanders says her budget holds down spending increases",
+        "url": "https://governor.arkansas.gov/news_post/governor-sanders-delivers-state-of-the-state-address-2/",
+        "date": "2025-01-14",
+        "quote": "The budget I introduced for this year controls spending increases while still making needed investments"
+       }
+      },
+      "edu-09": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Sarah Huckabee Sanders, 2025 State of the State Address, Jan. 14, 2025: Sanders would use medical marijuana revenue to make school breakfast free for every student",
+        "url": "https://governor.arkansas.gov/news_post/governor-sanders-delivers-state-of-the-state-address-2/",
+        "date": "2025-01-14",
+        "quote": "We will also use those funds to make school breakfast in Arkansas completely free."
+       }
+      },
+      "edu-03": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Sarah Huckabee Sanders, 2025 State of the State Address, Jan. 14, 2025: Sanders's Arkansas ACCESS plan would extend scholarships to associate's degrees and non-degree credentials",
+        "url": "https://governor.arkansas.gov/news_post/governor-sanders-delivers-state-of-the-state-address-2/",
+        "date": "2025-01-14",
+        "quote": "expanding scholarships to associate’s degrees and non-degree credentials"
+       }
+      },
+      "sta-07": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Sarah Huckabee Sanders, 2025 State of the State Address, Jan. 14, 2025: Sanders would fund colleges for associate's degrees and non-degree credentials, not only bachelor's degrees",
+        "url": "https://governor.arkansas.gov/news_post/governor-sanders-delivers-state-of-the-state-address-2/",
+        "date": "2025-01-14",
+        "quote": "puts state dollars behind all types of degrees: bachelor’s, associate’s, and non-degree credentials"
+       }
+      },
+      "sta-08": {
+       "stance": 2,
+       "source": {
+        "title": "Office of Gov. Sarah Huckabee Sanders, 2025 State of the State Address, Jan. 14, 2025: Sanders points to more state troopers than in a generation and a raise of nearly 20% in their starting pay",
+        "url": "https://governor.arkansas.gov/news_post/governor-sanders-delivers-state-of-the-state-address-2/",
+        "date": "2025-01-14",
+        "quote": "through our new state pay plan, will raise their starting pay by nearly 20%"
+       }
+      },
+      "cri-05": {
+       "stance": 2,
+       "source": {
+        "title": "Office of Gov. Sarah Huckabee Sanders, 2025 State of the State Address, Jan. 14, 2025: Sanders would expand and require evidence-based programs in every prison",
+        "url": "https://governor.arkansas.gov/news_post/governor-sanders-delivers-state-of-the-state-address-2/",
+        "date": "2025-01-14",
+        "quote": "We will expand and require evidence-based programming in our prisons"
+       }
+      },
+      "imm-07": {
+       "stance": 2,
+       "source": {
+        "title": "Office of Gov. Sarah Huckabee Sanders, 2025 State of the State Address, Jan. 14, 2025: Sanders backed the Defense Against Criminal Illegals Act, with tougher penalties and removal for violent offenders",
+        "url": "https://governor.arkansas.gov/news_post/governor-sanders-delivers-state-of-the-state-address-2/",
+        "date": "2025-01-14",
+        "quote": "pass the Defense Against Criminal Illegals Act to slap enhanced penalties on violent illegal immigrants and remove them from our state"
+       }
+      },
+      "cri-09": {
+       "stance": 1,
+       "source": {
+        "title": "Associated Press (via UA Little Rock Public Radio), Apr. 21, 2025: Sanders signed a 2025 law allowing executions by nitrogen gas, though she says she is in no hurry to resume them",
+        "url": "https://www.ualrpublicradio.org/local-regional-news/2025-04-21/arkansas-governor-says-shes-not-rushing-to-resume-executions-after-signing-nitrogen-gas-bill",
+        "date": "2025-04-21"
+       }
+      },
+      "soc-11": {
+       "stance": -2,
+       "source": {
+        "title": "Associated Press (via PBS News), Mar. 14, 2023: Sanders signed a 2023 law letting anyone given gender-affirming care as a minor sue the doctor until 15 years after turning 18, which legal experts said could end that care",
+        "url": "https://www.pbs.org/newshour/politics/sanders-signs-arkansas-gender-affirming-care-malpractice-bill-into-law",
+        "date": "2023-03-14"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "VT-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "VT-GOV:scott",
+     "name": "Phil Scott",
+     "positions": {
+      "hou-04": {
+       "stance": 2,
+       "source": {
+        "title": "Office of Gov. Phil Scott, 2025 inaugural address, Jan. 9, 2025: Scott calls for regulatory changes to build more housing, including wider Act 250 exemptions",
+        "url": "https://governor.vermont.gov/press-release/transcript-governor-phil-scott-delivers-2025-inaugural-address",
+        "date": "2025-01-09",
+        "quote": "pushing for regulatory changes to legalize housing"
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Phil Scott, 2025 inaugural address, Jan. 9, 2025: Scott says spending more hasn't fixed the state's problems",
+        "url": "https://governor.vermont.gov/press-release/transcript-governor-phil-scott-delivers-2025-inaugural-address",
+        "date": "2025-01-09",
+        "quote": "As I’ve said before, just throwing more money at problems hasn’t equaled success."
+       }
+      },
+      "sta-02": {
+       "stance": -1,
+       "source": {
+        "title": "Office of Gov. Phil Scott, 2025 inaugural address, Jan. 9, 2025: Scott says school spending has grown too fast and wants costs under control",
+        "url": "https://governor.vermont.gov/press-release/transcript-governor-phil-scott-delivers-2025-inaugural-address",
+        "date": "2025-01-09",
+        "quote": "Since I took office, the Education Fund has gone from $1.6 billion to an astounding $2.3 billion and climbing."
+       }
+      },
+      "edu-01": {
+       "stance": -1,
+       "source": {
+        "title": "Office of Gov. Phil Scott, 2025 inaugural address, Jan. 9, 2025: Scott says Vermont already spends more than most states on schools and wants costs under control",
+        "url": "https://governor.vermont.gov/press-release/transcript-governor-phil-scott-delivers-2025-inaugural-address",
+        "date": "2025-01-09",
+        "quote": "We’re one of the top education spenders in the nation."
+       }
+      },
+      "edu-04": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Phil Scott, 2025 inaugural address, Jan. 9, 2025: Scott says teachers in many districts are underpaid",
+        "url": "https://governor.vermont.gov/press-release/transcript-governor-phil-scott-delivers-2025-inaugural-address",
+        "date": "2025-01-09",
+        "quote": "Yet in too many districts, teachers aren’t paid enough"
+       }
+      },
+      "sta-04": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Phil Scott, 2025 inaugural address, Jan. 9, 2025: Scott's budget would offset this year's school property tax increase if school boards hold spending to the projected level",
+        "url": "https://governor.vermont.gov/press-release/transcript-governor-phil-scott-delivers-2025-inaugural-address",
+        "date": "2025-01-09",
+        "quote": "my budget will lower the impact of this year’s increase with a goal to eliminate it"
+       }
+      },
+      "imm-06": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Phil Scott, 2025 inaugural address, Jan. 9, 2025: Scott says Vermont will keep resettling refugees",
+        "url": "https://governor.vermont.gov/press-release/transcript-governor-phil-scott-delivers-2025-inaugural-address",
+        "date": "2025-01-09",
+        "quote": "We’ve welcomed over 1,000 refugees in the last three years, and we’ll continue to do our part."
+       }
+      },
+      "hou-07": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Phil Scott, 2025 inaugural address, Jan. 9, 2025: Scott counts restored train service from Burlington to New York City among his administration's results",
+        "url": "https://governor.vermont.gov/press-release/transcript-governor-phil-scott-delivers-2025-inaugural-address",
+        "date": "2025-01-09",
+        "quote": "We brought train service from Burlington to New York City after two decades of waiting."
+       }
+      },
+      "hou-09": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Phil Scott, 2025 inaugural address, Jan. 9, 2025: Scott counts broadband improvements paid for with federal aid among his administration's results",
+        "url": "https://governor.vermont.gov/press-release/transcript-governor-phil-scott-delivers-2025-inaugural-address",
+        "date": "2025-01-09",
+        "quote": "improved broadband for over 100,000 households and businesses"
+       }
+      },
+      "ene-10": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Phil Scott, 2025 inaugural address, Jan. 9, 2025: Scott wants climate policy that is affordable",
+        "url": "https://governor.vermont.gov/press-release/transcript-governor-phil-scott-delivers-2025-inaugural-address",
+        "date": "2025-01-09",
+        "quote": "support climate policy that’s achievable and affordable"
+       }
+      },
+      "ene-08": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Phil Scott, 2025 inaugural address, Jan. 9, 2025: Scott wants infrastructure for housing and flood recovery",
+        "url": "https://governor.vermont.gov/press-release/transcript-governor-phil-scott-delivers-2025-inaugural-address",
+        "date": "2025-01-09",
+        "quote": "let’s strengthen our foundation with infrastructure for housing and flood recovery"
+       }
+      },
+      "gov-06": {
+       "stance": 2,
+       "source": {
+        "title": "VTDigger, June 7, 2021: Scott signed S.15 (2021), mailing a ballot to every registered voter for general elections, and wanted it extended to primaries and local votes",
+        "url": "https://vtdigger.org/2021/06/07/scott-signs-bill-expanding-vote-by-mail-in-general-elections/",
+        "date": "2021-06-07",
+        "quote": "I’m signing this bill because I believe making sure voting is easy and accessible, and increasing voter participation is important"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "OK-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "OK-GOV:mazzei",
+     "name": "Mike Mazzei",
+     "positions": {
+      "eco-01": {
+       "stance": -2,
+       "source": {
+        "title": "Mike Mazzei transition website (his campaign site until the election), The Plan: More High-Paying Jobs",
+        "url": "https://mikeforok.com/the-plan/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "Make Oklahoma a No-Income-Tax State"
+       }
+      },
+      "eco-12": {
+       "stance": -1,
+       "source": {
+        "title": "Mike Mazzei transition website (his campaign site until the election), The Plan: Eliminating Property Tax for Seniors and Veterans",
+        "url": "https://mikeforok.com/the-plan/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "Taxing activity instead of ownership or income does much less harm to economic growth."
+       }
+      },
+      "eco-07": {
+       "stance": 1,
+       "source": {
+        "title": "Mike Mazzei transition website (his campaign site until the election), The Plan: More High-Paying Jobs",
+        "url": "https://mikeforok.com/the-plan/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "Cut unnecessary government programs and restrain spending"
+       }
+      },
+      "edu-03": {
+       "stance": 2,
+       "source": {
+        "title": "Mike Mazzei transition website (his campaign site until the election), The Plan: More High-Paying Jobs",
+        "url": "https://mikeforok.com/the-plan/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "Expand apprenticeships, trade pathways, and career tech programs"
+       }
+      },
+      "sta-07": {
+       "stance": 2,
+       "source": {
+        "title": "Mike Mazzei transition website (his campaign site until the election), The Plan: Education That Works",
+        "url": "https://mikeforok.com/the-plan/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "Expand career and technical education pathways"
+       }
+      },
+      "edu-07": {
+       "stance": 1,
+       "source": {
+        "title": "Mike Mazzei transition website (his campaign site until the election), The Plan: Education That Works",
+        "url": "https://mikeforok.com/the-plan/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "Restore parental transparency and involvement in education decisions"
+       }
+      },
+      "sta-10": {
+       "stance": 0,
+       "source": {
+        "title": "Mike Mazzei transition website (his campaign site until the election), The Plan: More High-Paying Jobs: Mazzei would end poor-return corporate incentives and costly megadeals while revamping incentive programs",
+        "url": "https://mikeforok.com/the-plan/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "Revamp incentive programs to be cost effective for tax payers"
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "Mike Mazzei transition website (his campaign site until the election), The Plan: Protecting Oklahoma Land",
+        "url": "https://mikeforok.com/the-plan/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "Prevent the Commissioners of the Land Office from selling Oklahoma land for green energy projects"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "PA-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "PA-GOV:shapiro",
+     "name": "Josh Shapiro",
+     "positions": {
+      "sta-03": {
+       "stance": 2,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro calls for raising the minimum wage to $15 an hour",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "Because raising the minimum wage to $15/hour will save this Commonwealth $300 million a year on entitlement programs like Medicaid."
+       }
+      },
+      "soc-05": {
+       "stance": 2,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2025-26 budget address, Feb. 4, 2025: Shapiro asked lawmakers to legalize adult-use cannabis and expunge records for small-amount possession",
+        "url": "https://www.pa.gov/governor/newsroom/2025-press-releases/governor-shapiro-2025-26-budget-address-as-prepared",
+        "date": "2025-02-04",
+        "quote": "I ask you to come together and send to my desk a bill that legalizes adult-use cannabis"
+       }
+      },
+      "soc-07": {
+       "stance": 2,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro created the state's first recruitment and retention grants for child care workers",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "More money in the pockets of our child care workers — and more available child care for Pennsylvania families."
+       }
+      },
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro points to the Working Pennsylvanians Tax Credit he signed",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "And together, we created the Working Pennsylvanians Tax Credit."
+       }
+      },
+      "hea-06": {
+       "stance": 2,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro funded mental health services in nearly 800 schools",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "We’ve funded mental health services in nearly 800 schools — and helped hire more than 200 new mental health counselors for our students."
+       }
+      },
+      "hea-07": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro faults Congress for letting health insurance premiums double",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "Nearly 500,000 Pennsylvanians are seeing their health insurance premiums double this year because Congress failed to act."
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro opposes Medicaid work requirements, preferring higher wages",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "Not by adding arbitrary and cumbersome requirements that push people who still need help off the rolls"
+       }
+      },
+      "sta-08": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro would fund four more classes of state troopers",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "let’s continue our work together by funding another four classes of PSP troopers"
+       }
+      },
+      "cri-07": {
+       "stance": 2,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro would increase funding for community violence prevention",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "increasing our commitment to violence prevention rooted in our communities"
+       }
+      },
+      "hou-04": {
+       "stance": 2,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro proposes reforming zoning laws to build more housing",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "I am proposing bold new steps to reform our zoning laws, build more housing, and protect renters and homeowners"
+       }
+      },
+      "hou-06": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro would cap rental application fees at the cost of screening",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "I’m calling for a statewide cap on rental application fees, limiting them to the actual cost of screening"
+       }
+      },
+      "sta-07": {
+       "stance": 2,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro points to his expansion of vo-tech, career and technical education and apprenticeships",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "We’ve expanded vo-tech, CTE, and apprenticeships to open new pathways of opportunity."
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro's Lightning Plan would build more generation and more renewables",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "diversify our energy sector to generate more renewables"
+       }
+      },
+      "sta-10": {
+       "stance": 1,
+       "source": {
+        "title": "Office of Gov. Josh Shapiro, 2026-27 budget address, Feb. 3, 2026: Shapiro would offer data center developers tax credits if they meet his standards, including hiring local workers",
+        "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-s-2026-27-budget-address-as-prepared-for-delive",
+        "date": "2026-02-03",
+        "quote": "If companies adhere to these principles, they will unlock benefits from the Commonwealth, including speed and certainty in permitting and available tax credits."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "IL-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "IL-GOV:pritzker",
+     "name": "JB Pritzker",
+     "positions": {
+      "eco-02": {
+       "stance": 2,
+       "source": {
+        "title": "Gov. JB Pritzker’s 2025 State of the State and budget address (text published by NPR Illinois), Feb. 19, 2025: Pritzker enacted a state child tax credit and ended the state grocery tax",
+        "url": "https://www.nprillinois.org/government-politics/2025-02-19/read-gov-pritzkers-budget-address",
+        "date": "2025-02-19",
+        "quote": "Last year, we lowered taxes on parents when we enacted the Child Tax Credit and permanently eliminated the state grocery tax"
+       }
+      },
+      "sta-02": {
+       "stance": 2,
+       "source": {
+        "title": "Gov. JB Pritzker’s 2026 State of the State and budget address (text published by NPR Illinois), Feb. 18, 2026: Pritzker has put billions more into public schools",
+        "url": "https://www.nprillinois.org/government-politics/2026-02-18/read-gov-pritzkers-state-of-the-state-and-budget-address",
+        "date": "2026-02-18",
+        "quote": "We’ve prioritized school funding, putting billions more into public education to improve the student-teacher ratio and get better outcomes for our children."
+       }
+      },
+      "edu-01": {
+       "stance": 2,
+       "source": {
+        "title": "Gov. JB Pritzker’s 2026 State of the State and budget address (text published by NPR Illinois), Feb. 18, 2026: Pritzker's budget keeps increasing Evidence-Based Funding for schools",
+        "url": "https://www.nprillinois.org/government-politics/2026-02-18/read-gov-pritzkers-state-of-the-state-and-budget-address",
+        "date": "2026-02-18",
+        "quote": "my budget proposal for this year prioritizes our state commitment to Evidence Based Funding and advances our effort to hire more teachers"
+       }
+      },
+      "edu-02": {
+       "stance": 1,
+       "source": {
+        "title": "Gov. JB Pritzker’s 2025 State of the State and budget address (text published by NPR Illinois), Feb. 19, 2025: Pritzker points to free-tuition offers at state universities and to state grants",
+        "url": "https://www.nprillinois.org/government-politics/2025-02-19/read-gov-pritzkers-budget-address",
+        "date": "2025-02-19",
+        "quote": "our state universities’ free college offers like the Huskie Pledge and Illinois Promise are making university education in Illinois more affordable"
+       }
+      },
+      "edu-03": {
+       "stance": 2,
+       "source": {
+        "title": "Gov. JB Pritzker’s 2026 State of the State and budget address (text published by NPR Illinois), Feb. 18, 2026: Pritzker proposes a Vocational Training Grant Program",
+        "url": "https://www.nprillinois.org/government-politics/2026-02-18/read-gov-pritzkers-state-of-the-state-and-budget-address",
+        "date": "2026-02-18",
+        "quote": "I propose we create our Vocational Training Grant Program"
+       }
+      },
+      "sta-07": {
+       "stance": 2,
+       "source": {
+        "title": "Gov. JB Pritzker’s 2026 State of the State and budget address (text published by NPR Illinois), Feb. 18, 2026: Pritzker would help districts and regional vocational centers build workforce programs",
+        "url": "https://www.nprillinois.org/government-politics/2026-02-18/read-gov-pritzkers-state-of-the-state-and-budget-address",
+        "date": "2026-02-18",
+        "quote": "provide school districts and regional vocational centers with support to build and expand specialized workforce programs"
+       }
+      },
+      "hou-04": {
+       "stance": 2,
+       "source": {
+        "title": "Gov. JB Pritzker’s 2026 State of the State and budget address (text published by NPR Illinois), Feb. 18, 2026: Pritzker's BUILD plan would loosen local rules such as parking mandates to build more homes",
+        "url": "https://www.nprillinois.org/government-politics/2026-02-18/read-gov-pritzkers-state-of-the-state-and-budget-address",
+        "date": "2026-02-18",
+        "quote": "an initiative to lower housing costs by making it easier, faster, and more cost-effective to build homes in Illinois"
+       }
+      },
+      "hou-01": {
+       "stance": 1,
+       "source": {
+        "title": "Gov. JB Pritzker’s 2026 State of the State and budget address (text published by NPR Illinois), Feb. 18, 2026: Pritzker would close financing gaps for housing developments",
+        "url": "https://www.nprillinois.org/government-politics/2026-02-18/read-gov-pritzkers-state-of-the-state-and-budget-address",
+        "date": "2026-02-18",
+        "quote": "We’ll add to that a robust approach to closing financing gaps for developing housing of all kinds"
+       }
+      },
+      "ene-02": {
+       "stance": 1,
+       "source": {
+        "title": "Gov. JB Pritzker’s 2026 State of the State and budget address (text published by NPR Illinois), Feb. 18, 2026: Pritzker signed the law lifting Illinois's moratorium on new nuclear power",
+        "url": "https://www.nprillinois.org/government-politics/2026-02-18/read-gov-pritzkers-state-of-the-state-and-budget-address",
+        "date": "2026-02-18",
+        "quote": "I signed the Clean and Reliable Grid Affordability Act which lifted a decades-long moratorium on new nuclear power in Illinois"
+       }
+      },
+      "imm-08": {
+       "stance": -2,
+       "source": {
+        "title": "Gov. JB Pritzker’s 2026 State of the State and budget address (text published by NPR Illinois), Feb. 18, 2026: Pritzker condemns the 2025 federal immigration enforcement surge in Illinois",
+        "url": "https://www.nprillinois.org/government-politics/2026-02-18/read-gov-pritzkers-state-of-the-state-and-budget-address",
+        "date": "2026-02-18",
+        "quote": "Masked, unaccountable federal agents — with little training — occupied our streets, brutalized our people, tear gassed kids and cops"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "CO-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "CO-GOV:weiser",
+     "name": "Phil Weiser",
+     "positions": {
+      "hea-01": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Newsline voter guide (the newsroom’s summary of each platform): Weiser promises universal access to checkups and preventive care",
+        "url": "https://coloradonewsline.com/voter-guides/contests/2026-general-colorado-governor/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "primary care for all"
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Newsline voter guide (the newsroom’s summary of each platform): Weiser would add groups to the state employee health plan and strengthen the public Colorado Option plan",
+        "url": "https://coloradonewsline.com/voter-guides/contests/2026-general-colorado-governor/",
+        "date": "2026-11-28",
+        "accessed": true
+       }
+      },
+      "soc-03": {
+       "stance": 2,
+       "source": {
+        "title": "Colorado Newsline voter guide (the newsroom’s summary of each platform): Weiser would protect Colorado's constitutional right to abortion",
+        "url": "https://coloradonewsline.com/voter-guides/contests/2026-general-colorado-governor/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "against any attacks on our laws protecting the right to choose"
+       }
+      },
+      "soc-04": {
+       "stance": -2,
+       "source": {
+        "title": "Colorado Newsline voter guide (the newsroom’s summary of each platform): Weiser would defend Colorado's laws protecting abortion",
+        "url": "https://coloradonewsline.com/voter-guides/contests/2026-general-colorado-governor/",
+        "date": "2026-11-28",
+        "accessed": true
+       }
+      },
+      "ene-01": {
+       "stance": 2,
+       "source": {
+        "title": "Colorado Newsline voter guide (the newsroom’s summary of each platform): Weiser supports wind, solar and battery technology on the way to net-zero emissions by 2050",
+        "url": "https://coloradonewsline.com/voter-guides/contests/2026-general-colorado-governor/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "Colorado must lean in even more and continue to lead the shift to a clean energy future"
+       }
+      },
+      "ene-06": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Newsline voter guide (the newsroom’s summary of each platform): Weiser would keep Colorado's emission reduction targets",
+        "url": "https://coloradonewsline.com/voter-guides/contests/2026-general-colorado-governor/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "achievement of our statewide emission reduction targets"
+       }
+      },
+      "ene-05": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Newsline voter guide (the newsroom’s summary of each platform): Weiser supports the gradual electrification of cars, buildings and industry",
+        "url": "https://coloradonewsline.com/voter-guides/contests/2026-general-colorado-governor/",
+        "date": "2026-11-28",
+        "accessed": true
+       }
+      },
+      "gov-12": {
+       "stance": 1,
+       "source": {
+        "title": "Colorado Newsline voter guide (the newsroom’s summary of each platform): Weiser calls for audits, performance reviews and procurement reforms",
+        "url": "https://coloradonewsline.com/voter-guides/contests/2026-general-colorado-governor/",
+        "date": "2026-11-28",
+        "accessed": true
+       }
+      },
+      "cri-03": {
+       "stance": 2,
+       "source": {
+        "title": "The Colorado Sun, Nov. 16, 2021: As attorney general, Weiser's office investigated the Aurora police and reached a consent decree requiring changes in its use of force (2021)",
+        "url": "https://coloradosun.com/2021/11/16/aurora-police-use-force-consent-decree-elijah-mcclain/",
+        "date": "2021-11-16",
+        "quote": "The ultimate goal of this consent decree is to elevate policing and to improve public safety here in Aurora"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "RI-GOV",
+   "partial": true,
+   "candidates": [
+    {
+     "id": "RI-GOV:foulkes",
+     "name": "Helena Foulkes",
+     "positions": {
+      "eco-12": {
+       "stance": 1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Foulkes would pay for 20,000 homes with a tax on millionaires",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-governor/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "paid for with a millionaire’s tax"
+       }
+      },
+      "hea-03": {
+       "stance": 1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Foulkes would raise Medicaid payment rates and draw more federal money",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-governor/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "We need to raise Medicaid reimbursement rates and stop leaving federal money on the table."
+       }
+      },
+      "edu-03": {
+       "stance": 2,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Foulkes proposed $100 million for classroom-to-career programs",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-governor/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "That’s why I proposed a $100 million investment in classroom-to-career programs across Rhode Island."
+       }
+      },
+      "ene-10": {
+       "stance": -1,
+       "source": {
+        "title": "Rhode Island Current voter guide (candidates’ answers to the newsroom’s questionnaire): Foulkes rejects trading climate goals for lower energy bills, saying renewables are cheaper than fossil fuels",
+        "url": "https://rhodeislandcurrent.com/voter-guides/contests/2026-general-governor/",
+        "date": "2026-11-28",
+        "accessed": true,
+        "quote": "rolling back the state’s climate goals and setting up a false choice between lower energy bills and policies that address climate change"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

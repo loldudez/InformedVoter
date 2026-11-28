@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-05T03:29+00:00",
+ "updated": "2026-11-28T02:15+00:00",
  "parties": [
   {
    "abbr": "LFI",
    "name": "La France insoumise",
    "en": "France Unbowed",
    "article": "La France insoumise",
-   "revid": 241008816,
+   "revid": 241322082,
    "leaders": [
     {
      "role": "Coordinateur",
@@ -23,7 +23,7 @@
     }
    ],
    "founded": "10 février 2016",
-   "position": "Gauche, Gauche radicale, voire extrême gauche, (contesté)",
+   "position": "Gauche, à gauche radicale, voire extrême gauche, (contesté)",
    "ideology": [
     "Écosocialisme",
     "Socialisme démocratique",
@@ -49,7 +49,7 @@
    "name": "Parti communiste français",
    "en": "French Communist Party",
    "article": "Parti communiste français",
-   "revid": 240509829,
+   "revid": 241689812,
    "leaders": [
     {
      "role": "Secrétaire national",
@@ -74,7 +74,7 @@
     "Eurocommunisme"
    ],
    "site": "https://www.pcf.fr/",
-   "seats": "8 / 577",
+   "seats": "7 / 577",
    "candidates": [
     "fabien-roussel"
    ],
@@ -88,7 +88,7 @@
    "name": "Les Écologistes",
    "en": "The Ecologists",
    "article": "Les Écologistes",
-   "revid": 240840782,
+   "revid": 241654693,
    "leaders": [
     {
      "role": "Secrétaire nationale",
@@ -117,7 +117,7 @@
     "Décroissance"
    ],
    "site": "https://lesecologistes.fr",
-   "seats": "28 / 577",
+   "seats": "23 / 577",
    "candidates": [
     "marine-tondelier"
    ],
@@ -131,7 +131,7 @@
    "name": "Parti socialiste",
    "en": "Socialist Party",
    "article": "Parti socialiste (France)",
-   "revid": 240910349,
+   "revid": 241717151,
    "leaders": [
     {
      "role": "Premier secrétaire",
@@ -156,7 +156,7 @@
     "Europhilie"
    ],
    "site": "https://www.parti-socialiste.fr/",
-   "seats": "62 / 577",
+   "seats": "69 / 577",
    "candidates": [
     "karim-bouamrane"
    ],
@@ -170,7 +170,7 @@
    "name": "Place publique",
    "en": "Public Place",
    "article": "Place publique (parti politique)",
-   "revid": 240967509,
+   "revid": 241736090,
    "leaders": [
     {
      "role": "Co-présidents",
@@ -222,7 +222,7 @@
    "name": "Renaissance",
    "en": "Renaissance",
    "article": "Renaissance (parti)",
-   "revid": 240986058,
+   "revid": 241622817,
    "leaders": [
     {
      "role": "Secrétaire général",
@@ -239,7 +239,7 @@
     }
    ],
    "founded": "6 avril 2016 (En marche) 4 août 2017 (La République en marche) 17 septembre 2022 (Renaissance)",
-   "position": "Centre gauche, à droite, voire extrême centre, ou attrape-tout",
+   "position": "Centre, à droite, voire extrême centre, ou attrape-tout",
    "ideology": [
     "Social-libéralisme",
     "Néolibéralisme",
@@ -247,8 +247,7 @@
     "Europhilie",
     "Troisième voie",
     "Transformisme",
-    "Conservatisme",
-    "Social-démocratie"
+    "Conservatisme"
    ],
    "site": "https://parti-renaissance.fr/",
    "seats": "87 / 577",
@@ -304,7 +303,7 @@
    "name": "Horizons",
    "en": "Horizons",
    "article": "Horizons",
-   "revid": 240952032,
+   "revid": 241738774,
    "leaders": [
     {
      "role": "Président",
@@ -342,7 +341,7 @@
    "name": "Les Républicains",
    "en": "The Republicans",
    "article": "Les Républicains",
-   "revid": 240898661,
+   "revid": 241580360,
    "leaders": [
     {
      "role": "Président",
@@ -359,7 +358,7 @@
     }
    ],
    "founded": "23 avril 2002 (UMP) 30 mai 2015 (LR)",
-   "position": "Droite, à droite radicale",
+   "position": "Droite, proche de l' extrême droite",
    "ideology": [
     "Conservatisme",
     "Gaullisme",
@@ -382,7 +381,7 @@
    "name": "Union des droites pour la République",
    "en": "Union of the Right for the Republic",
    "article": "Union des droites pour la République",
-   "revid": 240630364,
+   "revid": 241605819,
    "leaders": [
     {
      "role": "Président",
@@ -421,7 +420,7 @@
    "name": "Rassemblement national",
    "en": "National Rally",
    "article": "Rassemblement national",
-   "revid": 240908966,
+   "revid": 241704939,
    "leaders": [
     {
      "role": "Président",
@@ -438,7 +437,7 @@
     }
    ],
    "founded": "5 octobre 1972 (FN) 1 er juin 2018 (RN)",
-   "position": "Extrême droite",
+   "position": "Extrême droite [ a ]",
    "ideology": [
     "Nationalisme en France",
     "National-populisme",
@@ -464,7 +463,7 @@
    "name": "Reconquête",
    "en": "Reconquest",
    "article": "Reconquête (parti politique)",
-   "revid": 240909698,
+   "revid": 241605654,
    "leaders": [
     {
      "role": "Président",

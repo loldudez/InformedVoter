@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-27",
  "note": "Florida governor candidates' campaign accounts grouped by contributor, from the Florida Division of Elections database, plus each major candidate's political committee in a note.",
  "races": [
   {
@@ -31,13 +31,13 @@
      "id": "FL-GOV:donalds",
      "name": "Byron Donalds",
      "finance": {
-      "total": 22639781,
+      "total": 22638648,
       "parts": {
-       "pac": 4223101,
-       "party": 4057573,
+       "pac": 4220101,
+       "party": 4080073,
        "public": 1197767,
-       "small": 2180303,
-       "large": 10987966
+       "small": 2179953,
+       "large": 10967683
       },
       "spent": 16183313,
       "from": "2025-02-26",
@@ -58,7 +58,7 @@
        "small": 2460,
        "large": 34551
       },
-      "spent": 905398,
+      "spent": 908279,
       "from": "2026-01-05",
       "asOf": "2026-10-14",
       "source": "Florida Division of Elections",

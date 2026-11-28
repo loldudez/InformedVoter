@@ -38,7 +38,7 @@
       "hea-02": {
        "stance": -1,
        "source": {
-        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies: Scalise voted Nay",
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices, extended ACA premium subsidies and funded clean energy tax credits: Scalise voted Nay",
         "url": "https://clerk.house.gov/Votes/2022420",
         "date": "2022-08-12"
        }
@@ -46,7 +46,7 @@
       "hea-07": {
        "stance": -1,
        "source": {
-        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies: Scalise voted Nay",
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices, extended ACA premium subsidies and funded clean energy tax credits: Scalise voted Nay",
         "url": "https://clerk.house.gov/Votes/2022420",
         "date": "2022-08-12"
        }
@@ -70,7 +70,23 @@
       "hea-03": {
        "stance": -1,
        "source": {
-        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending: Scalise voted Aye",
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement: Scalise voted Aye",
+        "url": "https://clerk.house.gov/Votes/2025190",
+        "date": "2025-07-03"
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement: Scalise voted Aye",
+        "url": "https://clerk.house.gov/Votes/2025190",
+        "date": "2025-07-03"
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement: Scalise voted Aye",
         "url": "https://clerk.house.gov/Votes/2025190",
         "date": "2025-07-03"
        }
@@ -354,7 +370,7 @@
       "hea-02": {
        "stance": 1,
        "source": {
-        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies: Carter voted Yea",
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices, extended ACA premium subsidies and funded clean energy tax credits: Carter voted Yea",
         "url": "https://clerk.house.gov/Votes/2022420",
         "date": "2022-08-12"
        }
@@ -362,7 +378,7 @@
       "hea-07": {
        "stance": 1,
        "source": {
-        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies: Carter voted Yea",
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices, extended ACA premium subsidies and funded clean energy tax credits: Carter voted Yea",
         "url": "https://clerk.house.gov/Votes/2022420",
         "date": "2022-08-12"
        }
@@ -381,6 +397,14 @@
         "title": "U.S. House roll call 404 (2022) on the CHIPS and Science Act (H.R. 4346), funding domestic semiconductor manufacturing: Carter voted Yea",
         "url": "https://clerk.house.gov/Votes/2022404",
         "date": "2022-07-28"
+       }
+      },
+      "ene-01": {
+       "stance": 1,
+       "source": {
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices, extended ACA premium subsidies and funded clean energy tax credits: Carter voted Yea",
+        "url": "https://clerk.house.gov/Votes/2022420",
+        "date": "2022-08-12"
        }
       },
       "def-13": {
@@ -531,7 +555,7 @@
       "hea-02": {
        "stance": -1,
        "source": {
-        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies: Higgins voted Nay",
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices, extended ACA premium subsidies and funded clean energy tax credits: Higgins voted Nay",
         "url": "https://clerk.house.gov/Votes/2022420",
         "date": "2022-08-12"
        }
@@ -539,7 +563,7 @@
       "hea-07": {
        "stance": -1,
        "source": {
-        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies: Higgins voted Nay",
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices, extended ACA premium subsidies and funded clean energy tax credits: Higgins voted Nay",
         "url": "https://clerk.house.gov/Votes/2022420",
         "date": "2022-08-12"
        }
@@ -563,7 +587,23 @@
       "hea-03": {
        "stance": -1,
        "source": {
-        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending: Higgins voted Aye",
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement: Higgins voted Aye",
+        "url": "https://clerk.house.gov/Votes/2025190",
+        "date": "2025-07-03"
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement: Higgins voted Aye",
+        "url": "https://clerk.house.gov/Votes/2025190",
+        "date": "2025-07-03"
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement: Higgins voted Aye",
         "url": "https://clerk.house.gov/Votes/2025190",
         "date": "2025-07-03"
        }
@@ -921,7 +961,7 @@
       "hea-02": {
        "stance": -1,
        "source": {
-        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies: Johnson voted Nay",
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices, extended ACA premium subsidies and funded clean energy tax credits: Johnson voted Nay",
         "url": "https://clerk.house.gov/Votes/2022420",
         "date": "2022-08-12"
        }
@@ -929,7 +969,7 @@
       "hea-07": {
        "stance": -1,
        "source": {
-        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices and extended ACA premium subsidies: Johnson voted Nay",
+        "title": "U.S. House roll call 420 (2022) on the Inflation Reduction Act (H.R. 5376), which let Medicare negotiate drug prices, extended ACA premium subsidies and funded clean energy tax credits: Johnson voted Nay",
         "url": "https://clerk.house.gov/Votes/2022420",
         "date": "2022-08-12"
        }
@@ -953,7 +993,23 @@
       "hea-03": {
        "stance": -1,
        "source": {
-        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending: Johnson voted Aye",
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement: Johnson voted Aye",
+        "url": "https://clerk.house.gov/Votes/2025190",
+        "date": "2025-07-03"
+       }
+      },
+      "ene-01": {
+       "stance": -1,
+       "source": {
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement: Johnson voted Aye",
+        "url": "https://clerk.house.gov/Votes/2025190",
+        "date": "2025-07-03"
+       }
+      },
+      "imm-08": {
+       "stance": 1,
+       "source": {
+        "title": "U.S. House roll call 190 (2025) on H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending, phased out clean energy tax credits and funded border and immigration enforcement: Johnson voted Aye",
         "url": "https://clerk.house.gov/Votes/2025190",
         "date": "2025-07-03"
        }

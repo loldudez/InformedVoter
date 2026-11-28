@@ -1,0 +1,2091 @@
+{
+ "updated": "2026-11-27",
+ "note": "Hand research for the 2028 presidential field (scripts/research/president_2028.py)",
+ "people": {
+  "https://en.wikipedia.org/wiki/Kamala_Harris": {
+   "positions": {
+    "eco-01": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): rolling back the 2017 tax cuts for the wealthiest and a billionaire minimum tax",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "rolling back Trump’s tax cuts for the wealthiest Americans, enacting a billionaire minimum tax"
+     }
+    },
+    "eco-02": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): tax cuts for working and middle-class Americans",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "she will fight to cut taxes for more than 100 million working and middle class Americans"
+     }
+    },
+    "eco-03": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): raising the minimum wage",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "She’ll fight to raise the minimum wage"
+     }
+    },
+    "eco-09": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): signing the PRO Act",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "She’ll sign landmark pro-union legislation, including the PRO Act to support workers who choose to organize and bargain"
+     }
+    },
+    "eco-11": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): paid family and medical leave",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "establish paid family and medical leave"
+     }
+    },
+    "eco-12": {
+     "stance": 1,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): the wealthiest and the largest corporations paying more",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "They will ensure the wealthiest Americans and the largest corporations pay their fair share"
+     }
+    },
+    "hea-01": {
+     "stance": 1,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): health care as a right, by expanding the Affordable Care Act",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "make affordable health care a right, not a privilege by expanding and strengthening the Affordable Care Act"
+     }
+    },
+    "hea-02": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): Medicare drug price negotiation",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "she’ll accelerate the negotiations to cover more drugs and lower prices for Americans"
+     }
+    },
+    "hea-07": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): permanent premium tax credits",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "making permanent the Biden-Harris tax credit enhancements that are lowering health care premiums"
+     }
+    },
+    "hou-02": {
+     "stance": 1,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): penalizing firms that hoard homes",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "penalize firms that hoard available homes to drive up prices for local homebuyers"
+     }
+    },
+    "hou-05": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): down-payment help for first-time buyers",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "provide first-time homebuyers with up to $25,000 to help with their down payments"
+     }
+    },
+    "imm-01": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): the bipartisan border security bill",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "she will bring back the bipartisan border security bill and sign it into law"
+     }
+    },
+    "imm-02": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): an earned pathway to citizenship",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "comprehensive reform that includes strong border security and an earned pathway to citizenship"
+     }
+    },
+    "cri-01": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): funding law enforcement",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "She will also continue to invest in funding law enforcement, including the hiring and training of officers"
+     }
+    },
+    "soc-02": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): the Equality Act",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "she’ll fight to pass the Equality Act to enshrine anti-discrimination protections for LGBTQI+ Americans"
+     }
+    },
+    "soc-03": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): restoring reproductive freedom",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "trust women to make decisions about their own bodies, and not have the government tell them what to do"
+     }
+    },
+    "soc-07": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): affordable child care",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "Vice President Harris will fight to ensure parents can afford high-quality child care and preschool for their children."
+     }
+    },
+    "soc-12": {
+     "stance": 1,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): the Equality Act’s protections for LGBTQI+ Americans",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "she’ll fight to pass the Equality Act to enshrine anti-discrimination protections for LGBTQI+ Americans"
+     }
+    },
+    "gov-06": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): the Freedom to Vote Act",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "enshrine voting rights protections, expand vote-by-mail and early voting"
+     }
+    },
+    "edu-03": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): career pathways for non-college graduates",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "she will do even more to scale up programs that create good career pathways for non-college graduates"
+     }
+    },
+    "edu-05": {
+     "stance": 1,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): student debt relief",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "she’ll continue working to end the unreasonable burden of student loan debt"
+     }
+    },
+    "ene-01": {
+     "stance": 1,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): her tie-breaking vote for the Inflation Reduction Act",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "cast the tie-breaking vote to pass the Inflation Reduction Act, the largest investment in climate action in history"
+     }
+    },
+    "agr-02": {
+     "stance": 1,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): American leadership in semiconductors",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "Vice President Harris will continue to support American leadership in semiconductors, clean energy, AI, and other cutting edge industries of the future."
+     }
+    },
+    "def-02": {
+     "stance": 2,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): NATO and the alliances",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "she has worked with our allies to ensure NATO is stronger than ever"
+     }
+    },
+    "def-12": {
+     "stance": 1,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): Israel’s ability to defend itself",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "she will always ensure Israel has the ability to defend itself"
+     }
+    },
+    "def-13": {
+     "stance": 1,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): rallying help for Ukraine",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "helped mobilize a global response of more than 50 countries to help Ukraine defend itself"
+     }
+    },
+    "def-14": {
+     "stance": 1,
+     "source": {
+      "title": "Kamala Harris for President, Issues (campaign site, Wayback Machine copy of Nov. 1, 2024): Russia’s aggression",
+      "url": "https://web.archive.org/web/20241101234237/https://kamalaharris.com/issues/",
+      "date": "2024-11-01",
+      "quote": "help Ukraine defend itself against Vladimir Putin’s brutal aggression"
+     }
+    },
+    "ene-03": {
+     "stance": 1,
+     "source": {
+      "title": "Presidential debate in Philadelphia, Sept. 10, 2024 (transcript, ABC News): Harris said she would not ban fracking, citing her tie-breaking vote for the Inflation Reduction Act, which she said opened new leases for fracking",
+      "url": "https://abcnews.go.com/Politics/harris-trump-presidential-debate-transcript/story?id=113560542",
+      "date": "2024-09-10",
+      "quote": "I will not ban fracking. I have not banned fracking as Vice President of the United States."
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Gavin_Newsom": {
+   "positions": {
+    "hou-01": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: $40 billion for affordable housing",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Governor Newsom invested over $40 billion to boost affordable housing across the state"
+     }
+    },
+    "hou-04": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: CEQA reforms to streamline building",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "32 housing-related CEQA reforms since taking office to cut bureaucratic red tape and streamline building"
+     }
+    },
+    "eco-06": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: $180 billion for infrastructure",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "the state is investing $180 billion in infrastructure over the next 10 years"
+     }
+    },
+    "ene-01": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: 100% clean electricity by 2045",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "These will help California meet its ambitious clean electricity target of 100% by 2045."
+     }
+    },
+    "ene-04": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: the climate plan’s air pollution cut",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "cut air pollution by 71%"
+     }
+    },
+    "ene-06": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, Sept. 19, 2025: Newsom signed the extension of California’s cap-and-trade program (now cap-and-invest) to 2045",
+      "url": "https://www.gov.ca.gov/2025/09/19/governor-newsom-signs-historic-package-of-bipartisan-legislation-saving-billions-on-electric-bills-stabilizing-gas-market-and-cutting-pollution/",
+      "date": "2025-09-19",
+      "quote": "Extending Cap-and-Invest, formerly known as Cap-and-Trade, to 2045 continues California’s world-leading efforts to cut climate pollution"
+     }
+    },
+    "ene-03": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, Sept. 19, 2025: Newsom signed SB 237, allowing more oil drilling permits in Kern County while the state moves off fossil fuels",
+      "url": "https://www.gov.ca.gov/2025/09/19/governor-newsom-signs-historic-package-of-bipartisan-legislation-saving-billions-on-electric-bills-stabilizing-gas-market-and-cutting-pollution/",
+      "date": "2025-09-19",
+      "quote": "a targeted, locally-led, environmentally responsible and safe increase in oil production in Kern County to boost overall fuel supplies in the state"
+     }
+    },
+    "hea-03": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: Medi-Cal for all income-eligible Californians",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "he expanded access to Medi-Cal to all income-eligible Californians, regardless of immigration status"
+     }
+    },
+    "hea-06": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: mental health care",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "billions in investments to expand mental health care for low-income Californians"
+     }
+    },
+    "hea-07": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: state premium help on top of federal subsidies",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "the state became the first in the nation to offer financial help for individual health insurance on top of federal support"
+     }
+    },
+    "soc-03": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: abortion access",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Governor Newsom has expanded and protected access to reproductive care"
+     }
+    },
+    "soc-07": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: more child care slots",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Led a significant expansion of childcare slots"
+     }
+    },
+    "soc-11": {
+     "stance": 2,
+     "source": {
+      "title": "NBC News, Sept. 30, 2022: Newsom signed SB 107, a legal refuge for transgender minors and their families seeking gender-affirming care",
+      "url": "https://www.nbcnews.com/nbc-out/out-politics-and-policy/california-governor-signs-bill-offering-legal-refuge-transgender-youth-rcna50240",
+      "date": "2022-09-30",
+      "quote": "California will ensure that these kids and their families can seek and obtain the medical and mental health care that they need"
+     }
+    },
+    "soc-12": {
+     "stance": 1,
+     "source": {
+      "title": "NBC News, Mar. 6, 2025: Newsom, who signed California’s refuge law for transgender minors, called transgender athletes in female sports “deeply unfair”",
+      "url": "https://www.nbcnews.com/nbc-out/out-politics-and-policy/california-gov-gavin-newsom-breaks-democrats-trans-sports-participatio-rcna195165",
+      "date": "2025-03-06",
+      "quote": "It is an issue of fairness — it’s deeply unfair."
+     }
+    },
+    "eco-11": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: paid family leave",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "expanded paid family leave and its wage replacement"
+     }
+    },
+    "eco-02": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: the state Earned Income Tax Credit",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Expanded the California Earned Income Tax Credit from $400 million in 2018 to over $1.3 billion"
+     }
+    },
+    "edu-02": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: two tuition-free years of community college",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Governor Newsom provided up to two years of community college tuition-free."
+     }
+    },
+    "cri-01": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, All progress: funding for local law enforcement",
+      "url": "https://www.gov.ca.gov/priorities-and-progress/progress/all-progress/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "California has made major investments in local law enforcement and prosecutors to combat violent crime"
+     }
+    },
+    "cri-09": {
+     "stance": -2,
+     "source": {
+      "title": "Office of Gov. Gavin Newsom, Nov. 5, 2026: Newsom plans to commute every California death sentence",
+      "url": "https://www.gov.ca.gov/2026/11/05/governor-newsom-releases-letter-to-california-on-the-death-penalty/",
+      "date": "2026-11-05",
+      "quote": "Governor Gavin Newsom announced that he plans to change all California death sentences to life imprisonment without the possibility of parole."
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Gretchen_Whitmer": {
+   "positions": {
+    "eco-02": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Signature Accomplishments: the Working Families Tax Credit, quintupled",
+      "url": "https://www.michigan.gov/whitmer/issues/accomplishments/signature-accomplishments",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Signed legislation to deliver a combined $3,800 refund to 650,000 working families in Michigan."
+     }
+    },
+    "eco-09": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Signature Accomplishments: repealing right-to-work",
+      "url": "https://www.michigan.gov/whitmer/issues/accomplishments/signature-accomplishments",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Restored workers' rights to more effectively bargain together for fair wages, benefits, and safer working conditions."
+     }
+    },
+    "eco-06": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Signature Accomplishments: fixing roads and bridges",
+      "url": "https://www.michigan.gov/whitmer/issues/accomplishments/signature-accomplishments",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Michigan will have fixed more than 26,500 lane miles of road and 2,000 bridges"
+     }
+    },
+    "edu-01": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Signature Accomplishments: school funding",
+      "url": "https://www.michigan.gov/whitmer/issues/accomplishments/signature-accomplishments",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Closed the funding gap between schools in Michigan without raising taxes."
+     }
+    },
+    "edu-02": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Signature Accomplishments: free community college",
+      "url": "https://www.michigan.gov/whitmer/issues/accomplishments/signature-accomplishments",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Expanded access to free pre-K and community college to every Michigander"
+     }
+    },
+    "edu-03": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Signature Accomplishments: Michigan Reconnect",
+      "url": "https://www.michigan.gov/whitmer/issues/accomplishments/signature-accomplishments",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Launched Michigan Reconnect to offer a tuition-free path to higher education or skills training for any Michigander 21 and up."
+     }
+    },
+    "edu-09": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Signature Accomplishments: free school meals for every public school student",
+      "url": "https://www.michigan.gov/whitmer/issues/accomplishments/signature-accomplishments",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Delivered free breakfast and lunch to all of Michigan’s 1.4 million public school students."
+     }
+    },
+    "soc-07": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Signature Accomplishments: low- or no-cost child care",
+      "url": "https://www.michigan.gov/whitmer/issues/accomplishments/signature-accomplishments",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Expanded access to low or no-cost child care to 150,000 more kids and their families."
+     }
+    },
+    "hea-03": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Signature Accomplishments: Healthy Michigan (Medicaid expansion)",
+      "url": "https://www.michigan.gov/whitmer/issues/accomplishments/signature-accomplishments",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Extended Healthy Michigan to over 700,000 people."
+     }
+    },
+    "ene-01": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Signature Accomplishments: a 100% clean energy standard",
+      "url": "https://www.michigan.gov/whitmer/issues/accomplishments/signature-accomplishments",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Established a 100% clean energy standard for Michigan by 2040."
+     }
+    },
+    "ene-06": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Signature Accomplishments: a 100% clean energy standard",
+      "url": "https://www.michigan.gov/whitmer/issues/accomplishments/signature-accomplishments",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Established a 100% clean energy standard for Michigan by 2040."
+     }
+    },
+    "ene-02": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Signature Accomplishments: reopening the Palisades nuclear plant",
+      "url": "https://www.michigan.gov/whitmer/issues/accomplishments/signature-accomplishments",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "reopened the Palisades Nuclear Plant, protecting 900 union jobs and clean power for 1.4 million households"
+     }
+    },
+    "soc-03": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Nov. 21, 2023: Whitmer signed the Reproductive Health Act",
+      "url": "https://www.michigan.gov/whitmer/news/press-releases/2023/11/21/governor-whitmer-signs-reproductive-health-act",
+      "date": "2023-11-21",
+      "quote": "protects every Michigander’s constitutional right to make their own decisions about their own body"
+     }
+    },
+    "soc-02": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Mar. 16, 2023: Whitmer signed the expansion of Michigan’s civil rights law",
+      "url": "https://www.michigan.gov/whitmer/news/press-releases/2023/03/16/whitmer-signs-bipartisan-legislation-expanding-rights-and-freedoms-for-lgbtq",
+      "date": "2023-03-16",
+      "quote": "no one can be fired from their job or evicted from their home because of who they are or how they identify"
+     }
+    },
+    "soc-12": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Mar. 16, 2023: Whitmer signed protections for gender identity and expression",
+      "url": "https://www.michigan.gov/whitmer/news/press-releases/2023/03/16/whitmer-signs-bipartisan-legislation-expanding-rights-and-freedoms-for-lgbtq",
+      "date": "2023-03-16",
+      "quote": "Our LGBTQ+ friends, family, and neighbors deserve equal protection under the law so they can live their authentic lives"
+     }
+    },
+    "ene-04": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Gretchen Whitmer, Nov. 13, 2020: Whitmer revoked the easement for the Line 5 oil pipelines under the Straits of Mackinac to protect the Great Lakes",
+      "url": "https://www.michigan.gov/whitmer/news/press-releases/2020/11/13/governor-whitmer-takes-action-to-shut-down-the-line-5-dual-pipelines-through-the-straits-of-mackina",
+      "date": "2020-11-13",
+      "quote": "Enbridge has imposed on the people of Michigan an unacceptable risk of a catastrophic oil spill in the Great Lakes"
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Andy_Beshear": {
+   "positions": {
+    "soc-11": {
+     "stance": 1,
+     "source": {
+      "title": "Associated Press (PBS News), Mar. 24, 2023: Beshear vetoed Senate Bill 150, which banned gender-affirming care for minors (his veto message)",
+      "url": "https://www.pbs.org/newshour/politics/kentucky-governor-vetoes-sweeping-gop-transgender-care-ban",
+      "date": "2023-03-24",
+      "quote": "too much government interference in personal healthcare issues and rips away the freedom of parents to make medical decisions for their children"
+     }
+    },
+    "soc-12": {
+     "stance": 1,
+     "source": {
+      "title": "Associated Press (PBS News), Mar. 24, 2023: Beshear’s veto message on Senate Bill 150",
+      "url": "https://www.pbs.org/newshour/politics/kentucky-governor-vetoes-sweeping-gop-transgender-care-ban",
+      "date": "2023-03-24",
+      "quote": "My faith teaches me that all children are children of God and Senate Bill 150 will endanger the children of Kentucky."
+     }
+    },
+    "edu-04": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Andy Beshear, Dec. 18, 2023: Beshear’s budget proposed an 11% raise for all public school employees",
+      "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2057",
+      "date": "2023-12-18",
+      "quote": "Just imagine the local economic impact of an 11% raise to every employee of the county’s largest employer."
+     }
+    },
+    "edu-01": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Andy Beshear, Dec. 18, 2023: Beshear’s budget put public education first",
+      "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2057",
+      "date": "2023-12-18",
+      "quote": "prioritizes public education and families by funding the largest single pay raise for public school educators and staff in 40 years"
+     }
+    },
+    "soc-07": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Andy Beshear, Dec. 18, 2023: universal pre-K and support for child care providers",
+      "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2057",
+      "date": "2023-12-18",
+      "quote": "fully funding universal pre-K and providing support for child care providers"
+     }
+    },
+    "edu-03": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Andy Beshear, Dec. 18, 2023: new career and technical education centers",
+      "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2057",
+      "date": "2023-12-18",
+      "quote": "will help build new career and technical education centers"
+     }
+    },
+    "edu-05": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Andy Beshear, Dec. 18, 2023: student loan forgiveness for teachers",
+      "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2057",
+      "date": "2023-12-18",
+      "quote": "provides teachers student loan forgiveness"
+     }
+    },
+    "hea-06": {
+     "stance": 1,
+     "source": {
+      "title": "Office of Gov. Andy Beshear, Dec. 18, 2023: more mental health services in schools",
+      "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2057",
+      "date": "2023-12-18",
+      "quote": "boosts mental health services"
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Pete_Buttigieg": {
+   "positions": {
+    "hea-01": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): universal coverage through “Medicare for All Who Want It”",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "Pete's approach will achieve universal coverage and put Americans back in charge of their health"
+     }
+    },
+    "hea-03": {
+     "stance": 1,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): a public option open to everyone",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "Medicare for All Who Want It"
+     }
+    },
+    "imm-02": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): a pathway to citizenship",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "Common sense immigration reform must include a pathway to citizenship for immigrants living, working, paying taxes, and contributing to our American story, including DREAMers"
+     }
+    },
+    "imm-04": {
+     "stance": 1,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): ending immigration and asylum backlogs",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "resources to end the backlogs in our lawful immigration and asylum processes"
+     }
+    },
+    "soc-12": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): LGBTQ+ rights, gender identity included",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "a person’s sexual orientation or gender identity should not limit them from pursuing their dreams and realizing their full potential"
+     }
+    },
+    "soc-03": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): abortion rights in federal law",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "Codify the right to an abortion into law."
+     }
+    },
+    "gov-11": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): public financing that matches small donors",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "Our democracy should work for the interests of ordinary Americans, not corporations and special interests."
+     }
+    },
+    "gov-13": {
+     "stance": -2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): overturning Citizens United",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "Overturn Citizens United and Buckley v. Valeo, if necessary by constitutional amendment"
+     }
+    },
+    "gov-08": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): a national popular vote",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "The Electoral College has to go."
+     }
+    },
+    "gov-04": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): independent redistricting",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "Establish independent, statewide redistricting commissions."
+     }
+    },
+    "gov-06": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): a new Voting Rights Act",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "A 21st Century Voting Rights Act to end all types of voter suppression and expand voting access."
+     }
+    },
+    "eco-03": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): a $15 minimum wage",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "Raise the minimum wage to $15"
+     }
+    },
+    "eco-09": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): doubling union membership",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "His policies aim to double unionization"
+     }
+    },
+    "eco-11": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): 12 weeks of paid leave",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "Ensure all working Americans have access to 12 weeks of comprehensive paid family and medical leave."
+     }
+    },
+    "edu-02": {
+     "stance": 1,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): debt-free public college",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "Middle-income families at public colleges will pay zero tuition."
+     }
+    },
+    "edu-05": {
+     "stance": 1,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): cancelling debts from for-profit programs",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "We will cancel the debts of borrowers in low-quality, overwhelmingly for-profit programs"
+     }
+    },
+    "ene-06": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): eliminating greenhouse gas pollution",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "take bold, decisive action to eliminate greenhouse gas pollution once and for all"
+     }
+    },
+    "ene-01": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): the transition to clean energy",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "ensure the transition to clean energy is inclusive and fair for all"
+     }
+    },
+    "cri-08": {
+     "stance": 2,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): diversion programs and halving incarceration",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "we also need to invest in social services and diversion programs, and allow people to rehabilitate"
+     }
+    },
+    "def-07": {
+     "stance": 1,
+     "source": {
+      "title": "Pete for America, Issues (2020 campaign site, Wayback Machine copy of Jan. 31, 2020): a higher bar for using military force",
+      "url": "https://web.archive.org/web/20200131232747/https://peteforamerica.com/issues/",
+      "date": "2020-01-31",
+      "quote": "establish a new and higher standard for the deployment of U.S. military force"
+     }
+    },
+    "hou-07": {
+     "stance": 2,
+     "source": {
+      "title": "U.S. Department of Transportation, Dec. 8, 2023: Secretary Buttigieg announced $8.2 billion for passenger rail, including the first high-speed line",
+      "url": "https://www.transportation.gov/briefing-room/president-biden-announces-82-billion-new-grants-high-speed-rail-and-pipeline-projects",
+      "date": "2023-12-08",
+      "quote": "$8.2 billion for faster, more reliable, expanded train service across the country"
+     }
+    },
+    "ene-07": {
+     "stance": 2,
+     "source": {
+      "title": "U.S. Department of Transportation, Dec. 8, 2023: Secretary Buttigieg on the passenger rail grants",
+      "url": "https://www.transportation.gov/briefing-room/president-biden-announces-82-billion-new-grants-high-speed-rail-and-pipeline-projects",
+      "date": "2023-12-08",
+      "quote": "deliver the passenger rail system that Americans have been calling for"
+     }
+    },
+    "ene-05": {
+     "stance": 2,
+     "source": {
+      "title": "U.S. Department of Transportation, Feb. 15, 2023: Secretary Buttigieg on standards for the national EV charging network the 2021 infrastructure law funds",
+      "url": "https://www.transportation.gov/briefing-room/biden-harris-administration-announces-latest-steps-deliver-national-network",
+      "date": "2023-02-15",
+      "quote": "This is a major step toward a world where every EV user will be able to find safe, reliable charging stations anywhere in the country"
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Rahm_Emanuel": {
+   "positions": {
+    "eco-03": {
+     "stance": 2,
+     "source": {
+      "title": "City of Chicago, Mayor’s Press Office, Dec. 2, 2014: Mayor Emanuel’s ordinance raising Chicago’s minimum wage to $13 by 2019 passed the City Council",
+      "url": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2014/dec/mayor-emanuel--city-council-approve-ordinance-to-increase-minimu.html",
+      "date": "2014-12-02",
+      "quote": "A higher minimum wage ensures that nobody who works in the City of Chicago will ever struggle to reach the middle class"
+     }
+    },
+    "soc-07": {
+     "stance": 1,
+     "source": {
+      "title": "City of Chicago, Mayor’s Press Office, May 30, 2018: Mayor Emanuel’s plan to make full-day pre-kindergarten universal for Chicago’s 4-year-olds",
+      "url": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2018/may/UniversalPreK.html",
+      "date": "2018-05-30"
+     }
+    },
+    "imm-07": {
+     "stance": 2,
+     "source": {
+      "title": "NPR (KPBS), Jan. 22, 2026: Emanuel would have local officials hand people held in prison, who were convicted of crimes, to ICE “one hundred percent”",
+      "url": "https://www.kpbs.org/news/politics/2026/01/22/rahm-emanuel-critiques-democrats-and-offers-advice-for-the-upcoming-midterms",
+      "date": "2026-01-22"
+     }
+    },
+    "def-02": {
+     "stance": 2,
+     "source": {
+      "title": "NPR (KPBS), Jan. 22, 2026: Emanuel says the United States is throwing away its global alliances",
+      "url": "https://www.kpbs.org/news/politics/2026/01/22/rahm-emanuel-critiques-democrats-and-offers-advice-for-the-upcoming-midterms",
+      "date": "2026-01-22",
+      "quote": "We just decided that it's a burden on us, and we're going to see the price for that."
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Ron_DeSantis": {
+   "positions": {
+    "soc-04": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Ron DeSantis, Apr. 13, 2023: DeSantis signed the Heartbeat Protection Act (SB 300), banning abortion once a heartbeat is detected",
+      "url": "https://www.flgov.com/eog/news/press/2023/governor-ron-desantis-signs-heartbeat-protection-act",
+      "date": "2023-04-13",
+      "quote": "I applaud the Legislature for passing the Heartbeat Protection Act that expands pro-life protections and provides additional resources for young mothers and families."
+     }
+    },
+    "edu-06": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Ron DeSantis, Mar. 27, 2023: DeSantis signed HB 1, opening school choice scholarships to every student",
+      "url": "https://www.flgov.com/eog/news/press/2023/governor-ron-desantis-signs-historic-legislation-expand-school-choice-options-all",
+      "date": "2023-03-27",
+      "quote": "today’s bill signing represents the largest expansion of education choice in the history of these United States"
+     }
+    },
+    "imm-10": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Ron DeSantis, May 10, 2023: DeSantis signed SB 1718, which requires E-Verify",
+      "url": "https://www.flgov.com/eog/news/press/2023/governor-ron-desantis-signs-strongest-anti-illegal-immigration-legislation-country",
+      "date": "2023-05-10",
+      "quote": "This legislation makes using E-Verify mandatory for any employer with 25 or more employees"
+     }
+    },
+    "imm-05": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Ron DeSantis, May 10, 2023: SB 1718’s penalties for employers",
+      "url": "https://www.flgov.com/eog/news/press/2023/governor-ron-desantis-signs-strongest-anti-illegal-immigration-legislation-country",
+      "date": "2023-05-10",
+      "quote": "imposes enforceable penalties for those employing illegal aliens"
+     }
+    },
+    "edu-04": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Ron DeSantis, May 9, 2023: DeSantis approved a record increase in teacher pay",
+      "url": "https://www.flgov.com/eog/news/press/2023/governor-ron-desantis-approves-record-increase-teacher-pay-and-signs-nations-most",
+      "date": "2023-05-09",
+      "quote": "We have delivered another record boost to teacher pay and we have coupled salary increases with positive reforms."
+     }
+    },
+    "cri-09": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Ron DeSantis, May 1, 2023: DeSantis signed HB 1297, making child rape a capital crime",
+      "url": "https://www.flgov.com/eog/news/press/2023/governor-ron-desantis-signs-third-consecutive-anti-crime-pro-public-safety",
+      "date": "2023-05-01",
+      "quote": "subject child rapists to the death penalty"
+     }
+    },
+    "cri-04": {
+     "stance": 2,
+     "source": {
+      "title": "Office of Gov. Ron DeSantis, May 1, 2023: DeSantis’s anti-crime package",
+      "url": "https://www.flgov.com/eog/news/press/2023/governor-ron-desantis-signs-third-consecutive-anti-crime-pro-public-safety",
+      "date": "2023-05-01",
+      "quote": "with a particular emphasis on keeping criminals in jail and throwing the book at pedophiles"
+     }
+    },
+    "cri-06": {
+     "stance": -2,
+     "source": {
+      "title": "Office of Gov. Ron DeSantis, May 1, 2023: DeSantis signed HB 1627 against “bail reform”",
+      "url": "https://www.flgov.com/eog/news/press/2023/governor-ron-desantis-signs-third-consecutive-anti-crime-pro-public-safety",
+      "date": "2023-05-01",
+      "quote": "push back against “bail reform” efforts that have made other states significantly less safe"
+     }
+    },
+    "soc-11": {
+     "stance": -2,
+     "source": {
+      "title": "Office of Gov. Ron DeSantis, May 17, 2023: DeSantis signed SB 254, banning gender transition treatment for minors",
+      "url": "https://www.flgov.com/eog/news/press/2023/governor-ron-desantis-signs-sweeping-legislation-protect-innocence-floridas",
+      "date": "2023-05-17",
+      "quote": "Prohibits sex reassignment surgeries and experimental puberty blockers for children."
+     }
+    },
+    "soc-12": {
+     "stance": -2,
+     "source": {
+      "title": "Office of Gov. Ron DeSantis, May 17, 2023: DeSantis signed HB 1521, requiring restrooms and changing rooms separated by sex at birth, with SB 254",
+      "url": "https://www.flgov.com/eog/news/press/2023/governor-ron-desantis-signs-sweeping-legislation-protect-innocence-floridas",
+      "date": "2023-05-17",
+      "quote": "ensures that Florida’s bathrooms, changing rooms, and locker rooms are safe places for women"
+     }
+    },
+    "ene-01": {
+     "stance": -1,
+     "source": {
+      "title": "Florida Phoenix, May 15, 2024: DeSantis signed HB 1645, which bans building or expanding offshore wind facilities and certain wind turbines within a mile of the coast",
+      "url": "https://floridaphoenix.com/2024/05/15/desantis-signs-bill-erasing-the-term-climate-change-from-state-law/",
+      "date": "2024-05-15"
+     }
+    },
+    "ene-06": {
+     "stance": -2,
+     "source": {
+      "title": "Florida Phoenix, May 15, 2024: DeSantis signed HB 1645, removing climate change and greenhouse gas goals from state energy policy (his statement on X)",
+      "url": "https://floridaphoenix.com/2024/05/15/desantis-signs-bill-erasing-the-term-climate-change-from-state-law/",
+      "date": "2024-05-15",
+      "quote": "Radical green zealots want to impose their climate agenda on people through restrictions, regulations, and taxes."
+     }
+    },
+    "ene-03": {
+     "stance": 2,
+     "source": {
+      "title": "DeSantis for President, Sept. 20, 2023 (The American Presidency Project): DeSantis’s “Freedom to Fuel” energy plan (his campaign’s release)",
+      "url": "https://www.presidency.ucsb.edu/documents/desantis-campaign-press-release-ron-desantis-announces-plan-revive-american-energy",
+      "date": "2023-09-20",
+      "quote": "Unleash oil and gas exploration and development, pipelines, and infrastructure on Day One to crush inflation and support working families"
+     }
+    },
+    "imm-08": {
+     "stance": 2,
+     "source": {
+      "title": "WUSF, Feb. 13, 2025: DeSantis signed a package of immigration bills that puts $298 million into state immigration enforcement and creates a State Board of Immigration Enforcement",
+      "url": "https://www.wusf.org/politics-issues/2025-02-13/desantis-signs-sweeping-bills-to-beef-up-immigration-enforcement-in-florida",
+      "date": "2025-02-13"
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/JD_Vance": {
+   "positions": {
+    "hea-03": {
+     "stance": -1,
+     "source": {
+      "title": "PBS News, July 1, 2025: As vice president, Vance cast the tie-breaking vote for H.R. 1 (2025), the tax and spending law that cut federal Medicaid spending",
+      "url": "https://www.pbs.org/newshour/politics/senate-passes-trumps-reconciliation-bill-with-vance-casting-tie-breaking-vote",
+      "date": "2025-07-01"
+     }
+    },
+    "soc-11": {
+     "stance": -2,
+     "source": {
+      "title": "WKYC, July 19, 2023: As a senator, Vance proposed the Protect Children’s Innocence Act (S. 2357), under which doctors who perform gender transition procedures on minors could be charged with a felony",
+      "url": "https://wkyc.com/article/news/politics/us-senator-jd-vance-introduces-bill-federally-ban-gender-reassignment-procedures-minors/95-5a109a15-2430-4635-ac00-bc9b1ca1792a",
+      "date": "2023-07-19"
+     }
+    },
+    "ene-03": {
+     "stance": 2,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): energy independence",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "implement policies that properly support the ample natural energy we can harness and produce right here at home"
+     }
+    },
+    "imm-02": {
+     "stance": -2,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): no amnesty",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "I will oppose every attempt by the Democrats to grant amnesty"
+     }
+    },
+    "imm-01": {
+     "stance": 2,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): a border wall",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "I’ll also work to finish construction of a border wall, and double the number of border agents in our country."
+     }
+    },
+    "imm-08": {
+     "stance": 2,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): twice as many border agents",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "double the number of border agents in our country"
+     }
+    },
+    "imm-06": {
+     "stance": -1,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): refugees",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "accept millions of refugees into middle and working class neighborhoods. This is a bad deal for Americans"
+     }
+    },
+    "eco-10": {
+     "stance": 2,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): tariffs on goods made in China",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "imposing punitive tariffs on companies that manufacture in China and other nations. These were the right policies"
+     }
+    },
+    "eco-05": {
+     "stance": 2,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): lower taxes for companies that invest at home",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "let’s cut the taxes of the companies that invest in our country. But we’re going to raise taxes on companies that ship jobs overseas"
+     }
+    },
+    "agr-03": {
+     "stance": 1,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): rebuilding manufacturing",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "the effort to rebuild our industrial base is only beginning"
+     }
+    },
+    "eco-07": {
+     "stance": 1,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): federal spending",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "The Biden administration has spent billions and billions of dollars on things we don’t need."
+     }
+    },
+    "eco-04": {
+     "stance": 2,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): breaking up big tech companies",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "we need to break up the big tech companies, to reduce their power in our economy and our politics"
+     }
+    },
+    "soc-08": {
+     "stance": 2,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): personal data",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "We also need to ban the theft of our personal information. If they want our data, it’s time they paid for it."
+     }
+    },
+    "soc-04": {
+     "stance": 2,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): abortion",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "I am 100 percent pro-life"
+     }
+    },
+    "gov-05": {
+     "stance": 2,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): voter ID",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "Voter ID, signature verification on absentee ballots, and an end to mass mail-in voting"
+     }
+    },
+    "gov-06": {
+     "stance": -2,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): ending mass mail-in voting",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "Voter ID, signature verification on absentee ballots, and an end to mass mail-in voting"
+     }
+    },
+    "def-07": {
+     "stance": 1,
+     "source": {
+      "title": "JD Vance for Senate, Issues (2022 campaign site, Wayback Machine copy of Oct. 30, 2022): nation-building wars",
+      "url": "https://web.archive.org/web/20221030041014/https://jdvance.com/issues/",
+      "date": "2022-10-30",
+      "quote": "a good deal for the elites who profit from endless war"
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Mike_Pence": {
+   "positions": {
+    "soc-04": {
+     "stance": 2,
+     "source": {
+      "title": "Pence 2024 campaign release (The American Presidency Project), June 26, 2023: Pence called for a nationwide 15-week abortion ban at minimum",
+      "url": "https://www.presidency.ucsb.edu/documents/pence-campaign-press-release-icymi-anniversary-dobbs-mike-pence-leads-gop-field-life",
+      "date": "2023-06-26",
+      "quote": "Every Republican candidate for president should support a ban on abortion before 15 weeks as a minimum nationwide standard."
+     }
+    },
+    "soc-03": {
+     "stance": -2,
+     "source": {
+      "title": "Pence 2024 campaign release (The American Presidency Project), June 26, 2023: Pence on the anniversary of the Dobbs decision",
+      "url": "https://www.presidency.ucsb.edu/documents/pence-campaign-press-release-icymi-anniversary-dobbs-mike-pence-leads-gop-field-life",
+      "date": "2023-06-26",
+      "quote": "We'll continue to stand for the right to life without apology."
+     }
+    },
+    "eco-07": {
+     "stance": 2,
+     "source": {
+      "title": "Pence 2024 campaign release (The American Presidency Project), July 26, 2023: Pence’s plan to fight inflation",
+      "url": "https://www.presidency.ucsb.edu/documents/pence-campaign-press-release-pence-releases-the-pence-plan-fight-inflation",
+      "date": "2023-07-26",
+      "quote": "My top economic priority will be to renew American prosperity by cutting wasteful government spending"
+     }
+    },
+    "ene-03": {
+     "stance": 2,
+     "source": {
+      "title": "Pence 2024 campaign release (The American Presidency Project), July 26, 2023: more oil and gas leasing and exploration",
+      "url": "https://www.presidency.ucsb.edu/documents/pence-campaign-press-release-pence-releases-the-pence-plan-fight-inflation",
+      "date": "2023-07-26",
+      "quote": "restarting oil and gas leasing on federal lands, opening the Arctic and offshore regions for exploration"
+     }
+    },
+    "ene-10": {
+     "stance": 2,
+     "source": {
+      "title": "Pence 2024 campaign release (The American Presidency Project), July 26, 2023: cheap energy",
+      "url": "https://www.presidency.ucsb.edu/documents/pence-campaign-press-release-pence-releases-the-pence-plan-fight-inflation",
+      "date": "2023-07-26",
+      "quote": "Produce cheap, abundant American made energy to power our economy."
+     }
+    },
+    "ene-06": {
+     "stance": -1,
+     "source": {
+      "title": "Pence 2024 campaign release (The American Presidency Project), July 26, 2023: climate policy",
+      "url": "https://www.presidency.ucsb.edu/documents/pence-campaign-press-release-pence-releases-the-pence-plan-fight-inflation",
+      "date": "2023-07-26",
+      "quote": "rejecting climate change hysteria that is causing U.S. energy production to fall"
+     }
+    },
+    "agr-03": {
+     "stance": 1,
+     "source": {
+      "title": "Pence 2024 campaign release (The American Presidency Project), July 26, 2023: bringing supply chains home",
+      "url": "https://www.presidency.ucsb.edu/documents/pence-campaign-press-release-pence-releases-the-pence-plan-fight-inflation",
+      "date": "2023-07-26",
+      "quote": "Bring manufacturing and production supply chains back home to reduce costs"
+     }
+    },
+    "agr-05": {
+     "stance": 1,
+     "source": {
+      "title": "Pence 2024 campaign release (The American Presidency Project), July 26, 2023: mining rare earth minerals at home",
+      "url": "https://www.presidency.ucsb.edu/documents/pence-campaign-press-release-pence-releases-the-pence-plan-fight-inflation",
+      "date": "2023-07-26",
+      "quote": "mining rare earth minerals"
+     }
+    },
+    "eco-10": {
+     "stance": -2,
+     "source": {
+      "title": "Pence 2024 campaign release (The American Presidency Project), Sept. 21, 2023: Pence against a 10% tariff on all imports",
+      "url": "https://www.presidency.ucsb.edu/documents/pence-campaign-press-release-icymi-mike-pence-says-no-trumps-10-tariff-plan-mornings-with",
+      "date": "2023-09-21",
+      "quote": "Trump's broad-sweeping 10% tariffs on all imported goods will be a tax increase on America's families"
+     }
+    },
+    "def-16": {
+     "stance": 2,
+     "source": {
+      "title": "Pence 2024 campaign release (The American Presidency Project), Sept. 19, 2023: Pence’s plan to counter China",
+      "url": "https://www.presidency.ucsb.edu/documents/pence-campaign-press-release-icymi-pence-releases-plan-for-security-home-and-stability",
+      "date": "2023-09-19",
+      "quote": "China is the greatest strategic and economic threat to the United States of America in the 21st century"
+     }
+    },
+    "def-13": {
+     "stance": 2,
+     "source": {
+      "title": "Pence 2024 campaign release (The American Presidency Project), Sept. 19, 2023: Pence argued that holding back U.S. support for Ukraine would embolden China (The Hill’s report, quoted by his campaign)",
+      "url": "https://www.presidency.ucsb.edu/documents/pence-campaign-press-release-icymi-pence-releases-plan-for-security-home-and-stability",
+      "date": "2023-09-19"
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Chris_Christie": {
+   "positions": {
+    "eco-07": {
+     "stance": 2,
+     "source": {
+      "title": "Republican debate in Milwaukee, Aug. 23, 2023 (transcript, The American Presidency Project): Christie on federal spending",
+      "url": "https://www.presidency.ucsb.edu/documents/republican-candidates-debate-milwaukee-wisconsin-0",
+      "date": "2023-08-23",
+      "quote": "We cannot sit by any longer and allow the kind of spending that is going on in Washington."
+     }
+    },
+    "def-13": {
+     "stance": 2,
+     "source": {
+      "title": "Republican debate in Milwaukee, Aug. 23, 2023 (transcript, The American Presidency Project): Christie on standing with Ukraine",
+      "url": "https://www.presidency.ucsb.edu/documents/republican-candidates-debate-milwaukee-wisconsin-0",
+      "date": "2023-08-23",
+      "quote": "If we don't stand up against this type of autocratic killing in the world, we will be next."
+     }
+    },
+    "def-14": {
+     "stance": 2,
+     "source": {
+      "title": "Republican debate in Milwaukee, Aug. 23, 2023 (transcript, The American Presidency Project): Christie on Russia’s war, after his visit to Ukraine",
+      "url": "https://www.presidency.ucsb.edu/documents/republican-candidates-debate-milwaukee-wisconsin-0",
+      "date": "2023-08-23",
+      "quote": "I wanted to see for myself, what Vladimir Putin's army was doing to the free Ukrainian people."
+     }
+    },
+    "imm-01": {
+     "stance": 1,
+     "source": {
+      "title": "Republican debate in Milwaukee, Aug. 23, 2023 (transcript, The American Presidency Project): Christie on the border",
+      "url": "https://www.presidency.ucsb.edu/documents/republican-candidates-debate-milwaukee-wisconsin-0",
+      "date": "2023-08-23",
+      "quote": "the first thing we need to do is to stop any more from coming"
+     }
+    },
+    "imm-08": {
+     "stance": 1,
+     "source": {
+      "title": "Republican debate in Milwaukee, Aug. 23, 2023 (transcript, The American Presidency Project): Christie on detaining people who crossed illegally",
+      "url": "https://www.presidency.ucsb.edu/documents/republican-candidates-debate-milwaukee-wisconsin-0",
+      "date": "2023-08-23",
+      "quote": "We have to have them detained."
+     }
+    },
+    "def-16": {
+     "stance": 2,
+     "source": {
+      "title": "Republican debate in Milwaukee, Aug. 23, 2023 (transcript, The American Presidency Project): Christie on China and fentanyl",
+      "url": "https://www.presidency.ucsb.edu/documents/republican-candidates-debate-milwaukee-wisconsin-0",
+      "date": "2023-08-23",
+      "quote": "The Chinese are engaging in an act of war against us killing our citizens."
+     }
+    },
+    "ene-01": {
+     "stance": 1,
+     "source": {
+      "title": "CBS Philadelphia, Aug. 19, 2010: As governor, Christie signed the Offshore Wind Economic Development Act, with incentives for wind farms off New Jersey’s coast and a goal of at least 1,100 megawatts",
+      "url": "https://www.cbsnews.com/philadelphia/news/christie-signs-bill-to-boost-wind-turbine-industry-in-nj",
+      "date": "2010-08-19"
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Dan_Greaney": {
+   "positions": {
+    "gov-11": {
+     "stance": 2,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): repealing Citizens United",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "A multi-tiered approach combining transparency legislation and a constitutional amendment to repeal Citizens United"
+     }
+    },
+    "gov-13": {
+     "stance": -2,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): a constitutional amendment repealing Citizens United",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true
+     }
+    },
+    "gov-03": {
+     "stance": 2,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): transparency legislation",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "A multi-tiered approach combining transparency legislation and a constitutional amendment to repeal Citizens United"
+     }
+    },
+    "gov-09": {
+     "stance": 1,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): accountability for officials",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "No official or citizen at any level will be above the law."
+     }
+    },
+    "hea-01": {
+     "stance": 2,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): health care for all",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Guarantee health coverage for every American regardless of income, employment, or geography"
+     }
+    },
+    "hea-02": {
+     "stance": 1,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): lower drug prices",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Lower prescription drug costs and bring real price transparency to the system"
+     }
+    },
+    "soc-03": {
+     "stance": 2,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): reproductive rights",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Protect and expand reproductive rights as a core component of health care"
+     }
+    },
+    "hou-02": {
+     "stance": 1,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): cracking down on corporate consolidation in housing",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Crack down on speculation and corporate consolidation in single-family housing"
+     }
+    },
+    "hou-06": {
+     "stance": 1,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): protecting renters",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Protect renters and first-time homebuyers from predatory practices"
+     }
+    },
+    "eco-06": {
+     "stance": 2,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): the Green Square Deal",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "An ambitious Green Square Deal to rebuild American infrastructure, create good jobs, and meet the climate crisis."
+     }
+    },
+    "ene-01": {
+     "stance": 2,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): clean energy investment",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Massive investment in clean energy, public transit, and resilient infrastructure"
+     }
+    },
+    "hou-03": {
+     "stance": 2,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): public transit investment",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Massive investment in clean energy, public transit, and resilient infrastructure"
+     }
+    },
+    "hou-10": {
+     "stance": 1,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): resilient infrastructure",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Massive investment in clean energy, public transit, and resilient infrastructure"
+     }
+    },
+    "eco-09": {
+     "stance": 1,
+     "source": {
+      "title": "Dan Greaney for President 2028, The Issue Is America (platform): union jobs in the energy transition",
+      "url": "https://dangreaneyusa.com/issues",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Good union jobs at the center of the energy transition"
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Royce_White": {
+   "positions": {
+    "eco-04": {
+     "stance": 2,
+     "source": {
+      "title": "KSTP, Aug. 7, 2026: White, running again for the U.S. Senate in Minnesota, on health care",
+      "url": "https://kstp.com/kstp-news/top-news/5-questions-on-5-issues-royce-white-republican-candidate-for-us-senate/",
+      "date": "2026-08-07",
+      "quote": "My first prescription for health care reform is that we become much more strict with our anti-trust laws."
+     }
+    },
+    "cri-02": {
+     "stance": 1,
+     "source": {
+      "title": "KSTP, Aug. 7, 2026: White on body cameras for immigration agents",
+      "url": "https://kstp.com/kstp-news/top-news/5-questions-on-5-issues-royce-white-republican-candidate-for-us-senate/",
+      "date": "2026-08-07",
+      "quote": "Yeah, body cameras are great."
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Gregory_Bovino": {
+   "positions": {
+    "imm-02": {
+     "stance": -2,
+     "source": {
+      "title": "The National News Desk (KUTV), June 9, 2026: Bovino on X, launching his exploratory committee",
+      "url": "https://kutv.com/news/nation-world/greg-bovino-launches-a-committee-to-explore-a-2028-presidential-run-trump-administration-border-patrol-minneapolis",
+      "date": "2026-06-09",
+      "quote": "My one and only priority is deporting the 106 million illegals who are here."
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Shiva_Ayyadurai": {
+   "positions": {
+    "soc-01": {
+     "stance": 2,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: ending censorship",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "End censorship, protect medical freedom, and return science to the people"
+     }
+    },
+    "gov-11": {
+     "stance": 1,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: lobbyists and billionaires out of government",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Rip lobbyists and billionaires out of government"
+     }
+    },
+    "eco-02": {
+     "stance": 2,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: tax cuts for families",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Cut taxes for families and small business"
+     }
+    },
+    "eco-08": {
+     "stance": 1,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: tax cuts for small business",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Cut taxes for families and small business"
+     }
+    },
+    "ene-04": {
+     "stance": 1,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: clean food, air and water",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Clean Food, Clean Air, Clean Water – Ban poisons in food and agriculture, enforce honest labeling."
+     }
+    },
+    "soc-08": {
+     "stance": 1,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: a Digital Bill of Rights",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Digital Freedom & Privacy – A Digital Bill of Rights to protect your voice and your mind from censorship and manipulation"
+     }
+    },
+    "gov-05": {
+     "stance": 2,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: voter ID",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Paper ballots, hand-counting, same-day voting, Voter ID."
+     }
+    },
+    "def-07": {
+     "stance": 1,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: no more wars abroad",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "No more trillion-dollar wars abroad."
+     }
+    },
+    "def-08": {
+     "stance": -2,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: bringing troops home",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Bring troops home and reinvest in communities’ health infrastructure."
+     }
+    },
+    "def-12": {
+     "stance": -2,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: ending aid to Israel",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Stop taxpayer subsidies to Israel and others."
+     }
+    },
+    "def-10": {
+     "stance": 1,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: ending taxpayer subsidies abroad",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Stop taxpayer subsidies to Israel and others."
+     }
+    },
+    "gov-01": {
+     "stance": 2,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: term limits",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Term limits, ban insider trading, make every representative legally accountable to the people"
+     }
+    },
+    "gov-02": {
+     "stance": 1,
+     "source": {
+      "title": "Shiva Ayyadurai’s 2026 U.S. Senate campaign (Massachusetts), Platform: banning insider trading",
+      "url": "https://shiva4senate.com/platform/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "Term limits, ban insider trading, make every representative legally accountable to the people"
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Chase_LaPorte": {
+   "positions": {
+    "gov-01": {
+     "stance": 2,
+     "source": {
+      "title": "U.S. Term Limits, May 28, 2025: LaPorte signed U.S. Term Limits’ pledge for a constitutional amendment limiting congressional terms (the pledge’s text)",
+      "url": "https://termlimits.com/chase-laporte-pledges-to-support-term-limits-on-congress/",
+      "date": "2025-05-28",
+      "quote": "I will cosponsor and vote for the U.S. Term Limits amendment of three (3) House terms and two (2) Senate terms"
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Jo_Jorgensen": {
+   "positions": {
+    "eco-07": {
+     "stance": 2,
+     "source": {
+      "title": "Jo Jorgensen exploratory campaign, announcement: a government that lives within its means",
+      "url": "https://www.votejo28.com/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "We need a government that lives within its means."
+     }
+    },
+    "def-07": {
+     "stance": 2,
+     "source": {
+      "title": "Jo Jorgensen exploratory campaign, announcement: peace over intervention",
+      "url": "https://www.votejo28.com/",
+      "date": "2026-11-27",
+      "accessed": true,
+      "quote": "We need leaders who understand that peace is wiser than intervention, that markets work better than mandates"
+     }
+    },
+    "hea-01": {
+     "stance": -2,
+     "source": {
+      "title": "Jo Jorgensen for President, Healthcare (2020 campaign site, Wayback Machine copy of Nov. 1, 2020): against Medicare for All",
+      "url": "https://web.archive.org/web/20201101000000/https://jo20.com/issues/healthcare/",
+      "date": "2020-11-01",
+      "quote": "Those who are dealing with serious ailments would be further victimized in a nationalized system such as the proposed “Medicare for All.”"
+     }
+    },
+    "hea-04": {
+     "stance": 2,
+     "source": {
+      "title": "Jo Jorgensen for President, Healthcare (2020 campaign site, Wayback Machine copy of Nov. 1, 2020): price competition in health care",
+      "url": "https://web.archive.org/web/20201101000000/https://jo20.com/issues/healthcare/",
+      "date": "2020-11-01",
+      "quote": "We can reduce the cost of health care 75% by allowing real price competition"
+     }
+    },
+    "ene-02": {
+     "stance": 2,
+     "source": {
+      "title": "Jo Jorgensen for President, Environment (2020 campaign site, Wayback Machine copy of Nov. 1, 2020): nuclear power",
+      "url": "https://web.archive.org/web/20201101000000/https://jo20.com/issues/environment/",
+      "date": "2020-11-01",
+      "quote": "replacing coal burning and oil burning powerplants in the United States with safe, non-polluting, high-tech nuclear powerplants"
+     }
+    },
+    "ene-06": {
+     "stance": -1,
+     "source": {
+      "title": "Jo Jorgensen for President, Environment (2020 campaign site, Wayback Machine copy of Nov. 1, 2020): against the Green New Deal",
+      "url": "https://web.archive.org/web/20201101000000/https://jo20.com/issues/environment/",
+      "date": "2020-11-01",
+      "quote": "This kind of legislation is neither rational nor workable."
+     }
+    },
+    "eco-10": {
+     "stance": -2,
+     "source": {
+      "title": "Jo Jorgensen for President, Trade & Immigration (2020 campaign site, Wayback Machine copy of Nov. 1, 2020): ending tariffs",
+      "url": "https://web.archive.org/web/20201101000000/https://jo20.com/issues/trade-immigration/",
+      "date": "2020-11-01",
+      "quote": "As President, I will use my Constitutional authority to eliminate trade barriers & tariffs"
+     }
+    },
+    "agr-06": {
+     "stance": 2,
+     "source": {
+      "title": "Jo Jorgensen for President, Trade & Immigration (2020 campaign site, Wayback Machine copy of Nov. 1, 2020): free trade",
+      "url": "https://web.archive.org/web/20201101000000/https://jo20.com/issues/trade-immigration/",
+      "date": "2020-11-01",
+      "quote": "I am the only free trade candidate for president."
+     }
+    },
+    "imm-03": {
+     "stance": 2,
+     "source": {
+      "title": "Jo Jorgensen for President, Trade & Immigration (2020 campaign site, Wayback Machine copy of Nov. 1, 2020): repealing immigration quotas",
+      "url": "https://web.archive.org/web/20201101000000/https://jo20.com/issues/trade-immigration/",
+      "date": "2020-11-01",
+      "quote": "work to repeal arbitrary quotas on the number of people who can legally enter the United States to work, visit, or reside"
+     }
+    },
+    "soc-05": {
+     "stance": 2,
+     "source": {
+      "title": "Jo Jorgensen for President, Criminal Justice Reform (2020 campaign site, Wayback Machine copy of Nov. 1, 2020): ending the War on Drugs",
+      "url": "https://web.archive.org/web/20201101000000/https://jo20.com/issues/criminal-justice-reform/",
+      "date": "2020-11-01",
+      "quote": "I will also work with Congress to end the failed War on Drugs and other victimless crime laws."
+     }
+    },
+    "edu-07": {
+     "stance": 2,
+     "source": {
+      "title": "Jo Jorgensen for President, Education (2020 campaign site, Wayback Machine copy of Nov. 1, 2020): local control of schools, without the Department of Education",
+      "url": "https://web.archive.org/web/20201101000000/https://jo20.com/issues/education/",
+      "date": "2020-11-01",
+      "quote": "return control of education to where it belongs – with parents, teachers, and students"
+     }
+    },
+    "def-08": {
+     "stance": -2,
+     "source": {
+      "title": "Jo Jorgensen for President, Neutrality and Peace (2020 campaign site, Wayback Machine copy of Nov. 1, 2020): bringing troops home",
+      "url": "https://web.archive.org/web/20201101000000/https://jo20.com/issues/neutrality-and-peace/",
+      "date": "2020-11-01",
+      "quote": "Bring home our 200,000 plus American military personell stationed in foreign countries"
+     }
+    },
+    "def-05": {
+     "stance": -2,
+     "source": {
+      "title": "Jo Jorgensen for President, Neutrality and Peace (2020 campaign site, Wayback Machine copy of Nov. 1, 2020): no military aid abroad",
+      "url": "https://web.archive.org/web/20201101000000/https://jo20.com/issues/neutrality-and-peace/",
+      "date": "2020-11-01",
+      "quote": "no US military aid to foreign governments"
+     }
+    },
+    "eco-02": {
+     "stance": 1,
+     "source": {
+      "title": "Jo Jorgensen for President, Taxes (2020 campaign site, Wayback Machine copy of Nov. 1, 2020): lower taxes",
+      "url": "https://web.archive.org/web/20201101000000/https://jo20.com/issues/taxes/",
+      "date": "2020-11-01",
+      "quote": "let you keep what you earn"
+     }
+    }
+   }
+  },
+  "https://en.wikipedia.org/wiki/Andrew_Yang": {
+   "positions": {
+    "hea-01": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Medicare for All (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): health care for everyone",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/medicare-for-all/",
+      "date": "2020-02-04",
+      "quote": "Comprehensive healthcare for all Americans"
+     }
+    },
+    "hea-02": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Medicare for All (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): negotiating drug prices",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/medicare-for-all/",
+      "date": "2020-02-04",
+      "quote": "Control the cost of life-saving prescription drugs, through negotiating drug prices"
+     }
+    },
+    "soc-12": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Support for Transgender Individuals (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): protecting transgender people",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/support-for-transgender-individuals/",
+      "date": "2020-02-04",
+      "quote": "End the systemic threat and real violence against the trans community"
+     }
+    },
+    "ene-03": {
+     "stance": -2,
+     "source": {
+      "title": "Yang2020, Fossil Fuels: Their Days Are Over (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): ending support for fossil fuel production",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/fossil-fuels-their-days-are-over/",
+      "date": "2020-02-04",
+      "quote": "Stop federal contributions that promote fossil fuel production"
+     }
+    },
+    "ene-01": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Renewable Energy (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): 100% renewable energy",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/renewable-energy/",
+      "date": "2020-02-04",
+      "quote": "Convert to 100% renewable energy by 2049"
+     }
+    },
+    "ene-02": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Nuclear Energy (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): new nuclear reactors",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/nuclear-energy/",
+      "date": "2020-02-04",
+      "quote": "Invest $50 billion in research and development for thorium-based molten salt reactors, and nuclear fusion reactors"
+     }
+    },
+    "ene-06": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Carbon Fee and Dividend (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): a carbon fee",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/carbon-fee-dividend/",
+      "date": "2020-02-04",
+      "quote": "Propose a carbon fee and dividend system"
+     }
+    },
+    "gov-11": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Overturning Citizens United (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): less corporate influence on elections",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/overturning-citizens-united/",
+      "date": "2020-02-04",
+      "quote": "Reduce corporate influence and outsize influence of the wealthy"
+     }
+    },
+    "gov-13": {
+     "stance": -2,
+     "source": {
+      "title": "Yang2020, Overturning Citizens United (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): ending super PACs",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/overturning-citizens-united/",
+      "date": "2020-02-04",
+      "quote": "Eliminate super PACs and vessels for corporate intervention in campaigns."
+     }
+    },
+    "gov-07": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Ranked Choice Voting (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): ranked-choice voting",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/rankedchoice/",
+      "date": "2020-02-04",
+      "quote": "Work with Congress to adopt ranked-choice voting for all federal elections."
+     }
+    },
+    "gov-05": {
+     "stance": -2,
+     "source": {
+      "title": "Yang2020, Prohibit Voter ID Laws (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): against voter ID laws",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/prohibit-voter-id-laws/",
+      "date": "2020-02-04",
+      "quote": "Direct the DOJ to prohibit all voter ID laws that disenfranchise underrepresented communities."
+     }
+    },
+    "gov-06": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Early Voting and Vote by Mail (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): voting by mail",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/early-voting-and-vote-by-mail/",
+      "date": "2020-02-04",
+      "quote": "Give every voter the option to vote by mail"
+     }
+    },
+    "gov-04": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, End Gerrymandering (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): independent redistricting",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/end-gerrymandering/",
+      "date": "2020-02-04",
+      "quote": "Promote the use of independent redistricting commissions"
+     }
+    },
+    "gov-09": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Stop the D.C. Revolving Door (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): ethics rules for officials",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/stop-the-d-c-revolving-door/",
+      "date": "2020-02-04",
+      "quote": "Restore the public’s trust in the motives of all government officials"
+     }
+    },
+    "imm-02": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Pathway to Citizenship (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): permanent residency and an eighteen-year path to citizenship",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/pathway-to-citizenship-2/",
+      "date": "2020-02-04",
+      "quote": "Provide a new tier of long-term permanent residency for anyone who has been here for a substantial amount of time"
+     }
+    },
+    "imm-01": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Southern Border Security (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): ports of entry",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/southern-border-security/",
+      "date": "2020-02-04",
+      "quote": "Increase funding to secure our landed ports of entry, where most drugs enter the United States."
+     }
+    },
+    "imm-08": {
+     "stance": 1,
+     "source": {
+      "title": "Yang2020, Southern Border Security (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): customs enforcement",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/southern-border-security/",
+      "date": "2020-02-04",
+      "quote": "Increase funding to our Customs Enforcement teams that are tasked with preventing human trafficking"
+     }
+    },
+    "imm-03": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Enticing High-Skill Individuals (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): visas for skilled workers",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/enticing-high-skill-individuals/",
+      "date": "2020-02-04",
+      "quote": "Enhance the H-1B visa program"
+     }
+    },
+    "soc-05": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Legalization of Marijuana (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): legal marijuana",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/legalization-of-marijuana/",
+      "date": "2020-02-04",
+      "quote": "Support the full legalization of marijuana at the federal level and remove it from the controlled substances list."
+     }
+    },
+    "cri-02": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Every Cop Gets a Camera (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): body cameras",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/every-cop-gets-camera/",
+      "date": "2020-02-04",
+      "quote": "Authorize federal funding to pay for a body camera for every officer in every police department in the country."
+     }
+    },
+    "cri-06": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Cash Bail (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): less cash bail",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/cashbail/",
+      "date": "2020-02-04",
+      "quote": "Work with states to decrease their reliance on cash bail"
+     }
+    },
+    "cri-08": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Reduce Mass Incarceration (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): treatment over punishment",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/reduce-mass-incarceration/",
+      "date": "2020-02-04",
+      "quote": "Shift drug policy away from punishment and towards treatment."
+     }
+    },
+    "cri-05": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Reduce Mass Incarceration (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): programs that reduce recidivism",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/reduce-mass-incarceration/",
+      "date": "2020-02-04",
+      "quote": "Invest money to fund innovative prison programs that decrease recidivism and increase reintegration."
+     }
+    },
+    "eco-11": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Paid Family Leave (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): six months of paid leave",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/paid-family-leave/",
+      "date": "2020-02-04",
+      "quote": "Guarantee 6 months Paid Family Leave for all parents"
+     }
+    },
+    "eco-09": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Empowering Unions (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): the PRO Act",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/empowering-unions-in-the-21st-century/",
+      "date": "2020-02-04",
+      "quote": "Work with Congress to pass the PRO Act to protect workers’ rights to organize and negotiate on a level playing field."
+     }
+    },
+    "soc-07": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Guaranteed Childcare (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): affordable child care",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/guaranteed-childcare/",
+      "date": "2020-02-04",
+      "quote": "Make childcare affordable for all families"
+     }
+    },
+    "edu-04": {
+     "stance": 2,
+     "source": {
+      "title": "Yang2020, Teacher Salaries (2020 campaign site, Wayback Machine copy of Feb. 4, 2020): teacher pay",
+      "url": "https://web.archive.org/web/20200204000000/https://www.yang2020.com/policies/teacher-salaries/",
+      "date": "2020-02-04",
+      "quote": "Work with states to fund their educational systems to improve teacher salaries"
+     }
+    }
+   }
+  }
+ }
+}

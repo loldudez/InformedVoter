@@ -1,0 +1,172 @@
+{
+ "checked": "2026-11-26",
+ "jurisdictions": 51,
+ "states": {
+  "AL": {
+   "date": "2026-11-23",
+   "source": {
+    "title": "Alabama Daily News: Officials certify election results, set recount for East Alabama's Senate District 10",
+    "url": "https://aldailynews.com/officials-certify-election-results-set-recount-for-east-alabamas-senate-district-10/"
+   },
+   "other": [
+    [
+     "Alabama Senate, District 10 (recount)",
+     "Sénat de l’Alabama, district 10 (recompte)"
+    ]
+   ]
+  },
+  "AZ": {
+   "date": "2026-11-23",
+   "source": {
+    "title": "Arizona Secretary of State: Arizona Secretary of State's Office Releases General Election Voter Numbers",
+    "url": "https://azsos.gov/news/1092"
+   },
+   "other": [
+    [
+     "Arizona House, District 27, second seat (automatic recount)",
+     "Chambre de l’Arizona, district 27, second siège (recompte automatique)"
+    ]
+   ]
+  },
+  "CT": {
+   "date": "2026-11-25",
+   "source": {
+    "title": "CT News Junkie: CT Officials Complete Election Canvas, Declare Winners 'Duly Elected'",
+    "url": "https://ctnewsjunkie.com/2026/11/25/ct-officials-complete-election-canvas-declare-winners-duly-elected/"
+   },
+   "pending": {
+    "CT-GOV": "legislature",
+    "CT-AG": "legislature",
+    "CT-AUD": "legislature",
+    "CT-SOS": "legislature",
+    "CT-TREAS": "legislature"
+   }
+  },
+  "GA": {
+   "date": "2026-11-20",
+   "source": {
+    "title": "Capitol Beat, via Rough Draft Atlanta: It's official: Raffensperger certifies Nov. 3 election results",
+    "url": "https://roughdraftatlanta.com/2026/11/21/raffensperger-certifies-georgia-election-results/"
+   },
+   "other": [
+    [
+     "Georgia House, District 151 (runoff, Dec. 1)",
+     "Chambre de Géorgie, district 151 (second tour le 1er décembre)"
+    ]
+   ]
+  },
+  "IA": {
+   "date": "2026-11-24",
+   "source": {
+    "title": "Iowa Capital Dispatch: State of Iowa certifies 2026 election results, with no changes from unofficial results",
+    "url": "https://iowacapitaldispatch.com/2026/11/24/state-of-iowa-certifies-2026-election-results-with-no-changes-from-unofficial-results/"
+   },
+   "pending": {
+    "IA-GOV": "legislature"
+   }
+  },
+  "ID": {
+   "date": "2026-11-24",
+   "source": {
+    "title": "Idaho Secretary of State: Board of Canvassers Certifies Election Results; Audit Results Reported",
+    "url": "https://press.voteidaho.gov/press-release/2026-results-certified-and-audit-report/"
+   }
+  },
+  "MI": {
+   "date": "2026-11-23",
+   "source": {
+    "title": "Michigan Department of State: Michigan Board of State Canvassers certifies record-breaking 2026 General Election",
+    "url": "https://www.michigan.gov/sos/resources/news/2026/11/23/michigan-board-of-state-canvassers-certifies-record-breaking-2026-general-election"
+   }
+  },
+  "MN": {
+   "date": "2026-11-19",
+   "source": {
+    "title": "Minnesota Secretary of State: State Canvassing Board Certifies Results of the 2026 General Election",
+    "url": "https://sos.mn.gov/about-the-office/news-room/state-canvassing-board-certifies-results-of-the-2026-general-election/"
+   },
+   "pending": {
+    "MN-H-01": "recount"
+   },
+   "other": [
+    [
+     "Minnesota Senate, District 4 (recount)",
+     "Sénat du Minnesota, district 4 (recompte)"
+    ]
+   ]
+  },
+  "NC": {
+   "date": "2026-11-24",
+   "source": {
+    "title": "North Carolina State Board of Elections: State Board Unanimously Certifies Midterm Elections",
+    "url": "https://www.ncsbe.gov/news/press-releases/2026/11/24/state-board-unanimously-certifies-midterm-elections"
+   },
+   "other": [
+    [
+     "District Attorney, District 21 (recount)",
+     "Procureur de district, district 21 (recompte)"
+    ],
+    [
+     "N.C. House, District 62 (recount)",
+     "Chambre de Caroline du Nord, district 62 (recompte)"
+    ]
+   ]
+  },
+  "ND": {
+   "date": "2026-11-18",
+   "source": {
+    "title": "North Dakota Secretary of State: State Canvassing Board Certifies 2026 General Election Results",
+    "url": "https://www.sos.nd.gov/news/state-canvassing-board-certifies-2026-general-election-results"
+   }
+  },
+  "NM": {
+   "date": "2026-11-24",
+   "source": {
+    "title": "New Mexico Secretary of State: State Canvassing Board Certifies 2026 General Election Results",
+    "url": "https://www.sos.nm.gov/2026/11/24/state-canvassing-board-certifies-2026-general-election-results/"
+   }
+  },
+  "NV": {
+   "date": "2026-11-24",
+   "source": {
+    "title": "Nevada Secretary of State: Voter ID Implementation (the Supreme Court finished the statewide canvass Nov. 24)",
+    "url": "https://www.nvsos.gov/elections/election-information/voter-id-implementation"
+   }
+  },
+  "RI": {
+   "date": "2026-11-24",
+   "source": {
+    "title": "Rhode Island Current: A tie for the Glocester School Committee highlights a shortcoming in state law",
+    "url": "https://rhodeislandcurrent.com/2026/11/25/a-tie-for-the-glocester-school-committee-highlights-a-shortcoming-in-state-law/"
+   }
+  },
+  "SC": {
+   "date": "2026-11-11",
+   "source": {
+    "title": "WACH: South Carolina certifies 2026 election results with more than 2 million votes cast",
+    "url": "https://abcnews4.com/news/local/2026-11-16-south-carolina-certifies-2026-election-results-with-more-than-2-million-votes-cast-early-voting"
+   }
+  },
+  "UT": {
+   "date": "2026-11-23",
+   "source": {
+    "title": "Utah News Dispatch: Utah's 2026 election results are certified, solidifying Democrats' gains in the Legislature",
+    "url": "https://utahnewsdispatch.com/2026/11/23/utahs-2026-election-results-are-certified-solidifying-democrats-gains-in-the-legislature/"
+   }
+  },
+  "VT": {
+   "date": "2026-11-10",
+   "source": {
+    "title": "WCAX: Vermont sets midterm turnout record as election results certified",
+    "url": "https://www.wcax.com/2026/11/10/vermont-sets-midterm-turnout-record-election-results-certified/"
+   }
+  },
+  "WY": {
+   "date": "2026-11-10",
+   "source": {
+    "title": "Wyoming Public Media: Wyoming certifies the general election as officials look to boost turnout",
+    "url": "https://www.wyomingpublicmedia.org/politics-government/2026-11-10/wyoming-certifies-the-general-election-as-officials-look-to-boost-turnout"
+   }
+  }
+ }
+}
